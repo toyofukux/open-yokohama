@@ -1,0 +1,33 @@
+{
+  "result": "passed",
+  "manuscriptSha256": "9472c8ed2d9950b4f7dc85300b58465eae74f2a02c2877441fd86e12a7b9220e",
+  "evidenceSha256": "cdd4263918d40f932c7ed527d496f5fcf3f45fea489184fd4c386ca2104c2268",
+  "sourceVersionsChecked": 10,
+  "claimAnchorsChecked": 17,
+  "sourceLinksChecked": 7,
+  "calculations": {
+    "householdExample": {
+      "yenPerMeal": 330,
+      "assumedMeals": 20,
+      "yen": 6600
+    },
+    "elementaryIngredientsPerMonth": {
+      "yen": 6141,
+      "nationalBenchmarkYen": 5200,
+      "citySupplementYen": 941
+    },
+    "initialBudgetRowsThousandYen": {
+      "middleIngredients": 6065906,
+      "elementaryTemporarySupply": 219818,
+      "total": 6285724,
+      "notIncrementalWaiverCost": true
+    }
+  },
+  "limits": [
+    "Source versions, anchor references and selected arithmetic only",
+    "Not a live link check or exhaustive sentence-level fact check",
+    "This check does not certify independent review, human validation, adoption or publication"
+  ],
+  "checkedAt": "2026-09-06T17:58:57.456492+00:00",
+  "verifierSha256": "228e13519bfd3fcafb7d378d9715e96613654e513349535a73e96bbca1faaabe"
+}

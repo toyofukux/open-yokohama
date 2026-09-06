@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Harbor from "../components/Harbor.astro";
+import PolicyFeature from "../components/PolicyFeature.astro";
 import { data, latest, number, wards } from "../data";
 import { issues } from "../../../../packages/core/issues";
 const population = latest(data, "141003", "population");
@@ -8,20 +9,21 @@ const households = latest(data, "141003", "households");
 const change = latest(data, "141003", "population_change");
 ---
 
-<Layout title="横浜の暮らしを、身近な数字から">
+<Layout title="横浜の暮らしを、身近な問いから">
   <div class="container">
     <section class="hero">
       <div>
         <p class="eyebrow">
           OUR CITY, IN CONTEXT <span class="beta">公開β</span>
-        </p><h1>横浜の暮らしを、<br />身近な数字から。</h1><p class="intro">
+        </p><h1>横浜の暮らしを、<br />身近な問いから。</h1><p class="intro">
           住んでいる区のこと。これからのまちのこと。<br
-          />気になる問いを、横浜市のデータから一緒に確かめよう。
-        </p><a class="action" href="/wards/"
-          >自分の区を見てみる <span aria-hidden="true">→</span></a
+          />気になる政策の選択肢と、その根拠を一緒に確かめよう。
+        </p><a class="action" href="/issues/school-lunch/"
+          >給食費の支援を考える <span aria-hidden="true">→</span></a
         >
       </div><Harbor />
     </section>
+    <PolicyFeature />
     <div class="meta-line">
       <span><span class="dot"></span>横浜市の公式統計をもとに掲載</span><span
         >掲載する最新の統計：{population.period.replaceAll("-", ".")}</span
@@ -110,7 +112,7 @@ const change = latest(data, "141003", "population_change");
           </p><a class="small" href="/sources/">データの確かめ方 →</a>
         </div><div class="note">
           <strong>いま読めること</strong><p style="margin:8px 0 0">
-            公開βでは人口と世帯の統計から始めています。子育て・交通・防災・予算へ、根拠を確認しながら広げていきます。
+            中学校給食費の支援を、対象・家計負担・財源から考えます。人口と世帯の統計も、18区を比較しながら確認できます。
           </p>
         </div>
       </div>

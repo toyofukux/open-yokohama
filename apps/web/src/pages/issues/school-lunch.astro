@@ -1,0 +1,135 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import {
+  Content,
+  getHeadings,
+} from "../../../../../docs/content-review/school-lunch/DRAFT.md";
+import evidence from "../../../../../docs/content-review/school-lunch/evidence.json";
+import { schoolLunch } from "../../../../../packages/core/policy-issues";
+import "../../styles/policy-article.css";
+const headings = getHeadings().filter((heading) => heading.depth === 2);
+const visibleSourceIds = new Set(["S1", "S2", "S3", "S4", "S5", "S7", "S8"]);
+const sources = evidence.sources.filter((source) =>
+  visibleSourceIds.has(source.id),
+);
+---
+
+<Layout title={schoolLunch.title} description={schoolLunch.summary}>
+  <article
+    class="policy-article container"
+    data-content-version={evidence.manuscript.sha256}
+  >
+    <header class="policy-header" id="article-top">
+      <p class="breadcrumb">
+        <a href="/">ホーム</a> / <a href="/issues/">暮らしの問い</a> / 給食費
+      </p>
+      <div class="policy-kicker">
+        <span>政策を考える</span><span>{schoolLunch.category}</span>
+      </div>
+      <h1>
+        横浜は、中学校の給食費も<br class="desktop-break" />無償にすべきか
+      </h1>
+      <p class="policy-deck">
+        家計の負担を、誰まで、どう支える。<br
+        />いまある援助と財源から、選択肢を考える。
+      </p>
+      <div class="policy-meta">
+        <span>2026年度の制度</span><span>資料確認：2026年9月7日</span><a
+          href="#review-status">確認の範囲</a
+        >
+      </div>
+    </header>
+
+    <div class="policy-layout">
+      <aside class="policy-sidebar">
+        <details class="policy-toc">
+          <summary>この問いをたどる（目次）</summary>
+          <nav aria-label="この記事の目次">
+            <ol>
+              {
+                headings.map((heading, i) => (
+                  <li>
+                    <a href={`#${heading.slug}`}>
+                      <span aria-hidden="true">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      {heading.text}
+                    </a>
+                  </li>
+                ))
+              }
+            </ol>
+            <a class="source-jump" href="#article-sources">原資料を確かめる ↗</a
+            >
+          </nav>
+        </details>
+      </aside>
+      <div class="policy-body">
+        <div class="policy-answer-label">いま分かること</div>
+        <div class="policy-prose"><Content /></div>
+
+        <section class="policy-next" aria-labelledby="next-question">
+          <p class="eyebrow">一つの政策から、まち全体の選択へ</p>
+          <h2 id="next-question">同じ財源を、何に向けるか。</h2>
+          <p>
+            給食費の支援に使うお金を、ほかの支援や公共サービスとどう配分するかも、次に考える問いだ。何を優先し、何を見送るか。その比較には、それぞれの追加費用と、使える財源をそろえる必要がある。
+          </p>
+          <p class="small muted">
+            政策間の具体的な金額比較は、このページでは扱っていない。給食費支援とほかの政策を、同じ予算から自由に交換できるとは限らない。
+          </p>
+        </section>
+
+        <section class="policy-sources" aria-labelledby="article-sources">
+          <h2 id="article-sources">原資料を確かめる</h2>
+          <p class="small muted">
+            本文のリンクは、説明に対応する公式資料へつながる。PDFはページ番号も記載している。
+          </p>
+          <ol>
+            {
+              sources.map((source) => (
+                <li>
+                  <>
+                    <a href={source.url}>{source.title} ↗</a>
+                    <span>
+                      取得日：
+                      {new Intl.DateTimeFormat("ja-JP", {
+                        timeZone: "Asia/Tokyo",
+                        year: "numeric",
+                        month: "2-digit",
+                        day: "2-digit",
+                      }).format(new Date(source.retrievedAt))}
+                    </span>
+                  </>
+                </li>
+              ))
+            }
+          </ol>
+          <details id="review-status">
+            <summary>この初版の確認範囲と、残っていること</summary>
+            <p>
+              公式資料との照合・数値検算は制作側が実施した。独立した事実確認と利用者による理解の検証は未実施。無償化の正味追加費用と、複数年度の継続財源は確定していない。
+            </p>
+            <p>
+              制度説明は2026年度、政策資料は本文に記載した時点のもの。すべての補正予算・議事録を網羅した確認ではない。
+            </p>
+          </details>
+          <div class="article-bottom">
+            <a href="/about/#corrections">数字や説明の誤りを知らせる</a><a
+              href="#article-top">冒頭に戻る ↑</a
+            >
+          </div>
+        </section>
+      </div>
+    </div>
+  </article>
+</Layout>
+
+<script>
+  const toc = document.querySelector<HTMLDetailsElement>(".policy-toc");
+  const wide = matchMedia("(min-width: 901px)");
+  const setInitialContents = () => {
+    if (toc) toc.open = wide.matches;
+  };
+  setInitialContents();
+  wide.addEventListener("change", setInitialContents);
+</script>

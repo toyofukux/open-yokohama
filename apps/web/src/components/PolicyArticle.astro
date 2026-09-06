@@ -1,0 +1,121 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/policy-article.css";
+interface Props {
+  title: string;
+  summary: string;
+  category: string;
+  headings: { depth: number; slug: string; text: string }[];
+  version: string;
+  sources: { id: string; title: string; url: string; retrievedAt: string }[];
+}
+const { title, summary, category, headings, version, sources } = Astro.props;
+---
+
+<Layout title={title} description={summary}>
+  <article class="policy-article container" data-content-version={version}>
+    <header class="policy-header" id="article-top">
+      <p class="breadcrumb">
+        <a href="/">ホーム</a> / <a href="/issues/">暮らしの問い</a> / <a
+          href="/elections/mayor-2026/">市長選を考える</a
+        >
+      </p>
+      <div class="policy-kicker">
+        <span>政策を考える</span><span>{category}</span>
+      </div>
+      <h1>{title}</h1>
+      <p class="policy-deck">{summary}</p>
+      <div class="policy-meta">
+        <span>資料確認：2026年9月7日</span><span
+          >制度・予算の時点は本文に記載</span
+        ><a href="#review-status">確認の範囲</a>
+      </div>
+    </header>
+    <div class="policy-layout">
+      <aside class="policy-sidebar">
+        <details class="policy-toc">
+          <summary>この問いをたどる（目次）</summary>
+          <nav aria-label="この記事の目次">
+            <ol>
+              {
+                headings
+                  .filter((h) => h.depth === 2)
+                  .map((h, i) => (
+                    <li>
+                      <a href={`#${h.slug}`}>
+                        <span aria-hidden="true">
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        {h.text}
+                      </a>
+                    </li>
+                  ))
+              }
+            </ol><a class="source-jump" href="#article-sources"
+              >原資料を確かめる ↗</a
+            >
+          </nav>
+        </details>
+      </aside>
+      <div class="policy-body">
+        <div class="policy-answer-label">いま分かることから、選択肢へ</div>
+        <div class="policy-prose"><slot /></div>
+        <section class="policy-next" aria-labelledby="next-question">
+          <p class="eyebrow">まち全体の選択へ</p>
+          <h2 id="next-question">ほかの論点と、つなげて考える。</h2>
+          <p>
+            支援を受ける人、毎年続く費用、何を後回しにするか。別の政策も同じ条件で確かめたい。
+          </p>
+          <a href="/elections/mayor-2026/">市長選を考える7つの問いへ →</a>
+        </section>
+        <section class="policy-sources" aria-labelledby="article-sources">
+          <h2 id="article-sources">原資料を確かめる</h2>
+          <p class="small muted">
+            本文のリンクに該当箇所を記載。事実と、比較のための解釈・提案を分けて読む。
+          </p>
+          <ol>
+            {
+              sources.map((s) => (
+                <li>
+                  <>
+                    <a href={s.url}>{s.title} ↗</a>
+                    <span>
+                      取得日：
+                      {new Intl.DateTimeFormat("ja-JP", {
+                        timeZone: "Asia/Tokyo",
+                        year: "numeric",
+                        month: "2-digit",
+                        day: "2-digit",
+                      }).format(new Date(s.retrievedAt))}
+                    </span>
+                  </>
+                </li>
+              ))
+            }
+          </ol>
+          <details id="review-status">
+            <summary>この初版の確認範囲と、残っていること</summary><p>
+              公式資料との照合と数値の検算は制作側が実施した。独立した事実確認と利用者による理解の検証は未実施。政策の比較表は判断材料の整理で、効果の実証や候補者の公約一覧ではない。
+            </p><p>
+              全補正予算・議事録・契約を網羅した確認ではない。未確定の費用と、見方を更新する条件は本文末尾に記載している。
+            </p>
+          </details>
+          <div class="article-bottom">
+            <a href="/about/#corrections">数字や説明の誤りを知らせる</a><a
+              href="#article-top">冒頭に戻る ↑</a
+            >
+          </div>
+        </section>
+      </div>
+    </div>
+  </article>
+</Layout>
+<script>
+  const toc = document.querySelector<HTMLDetailsElement>(".policy-toc");
+  const wide = matchMedia("(min-width: 901px)");
+  const sync = () => {
+    if (toc) toc.open = wide.matches;
+  };
+  sync();
+  wide.addEventListener("change", sync);
+</script>

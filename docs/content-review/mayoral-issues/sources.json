@@ -1,0 +1,145 @@
+[
+  {
+    "id": "E1",
+    "title": "横浜市長選挙・2026年10月18日",
+    "url": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018_shicho.html",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018_shicho.html",
+    "sha256": "9406e145dd063521029e8b49a7db3e5d2692893dcb0bb7ab279e26e872ae7afd",
+    "retrievedAt": "2026-09-06T17:38:00.924052Z",
+    "localPath": "artifacts/mayoral-issues-sources/9406e145dd063521029e8b49a7db3e5d2692893dcb0bb7ab279e26e872ae7afd.html",
+    "textPath": "artifacts/mayoral-issues-sources/E1.txt",
+    "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  },
+  {
+    "id": "E2",
+    "title": "2026年市長選・候補者情報と選挙公報",
+    "url": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018kohosya_koho.html",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018kohosya_koho.html",
+    "sha256": "1df8d95711e1ae7b1d33dd45af02005293c67bc353ad054753efc4db1f024bd6",
+    "retrievedAt": "2026-09-06T17:38:00.940775Z",
+    "localPath": "artifacts/mayoral-issues-sources/1df8d95711e1ae7b1d33dd45af02005293c67bc353ad054753efc4db1f024bd6.html",
+    "textPath": "artifacts/mayoral-issues-sources/E2.txt",
+    "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  },
+  {
+    "id": "G1",
+    "title": "2026年8月28日市長会見記録",
+    "url": "https://www.city.yokohama.lg.jp/mayor/kishakaiken/kaikenyoshi/2026/20260828.html",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/mayor/kishakaiken/kaikenyoshi/2026/20260828.html",
+    "sha256": "29a2b60b389c8721215d01b2925d545f6f9961274119d21141e2968fbcef39a4",
+    "retrievedAt": "2026-09-06T17:38:00.933181Z",
+    "localPath": "artifacts/mayoral-issues-sources/29a2b60b389c8721215d01b2925d545f6f9961274119d21141e2968fbcef39a4.html",
+    "textPath": "artifacts/mayoral-issues-sources/G1.txt",
+    "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  },
+  {
+    "id": "G2",
+    "title": "市長の言動に関する調査報告書・訂正版",
+    "url": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/JohninSGS-R08.files/J-So-202608013-gi-2.pdf",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/JohninSGS-R08.files/J-So-202608013-gi-2.pdf",
+    "sha256": "eb4115ceabf5009c69d2b643b639060209f6d9184367689098ebd71cd64bd4d4",
+    "retrievedAt": "2026-09-06T17:38:01.089476Z",
+    "localPath": "artifacts/mayoral-issues-sources/eb4115ceabf5009c69d2b643b639060209f6d9184367689098ebd71cd64bd4d4.pdf",
+    "textPath": "artifacts/mayoral-issues-sources/G2.txt",
+    "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  },
+  {
+    "id": "F1",
+    "title": "ワンストップ財政情報",
+    "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/onestopzaisei.html",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/onestopzaisei.html",
+    "sha256": "ce93dd91ded1bb44ea9e6608cbadbc21088de8411c5004eeccd1c908ab6db874",
+    "retrievedAt": "2026-09-06T17:38:01.017325Z",
+    "localPath": "artifacts/mayoral-issues-sources/ce93dd91ded1bb44ea9e6608cbadbc21088de8411c5004eeccd1c908ab6db874.html",
+    "textPath": "artifacts/mayoral-issues-sources/F1.txt",
+    "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  },
+  {
+    "id": "F2",
+    "title": "令和8年度予算案資料",
+    "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
+    "sha256": "1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449",
+    "retrievedAt": "2026-09-06T17:38:01.145585Z",
+    "localPath": "artifacts/mayoral-issues-sources/1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449.pdf",
+    "textPath": "artifacts/mayoral-issues-sources/F2.txt",
+    "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  },
+  {
+    "id": "X1",
+    "title": "令和8年度GREEN×EXPO推進局事業計画書",
+    "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho222.pdf",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho222.pdf",
+    "sha256": "952e01df81f9a81e5a27f3f086a9a3d50d3bf30c38555094ababccb7ccc090d6",
+    "retrievedAt": "2026-09-06T17:38:01.068380Z",
+    "localPath": "artifacts/mayoral-issues-sources/952e01df81f9a81e5a27f3f086a9a3d50d3bf30c38555094ababccb7ccc090d6.pdf",
+    "textPath": "artifacts/mayoral-issues-sources/X1.txt",
+    "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  },
+  {
+    "id": "M1",
+    "title": "敬老特別乗車証のご案内",
+    "url": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/keirou.html",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/keirou.html",
+    "sha256": "f01c82263fd81988878ffde662f01589b788081c7e2772de7235d6b4c8ab1021",
+    "retrievedAt": "2026-09-06T17:38:01.108445Z",
+    "localPath": "artifacts/mayoral-issues-sources/f01c82263fd81988878ffde662f01589b788081c7e2772de7235d6b4c8ab1021.html",
+    "textPath": "artifacts/mayoral-issues-sources/M1.txt",
+    "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  },
+  {
+    "id": "M2",
+    "title": "横浜市みんなのおでかけ交通事業",
+    "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/chiikikokyo/huyasu/odekake/aratanaseido.html",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/chiikikokyo/huyasu/odekake/aratanaseido.html",
+    "sha256": "a0c54245042de4119ed635b83084ee2a1af8adf87ac0029962b43c7b27f64f8f",
+    "retrievedAt": "2026-09-06T17:38:01.143527Z",
+    "localPath": "artifacts/mayoral-issues-sources/a0c54245042de4119ed635b83084ee2a1af8adf87ac0029962b43c7b27f64f8f.html",
+    "textPath": "artifacts/mayoral-issues-sources/M2.txt",
+    "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  },
+  {
+    "id": "N1",
+    "title": "令和8年4月1日時点保育所等利用状況・補足資料",
+    "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf",
+    "sha256": "9596a87c57264c10dd98e443d98dd502f3c85767a37202238e7a5022de247d1a",
+    "retrievedAt": "2026-09-06T17:38:01.215284Z",
+    "localPath": "artifacts/mayoral-issues-sources/9596a87c57264c10dd98e443d98dd502f3c85767a37202238e7a5022de247d1a.pdf",
+    "textPath": "artifacts/mayoral-issues-sources/N1.txt",
+    "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  },
+  {
+    "id": "N2",
+    "title": "待機児童対策資料一覧",
+    "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.html",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.html",
+    "sha256": "85271e7bb4c08b69b28a010be6b0d00d10c5c6ebfa761505d1f7580cd87ff260",
+    "retrievedAt": "2026-09-06T17:38:01.182457Z",
+    "localPath": "artifacts/mayoral-issues-sources/85271e7bb4c08b69b28a010be6b0d00d10c5c6ebfa761505d1f7580cd87ff260.html",
+    "textPath": "artifacts/mayoral-issues-sources/N2.txt",
+    "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  },
+  {
+    "id": "N3",
+    "title": "令和8年度こども青少年局事業計画書",
+    "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf",
+    "sha256": "9a6bf6742ac41ff9d03a2cffd93ba675850af174d632ca3b71384272d890c97c",
+    "retrievedAt": "2026-09-06T17:38:01.638895Z",
+    "localPath": "artifacts/mayoral-issues-sources/9a6bf6742ac41ff9d03a2cffd93ba675850af174d632ca3b71384272d890c97c.pdf",
+    "textPath": "artifacts/mayoral-issues-sources/N3.txt",
+    "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  },
+  {
+    "id": "D1",
+    "title": "令和8年度教育委員会予算概要",
+    "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf",
+    "sha256": "9300c910bcca2e6b9dee56a0196eef82a357610d895b71ab498085ca1c6b276a",
+    "retrievedAt": "2026-09-06T17:38:01.594731Z",
+    "localPath": "artifacts/mayoral-issues-sources/9300c910bcca2e6b9dee56a0196eef82a357610d895b71ab498085ca1c6b276a.pdf",
+    "textPath": "artifacts/mayoral-issues-sources/D1.txt",
+    "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  }
+]

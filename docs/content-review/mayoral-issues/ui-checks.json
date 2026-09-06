@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-09-06T17:57:55.538479Z",
+  "baseURL": "http://127.0.0.1:4187",
+  "results": {
+    "verify": "passed: 18 unit tests, 37 pages, 1487 internal links and anchors",
+    "e2e": "46 passed, desktop and mobile",
+    "newArticles": "6 complete manuscripts and sources retained",
+    "narrowWidths": "320px in both themes; 200% text no overflow",
+    "accessibility": "automated axe WCAG A/AA checks: no detected violations",
+    "javascriptDisabled": "all six articles and source navigation usable",
+    "visualReview": "hub1280/390, childcare table390-night, school-shelters390-night; source PDF tables also inspected"
+  },
+  "fixes": [
+    "school-shelters Japanese bold delimiter corrected without changing meaning",
+    "responsive tables derive labels from their actual headings",
+    "long headings and grid cards wrap at 200% text"
+  ],
+  "independentReview": "not performed",
+  "humanValidation": "not performed",
+  "files": {
+    "tests/e2e/mayoral-issues.spec.ts": "64192df927f6291982016daf40a6d343734fd510c06b4c1c4109822f756a20a5",
+    "apps/web/src/components/PolicyArticle.astro": "2fa5869f77a0bdfcee5adadecfd5692c16543f39495220f13f49264824c3d5b9",
+    "apps/web/src/styles/policy-article.css": "44c0c56c5de21d82ee545fa58e25ec13ed6d118e785a8d827aeeba6f86023e09",
+    "apps/web/src/styles/global.css": "ac6ed34cec888ed56b30f58e0aa3bd5853f3a9f6e254f366b50241bb38f91089",
+    "scripts/policy-table-labels.mjs": "f72081604795c596a9c50f30ba9d0483db4a2a62b457d36a30f8e6530e5c3908",
+    "docs/content-review/publication.json": "0119fc8254c01faa75b301fce18704a17a29600efb9c5a13d5714cf483b9ed9e"
+  }
+}

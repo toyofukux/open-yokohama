@@ -1,0 +1,71 @@
+---
+import { schoolLunch } from "../../../../packages/core/policy-issues";
+---
+
+<section class="policy-feature" aria-labelledby="policy-feature-title">
+  <div class="feature-context">
+    <p class="eyebrow">政策を考える</p>
+    <span>{schoolLunch.category}</span>
+  </div>
+  <div>
+    <h2 id="policy-feature-title">
+      <a href={schoolLunch.url}>{schoolLunch.title}</a>
+    </h2>
+    <p>{schoolLunch.summary}</p>
+    <p>
+      <a href="/elections/mayor-2026/">横浜市長選を考える7つの問いを読む →</a>
+    </p>
+    <a class="feature-link" href={schoolLunch.url}
+      >選択肢と根拠を読む <span aria-hidden="true">→</span></a
+    >
+  </div>
+</section>
+
+<style>
+  .policy-feature {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 32px;
+    padding: 36px;
+    border-block: 1px solid var(--line);
+    background: var(--surface);
+    margin: 32px 0;
+  }
+  .feature-context span {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.45rem, 3vw, 2rem);
+  }
+  h2 a {
+    text-decoration: none;
+  }
+  p {
+    max-width: 42em;
+  }
+  .feature-link {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  .feature-link span {
+    margin-left: 20px;
+  }
+  @media (max-width: 700px) {
+    .policy-feature {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      padding: 24px;
+    }
+    .feature-context {
+      display: flex;
+      gap: 20px;
+      align-items: baseline;
+    }
+    .eyebrow {
+      margin: 0;
+    }
+  }
+</style>

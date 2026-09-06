@@ -1,0 +1,31 @@
+---
+import PolicyArticle from "../../components/PolicyArticle.astro";
+import {
+  Content,
+  getHeadings,
+  frontmatter,
+} from "../../../../../docs/content-review/mayoral-issues/school-shelters.md";
+import inventory from "../../../../../docs/content-review/mayoral-issues/sources.json";
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
+const version = createHash("sha256")
+  .update(
+    readFileSync(
+      new URL(
+        "../../../../../docs/content-review/mayoral-issues/school-shelters.md",
+        import.meta.url,
+      ),
+    ),
+  )
+  .digest("hex");
+const sources = inventory.filter((s) => frontmatter.sourceIds.includes(s.id));
+---
+
+<PolicyArticle
+  title={frontmatter.title}
+  summary={frontmatter.summary}
+  category={frontmatter.category}
+  headings={getHeadings()}
+  version={version}
+  sources={sources}><Content /></PolicyArticle
+>

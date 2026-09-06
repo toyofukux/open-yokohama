@@ -2,7 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 import { wards, metrics } from "../data";
 import { issues } from "../../../../packages/core/issues";
+import { policyIssues } from "../../../../packages/core/policy-issues";
 const entries = [
+  ...policyIssues.map((i) => ({
+    title: i.title,
+    description: i.summary + " " + i.category,
+    url: i.url,
+  })),
+  {
+    title: "横浜市長選を考える7つの問い",
+    description: "2026年 市政 財政 給食 GREEN×EXPO 交通 保育 防災",
+    url: "/elections/mayor-2026/",
+  },
   ...wards.map((w) => ({
     title: w.name + "の人口と暮らしのデータ",
     description: "人口・世帯数・人口密度・月次推移・地域比較",
@@ -33,7 +44,7 @@ const entries = [
     >
       知りたいことを探す。
     </h1><p class="lede">
-      区名や「人口」「世帯」「密度」などの言葉で探せます。
+      区名や「給食」「人口」「世帯」などの言葉で探せます。
     </p><form role="search" id="search-form">
       <label for="query">区名・気になる言葉</label><input
         type="search"
@@ -103,7 +114,7 @@ const entries = [
         const p = document.createElement("p");
         p.className = "note";
         p.textContent =
-          "見つかりませんでした。区名や「人口」「世帯」など、短い言葉で試してください。予算・交通などのデータは現在収集準備中です。";
+          "見つかりませんでした。区名や「人口」「世帯」など、短い言葉で試してください。政策の記事は「暮らしの問い」の一覧からも探せます。";
         results.append(p);
       }
     }

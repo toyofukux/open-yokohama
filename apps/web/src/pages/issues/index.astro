@@ -1,5 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import PolicyFeature from "../../components/PolicyFeature.astro";
+import { mayoralIssues } from "../../../../../packages/core/policy-issues";
 import { issues } from "../../../../../packages/core/issues";
 ---
 
@@ -11,7 +13,26 @@ import { issues } from "../../../../../packages/core/issues";
       QUESTIONS ABOUT OUR CITY
     </p><h1 class="page-title">身近な問いから、まちを知る。</h1><p class="lede">
       まず要点をつかんで、気になったら詳しく。数字の根拠までたどれます。
-    </p><div class="cards section">
+    </p><PolicyFeature />
+    <h2>横浜の政策を、選択肢から考える</h2>
+    <p>
+      <a href="/elections/mayor-2026/">市長選の7論点と、読む順番を見る →</a>
+    </p>
+    <div class="cards section">
+      {
+        mayoralIssues.map((issue) => (
+          <a class="card card-link" href={issue.url}>
+            <>
+              <span class="tag">{issue.category}</span>
+              <h3>{issue.title}</h3>
+              <p>{issue.summary}</p>
+              <span class="card-bottom">選択肢と根拠を読む →</span>
+            </>
+          </a>
+        ))
+      }
+    </div>
+    <h2>まちの変化を、数字から確かめる</h2><div class="cards section">
       {
         issues.map((issue) => (
           <a class="card card-link" href={`/issues/${issue.slug}/`}>
@@ -27,7 +48,7 @@ import { issues } from "../../../../../packages/core/issues";
         ))
       }
     </div><div class="note">
-      公開βでは、人口・世帯・人口密度から始めています。予算、子育て、交通、防災は、根拠の収集と確認ができたものから追加します。
+      政策の選択と、地域の統計をそれぞれの問いから確かめられます。政策間の財源配分の比較は、今後の問いとして調査を進めます。
     </div>
   </div></Layout
 >

@@ -1,0 +1,36 @@
+{
+  "checkedAt": "2026-09-06T17:15:48.491778+00:00",
+  "result": "passed",
+  "versions": {
+    "apps/web/src/pages/issues/school-lunch.astro": "8373ba63b62a9c7ba55f946a9825a1d6f2b3c7db0bcdfc257f94380f767ec2a4",
+    "apps/web/src/styles/policy-article.css": "a1b62945586ffa598ccb8267f7561124b8cfb41b5e1e3eb833221e92c8dc49c5",
+    "apps/web/src/styles/global.css": "741f2da06d6525bb350a3fe6450334154c26c9d77d28bedb6ac5c2dcc2c6451d",
+    "scripts/school-lunch-markdown.mjs": "5abba5fa6a0bd31617dfc53d0ba650ec2e7a8231e6cbc8e13b73affec006a533",
+    "packages/core/policy-issues.ts": "06954a1322f92d202b0539b2545e71b0ea6ee674fbfcd1e04dd1e1b1b0ad9d32",
+    "tests/e2e/school-lunch.spec.ts": "0cebc290534f9eb118499cbfa738c9352f986465b6e2f55dce1dafc2beb1c100",
+    "apps/web/dist/issues/school-lunch/index.html": "ef002f9ee0b97355c0423d1768e93c4f4faccdf86b0d8054d5b5ba17f2958dcd",
+    "docs/content-review/school-lunch/DRAFT.md": "9472c8ed2d9950b4f7dc85300b58465eae74f2a02c2877441fd86e12a7b9220e",
+    "docs/content-review/school-lunch/evidence.json": "71ab3b24a4ce79321dda11e58e532a69d480a09022a9e6455e2d4e98a94abb60"
+  },
+  "commands": {
+    "pnpm verify": "passed: 18 unit tests, 30 pages, 1340 internal links/anchors",
+    "TEST_BASE_URL=http://127.0.0.1:4187 pnpm exec playwright test": "28 passed; 8 school-lunch cases",
+    "python3 docs/content-review/school-lunch/check.py": "passed"
+  },
+  "coverage": [
+    "Original manuscript passages/table cells/references preserved",
+    "Home/index/search navigation",
+    "TOC targets and native details operation",
+    "No-JavaScript article/comparison/review disclosure",
+    "1280/390/320px in day/night themes, axe WCAG A/AA violations 0",
+    "200% root font size at 390/320px without page overflow",
+    "Author visual inspection of desktop, mobile comparison and night-theme screenshots"
+  ],
+  "limitations": [
+    "Local built-site static server, not deployed Cloudflare verification",
+    "Astro preview exited before becoming ready; fallback static server used",
+    "Independent fact check and user value/comprehension research not performed",
+    "Outline accepted by user; not a record of detailed factual approval or site-wide layout adoption"
+  ],
+  "artifacts": "artifacts/school-lunch-ui/"
+}

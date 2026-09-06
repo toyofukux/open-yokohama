@@ -1,0 +1,1677 @@
+{
+  "version": 1,
+  "articles": [
+    {
+      "id": "school-lunch",
+      "contentFiles": [
+        "docs/content-review/school-lunch/DRAFT.md",
+        "apps/web/src/pages/issues/school-lunch.astro"
+      ],
+      "sources": [
+        {
+          "id": "S1",
+          "title": "横浜市・学校給食費",
+          "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/sesaku/kyusyoku/kyushokuhi.html",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/sesaku/kyusyoku/kyushokuhi.html",
+          "retrievedAt": "2026-09-06T16:41:31.836183Z",
+          "sha256": "defc00a837f4c55b5bf19149f1dd23806f3825f285b810bcfc41d923df305127",
+          "bytes": 53214,
+          "contentType": "text/html",
+          "localPath": "artifacts/school-lunch-sources/defc00a837f4c55b5bf19149f1dd23806f3825f285b810bcfc41d923df305127.html",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "S2",
+          "title": "文部科学省・学校給食費の抜本的な負担軽減",
+          "url": "https://www.mext.go.jp/a_menu/sports/syokuiku/kyu-lighten.html",
+          "resolvedUrl": "https://www.mext.go.jp/a_menu/sports/syokuiku/kyu-lighten.html",
+          "retrievedAt": "2026-09-06T16:41:31.789576Z",
+          "sha256": "ce41764223c504fdb8e9494c5c001421c3bbc384f5dc7c6e2f19a37226583bd8",
+          "bytes": 14000,
+          "contentType": "text/html",
+          "localPath": "artifacts/school-lunch-sources/ce41764223c504fdb8e9494c5c001421c3bbc384f5dc7c6e2f19a37226583bd8.html",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "S3",
+          "title": "横浜市・令和8年度就学援助のお知らせ",
+          "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.files/0119_20260403.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.files/0119_20260403.pdf",
+          "retrievedAt": "2026-09-06T16:41:32.085954Z",
+          "sha256": "36268c3e2266d5b5ec9703e6c41fe33bd4241ea663e19ba4aa5821e60527d66c",
+          "bytes": 1297735,
+          "contentType": "application/pdf",
+          "localPath": "artifacts/school-lunch-sources/36268c3e2266d5b5ec9703e6c41fe33bd4241ea663e19ba4aa5821e60527d66c.pdf",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "S4",
+          "title": "横浜市・令和8年度学校給食物資購入費事業計画書",
+          "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf",
+          "retrievedAt": "2026-09-06T16:41:32.061038Z",
+          "sha256": "e47b8ed376800ba809181c9484dc7e1c25632c7594a7e72d830111b0dfe7ac6f",
+          "bytes": 200538,
+          "contentType": "application/pdf",
+          "localPath": "artifacts/school-lunch-sources/e47b8ed376800ba809181c9484dc7e1c25632c7594a7e72d830111b0dfe7ac6f.pdf",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "S5",
+          "title": "横浜市会・2026年6月8日特別委員会資料",
+          "url": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/TokubetuDaiR08.files/T-toku-20260608-ss-2.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/TokubetuDaiR08.files/T-toku-20260608-ss-2.pdf",
+          "retrievedAt": "2026-09-06T16:41:32.083251Z",
+          "sha256": "60d86c0394937321d2a0f8642866f7339b131dc87afe7df6d5c24635deedd329",
+          "bytes": 2302167,
+          "contentType": "application/pdf",
+          "localPath": "artifacts/school-lunch-sources/60d86c0394937321d2a0f8642866f7339b131dc87afe7df6d5c24635deedd329.pdf",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "S6",
+          "title": "横浜市・市民の声38000081",
+          "url": "https://cgi.city.yokohama.lg.jp/shimin/kouchou/search/data/38000081.html",
+          "resolvedUrl": "https://cgi.city.yokohama.lg.jp/shimin/kouchou/search/data/38000081.html",
+          "retrievedAt": "2026-09-06T16:41:31.967847Z",
+          "sha256": "6e53a4dca97807ef73a5f48a4771d0867f6e3ce1c2f9a78d81c1c69440d40654",
+          "bytes": 7966,
+          "contentType": "text/html",
+          "localPath": "artifacts/school-lunch-sources/6e53a4dca97807ef73a5f48a4771d0867f6e3ce1c2f9a78d81c1c69440d40654.html",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "S7",
+          "title": "横浜市会・2026年5月18日教育委員会資料",
+          "url": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/JohninKK-R08.files/J-Ko-20260518-ky-1.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/JohninKK-R08.files/J-Ko-20260518-ky-1.pdf",
+          "retrievedAt": "2026-09-06T16:41:32.530715Z",
+          "sha256": "8d5cc8011356ae63025b89cd9a8a343f1a9efa131a3f881d60cbf2c252360ebe",
+          "bytes": 5663480,
+          "contentType": "application/pdf",
+          "localPath": "artifacts/school-lunch-sources/8d5cc8011356ae63025b89cd9a8a343f1a9efa131a3f881d60cbf2c252360ebe.pdf",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "S8",
+          "title": "横浜市・就学援助制度",
+          "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.html",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.html",
+          "retrievedAt": "2026-09-06T16:41:32.177530Z",
+          "sha256": "95fab353cf4cc51948460924d5e912c64048e506668664e073ea09ec1c0e70f0",
+          "bytes": 49662,
+          "contentType": "text/html",
+          "localPath": "artifacts/school-lunch-sources/95fab353cf4cc51948460924d5e912c64048e506668664e073ea09ec1c0e70f0.html",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "C1",
+          "title": "候補・小児医療費助成",
+          "url": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/kenko-iryo/iryohijosei/shoni/",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/kenko-iryo/iryohijosei/shoni/",
+          "retrievedAt": "2026-09-06T16:41:32.197818Z",
+          "sha256": "cd89015ab75bdd142570597c9de6124c83cff2349402eec7798971207c678fb1",
+          "bytes": 41536,
+          "contentType": "text/html",
+          "localPath": "artifacts/school-lunch-sources/cd89015ab75bdd142570597c9de6124c83cff2349402eec7798971207c678fb1.html",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "C2",
+          "title": "候補・地域公共交通計画",
+          "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/toshikotsu/plan/chiki-kotsu-plan.html",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/toshikotsu/plan/chiki-kotsu-plan.html",
+          "retrievedAt": "2026-09-06T16:41:32.195435Z",
+          "sha256": "4b0e1108c69fc88af24f76f017b7ecb79d9c1ff78a67948aa16181caa8f8934e",
+          "bytes": 46522,
+          "contentType": "text/html",
+          "localPath": "artifacts/school-lunch-sources/4b0e1108c69fc88af24f76f017b7ecb79d9c1ff78a67948aa16181caa8f8934e.html",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        }
+      ],
+      "article": {
+        "contentHash": "1cc19c027a7ab436d81f7cc03d02a7866ea8559bc82999c3881e8ced87495bcd",
+        "claims": [
+          {
+            "id": "F01",
+            "kind": "fact",
+            "text": "市立小学校段階の保護者負担0円、中学校・義務教育学校後期は通常フルセット330円／食",
+            "citations": [
+              "S1"
+            ]
+          },
+          {
+            "id": "F02",
+            "kind": "fact",
+            "text": "中学校の就学援助認定者は給食費支払い不要",
+            "citations": [
+              "S3"
+            ]
+          },
+          {
+            "id": "F03",
+            "kind": "fact",
+            "text": "国の新制度は公立小学校段階、通常完全給食5,200円／月、11か月。自治体への食材費支援",
+            "citations": [
+              "S2"
+            ]
+          },
+          {
+            "id": "F04",
+            "kind": "fact",
+            "text": "小学校の食材費6,141円／月、国基準5,200円、市補填941円。中学校は市が110円／日を支援",
+            "citations": [
+              "S7"
+            ]
+          },
+          {
+            "id": "F05",
+            "kind": "fact",
+            "text": "市の上乗せ支援に2026年度は国の物価高対策の臨時交付金を活用",
+            "citations": [
+              "S1",
+              "S7"
+            ]
+          },
+          {
+            "id": "F06",
+            "kind": "fact",
+            "text": "初回申請等は審査中支払い後に認定で返金、前年末対象者は結果待ちも支払い不要",
+            "citations": [
+              "S3"
+            ]
+          },
+          {
+            "id": "F07",
+            "kind": "fact",
+            "text": "指定都市の国への提案事項案に中学校を含む制度化と安定財源を記載",
+            "citations": [
+              "S5"
+            ]
+          },
+          {
+            "id": "F08",
+            "kind": "fact",
+            "text": "中学校給食物資購入事業には給食室改修中の小学校への供給分を含む",
+            "citations": [
+              "S4"
+            ]
+          },
+          {
+            "id": "D01",
+            "kind": "fact",
+            "text": "330円×20食＝6,600円",
+            "citations": [
+              "S1"
+            ]
+          },
+          {
+            "id": "I01",
+            "kind": "analysis",
+            "text": "判断の中心を支援対象・負担の重さ・継続財源に置く",
+            "citations": [
+              "S1",
+              "S3",
+              "S7"
+            ]
+          },
+          {
+            "id": "I02",
+            "kind": "analysis",
+            "text": "既存の援助対象者に同額の現金が上乗せされるとは言えない",
+            "citations": [
+              "S1",
+              "S3"
+            ]
+          },
+          {
+            "id": "I03",
+            "kind": "analysis",
+            "text": "市独自支援と市税のみを同一視せず、食材費と総費用を分ける",
+            "citations": [
+              "S1",
+              "S2",
+              "S7"
+            ]
+          },
+          {
+            "id": "I04",
+            "kind": "analysis",
+            "text": "支援対象だけでなく立替・申請も論点。非申請の規模は未確認",
+            "citations": [
+              "S3"
+            ]
+          },
+          {
+            "id": "I05",
+            "kind": "analysis",
+            "text": "現状維持・対象を絞る援助拡充・一律0円の比較",
+            "citations": [
+              "S1",
+              "S3",
+              "S7"
+            ]
+          },
+          {
+            "id": "I06",
+            "kind": "analysis",
+            "text": "国への要請は市の各選択と併用できる。提案と決定を分ける",
+            "citations": [
+              "S5"
+            ]
+          },
+          {
+            "id": "I07",
+            "kind": "analysis",
+            "text": "追加予算は総予算では分からず、既存の家庭負担・公費・事務の変化を確認する",
+            "citations": [
+              "S1",
+              "S3",
+              "S4",
+              "S7"
+            ]
+          },
+          {
+            "id": "I08",
+            "kind": "analysis",
+            "text": "価値によって選択が異なり、対象・開始時期・追加費用・継続財源で説明を評価する",
+            "citations": [
+              "S1",
+              "S3",
+              "S4",
+              "S7"
+            ]
+          }
+        ]
+      },
+      "review": {
+        "contentHash": "1cc19c027a7ab436d81f7cc03d02a7866ea8559bc82999c3881e8ced87495bcd",
+        "reviewer": "Codex author; self-review documented in school-lunch/REVIEW.md; not independent",
+        "reviewedAt": "2026-09-06T17:31:50.018298Z",
+        "findings": [
+          {
+            "claimId": "F01",
+            "verdict": "supported",
+            "citationIds": [
+              "S1"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。2026年度。特別支援学校小学部以外・私立等へ外挿しない"
+          },
+          {
+            "claimId": "F02",
+            "verdict": "supported",
+            "citationIds": [
+              "S3"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。制度の説明。受給者数や効果の実測ではない"
+          },
+          {
+            "claimId": "F03",
+            "verdict": "supported",
+            "citationIds": [
+              "S2"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。2026年4月開始。他の既存援助制度を否定しない"
+          },
+          {
+            "claimId": "F04",
+            "verdict": "supported",
+            "citationIds": [
+              "S7"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。2026-05-18説明。食材費であり給食事業総費用ではない"
+          },
+          {
+            "claimId": "F05",
+            "verdict": "supported",
+            "citationIds": [
+              "S1",
+              "S7"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。将来の財源を保証しない"
+          },
+          {
+            "claimId": "F06",
+            "verdict": "supported",
+            "citationIds": [
+              "S3"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。2026年度。非申請者の規模や動機を推定しない"
+          },
+          {
+            "claimId": "F07",
+            "verdict": "supported",
+            "citationIds": [
+              "S5"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。案。国の決定・要請済み・市の確定公約とはしない"
+          },
+          {
+            "claimId": "F08",
+            "verdict": "supported",
+            "citationIds": [
+              "S4"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。2026年度当初計画。決算額・無償化追加額ではない"
+          },
+          {
+            "claimId": "D01",
+            "verdict": "supported",
+            "citationIds": [
+              "S1"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。20食は編集上の仮定。毎月の請求額・年間負担ではない"
+          },
+          {
+            "claimId": "I01",
+            "verdict": "supported",
+            "citationIds": [
+              "S1",
+              "S3",
+              "S7"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I02",
+            "verdict": "supported",
+            "citationIds": [
+              "S1",
+              "S3"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I03",
+            "verdict": "supported",
+            "citationIds": [
+              "S1",
+              "S2",
+              "S7"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I04",
+            "verdict": "supported",
+            "citationIds": [
+              "S3"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I05",
+            "verdict": "supported",
+            "citationIds": [
+              "S1",
+              "S3",
+              "S7"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I06",
+            "verdict": "supported",
+            "citationIds": [
+              "S5"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I07",
+            "verdict": "supported",
+            "citationIds": [
+              "S1",
+              "S3",
+              "S4",
+              "S7"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I08",
+            "verdict": "supported",
+            "citationIds": [
+              "S1",
+              "S3",
+              "S4",
+              "S7"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          }
+        ],
+        "humanApproval": {
+          "approver": "user: reviewed first version and explicitly authorized production publication",
+          "contentHash": "1cc19c027a7ab436d81f7cc03d02a7866ea8559bc82999c3881e8ced87495bcd",
+          "approvedAt": "2026-09-06T17:31:50.018298Z"
+        }
+      },
+      "authorization": {
+        "kind": "user_publication_instruction",
+        "instruction": "本番に出してよいです。",
+        "scope": "ユーザーが確認した給食費ページ初版の本番公開。独立した事実確認の完了を意味しない。",
+        "recordedAt": "2026-09-06T17:31:50.018298Z"
+      },
+      "route": "/issues/school-lunch/"
+    },
+    {
+      "id": "city-governance",
+      "route": "/issues/city-governance/",
+      "manuscriptPath": "docs/content-review/mayoral-issues/city-governance.md",
+      "contentFiles": [
+        "docs/content-review/mayoral-issues/city-governance.md",
+        "apps/web/src/pages/issues/city-governance.astro",
+        "apps/web/src/styles/global.css",
+        "apps/web/src/layouts/Layout.astro",
+        "apps/web/src/components/PolicyArticle.astro",
+        "apps/web/src/styles/policy-article.css",
+        "scripts/policy-table-labels.mjs",
+        "apps/web/astro.config.mjs",
+        "docs/content-review/mayoral-issues/sources.json"
+      ],
+      "sources": [
+        {
+          "id": "G1",
+          "title": "2026年8月28日市長会見記録",
+          "url": "https://www.city.yokohama.lg.jp/mayor/kishakaiken/kaikenyoshi/2026/20260828.html",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/mayor/kishakaiken/kaikenyoshi/2026/20260828.html",
+          "sha256": "29a2b60b389c8721215d01b2925d545f6f9961274119d21141e2968fbcef39a4",
+          "retrievedAt": "2026-09-06T17:38:00.933181Z",
+          "localPath": "artifacts/mayoral-issues-sources/29a2b60b389c8721215d01b2925d545f6f9961274119d21141e2968fbcef39a4.html",
+          "textPath": "artifacts/mayoral-issues-sources/G1.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        },
+        {
+          "id": "G2",
+          "title": "市長の言動に関する調査報告書・訂正版",
+          "url": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/JohninSGS-R08.files/J-So-202608013-gi-2.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/JohninSGS-R08.files/J-So-202608013-gi-2.pdf",
+          "sha256": "eb4115ceabf5009c69d2b643b639060209f6d9184367689098ebd71cd64bd4d4",
+          "retrievedAt": "2026-09-06T17:38:01.089476Z",
+          "localPath": "artifacts/mayoral-issues-sources/eb4115ceabf5009c69d2b643b639060209f6d9184367689098ebd71cd64bd4d4.pdf",
+          "textPath": "artifacts/mayoral-issues-sources/G2.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        }
+      ],
+      "article": {
+        "contentHash": "467ec2d1f5bd9d7f0f1239644db6cd2bb2c6ca1456ebb6571fd276ae49edb6d1",
+        "claims": [
+          {
+            "id": "city-governance-01",
+            "kind": "analysis",
+            "text": "## 政策を進める力と、権力を点検する仕組みを一緒に見る\n\n市長を選ぶとき、実現してほしい政策は大切だ。同時に、その政策を担う職員が問題を報告できるか、トップの判断に誤りがあれば止められるかも、市政の質に関わる。\n\n今回考えたいのは、**個人の責任をどう評価するかと、誰が市長になっても働く点検の仕組みをどう作るか**だ。前者への判断だけで、後者が自動的に解決するわけではない。\n\nこの記事では、公式の調査報告書と会見を出発点にする。候補者の人格や、まだ公表されていない公約を推測して評価するものではない。",
+            "citations": [
+              "G1",
+              "G2"
+            ]
+          },
+          {
+            "id": "city-governance-02",
+            "kind": "analysis",
+            "text": "## いま確認できること\n\n市長の言動に関する調査報告書は、個別事項を調べたうえで、組織への影響を含めた総合評価として重大なパワーハラスメントがあったと認定した。一方、申し立てられた事実の一部は認定に至らなかったと記している。すべての申し立てを一括して事実と扱うことはできない。[調査報告書・本文82〜83ページ（PDF87〜88ページ）](https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/JohninSGS-R08.files/J-So-202608013-gi-2.pdf#page=87)\n\n山中竹春市長は2026年8月28日の会見で、自身の言動によって信頼を損なったことを謝罪し、市長職を辞する決断を表明した。これはその日の本人の説明であり、その後の出馬や選挙結果を意味しない。[市長会見・冒頭発言](https://www.city.yokohama.lg.jp/mayor/kishakaiken/kaikenyoshi/2026/20260828.html)\n\n調査報告書による認定、本人の説明、司法の判断はそれぞれ異なる。この記事は報告書の内容を伝えており、裁判で責任が確定したという説明はしていない。",
+            "citations": [
+              "G1",
+              "G2"
+            ]
+          },
+          {
+            "id": "city-governance-03",
+            "kind": "analysis",
+            "text": "## 「再発させない」を、実行できる約束に変える\n\n報告書は、市長等の特別職を対象に含める条例、独立した通報窓口、相談者への不利益な扱いの禁止、外部の調査体制などを提言している。**提言があることと、その仕組みが制定・運用されたことは別**だ。[調査報告書・本文93〜94ページ（PDF98〜99ページ）](https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/JohninSGS-R08.files/J-So-202608013-gi-2.pdf#page=98)\n\n公約を読むときは、「ハラスメントを許さない」という姿勢から一歩進み、誰が相談を受け、誰が調査を始め、誰に結果を伝えるのかを見ると比較しやすい。トップ自身が対象になった場合の手順が、特に重要な確認点になる。",
+            "citations": [
+              "G2"
+            ]
+          },
+          {
+            "id": "city-governance-04",
+            "kind": "proposal",
+            "text": "## どこに力を入れるか\n\n次の三つは、組み合わせられる取組だ。ここでは施策の評価軸として整理する。\n\n| 重点 | 期待する働き | 費用・弱点として確認すること |\n| --- | --- | --- |\n| 研修と日常のマネジメント改善 | 不適切な言動を防ぎ、職員が問題を話せる職場を作る | 受講しただけで成果としない。研修時間、相談への対応、職員の受け止めを確かめる |\n| 独立した相談・調査体制 | 対象者の地位に左右されず、早く調査を始める | 専門家と事務局の継続費用、任命方法、調査への協力、秘密の保護を具体化する |\n| 議会と市民への進捗公開 | 再発防止策が実行されたかを外から確かめる | 公開担当者の負担が生じる。個人が特定される情報と、公開すべき進捗を分ける |\n\nこれは各案の効果を実証した順位表ではない。研修だけ、窓口だけ、公開だけで十分かという弱点を、約束の段階から点検するための比較だ。",
+            "citations": [
+              "G1",
+              "G2"
+            ]
+          },
+          {
+            "id": "city-governance-05",
+            "kind": "analysis",
+            "text": "## 費用より先に、権限が働くかを確かめる\n\nこの初版では、新しい窓口や調査組織の年間費用を算定していない。「少額でできる」「必ず行政コストが下がる」とは言えない。\n\n比較に必要なのは、常設する人員、外部専門家への支払い、調査が起きた場合の追加費用だ。そのうえで、対象者が調査を妨げられないか、相談者を守れるかを見る。支出の小ささだけでは、仕組みの良し悪しを測れない。",
+            "citations": [
+              "G1",
+              "G2"
+            ]
+          },
+          {
+            "id": "city-governance-06",
+            "kind": "proposal",
+            "text": "## 次の市政に、何を確かめたいか\n\n- 就任後、いつまでに何を制定・改善し、誰が進捗を報告するか。\n- 市長本人が調査対象になった場合、調査開始や委員選任は誰が担うか。\n- 相談が少ないとき、「問題がない」のか「相談できない」のかをどう見分けるか。\n\n相談件数だけで良し悪しを決めるのは難しい。窓口への信頼が高まり、相談が増える可能性もある。処理までの時間や職員の認識と合わせて見る、というのがここでの提案だ。",
+            "citations": [
+              "G1",
+              "G2"
+            ]
+          },
+          {
+            "id": "city-governance-07",
+            "kind": "analysis",
+            "text": "## 何が分かれば、見方を更新するか\n\n条例や運用規程が整ったら、約束の比較から実施状況の確認へ進める。独立性、不利益な扱いの防止、調査結果の扱いが具体化しているかを点検する。\n\n反対に、すでに同等の仕組みがあり十分に機能していると分かれば、新設よりも利用されない原因の改善が主な問いになる。初版では、その制度運用の全体像と独立した聞き取りは未確認だ。",
+            "citations": [
+              "G1",
+              "G2"
+            ]
+          }
+        ]
+      },
+      "review": {
+        "contentHash": "467ec2d1f5bd9d7f0f1239644db6cd2bb2c6ca1456ebb6571fd276ae49edb6d1",
+        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
+        "reviewedAt": "2026-09-06T17:57:54.390464Z",
+        "findings": [
+          {
+            "claimId": "city-governance-01",
+            "verdict": "supported",
+            "citationIds": [
+              "G1",
+              "G2"
+            ],
+            "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 政策を進める力と、権力を点検する仕組みを一緒に見る"
+          },
+          {
+            "claimId": "city-governance-02",
+            "verdict": "supported",
+            "citationIds": [
+              "G1",
+              "G2"
+            ],
+            "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## いま確認できること"
+          },
+          {
+            "claimId": "city-governance-03",
+            "verdict": "supported",
+            "citationIds": [
+              "G2"
+            ],
+            "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 「再発させない」を、実行できる約束に変える"
+          },
+          {
+            "claimId": "city-governance-04",
+            "verdict": "supported",
+            "citationIds": [
+              "G1",
+              "G2"
+            ],
+            "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## どこに力を入れるか"
+          },
+          {
+            "claimId": "city-governance-05",
+            "verdict": "supported",
+            "citationIds": [
+              "G1",
+              "G2"
+            ],
+            "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 費用より先に、権限が働くかを確かめる"
+          },
+          {
+            "claimId": "city-governance-06",
+            "verdict": "supported",
+            "citationIds": [
+              "G1",
+              "G2"
+            ],
+            "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 次の市政に、何を確かめたいか"
+          },
+          {
+            "claimId": "city-governance-07",
+            "verdict": "supported",
+            "citationIds": [
+              "G1",
+              "G2"
+            ],
+            "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 何が分かれば、見方を更新するか"
+          }
+        ],
+        "humanApproval": {
+          "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+          "contentHash": "467ec2d1f5bd9d7f0f1239644db6cd2bb2c6ca1456ebb6571fd276ae49edb6d1",
+          "approvedAt": "2026-09-06T17:57:54.390464Z"
+        }
+      },
+      "authorization": {
+        "kind": "user_publication_instruction",
+        "mode": "delegated_creation_and_publication",
+        "humanContentReview": false,
+        "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
+        "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
+        "recordedAt": "2026-09-06T17:57:54.390464Z"
+      },
+      "states": {
+        "implementation": "prepared",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide"
+      }
+    },
+    {
+      "id": "city-budget",
+      "route": "/issues/city-budget/",
+      "manuscriptPath": "docs/content-review/mayoral-issues/city-budget.md",
+      "contentFiles": [
+        "docs/content-review/mayoral-issues/city-budget.md",
+        "apps/web/src/pages/issues/city-budget.astro",
+        "apps/web/src/styles/global.css",
+        "apps/web/src/layouts/Layout.astro",
+        "apps/web/src/components/PolicyArticle.astro",
+        "apps/web/src/styles/policy-article.css",
+        "scripts/policy-table-labels.mjs",
+        "apps/web/astro.config.mjs",
+        "docs/content-review/mayoral-issues/sources.json"
+      ],
+      "sources": [
+        {
+          "id": "F1",
+          "title": "ワンストップ財政情報",
+          "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/onestopzaisei.html",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/onestopzaisei.html",
+          "sha256": "ce93dd91ded1bb44ea9e6608cbadbc21088de8411c5004eeccd1c908ab6db874",
+          "retrievedAt": "2026-09-06T17:38:01.017325Z",
+          "localPath": "artifacts/mayoral-issues-sources/ce93dd91ded1bb44ea9e6608cbadbc21088de8411c5004eeccd1c908ab6db874.html",
+          "textPath": "artifacts/mayoral-issues-sources/F1.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        },
+        {
+          "id": "F2",
+          "title": "令和8年度予算案資料",
+          "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
+          "sha256": "1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449",
+          "retrievedAt": "2026-09-06T17:38:01.145585Z",
+          "localPath": "artifacts/mayoral-issues-sources/1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449.pdf",
+          "textPath": "artifacts/mayoral-issues-sources/F2.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        }
+      ],
+      "article": {
+        "contentHash": "5abe13a16e799010dad80ed12d1113a286ce138bc33584a35c87d6c3bd685b7d",
+        "claims": [
+          {
+            "id": "city-budget-01",
+            "kind": "analysis",
+            "text": "## 「できるか」の前に、何を続けるお金かをそろえる\n\n給食費の支援、地域の交通、防災、まちの整備。どれにも使う理由がある。選挙で知りたいのは、個々の政策への賛否に加え、**限られた財源を何に向け、何を後回しにするか**だ。\n\nその比較では、事業全体の金額より「今の制度から変えると、市が追加でいくら負担するか」が出発点になる。毎年続く支出には、翌年以降の財源も必要になる。\n\nこのページは配分を考える入口だ。各政策の正味追加費用をそろえた配分表は、まだ作れていない。",
+            "citations": [
+              "F1",
+              "F2"
+            ]
+          },
+          {
+            "id": "city-budget-02",
+            "kind": "analysis",
+            "text": "## 2兆933億円を、そのまま配り直せるわけではない\n\n2026年度の横浜市の一般会計予算は**2兆933億円**。特別会計・公営企業会計を含む全会計では4兆700億円だ。これらは予算規模であり、新規政策のために余っているお金ではない。[市の財政情報「2 予算」](https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/onestopzaisei.html)\n\nまた、市は近年、減債基金の臨時的な活用などで行政サービスの水準を維持しており、財政の持続性に課題があると説明している。これは市の中長期的な評価であり、ただちに支払いができないという意味ではない。[同「10 まとめ」](https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/onestopzaisei.html)\n\n予算の大きさだけを見て「少し削れば足りる」とも、見通しの厳しさだけを見て「何もできない」とも結論づけられない。変えられる支出と財源を、具体的な事業まで下りて確かめる必要がある。",
+            "citations": [
+              "F1"
+            ]
+          },
+          {
+            "id": "city-budget-03",
+            "kind": "analysis",
+            "text": "## 今年を埋めるお金と、毎年続くお金\n\n2026年度予算案の説明資料は、減債基金を臨時に100億円活用する想定でも、編成の出発点では400億円の収支不足があったと記す。対応には税収等の見込み直し、事業見直し、財政調整基金による200億円の年度間調整、土地売却益40億円の活用などが含まれる。**編成時の不足額は、成立した予算の赤字額ではない。**[予算案資料・本文32ページ（PDF34ページ）](https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf#page=34)\n\n土地を売った収入と、毎年入る税収を同じように扱うことはできない。基金の活用も、残高や今後の収支を確認する必要がある。この資料の金額を、新しい恒久事業にそのまま使える余剰と数えないことが大切だ。",
+            "citations": [
+              "F2"
+            ]
+          },
+          {
+            "id": "city-budget-04",
+            "kind": "proposal",
+            "text": "## 配分の方針は、三つの方向から比べられる\n\n| 方針 | 優先すること | 一緒に示してほしい条件 |\n| --- | --- | --- |\n| 広く家計負担を軽くする | 対象を絞らず、支援を分かりやすく届ける | 毎年の追加負担と財源。すでに支援を受ける人との給付の重複を確認する |\n| 困りごとが大きい人・地域に厚くする | 同じ財源を、支援の必要性が高いところへ向ける | 対象を決める基準と申請負担。境界にいる人や利用できない人をどう扱うか |\n| 施設更新や将来の備えを厚くする | 老朽化・災害への対応や将来の負担軽減を重視する | 今のサービス改善を何年待つのか。整備後の維持費と、先送りする損失を確認する |\n\nどれか一つを全予算に当てはめる必要はない。給食は広く支え、交通は不便な地域に厚く、防災は危険度で順序を決めるなど、政策ごとに組み合わせる考え方もある。\n\nこれは配分の考え方の比較であり、各方針に確定した予算額を付けた提案ではない。",
+            "citations": [
+              "F1",
+              "F2"
+            ]
+          },
+          {
+            "id": "city-budget-05",
+            "kind": "proposal",
+            "text": "## 金額のある公約で、確かめたい四つのこと\n\nたとえば「年間10億円の新規支援」という仮の案があるとする。10億円は説明用の数字で、実在する市の試算ではない。\n\nまず、10億円は市だけの負担か、国等の負担を含む総額か。次に、既存の支援を差し引いた増額か、事業全体か。さらに、初年度だけか毎年か。最後に、財源として示す補助金はこの用途に使え、何年間続くのかを確かめる。\n\nここがそろって初めて、「同じ10億円を別の支援に回す」という比較ができる。数字の桁が同じでも、交換できる予算とは限らない。",
+            "citations": [
+              "F1",
+              "F2"
+            ]
+          },
+          {
+            "id": "city-budget-06",
+            "kind": "analysis",
+            "text": "## 何を優先し、何を見送るかまで読む\n\n候補者の説明には、増やす事業だけでなく、縮小・延期する事業、維持する最低限のサービスも示してほしい。削減額が確かでも、利用者にどんな不便が生じるかが分からなければ、判断材料は半分しかない。\n\nまた、設備の整備を遅らせる場合は、その間の安全対策や修繕費も比較対象になる。今の支出を減らすことと、長期の負担を減らすことを分けて考えたい。",
+            "citations": [
+              "F1",
+              "F2"
+            ]
+          },
+          {
+            "id": "city-budget-07",
+            "kind": "analysis",
+            "text": "## この先の比較に、まだ足りないもの\n\n必要なのは、同じ年度・対象・会計範囲でそろえた政策別の正味追加費用、継続財源、受益者、見送る事業の一覧だ。給食、交通、保育、施設整備を結ぶ次のページで扱う。\n\n補正予算や新たな国の支援で条件が変われば、比較は更新する。初版は当初予算と編成資料を起点とし、2026年度の全補正を反映した配分判断ではない。",
+            "citations": [
+              "F1",
+              "F2"
+            ]
+          }
+        ]
+      },
+      "review": {
+        "contentHash": "5abe13a16e799010dad80ed12d1113a286ce138bc33584a35c87d6c3bd685b7d",
+        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
+        "reviewedAt": "2026-09-06T17:57:54.390464Z",
+        "findings": [
+          {
+            "claimId": "city-budget-01",
+            "verdict": "supported",
+            "citationIds": [
+              "F1",
+              "F2"
+            ],
+            "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 「できるか」の前に、何を続けるお金かをそろえる"
+          },
+          {
+            "claimId": "city-budget-02",
+            "verdict": "supported",
+            "citationIds": [
+              "F1"
+            ],
+            "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 2兆933億円を、そのまま配り直せるわけではない"
+          },
+          {
+            "claimId": "city-budget-03",
+            "verdict": "supported",
+            "citationIds": [
+              "F2"
+            ],
+            "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 今年を埋めるお金と、毎年続くお金"
+          },
+          {
+            "claimId": "city-budget-04",
+            "verdict": "supported",
+            "citationIds": [
+              "F1",
+              "F2"
+            ],
+            "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 配分の方針は、三つの方向から比べられる"
+          },
+          {
+            "claimId": "city-budget-05",
+            "verdict": "supported",
+            "citationIds": [
+              "F1",
+              "F2"
+            ],
+            "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 金額のある公約で、確かめたい四つのこと"
+          },
+          {
+            "claimId": "city-budget-06",
+            "verdict": "supported",
+            "citationIds": [
+              "F1",
+              "F2"
+            ],
+            "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 何を優先し、何を見送るかまで読む"
+          },
+          {
+            "claimId": "city-budget-07",
+            "verdict": "supported",
+            "citationIds": [
+              "F1",
+              "F2"
+            ],
+            "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## この先の比較に、まだ足りないもの"
+          }
+        ],
+        "humanApproval": {
+          "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+          "contentHash": "5abe13a16e799010dad80ed12d1113a286ce138bc33584a35c87d6c3bd685b7d",
+          "approvedAt": "2026-09-06T17:57:54.390464Z"
+        }
+      },
+      "authorization": {
+        "kind": "user_publication_instruction",
+        "mode": "delegated_creation_and_publication",
+        "humanContentReview": false,
+        "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
+        "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
+        "recordedAt": "2026-09-06T17:57:54.390464Z"
+      },
+      "states": {
+        "implementation": "prepared",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide"
+      }
+    },
+    {
+      "id": "green-expo",
+      "route": "/issues/green-expo/",
+      "manuscriptPath": "docs/content-review/mayoral-issues/green-expo.md",
+      "contentFiles": [
+        "docs/content-review/mayoral-issues/green-expo.md",
+        "apps/web/src/pages/issues/green-expo.astro",
+        "apps/web/src/styles/global.css",
+        "apps/web/src/layouts/Layout.astro",
+        "apps/web/src/components/PolicyArticle.astro",
+        "apps/web/src/styles/policy-article.css",
+        "scripts/policy-table-labels.mjs",
+        "apps/web/astro.config.mjs",
+        "docs/content-review/mayoral-issues/sources.json"
+      ],
+      "sources": [
+        {
+          "id": "X1",
+          "title": "令和8年度GREEN×EXPO推進局事業計画書",
+          "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho222.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho222.pdf",
+          "sha256": "952e01df81f9a81e5a27f3f086a9a3d50d3bf30c38555094ababccb7ccc090d6",
+          "retrievedAt": "2026-09-06T17:38:01.068380Z",
+          "localPath": "artifacts/mayoral-issues-sources/952e01df81f9a81e5a27f3f086a9a3d50d3bf30c38555094ababccb7ccc090d6.pdf",
+          "textPath": "artifacts/mayoral-issues-sources/X1.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        },
+        {
+          "id": "F2",
+          "title": "令和8年度予算案資料",
+          "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
+          "sha256": "1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449",
+          "retrievedAt": "2026-09-06T17:38:01.145585Z",
+          "localPath": "artifacts/mayoral-issues-sources/1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449.pdf",
+          "textPath": "artifacts/mayoral-issues-sources/F2.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        }
+      ],
+      "article": {
+        "contentHash": "3b3c0e34533e1740b0daaa312dcb55aa187d85172f34acbaacbb64464c2ca62a",
+        "claims": [
+          {
+            "id": "green-expo-01",
+            "kind": "analysis",
+            "text": "## 判断したいのは、これから使うお金と残る価値\n\n大きなイベントには、まちを知ってもらう機会への期待がある。一方、そのお金を暮らしの支援に使ってほしいという考えもある。比べるには、**これまで使ったお金、これから必要なお金、方針を変えれば減らせるお金**を分けたい。\n\nこのページでは、2026年度の「GREEN×EXPO会場建設等事業」を一つの具体例にする。この事業の予算だけで、博覧会に関係する費用全体を説明することはできない。",
+            "citations": [
+              "X1",
+              "F2"
+            ]
+          },
+          {
+            "id": "green-expo-02",
+            "kind": "proposal",
+            "text": "## まず、同じ事業の中でも財源を分ける\n\n市の2026年度事業計画書では、会場建設等事業の予算は**86億9,721万5千円**。財源内訳は次のようになっている。[事業計画書・1-1ページ（PDF2ページ）](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho222.pdf#page=2)\n\n| 区分 | 2026年度の金額 | 読むときの条件 |\n| --- | --- | --- |\n| 事業費全体 | 86億9,721万5千円 | この単年度・この事業の予算額 |\n| 一般財源 | 38億889万6千円 | 事業費のうち一般財源で賄う部分 |\n| その他の財源 | 48億8,831万9千円 | 計画書の財源区分。自由に他用途へ回せるお金とは扱わない |\n\n同じ計画書は、企業版ふるさと納税による寄附を市の歳入として受け、協会への負担金として支出する仕組みも説明している。市を経由する支出のすべてを、市の一般財源による負担と数えないことが大切だ。\n\n原表は千円単位。8,697,215千円＝86億9,721万5千円で、財源の二つの区分を足すと事業費に一致する。これは決算額でも、市の関連支出総額でもない。",
+            "citations": [
+              "X1"
+            ]
+          },
+          {
+            "id": "green-expo-03",
+            "kind": "analysis",
+            "text": "## この数字だけで「中止すれば浮く額」は出せない\n\n86億円余りは、一つの事業の年間予算だ。すでに支払った額、契約済みの未払い額、まだ発注していない額の内訳は、この表にはない。\n\n今後の規模を変える案を比べるなら、契約変更・解約に伴う支払い、工事途中の安全確保、撤去や維持管理なども確認する必要がある。ここでは契約を全件調べていないため、中止・縮小で節約できる額を提示していない。\n\n逆に、準備が進んでいることだけで、追加の支出がすべて妥当とも言えない。これからの支出ごとに、必要性と代替案を確かめる余地がある。",
+            "citations": [
+              "X1",
+              "F2"
+            ]
+          },
+          {
+            "id": "green-expo-04",
+            "kind": "proposal",
+            "text": "## 三つの方針を、同じ条件で比べる\n\n| 方針 | 何を重視するか | 判断に必要な情報 |\n| --- | --- | --- |\n| 計画の実現を優先する | 開催準備と予定した機能を確実に進める | 残る支出、追加負担の上限、需要が想定を下回る場合の対応 |\n| 機能を絞り、追加負担を抑える | 安全や必要な機能を確保しながら、仕様や関連事業を見直す | 変更できる契約・仕様、減る費用、失われる機能や効果 |\n| 大幅な縮小・中止も比較対象にする | 他の政策への財源配分を重視する | 権限・関係者との調整、解約等の費用、実際に他用途へ回せる額 |\n\nこれは候補者の立場を分類した表ではなく、検討可能性を確かめるための編集上の整理だ。どの案も、市だけの判断で直ちに実行できると確認したものではない。",
+            "citations": [
+              "X1",
+              "F2"
+            ]
+          },
+          {
+            "id": "green-expo-05",
+            "kind": "proposal",
+            "text": "## 来場者数の先に、何を残したいか\n\n評価軸の提案として、来場者数に加え、市内事業者への仕事や消費、終了後に使える施設・空間、その維持費を分けて見る方法がある。\n\n経済波及効果の試算が示された場合も、それは市に同額の税収が戻ることを意味しない。何を含めた試算か、市費を負担することによる追加の効果かを確かめたい。この初版では経済効果の金額を採用していない。\n\n「成功」の基準を開催後に決めると、都合のよい数字だけを見ることになりかねない。開催前に、指標・測り方・公表時期を示すことを提案する。",
+            "citations": [
+              "X1",
+              "F2"
+            ]
+          },
+          {
+            "id": "green-expo-06",
+            "kind": "analysis",
+            "text": "## 別の政策へ回す比較に必要なこと\n\n給食費支援や地域交通と比べるには、博覧会の総額を並べるだけでは足りない。これから削減可能な一般財源が何年度にいくら生まれるのか、毎年続く支援に使える財源かをそろえる必要がある。\n\n市の予算編成資料も、基金や土地売却など性質の違う財源を分けて示している。[2026年度予算案資料・本文32ページ（PDF34ページ）](https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf#page=34)",
+            "citations": [
+              "F2"
+            ]
+          },
+          {
+            "id": "green-expo-07",
+            "kind": "analysis",
+            "text": "## 次に埋めたい空白\n\n関連事業の範囲を定めた総額、国・県・市・民間の分担、支払済み・契約済み・未契約の区別が必要だ。終了後の維持管理費も別に整理したい。\n\nこれらがそろい、規模変更で使える財源が具体的に確認できれば、政策間の金額比較へ進む。現時点では「この事業をやめれば同額を毎年ほかに使える」とは結論づけられない。",
+            "citations": [
+              "X1",
+              "F2"
+            ]
+          }
+        ]
+      },
+      "review": {
+        "contentHash": "3b3c0e34533e1740b0daaa312dcb55aa187d85172f34acbaacbb64464c2ca62a",
+        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
+        "reviewedAt": "2026-09-06T17:57:54.390464Z",
+        "findings": [
+          {
+            "claimId": "green-expo-01",
+            "verdict": "supported",
+            "citationIds": [
+              "X1",
+              "F2"
+            ],
+            "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 判断したいのは、これから使うお金と残る価値"
+          },
+          {
+            "claimId": "green-expo-02",
+            "verdict": "supported",
+            "citationIds": [
+              "X1"
+            ],
+            "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## まず、同じ事業の中でも財源を分ける"
+          },
+          {
+            "claimId": "green-expo-03",
+            "verdict": "supported",
+            "citationIds": [
+              "X1",
+              "F2"
+            ],
+            "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## この数字だけで「中止すれば浮く額」は出せない"
+          },
+          {
+            "claimId": "green-expo-04",
+            "verdict": "supported",
+            "citationIds": [
+              "X1",
+              "F2"
+            ],
+            "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 三つの方針を、同じ条件で比べる"
+          },
+          {
+            "claimId": "green-expo-05",
+            "verdict": "supported",
+            "citationIds": [
+              "X1",
+              "F2"
+            ],
+            "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 来場者数の先に、何を残したいか"
+          },
+          {
+            "claimId": "green-expo-06",
+            "verdict": "supported",
+            "citationIds": [
+              "F2"
+            ],
+            "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 別の政策へ回す比較に必要なこと"
+          },
+          {
+            "claimId": "green-expo-07",
+            "verdict": "supported",
+            "citationIds": [
+              "X1",
+              "F2"
+            ],
+            "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 次に埋めたい空白"
+          }
+        ],
+        "humanApproval": {
+          "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+          "contentHash": "3b3c0e34533e1740b0daaa312dcb55aa187d85172f34acbaacbb64464c2ca62a",
+          "approvedAt": "2026-09-06T17:57:54.390464Z"
+        }
+      },
+      "authorization": {
+        "kind": "user_publication_instruction",
+        "mode": "delegated_creation_and_publication",
+        "humanContentReview": false,
+        "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
+        "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
+        "recordedAt": "2026-09-06T17:57:54.390464Z"
+      },
+      "states": {
+        "implementation": "prepared",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide"
+      }
+    },
+    {
+      "id": "local-mobility",
+      "route": "/issues/local-mobility/",
+      "manuscriptPath": "docs/content-review/mayoral-issues/local-mobility.md",
+      "contentFiles": [
+        "docs/content-review/mayoral-issues/local-mobility.md",
+        "apps/web/src/pages/issues/local-mobility.astro",
+        "apps/web/src/styles/global.css",
+        "apps/web/src/layouts/Layout.astro",
+        "apps/web/src/components/PolicyArticle.astro",
+        "apps/web/src/styles/policy-article.css",
+        "scripts/policy-table-labels.mjs",
+        "apps/web/astro.config.mjs",
+        "docs/content-review/mayoral-issues/sources.json"
+      ],
+      "sources": [
+        {
+          "id": "M1",
+          "title": "敬老特別乗車証のご案内",
+          "url": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/keirou.html",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/keirou.html",
+          "sha256": "f01c82263fd81988878ffde662f01589b788081c7e2772de7235d6b4c8ab1021",
+          "retrievedAt": "2026-09-06T17:38:01.108445Z",
+          "localPath": "artifacts/mayoral-issues-sources/f01c82263fd81988878ffde662f01589b788081c7e2772de7235d6b4c8ab1021.html",
+          "textPath": "artifacts/mayoral-issues-sources/M1.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        },
+        {
+          "id": "M2",
+          "title": "横浜市みんなのおでかけ交通事業",
+          "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/chiikikokyo/huyasu/odekake/aratanaseido.html",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/chiikikokyo/huyasu/odekake/aratanaseido.html",
+          "sha256": "a0c54245042de4119ed635b83084ee2a1af8adf87ac0029962b43c7b27f64f8f",
+          "retrievedAt": "2026-09-06T17:38:01.143527Z",
+          "localPath": "artifacts/mayoral-issues-sources/a0c54245042de4119ed635b83084ee2a1af8adf87ac0029962b43c7b27f64f8f.html",
+          "textPath": "artifacts/mayoral-issues-sources/M2.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        }
+      ],
+      "article": {
+        "contentHash": "f125f255ba4323baa8e439c2bf710010f4a616230df8d524a7be8ad7082a2643",
+        "claims": [
+          {
+            "id": "local-mobility-01",
+            "kind": "analysis",
+            "text": "## 安く乗れる支援と、乗れる場所を増やす支援\n\n通院や買い物の移動を支えるには、運賃負担を軽くする方法と、近くに使える交通を増やす方法がある。**パスがあっても目的地へ行けなければ困りごとは残り、路線があっても料金が重ければ利用しにくい。**\n\n横浜で考えたいのは、敬老パスと地域の交通を、限られた財源の中でどう組み合わせるかだ。住む地域、歩ける距離、出かける時間によって、役立つ支援は異なる。",
+            "citations": [
+              "M1",
+              "M2"
+            ]
+          },
+          {
+            "id": "local-mobility-02",
+            "kind": "proposal",
+            "text": "## 敬老パスは、すべての交通が無料になる制度ではない\n\n市の敬老パスは70歳以上の市民を対象とし、利用者負担は所得などによって異なる。市の案内では、無料となる区分のほか、年額3,200円から20,500円までの区分がある。個人の負担額は公式の区分と通知で確認する必要がある。[敬老パスの案内「対象者」「負担金額」](https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/keirou.html)\n\n対象は市営地下鉄、シーサイドライン、対象のバスなど。JR、私鉄、みなとみらい線などは対象外だ。2025年10月から対象になった一部のおでかけシャトルも、半額程度の運賃を支払う仕組みになっている。[同「ご利用いただける交通機関」](https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/keirou.html)\n\nしたがって「対象年齢を広げる」「負担金を下げる」「利用できる交通を広げる」は、違う変更だ。公約の「充実」がどの変更を指すかを確かめたい。",
+            "citations": [
+              "M1"
+            ]
+          },
+          {
+            "id": "local-mobility-03",
+            "kind": "proposal",
+            "text": "## 路線が遠い地域への支援も始まっている\n\n市は2025年度から「みんなのおでかけ交通事業」を開始した。市が地域に働きかける意向確認や運行計画の提案、調整支援に加え、運行経費や車両導入などの費用の一部を補助する。[事業の公式案内「概要」](https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/chiikikokyo/huyasu/odekake/aratanaseido.html)\n\n市は駅やバス停から離れた地域を中心に取り組み、2025年度からの4年間で公共交通圏域外の半減を目指すとしている。この圏域は道路距離や坂の影響を考慮した市の基準によるもので、すべての人が通院できることを直接測る指標ではない。[同「運行に向けた取組を行うエリア」](https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/chiikikokyo/huyasu/odekake/aratanaseido.html)\n\n制度ができたことと、自分の地域で希望の時間に乗れることも別だ。実際の経路、運行日、予約方法まで確認して初めて、暮らしへの効果を判断できる。",
+            "citations": [
+              "M2"
+            ]
+          },
+          {
+            "id": "local-mobility-04",
+            "kind": "proposal",
+            "text": "## 次の支援をどう組み合わせるか\n\n| 重点 | 届きやすい困りごと | 費用・限界として確かめること |\n| --- | --- | --- |\n| 敬老パスの負担軽減・対象拡大 | すでに対象交通を使えている人の運賃負担 | 利用者負担の減収、利用増に伴う事業者への支払い。交通が遠い地域の問題は別に残る |\n| 不便な地域の運行を増やす | 駅やバス停まで遠く、移動手段が少ない地域 | 車両導入だけでなく毎年の運行費。運転手、運行日、目的地を確保できるか |\n| 支援を必要とする移動に重点を置く | 通院など、外出を諦める影響が大きい移動 | 対象を決める基準、申請・予約の負担。境界にいる人を取り残さないか |\n\nこれは新制度の確定案ではなく、検討の軸だ。第三の方向について、具体的な対象や給付方法、費用は設計していない。",
+            "citations": [
+              "M1",
+              "M2"
+            ]
+          },
+          {
+            "id": "local-mobility-05",
+            "kind": "proposal",
+            "text": "## 費用は、初期投資と毎年の運行を分けたい\n\n車両を購入できても、翌年の運行費が続くとは限らない。逆に、利用が少ない便でも、その便がなければ通院できない人がいるかもしれない。利用者一人当たりの費用と、代替手段の有無を一緒に見たい。\n\nこの初版では、敬老パスの拡充と地域交通の追加運行を、同じ年度の正味市負担で比較できていない。既存事業の総額を、そのまま新しい支援の追加費用として示すことは避けた。\n\n政策を比べる次の材料は、増やす対象人数や便数、運行時間、利用見込み、運賃収入、市の年間負担だ。低需要の場合も維持するサービス水準を、あらかじめ示す必要がある。",
+            "citations": [
+              "M1",
+              "M2"
+            ]
+          },
+          {
+            "id": "local-mobility-06",
+            "kind": "proposal",
+            "text": "## 「使える」を、目的地まで確かめる\n\n公約への問いとして、運賃だけでなく、自宅から乗り場までの距離、乗換え、帰りの便、予約のしやすさを提案したい。地図に路線が引かれたことをゴールにしないためだ。\n\n今後、地域別の利用実績や移動を諦めた理由が得られれば、負担軽減と路線改善の優先順位を見直せる。現時点では市民への聞き取りを行っておらず、どちらが最も求められているかは未検証だ。",
+            "citations": [
+              "M1",
+              "M2"
+            ]
+          }
+        ]
+      },
+      "review": {
+        "contentHash": "f125f255ba4323baa8e439c2bf710010f4a616230df8d524a7be8ad7082a2643",
+        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
+        "reviewedAt": "2026-09-06T17:57:54.390464Z",
+        "findings": [
+          {
+            "claimId": "local-mobility-01",
+            "verdict": "supported",
+            "citationIds": [
+              "M1",
+              "M2"
+            ],
+            "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 安く乗れる支援と、乗れる場所を増やす支援"
+          },
+          {
+            "claimId": "local-mobility-02",
+            "verdict": "supported",
+            "citationIds": [
+              "M1"
+            ],
+            "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 敬老パスは、すべての交通が無料になる制度ではない"
+          },
+          {
+            "claimId": "local-mobility-03",
+            "verdict": "supported",
+            "citationIds": [
+              "M2"
+            ],
+            "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 路線が遠い地域への支援も始まっている"
+          },
+          {
+            "claimId": "local-mobility-04",
+            "verdict": "supported",
+            "citationIds": [
+              "M1",
+              "M2"
+            ],
+            "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 次の支援をどう組み合わせるか"
+          },
+          {
+            "claimId": "local-mobility-05",
+            "verdict": "supported",
+            "citationIds": [
+              "M1",
+              "M2"
+            ],
+            "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 費用は、初期投資と毎年の運行を分けたい"
+          },
+          {
+            "claimId": "local-mobility-06",
+            "verdict": "supported",
+            "citationIds": [
+              "M1",
+              "M2"
+            ],
+            "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 「使える」を、目的地まで確かめる"
+          }
+        ],
+        "humanApproval": {
+          "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+          "contentHash": "f125f255ba4323baa8e439c2bf710010f4a616230df8d524a7be8ad7082a2643",
+          "approvedAt": "2026-09-06T17:57:54.390464Z"
+        }
+      },
+      "authorization": {
+        "kind": "user_publication_instruction",
+        "mode": "delegated_creation_and_publication",
+        "humanContentReview": false,
+        "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
+        "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
+        "recordedAt": "2026-09-06T17:57:54.390464Z"
+      },
+      "states": {
+        "implementation": "prepared",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide"
+      }
+    },
+    {
+      "id": "childcare-access",
+      "route": "/issues/childcare-access/",
+      "manuscriptPath": "docs/content-review/mayoral-issues/childcare-access.md",
+      "contentFiles": [
+        "docs/content-review/mayoral-issues/childcare-access.md",
+        "apps/web/src/pages/issues/childcare-access.astro",
+        "apps/web/src/styles/global.css",
+        "apps/web/src/layouts/Layout.astro",
+        "apps/web/src/components/PolicyArticle.astro",
+        "apps/web/src/styles/policy-article.css",
+        "scripts/policy-table-labels.mjs",
+        "apps/web/astro.config.mjs",
+        "docs/content-review/mayoral-issues/sources.json"
+      ],
+      "sources": [
+        {
+          "id": "N1",
+          "title": "令和8年4月1日時点保育所等利用状況・補足資料",
+          "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf",
+          "sha256": "9596a87c57264c10dd98e443d98dd502f3c85767a37202238e7a5022de247d1a",
+          "retrievedAt": "2026-09-06T17:38:01.215284Z",
+          "localPath": "artifacts/mayoral-issues-sources/9596a87c57264c10dd98e443d98dd502f3c85767a37202238e7a5022de247d1a.pdf",
+          "textPath": "artifacts/mayoral-issues-sources/N1.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        },
+        {
+          "id": "N3",
+          "title": "令和8年度こども青少年局事業計画書",
+          "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf",
+          "sha256": "9a6bf6742ac41ff9d03a2cffd93ba675850af174d632ca3b71384272d890c97c",
+          "retrievedAt": "2026-09-06T17:38:01.638895Z",
+          "localPath": "artifacts/mayoral-issues-sources/9a6bf6742ac41ff9d03a2cffd93ba675850af174d632ca3b71384272d890c97c.pdf",
+          "textPath": "artifacts/mayoral-issues-sources/N3.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        }
+      ],
+      "article": {
+        "contentHash": "b6fe580938ea81f29043fff30e72e9f19b0bf6872f7fa43d32a7b4dc0bb294e5",
+        "claims": [
+          {
+            "id": "childcare-access-01",
+            "kind": "analysis",
+            "text": "## 「ゼロ」を出発点に、使える保育を見る\n\n保育の政策を考えるとき、知りたいのは「必要な時期に、通える場所で、安心して預けられるか」だ。市全体の待機児童数だけでは、家族の生活に合う保育が見つかるかまでは分からない。\n\n横浜の次の問いは、**施設をいくつ増やすかに加え、どの年齢・地域の受入れを厚くするか、保育を担う人と質をどう支えるか**になる。",
+            "citations": [
+              "N1",
+              "N3"
+            ]
+          },
+          {
+            "id": "childcare-access-02",
+            "kind": "proposal",
+            "text": "## 待機児童0人、保留児童2,532人は両立する\n\n市の2026年5月12日公表資料では、4月1日時点の保育所等利用申請者は73,834人、利用児童は71,302人。その差である保留児童は2,532人、国の定義に基づく待機児童は0人となっている。[利用状況の補足資料・1ページ](https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf#page=1)\n\n| 同じ2026年4月1日時点の区分 | 人数 | 意味 |\n| --- | --- | --- |\n| 保留児童 | 2,532人 | 申請者数から利用児童数を引いた数 |\n| 育児休業の延長希望を除く保留児童 | 1,256人 | 2,532人から、延長を希望する1,276人を除いた数 |\n| 待機児童 | 0人 | 保留児童から、国の定義に従う各区分を除いて数えたもの |\n\n除外区分には、横浜保育室等の利用、育児休業延長の許容、求職活動の休止、特定施設のみの申込みなどがある。**2,532人全員がすぐに入所を必要としているとも、0人だから困っている家庭がないとも言えない。**\n\n73,834−71,302＝2,532、2,532−1,276＝1,256となる。同じ「入れなかった子ども」という言葉でも、どの区分かによって人数が変わる。",
+            "citations": [
+              "N1"
+            ]
+          },
+          {
+            "id": "childcare-access-03",
+            "kind": "analysis",
+            "text": "## 年齢と地域によって、空きの意味が違う\n\n同じ資料では、育休延長希望を除く保留児童1,256人のうち、1歳児703人、2歳児201人で、合わせて約72％を占める。市全体に空きがあっても、必要な年齢や通える場所の枠と一致するとは限らない。[補足資料・2ページ](https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf#page=2)\n\n市の2026年度計画も、1・2歳児を中心に既存施設の定員構成の見直しなどで受入枠を確保し、既存資源だけでは足りない地域では整備を進める方針を示す。[保育所等整備事業・PDF120ページ](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf#page=120)\n\nこの点からは、園を一律に増やすかどうかより、必要な枠をどこに作るかが判断の分かれ目になる。ただし、統計だけで個々の家庭の希望や園の質までは評価できない。",
+            "citations": [
+              "N1",
+              "N3"
+            ]
+          },
+          {
+            "id": "childcare-access-04",
+            "kind": "proposal",
+            "text": "## 限られたお金を、どこに向けるか\n\n| 重点 | 期待する改善 | 費用・弱点として確認すること |\n| --- | --- | --- |\n| 既存施設の年齢別の枠を見直す | 今ある施設を使い、需要の高い年齢の受入れを増やす | 改修・人員配置の費用。他の年齢の受入れを減らす影響も確かめる |\n| 足りない地域に新たな受入先を作る | 通える距離に保育を確保する | 用地・整備・毎年の運営費。完成までの時間と将来の需要を見込む |\n| 人材の確保・定着と相談支援を厚くする | 保育の継続と質、家庭に合う選択を支える | 経常的な人件費や支援費。必要な地域の枠不足をどこまで改善できるか |\n\nこの表は施策の方向を比べたもので、どれか一つの採用を勧めるものではない。地域の状況によって組み合わせが変わる。",
+            "citations": [
+              "N1",
+              "N3"
+            ]
+          },
+          {
+            "id": "childcare-access-05",
+            "kind": "proposal",
+            "text": "## 「一人分の枠」の値段だけでは決められない\n\n保育の枠を増やす費用には、施設の整備だけでなく、職員の配置と継続的な運営が含まれる。年齢や開所時間などの条件が違えば、一人当たりの単純比較は難しい。\n\nこの初版では、三つの方向について同じ条件の正味市負担を算定していない。待機児童が減った割合から、そのまま政策の費用対効果を断定することもできない。\n\n次に必要なのは、地域・年齢別の希望、利用できなかった理由、受入れの見通し、整備と運営それぞれの追加費用だ。年度途中の利用も、4月1日の統計とは別に確かめたい。",
+            "citations": [
+              "N1",
+              "N3"
+            ]
+          },
+          {
+            "id": "childcare-access-06",
+            "kind": "analysis",
+            "text": "## 公約と実績で、同じ問いを追う\n\n約束の段階では「何人増やすか」に加え、どこで、何歳を、いつから受け入れるかを確認したい。実施後は、数字上の枠だけでなく、職員が確保され、希望する利用につながったかを見る。\n\n保留の理由や通園の実態が分かり、主な問題が枠不足より勤務時間との不一致などにあるなら、開所時間や利用支援へ重点を変える。初版の統計はその答えまで持っていない。",
+            "citations": [
+              "N1",
+              "N3"
+            ]
+          }
+        ]
+      },
+      "review": {
+        "contentHash": "b6fe580938ea81f29043fff30e72e9f19b0bf6872f7fa43d32a7b4dc0bb294e5",
+        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
+        "reviewedAt": "2026-09-06T17:57:54.390464Z",
+        "findings": [
+          {
+            "claimId": "childcare-access-01",
+            "verdict": "supported",
+            "citationIds": [
+              "N1",
+              "N3"
+            ],
+            "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 「ゼロ」を出発点に、使える保育を見る"
+          },
+          {
+            "claimId": "childcare-access-02",
+            "verdict": "supported",
+            "citationIds": [
+              "N1"
+            ],
+            "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 待機児童0人、保留児童2,532人は両立する"
+          },
+          {
+            "claimId": "childcare-access-03",
+            "verdict": "supported",
+            "citationIds": [
+              "N1",
+              "N3"
+            ],
+            "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 年齢と地域によって、空きの意味が違う"
+          },
+          {
+            "claimId": "childcare-access-04",
+            "verdict": "supported",
+            "citationIds": [
+              "N1",
+              "N3"
+            ],
+            "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 限られたお金を、どこに向けるか"
+          },
+          {
+            "claimId": "childcare-access-05",
+            "verdict": "supported",
+            "citationIds": [
+              "N1",
+              "N3"
+            ],
+            "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 「一人分の枠」の値段だけでは決められない"
+          },
+          {
+            "claimId": "childcare-access-06",
+            "verdict": "supported",
+            "citationIds": [
+              "N1",
+              "N3"
+            ],
+            "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 公約と実績で、同じ問いを追う"
+          }
+        ],
+        "humanApproval": {
+          "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+          "contentHash": "b6fe580938ea81f29043fff30e72e9f19b0bf6872f7fa43d32a7b4dc0bb294e5",
+          "approvedAt": "2026-09-06T17:57:54.390464Z"
+        }
+      },
+      "authorization": {
+        "kind": "user_publication_instruction",
+        "mode": "delegated_creation_and_publication",
+        "humanContentReview": false,
+        "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
+        "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
+        "recordedAt": "2026-09-06T17:57:54.390464Z"
+      },
+      "states": {
+        "implementation": "prepared",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide"
+      }
+    },
+    {
+      "id": "school-shelters",
+      "route": "/issues/school-shelters/",
+      "manuscriptPath": "docs/content-review/mayoral-issues/school-shelters.md",
+      "contentFiles": [
+        "docs/content-review/mayoral-issues/school-shelters.md",
+        "apps/web/src/pages/issues/school-shelters.astro",
+        "apps/web/src/styles/global.css",
+        "apps/web/src/layouts/Layout.astro",
+        "apps/web/src/components/PolicyArticle.astro",
+        "apps/web/src/styles/policy-article.css",
+        "scripts/policy-table-labels.mjs",
+        "apps/web/astro.config.mjs",
+        "docs/content-review/mayoral-issues/sources.json"
+      ],
+      "sources": [
+        {
+          "id": "D1",
+          "title": "令和8年度教育委員会予算概要",
+          "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf",
+          "sha256": "9300c910bcca2e6b9dee56a0196eef82a357610d895b71ab498085ca1c6b276a",
+          "retrievedAt": "2026-09-06T17:38:01.594731Z",
+          "localPath": "artifacts/mayoral-issues-sources/9300c910bcca2e6b9dee56a0196eef82a357610d895b71ab498085ca1c6b276a.pdf",
+          "textPath": "artifacts/mayoral-issues-sources/D1.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        },
+        {
+          "id": "F2",
+          "title": "令和8年度予算案資料",
+          "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
+          "sha256": "1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449",
+          "retrievedAt": "2026-09-06T17:38:01.145585Z",
+          "localPath": "artifacts/mayoral-issues-sources/1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449.pdf",
+          "textPath": "artifacts/mayoral-issues-sources/F2.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        }
+      ],
+      "article": {
+        "contentHash": "87bd3edddd31572f9a22efbcd6ddae56389eaecb92ca29ebe2f67fe3fe2e4f15",
+        "claims": [
+          {
+            "id": "school-shelters-01",
+            "kind": "analysis",
+            "text": "## 早く整えることと、使い続けられること\n\n学校の暑さ対策は、毎日の学びと、災害時の避難環境の両方に関わる。早く空調を付けてほしいという要望に応えるには、整備費だけでなく、工事の順序や運用する費用も考える必要がある。\n\n判断したいのは、**どの学校から、いつまでに整え、停電などが起きた場合にどう対応するか**だ。設置台数は大切な進捗だが、それだけで避難生活の備えが完成したとは言えない。",
+            "citations": [
+              "D1",
+              "F2"
+            ]
+          },
+          {
+            "id": "school-shelters-02",
+            "kind": "analysis",
+            "text": "## 2026年度の資料には、校数の異なる記載がある\n\n市の教育委員会予算概要は、2029年度の体育館空調設置率100％を目標としている。同じページの本文には2026年度の設計219校・設置工事123校とある一方、図表の「R8事業量」には体育館空調80校（47％）と記載されている。図表には建替え校等を除くという条件も付く。[教育委員会予算概要・本文50ページ（PDF52ページ）](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf#page=52)\n\n**123校と80校の関係は、この資料だけでは確認できていない**。工事を実施する年度と利用開始の年度など、集計範囲が異なる可能性はあるが、理由を推測で補わない。どちらも2026年9月時点の完成実績としては扱わない。\n\n自分の学校の状況を知るには、対象校と工事予定、利用開始日を別に確かめる必要がある。初版では学校別の進捗一覧までは取得していない。設計と工事の校数を合算して、使える学校数とすることもできない。",
+            "citations": [
+              "D1"
+            ]
+          },
+          {
+            "id": "school-shelters-03",
+            "kind": "analysis",
+            "text": "## 64.9億円は、体育館だけの費用ではない\n\n同じ資料の「酷暑対策（断熱・空調）」は、**64億9,272万4千円**。ここには教室の断熱改修や空調設備の整備が含まれ、本文では体育館に加え給食室の空調にも触れている。[同・本文50ページ](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf#page=52)\n\nしたがって、この金額を123校で割って「体育館一校の空調費」とすることはできない。学校ごとの規模や工事内容、設計費がどの年度に計上されるかもそろえる必要がある。\n\nこの初版では体育館空調だけの正味市負担と、整備を前倒しした場合の追加費用を確定していない。予算が載っていることと、政策変更の値段が分かることを分けて読む。",
+            "citations": [
+              "D1"
+            ]
+          },
+          {
+            "id": "school-shelters-04",
+            "kind": "proposal",
+            "text": "## 整備の順序は、何を優先して決めるか\n\n| 方針 | 重視すること | 判断に必要な条件 |\n| --- | --- | --- |\n| 現行の工程で着実に進める | 設計・工事の予定を管理し、目標年度までに整える | 工程の遅れと対象外の学校への対応。待つ期間の暑さ対策 |\n| 必要性の高い学校を前倒しする | 暑さや利用状況、避難環境などから順序を見直す | 優先基準、追加費用、施工体制。順番が後になる学校への説明 |\n| 空調と避難環境を一体で整える | 電源、トイレ、備蓄、運営まで含めて使える状態を目指す | 一校当たりの整備範囲と費用。全校への普及速度との両立 |\n\nこれらは比較のための方向であり、新しい工程表ではない。空調を急ぐ案と避難環境の改善は併用できる一方、同じ担当者や工事体制で進められるかも確認したい。",
+            "citations": [
+              "D1",
+              "F2"
+            ]
+          },
+          {
+            "id": "school-shelters-05",
+            "kind": "proposal",
+            "text": "## 設置率の次は、停電時と実際の運用を見る\n\n災害時の使い方を判断するための問いとして、停電時に稼働できる設備か、燃料や電源をどれだけ確保するか、誰が操作するかを提案する。すべての新設空調が停電時も使えると、この記事では確認していない。\n\n避難する人には、暑さ以外にもトイレ、休める場所、水、情報へのアクセスなどの必要がある。空調の整備だけを、避難所全体の安全性の評価に置き換えないことが大切だ。\n\n普段の学校利用でも、電気代などの運転費や保守の担当を確かめたい。設備の導入で終わらず、必要なときに使える条件まで約束に含める、というのがここでの提案だ。",
+            "citations": [
+              "D1",
+              "F2"
+            ]
+          },
+          {
+            "id": "school-shelters-06",
+            "kind": "analysis",
+            "text": "## 何を見送るかも、工程と一緒に示す\n\n前倒しのために別の工事を延期するなら、その内容と影響も比較対象になる。反対に、予定どおり進める場合は、整備を待つ学校の対策にいくら使うかを確認したい。\n\n市の財政資料では、物価高や施設老朽化への対応なども予算編成上の課題になっている。[2026年度予算案資料・本文32〜33ページ（PDF34〜35ページ）](https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf#page=34)\n\n学校別の費用、進捗、停電時の運用条件がそろえば、前倒しと一体整備の比較を更新できる。現時点で、どの学校を何番目にすべきかまでは判断していない。",
+            "citations": [
+              "F2"
+            ]
+          }
+        ]
+      },
+      "review": {
+        "contentHash": "87bd3edddd31572f9a22efbcd6ddae56389eaecb92ca29ebe2f67fe3fe2e4f15",
+        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
+        "reviewedAt": "2026-09-06T17:57:54.390464Z",
+        "findings": [
+          {
+            "claimId": "school-shelters-01",
+            "verdict": "supported",
+            "citationIds": [
+              "D1",
+              "F2"
+            ],
+            "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 早く整えることと、使い続けられること"
+          },
+          {
+            "claimId": "school-shelters-02",
+            "verdict": "supported",
+            "citationIds": [
+              "D1"
+            ],
+            "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 2026年度の資料には、校数の異なる記載がある"
+          },
+          {
+            "claimId": "school-shelters-03",
+            "verdict": "supported",
+            "citationIds": [
+              "D1"
+            ],
+            "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 64.9億円は、体育館だけの費用ではない"
+          },
+          {
+            "claimId": "school-shelters-04",
+            "verdict": "supported",
+            "citationIds": [
+              "D1",
+              "F2"
+            ],
+            "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 整備の順序は、何を優先して決めるか"
+          },
+          {
+            "claimId": "school-shelters-05",
+            "verdict": "supported",
+            "citationIds": [
+              "D1",
+              "F2"
+            ],
+            "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 設置率の次は、停電時と実際の運用を見る"
+          },
+          {
+            "claimId": "school-shelters-06",
+            "verdict": "supported",
+            "citationIds": [
+              "F2"
+            ],
+            "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 何を見送るかも、工程と一緒に示す"
+          }
+        ],
+        "humanApproval": {
+          "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+          "contentHash": "87bd3edddd31572f9a22efbcd6ddae56389eaecb92ca29ebe2f67fe3fe2e4f15",
+          "approvedAt": "2026-09-06T17:57:54.390464Z"
+        }
+      },
+      "authorization": {
+        "kind": "user_publication_instruction",
+        "mode": "delegated_creation_and_publication",
+        "humanContentReview": false,
+        "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
+        "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
+        "recordedAt": "2026-09-06T17:57:54.390464Z"
+      },
+      "states": {
+        "implementation": "prepared",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide"
+      }
+    },
+    {
+      "id": "mayor-2026",
+      "route": "/elections/mayor-2026/",
+      "contentFiles": [
+        "apps/web/src/pages/elections/mayor-2026/index.astro",
+        "packages/core/policy-issues.ts",
+        "apps/web/src/components/PolicyFeature.astro",
+        "apps/web/src/pages/issues/index.astro",
+        "apps/web/src/pages/search.astro",
+        "apps/web/src/pages/sitemap.xml.ts"
+      ],
+      "sources": [
+        {
+          "id": "E1",
+          "title": "横浜市長選挙・2026年10月18日",
+          "url": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018_shicho.html",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018_shicho.html",
+          "sha256": "9406e145dd063521029e8b49a7db3e5d2692893dcb0bb7ab279e26e872ae7afd",
+          "retrievedAt": "2026-09-06T17:38:00.924052Z",
+          "localPath": "artifacts/mayoral-issues-sources/9406e145dd063521029e8b49a7db3e5d2692893dcb0bb7ab279e26e872ae7afd.html",
+          "textPath": "artifacts/mayoral-issues-sources/E1.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        },
+        {
+          "id": "E2",
+          "title": "2026年市長選・候補者情報と選挙公報",
+          "url": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018kohosya_koho.html",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018kohosya_koho.html",
+          "sha256": "1df8d95711e1ae7b1d33dd45af02005293c67bc353ad054753efc4db1f024bd6",
+          "retrievedAt": "2026-09-06T17:38:00.940775Z",
+          "localPath": "artifacts/mayoral-issues-sources/1df8d95711e1ae7b1d33dd45af02005293c67bc353ad054753efc4db1f024bd6.html",
+          "textPath": "artifacts/mayoral-issues-sources/E2.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+        }
+      ],
+      "article": {
+        "contentHash": "660919f24a8ee4282cc10b92c7d7f82ddd319fd849ba53e2460570b68a830bdf",
+        "claims": [
+          {
+            "id": "election-date",
+            "kind": "fact",
+            "text": "2026年10月4日告示、10月18日投票。9月7日の確認時点で公式の候補者・選挙公報は掲載予定。",
+            "citations": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "id": "editorial-selection",
+            "kind": "proposal",
+            "text": "7論点は制作側の選定。候補者の公約比較・有権者の関心順位・全論点の網羅ではない。政策間の具体的配分は今後。",
+            "citations": [
+              "E1",
+              "E2"
+            ]
+          }
+        ]
+      },
+      "review": {
+        "contentHash": "660919f24a8ee4282cc10b92c7d7f82ddd319fd849ba53e2460570b68a830bdf",
+        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
+        "reviewedAt": "2026-09-06T17:57:54.390464Z",
+        "findings": [
+          {
+            "claimId": "election-date",
+            "verdict": "supported",
+            "citationIds": [
+              "E1",
+              "E2"
+            ],
+            "rationale": "E1 election schedule and E2 planned publication labels checked at acquisition. Selection scope is explicit editorial judgment, not a sourced popularity ranking. Seven links correspond to completed initial articles."
+          },
+          {
+            "claimId": "editorial-selection",
+            "verdict": "supported",
+            "citationIds": [
+              "E1",
+              "E2"
+            ],
+            "rationale": "E1 election schedule and E2 planned publication labels checked at acquisition. Selection scope is explicit editorial judgment, not a sourced popularity ranking. Seven links correspond to completed initial articles."
+          }
+        ],
+        "humanApproval": {
+          "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+          "contentHash": "660919f24a8ee4282cc10b92c7d7f82ddd319fd849ba53e2460570b68a830bdf",
+          "approvedAt": "2026-09-06T17:57:54.390464Z"
+        }
+      },
+      "authorization": {
+        "kind": "user_publication_instruction",
+        "mode": "delegated_creation_and_publication",
+        "humanContentReview": false,
+        "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
+        "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
+        "recordedAt": "2026-09-06T17:57:54.390464Z"
+      },
+      "states": {
+        "implementation": "prepared",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide"
+      }
+    }
+  ]
+}

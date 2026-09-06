@@ -1,0 +1,111 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { policyIssues } from "../../../../../../packages/core/policy-issues";
+const order = [
+  "city-governance",
+  "school-lunch",
+  "childcare-access",
+  "local-mobility",
+  "school-shelters",
+  "green-expo",
+  "city-budget",
+];
+const selected = order.map((slug) =>
+  policyIssues.find((i) => i.slug === slug)!,
+);
+---
+
+<Layout
+  title="横浜市長選を考える、7つの問い"
+  description="給食、保育、交通、防災、大型事業、財政、市政の信頼。今の制度と選択肢を一次資料から確かめる。"
+>
+  <div class="container section">
+    <p class="breadcrumb">
+      <a href="/">ホーム</a> / <a href="/issues/">暮らしの問い</a> / 市長選を考える
+    </p>
+    <p class="eyebrow">横浜のこれからを、身近な問いから</p>
+    <h1 class="page-title">市長選を考える、<br />7つの問い。</h1>
+    <p class="lede">
+      何を良くしたいか。そのために何を選び、何を後回しにするか。<br
+      />いまの制度、選択肢、確かめたい条件をまとめた。
+    </p>
+    <div class="note election-context">
+      <p>
+        <strong>投票日：2026年10月18日。告示日：10月4日。</strong>日程は<a
+          href="https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018_shicho.html"
+          >横浜市選挙管理委員会の案内</a
+        >で確認できる。
+      </p>
+      <p>
+        9月7日の資料確認時点で、公式の<a
+          href="https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018kohosya_koho.html"
+          >候補者情報・選挙公報</a
+        >は掲載予定となっている。この特集は、政策を考えるために制作側が選んだ論点。候補者の公約比較や、有権者の関心の順位ではない。
+      </p>
+    </div>
+    <section aria-labelledby="reading-start" class="reading-start">
+      <h2 id="reading-start">全部を読まなくても、気になる一問から。</h2>
+      <p>
+        最初の要点を読み、選択肢を比べ、判断が変わりそうな条件を一つ見つける。金額や制度が気になったら、本文のリンクから公式資料までたどれる。
+      </p>
+      <p>
+        一つの政策を読んだら、<a href="/issues/city-budget/">予算の優先順位</a
+        >へ。政策どうしを比べるには、年度・財源・追加費用をそろえる必要がある。具体的な金額を配り分ける比較は、次の段階で扱う。
+      </p>
+    </section>
+    <section aria-labelledby="issue-list">
+      <h2 id="issue-list">何を判断する話なのか、ここからたどる。</h2>
+      <div class="cards section">
+        {
+          selected.map((issue, index) => (
+            <a class="card card-link" href={issue.url}>
+              <>
+                <span class="tag">
+                  {String(index + 1).padStart(2, "0")} / {issue.category}
+                </span>
+                <h3>{issue.title}</h3>
+                <p>{issue.summary}</p>
+                <span class="card-bottom">
+                  選択肢と根拠を読む <span aria-hidden="true">→</span>
+                </span>
+              </>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+    <section class="note" aria-labelledby="coverage">
+      <h2 id="coverage">この初版の範囲</h2>
+      <p>
+        市政の説明責任と、暮らしに関わる継続的な支援・施設整備を選んだ。すべての争点を網羅していない。住宅、医療・介護、地域経済、脱炭素などは追加候補とし、公約と市民の問いを確かめながら更新する。
+      </p>
+      <p>
+        公式資料との照合・数値の検算は制作側が実施した。独立した事実確認と利用者による理解の検証は未実施。各記事で、確認できたことと未確定の費用を分けている。
+      </p>
+      <p>
+        <a href="/about/#corrections">誤りや、足りない判断材料を知らせる →</a>
+      </p>
+    </section>
+  </div>
+</Layout>
+<style>
+  .election-context {
+    margin: 32px 0;
+  }
+  .election-context p + p {
+    margin-top: 16px;
+  }
+  .reading-start {
+    max-width: 760px;
+    margin: 48px 0;
+  }
+  h2 {
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+  h3 {
+    font-size: 1.35rem;
+    line-height: 1.8;
+    margin-top: 20px;
+  }
+</style>

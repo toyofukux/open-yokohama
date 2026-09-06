@@ -1,10 +1,13 @@
 import type { APIContext } from "astro";
 import { geographies } from "../../../../packages/core/schema";
 import { issues } from "../../../../packages/core/issues";
+import { policyIssues } from "../../../../packages/core/policy-issues";
 export function GET({ site }: APIContext) {
   const paths = [
     "/",
     "/issues/",
+    ...policyIssues.map((i) => i.url),
+    "/elections/mayor-2026/",
     "/wards/",
     "/sources/",
     "/about/",

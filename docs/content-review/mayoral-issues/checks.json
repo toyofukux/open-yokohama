@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-09-06T17:55:57.928284Z",
+  "sourceSnapshots": 13,
+  "manuscripts": [
+    {
+      "path": "docs/content-review/mayoral-issues/childcare-access.md",
+      "sha256": "6041d5214e9e00ce8839efa8f8e4fc1a4e913595a480a6acefd0ba13fded9e02",
+      "sections": 6,
+      "citations": 3
+    },
+    {
+      "path": "docs/content-review/mayoral-issues/city-budget.md",
+      "sha256": "e93fa553e51725032f2f103fd63cb4207927547fd13db80b48c66df8a9eeb2ff",
+      "sections": 7,
+      "citations": 3
+    },
+    {
+      "path": "docs/content-review/mayoral-issues/city-governance.md",
+      "sha256": "a0d6cb3fd5a240de9175b3f0d8d24239e8b31ad0374f5a97a13337b6489d0df7",
+      "sections": 7,
+      "citations": 3
+    },
+    {
+      "path": "docs/content-review/mayoral-issues/green-expo.md",
+      "sha256": "e6030a62eb7d612e2323f91fba3d0f8e5a7c935bb23e08af0058d1001fbbd85f",
+      "sections": 7,
+      "citations": 2
+    },
+    {
+      "path": "docs/content-review/mayoral-issues/local-mobility.md",
+      "sha256": "221e5641e3c0ef1b7504c7505b78d63d620550a660517f59105a45ffb55bb2cc",
+      "sections": 6,
+      "citations": 4
+    },
+    {
+      "path": "docs/content-review/mayoral-issues/school-shelters.md",
+      "sha256": "f4d23b745478ce460ea8dd3a6554c7eaadfe0d6b14343922760ff1bc6ab73868",
+      "sections": 6,
+      "citations": 3
+    }
+  ],
+  "calculations": {
+    "childcareHeld": 2532,
+    "childcareExcludingExtension": 1256,
+    "childcareAgeOneTwoPercent": 71.97452229299363,
+    "expoTotalThousands": 8697215,
+    "expoGeneralThousands": 3808896,
+    "expoOtherThousands": 4888319,
+    "heatThousands": 6492724
+  },
+  "sourceDiscrepancy": "D1 PDF52 body: 123 construction schools; embedded table: 80 schools (47%). Relationship unconfirmed; article explicitly preserves the discrepancy.",
+  "humanValidation": "not performed",
+  "independentReview": "not performed"
+}

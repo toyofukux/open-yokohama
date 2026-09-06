@@ -127,7 +127,9 @@
     font-weight: 700;
     font-size: 1.22rem;
     line-height: 1.2;
-    white-space: nowrap;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
   .brand small {
     display: block;
@@ -269,6 +271,8 @@
     gap: 20px;
   }
   .card {
+    min-width: 0;
+    overflow-wrap: anywhere;
     background: var(--card);
     border: 1px solid var(--line);
     border-radius: 4px;
