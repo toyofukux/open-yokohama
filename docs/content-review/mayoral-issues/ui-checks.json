@@ -24,5 +24,14 @@
     "apps/web/src/styles/global.css": "ac6ed34cec888ed56b30f58e0aa3bd5853f3a9f6e254f366b50241bb38f91089",
     "scripts/policy-table-labels.mjs": "f72081604795c596a9c50f30ba9d0483db4a2a62b457d36a30f8e6530e5c3908",
     "docs/content-review/publication.json": "0119fc8254c01faa75b301fce18704a17a29600efb9c5a13d5714cf483b9ed9e"
-  }
+  },
+  "production": {
+    "baseURL": "https://open.yokohama",
+    "workerVersion": "bb68965f-6a35-4d44-a8eb-afe9edbcad5e",
+    "implementationCommit": "ff30cdc87bbfc10c3ff7b991ffa814589dbc6ed2",
+    "verifiedAt": "2026-09-06T18:00:46.769639Z",
+    "e2e": "46 passed",
+    "testLogSha256": "7695bef73be8704260a000c658a3e311aea07508f37bd78dfac78369bb61d587"
+  },
+  "filesAtLocalVerification": "Hashes reflect the tested implementation. publication.json subsequently received deployment/status metadata only; canonical content hashes unchanged."
 }

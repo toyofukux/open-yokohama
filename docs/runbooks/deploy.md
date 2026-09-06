@@ -12,7 +12,7 @@ Node.js 24、pnpm、Cloudflareアカウント。ローカル検証や静的ビ�
 2. `pnpm verify`
 3. `pnpm exec playwright install chromium` → `pnpm test:e2e`
 4. `pnpm exec wrangler deploy --dry-run`
-5. `SITE_URL=https://実際の公開ホスト pnpm deploy`
+5. `SITE_URL=https://実際の公開ホスト pnpm run deploy`（`run`を付け、pnpm自体の同名コマンドと区別します）
 6. 必要なら `pnpm exec wrangler deploy --config apps/mcp/wrangler.jsonc`
 7. `TEST_BASE_URL=https://実際の公開ホスト pnpm test:e2e`
 8. commit、Worker version、検証結果を `docs/STATUS.md` に記録します。
