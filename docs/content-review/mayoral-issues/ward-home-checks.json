@@ -28,5 +28,14 @@
     "Age-by-ward data unavailable; city-relative editorial bands only",
     "No-JS daily feature and campaign use build-time date",
     "Native macOS popup keyboard selection not reproduced in headless; option selection and keyboard table access separately tested"
-  ]
+  ],
+  "production": {
+    "url": "https://open.yokohama",
+    "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+    "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+    "verifiedAt": "2026-09-07T01:12:42.617880Z",
+    "e2e": "54 passed",
+    "exports": "SVG/PNG/CSV/base SVG SHA-256 exactly match committed assets via Playwright request client",
+    "transportNote": "Python urllib received HTTP403; Playwright request and browser checks succeeded. No server policy changed."
+  }
 }
