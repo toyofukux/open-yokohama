@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-09-06T17:55:57.928284Z",
+  "checkedAt": "2026-09-07T01:02:01.258128Z",
   "sourceSnapshots": 13,
   "manuscripts": [
     {
       "path": "docs/content-review/mayoral-issues/childcare-access.md",
-      "sha256": "6041d5214e9e00ce8839efa8f8e4fc1a4e913595a480a6acefd0ba13fded9e02",
+      "sha256": "9f5f2002b5a6356ca85247bbc33e47d9290bb0ad207febb754e02051f89fb1e8",
       "sections": 6,
-      "citations": 3
+      "citations": 4
     },
     {
       "path": "docs/content-review/mayoral-issues/city-budget.md",

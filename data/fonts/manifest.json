@@ -1,0 +1,8 @@
+{
+  "family": "Noto Sans JP",
+  "weight": 450,
+  "file": "data/fonts/NotoSansJP-map-subset.ttf",
+  "sha256": "fc0f8ae9341cdb3202ccc8182b74376917d00ae6995d517864dd05577371e40d",
+  "charactersFile": "data/fonts/map-characters.txt",
+  "allExportGlyphsChecked": true
+}

@@ -10,6 +10,9 @@ const compact = (text: string) => text.replace(/\s+/g, '');
 test('the issue is discoverable from home, the issue index and local search', async ({ page }) => {
   for (const entrance of ['/', '/issues/']) {
     await page.goto(entrance);
+    if (entrance === '/') {
+      await page.getByRole('link', { name: '気になる問いを探す' }).click();
+    }
     await page.locator(`a[href="${path}"]`).first().click();
     await expect(page.getByRole('heading', { level: 1 })).toContainText('無償にすべきか');
   }

@@ -1,0 +1,103 @@
+---
+import { campaignActive } from "../../../../packages/core/presentation";
+const active = campaignActive(new Date());
+---
+
+<section
+  class="election-campaign"
+  aria-labelledby="campaign-title"
+  data-election-campaign
+  hidden={!active}
+>
+  <div class="campaign-context">
+    <span class="campaign-label">選挙特集</span><p>
+      2026年 横浜市長選<br /><time datetime="2026-10-18">10月18日 投開票</time>
+    </p>
+  </div>
+  <div class="campaign-copy">
+    <h2 id="campaign-title">一票の前に、まちの選択肢を。</h2><p>
+      保育、交通、財源。7つの問いから、何を優先するか考える。
+    </p>
+  </div>
+  <a class="campaign-link" href="/elections/mayor-2026/"
+    >市長選の論点を読む <span aria-hidden="true">→</span></a
+  >
+</section>
+<script>
+  import { campaignActive } from "../../../../packages/core/presentation";
+  const campaign = document.querySelector<HTMLElement>(
+    "[data-election-campaign]",
+  );
+  if (campaign) campaign.hidden = !campaignActive(new Date());
+</script>
+<style>
+  .election-campaign {
+    display: grid;
+    grid-template-columns: 170px 1fr auto;
+    align-items: center;
+    gap: 28px;
+    padding: 28px 32px;
+    border-block: 1px solid var(--accent);
+    background: var(--surface);
+  }
+  .election-campaign[hidden] {
+    display: none;
+  }
+  .campaign-label {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+  .campaign-context p {
+    margin: 8px 0 0;
+    font-size: 0.85rem;
+  }
+  time {
+    color: var(--muted);
+  }
+  h2 {
+    font-family: var(--serif);
+    font-size: clamp(1.3rem, 2.4vw, 1.65rem);
+    margin: 0 0 8px;
+  }
+  .campaign-copy p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .campaign-link {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .campaign-link span {
+    margin-left: 12px;
+  }
+  @media (max-width: 900px) {
+    .election-campaign {
+      grid-template-columns: 140px 1fr;
+    }
+    .campaign-link {
+      grid-column: 2;
+    }
+  }
+  @media (max-width: 600px) {
+    .election-campaign {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      padding: 24px;
+    }
+    .campaign-context {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+    }
+    .campaign-context p {
+      margin: 0;
+    }
+    .campaign-link {
+      grid-column: 1;
+    }
+  }
+</style>

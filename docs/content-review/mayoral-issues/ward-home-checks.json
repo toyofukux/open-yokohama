@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-09-07T01:10:48.721520Z",
+  "scope": "18-ward childcare evidence and home campaign/rotation",
+  "files": {
+    "apps/web/src/pages/index.astro": "55f0de4c1ac9848bf5d0f66a4d9d9ffc806429a4605fa803853b5d1ae1d50c87",
+    "apps/web/src/components/PolicyFeature.astro": "c6aacf6aef3b5b24c5fd82c89930a6b708a39b7aed221d087ba600076f3c5fcd",
+    "apps/web/src/components/ElectionCampaign.astro": "8b05598540a7d1e33ee8c569cfcb0e59c7fff1c1f153c822c9d4ee4d78e4953e",
+    "apps/web/src/pages/issues/childcare-access.astro": "1d54e51069f350ad6152fd957f005e76c10f94a761375849d59e5fd8c3515994",
+    "apps/web/src/styles/ward-evidence.css": "d40a823f3ce54ac150ea2bf7a9fa1ccfd8d863631eac8902e218a4131ec0e1de",
+    "data/childcare/derived.json": "0405d1ada5253dd5f96a3d4b3cd2cbb2687ea86c11c60dfc16ffc11fd10d8db4",
+    "data/childcare/figure.html": "80d920b15e334e9906426cbba3fc8687fd06cb18fdfe1fa57898bba112dc14c9",
+    "apps/web/public/maps/childcare-2026.svg": "51f0d820d688c928c64e3e313894dee68a9a935961fe4a7b314f443ec76e88e5",
+    "apps/web/public/maps/childcare-2026.png": "a1d146d961ed670b11ba7d2bac48d43a6e9870ed5fdc307b8441632707c08d2f"
+  },
+  "verify": "passed: 23 unit tests, 5472 observations, 37 pages, 1501 links",
+  "localE2E": "54 passed; final caption note subsequently rebuilt, production check pending",
+  "visualInspection": [
+    "home 1280/390 day/night",
+    "childcare map 1280/390 day/night",
+    "standalone PNG: all labels and footer"
+  ],
+  "sourceChecks": "N1 page 7 extracted text exactly matches pinned PDF; all 12 city totals reconciled",
+  "glyphs": "all SVG text checked against fixed font cmap",
+  "independentReview": "not_performed",
+  "humanValidation": "not_performed",
+  "formatAdoption": "provisional_not_sitewide",
+  "knownLimits": [
+    "Age-by-ward data unavailable; city-relative editorial bands only",
+    "No-JS daily feature and campaign use build-time date",
+    "Native macOS popup keyboard selection not reproduced in headless; option selection and keyboard table access separately tested"
+  ]
+}

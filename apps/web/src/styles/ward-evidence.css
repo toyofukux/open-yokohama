@@ -1,0 +1,170 @@
+.ward-evidence {
+  margin: 36px 0;
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.ward-evidence figcaption h3 {
+  margin: 8px 0;
+}
+.ward-evidence .evidence-kicker {
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+.ward-evidence .evidence-definition,
+.ward-evidence .map-limits {
+  font-size: 0.85rem;
+}
+.evidence-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-block: 20px;
+  border-block: 1px solid var(--line);
+}
+.evidence-highlights div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.evidence-highlights span,
+.evidence-highlights small {
+  font-size: 0.72rem;
+}
+.evidence-highlights strong {
+  font-size: 1.8rem;
+  font-variant-numeric: tabular-nums;
+}
+.ward-evidence .map-legend {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+  margin: 24px 0 12px;
+}
+.map-legend li {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 3px 8px;
+  align-items: center;
+  font-size: 0.73rem;
+}
+.map-legend li > span {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #6c7780;
+}
+.map-legend small {
+  grid-column: 2;
+  font-size: 0.7rem;
+}
+.ward-map-canvas {
+  background: #fff;
+  border-radius: 4px;
+  padding: 8px;
+}
+.ward-map-canvas svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ward-map-label {
+  pointer-events: none;
+}
+.ward-map-canvas [data-selected] {
+  stroke: #132c3a;
+  stroke-width: 4;
+}
+.ward-map-controls {
+  margin: 20px 0;
+}
+.ward-map-controls[hidden] {
+  display: none;
+}
+.ward-map-controls label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+.ward-map-controls select {
+  width: 100%;
+  min-height: 44px;
+  background: var(--bg);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 10px;
+  font: inherit;
+}
+.ward-map-controls [role="status"] {
+  font-size: 0.9rem;
+  min-height: 4em;
+}
+.ward-evidence details {
+  border-top: 1px solid var(--line);
+  padding: 16px 0;
+}
+.ward-evidence summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.ward-evidence caption {
+  text-align: left;
+  font-size: 0.75rem;
+  padding: 16px 0;
+}
+.ward-evidence table {
+  font-size: 0.75rem;
+}
+.ward-evidence .map-method p {
+  font-size: 0.8rem;
+}
+.map-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 12px;
+  font-size: 0.8rem;
+}
+@media (max-width: 600px) {
+  .ward-evidence {
+    padding: 16px;
+    margin-inline: -8px;
+  }
+  .evidence-highlights {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .evidence-highlights div {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+  .evidence-highlights small {
+    grid-column: 1 / -1;
+  }
+  .evidence-highlights strong {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 1.5rem;
+  }
+  .ward-evidence .map-legend {
+    gap: 8px;
+  }
+  .map-legend li {
+    grid-template-columns: 1fr;
+    font-size: 0.7rem;
+  }
+  .map-legend small {
+    grid-column: 1;
+  }
+  .ward-data-table th[scope="row"] {
+    display: block;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}

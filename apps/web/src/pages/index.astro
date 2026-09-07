@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Harbor from "../components/Harbor.astro";
 import PolicyFeature from "../components/PolicyFeature.astro";
+import ElectionCampaign from "../components/ElectionCampaign.astro";
 import { data, latest, number, wards } from "../data";
 import { issues } from "../../../../packages/core/issues";
 const population = latest(data, "141003", "population");
@@ -18,11 +19,12 @@ const change = latest(data, "141003", "population_change");
         </p><h1>横浜の暮らしを、<br />身近な問いから。</h1><p class="intro">
           住んでいる区のこと。これからのまちのこと。<br
           />気になる政策の選択肢と、その根拠を一緒に確かめよう。
-        </p><a class="action" href="/issues/school-lunch/"
-          >給食費の支援を考える <span aria-hidden="true">→</span></a
+        </p><a class="action" href="/issues/"
+          >気になる問いを探す <span aria-hidden="true">→</span></a
         >
       </div><Harbor />
     </section>
+    <ElectionCampaign />
     <PolicyFeature />
     <div class="meta-line">
       <span><span class="dot"></span>横浜市の公式統計をもとに掲載</span><span
@@ -112,10 +114,26 @@ const change = latest(data, "141003", "population_change");
           </p><a class="small" href="/sources/">データの確かめ方 →</a>
         </div><div class="note">
           <strong>いま読めること</strong><p style="margin:8px 0 0">
-            中学校給食費の支援を、対象・家計負担・財源から考えます。人口と世帯の統計も、18区を比較しながら確認できます。
+            給食、保育、財政、交通、防災など、7つの政策の選択肢を掲載しています。人口と世帯の統計も、18区を比較しながら確認できます。
           </p>
         </div>
       </div>
     </section>
   </div></Layout
 >
+
+<style>
+  .stat {
+    min-width: 0;
+  }
+  @media (max-width: 700px) {
+    .stat {
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));
+      gap: 8px;
+    }
+    .stat-number {
+      white-space: normal;
+      overflow-wrap: anywhere;
+    }
+  }
+</style>

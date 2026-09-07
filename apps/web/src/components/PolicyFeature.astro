@@ -1,71 +1,178 @@
 ---
-import { schoolLunch } from "../../../../packages/core/policy-issues";
+import { policyIssues } from "../../../../packages/core/policy-issues";
+import { featuredIndex } from "../../../../packages/core/presentation";
+const initial = featuredIndex(new Date(), policyIssues.length);
 ---
 
-<section class="policy-feature" aria-labelledby="policy-feature-title">
-  <div class="feature-context">
-    <p class="eyebrow">政策を考える</p>
-    <span>{schoolLunch.category}</span>
+<section
+  class="policy-feature"
+  aria-labelledby="policy-feature-title"
+  data-policy-feature
+>
+  <div class="feature-heading">
+    <div>
+      <p class="eyebrow">暮らしから、政策を考える</p><h2
+        id="policy-feature-title"
+      >
+        今日の問い
+      </h2>
+    </div>
+    <div class="feature-controls" hidden>
+      <button
+        type="button"
+        data-step="-1"
+        aria-label="前の問い"
+        aria-controls="featured-questions">←</button
+      >
+      <span data-position role="status" aria-live="polite"
+        >{initial + 1} / {policyIssues.length}</span
+      >
+      <button
+        type="button"
+        data-step="1"
+        aria-label="次の問い"
+        aria-controls="featured-questions">→</button
+      >
+    </div>
   </div>
-  <div>
-    <h2 id="policy-feature-title">
-      <a href={schoolLunch.url}>{schoolLunch.title}</a>
-    </h2>
-    <p>{schoolLunch.summary}</p>
-    <p>
-      <a href="/elections/mayor-2026/">横浜市長選を考える7つの問いを読む →</a>
-    </p>
-    <a class="feature-link" href={schoolLunch.url}
-      >選択肢と根拠を読む <span aria-hidden="true">→</span></a
+  <div id="featured-questions">
+    {
+      policyIssues.map((issue, index) => (
+        <article data-feature-item hidden={index !== initial}>
+          <p class="feature-category">{issue.category}</p>
+          <h3>
+            <a href={issue.url}>{issue.title}</a>
+          </h3>
+          <p class="feature-summary">{issue.summary}</p>
+          <a class="feature-link" href={issue.url}>
+            選択肢と根拠を読む <span aria-hidden="true">→</span>
+          </a>
+        </article>
+      ))
+    }
+  </div>
+  <div class="feature-footer">
+    <span>日替わりで、違う問いに出会う。</span><a href="/issues/"
+      >すべての問いを見る →</a
     >
   </div>
 </section>
-
+<script>
+  import { featuredIndex } from "../../../../packages/core/presentation";
+  const root = document.querySelector<HTMLElement>("[data-policy-feature]");
+  if (root) {
+    const items = [
+      ...root.querySelectorAll<HTMLElement>("[data-feature-item]"),
+    ];
+    const position = root.querySelector<HTMLElement>("[data-position]")!;
+    let index = featuredIndex(new Date(), items.length);
+    const show = () => {
+      items.forEach((item, i) => {
+        item.hidden = i !== index;
+      });
+      position.textContent = `${index + 1} / ${items.length}`;
+    };
+    show();
+    root.querySelector<HTMLElement>(".feature-controls")!.hidden = false;
+    root.querySelectorAll<HTMLButtonElement>("[data-step]").forEach((button) =>
+      button.addEventListener("click", () => {
+        index =
+          (index + Number(button.dataset.step) + items.length) % items.length;
+        show();
+      }),
+    );
+  }
+</script>
 <style>
   .policy-feature {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 32px;
-    padding: 36px;
-    border-block: 1px solid var(--line);
+    margin: 32px 0 48px;
+    padding: 32px 36px;
     background: var(--surface);
-    margin: 32px 0;
+    border: 1px solid var(--line);
   }
-  .feature-context span {
-    font-size: 0.85rem;
-    color: var(--muted);
+  .feature-heading,
+  .feature-controls,
+  .feature-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .feature-controls[hidden],
+  article[hidden] {
+    display: none;
+  }
+  .eyebrow {
+    margin: 0 0 8px;
   }
   h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  h3 {
     font-family: var(--serif);
     font-size: clamp(1.45rem, 3vw, 2rem);
+    max-width: 30em;
+    margin: 8px 0 12px;
   }
-  h2 a {
+  h3 a {
+    overflow-wrap: anywhere;
     text-decoration: none;
   }
-  p {
-    max-width: 42em;
+  article {
+    min-height: 220px;
+    padding: 24px 0;
+  }
+  .feature-category,
+  .feature-footer {
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  .feature-category {
+    margin: 0;
+  }
+  .feature-summary {
+    max-width: 44em;
   }
   .feature-link {
     color: var(--accent);
     font-weight: 700;
-    font-size: 0.9rem;
   }
   .feature-link span {
     margin-left: 20px;
   }
+  .feature-controls {
+    flex-shrink: 0;
+    font-size: 0.85rem;
+  }
+  button {
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--line);
+    background: var(--bg);
+    color: var(--ink);
+    border-radius: 50%;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  button:hover {
+    border-color: var(--accent);
+  }
+  .feature-footer {
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
   @media (max-width: 700px) {
     .policy-feature {
-      grid-template-columns: 1fr;
-      gap: 16px;
       padding: 24px;
     }
-    .feature-context {
-      display: flex;
-      gap: 20px;
-      align-items: baseline;
+    .feature-heading {
+      align-items: flex-end;
+      flex-wrap: wrap;
     }
-    .eyebrow {
-      margin: 0;
+    article {
+      min-height: 290px;
     }
   }
 </style>

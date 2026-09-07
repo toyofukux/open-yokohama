@@ -40,6 +40,14 @@ childcare = (HERE / 'childcare-access.md').read_text()
 for value in [f'{applications:,}', f'{enrolled:,}', f'{held:,}', f'{remaining:,}', f'{extension:,}', '約72％']:
  assert value in childcare
 
+# Verify committed ward extraction against the fixed PDF's page 7, before totals/rates.
+import subprocess
+n1 = next(source for source in sources if source['id'] == 'N1')
+page7 = subprocess.check_output(['pdftotext', '-f', '7', '-l', '7', '-layout', str(ROOT / n1['localPath']), '-']).decode()
+ward_text = (ROOT / 'data/childcare/ward-table-2026.txt').read_text()
+normalize = lambda text: re.sub(r'\s+', '', text)
+assert normalize(ward_text) == normalize(page7), 'Committed extraction differs from source PDF page 7'
+
 expo_row = re.search(r'令和8年度\s+([\d,]+)\s+0\s+0\s+([\d,]+)\s+0\s+([\d,]+)', texts['X1'])
 assert expo_row
 total, other, general = map(number, expo_row.groups())

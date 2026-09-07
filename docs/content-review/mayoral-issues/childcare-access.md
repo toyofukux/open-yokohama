@@ -32,6 +32,10 @@ sourceIds: [N1, N3]
 
 市の2026年度計画も、1・2歳児を中心に既存施設の定員構成の見直しなどで受入枠を確保し、既存資源だけでは足りない地域では整備を進める方針を示す。[保育所等整備事業・PDF120ページ](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf#page=120)
 
+区別には、育児休業の延長希望を含む保留児童2,532人の内訳が公表されている。人数は港北区312人が最多だが、申請者に占める割合は瀬谷区6.8％が最も高く、市全体は3.4％となる。割合の分母は、各区の利用児童数と保留児童数の合計だ。[補足資料・7ページ](https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf#page=7)
+
+<!-- evidence:childcare-wards -->
+
 この点からは、園を一律に増やすかどうかより、必要な枠をどこに作るかが判断の分かれ目になる。ただし、統計だけで個々の家庭の希望や園の質までは評価できない。
 
 ## 限られたお金を、どこに向けるか

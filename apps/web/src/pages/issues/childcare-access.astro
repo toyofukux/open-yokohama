@@ -1,4 +1,5 @@
 ---
+import "../../styles/ward-evidence.css";
 import PolicyArticle from "../../components/PolicyArticle.astro";
 import {
   Content,
@@ -29,3 +30,45 @@ const sources = inventory.filter((s) => frontmatter.sourceIds.includes(s.id));
   version={version}
   sources={sources}><Content /></PolicyArticle
 >
+
+<script>
+  import data from "../../../../../data/childcare/derived.json";
+  const root = document.querySelector<HTMLElement>("[data-childcare-map]");
+  if (root) {
+    const select = root.querySelector<HTMLSelectElement>("select")!;
+    const detail = root.querySelector<HTMLElement>("[data-ward-detail]")!;
+    const format = (value: number) => value.toLocaleString("ja-JP");
+    root.querySelector<HTMLElement>(".ward-map-controls")!.hidden = false;
+    select.addEventListener("change", () => {
+      const ward = data.wards.find((item) => item.code === select.value);
+      root
+        .querySelectorAll("[data-selected]")
+        .forEach((path) => path.removeAttribute("data-selected"));
+      if (!ward) {
+        detail.textContent =
+          "区を選ぶと、人数・割合・市全体との違いを表示する。";
+        return;
+      }
+      const comparison =
+        ward.band === "high"
+          ? "市全体より高め"
+          : ward.band === "low"
+            ? "市全体より低め"
+            : "市全体に近い";
+      detail.textContent = `${ward.name}：申請者${format(ward.applicants)}人のうち、保留児童${format(ward.held)}人。割合は${ward.rate.toFixed(1)}％で、${comparison}（市全体${data.city.rate.toFixed(1)}％）。育児休業の延長希望を含む。`;
+      root
+        .querySelector(`[data-ward="${ward.code}"]`)
+        ?.setAttribute("data-selected", "true");
+    });
+    root
+      .querySelector(".ward-map-canvas")
+      ?.addEventListener("click", (event) => {
+        const path = (event.target as Element).closest<SVGElement>(
+          "[data-ward]",
+        );
+        if (!path) return;
+        select.value = path.dataset.ward!;
+        select.dispatchEvent(new Event("change"));
+      });
+  }
+</script>

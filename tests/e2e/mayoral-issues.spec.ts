@@ -38,7 +38,8 @@ for (const issue of mayoralIssues) {
     const body = manuscript.replace(/^---\n[\s\S]*?\n---\n/, '');
     const rendered = compact((await page.locator('.policy-prose').textContent()) ?? '');
     for (const line of body.split('\n')) {
-      if (!line.trim() || /^\|[\s:|-]+\|$/.test(line)) continue;
+      if (!line.trim() || line.startsWith('<!-- evidence:') || /^\|[\s:|-]+\|$/.test(line))
+        continue;
       const passages = line.startsWith('|') ? line.split('|').slice(1, -1) : [line];
       for (const passage of passages) {
         const plain = passage
@@ -54,11 +55,12 @@ for (const issue of mayoralIssues) {
       .evaluateAll((links) => links.map((link) => link.getAttribute('href')));
     for (const link of body.matchAll(/\]\((https:\/\/[^)]+)\)/g)) expect(hrefs).toContain(link[1]);
     for (const table of await page.locator('.policy-prose table').all()) {
-      const labels = await table.locator('th').allTextContents();
+      const labels = await table.locator('thead th').allTextContents();
       for (const row of await table.locator('tbody tr').all()) {
         const cells = await row.locator('td').all();
         for (let i = 0; i < cells.length; i++) {
-          await expect(cells[i]).toHaveAttribute('data-label', labels[i]);
+          const offset = await row.locator('th[scope="row"]').count();
+          await expect(cells[i]).toHaveAttribute('data-label', labels[i + offset]);
         }
       }
     }
@@ -115,7 +117,7 @@ test('facts, comparison and source navigation remain usable without JavaScript',
   for (const issue of mayoralIssues) {
     await page.goto(`${base}${issue.url}`);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(issue.title);
-    await expect(page.locator('.policy-prose table').first()).toBeVisible();
+    await expect(page.locator('.policy-prose > table').first()).toBeVisible();
     await page.locator('.policy-toc summary').focus();
     await page.keyboard.press('Enter');
     await expect(page.getByRole('navigation', { name: 'この記事の目次' })).toBeVisible();

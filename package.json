@@ -9,7 +9,7 @@
   "packageManager": "pnpm@10.32.1",
   "scripts": {
     "dev": "astro dev --root apps/web --host 127.0.0.1",
-    "build": "tsx scripts/validate-editorial.ts && tsx scripts/validate.ts && astro build --root apps/web && tsx scripts/check-links.ts",
+    "build": "pnpm maps:check && tsx scripts/validate-editorial.ts && tsx scripts/validate.ts && astro build --root apps/web && tsx scripts/check-links.ts",
     "check": "astro check --root apps/web && tsc --noEmit",
     "test": "tsx --test tests/*.test.ts",
     "test:e2e": "playwright test",
@@ -23,7 +23,9 @@
     "verify": "pnpm lint && pnpm lint:web && pnpm check && pnpm test && pnpm build",
     "test:mcp": "tsx scripts/mcp-smoke.ts",
     "format:web": "prettier --plugin prettier-plugin-astro --write 'apps/web/src/**/*.{astro,css,ts}'",
-    "lint:web": "prettier --plugin prettier-plugin-astro --check 'apps/web/src/**/*.{astro,css,ts}'"
+    "lint:web": "prettier --plugin prettier-plugin-astro --check 'apps/web/src/**/*.{astro,css,ts}'",
+    "maps:build": "tsx scripts/build-ward-evidence.ts",
+    "maps:check": "tsx scripts/build-ward-evidence.ts --check"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
@@ -31,6 +33,7 @@
     "@axe-core/playwright": "^4.13.0",
     "@biomejs/biome": "^2.5.12",
     "@playwright/test": "^1.63.0",
+    "@resvg/resvg-js": "2.6.2",
     "@types/node": "^24.13.3",
     "astro": "7.3.1",
     "prettier": "^3.9.6",

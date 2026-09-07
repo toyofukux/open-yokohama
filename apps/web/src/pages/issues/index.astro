@@ -1,7 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import PolicyFeature from "../../components/PolicyFeature.astro";
-import { mayoralIssues } from "../../../../../packages/core/policy-issues";
+import { policyIssues } from "../../../../../packages/core/policy-issues";
 import { issues } from "../../../../../packages/core/issues";
 ---
 
@@ -13,14 +12,14 @@ import { issues } from "../../../../../packages/core/issues";
       QUESTIONS ABOUT OUR CITY
     </p><h1 class="page-title">身近な問いから、まちを知る。</h1><p class="lede">
       まず要点をつかんで、気になったら詳しく。数字の根拠までたどれます。
-    </p><PolicyFeature />
+    </p>
     <h2>横浜の政策を、選択肢から考える</h2>
     <p>
       <a href="/elections/mayor-2026/">市長選の7論点と、読む順番を見る →</a>
     </p>
     <div class="cards section">
       {
-        mayoralIssues.map((issue) => (
+        policyIssues.map((issue) => (
           <a class="card card-link" href={issue.url}>
             <>
               <span class="tag">{issue.category}</span>
