@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="開発者向け・MCP"
   ><article class="container narrow section prose">
     <h1 class="page-title">データを、別の道具からも。</h1><p>
-      Webと同じ公開データを、JSON・CSV・MCPから利用できます。出典と時点を保ったまま、調査や可視化に使ってください。
+      Webと同じ公開データを、JSON・CSVから利用できます。出典と時点を保ったまま、調査や可視化に使ってください。
     </p><h2>ダウンロード</h2><ul>
       <li><a href="/data/population.json">出典・観測値付きJSON</a></li><li>
         <a href="/data/population.csv">分析用CSV</a>
@@ -16,13 +16,11 @@ import Layout from "../layouts/Layout.astro";
       <li><a href="/data/ages.json">年齢構成の出典付きJSON</a></li><li>
         <a href="/data/ages.csv">年齢構成のCSV</a>
       </li>
-    </ul><h2>MCP</h2><p>
-      公開データ専用の読み取りサーバーです。接続先と稼働状態は<a
+    </ul><h2>MCP（公開停止中）</h2><p>
+      現在、MCPの外部提供は停止しています。データは上記のJSON・CSVから利用できます。ローカル開発については<a
         href="https://github.com/toyofukux/open-yokohama/blob/main/docs/runbooks/mcp.md"
         >MCP利用手順</a
-      >に記載しています。
-    </p><p>
-      人口・世帯等の時系列、区比較、出典を型付きツールで取得します。AIモデルの利用料は利用者側のサービスに従います。このサーバー自体はLLMを実行しません。
+      >を参照してください。
     </p><h2>データの解釈</h2><p>
       推計人口と住民基本台帳の人数は異なります。出典・定義・地域・時点が同じかを確認してください。回答で使用した値には、元の出典URLと行・列を付けてください。
     </p>

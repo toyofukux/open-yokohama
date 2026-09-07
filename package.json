@@ -19,7 +19,7 @@
     "format": "biome check --write packages scripts tests apps/mcp/src",
     "preview": "wrangler dev --config wrangler.jsonc --port 8788",
     "deploy": "pnpm build && wrangler deploy --config wrangler.jsonc",
-    "mcp:dev": "wrangler dev --config apps/mcp/wrangler.jsonc --port 8789",
+    "mcp:dev": "wrangler dev --config apps/mcp/wrangler.jsonc --local --ip 127.0.0.1 --port 8789",
     "verify": "pnpm lint && pnpm lint:web && pnpm check && pnpm test && pnpm build",
     "test:mcp": "tsx scripts/mcp-smoke.ts",
     "format:web": "prettier --plugin prettier-plugin-astro --write 'apps/web/src/**/*.{astro,css,ts}'",

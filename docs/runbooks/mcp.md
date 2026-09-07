@@ -1,7 +1,24 @@
 # MCP利用手順
 
-起動: `pnpm mcp:dev`。ローカル接続先: `http://127.0.0.1:8789/mcp`。
-公開接続先: `https://open-yokohama-mcp.toyofukux.workers.dev/mcp`。
+## 公開状態と方針（2026-09-07更新）
+
+ユーザーの費用抑制の指示により、MCPの外部公開を停止しました。APIキーやCloudflare認証が存在しても再公開しません。
+公開再開は今回のDWH計画に含めず、ユーザーが対象・費用条件を明示して再開を指示するまで保留します。
+
+以前は `open-yokohama-mcp.toyofukux.workers.dev` で公開されていました。今回、Cloudflareの `enabled` と `previews_enabled` をともにfalseへ変更しました。
+追加route・custom domainはありませんでした。変更後に管理APIでfalse、旧 `/health`・`/mcp` で404を確認しました。
+設定ファイルも `workers_dev: false`、`preview_urls: false`、`routes: []` に固定し、単体テストで再有効化を検出します。
+
+このMCPは保存済みデータを返し、サーバー内でAIモデルを呼びません。そのためAIのAPIキーなしでも稼働していました。
+Cloudflareのデプロイ認証はAIのAPIキーと別で、この端末には既存のOAuth認証がありました。認証情報そのものは記録しません。
+外部MCPの動的リクエストに伴う費用と、AIモデルの利用料は別です。MCPの停止はアカウント全体の料金停止を意味しません。
+
+停止設定の根拠: [workers.devの無効化](https://developers.cloudflare.com/workers/configuration/routing/workers-dev/#disabling-workersdev)、[プレビューURLの無効化](https://developers.cloudflare.com/workers/versions-and-deployments/preview-urls/#toggle-preview-urls-enable-or-disable)。
+
+## ローカルでの利用
+
+起動: `pnpm mcp:dev`。ローカル接続先: `http://127.0.0.1:8789/mcp`。`--local --ip 127.0.0.1` で起動します。
+以下は実装済みのローカル機能の説明です。公開MCPへの接続案内ではありません。
 
 Streamable HTTP、セッションなし、公開データ読み取りのみです。
 MCPのバージョン交渉は公式TypeScript SDKに委ねています。初期構想にある日付を実装済みの仕様としてハードコードしません。

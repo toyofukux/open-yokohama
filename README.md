@@ -3,10 +3,19 @@
 横浜の暮らしを、身近な数字から。Open Yokohamaは、18区の人口と世帯の変化を、公式統計と原典付きで調べられる市民向けの公共情報基盤です。
 Cloudflareの静的配信を中心に、閲覧時のDB・AI実行をなくして運用費を抑えます。
 
-[公開サイト](https://open.yokohama) · [公開MCP](https://open-yokohama-mcp.toyofukux.workers.dev/mcp)
+このプロジェクトは、横浜市域の数字・ファクト・出典・改定履歴を蓄積するDWHの整備も目的とします。
+open.yokohamaの記事・図表・調査が同じデータを参照する構成を目指します。
+現在は人口分野の3系列を提供しており、共通DWHと記事の参照版管理は設計段階です。
+[現状監査](docs/DWH-AUDIT.md) · [DWHと記事参照の目標設計](docs/DWH-DESIGN.md)
+
+「既存3系列」の中身と、今のデータ・記事・訂正がどう変わるかは[具体例による全体説明](docs/DWH-EXAMPLES.md)にまとめました。
+
+[公開サイト](https://open.yokohama)
+
+MCPは2026-09-07に外部公開を停止しました。APIキーやクラウド認証があっても再公開しません。現在はローカル開発のみです。
 
 現在は**公開β版**です。2024年1月〜2026年8月の32か月について、横浜市と18区の9指標・5,472観測値を収録しています。
-人口・世帯・密度の3つの問い、18区ページ、比較・検索、CSV/JSON、公開MCPをご利用いただけます。
+人口・世帯・密度の3つの問い、18区ページ、比較・検索、CSV/JSONをご利用いただけます。
 この版では、人口増減の内訳10指標・8,130値と、年齢構成5指標・2,470値も収録しています。市と18区の年別データは2000〜2025年、市の月別人口動態は2000年1月〜2026年7月です。
 予算・政策の効果・国内都市比較は未提供です。市民利用テストも未実施です。実環境への反映記録は[STATUS](docs/STATUS.md)を参照してください。
 
@@ -29,7 +38,7 @@ pnpm verify                         # lint・型・データ/検証ゲートの�
 pnpm exec playwright install chromium
 pnpm test:e2e                       # PC/スマホ・アクセシビリティ・出典導線
 pnpm preview                        # Cloudflareのローカル配信 :8788
-pnpm mcp:dev                        # 公開データMCP :8789/mcp
+pnpm mcp:dev                        # ローカル限定のデータMCP :8789/mcp
 pnpm test:mcp                       # 別ターミナルから実MCP接続を検証
 pnpm data:refresh                   # 人口残高CSVを取得・検査。過去値変更では停止
 pnpm data:refresh:dynamics          # 出生・死亡・転出入のCSVを取得・検査
