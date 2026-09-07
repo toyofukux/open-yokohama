@@ -1860,13 +1860,19 @@
         "currentChangeInstruction": "ユーザー指定の旧人口・世帯・密度3記事を撤去し、サイトの意図に沿って全体の問いと優先順位を再構成する。既存の公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_local",
+        "implementation": "implemented_production",
         "independentReview": "not_performed",
         "userValidation": "not_performed",
         "formatAdoption": "provisional_not_sitewide",
-        "publication": "update_pending"
+        "publication": "published"
       },
-      "deployment": null,
+      "deployment": {
+        "workerVersion": "c9c149c7-cbf2-4793-8ad8-41d273c2d55b",
+        "implementationCommit": "b43fcdf512ff181253b4b0a1b276540499372505",
+        "url": "https://open.yokohama/elections/mayor-2026/",
+        "verifiedAt": "2026-09-07T01:46:33.812470Z",
+        "productionE2E": "54 passed"
+      },
       "presentationReview": {
         "reviewedAt": "2026-09-07T01:41:30.795397Z",
         "reviewer": "Codex author, not independent",
