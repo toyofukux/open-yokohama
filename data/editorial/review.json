@@ -1,0 +1,1652 @@
+{
+  "report": {
+    "schemaVersion": 1,
+    "packetHash": "95b66bcf0e786916d9fdb85733ae86522772ab3f2d1de84626f364d32bcaa976",
+    "reviewer": "codex-editorial-review",
+    "reviewerRole": "machine",
+    "reviewedAt": "2026-09-06T01:57:28.726Z",
+    "provider": "codex-cli / default model / isolated sessions",
+    "runs": [
+      {
+        "stage": "extract",
+        "runId": "517fe064-5dc7-4928-8c87-6696524af9ff",
+        "outputHash": "9a36ee0f3c31234737825f7cbb4381558dbddfa4af8dc846a0ab5d4a0902c417"
+      },
+      {
+        "stage": "verify",
+        "runId": "6868c458-6ee6-44f3-96e4-66e9cf459d88",
+        "outputHash": "ae0b18a3e4cbfa412ace9509afc608c7329a75d1875db1e72d1f53bd6d277c7e"
+      },
+      {
+        "stage": "challenge",
+        "runId": "abd06f18-2c8a-45f6-a702-ca4b771d59c4",
+        "outputHash": "6bd71e56a124cdeff51074efaa943ec24c72b1dcc0a6e49087e17ce299f777df"
+      }
+    ],
+    "extraction": {
+      "claims": [
+        {
+          "id": "population/c1",
+          "blockId": "population.category",
+          "quote": "人口・まちの変化",
+          "proposition": "人口とまちの変化を扱うカテゴリ名。",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "scope": "statistics"
+        },
+        {
+          "id": "population/c2",
+          "blockId": "population.title",
+          "quote": "横浜の人口は、どこで変わっている？",
+          "proposition": "横浜の人口に変化が生じていることを前提に、その場所を尋ねている。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "statistics"
+        },
+        {
+          "id": "population/c3",
+          "blockId": "population.summary",
+          "quote": "区ごとの人口の推移は、各区のページで確認できます。",
+          "proposition": "各区のページには、その区の人口の推移を確認できる機能がある。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "population/c4",
+          "blockId": "population.question",
+          "quote": "区ごとの人口は、どう推移している？",
+          "proposition": "区ごとの人口の推移を尋ねる開かれた質問。",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "scope": "statistics"
+        },
+        {
+          "id": "population/c5",
+          "blockId": "population.limits",
+          "quote": "人口の増減だけでは、出生・死亡・転入・転出のどれが原因かは分かりません。",
+          "proposition": "人口の増減だけからは、出生・死亡・転入・転出のどれが増減の原因かを特定できない。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "methodology"
+        },
+        {
+          "id": "population/c6",
+          "blockId": "population.limits",
+          "quote": "国勢調査を基にした推計の改定も、数字の変化に含まれる場合があります。",
+          "proposition": "人口の数字の変化には、国勢調査を基にした人口推計の改定による変化が含まれる場合がある。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "methodology"
+        },
+        {
+          "id": "population/c7",
+          "blockId": "population.next",
+          "quote": "このページの人口推移には、出生・死亡・転入・転出の内訳と",
+          "proposition": "populationの課題ページの人口推移には、出生・死亡・転入・転出の内訳が含まれていない。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "population/c8",
+          "blockId": "population.next",
+          "quote": "年齢別人口は含まれません。",
+          "proposition": "populationの課題ページの人口推移には、年齢別人口が含まれていない。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "population/c9",
+          "blockId": "population.next",
+          "quote": "政策効果の推定値も含まれません。",
+          "proposition": "populationの課題ページの人口推移には、政策効果の推定値が含まれていない。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "households/c1",
+          "blockId": "households.category",
+          "quote": "住まい・暮らし",
+          "proposition": "住まい・暮らしという分類ラベル。",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "households/c2",
+          "blockId": "households.title",
+          "quote": "人口と世帯数の推移は、どう違う？",
+          "proposition": "人口の推移と世帯数の推移には違いがあることを前提として、その違いを尋ねている。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "statistics"
+        },
+        {
+          "id": "households/c3",
+          "blockId": "households.summary",
+          "quote": "比較ページで、区ごとの人口・世帯数・1世帯あたりの人数を切り替えて表示できます。",
+          "proposition": "比較ページには、区ごとの人口・世帯数・1世帯あたりの人数を切り替えて表示する機能がある。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "households/c4",
+          "blockId": "households.question",
+          "quote": "人口と世帯数の比は、区によってどう違う？",
+          "proposition": "人口と世帯数の比には区による違いがあることを前提として、その違いを尋ねている。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "statistics"
+        },
+        {
+          "id": "households/c5",
+          "blockId": "households.limits",
+          "quote": "1世帯あたりの人数は平均です。",
+          "proposition": "ここで扱う1世帯あたりの人数は平均値である。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "methodology"
+        },
+        {
+          "id": "households/c6",
+          "blockId": "households.limits",
+          "quote": "この値だけで、単身世帯の割合や",
+          "proposition": "1世帯あたりの人数の平均値だけでは、単身世帯の割合を判断できない。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "methodology"
+        },
+        {
+          "id": "households/c7",
+          "blockId": "households.limits",
+          "quote": "高齢者の孤立、",
+          "proposition": "1世帯あたりの人数の平均値だけでは、高齢者の孤立を判断できない。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "methodology"
+        },
+        {
+          "id": "households/c8",
+          "blockId": "households.limits",
+          "quote": "住宅不足を判断することはできません。",
+          "proposition": "1世帯あたりの人数の平均値だけでは、住宅不足を判断できない。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "methodology"
+        },
+        {
+          "id": "households/c9",
+          "blockId": "households.next",
+          "quote": "世帯構成、",
+          "proposition": "この製品の現在のデータには、世帯構成が収録されていない。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "households/c10",
+          "blockId": "households.next",
+          "quote": "住宅の空き状況、",
+          "proposition": "この製品の現在のデータには、住宅の空き状況が収録されていない。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "households/c11",
+          "blockId": "households.next",
+          "quote": "家賃は未収録です。",
+          "proposition": "この製品の現在のデータには、家賃が収録されていない。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "households/c12",
+          "blockId": "households.next",
+          "quote": "現在のデータでは世帯数と人口を比較できます。",
+          "proposition": "この製品の現在のデータでは、世帯数と人口を比較できる。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "density/c1",
+          "blockId": "density.category",
+          "quote": "まち・地域",
+          "proposition": "カテゴリ名を示すラベル。",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "density/c2",
+          "blockId": "density.title",
+          "quote": "人口の密度は、区によってどう違う？",
+          "proposition": "横浜市の人口密度は区によって異なるという前提で、その違いを尋ねている。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "statistics"
+        },
+        {
+          "id": "density/c3",
+          "blockId": "density.summary",
+          "quote": "比較ページで、18区の人口と人口密度を切り替えて表示できます。",
+          "proposition": "比較ページでは、横浜市18区の人口と人口密度を切り替えて表示できる。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "density/c4",
+          "blockId": "density.question",
+          "quote": "人口と人口密度を比べると？",
+          "proposition": "人口と人口密度を比較すると何が分かるかを尋ねる開かれた質問。",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "scope": "statistics"
+        },
+        {
+          "id": "density/c5",
+          "blockId": "density.limits",
+          "quote": "区の平均密度は、駅周辺や住宅地ごとの混雑を表しません。",
+          "proposition": "区の平均人口密度は、駅周辺や住宅地ごとの混雑を表さない。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "methodology"
+        },
+        {
+          "id": "density/c6",
+          "blockId": "density.limits",
+          "quote": "通勤・通学による昼間の人口や、",
+          "proposition": "区の平均人口密度は、通勤・通学による昼間の人口とは異なる。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "methodology"
+        },
+        {
+          "id": "density/c7",
+          "blockId": "density.limits",
+          "quote": "住みやすさの評価とも異なります。",
+          "proposition": "区の平均人口密度は、住みやすさの評価とは異なる。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "methodology"
+        },
+        {
+          "id": "density/c8",
+          "blockId": "density.next",
+          "quote": "町丁別人口、",
+          "proposition": "現在の製品には町丁別人口が未収録である。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "density/c9",
+          "blockId": "density.next",
+          "quote": "土地利用、",
+          "proposition": "現在の製品には土地利用が未収録である。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "density/c10",
+          "blockId": "density.next",
+          "quote": "交通・施設の分布は未収録です。",
+          "proposition": "現在の製品には交通・施設の分布が未収録である。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "density/c11",
+          "blockId": "density.next",
+          "quote": "現在の比較は区単位で、",
+          "proposition": "現在の製品の比較は区単位である。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        },
+        {
+          "id": "density/c12",
+          "blockId": "density.next",
+          "quote": "町や徒歩圏には対応していません。",
+          "proposition": "現在の製品の比較は町や徒歩圏に対応していない。",
+          "kind": "fact",
+          "requiresHuman": false,
+          "scope": "product"
+        }
+      ]
+    },
+    "verification": {
+      "coverageComplete": true,
+      "coverageRationale": "全ブロックの事実前提、留保、否定を9件の主張が網羅している。見出しの変化の前提と、内訳・年齢別人口・政策効果推定値の非掲載も個別に扱っている。\n分類、問いに含まれる差の前提、比較ページの機能、平均の定義と各限界、未収録の3項目、現在のデータでの比較可能性を網羅している。省略された引用も元の文の否定と対象を保っている。\n全ブロックの事実前提、機能の所在、統計上の限界、未収録事項を12件で網羅している。断片引用も前後の文脈と命題が一致している。",
+      "missingClaims": [],
+      "judgments": [
+        {
+          "claimId": "population/c1",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "verdict": "not_applicable",
+          "evidence": [],
+          "rationale": "分野を示すカテゴリ名であり、検証可能な事実を断定していない。"
+        },
+        {
+          "claimId": "population/c2",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-6325c84500310f8944a9acd24a9ddea4b41599189fa92cbcd72341d299db8481",
+              "quote": "2026/7/1,141003,横浜市,438.23,1811626,3758990",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "2026/8/1,141003,横浜市,438.23,1811911,3757891",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原本CSVの横浜市人口総数は7月1日の3,758,990人から8月1日の3,757,891人へ変化している。問いが前提とする人口の変化を支持するが、原因までは示さない。"
+        },
+        {
+          "claimId": "population/c3",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-ward",
+              "quote": "const timeline = series(data, ward.code, \"population\");",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-ward",
+              "quote": "<h2>人口は、どう変わっている？</h2><Trend geography={ward.code} />",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-trend",
+              "quote": "const { geography, metric = \"population\" } = Astro.props;\nconst points = series(data, geography, metric);",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.geography === geography && o.metric === metric)\n    .sort((a, b) => a.period.localeCompare(b.period));",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "リンク先である各区ページ自体が区コードで人口時系列を取得し、人口推移の図と時点別表を表示する。問い合わせ処理も当該区・指標への絞り込みと時点順の整列を実装している。"
+        },
+        {
+          "claimId": "population/c4",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "verdict": "not_applicable",
+          "evidence": [],
+          "rationale": "推移を尋ねる開かれた質問であり、特定の増減や差、原因を前提にしていない。"
+        },
+        {
+          "claimId": "population/c5",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "population-method",
+              "quote": "「推計人口」は、直近の国勢調査の結果をもとに、毎月の出生・死亡・転入・転出等を加減し、毎月１日現在で算出したものです。",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原典は人口を出生・死亡・転入・転出等の加減結果と定義する。同じ純増減を生む内訳は複数あるため、増減だけから各要素を一意に特定できない。数学的な識別限界であり、特定の因果効果や政策の判断ではない。"
+        },
+        {
+          "claimId": "population/c6",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "population-table",
+              "quote": "なお、令和７年10月以降の数値は令和７年国勢調査速報値（横浜市集計）を基礎として推計した暫定値であり、令和７年国勢調査確定値が公表され次第、人口・世帯数等を再推計し改めて令和７年国勢調査確定値を基礎とした数値を公表する予定。（令和８年10月頃予定）",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "国勢調査の基準値を置き換えて既存期間を再推計する仕組みが明示されている。数値の変化に基準改定が含まれ得るという方法上の留保を支持する。改定の完了や実際の改定幅を主張したものではない。"
+        },
+        {
+          "claimId": "population/c7",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-issue",
+              "quote": "<h2>横浜市全体の推移</h2><Trend\n        geography=\"141003\"\n        metric={issue.metric}\n      />",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-trend",
+              "quote": "const points = series(data, geography, metric);",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.geography === geography && o.metric === metric)",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "課題ページの推移図は指定された単一指標の観測値を描画する実装で、出生・死亡・転入・転出の系列を取得・表示していない。引用断片の否定は同じ文の「含まれません」で確認できる。別画面への内訳リンクはこの図の内訳表示を意味しない。"
+        },
+        {
+          "claimId": "population/c8",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-issue",
+              "quote": "<h2>横浜市全体の推移</h2><Trend\n        geography=\"141003\"\n        metric={issue.metric}\n      />",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-trend",
+              "quote": "const points = series(data, geography, metric);",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "population-table",
+              "quote": "本ファイルは、年齢別数値の掲載はない。",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "当該課題ページの推移図は単一の人口指標を表示し、年齢区分を取得・描画する処理を持たない。使用する人口表の原典も年齢別数値の非掲載を明記している。"
+        },
+        {
+          "claimId": "population/c9",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-issue",
+              "quote": "<h2>横浜市全体の推移</h2><Trend\n        geography=\"141003\"\n        metric={issue.metric}\n      />",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-trend",
+              "quote": "const points = series(data, geography, metric);",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": "return data.observations\n    .filter((o) => o.geography === geography && o.metric === metric)\n    .sort((a, b) => a.period.localeCompare(b.period));",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "当該ページの人口推移は観測値を抽出して描画するもので、政策効果を推定する処理や推定系列は含まれない。製品の掲載範囲についての事実であり、政策効果そのものの判断ではない。"
+        },
+        {
+          "claimId": "households/c1",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "verdict": "not_applicable",
+          "evidence": [],
+          "rationale": "分野の分類ラベルであり、検証対象となる事実を主張していない。"
+        },
+        {
+          "claimId": "households/c2",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-6325c84500310f8944a9acd24a9ddea4b41599189fa92cbcd72341d299db8481",
+              "quote": "2026/7/1,141003,横浜市,438.23,1811626,3758990,1850976,1908014,2.07,8578,871,-625",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "2026/8/1,141003,横浜市,438.23,1811911,3757891,1850332,1907559,2.07,8575,285,-1099",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "「どう違う」は推移の違いを前提とする。原本の世帯数・人口総数列では、横浜市の7月から8月の世帯数は285増え、人口は1,099減っており、違いを確認できる。長期の傾向までは断定していない。"
+        },
+        {
+          "claimId": "households/c3",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-index",
+              "quote": "metrics.map((m) => (\n              <option value={m.id}>\n                {m.name}（{m.unit}）\n              </option>\n            ))",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "id: 'household_size',\n    name: '1世帯あたり人数',",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": ".filter((o) => o[1] === metric.id && o[2] === period && o[0] !== \"141003\")",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": "metricInput.addEventListener(\"change\", render);",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": "metricInput.disabled = false;\nperiodInput.disabled = false;",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "比較ページは人口・世帯数・1世帯あたり人数を含む指標一覧から選択肢を生成する。読込先の実装も選択変更による区別の再描画を備えている。JavaScriptが有効な場合の機能として支持される。"
+        },
+        {
+          "claimId": "households/c4",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "2026/8/1,141046,中区,22.01,90755,154438,78969,75469,1.7,7017,19,2",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "2026/8/1,141186,都筑区,27.87,89063,213506,103896,109610,2.4,7661,29,-130",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "区による比の違いを前提とする問いである。同日時点の人口総数を世帯数で割ると、中区は約1.70、都筑区は約2.40となり、前提を確認できる。"
+        },
+        {
+          "claimId": "households/c5",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "世帯数［世帯］,人口総数［人］,男［人］,女［人］,１世帯当たり人員［人］",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "2026/8/1,141003,横浜市,438.23,1811911,3757891,1850332,1907559,2.07,8575,285,-1099",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "人口を世帯数で割った原典の値。高齢単身世帯や子育て世帯の割合を直接示す指標ではない。",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原本には人口総数・世帯数・1世帯当たり人員があり、市の人口総数÷世帯数は約2.074で掲載値2.07と整合する。総人数を世帯数で割る値は世帯あたりの平均であり、製品の定義も一致する。"
+        },
+        {
+          "claimId": "households/c6",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "世帯数［世帯］,人口総数［人］,男［人］,女［人］,１世帯当たり人員［人］",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原本の総人数と世帯数から得る平均だけでは世帯人数の分布は一意に定まらない。例えば2人世帯2つと、1人世帯・3人世帯各1つは平均が同じだが単身世帯割合が異なる。数学的な限界である。"
+        },
+        {
+          "claimId": "households/c7",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "世帯数［世帯］,人口総数［人］,男［人］,女［人］,１世帯当たり人員［人］",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "population-table",
+              "quote": "本ファイルは、年齢別数値の掲載はない。",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "総人数と世帯数の比には年齢や社会的なつながりの情報が含まれない。同じ比でも高齢者の人数や交流状況は異なり得るため、この値だけでは孤立を識別できない。政策評価ではなく情報上の限界である。"
+        },
+        {
+          "claimId": "households/c8",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "世帯数［世帯］,人口総数［人］,男［人］,女［人］,１世帯当たり人員［人］",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原本の人口総数と世帯数の比には住宅供給や入居需要が含まれない。人口と世帯数を同じに保ったまま住宅の供給状況は異なり得るため、この値だけで不足は識別できない。個別の住宅政策や不足の実態を判断する主張ではない。"
+        },
+        {
+          "claimId": "households/c9",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "metric: z.enum(metrics.map((m) => m.id)),",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "definition: '推計人口調査における世帯数。世帯の人数や家族構成は示さない。',",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.geography === geography && o.metric === metric)",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "現在の製品スキーマが許容する指標一覧には世帯構成がなく、問い合わせもその指標に限定される。世帯数や平均人数の収録は、世帯構成の収録には当たらない。"
+        },
+        {
+          "claimId": "households/c10",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "metric: z.enum(metrics.map((m) => m.id)),",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.geography === geography && o.metric === metric)",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "提示された全指標一覧に住宅の空き状況はなく、観測スキーマと問い合わせはその一覧に限定される。現在の製品データについての未収録という主張を支持する。"
+        },
+        {
+          "claimId": "households/c11",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "metric: z.enum(metrics.map((m) => m.id)),",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.geography === geography && o.metric === metric)",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "提示された全指標一覧に家賃はなく、観測スキーマと問い合わせもその一覧に限定される。横浜市全体の資料の有無ではなく、製品への未収録として支持される。"
+        },
+        {
+          "claimId": "households/c12",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "id: 'population',\n    name: '人口',\n    unit: '人',\n    column: '人口総数［人］',",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "id: 'households',\n    name: '世帯数',\n    unit: '世帯',\n    column: '世帯数［世帯］',",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": "export function compare(data: Dataset, metric: MetricId, period: string) {\n  return data.observations\n    .filter((o) => o.metric === metric && o.period === period && o.geography !== '141003')\n    .sort((a, b) => b.value - a.value);\n}",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-ward",
+              "quote": "人口（人）</th\n              ><th scope=\"col\" class=\"numeric\">世帯数</th>",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "人口と世帯数は同じ地域・時点で取得可能な指標であり、区ページにも両者の月次表がある。主張は現在のデータの比較可能性であり、この課題ページ内で両指標を同時表示するという主張ではない。"
+        },
+        {
+          "claimId": "density/c1",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "verdict": "not_applicable",
+          "evidence": [],
+          "rationale": "カテゴリを示すラベルであり、検証対象の事実を主張していない。"
+        },
+        {
+          "claimId": "density/c2",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "人口密度［人／平方キロメートル］",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "2026/8/1,141011,鶴見区,33.21,150621,298225,153733,144492,1.98,8980,52,25\r\n2026/8/1,141020,神奈川区,23.73,137600,254248,128965,125283,1.85,10714,-30,-98",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "「どう違う」は区間の差を前提としている。同日時点の原本CSVで鶴見区は8980、神奈川区は10714人／平方キロメートルであり、人口密度の差を確認できる。"
+        },
+        {
+          "claimId": "density/c3",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-index",
+              "quote": "指標と時点をそろえて、18区を見比べます。",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "id: 'population',\n    name: '人口',",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "id: 'density',\n    name: '人口密度',",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": ".filter((o) => o[1] === metric.id && o[2] === period && o[0] !== \"141003\")",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": "metricInput.addEventListener(\"change\", render);",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": "metricInput.disabled = false;",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "主張の場所は比較ページである。そのページと読み込むスクリプトには、人口・人口密度を含む指標選択と、市全体を除いた18区の再描画が実装されている。切り替えはJavaScript有効時に利用できる。"
+        },
+        {
+          "claimId": "density/c4",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "verdict": "not_applicable",
+          "evidence": [],
+          "rationale": "比較の結果を尋ねる開かれた質問であり、特定の差や結果、画面機能を前提としていない。"
+        },
+        {
+          "claimId": "density/c5",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "市区名,面積［平方キロメートル］,世帯数［世帯］,人口総数［人］,男［人］,女［人］,１世帯当たり人員［人］,人口密度［人／平方キロメートル］",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原本は市区ごとの人口・面積・密度を記録している。同じ区の総人口と面積でも区内の配置は複数あり得るため、区平均から駅周辺や住宅地ごとの混雑は特定できない。集計の数学的限界であり、政策判断ではない。"
+        },
+        {
+          "claimId": "density/c6",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "population-method",
+              "quote": "住民基本台帳の登録とは関係なく、実際に住んでいる人を対象としています。",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "daytime-definition",
+              "quote": "従業地・通学地集計は、従業地・通学地による人口の構成や、現在住んでいる市区町村と通勤・通学先の市区町村との関係などを集計したものです。この結果によって、昼間人口や就業者がどの市区町村に勤めているかなどを把握することができます。",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "人口密度［人／平方キロメートル］",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "居住する人口を基にした面積当たりの密度と、従業地・通学地を扱う昼間人口は対象と単位が異なる。数値が必ず異なるという意味ではなく、指標の定義の違いとして支持される。"
+        },
+        {
+          "claimId": "density/c7",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "市区名,面積［平方キロメートル］,世帯数［世帯］,人口総数［人］,男［人］,女［人］,１世帯当たり人員［人］,人口密度［人／平方キロメートル］",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原本の人口密度は面積当たりの人数を示す数量で、住みやすさの評価基準や採点を含まない。評価との区別を述べる定義上の限界であり、地域の住みやすさ自体を判断していない。"
+        },
+        {
+          "claimId": "density/c8",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "export const geographies = [{ code: '141003', slug: 'yokohama', name: '横浜市' }, ...wards];",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "if (!geographies.some((g) => g.code === o.geography)) throw new Error('Unknown geography');",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "収録可能な地理は横浜市と列挙された18区に限定され、町丁の観測値は検証で拒否される。横浜市が町丁別統計を公開していることとは別に、提示された製品データでは未収録と確認できる。"
+        },
+        {
+          "claimId": "density/c9",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "metric: z.enum(metrics.map((m) => m.id)),",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "id: 'area',\n    name: '面積',\n    unit: 'km²',\n    column: '面積［平方キロメートル］',",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "提示された指標の全定義には人口・世帯・面積等があり、土地利用区分やその分布はない。観測値の指標はこの列挙に制限される。市区の面積の収録は土地利用の収録を意味しない。"
+        },
+        {
+          "claimId": "density/c10",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "metric: z.enum(metrics.map((m) => m.id)),",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "export const geographies = [{ code: '141003', slug: 'yokohama', name: '横浜市' }, ...wards];",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "提示された全指標に交通・施設の分布はなく、地理定義も市区に限られる。人口統計の比較実装にも交通網や施設位置の収録・表示は認められない。"
+        },
+        {
+          "claimId": "density/c11",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-issue",
+              "quote": "const ranked = compare(data, issue.metric, city.observation.period);",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.metric === metric && o.period === period && o.geography !== '141003')",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "export const geographies = [{ code: '141003', slug: 'yokohama', name: '横浜市' }, ...wards];",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "当該問題ページはcompareで比較表を生成する。対象地理が市と18区で、市全体を除外するため比較は区単位となる。リンク先の比較実装も同じ地理単位である。"
+        },
+        {
+          "claimId": "density/c12",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "if (!geographies.some((g) => g.code === o.geography)) throw new Error('Unknown geography');",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": "export function compare(data: Dataset, metric: MetricId, period: string) {",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": ".filter((o) => o[1] === metric.id && o[2] === period && o[0] !== \"141003\")",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "有効な地理は市と18区だけで、町や徒歩圏の定義はない。当該ページの問い合わせとリンク先の比較処理にも町の選択や徒歩圏の集計がなく、非対応という主張を支持する。"
+        }
+      ]
+    },
+    "challenge": {
+      "coverageComplete": true,
+      "coverageRationale": "全ブロックの事実前提、機能の所在、統計上の限界、未収録事項を9件で網羅している。c7の引用は文の途中だが、同じ文の否定を含む命題と整合する。\n全6ブロックの主張と質問の差に関する前提を12件で網羅している。分割引用の留保と否定は、元の文全体と照合した。\n全6ブロックの事実前提、機能の所在、統計上の限界、未収録事項、比較単位を12件で網羅している。分割された引用の否定は元の文全体と照合した。",
+      "missingClaims": [],
+      "judgments": [
+        {
+          "claimId": "population/c1",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "verdict": "not_applicable",
+          "evidence": [],
+          "rationale": "分野を示すカテゴリ名であり、検証対象となる事実の断定はない。"
+        },
+        {
+          "claimId": "population/c2",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-6325c84500310f8944a9acd24a9ddea4b41599189fa92cbcd72341d299db8481",
+              "quote": "2026/7/1,141003,横浜市,438.23,1811626,3758990,1850976,1908014,2.07,8578,871,-625",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "2026/8/1,141003,横浜市,438.23,1811911,3757891,1850332,1907559,2.07,8575,285,-1099",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原本CSVの人口総数は7月の3,758,990人から8月の3,757,891人へ変化している。変化があるという前提を支持するが、その原因までは示さない。"
+        },
+        {
+          "claimId": "population/c3",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-ward",
+              "quote": "return wards.map((ward) => ({\n    params: { ward: ward.slug },\n    props: { ward },\n  }));",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-ward",
+              "quote": "const timeline = series(data, ward.code, \"population\");",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-ward",
+              "quote": "<h2>人口は、どう変わっている？</h2><Trend geography={ward.code} />",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-trend",
+              "quote": "const { geography, metric = \"population\" } = Astro.props;\nconst points = series(data, geography, metric);",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "リンク先である各区ページの実装が提示されている。区別の人口系列を取得し、人口グラフと時点別の表を表示するため、機能の所在も一致する。"
+        },
+        {
+          "claimId": "population/c4",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "verdict": "not_applicable",
+          "evidence": [],
+          "rationale": "人口の推移を尋ねる開かれた質問であり、特定の変化や原因、表示機能を断定していない。"
+        },
+        {
+          "claimId": "population/c5",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "population-method",
+              "quote": "「推計人口」は、直近の国勢調査の結果をもとに、毎月の出生・死亡・転入・転出等を加減し、毎月１日現在で算出したものです。",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原典は人口を複数の増減要素の加減結果と定義している。同じ純増減を生む内訳は複数あるため、増減だけから要因を一意に特定できない。因果効果の断定ではなく、集計値の数学的な限界である。"
+        },
+        {
+          "claimId": "population/c6",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "population-method",
+              "quote": "「推計人口」は、直近の国勢調査の結果をもとに、毎月の出生・死亡・転入・転出等を加減し、毎月１日現在で算出したものです。",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "population-table",
+              "quote": "なお、令和７年10月以降の数値は令和７年国勢調査速報値（横浜市集計）を基礎として推計した暫定値であり、令和７年国勢調査確定値が公表され次第、人口・世帯数等を再推計し改めて令和７年国勢調査確定値を基礎とした数値を公表する予定。（令和８年10月頃予定）",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "推計は国勢調査の基礎値に依存し、原典にも基礎値を替えた再推計が明記されている。基礎値の改定で数字が変わり得るという方法上の限定を支持する。再推計の完了や、提示された月間差に改定が含まれることまでは主張していない。"
+        },
+        {
+          "claimId": "population/c7",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-issue",
+              "quote": "<h2>横浜市全体の推移</h2><Trend\n        geography=\"141003\"\n        metric={issue.metric}\n      />",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-trend",
+              "quote": "const points = series(data, geography, metric);",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.geography === geography && o.metric === metric)\n    .sort((a, b) => a.period.localeCompare(b.period));",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "課題ページの推移は単一指標の系列を描画する実装であり、出生・死亡・転入・転出の内訳を取得・表示しない。スキーマにも各内訳の指標はない。別画面への内訳リンクは、このページの推移への収録を意味しない。"
+        },
+        {
+          "claimId": "population/c8",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-issue",
+              "quote": "<h2>横浜市全体の推移</h2><Trend\n        geography=\"141003\"\n        metric={issue.metric}\n      />",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.geography === geography && o.metric === metric)\n    .sort((a, b) => a.period.localeCompare(b.period));",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "population-table",
+              "quote": "本ファイルは、年齢別数値の掲載はない。",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "課題ページの推移は地域と単一指標で抽出した系列であり、スキーマと描画処理に年齢区分がない。原典の年齢別数値がないという説明とも一致する。"
+        },
+        {
+          "claimId": "population/c9",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-issue",
+              "quote": "<h2>横浜市全体の推移</h2><Trend\n        geography=\"141003\"\n        metric={issue.metric}\n      />",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-trend",
+              "quote": "const points = series(data, geography, metric);",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": "return data.observations\n    .filter((o) => o.geography === geography && o.metric === metric)\n    .sort((a, b) => a.period.localeCompare(b.period));",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "推移は観測値の抽出と描画で構成され、スキーマに政策効果の指標も推定処理もない。政策効果の有無や優劣ではなく、このページに推定値が収録されていないという実装上の事実である。"
+        },
+        {
+          "claimId": "households/c1",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "verdict": "not_applicable",
+          "evidence": [],
+          "rationale": "分野を示す分類ラベルであり、検証対象となる事実の断定ではない。"
+        },
+        {
+          "claimId": "households/c2",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-6325c84500310f8944a9acd24a9ddea4b41599189fa92cbcd72341d299db8481",
+              "quote": "2026/7/1,141003,横浜市,438.23,1811626,3758990,1850976,1908014,2.07,8578,871,-625",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "年月日,全国地方公共団体コード,市区名,面積［平方キロメートル］,世帯数［世帯］,人口総数［人］",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "2026/8/1,141003,横浜市,438.23,1811911,3757891,1850332,1907559,2.07,8575,285,-1099",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "「どう違う」の差の前提を検証した。原本では7月から8月に世帯数が285増え、人口が1099減っており、推移は異なる。長期的な傾向や原因までは示さない。"
+        },
+        {
+          "claimId": "households/c3",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-index",
+              "quote": "metrics.map((m) => (\n              <option value={m.id}>\n                {m.name}（{m.unit}）\n              </option>\n            ))",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "id: 'household_size',\n    name: '1世帯あたり人数',",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": ".filter((o) => o[1] === metric.id && o[2] === period && o[0] !== \"141003\")",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": "metricInput.addEventListener(\"change\", render);",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": "metricInput.disabled = false;\nperiodInput.disabled = false;",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "明示された比較ページの実装を確認した。スキーマの人口・世帯数・世帯あたり人数が選択肢となり、変更時に市全体を除く区別の行を再描画する。切り替えはJavaScript有効時の機能である。"
+        },
+        {
+          "claimId": "households/c4",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "世帯数［世帯］,人口総数［人］,男［人］,女［人］,１世帯当たり人員［人］",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "2026/8/1,141046,中区,22.01,90755,154438,78969,75469,1.7,7017,19,2",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "2026/8/1,141186,都筑区,27.87,89063,213506,103896,109610,2.4,7661,29,-130",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "区による差の前提は、同日時点の中区1.7人／世帯と都筑区2.4人／世帯で確認できる。差の原因や暮らしの評価は主張されていない。"
+        },
+        {
+          "claimId": "households/c5",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "世帯数［世帯］,人口総数［人］,男［人］,女［人］,１世帯当たり人員［人］",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "2026/8/1,141003,横浜市,438.23,1811911,3757891,1850332,1907559,2.07,8575,285,-1099",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "人口を世帯数で割った原典の値。高齢単身世帯や子育て世帯の割合を直接示す指標ではない。",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原本の列と数値では、人口3757891を世帯数1811911で割ると約2.074で、掲載値2.07に対応する。製品もこの比を使用しており、世帯あたりの平均を表す。"
+        },
+        {
+          "claimId": "households/c6",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "世帯数［世帯］,人口総数［人］,男［人］,女［人］,１世帯当たり人員［人］",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原本の人口と世帯数から得る平均には、世帯人数の分布が含まれない。例えば2人世帯だけの場合と1人・3人世帯が同数の場合は平均が同じでも単身割合が異なる。これは数学的限界である。"
+        },
+        {
+          "claimId": "households/c7",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "世帯数［世帯］,人口総数［人］,男［人］,女［人］,１世帯当たり人員［人］",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "population-table",
+              "quote": "本ファイルは、年齢別数値の掲載はない。",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "この平均の分子・分母には年齢や社会的つながりが含まれない。同じ人口・世帯数でも高齢者の人数や交流状況は異なり得るため、平均だけでは孤立を特定できない。政策判断ではなく情報の限界である。"
+        },
+        {
+          "claimId": "households/c8",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "世帯数［世帯］,人口総数［人］,男［人］,女［人］,１世帯当たり人員［人］",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "人口と世帯数の比には住宅供給量や未充足需要が含まれない。同じ比でも住宅供給の状況は異なり得るため、住宅不足は一意に定まらない。住宅政策の評価ではなくデータ定義上の限界である。"
+        },
+        {
+          "claimId": "households/c9",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "metric: z.enum(metrics.map((m) => m.id)),",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "推計人口調査における世帯数。世帯の人数や家族構成は示さない。",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.geography === geography && o.metric === metric)",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "提示された全指標定義に世帯構成の項目はなく、観測値はその指標列挙に制限され、問い合わせも同じ指標を使用する。世帯数や平均人数の収録は世帯構成の収録を意味しない。"
+        },
+        {
+          "claimId": "households/c10",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "metric: z.enum(metrics.map((m) => m.id)),",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.geography === geography && o.metric === metric)",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "提示されたスキーマの全9指標に住宅の空き状況はなく、問い合わせもこの指標体系内の観測値を抽出する。製品の現在のデータについての未収録説明を支持する。行政全体での資料の不存在は意味しない。"
+        },
+        {
+          "claimId": "households/c11",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "metric: z.enum(metrics.map((m) => m.id)),",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.geography === geography && o.metric === metric)",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "提示されたスキーマの全9指標に家賃はなく、問い合わせにも家賃を取得する実装はない。製品の現在のデータについての主張として支持できる。"
+        },
+        {
+          "claimId": "households/c12",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "id: 'population',\n    name: '人口',",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "id: 'households',\n    name: '世帯数',",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": "export function series(data: Dataset, geography: string, metric: MetricId) {\n  return data.observations\n    .filter((o) => o.geography === geography && o.metric === metric)\n    .sort((a, b) => a.period.localeCompare(b.period));\n}",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "年月日,全国地方公共団体コード,市区名,面積［平方キロメートル］,世帯数［世帯］,人口総数［人］",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原本と製品スキーマに同じ市区・時点の人口と世帯数があり、問い合わせで双方を抽出できる。「現在のデータ」での比較可能性を述べており、この課題ページ内で双方を同時表示する主張ではない。"
+        },
+        {
+          "claimId": "density/c1",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "verdict": "not_applicable",
+          "evidence": [],
+          "rationale": "分類ラベルであり、検証対象となる事実を述べていない。"
+        },
+        {
+          "claimId": "density/c2",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "人口密度［人／平方キロメートル］",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "2026/8/1,141038,西区,7.03,61707,108599,54462,54137,1.76,15448,-71,-127",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "2026/8/1,141046,中区,22.01,90755,154438,78969,75469,1.7,7017,19,2",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "「どう違う」は区間差を前提としている。同一時点・同一定義の原本CSVで、西区15448、中区7017人/km²と異なり、この前提を確認できる。"
+        },
+        {
+          "claimId": "density/c3",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-index",
+              "quote": "metrics.map((m) => (\n              <option value={m.id}>\n                {m.name}（{m.unit}）\n              </option>\n            ))",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "id: 'population',\n    name: '人口',",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "id: 'density',\n    name: '人口密度',",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": ".filter((o) => o[1] === metric.id && o[2] === period && o[0] !== \"141003\")",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": "metricInput.addEventListener(\"change\", render);",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": "metricInput.disabled = false;\nperiodInput.disabled = false;",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-index",
+              "quote": "指標・時点の切り替えにはJavaScriptを有効にしてください。",
+              "relation": "context"
+            }
+          ],
+          "rationale": "比較ページの選択肢、切替処理、市全体を除く抽出を確認した。スキーマの対象区は18件。機能の所在は主張どおり比較ページであり、JavaScript有効時に利用できる。"
+        },
+        {
+          "claimId": "density/c4",
+          "kind": "non_assertion",
+          "requiresHuman": false,
+          "verdict": "not_applicable",
+          "evidence": [],
+          "rationale": "比較から何が分かるかを尋ねる開かれた質問で、特定の結果や画面機能を断定していない。"
+        },
+        {
+          "claimId": "density/c5",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "市区名,面積［平方キロメートル］,世帯数［世帯］,人口総数［人］,男［人］,女［人］,１世帯当たり人員［人］,人口密度［人／平方キロメートル］",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原本は市区ごとの人口・面積・密度を持つ。区全体の人口と面積が同じでも区内の配置は複数あり得るため、平均密度から駅周辺や住宅地別の混雑は特定できない。数学的な集計限界である。"
+        },
+        {
+          "claimId": "density/c6",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "population-method",
+              "quote": "住民基本台帳の登録とは関係なく、実際に住んでいる人を対象としています。",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "daytime-definition",
+              "quote": "従業地・通学地集計は、従業地・通学地による人口の構成や、現在住んでいる市区町村と通勤・通学先の市区町村との関係などを集計したものです。この結果によって、昼間人口や就業者がどの市区町村に勤めているかなどを把握することができます。",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "人口密度［人／平方キロメートル］",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "居住人口を面積当たりで示す指標と、従業地・通学地を考慮する昼間人口は定義が異なる。昼間人口を通勤・通学者だけの人数とする主張ではない。"
+        },
+        {
+          "claimId": "density/c7",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+              "quote": "市区名,面積［平方キロメートル］,世帯数［世帯］,人口総数［人］,男［人］,女［人］,１世帯当たり人員［人］,人口密度［人／平方キロメートル］",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "原典の人口密度は面積当たりの人数であり、住みやすさを採点する定義や評価項目を含まない。指標と評価の定義上の区別であり、住みやすさとの関連の否定や政策判断ではない。"
+        },
+        {
+          "claimId": "density/c8",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "export const geographies = [{ code: '141003', slug: 'yokohama', name: '横浜市' }, ...wards];",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "if (!geographies.some((g) => g.code === o.geography)) throw new Error('Unknown geography');",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "地理一覧は市と18区に限定され、一覧外の観測値は検証で拒否される。町丁別人口はこの製品データに収録できない。行政が町丁別人口を公開していることとは別である。"
+        },
+        {
+          "claimId": "density/c9",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "metric: z.enum(metrics.map((m) => m.id)),",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "id: 'area',\n    name: '面積',\n    unit: 'km²',",
+              "relation": "context"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.metric === metric && o.period === period && o.geography !== '141003')",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "提示された全指標一覧に土地利用区分はなく、観測値と比較処理はその指標集合を使用する。収録されている面積は土地利用データを意味しない。"
+        },
+        {
+          "claimId": "density/c10",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "metric: z.enum(metrics.map((m) => m.id)),",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "export const geographies = [{ code: '141003', slug: 'yokohama', name: '横浜市' }, ...wards];",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.metric === metric && o.period === period && o.geography !== '141003')",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "全指標一覧に交通・施設の指標はなく、地理単位にも路線や施設位置はない。比較処理もこの観測値のみを使用するため、交通・施設の分布は収録対象に含まれない。"
+        },
+        {
+          "claimId": "density/c11",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-issue",
+              "quote": "const ranked = compare(data, issue.metric, city.observation.period);",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-query",
+              "quote": ".filter((o) => o.metric === metric && o.period === period && o.geography !== '141003')",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "export const geographies = [{ code: '141003', slug: 'yokohama', name: '横浜市' }, ...wards];",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "当該問題ページの比較表はcompareを呼び、市と区から市全体を除いて区同士を比較する。市全体の推移の掲載は比較単位の主張と矛盾しない。"
+        },
+        {
+          "claimId": "density/c12",
+          "kind": "fact",
+          "requiresHuman": false,
+          "verdict": "supported",
+          "evidence": [
+            {
+              "sourceId": "product-schema",
+              "quote": "export const geographies = [{ code: '141003', slug: 'yokohama', name: '横浜市' }, ...wards];",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-schema",
+              "quote": "if (!geographies.some((g) => g.code === o.geography)) throw new Error('Unknown geography');",
+              "relation": "supports"
+            },
+            {
+              "sourceId": "product-comparison",
+              "quote": ".filter((o) => o[1] === metric.id && o[2] === period && o[0] !== \"141003\")",
+              "relation": "supports"
+            }
+          ],
+          "rationale": "有効な地理単位は市と区だけで、比較画面もその観測値を抽出する。町単位や徒歩圏への再集計・選択処理は提示された比較実装にない。"
+        }
+      ]
+    }
+  },
+  "signature": "07m5V0TzN/dyONl5uG0QUeQgdGRhft7QMtlSOwc/YtO739yJL22iu0f5zGCyzrMPUSjzWQX/0MtRWCrcWkxCBA=="
+}

@@ -10,9 +10,9 @@ const order = [
   "green-expo",
   "city-budget",
 ];
-const selected = order.map((slug) =>
-  policyIssues.find((i) => i.slug === slug)!,
-);
+const selected = order
+  .map((slug) => policyIssues.find((i) => i.slug === slug))
+  .filter((issue) => issue !== undefined);
 ---
 
 <Layout

@@ -6,18 +6,27 @@ test('citizen can find a ward, compare, and open the actual source', async ({ pa
   await expect(page.getByRole('heading', { level: 1 })).toContainText('横浜の暮らし');
   await page.getByRole('link', { name: '港北区', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('港北区の、いまを知る。');
+  await expect(page.locator('.stats a.source-icon').first()).toHaveAttribute(
+    'href',
+    /www\.city\.yokohama\.lg\.jp\/.*\.html$/,
+  );
   await page.getByRole('link', { name: 'ほかの区と比べる →' }).click();
   await page.getByLabel('比べる指標').selectOption('household_size');
   await expect(page.locator('#value-heading')).toContainText('1世帯あたり人数');
   await page.getByLabel('統計の時点').selectOption('2024-01-01');
   await expect(page.locator('#comparison-body tr')).toHaveCount(18);
-  await page.locator('#comparison-body a.cite').first().click();
-  await expect(page).toHaveURL(/sources\/#s-/);
-  const id = new URL(page.url()).hash;
-  const link = page.locator(id).getByRole('link', { name: '取得時点の原本 ↓' });
-  const response = await page.request.get((await link.getAttribute('href')) ?? '');
+  const link = page.locator('#comparison-body a.cite').first();
+  await expect(link).toHaveAccessibleName('横浜市の掲載ページを開く');
+  const href = (await link.getAttribute('href')) ?? '';
+  expect(href).toMatch(/^https:\/\/www\.city\.yokohama\.lg\.jp\//);
+  expect(href).not.toMatch(/\.csv(?:[?#]|$)/);
+  expect(href).toMatch(/\.html(?:[?#]|$)/);
+  await expect(link).toHaveAttribute('target', '_blank');
+  await expect(link).toHaveText('');
+  const response = await page.request.get(href);
   expect(response.status()).toBe(200);
-  expect((await response.body()).byteLength).toBeGreaterThan(500);
+  expect(response.headers()['content-type']).toContain('text/html');
+  expect(await response.text()).toContain('横浜市');
 });
 test('retired guides redirect to the matching data without remaining in discovery', async ({
   page,

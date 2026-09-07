@@ -7,6 +7,14 @@ export function GET({ site }: APIContext) {
     "/issues/",
     ...policyIssues.map((i) => i.url),
     "/elections/mayor-2026/",
+    "/population-movement/",
+    "/age-structure/",
+    "/population-history/",
+    "/datasets/",
+    ...geographies
+      .filter((g) => g.slug !== "yokohama")
+      .map((g) => `/population-history/${g.slug}/`),
+    ...geographies.map((g) => `/population-movement/${g.slug}/`),
     "/wards/",
     "/sources/",
     "/about/",

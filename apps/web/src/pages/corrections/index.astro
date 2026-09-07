@@ -1,0 +1,68 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import {
+  records,
+  statusLabels,
+} from "../../../../../packages/core/corrections";
+---
+
+<Layout title="訂正と確認状況">
+  <article class="container narrow section prose">
+    <p class="breadcrumb"><a href="/">ホーム</a> / 訂正と確認状況</p>
+    <h1 class="page-title">訂正と確認状況</h1>
+    <p class="lede">間違いに気づいたら、根拠と一緒に知らせてください。</p>
+    <p><a href="/corrections/report/">誤りを報告する →</a></p>
+    <h2>報告から訂正まで</h2>
+    <ol>
+      <li>GitHubで報告を送信するとIssue番号が発行されます。</li><li>
+        管理者が原典と照合し、確認状況をIssueへ記録します。
+      </li><li>訂正または対応終了の理由を記録し、サイトの履歴へ反映します。</li>
+    </ol>
+    <p>
+      この一覧はサイト更新時の記録です。未反映の報告と最新のやり取りは<a
+        href="https://github.com/toyofukux/open-yokohama/issues?q=is%3Aissue%20%22%5B%E8%A8%82%E6%AD%A3%5D%22"
+        >GitHubの報告一覧</a
+      >で確認できます。Issueが閉じているだけでは、訂正済みを意味しません。
+    </p>
+    <p>
+      重大な疑義がある説明は、確認中として表示を保留する場合があります。AIの検証と人間による確認は区別して表示します。
+    </p>
+    <h2>サイトに反映した記録</h2>
+    {
+      records.length === 0 ? (
+        <p>
+          まだ記録はありません。誤りや未対応の報告がないことを意味しません。
+        </p>
+      ) : (
+        records.map((record) => (
+          <section id={record.id} class="note">
+            <>
+              <h3>
+                {statusLabels[record.status]}
+                {record.hold && "・表示保留"}
+              </h3>
+              <>
+                <p>{record.reason}</p>
+                <p>更新：{record.updatedAt.slice(0, 10)}</p>
+              </>
+              <p>
+                <a href={record.page}>対象ページ</a> ·{" "}
+                <a href={record.issueUrl}>報告と確認の経過</a>
+              </p>
+              {record.resolution && <p>{record.resolution}</p>}
+              {record.status === "corrected" && (
+                <p>
+                  <a
+                    href={`https://github.com/toyofukux/open-yokohama/commit/${record.revision}`}
+                  >
+                    訂正差分
+                  </a>
+                </p>
+              )}
+            </>
+          </section>
+        ))
+      )
+    }
+  </article>
+</Layout>

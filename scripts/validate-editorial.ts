@@ -1,11 +1,11 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
-import { policyIssues } from '../packages/core/policy-issues';
+import { allPolicyIssues } from '../packages/core/policy-issues';
 import { assertPublishable } from '../packages/core/review';
 
 const records = JSON.parse(readFileSync('docs/content-review/publication.json', 'utf8'));
-const expected = new Set([...policyIssues.map((issue) => issue.url), '/elections/mayor-2026/']);
+const expected = new Set([...allPolicyIssues.map((issue) => issue.url), '/elections/mayor-2026/']);
 assert.deepEqual(new Set(records.articles.map((r: { route: string }) => r.route)), expected);
 assert.equal(records.articles.length, expected.size, 'Duplicate editorial publication record');
 for (const record of records.articles) {

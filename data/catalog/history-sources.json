@@ -1,0 +1,53 @@
+{
+  "snapshots": [
+    {
+      "id": "16c8234085a5590a1def98a98669fbfcdce372af3943e4faa065313716cdfc23",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.files/t020100.csv",
+      "sourcePage": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.html",
+      "title": "行政区別世帯数及び人口の推移",
+      "retrievedAt": "2026-09-07T06:39:03.755846Z",
+      "publishedAt": null,
+      "sha256": "16c8234085a5590a1def98a98669fbfcdce372af3943e4faa065313716cdfc23",
+      "path": "data/raw/16c8234085a5590a1def98a98669fbfcdce372af3943e4faa065313716cdfc23.csv",
+      "license": "CC-BY-4.0",
+      "publisher": "横浜市",
+      "parserVersion": "history-csv-v1",
+      "series": "historical"
+    },
+    {
+      "id": "cb66d59b21aa4234a2cddc4f16c11081778558629dd7ada903f59ef0a7dd8dec",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.files/t020200.csv",
+      "sourcePage": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.html",
+      "title": "月別世帯数及び人口",
+      "retrievedAt": "2026-09-07T06:39:03.756082Z",
+      "publishedAt": null,
+      "sha256": "cb66d59b21aa4234a2cddc4f16c11081778558629dd7ada903f59ef0a7dd8dec",
+      "path": "data/raw/cb66d59b21aa4234a2cddc4f16c11081778558629dd7ada903f59ef0a7dd8dec.csv",
+      "license": "CC-BY-4.0",
+      "publisher": "横浜市",
+      "parserVersion": "history-csv-v1",
+      "series": "city-series"
+    },
+    {
+      "id": "b24da1ca228a5b8d88793aa816a72461ef1ec33e2143213748132a4ce132234f",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.files/t020300-month.csv",
+      "sourcePage": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.html",
+      "title": "行政区別世帯数及び人口（月別）",
+      "retrievedAt": "2026-09-07T06:39:03.757123Z",
+      "publishedAt": null,
+      "sha256": "b24da1ca228a5b8d88793aa816a72461ef1ec33e2143213748132a4ce132234f",
+      "path": "data/raw/b24da1ca228a5b8d88793aa816a72461ef1ec33e2143213748132a4ce132234f.csv",
+      "license": "CC-BY-4.0",
+      "publisher": "横浜市",
+      "parserVersion": "history-csv-v1",
+      "series": "ward-monthly"
+    }
+  ],
+  "notes": {
+    "path": "data/raw/d75208b7fb151b79aafe4374c9fc21b4e882f8451d054062fbc52919791b096e.xlsx",
+    "sha256": "d75208b7fb151b79aafe4374c9fc21b4e882f8451d054062fbc52919791b096e",
+    "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.files/t020100.xlsx",
+    "purpose": "表1の各年10月1日・国勢調査と推計人口の定義",
+    "license": "CC-BY-4.0"
+  }
+}

@@ -1,0 +1,48 @@
+---
+import { data, series, number } from "../data";
+import type { MetricId } from "../../../../packages/core/schema";
+interface Props {
+  geography: string;
+  metric?: MetricId;
+}
+const { geography, metric = "population" } = Astro.props;
+const points = series(data, geography, metric);
+const min = Math.min(...points.map((o) => o.value)),
+  max = Math.max(...points.map((o) => o.value));
+const spread = max - min || 1;
+const coords = points
+  .map(
+    (o, i) =>
+      `${56 + (i / Math.max(1, points.length - 1)) * 560},${170 - ((o.value - min) / spread) * 125}`,
+  )
+  .join(" ");
+---
+
+<figure style="margin:0">
+  <svg
+    class="chart"
+    viewBox="0 0 650 220"
+    role="img"
+    aria-label={`${points[0].period}から${points.at(-1)?.period}までの推移。最小${number(min)}、最大${number(max)}。詳しい数値は下の表で確認できます。`}
+  >
+    <path
+      d="M56 45H616M56 107H616M56 170H616"
+      stroke="var(--line)"
+      stroke-dasharray="3 4"></path>
+    <polyline
+      points={coords}
+      stroke="var(--chart)"
+      stroke-width="2.5"
+      fill="none"></polyline>
+    <text x="56" y="24">{number(max)}</text><text x="56" y="192"
+      >{number(min)}</text
+    >
+    <text x="56" y="213">{points[0].period.slice(0, 7)}</text><text
+      x="550"
+      y="213">{points.at(-1)?.period.slice(0, 7)}</text
+    >
+  </svg>
+  <figcaption class="chart-caption">
+    縦軸は変化を見やすくするため最小値〜最大値を表示。ゼロ始まりではありません。国勢調査による基準の切り替えを含む場合があります。
+  </figcaption>
+</figure>

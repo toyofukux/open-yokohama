@@ -1,4 +1,5 @@
 ---
+import SourceLink from "../../components/SourceLink.astro";
 import Layout from "../../layouts/Layout.astro";
 import Trend from "../../components/Trend.astro";
 import { data, wards, latest, series, number } from "../../data";
@@ -32,7 +33,7 @@ const stats = [
       人口、世帯数、まちの密度。{ward.name}の変化を公式統計から確かめます。
     </p>
     <p class="small muted">
-      統計の時点：{population.period} · 数値は原本との機械照合済み
+      統計の時点：{population.period}
     </p>
     <div class="stats">
       {
@@ -44,9 +45,11 @@ const stats = [
                 {number(o.value)}
                 <span>{unit}</span>
               </div>
-              <a class="stat-footer" href={`/sources/#s-${o.sourceId}`}>
-                原典の該当行：{o.row}行目 →
-              </a>
+              <SourceLink
+                href={
+                  data.snapshots.find((s) => s.id === o.sourceId)!.sourcePage
+                }
+              />
             </>
           </div>
         ))
@@ -67,6 +70,11 @@ const stats = [
     </section>
     <a class="action secondary" href="/wards/">ほかの区と比べる →</a>
     <section class="section">
+      <p>
+        <a class="action secondary" href={`/population-movement/${ward.slug}/`}
+          >{ward.name}の出生・死亡・転出入の内訳を見る →</a
+        >
+      </p>
       <h2>時点ごとの数字と出典</h2><p class="small muted">
         推計人口は住民基本台帳の登録者数とは異なります。国勢調査結果に基づく推計の改定を含む場合があります。
       </p><div class="table-wrap">
@@ -97,7 +105,12 @@ const stats = [
                       )}
                     </td>
                     <td>
-                      <a href={`/sources/#s-${o.sourceId}`}>CSV {o.row}行目</a>
+                      <SourceLink
+                        href={
+                          data.snapshots.find((s) => s.id === o.sourceId)!
+                            .sourcePage
+                        }
+                      />
                     </td>
                   </>
                 </tr>

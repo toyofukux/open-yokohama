@@ -1,0 +1,28 @@
+[
+  {
+    "leftDataset": "city-series",
+    "rightDataset": "ward-monthly",
+    "period": "2015-08-01",
+    "geography": "141003",
+    "metric": "area",
+    "leftValue": 435.23,
+    "rightValue": 435.21,
+    "status": "unresolved",
+    "note": "統計書の表2と表3月次の掲載値が異なる。どちらかを正値として統合せず、系列別に保持する。人口・世帯の記事計算には使用しない。",
+    "leftSourceId": "cb66d59b21aa4234a2cddc4f16c11081778558629dd7ada903f59ef0a7dd8dec",
+    "rightSourceId": "b24da1ca228a5b8d88793aa816a72461ef1ec33e2143213748132a4ce132234f"
+  },
+  {
+    "leftDataset": "city-series",
+    "rightDataset": "ward-monthly",
+    "period": "2015-09-01",
+    "geography": "141003",
+    "metric": "area",
+    "leftValue": 435.23,
+    "rightValue": 435.21,
+    "status": "unresolved",
+    "note": "統計書の表2と表3月次の掲載値が異なる。どちらかを正値として統合せず、系列別に保持する。人口・世帯の記事計算には使用しない。",
+    "leftSourceId": "cb66d59b21aa4234a2cddc4f16c11081778558629dd7ada903f59ef0a7dd8dec",
+    "rightSourceId": "b24da1ca228a5b8d88793aa816a72461ef1ec33e2143213748132a4ce132234f"
+  }
+]

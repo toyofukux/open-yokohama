@@ -1,0 +1,116 @@
+{
+  "evaluatedAt": "2026-09-05T23:35:09.863Z",
+  "inputHash": "bb10593c561e68f96696c128f76c28f30565389c90682a258f18827223d47f93",
+  "provider": "codex-cli default model",
+  "results": [
+    {
+      "text": "2026年8月1日の横浜市の人口は3,757,891人です。",
+      "expected": "supported",
+      "actual": "supported"
+    },
+    {
+      "text": "2026年8月1日の横浜市の人口は37,578,910人です。",
+      "expected": "refuted",
+      "actual": "refuted"
+    },
+    {
+      "text": "2026年8月の横浜市の人口は、令和7年国勢調査確定値が基礎です。",
+      "expected": "refuted",
+      "actual": "refuted"
+    },
+    {
+      "text": "横浜市の人口増加は、新しい住宅政策だけが原因です。",
+      "expected": "insufficient",
+      "actual": "insufficient"
+    },
+    {
+      "text": "横浜市は2026年度に住宅支援へ1兆円を支出しました。",
+      "expected": "insufficient",
+      "actual": "insufficient"
+    }
+  ],
+  "output": {
+    "coverageComplete": false,
+    "coverageRationale": "各主張の引用と命題は本文に一致する。ただし、eval.3の人口増加と新しい住宅政策の存在・実施という事実の前提が、独立した主張として抽出されていない。",
+    "missingClaims": [
+      "eval.3：横浜市の人口が増加しているという前提。比較期間は示されていない。",
+      "eval.3：人口増加の原因となり得る新しい住宅政策が横浜市で実施されたという前提。政策名・実施時期は示されていない。"
+    ],
+    "judgments": [
+      {
+        "claimId": "eval-0",
+        "kind": "fact",
+        "requiresHuman": false,
+        "verdict": "supported",
+        "evidence": [
+          {
+            "sourceId": "population-definitions",
+            "quote": "令和８(2026)年８月１日現在の人口及び世帯数\n人口\n3,757,891人",
+            "relation": "supports"
+          },
+          {
+            "sourceId": "population-definitions",
+            "quote": "※令和７年国勢調査速報値（横浜市集計）を基礎とした人口です。",
+            "relation": "context"
+          }
+        ],
+        "rationale": "市全体・基準日・人数が一次統計と一致する。ただし、この数値は国勢調査速報値に基づく推計人口であり、確定値や住民基本台帳人口としての裏付けではない。"
+      },
+      {
+        "claimId": "eval-1",
+        "kind": "fact",
+        "requiresHuman": false,
+        "verdict": "refuted",
+        "evidence": [
+          {
+            "sourceId": "population-definitions",
+            "quote": "令和８(2026)年８月１日現在の人口及び世帯数\n人口\n3,757,891人",
+            "relation": "refutes"
+          }
+        ],
+        "rationale": "同じ市・基準日の一次統計は3,757,891人であり、主張の37,578,910人はその10倍で矛盾する。"
+      },
+      {
+        "claimId": "eval-2",
+        "kind": "fact",
+        "requiresHuman": false,
+        "verdict": "refuted",
+        "evidence": [
+          {
+            "sourceId": "population-table",
+            "quote": "令和７年10月以降の数値は令和７年国勢調査速報値（横浜市集計）を基礎として推計した暫定値",
+            "relation": "refutes"
+          }
+        ],
+        "rationale": "2026年8月は対象期間に含まれる。資料は速報値に基づく暫定値と明記しており、確定値が基礎という主張と矛盾する。統計の基礎の確認であり、政策判断や発表予定の評価ではない。"
+      },
+      {
+        "claimId": "eval-3",
+        "kind": "fact",
+        "requiresHuman": true,
+        "verdict": "insufficient",
+        "evidence": [
+          {
+            "sourceId": "raw-6325c84500310f8944a9acd24a9ddea4b41599189fa92cbcd72341d299db8481",
+            "quote": "2026/7/1,141003,横浜市,438.23,1811626,3758990,1850976,1908014,2.07,8578,871,-625",
+            "relation": "context"
+          },
+          {
+            "sourceId": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+            "quote": "2026/8/1,141003,横浜市,438.23,1811911,3757891,1850332,1907559,2.07,8575,285,-1099",
+            "relation": "context"
+          }
+        ],
+        "rationale": "提示値では7月1日から8月1日に人口が1,099人減少しており、直近の増加という読みには反証となる。ただし主張に比較期間がなく、一般的な増加を反証できない。政策の存在・実施と、その政策だけが原因という因果関係の証拠もない。因果的影響の断定なので人間の確認が必要。"
+      },
+      {
+        "claimId": "eval-4",
+        "kind": "fact",
+        "requiresHuman": true,
+        "verdict": "insufficient",
+        "evidence": [],
+        "rationale": "提示資料には住宅支援の支出実績がない。2026年度・横浜市・住宅支援・1兆円という条件を確認できず、予算や計画を実支出の証拠にもできない。財政支出の判断として人間の確認が必要。"
+      }
+    ]
+  }
+}

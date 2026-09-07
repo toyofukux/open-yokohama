@@ -1,0 +1,151 @@
+---
+import type { Chart } from "../../../../packages/warehouse/articles";
+interface Props {
+  chart: Chart;
+  id: string;
+}
+const { chart, id } = Astro.props;
+const points = chart.points;
+const time = (p: string) => Date.parse(p.length === 4 ? `${p}-01-01` : p);
+const first = time(points[0].period),
+  last = time(points[points.length - 1].period);
+const low = Math.min(0, ...points.map((p) => p.value)),
+  high = Math.max(1, ...points.map((p) => p.value));
+const x = (p: string) => 100 + ((time(p) - first) / (last - first || 1)) * 580;
+const y = (v: number) => 205 - ((v - low) / (high - low)) * 175;
+const groups: (typeof points)[] = [];
+for (const p of points) {
+  const prev = groups.at(-1);
+  if (!prev || prev[0].provisional !== p.provisional) groups.push([p]);
+  else prev.push(p);
+}
+const fmt = (v: number) => v.toLocaleString("ja-JP");
+const axis = (v: number) =>
+  Math.abs(v) >= 10000
+    ? `${(v / 10000).toLocaleString("ja-JP", { maximumFractionDigits: 1 })}万`
+    : fmt(Math.round(v));
+---
+
+<figure aria-labelledby={`${id}-caption`}>
+  <figcaption id={`${id}-caption`}>{chart.title} · {chart.unit}</figcaption>
+  <svg viewBox="0 0 720 245" role="img" aria-labelledby={`${id}-title`}>
+    <title id={`${id}-title`}>
+      {chart.title}。{points[0].period}から{
+        points[points.length - 1].period
+      }。数値表を下に掲載。
+    </title>
+    <line
+      x1="100"
+      x2="680"
+      y1={y(low)}
+      y2={y(low)}
+      stroke="currentColor"
+      opacity="0.2"></line>
+    <line
+      x1="100"
+      x2="680"
+      y1={y(high)}
+      y2={y(high)}
+      stroke="currentColor"
+      opacity="0.2"></line>
+    <text x="90" y={y(low) + 4} text-anchor="end">{axis(low)}</text>
+    <text x="90" y={y(high) + 4} text-anchor="end">{axis(high)}</text>
+    {
+      groups.map((group) => (
+        <polyline
+          data-provisional={String(group[0].provisional)}
+          points={group.map((p) => `${x(p.period)},${y(p.value)}`).join(" ")}
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-dasharray={group[0].provisional ? "5 4" : undefined}
+        />
+      ))
+    }
+    <text x="100" y="233">{points[0].period.slice(0, 4)}</text><text
+      x="680"
+      y="233"
+      text-anchor="end">{points[points.length - 1].period.slice(0, 4)}</text
+    >
+  </svg>
+  {
+    groups.some((g) => g[0].provisional) && (
+      <p class="chart-note">
+        破線は2025年10月以降の暫定値。統計基準の切替位置で線を分けています。
+      </p>
+    )
+  }
+  <details>
+    <summary>{chart.title}の数値表（{points.length}時点）</summary><div
+      class="table-scroll"
+    >
+      <table>
+        <thead
+          ><tr
+            ><th scope="col">時点</th><th scope="col">値（{chart.unit}）</th><th
+              scope="col">状態</th
+            ></tr
+          ></thead
+        ><tbody
+          >{
+            points.map((p) => (
+              <tr>
+                <>
+                  <th scope="row">{p.period}</th>
+                  <td>{fmt(p.value)}</td>
+                  <td>{p.provisional ? "暫定値" : "原典の掲載値"}</td>
+                </>
+              </tr>
+            ))
+          }</tbody
+        >
+      </table>
+    </div>
+  </details>
+</figure>
+<style>
+  figure {
+    margin: 2rem 0;
+  }
+  figcaption {
+    font-weight: 700;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    color: var(--ink);
+    margin: 1rem 0;
+  }
+  text {
+    font-size: 13px;
+    fill: currentColor;
+  }
+  .chart-note {
+    font-size: 0.875rem;
+  }
+  table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  th,
+  td {
+    padding: 0.5rem;
+    text-align: right;
+  }
+  th:first-child {
+    text-align: left;
+  }
+  .table-scroll {
+    max-height: 24rem;
+    overflow: auto;
+  }
+  @media (max-width: 600px) {
+    text {
+      font-size: 24px;
+    }
+  }
+  summary {
+    cursor: pointer;
+  }
+</style>

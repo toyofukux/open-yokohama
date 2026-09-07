@@ -1,0 +1,122 @@
+---
+import SourceLink from "../../components/SourceLink.astro";
+import Layout from "../../layouts/Layout.astro";
+import Trend from "../../components/Trend.astro";
+import { data, wards, latest, series, number } from "../../data";
+export function getStaticPaths() {
+  return wards.map((ward) => ({
+    params: { ward: ward.slug },
+    props: { ward },
+  }));
+}
+const { ward } = Astro.props;
+const population = latest(data, ward.code, "population"),
+  households = latest(data, ward.code, "households"),
+  density = latest(data, ward.code, "density");
+const timeline = series(data, ward.code, "population");
+const stats = [
+  { o: population, label: "人口", unit: "人" },
+  { o: households, label: "世帯数", unit: "世帯" },
+  { o: density, label: "人口密度", unit: "人/km²" },
+];
+---
+
+<Layout title={`${ward.name}の人口と暮らしのデータ`}
+  ><div class="container section">
+    <p class="breadcrumb">
+      <a href="/">ホーム</a> / <a href="/wards/">18区を比べる</a> / {ward.name}
+    </p><p class="eyebrow">YOUR NEIGHBORHOOD · {ward.slug.toUpperCase()}</p><h1
+      class="page-title"
+    >
+      {ward.name}の、いまを知る。
+    </h1><p class="lede">
+      人口、世帯数、まちの密度。{ward.name}の変化を公式統計から確かめます。
+    </p>
+    <p class="small muted">
+      統計の時点：{population.period}
+    </p>
+    <div class="stats">
+      {
+        stats.map(({ o, label, unit }) => (
+          <div class="stat">
+            <>
+              <div class="stat-label">{label}</div>
+              <div class="stat-number">
+                {number(o.value)}
+                <span>{unit}</span>
+              </div>
+              <SourceLink
+                href={
+                  data.snapshots.find((s) => s.id === o.sourceId)!.sourcePage
+                }
+              />
+            </>
+          </div>
+        ))
+      }
+    </div>
+    <section class="section split">
+      <div class="box">
+        <h2>人口は、どう変わっている？</h2><Trend geography={ward.code} />
+      </div><div class="box">
+        <span class="tag">数字の読み方</span><h2 style="margin-top:18px">
+          変化の理由は、<br />別のデータから。
+        </h2><p class="small muted">
+          人口総数だけでは、転入が増えたのか、出生・死亡が影響したのかは分かりません。政策の効果や住みやすさも、この数字だけでは判断できません。
+        </p><a class="small" href="/issues/population/">人口の見方を読む →</a>
+      </div>
+    </section>
+    <a class="action secondary" href="/wards/">ほかの区と比べる →</a>
+    <section class="section">
+      <p>
+        <a class="action secondary" href={`/population-movement/${ward.slug}/`}
+          >{ward.name}の出生・死亡・転出入の内訳を見る →</a
+        >
+      </p>
+      <h2>時点ごとの数字と出典</h2><p class="small muted">
+        推計人口は住民基本台帳の登録者数とは異なります。国勢調査結果に基づく推計の改定を含む場合があります。
+      </p><div class="table-wrap">
+        <table>
+          <caption>{ward.name}の月次推計人口・世帯数。新しい順。</caption><thead
+            ><tr
+              ><th scope="col">時点</th><th scope="col" class="numeric"
+                >人口（人）</th
+              ><th scope="col" class="numeric">世帯数</th><th scope="col"
+                >出典</th
+              ></tr
+            ></thead
+          ><tbody
+            >{
+              timeline.toReversed().map((o) => (
+                <tr>
+                  <>
+                    <th scope="row">{o.period}</th>
+                    <td class="numeric">{number(o.value)}</td>
+                    <td class="numeric">
+                      {number(
+                        data.observations.find(
+                          (n) =>
+                            n.geography === ward.code &&
+                            n.period === o.period &&
+                            n.metric === "households",
+                        )!.value,
+                      )}
+                    </td>
+                    <td>
+                      <SourceLink
+                        href={
+                          data.snapshots.find((s) => s.id === o.sourceId)!
+                            .sourcePage
+                        }
+                      />
+                    </td>
+                  </>
+                </tr>
+              ))
+            }</tbody
+          >
+        </table>
+      </div>
+    </section>
+  </div></Layout
+>

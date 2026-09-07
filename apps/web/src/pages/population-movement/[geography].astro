@@ -1,0 +1,136 @@
+---
+import { createHash } from "node:crypto";
+import raw from "../../../../../data/published/dynamics.json?raw";
+import Layout from "../../layouts/Layout.astro";
+import { movementStory, ageDataVersion } from "../../region-stories";
+import { storyHtml } from "../../region-story-html";
+import RegionStoryStyle from "../../components/RegionStoryStyle.astro";
+import RegionalQuestions from "../../components/RegionalQuestions.astro";
+import DynamicsHistory from "../../components/DynamicsHistory.astro";
+import SourceLink from "../../components/SourceLink.astro";
+import { dynamics, dynamicsMetrics, dynamicsPage } from "../../dynamics-data";
+import { geographies, number } from "../../data";
+export function getStaticPaths() {
+  return geographies.map((g) => ({
+    params: { geography: g.slug },
+    props: { geography: g },
+  }));
+}
+const { geography } = Astro.props;
+const observations = dynamics.observations.filter(
+  (o) => o.geography === geography.code && o.frequency === "year",
+);
+const year = observations
+  .map((o) => o.period)
+  .sort()
+  .at(-1)!;
+const current = observations.filter((o) => o.period === year);
+const value = (id: string) => current.find((o) => o.metric === id)!.value;
+const version = createHash("sha256").update(raw).digest("hex");
+---
+
+<Layout
+  title={`${geography.name}の人口増減の内訳`}
+  dataVersion={`人口動態 SHA-256:${version} / 年齢別人口 SHA-256:${ageDataVersion}`}
+>
+  <article class="container section prose">
+    <p class="breadcrumb">
+      <a href="/">ホーム</a> / <a href="/population-movement/">人口増減の内訳</a
+      > / {geography.name}
+    </p>
+    <h1 class="page-title">{geography.name}の人口は、何人増減した？</h1>
+    <p class="lede">
+      {
+        year
+      }年1月〜12月の届出による動きを、出生・死亡・転出入に分けて確かめます。単位はすべて人です。<SourceLink
+        href={dynamicsPage}
+      />
+    </p>
+    <RegionStoryStyle />
+    <div
+      id="regional-story"
+      set:html={storyHtml(movementStory(geography.code, +year), "movement")}
+    />
+    <details class="numeric-supplement">
+      <summary>最新年の人数と内訳の計算を見る</summary>
+      <div class="cards">
+        {
+          dynamicsMetrics.slice(0, 3).map((m) => (
+            <section class="box">
+              <>
+                <h2>{m.name}</h2>
+                <p class="page-title" style="font-size:2rem">
+                  {value(m.id) > 0 ? "+" : ""}
+                  {number(value(m.id))}
+                  <small> 人</small>
+                </p>
+                <p>{m.definition}</p>
+              </>
+            </section>
+          ))
+        }
+      </div>
+      <h2>内訳の計算</h2>
+      <p>
+        自然増減：出生 {number(value("births"))} − 死亡 {
+          number(value("deaths"))
+        } ＝
+        {number(value("natural_change"))} 人
+      </p>
+      <p>
+        社会増減：市外からの転入 {number(value("external_in"))} − 市外への転出 {
+          number(value("external_out"))
+        } ＋ 市内移動の転入 {number(value("internal_in"))} − 市内移動の転出 {
+          number(value("internal_out"))
+        } ＋ その他増減 ({number(value("other_change"))}) ＝ {
+          number(value("social_change"))
+        } 人
+      </p>
+      <p class="note">
+        これは統計上の内訳です。転入先を選んだ理由や政策の効果を示す値ではありません。年初と年末の推計人口の差には基準改定が影響する場合があるため、ここでは届出による増減を表示します。
+      </p>
+    </details>
+    <h2>グラフで年ごとの流れを確かめる</h2>
+    <p>
+      1月〜12月の合計を並べています。表はグラフの下から必要なときに開けます。
+    </p>
+    <DynamicsHistory geography={geography.code} frequency="year" />
+    {
+      geography.code === "141003" ? (
+        <details>
+          <>
+            <summary>
+              市全体の月別内訳を見る（2000年1月〜
+              {dynamics.observations
+                .filter((o) => o.frequency === "month")
+                .map((o) => o.period)
+                .sort()
+                .at(-1)}
+              ）
+            </summary>
+            <DynamicsHistory geography={geography.code} frequency="month" />
+          </>
+        </details>
+      ) : (
+        <p>
+          この収録資料の区別内訳は年単位です。区別の月次内訳は掲載していません。
+          <a href="/population-movement/yokohama/">市全体の月別内訳を見る</a>
+        </p>
+      )
+    }
+    <RegionalQuestions />
+    <div class="pill-list">
+      <a href={`/age-structure/?geography=${geography.code}`}
+        >年齢構成の推移を見る</a
+      >
+      <a href="/population-movement/">18区の増減を比較する</a>{
+        geography.code !== "141003" && (
+          <a href={`/wards/${geography.slug}/`}>人口・世帯の推移へ</a>
+        )
+      }<a href="/population-movement/#definitions">指標の定義と出典</a><a
+        href="/data/dynamics.csv"
+        download>内訳のCSV</a
+      ><a href="/data/dynamics.json" download>出典付きJSON</a>
+    </div>
+  </article>
+</Layout>

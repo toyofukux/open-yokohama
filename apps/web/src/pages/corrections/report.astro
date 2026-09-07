@@ -1,0 +1,111 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="誤りを報告する">
+  <article class="container narrow section prose">
+    <p class="breadcrumb">
+      <a href="/corrections/">訂正と確認状況</a> / 誤りを報告する
+    </p>
+    <h1 class="page-title">誤りを報告する</h1>
+    <p>
+      正しい答えが分からなくても、気になる点を知らせてください。出典は分かる範囲で構いません。
+    </p>
+    <p>
+      次の画面はGitHubです。送信にはGitHubアカウントが必要で、内容は公開されます。個人情報や非公開資料は書かないでください。
+    </p>
+    <form
+      action="https://github.com/toyofukux/open-yokohama/issues/new"
+      method="get"
+    >
+      <input type="hidden" name="template" value="correction.yml" />
+      <input type="hidden" name="title" value="[訂正] 数字・説明の確認" />
+      <p>
+        <label for="report-page">対象ページのURL</label><input
+          id="report-page"
+          name="page"
+          type="url"
+          required
+          maxlength="500"
+        />
+      </p>
+      <p>
+        <label for="report-context">対象箇所・表示していた版</label><textarea
+          id="report-context"
+          name="context"
+          rows="4"
+          maxlength="1200"></textarea>
+      </p>
+      <p>
+        <label for="report-problem">気になる点・誤りの内容（必須）</label
+        ><textarea
+          id="report-problem"
+          name="problem"
+          required
+          rows="4"
+          maxlength="1000"></textarea>
+      </p>
+      <p>
+        <label for="report-evidence">出典や補足（任意）</label><textarea
+          id="report-evidence"
+          name="evidence"
+          rows="3"
+          maxlength="700"></textarea>
+      </p>
+      <button type="submit">GitHubで内容を確認する →</button>
+    </form>
+    <p class="small">
+      ここではまだ送信されません。GitHubで送信した後、発行されたIssue番号から対応状況を確認できます。
+    </p>
+    <noscript
+      ><p>
+        JavaScriptが無効なため、対象ページと箇所を手入力してください。
+      </p></noscript
+    >
+  </article>
+</Layout>
+<script>
+  const params = new URLSearchParams(location.search);
+  const page = document.querySelector<HTMLInputElement>("#report-page");
+  const context =
+    document.querySelector<HTMLTextAreaElement>("#report-context");
+  const path = params.get("page") || "";
+  if (page && path.startsWith("/") && !path.startsWith("//")) {
+    try {
+      const target = new URL(path, "https://open.yokohama");
+      if (
+        target.origin === "https://open.yokohama" &&
+        !target.username &&
+        !target.password
+      )
+        page.value = target.href.slice(0, 500);
+    } catch {
+      /* Leave invalid page empty. */
+    }
+  }
+  if (context)
+    context.value = `対象：${(params.get("target") || "ページ全体").slice(0, 500)}\n表示版：${(params.get("version") || "未取得").slice(0, 300)}`;
+</script>
+<style>
+  input:not([type="hidden"]),
+  textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font: inherit;
+    padding: 0.7rem;
+    border: 1px solid currentColor;
+    border-radius: 0.3rem;
+    background: var(--bg, white);
+    color: inherit;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+  button {
+    padding: 0.8rem;
+    font: inherit;
+    cursor: pointer;
+  }
+</style>

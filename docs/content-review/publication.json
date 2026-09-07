@@ -140,7 +140,7 @@
         }
       ],
       "article": {
-        "contentHash": "1cc19c027a7ab436d81f7cc03d02a7866ea8559bc82999c3881e8ced87495bcd",
+        "contentHash": "68797afb80182521cef2aa781b8ab33e6bdec4a16810be9f6f870dfcac3a0011",
         "claims": [
           {
             "id": "F01",
@@ -295,9 +295,9 @@
         ]
       },
       "review": {
-        "contentHash": "1cc19c027a7ab436d81f7cc03d02a7866ea8559bc82999c3881e8ced87495bcd",
-        "reviewer": "Codex author; self-review documented in school-lunch/REVIEW.md; not independent",
-        "reviewedAt": "2026-09-06T17:31:50.018298Z",
+        "contentHash": "68797afb80182521cef2aa781b8ab33e6bdec4a16810be9f6f870dfcac3a0011",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "F01",
@@ -452,7 +452,7 @@
         ],
         "humanApproval": {
           "approver": "user: reviewed first version and explicitly authorized production publication",
-          "contentHash": "1cc19c027a7ab436d81f7cc03d02a7866ea8559bc82999c3881e8ced87495bcd",
+          "contentHash": "68797afb80182521cef2aa781b8ab33e6bdec4a16810be9f6f870dfcac3a0011",
           "approvedAt": "2026-09-06T17:31:50.018298Z"
         }
       },
@@ -473,6 +473,195 @@
         "url": "https://open.yokohama/issues/school-lunch/",
         "verifiedAt": "2026-09-06T18:00:46.769639Z",
         "productionE2E": "46 passed"
+      },
+      "revisionHistory": [
+        {
+          "contentHash": "1cc19c027a7ab436d81f7cc03d02a7866ea8559bc82999c3881e8ced87495bcd",
+          "review": {
+            "contentHash": "68797afb80182521cef2aa781b8ab33e6bdec4a16810be9f6f870dfcac3a0011",
+            "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+            "reviewedAt": "2026-09-07T08:03:40.965550Z",
+            "findings": [
+              {
+                "claimId": "F01",
+                "verdict": "supported",
+                "citationIds": [
+                  "S1"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。2026年度。特別支援学校小学部以外・私立等へ外挿しない"
+              },
+              {
+                "claimId": "F02",
+                "verdict": "supported",
+                "citationIds": [
+                  "S3"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。制度の説明。受給者数や効果の実測ではない"
+              },
+              {
+                "claimId": "F03",
+                "verdict": "supported",
+                "citationIds": [
+                  "S2"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。2026年4月開始。他の既存援助制度を否定しない"
+              },
+              {
+                "claimId": "F04",
+                "verdict": "supported",
+                "citationIds": [
+                  "S7"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。2026-05-18説明。食材費であり給食事業総費用ではない"
+              },
+              {
+                "claimId": "F05",
+                "verdict": "supported",
+                "citationIds": [
+                  "S1",
+                  "S7"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。将来の財源を保証しない"
+              },
+              {
+                "claimId": "F06",
+                "verdict": "supported",
+                "citationIds": [
+                  "S3"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。2026年度。非申請者の規模や動機を推定しない"
+              },
+              {
+                "claimId": "F07",
+                "verdict": "supported",
+                "citationIds": [
+                  "S5"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。案。国の決定・要請済み・市の確定公約とはしない"
+              },
+              {
+                "claimId": "F08",
+                "verdict": "supported",
+                "citationIds": [
+                  "S4"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。2026年度当初計画。決算額・無償化追加額ではない"
+              },
+              {
+                "claimId": "D01",
+                "verdict": "supported",
+                "citationIds": [
+                  "S1"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。20食は編集上の仮定。毎月の請求額・年間負担ではない"
+              },
+              {
+                "claimId": "I01",
+                "verdict": "supported",
+                "citationIds": [
+                  "S1",
+                  "S3",
+                  "S7"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+              },
+              {
+                "claimId": "I02",
+                "verdict": "supported",
+                "citationIds": [
+                  "S1",
+                  "S3"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+              },
+              {
+                "claimId": "I03",
+                "verdict": "supported",
+                "citationIds": [
+                  "S1",
+                  "S2",
+                  "S7"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+              },
+              {
+                "claimId": "I04",
+                "verdict": "supported",
+                "citationIds": [
+                  "S3"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+              },
+              {
+                "claimId": "I05",
+                "verdict": "supported",
+                "citationIds": [
+                  "S1",
+                  "S3",
+                  "S7"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+              },
+              {
+                "claimId": "I06",
+                "verdict": "supported",
+                "citationIds": [
+                  "S5"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+              },
+              {
+                "claimId": "I07",
+                "verdict": "supported",
+                "citationIds": [
+                  "S1",
+                  "S3",
+                  "S4",
+                  "S7"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+              },
+              {
+                "claimId": "I08",
+                "verdict": "supported",
+                "citationIds": [
+                  "S1",
+                  "S3",
+                  "S4",
+                  "S7"
+                ],
+                "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+              }
+            ],
+            "humanApproval": {
+              "approver": "user: reviewed first version and explicitly authorized production publication",
+              "contentHash": "68797afb80182521cef2aa781b8ab33e6bdec4a16810be9f6f870dfcac3a0011",
+              "approvedAt": "2026-09-06T17:31:50.018298Z"
+            }
+          },
+          "deployment": {
+            "workerVersion": "bb68965f-6a35-4d44-a8eb-afe9edbcad5e",
+            "implementationCommit": "ff30cdc87bbfc10c3ff7b991ffa814589dbc6ed2",
+            "url": "https://open.yokohama/issues/school-lunch/",
+            "verifiedAt": "2026-09-06T18:00:46.769639Z",
+            "productionE2E": "46 passed"
+          },
+          "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
+        }
+      ],
+      "integrationReview": {
+        "at": "2026-09-07T08:03:40.965550Z",
+        "scope": "Source integration only; no new human or independent review. Shared layout retains policy-first entry, DWH navigation, correction holds; article manuscripts are byte-identical. UI/tests pending.",
+        "base": "9dad8b57b75b0f6d688fd948d43ef9e46a51702e",
+        "merged": "373a18f3913066c02f66fbc07fff10519bded65a",
+        "checks": {
+          "localE2E": 98,
+          "unitTests": 74,
+          "manuscripts": "byte-identical to design",
+          "warehouseData": "byte-identical to bluegill",
+          "review": "author only; independent review and human validation not performed",
+          "checkedAt": "2026-09-07T08:11:11.994638Z"
+        }
       }
     },
     {
@@ -516,7 +705,7 @@
         }
       ],
       "article": {
-        "contentHash": "889b3d0e5a8ba0e825bc9e3fbf5957c80ed67fb378038502437c003b5a802070",
+        "contentHash": "35c388c9f904b3c481d263248ef5f8f36a4f475ab8cb157bf147dec2b18f1b5c",
         "claims": [
           {
             "id": "city-governance-01",
@@ -583,9 +772,9 @@
         ]
       },
       "review": {
-        "contentHash": "889b3d0e5a8ba0e825bc9e3fbf5957c80ed67fb378038502437c003b5a802070",
-        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
-        "reviewedAt": "2026-09-07T01:05:16.784438Z",
+        "contentHash": "35c388c9f904b3c481d263248ef5f8f36a4f475ab8cb157bf147dec2b18f1b5c",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "city-governance-01",
@@ -652,7 +841,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "889b3d0e5a8ba0e825bc9e3fbf5957c80ed67fb378038502437c003b5a802070",
+          "contentHash": "35c388c9f904b3c481d263248ef5f8f36a4f475ab8cb157bf147dec2b18f1b5c",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -691,8 +880,107 @@
             "productionE2E": "46 passed"
           },
           "reason": "ward-map-home-update"
+        },
+        {
+          "contentHash": "889b3d0e5a8ba0e825bc9e3fbf5957c80ed67fb378038502437c003b5a802070",
+          "review": {
+            "contentHash": "fa396129652b46631111602cdfd0cbb7313d4bcb022d9d89ef3086855a240160",
+            "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+            "reviewedAt": "2026-09-07T08:03:40.965550Z",
+            "findings": [
+              {
+                "claimId": "city-governance-01",
+                "verdict": "supported",
+                "citationIds": [
+                  "G1",
+                  "G2"
+                ],
+                "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 政策を進める力と、権力を点検する仕組みを一緒に見る"
+              },
+              {
+                "claimId": "city-governance-02",
+                "verdict": "supported",
+                "citationIds": [
+                  "G1",
+                  "G2"
+                ],
+                "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## いま確認できること"
+              },
+              {
+                "claimId": "city-governance-03",
+                "verdict": "supported",
+                "citationIds": [
+                  "G2"
+                ],
+                "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 「再発させない」を、実行できる約束に変える"
+              },
+              {
+                "claimId": "city-governance-04",
+                "verdict": "supported",
+                "citationIds": [
+                  "G1",
+                  "G2"
+                ],
+                "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## どこに力を入れるか"
+              },
+              {
+                "claimId": "city-governance-05",
+                "verdict": "supported",
+                "citationIds": [
+                  "G1",
+                  "G2"
+                ],
+                "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 費用より先に、権限が働くかを確かめる"
+              },
+              {
+                "claimId": "city-governance-06",
+                "verdict": "supported",
+                "citationIds": [
+                  "G1",
+                  "G2"
+                ],
+                "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 次の市政に、何を確かめたいか"
+              },
+              {
+                "claimId": "city-governance-07",
+                "verdict": "supported",
+                "citationIds": [
+                  "G1",
+                  "G2"
+                ],
+                "rationale": "G2 corrected report printed pp82–83 and 93–94: findings, non-findings and recommendations; G1 opening statement: resignation intention on Aug28. Distinguish report attribution, personal statement and judicial findings; recommendations are not enacted policy. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 何が分かれば、見方を更新するか"
+              }
+            ],
+            "humanApproval": {
+              "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+              "contentHash": "fa396129652b46631111602cdfd0cbb7313d4bcb022d9d89ef3086855a240160",
+              "approvedAt": "2026-09-06T17:57:54.390464Z"
+            }
+          },
+          "deployment": {
+            "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+            "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+            "url": "https://open.yokohama/issues/city-governance/",
+            "verifiedAt": "2026-09-07T01:12:42.617880Z",
+            "productionE2E": "54 passed"
+          },
+          "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
         }
-      ]
+      ],
+      "integrationReview": {
+        "at": "2026-09-07T08:03:40.965550Z",
+        "scope": "Source integration only; no new human or independent review. Shared layout retains policy-first entry, DWH navigation, correction holds; article manuscripts are byte-identical. UI/tests pending.",
+        "base": "9dad8b57b75b0f6d688fd948d43ef9e46a51702e",
+        "merged": "373a18f3913066c02f66fbc07fff10519bded65a",
+        "checks": {
+          "localE2E": 98,
+          "unitTests": 74,
+          "manuscripts": "byte-identical to design",
+          "warehouseData": "byte-identical to bluegill",
+          "review": "author only; independent review and human validation not performed",
+          "checkedAt": "2026-09-07T08:11:11.994638Z"
+        }
+      }
     },
     {
       "id": "city-budget",
@@ -735,7 +1023,7 @@
         }
       ],
       "article": {
-        "contentHash": "2f3eba3f650979c6ff27742086f68e94094dba0ed019480b1d4d9259c034151f",
+        "contentHash": "3b7605b17b0d875f2e6ff3756781f279cb4737fc2b0ce79ef22526da575db45b",
         "claims": [
           {
             "id": "city-budget-01",
@@ -801,9 +1089,9 @@
         ]
       },
       "review": {
-        "contentHash": "2f3eba3f650979c6ff27742086f68e94094dba0ed019480b1d4d9259c034151f",
-        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
-        "reviewedAt": "2026-09-07T01:05:16.784438Z",
+        "contentHash": "3b7605b17b0d875f2e6ff3756781f279cb4737fc2b0ce79ef22526da575db45b",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "city-budget-01",
@@ -869,7 +1157,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "2f3eba3f650979c6ff27742086f68e94094dba0ed019480b1d4d9259c034151f",
+          "contentHash": "3b7605b17b0d875f2e6ff3756781f279cb4737fc2b0ce79ef22526da575db45b",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -908,8 +1196,106 @@
             "productionE2E": "46 passed"
           },
           "reason": "ward-map-home-update"
+        },
+        {
+          "contentHash": "2f3eba3f650979c6ff27742086f68e94094dba0ed019480b1d4d9259c034151f",
+          "review": {
+            "contentHash": "bc29b364155f3a3752a71db64ebf0faba6b754f4183cbc8a8d3bd13707524ef3",
+            "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+            "reviewedAt": "2026-09-07T08:03:40.965550Z",
+            "findings": [
+              {
+                "claimId": "city-budget-01",
+                "verdict": "supported",
+                "citationIds": [
+                  "F1",
+                  "F2"
+                ],
+                "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 「できるか」の前に、何を続けるお金かをそろえる"
+              },
+              {
+                "claimId": "city-budget-02",
+                "verdict": "supported",
+                "citationIds": [
+                  "F1"
+                ],
+                "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 2兆933億円を、そのまま配り直せるわけではない"
+              },
+              {
+                "claimId": "city-budget-03",
+                "verdict": "supported",
+                "citationIds": [
+                  "F2"
+                ],
+                "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 今年を埋めるお金と、毎年続くお金"
+              },
+              {
+                "claimId": "city-budget-04",
+                "verdict": "supported",
+                "citationIds": [
+                  "F1",
+                  "F2"
+                ],
+                "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 配分の方針は、三つの方向から比べられる"
+              },
+              {
+                "claimId": "city-budget-05",
+                "verdict": "supported",
+                "citationIds": [
+                  "F1",
+                  "F2"
+                ],
+                "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 金額のある公約で、確かめたい四つのこと"
+              },
+              {
+                "claimId": "city-budget-06",
+                "verdict": "supported",
+                "citationIds": [
+                  "F1",
+                  "F2"
+                ],
+                "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 何を優先し、何を見送るかまで読む"
+              },
+              {
+                "claimId": "city-budget-07",
+                "verdict": "supported",
+                "citationIds": [
+                  "F1",
+                  "F2"
+                ],
+                "rationale": "F1 sections2/10: FY2026 initial budget size and city assessment. F2 printed p32: initial compilation gap and financing measures. Neither spendable surplus nor final budget deficit. Hypothetical10億 is explicitly illustrative. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## この先の比較に、まだ足りないもの"
+              }
+            ],
+            "humanApproval": {
+              "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+              "contentHash": "bc29b364155f3a3752a71db64ebf0faba6b754f4183cbc8a8d3bd13707524ef3",
+              "approvedAt": "2026-09-06T17:57:54.390464Z"
+            }
+          },
+          "deployment": {
+            "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+            "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+            "url": "https://open.yokohama/issues/city-budget/",
+            "verifiedAt": "2026-09-07T01:12:42.617880Z",
+            "productionE2E": "54 passed"
+          },
+          "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
         }
-      ]
+      ],
+      "integrationReview": {
+        "at": "2026-09-07T08:03:40.965550Z",
+        "scope": "Source integration only; no new human or independent review. Shared layout retains policy-first entry, DWH navigation, correction holds; article manuscripts are byte-identical. UI/tests pending.",
+        "base": "9dad8b57b75b0f6d688fd948d43ef9e46a51702e",
+        "merged": "373a18f3913066c02f66fbc07fff10519bded65a",
+        "checks": {
+          "localE2E": 98,
+          "unitTests": 74,
+          "manuscripts": "byte-identical to design",
+          "warehouseData": "byte-identical to bluegill",
+          "review": "author only; independent review and human validation not performed",
+          "checkedAt": "2026-09-07T08:11:11.994638Z"
+        }
+      }
     },
     {
       "id": "green-expo",
@@ -952,7 +1338,7 @@
         }
       ],
       "article": {
-        "contentHash": "2813b2e6a64065e2b0657b6ec0ffec30f352d4a659d2de509aaf45bf54d24e37",
+        "contentHash": "6d2b1c85176ee07b58ed39bf9adb4d5fa56b3e3c863286c65392ec9df4780744",
         "claims": [
           {
             "id": "green-expo-01",
@@ -1018,9 +1404,9 @@
         ]
       },
       "review": {
-        "contentHash": "2813b2e6a64065e2b0657b6ec0ffec30f352d4a659d2de509aaf45bf54d24e37",
-        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
-        "reviewedAt": "2026-09-07T01:05:16.784438Z",
+        "contentHash": "6d2b1c85176ee07b58ed39bf9adb4d5fa56b3e3c863286c65392ec9df4780744",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "green-expo-01",
@@ -1086,7 +1472,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "2813b2e6a64065e2b0657b6ec0ffec30f352d4a659d2de509aaf45bf54d24e37",
+          "contentHash": "6d2b1c85176ee07b58ed39bf9adb4d5fa56b3e3c863286c65392ec9df4780744",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1125,8 +1511,106 @@
             "productionE2E": "46 passed"
           },
           "reason": "ward-map-home-update"
+        },
+        {
+          "contentHash": "2813b2e6a64065e2b0657b6ec0ffec30f352d4a659d2de509aaf45bf54d24e37",
+          "review": {
+            "contentHash": "e6b80d91384cbc66741c7380193a7f6ec9c26ebb788d7875ae2227aa7f12da4e",
+            "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+            "reviewedAt": "2026-09-07T08:03:40.965550Z",
+            "findings": [
+              {
+                "claimId": "green-expo-01",
+                "verdict": "supported",
+                "citationIds": [
+                  "X1",
+                  "F2"
+                ],
+                "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 判断したいのは、これから使うお金と残る価値"
+              },
+              {
+                "claimId": "green-expo-02",
+                "verdict": "supported",
+                "citationIds": [
+                  "X1"
+                ],
+                "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## まず、同じ事業の中でも財源を分ける"
+              },
+              {
+                "claimId": "green-expo-03",
+                "verdict": "supported",
+                "citationIds": [
+                  "X1",
+                  "F2"
+                ],
+                "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## この数字だけで「中止すれば浮く額」は出せない"
+              },
+              {
+                "claimId": "green-expo-04",
+                "verdict": "supported",
+                "citationIds": [
+                  "X1",
+                  "F2"
+                ],
+                "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 三つの方針を、同じ条件で比べる"
+              },
+              {
+                "claimId": "green-expo-05",
+                "verdict": "supported",
+                "citationIds": [
+                  "X1",
+                  "F2"
+                ],
+                "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 来場者数の先に、何を残したいか"
+              },
+              {
+                "claimId": "green-expo-06",
+                "verdict": "supported",
+                "citationIds": [
+                  "F2"
+                ],
+                "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 別の政策へ回す比較に必要なこと"
+              },
+              {
+                "claimId": "green-expo-07",
+                "verdict": "supported",
+                "citationIds": [
+                  "X1",
+                  "F2"
+                ],
+                "rationale": "X1 PDF2, visually checked: one FY2026 project only, 8697215=4888319+3808896 thousand yen; donated revenue flow. F2 printed p32 financing categories. No all-project total or cancellation saving is inferred. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 次に埋めたい空白"
+              }
+            ],
+            "humanApproval": {
+              "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+              "contentHash": "e6b80d91384cbc66741c7380193a7f6ec9c26ebb788d7875ae2227aa7f12da4e",
+              "approvedAt": "2026-09-06T17:57:54.390464Z"
+            }
+          },
+          "deployment": {
+            "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+            "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+            "url": "https://open.yokohama/issues/green-expo/",
+            "verifiedAt": "2026-09-07T01:12:42.617880Z",
+            "productionE2E": "54 passed"
+          },
+          "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
         }
-      ]
+      ],
+      "integrationReview": {
+        "at": "2026-09-07T08:03:40.965550Z",
+        "scope": "Source integration only; no new human or independent review. Shared layout retains policy-first entry, DWH navigation, correction holds; article manuscripts are byte-identical. UI/tests pending.",
+        "base": "9dad8b57b75b0f6d688fd948d43ef9e46a51702e",
+        "merged": "373a18f3913066c02f66fbc07fff10519bded65a",
+        "checks": {
+          "localE2E": 98,
+          "unitTests": 74,
+          "manuscripts": "byte-identical to design",
+          "warehouseData": "byte-identical to bluegill",
+          "review": "author only; independent review and human validation not performed",
+          "checkedAt": "2026-09-07T08:11:11.994638Z"
+        }
+      }
     },
     {
       "id": "local-mobility",
@@ -1169,7 +1653,7 @@
         }
       ],
       "article": {
-        "contentHash": "a77ddc25b5fa42f472548a15c4dc443f58ab6561a15867ef15599ccac564db85",
+        "contentHash": "14b7a6a01710c68b0ba1dd75fe12187f4f92c896e1adc4cf3616d3d3d482d885",
         "claims": [
           {
             "id": "local-mobility-01",
@@ -1226,9 +1710,9 @@
         ]
       },
       "review": {
-        "contentHash": "a77ddc25b5fa42f472548a15c4dc443f58ab6561a15867ef15599ccac564db85",
-        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
-        "reviewedAt": "2026-09-07T01:05:16.784438Z",
+        "contentHash": "14b7a6a01710c68b0ba1dd75fe12187f4f92c896e1adc4cf3616d3d3d482d885",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "local-mobility-01",
@@ -1285,7 +1769,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "a77ddc25b5fa42f472548a15c4dc443f58ab6561a15867ef15599ccac564db85",
+          "contentHash": "14b7a6a01710c68b0ba1dd75fe12187f4f92c896e1adc4cf3616d3d3d482d885",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1324,8 +1808,97 @@
             "productionE2E": "46 passed"
           },
           "reason": "ward-map-home-update"
+        },
+        {
+          "contentHash": "a77ddc25b5fa42f472548a15c4dc443f58ab6561a15867ef15599ccac564db85",
+          "review": {
+            "contentHash": "f425d2705bfe0e982d70916e19d82064042d20ca6b5aa24274ba7a1b067b488d",
+            "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+            "reviewedAt": "2026-09-07T08:03:40.965550Z",
+            "findings": [
+              {
+                "claimId": "local-mobility-01",
+                "verdict": "supported",
+                "citationIds": [
+                  "M1",
+                  "M2"
+                ],
+                "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 安く乗れる支援と、乗れる場所を増やす支援"
+              },
+              {
+                "claimId": "local-mobility-02",
+                "verdict": "supported",
+                "citationIds": [
+                  "M1"
+                ],
+                "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 敬老パスは、すべての交通が無料になる制度ではない"
+              },
+              {
+                "claimId": "local-mobility-03",
+                "verdict": "supported",
+                "citationIds": [
+                  "M2"
+                ],
+                "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 路線が遠い地域への支援も始まっている"
+              },
+              {
+                "claimId": "local-mobility-04",
+                "verdict": "supported",
+                "citationIds": [
+                  "M1",
+                  "M2"
+                ],
+                "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 次の支援をどう組み合わせるか"
+              },
+              {
+                "claimId": "local-mobility-05",
+                "verdict": "supported",
+                "citationIds": [
+                  "M1",
+                  "M2"
+                ],
+                "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 費用は、初期投資と毎年の運行を分けたい"
+              },
+              {
+                "claimId": "local-mobility-06",
+                "verdict": "supported",
+                "citationIds": [
+                  "M1",
+                  "M2"
+                ],
+                "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 「使える」を、目的地まで確かめる"
+              }
+            ],
+            "humanApproval": {
+              "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+              "contentHash": "f425d2705bfe0e982d70916e19d82064042d20ca6b5aa24274ba7a1b067b488d",
+              "approvedAt": "2026-09-06T17:57:54.390464Z"
+            }
+          },
+          "deployment": {
+            "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+            "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+            "url": "https://open.yokohama/issues/local-mobility/",
+            "verifiedAt": "2026-09-07T01:12:42.617880Z",
+            "productionE2E": "54 passed"
+          },
+          "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
         }
-      ]
+      ],
+      "integrationReview": {
+        "at": "2026-09-07T08:03:40.965550Z",
+        "scope": "Source integration only; no new human or independent review. Shared layout retains policy-first entry, DWH navigation, correction holds; article manuscripts are byte-identical. UI/tests pending.",
+        "base": "9dad8b57b75b0f6d688fd948d43ef9e46a51702e",
+        "merged": "373a18f3913066c02f66fbc07fff10519bded65a",
+        "checks": {
+          "localE2E": 98,
+          "unitTests": 74,
+          "manuscripts": "byte-identical to design",
+          "warehouseData": "byte-identical to bluegill",
+          "review": "author only; independent review and human validation not performed",
+          "checkedAt": "2026-09-07T08:11:11.994638Z"
+        }
+      }
     },
     {
       "id": "childcare-access",
@@ -1387,7 +1960,7 @@
         }
       ],
       "article": {
-        "contentHash": "c503be112f8cf16085265ae8ca81a7e3f6ca977539841abced7eaed486a297e4",
+        "contentHash": "ad42d7d92df54285675efb9da5e91faa623b4591e83631a5a17fe485f7e8809c",
         "claims": [
           {
             "id": "childcare-access-01",
@@ -1445,9 +2018,9 @@
         ]
       },
       "review": {
-        "contentHash": "c503be112f8cf16085265ae8ca81a7e3f6ca977539841abced7eaed486a297e4",
-        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
-        "reviewedAt": "2026-09-07T01:10:21.083028Z",
+        "contentHash": "ad42d7d92df54285675efb9da5e91faa623b4591e83631a5a17fe485f7e8809c",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "childcare-access-01",
@@ -1505,7 +2078,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "c503be112f8cf16085265ae8ca81a7e3f6ca977539841abced7eaed486a297e4",
+          "contentHash": "ad42d7d92df54285675efb9da5e91faa623b4591e83631a5a17fe485f7e8809c",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1557,8 +2130,98 @@
             "productionE2E": "46 passed"
           },
           "reason": "ward-map-home-update"
+        },
+        {
+          "contentHash": "c503be112f8cf16085265ae8ca81a7e3f6ca977539841abced7eaed486a297e4",
+          "review": {
+            "contentHash": "709d8954562df6f67b2291915568a3e73ef92f3e6bec313da2aa413f2c37a01b",
+            "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+            "reviewedAt": "2026-09-07T08:03:40.965550Z",
+            "findings": [
+              {
+                "claimId": "childcare-access-01",
+                "verdict": "supported",
+                "citationIds": [
+                  "N1",
+                  "N3"
+                ],
+                "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 「ゼロ」を出発点に、使える保育を見る"
+              },
+              {
+                "claimId": "childcare-access-02",
+                "verdict": "supported",
+                "citationIds": [
+                  "N1"
+                ],
+                "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 待機児童0人、保留児童2,532人は両立する"
+              },
+              {
+                "claimId": "childcare-access-03",
+                "verdict": "supported",
+                "citationIds": [
+                  "N1",
+                  "N3"
+                ],
+                "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 年齢と地域によって、空きの意味が違う 2026-09-07 addition: N1 page 7 visually inspected; committed extraction matches fixed PDF; all 18 rows and 12 column totals reconciled. Ward applicants=enrolled+held follows page 1. Kohoku held312/max count, Seya142/2086=6.8073%/max rate, city2532/73834=3.4293%. Map includes leave-extension preference; age analysis excludes it. 0.8/1.2 relative bands are editorial, not official/significance/vacancy/admission probability. No age-by-ward cross-tab inference. Map geometry is MLIT N03 2023 with processing attribution."
+              },
+              {
+                "claimId": "childcare-access-04",
+                "verdict": "supported",
+                "citationIds": [
+                  "N1",
+                  "N3"
+                ],
+                "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 限られたお金を、どこに向けるか"
+              },
+              {
+                "claimId": "childcare-access-05",
+                "verdict": "supported",
+                "citationIds": [
+                  "N1",
+                  "N3"
+                ],
+                "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 「一人分の枠」の値段だけでは決められない"
+              },
+              {
+                "claimId": "childcare-access-06",
+                "verdict": "supported",
+                "citationIds": [
+                  "N1",
+                  "N3"
+                ],
+                "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 公約と実績で、同じ問いを追う"
+              }
+            ],
+            "humanApproval": {
+              "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+              "contentHash": "709d8954562df6f67b2291915568a3e73ef92f3e6bec313da2aa413f2c37a01b",
+              "approvedAt": "2026-09-06T17:57:54.390464Z"
+            }
+          },
+          "deployment": {
+            "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+            "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+            "url": "https://open.yokohama/issues/childcare-access/",
+            "verifiedAt": "2026-09-07T01:12:42.617880Z",
+            "productionE2E": "54 passed"
+          },
+          "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
         }
-      ]
+      ],
+      "integrationReview": {
+        "at": "2026-09-07T08:03:40.965550Z",
+        "scope": "Source integration only; no new human or independent review. Shared layout retains policy-first entry, DWH navigation, correction holds; article manuscripts are byte-identical. UI/tests pending.",
+        "base": "9dad8b57b75b0f6d688fd948d43ef9e46a51702e",
+        "merged": "373a18f3913066c02f66fbc07fff10519bded65a",
+        "checks": {
+          "localE2E": 98,
+          "unitTests": 74,
+          "manuscripts": "byte-identical to design",
+          "warehouseData": "byte-identical to bluegill",
+          "review": "author only; independent review and human validation not performed",
+          "checkedAt": "2026-09-07T08:11:11.994638Z"
+        }
+      }
     },
     {
       "id": "school-shelters",
@@ -1601,7 +2264,7 @@
         }
       ],
       "article": {
-        "contentHash": "d627b5d112ec3e2b594371a54028abb2a0a05d0bc0d95f154d28c2b3dbc1c92c",
+        "contentHash": "8d78ae060c1971a9f550200db8cd270e8fde2fcfb9deb8f5c08e4ee438024390",
         "claims": [
           {
             "id": "school-shelters-01",
@@ -1657,9 +2320,9 @@
         ]
       },
       "review": {
-        "contentHash": "d627b5d112ec3e2b594371a54028abb2a0a05d0bc0d95f154d28c2b3dbc1c92c",
-        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
-        "reviewedAt": "2026-09-07T01:05:16.784438Z",
+        "contentHash": "8d78ae060c1971a9f550200db8cd270e8fde2fcfb9deb8f5c08e4ee438024390",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "school-shelters-01",
@@ -1715,7 +2378,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "d627b5d112ec3e2b594371a54028abb2a0a05d0bc0d95f154d28c2b3dbc1c92c",
+          "contentHash": "8d78ae060c1971a9f550200db8cd270e8fde2fcfb9deb8f5c08e4ee438024390",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1754,8 +2417,96 @@
             "productionE2E": "46 passed"
           },
           "reason": "ward-map-home-update"
+        },
+        {
+          "contentHash": "d627b5d112ec3e2b594371a54028abb2a0a05d0bc0d95f154d28c2b3dbc1c92c",
+          "review": {
+            "contentHash": "5eb93035d262fb56b55012af63aebbec018fc2582a49cf29252f9310001da1dd",
+            "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+            "reviewedAt": "2026-09-07T08:03:40.965550Z",
+            "findings": [
+              {
+                "claimId": "school-shelters-01",
+                "verdict": "supported",
+                "citationIds": [
+                  "D1",
+                  "F2"
+                ],
+                "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 早く整えることと、使い続けられること"
+              },
+              {
+                "claimId": "school-shelters-02",
+                "verdict": "supported",
+                "citationIds": [
+                  "D1"
+                ],
+                "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 2026年度の資料には、校数の異なる記載がある"
+              },
+              {
+                "claimId": "school-shelters-03",
+                "verdict": "supported",
+                "citationIds": [
+                  "D1"
+                ],
+                "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 64.9億円は、体育館だけの費用ではない"
+              },
+              {
+                "claimId": "school-shelters-04",
+                "verdict": "supported",
+                "citationIds": [
+                  "D1",
+                  "F2"
+                ],
+                "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 整備の順序は、何を優先して決めるか"
+              },
+              {
+                "claimId": "school-shelters-05",
+                "verdict": "supported",
+                "citationIds": [
+                  "D1",
+                  "F2"
+                ],
+                "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 設置率の次は、停電時と実際の運用を見る"
+              },
+              {
+                "claimId": "school-shelters-06",
+                "verdict": "supported",
+                "citationIds": [
+                  "F2"
+                ],
+                "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 何を見送るかも、工程と一緒に示す"
+              }
+            ],
+            "humanApproval": {
+              "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+              "contentHash": "5eb93035d262fb56b55012af63aebbec018fc2582a49cf29252f9310001da1dd",
+              "approvedAt": "2026-09-06T17:57:54.390464Z"
+            }
+          },
+          "deployment": {
+            "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+            "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+            "url": "https://open.yokohama/issues/school-shelters/",
+            "verifiedAt": "2026-09-07T01:12:42.617880Z",
+            "productionE2E": "54 passed"
+          },
+          "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
         }
-      ]
+      ],
+      "integrationReview": {
+        "at": "2026-09-07T08:03:40.965550Z",
+        "scope": "Source integration only; no new human or independent review. Shared layout retains policy-first entry, DWH navigation, correction holds; article manuscripts are byte-identical. UI/tests pending.",
+        "base": "9dad8b57b75b0f6d688fd948d43ef9e46a51702e",
+        "merged": "373a18f3913066c02f66fbc07fff10519bded65a",
+        "checks": {
+          "localE2E": 98,
+          "unitTests": 74,
+          "manuscripts": "byte-identical to design",
+          "warehouseData": "byte-identical to bluegill",
+          "review": "author only; independent review and human validation not performed",
+          "checkedAt": "2026-09-07T08:11:11.994638Z"
+        }
+      }
     },
     {
       "id": "mayor-2026",
@@ -1798,7 +2549,7 @@
         }
       ],
       "article": {
-        "contentHash": "55b89c52f8754500f78658eb1e2291d9b0bd53d1f5bb7bfa5f87acf8b262f8ae",
+        "contentHash": "484928830822bea81bd03655dd9ba71b0e5620980b14b876f7b7e5d59b3c64a0",
         "claims": [
           {
             "id": "election-date",
@@ -1821,9 +2572,9 @@
         ]
       },
       "review": {
-        "contentHash": "55b89c52f8754500f78658eb1e2291d9b0bd53d1f5bb7bfa5f87acf8b262f8ae",
-        "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
-        "reviewedAt": "2026-09-07T01:41:30.795397Z",
+        "contentHash": "484928830822bea81bd03655dd9ba71b0e5620980b14b876f7b7e5d59b3c64a0",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "election-date",
@@ -1846,7 +2597,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "55b89c52f8754500f78658eb1e2291d9b0bd53d1f5bb7bfa5f87acf8b262f8ae",
+          "contentHash": "484928830822bea81bd03655dd9ba71b0e5620980b14b876f7b7e5d59b3c64a0",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1902,8 +2653,63 @@
             "verifiedAt": "2026-09-07T01:12:42.617880Z",
             "productionE2E": "54 passed"
           }
+        },
+        {
+          "contentHash": "55b89c52f8754500f78658eb1e2291d9b0bd53d1f5bb7bfa5f87acf8b262f8ae",
+          "review": {
+            "contentHash": "c6734feff068636108e06097c5fc48351b58f3a2348899e9968e92620787afd3",
+            "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+            "reviewedAt": "2026-09-07T08:03:40.965550Z",
+            "findings": [
+              {
+                "claimId": "election-date",
+                "verdict": "supported",
+                "citationIds": [
+                  "E1",
+                  "E2"
+                ],
+                "rationale": "E1 election schedule and E2 planned publication labels checked at acquisition. Selection scope is explicit editorial judgment, not a sourced popularity ranking. Seven links correspond to completed initial articles."
+              },
+              {
+                "claimId": "editorial-selection",
+                "verdict": "supported",
+                "citationIds": [
+                  "E1",
+                  "E2"
+                ],
+                "rationale": "E1 election schedule and E2 planned publication labels checked at acquisition. Selection scope is explicit editorial judgment, not a sourced popularity ranking. Seven links correspond to completed initial articles."
+              }
+            ],
+            "humanApproval": {
+              "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+              "contentHash": "c6734feff068636108e06097c5fc48351b58f3a2348899e9968e92620787afd3",
+              "approvedAt": "2026-09-06T17:57:54.390464Z"
+            }
+          },
+          "deployment": {
+            "workerVersion": "c9c149c7-cbf2-4793-8ad8-41d273c2d55b",
+            "implementationCommit": "b43fcdf512ff181253b4b0a1b276540499372505",
+            "url": "https://open.yokohama/elections/mayor-2026/",
+            "verifiedAt": "2026-09-07T01:46:33.812470Z",
+            "productionE2E": "54 passed"
+          },
+          "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
         }
-      ]
+      ],
+      "integrationReview": {
+        "at": "2026-09-07T08:03:40.965550Z",
+        "scope": "Source integration only; no new human or independent review. Shared layout retains policy-first entry, DWH navigation, correction holds; article manuscripts are byte-identical. UI/tests pending.",
+        "base": "9dad8b57b75b0f6d688fd948d43ef9e46a51702e",
+        "merged": "373a18f3913066c02f66fbc07fff10519bded65a",
+        "checks": {
+          "localE2E": 98,
+          "unitTests": 74,
+          "manuscripts": "byte-identical to design",
+          "warehouseData": "byte-identical to bluegill",
+          "review": "author only; independent review and human validation not performed",
+          "checkedAt": "2026-09-07T08:11:11.994638Z"
+        }
+      }
     }
   ]
 }

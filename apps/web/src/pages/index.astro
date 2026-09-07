@@ -5,9 +5,9 @@ import PolicyFeature from "../components/PolicyFeature.astro";
 import ElectionCampaign from "../components/ElectionCampaign.astro";
 import { data, latest, number, wards } from "../data";
 import { policyIssues } from "../../../../packages/core/policy-issues";
-const entryIssues = ["childcare-access", "local-mobility", "city-budget"].map(
-  (slug) => policyIssues.find((issue) => issue.slug === slug)!,
-);
+const entryIssues = ["childcare-access", "local-mobility", "city-budget"]
+  .map((slug) => policyIssues.find((issue) => issue.slug === slug))
+  .filter((issue) => issue !== undefined);
 const population = latest(data, "141003", "population");
 const households = latest(data, "141003", "households");
 const change = latest(data, "141003", "population_change");

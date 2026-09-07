@@ -1,0 +1,566 @@
+{
+  "issues": [
+    {
+      "slug": "population",
+      "category": "人口・まちの変化",
+      "title": "横浜の人口は、どこで変わっている？",
+      "summary": "区ごとの人口の推移は、各区のページで確認できます。",
+      "metric": "population",
+      "question": "区ごとの人口は、どう推移している？",
+      "limits": "人口の増減だけでは、出生・死亡・転入・転出のどれが原因かは分かりません。国勢調査を基にした推計の改定も、数字の変化に含まれる場合があります。",
+      "next": "このページの人口推移には、出生・死亡・転入・転出の内訳と年齢別人口は含まれません。政策効果の推定値も含まれません。"
+    },
+    {
+      "slug": "households",
+      "category": "住まい・暮らし",
+      "title": "人口と世帯数の推移は、どう違う？",
+      "summary": "比較ページで、区ごとの人口・世帯数・1世帯あたりの人数を切り替えて表示できます。",
+      "metric": "households",
+      "question": "人口と世帯数の比は、区によってどう違う？",
+      "limits": "1世帯あたりの人数は平均です。この値だけで、単身世帯の割合や高齢者の孤立、住宅不足を判断することはできません。",
+      "next": "世帯構成、住宅の空き状況、家賃は未収録です。現在のデータでは世帯数と人口を比較できます。"
+    },
+    {
+      "slug": "density",
+      "category": "まち・地域",
+      "title": "人口の密度は、区によってどう違う？",
+      "summary": "比較ページで、18区の人口と人口密度を切り替えて表示できます。",
+      "metric": "density",
+      "question": "人口と人口密度を比べると？",
+      "limits": "区の平均密度は、駅周辺や住宅地ごとの混雑を表しません。通勤・通学による昼間の人口や、住みやすさの評価とも異なります。",
+      "next": "町丁別人口、土地利用、交通・施設の分布は未収録です。現在の比較は区単位で、町や徒歩圏には対応していません。"
+    }
+  ],
+  "claims": [
+    {
+      "id": "population/c1",
+      "blockId": "population.category",
+      "quote": "人口・まちの変化",
+      "proposition": "人口とまちの変化を扱うカテゴリ名。",
+      "kind": "non_assertion",
+      "requiresHuman": false,
+      "scope": "statistics"
+    },
+    {
+      "id": "population/c2",
+      "blockId": "population.title",
+      "quote": "横浜の人口は、どこで変わっている？",
+      "proposition": "横浜の人口に変化が生じていることを前提に、その場所を尋ねている。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "statistics"
+    },
+    {
+      "id": "population/c3",
+      "blockId": "population.summary",
+      "quote": "区ごとの人口の推移は、各区のページで確認できます。",
+      "proposition": "各区のページには、その区の人口の推移を確認できる機能がある。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "population/c4",
+      "blockId": "population.question",
+      "quote": "区ごとの人口は、どう推移している？",
+      "proposition": "区ごとの人口の推移を尋ねる開かれた質問。",
+      "kind": "non_assertion",
+      "requiresHuman": false,
+      "scope": "statistics"
+    },
+    {
+      "id": "population/c5",
+      "blockId": "population.limits",
+      "quote": "人口の増減だけでは、出生・死亡・転入・転出のどれが原因かは分かりません。",
+      "proposition": "人口の増減だけからは、出生・死亡・転入・転出のどれが増減の原因かを特定できない。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "methodology"
+    },
+    {
+      "id": "population/c6",
+      "blockId": "population.limits",
+      "quote": "国勢調査を基にした推計の改定も、数字の変化に含まれる場合があります。",
+      "proposition": "人口の数字の変化には、国勢調査を基にした人口推計の改定による変化が含まれる場合がある。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "methodology"
+    },
+    {
+      "id": "population/c7",
+      "blockId": "population.next",
+      "quote": "このページの人口推移には、出生・死亡・転入・転出の内訳と",
+      "proposition": "populationの課題ページの人口推移には、出生・死亡・転入・転出の内訳が含まれていない。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "population/c8",
+      "blockId": "population.next",
+      "quote": "年齢別人口は含まれません。",
+      "proposition": "populationの課題ページの人口推移には、年齢別人口が含まれていない。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "population/c9",
+      "blockId": "population.next",
+      "quote": "政策効果の推定値も含まれません。",
+      "proposition": "populationの課題ページの人口推移には、政策効果の推定値が含まれていない。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "households/c1",
+      "blockId": "households.category",
+      "quote": "住まい・暮らし",
+      "proposition": "住まい・暮らしという分類ラベル。",
+      "kind": "non_assertion",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "households/c2",
+      "blockId": "households.title",
+      "quote": "人口と世帯数の推移は、どう違う？",
+      "proposition": "人口の推移と世帯数の推移には違いがあることを前提として、その違いを尋ねている。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "statistics"
+    },
+    {
+      "id": "households/c3",
+      "blockId": "households.summary",
+      "quote": "比較ページで、区ごとの人口・世帯数・1世帯あたりの人数を切り替えて表示できます。",
+      "proposition": "比較ページには、区ごとの人口・世帯数・1世帯あたりの人数を切り替えて表示する機能がある。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "households/c4",
+      "blockId": "households.question",
+      "quote": "人口と世帯数の比は、区によってどう違う？",
+      "proposition": "人口と世帯数の比には区による違いがあることを前提として、その違いを尋ねている。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "statistics"
+    },
+    {
+      "id": "households/c5",
+      "blockId": "households.limits",
+      "quote": "1世帯あたりの人数は平均です。",
+      "proposition": "ここで扱う1世帯あたりの人数は平均値である。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "methodology"
+    },
+    {
+      "id": "households/c6",
+      "blockId": "households.limits",
+      "quote": "この値だけで、単身世帯の割合や",
+      "proposition": "1世帯あたりの人数の平均値だけでは、単身世帯の割合を判断できない。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "methodology"
+    },
+    {
+      "id": "households/c7",
+      "blockId": "households.limits",
+      "quote": "高齢者の孤立、",
+      "proposition": "1世帯あたりの人数の平均値だけでは、高齢者の孤立を判断できない。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "methodology"
+    },
+    {
+      "id": "households/c8",
+      "blockId": "households.limits",
+      "quote": "住宅不足を判断することはできません。",
+      "proposition": "1世帯あたりの人数の平均値だけでは、住宅不足を判断できない。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "methodology"
+    },
+    {
+      "id": "households/c9",
+      "blockId": "households.next",
+      "quote": "世帯構成、",
+      "proposition": "この製品の現在のデータには、世帯構成が収録されていない。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "households/c10",
+      "blockId": "households.next",
+      "quote": "住宅の空き状況、",
+      "proposition": "この製品の現在のデータには、住宅の空き状況が収録されていない。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "households/c11",
+      "blockId": "households.next",
+      "quote": "家賃は未収録です。",
+      "proposition": "この製品の現在のデータには、家賃が収録されていない。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "households/c12",
+      "blockId": "households.next",
+      "quote": "現在のデータでは世帯数と人口を比較できます。",
+      "proposition": "この製品の現在のデータでは、世帯数と人口を比較できる。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "density/c1",
+      "blockId": "density.category",
+      "quote": "まち・地域",
+      "proposition": "カテゴリ名を示すラベル。",
+      "kind": "non_assertion",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "density/c2",
+      "blockId": "density.title",
+      "quote": "人口の密度は、区によってどう違う？",
+      "proposition": "横浜市の人口密度は区によって異なるという前提で、その違いを尋ねている。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "statistics"
+    },
+    {
+      "id": "density/c3",
+      "blockId": "density.summary",
+      "quote": "比較ページで、18区の人口と人口密度を切り替えて表示できます。",
+      "proposition": "比較ページでは、横浜市18区の人口と人口密度を切り替えて表示できる。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "density/c4",
+      "blockId": "density.question",
+      "quote": "人口と人口密度を比べると？",
+      "proposition": "人口と人口密度を比較すると何が分かるかを尋ねる開かれた質問。",
+      "kind": "non_assertion",
+      "requiresHuman": false,
+      "scope": "statistics"
+    },
+    {
+      "id": "density/c5",
+      "blockId": "density.limits",
+      "quote": "区の平均密度は、駅周辺や住宅地ごとの混雑を表しません。",
+      "proposition": "区の平均人口密度は、駅周辺や住宅地ごとの混雑を表さない。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "methodology"
+    },
+    {
+      "id": "density/c6",
+      "blockId": "density.limits",
+      "quote": "通勤・通学による昼間の人口や、",
+      "proposition": "区の平均人口密度は、通勤・通学による昼間の人口とは異なる。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "methodology"
+    },
+    {
+      "id": "density/c7",
+      "blockId": "density.limits",
+      "quote": "住みやすさの評価とも異なります。",
+      "proposition": "区の平均人口密度は、住みやすさの評価とは異なる。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "methodology"
+    },
+    {
+      "id": "density/c8",
+      "blockId": "density.next",
+      "quote": "町丁別人口、",
+      "proposition": "現在の製品には町丁別人口が未収録である。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "density/c9",
+      "blockId": "density.next",
+      "quote": "土地利用、",
+      "proposition": "現在の製品には土地利用が未収録である。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "density/c10",
+      "blockId": "density.next",
+      "quote": "交通・施設の分布は未収録です。",
+      "proposition": "現在の製品には交通・施設の分布が未収録である。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "density/c11",
+      "blockId": "density.next",
+      "quote": "現在の比較は区単位で、",
+      "proposition": "現在の製品の比較は区単位である。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    },
+    {
+      "id": "density/c12",
+      "blockId": "density.next",
+      "quote": "町や徒歩圏には対応していません。",
+      "proposition": "現在の製品の比較は町や徒歩圏に対応していない。",
+      "kind": "fact",
+      "requiresHuman": false,
+      "scope": "product"
+    }
+  ],
+  "reviewedAt": "2026-09-06T01:57:28.726Z",
+  "reviewer": "codex-editorial-review",
+  "method": "ai_evidence_review",
+  "packetHash": "95b66bcf0e786916d9fdb85733ae86522772ab3f2d1de84626f364d32bcaa976",
+  "sourceCount": 15,
+  "sources": [
+    {
+      "id": "population-method",
+      "title": "横浜市 人口・世帯",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/jinko/",
+      "publisher": "横浜市",
+      "tier": "primary",
+      "scopes": [
+        "methodology",
+        "statistics"
+      ],
+      "retrievedAt": "2026-09-06T01:53:16.640Z",
+      "contentHash": "41f8f25d55e13487961e0afaf60e2b2a0bafc004b9e3f01f3176d3c9a178fb5a",
+      "artifact": {
+        "path": "data/editorial/raw/de61fd39a666294a8ee4039991cb45276a17397c44eaa235de381beaae0acc92.html",
+        "sha256": "de61fd39a666294a8ee4039991cb45276a17397c44eaa235de381beaae0acc92"
+      }
+    },
+    {
+      "id": "population-table",
+      "title": "横浜市 男女別人口及び世帯数－行政区",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/opendata/suikei01.html",
+      "publisher": "横浜市",
+      "tier": "primary",
+      "scopes": [
+        "methodology",
+        "statistics"
+      ],
+      "retrievedAt": "2026-09-06T01:53:16.744Z",
+      "contentHash": "9ddf3f3b01a2afe164e9db96889a06005f2592429d3dd9501e0aa5bc10734d0f",
+      "artifact": {
+        "path": "data/editorial/raw/3d1c0d97833f37bce53f0a55382f9838a2f477ce552472bbc9e9c860ecb89f3d.html",
+        "sha256": "3d1c0d97833f37bce53f0a55382f9838a2f477ce552472bbc9e9c860ecb89f3d"
+      }
+    },
+    {
+      "id": "population-flows",
+      "title": "横浜市 人口の動き",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/jinko/dotai/",
+      "publisher": "横浜市",
+      "tier": "primary",
+      "scopes": [
+        "methodology",
+        "statistics"
+      ],
+      "retrievedAt": "2026-09-06T01:53:16.777Z",
+      "contentHash": "9b03c90c34ec1e59b71bbaddd2a07b4de4311a5f87276f2933ac7974d1192fbf",
+      "artifact": {
+        "path": "data/editorial/raw/3f2e6d809260d8328fcb7c860c13887c953fbe34af9b76591ced9f6add806c55.html",
+        "sha256": "3f2e6d809260d8328fcb7c860c13887c953fbe34af9b76591ced9f6add806c55"
+      }
+    },
+    {
+      "id": "product-schema",
+      "title": "Open Yokohama 実装 packages/core/schema.ts",
+      "url": "https://github.com/toyofukux/open-yokohama/blob/main/packages/core/schema.ts",
+      "publisher": "Open Yokohama",
+      "tier": "internal",
+      "scopes": [
+        "product"
+      ],
+      "retrievedAt": "2026-09-06T01:53:16.778Z",
+      "contentHash": "e97f83c4d16cfca8cf58375a3b7be5e63da86e154e9a2e0b3283cdfbcaf03268",
+      "artifact": null
+    },
+    {
+      "id": "product-query",
+      "title": "Open Yokohama 実装 packages/core/query.ts",
+      "url": "https://github.com/toyofukux/open-yokohama/blob/main/packages/core/query.ts",
+      "publisher": "Open Yokohama",
+      "tier": "internal",
+      "scopes": [
+        "product"
+      ],
+      "retrievedAt": "2026-09-06T01:53:16.778Z",
+      "contentHash": "8fd975788684e9e6e5231b636369f4522b103ac468009ed190af58f0d99cc815",
+      "artifact": null
+    },
+    {
+      "id": "product-index",
+      "title": "Open Yokohama 実装 apps/web/src/pages/wards/index.astro",
+      "url": "https://github.com/toyofukux/open-yokohama/blob/main/apps/web/src/pages/wards/index.astro",
+      "publisher": "Open Yokohama",
+      "tier": "internal",
+      "scopes": [
+        "product"
+      ],
+      "retrievedAt": "2026-09-06T01:53:16.778Z",
+      "contentHash": "3f1fc77f6ecaeab1f065a5f5500570a45c4b243cd410492a8dd2d6225ba4140f",
+      "artifact": null
+    },
+    {
+      "id": "population-monthly",
+      "title": "毎月（最新）の人口",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/jinko/maitsuki/index.html",
+      "publisher": "横浜市",
+      "tier": "primary",
+      "scopes": [
+        "methodology",
+        "statistics"
+      ],
+      "retrievedAt": "2026-09-06T01:53:16.874Z",
+      "contentHash": "c45a139e8fba52ab515661e4ed3f8d3c0e84e2b262fbef006f071b01e5f47922",
+      "artifact": {
+        "path": "data/editorial/raw/8e19f0057755f67829dec2333806e5f1aa16e1a562b762f6fa6b860ec2e6a5ae.html",
+        "sha256": "8e19f0057755f67829dec2333806e5f1aa16e1a562b762f6fa6b860ec2e6a5ae"
+      }
+    },
+    {
+      "id": "population-definitions",
+      "title": "推計人口・世帯数【最新】",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/jinko/maitsuki/saishin-news.html",
+      "publisher": "横浜市",
+      "tier": "primary",
+      "scopes": [
+        "methodology",
+        "statistics"
+      ],
+      "retrievedAt": "2026-09-06T01:53:16.950Z",
+      "contentHash": "376cf8898cb359a86c327761b12c6af6d9858591f688820c62109f5826c05a34",
+      "artifact": {
+        "path": "data/editorial/raw/be7946a0769b6a921958b899ed4cdaf9a508d07415c469581f6e302208b1ec5c.html",
+        "sha256": "be7946a0769b6a921958b899ed4cdaf9a508d07415c469581f6e302208b1ec5c"
+      }
+    },
+    {
+      "id": "raw-6325c84500310f8944a9acd24a9ddea4b41599189fa92cbcd72341d299db8481",
+      "title": "男女別人口及び世帯数－行政区",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/opendata/suikei01.files/e1yokohama2607.csv",
+      "publisher": "横浜市",
+      "tier": "primary",
+      "scopes": [
+        "statistics",
+        "methodology"
+      ],
+      "retrievedAt": "2026-09-06T01:53:17.067Z",
+      "contentHash": "9f3195c82ad0fd6548e24694912524f28445f92989d6c14d0177a3f26ab53126",
+      "artifact": {
+        "path": "data/raw/6325c84500310f8944a9acd24a9ddea4b41599189fa92cbcd72341d299db8481.csv",
+        "sha256": "6325c84500310f8944a9acd24a9ddea4b41599189fa92cbcd72341d299db8481"
+      }
+    },
+    {
+      "id": "raw-ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a",
+      "title": "男女別人口及び世帯数－行政区",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/opendata/suikei01.files/e1yokohama2608.csv",
+      "publisher": "横浜市",
+      "tier": "primary",
+      "scopes": [
+        "statistics",
+        "methodology"
+      ],
+      "retrievedAt": "2026-09-06T01:53:17.092Z",
+      "contentHash": "b94078ab10b9a48b2dcbf315fa98ef8e77046af35d37852ce473c1e11ae8689c",
+      "artifact": {
+        "path": "data/raw/ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a.csv",
+        "sha256": "ee8bd150a588483d060a69676f82786a255163c4ef7892598c2d3d71af104a5a"
+      }
+    },
+    {
+      "id": "product-ward",
+      "title": "apps/web/src/pages/wards/[ward].astro",
+      "url": "https://github.com/toyofukux/open-yokohama/blob/main/apps/web/src/pages/wards/[ward].astro",
+      "publisher": "Open Yokohama",
+      "tier": "internal",
+      "scopes": [
+        "product"
+      ],
+      "retrievedAt": "2026-09-06T01:53:17.093Z",
+      "contentHash": "dc630a1581fbe749c223b0b39b6c0cc27adca3a6e52bf22563849af29999fee0",
+      "artifact": null
+    },
+    {
+      "id": "product-comparison",
+      "title": "apps/web/src/scripts/comparison.ts",
+      "url": "https://github.com/toyofukux/open-yokohama/blob/main/apps/web/src/scripts/comparison.ts",
+      "publisher": "Open Yokohama",
+      "tier": "internal",
+      "scopes": [
+        "product"
+      ],
+      "retrievedAt": "2026-09-06T01:53:17.094Z",
+      "contentHash": "9ed637e6fd076d22292de98d57f11f77c9c265dfdb6b802f45e73181e07bdaff",
+      "artifact": null
+    },
+    {
+      "id": "product-trend",
+      "title": "apps/web/src/components/Trend.astro",
+      "url": "https://github.com/toyofukux/open-yokohama/blob/main/apps/web/src/components/Trend.astro",
+      "publisher": "Open Yokohama",
+      "tier": "internal",
+      "scopes": [
+        "product"
+      ],
+      "retrievedAt": "2026-09-06T01:53:17.094Z",
+      "contentHash": "0e1643f07e79b6e2f77f73a659cc41994ba6d4bbe801d99d3f6db60951a08046",
+      "artifact": null
+    },
+    {
+      "id": "product-issue",
+      "title": "apps/web/src/pages/issues/[slug].astro",
+      "url": "https://github.com/toyofukux/open-yokohama/blob/main/apps/web/src/pages/issues/[slug].astro",
+      "publisher": "Open Yokohama",
+      "tier": "internal",
+      "scopes": [
+        "product"
+      ],
+      "retrievedAt": "2026-09-06T01:53:17.094Z",
+      "contentHash": "1534f9905f6256aab96f3110d47c4869a2545fb4c0fc78c9308fd8cd526ec88e",
+      "artifact": null
+    },
+    {
+      "id": "daytime-definition",
+      "title": "従業地・通学地による人口・就業状態等集計",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/kekka/kokusei/r2/r2-04jutsu.html",
+      "publisher": "横浜市",
+      "tier": "primary",
+      "scopes": [
+        "methodology"
+      ],
+      "retrievedAt": "2026-09-06T01:53:17.130Z",
+      "contentHash": "67c773346c869fe7a7d2948a50a2f178e17fb4e9142987d1d1336a854c843e23",
+      "artifact": {
+        "path": "data/editorial/raw/09fa18933487a44a9f20c8926cb13c1394f5a1097e96560a656ee2de3d7cf14c.html",
+        "sha256": "09fa18933487a44a9f20c8926cb13c1394f5a1097e96560a656ee2de3d7cf14c"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "reviewer": "/root/historical_data_review (independent AI reviewer)",
+  "date": "2026-09-07",
+  "releaseId": "dc74873667c30a50b9f00b382effc663070b27d941ad3a7a8aec65b3a24f2fc0",
+  "result": "passed_with_documented_legacy_limitation",
+  "files": {
+    "packages/warehouse/storage.ts": "cb908f2d4038d87acbe77dd7ba71e05a565054515d6b80aef586098839b89ff9",
+    "packages/warehouse/history.ts": "2c720a4e57872f2149f6ee72c370476187ebe15b10242818875d2f4330de64c9",
+    "apps/web/src/pages/data/warehouse/[...path].ts": "ca6941eb7d7aa2e58785a7265295f5f52d19963e397e79fc7040433833b2b2c8",
+    "tests/warehouse.test.ts": "63d3c821e33bd91d8d13ec21acf6af8afcf19448206ab788eb3d982b5719b1b6"
+  },
+  "scope": [
+    "Source discrepancy and pinned census basis",
+    "Rollback and shared publication/restore lock",
+    "Only adopted releases and reachable objects enter static API",
+    "Correct historical geography labels"
+  ],
+  "independentChecks": [
+    "dwh:check: 44638 facts / 19 articles",
+    "Static API manifest count equals 6 adopted releases"
+  ],
+  "limitations": [
+    "Full verify, live MCP and E2E executed by implementer, not independently repeated",
+    "Legacy HTML cache restoration hash mismatch remains outside review pass scope",
+    "Hard process interruption requires lock inspection and restore"
+  ]
+}

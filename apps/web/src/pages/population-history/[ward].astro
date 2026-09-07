@@ -1,0 +1,12 @@
+---
+import LongTermArticle from "../../components/LongTermArticle.astro";
+import { geographies } from "../../../../../packages/core/schema";
+export function getStaticPaths() {
+  return geographies
+    .filter((g) => g.slug !== "yokohama")
+    .map((g) => ({ params: { ward: g.slug } }));
+}
+const { ward } = Astro.params;
+---
+
+<LongTermArticle slug={ward!} />

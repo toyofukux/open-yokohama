@@ -1,5 +1,14 @@
 ---
 import "../styles/global.css";
+import { releaseId } from "../../../../packages/warehouse/current";
+import { geographies } from "../../../../packages/core/schema";
+import { createHash } from "node:crypto";
+import populationJson from "../../../../data/published/population.json?raw";
+import { heldPage, reportUrl } from "../../../../packages/core/corrections";
+const populationVersion = createHash("sha256")
+  .update(populationJson)
+  .digest("hex");
+
 import "../styles/themes.css";
 import {
   resolveTheme,
@@ -29,12 +38,27 @@ const themeScript = `(() => {
 interface Props {
   title: string;
   description?: string;
+  dataVersion?: string;
 }
 const {
   title,
   description = "横浜の暮らしを、身近な問いから。政策の選択肢と財源、18区の人口と世帯の変化を、公式資料とともに確かめる。",
 } = Astro.props;
 const path = Astro.url.pathname;
+const hold = heldPage(path);
+const historyGeo = geographies.find((g) => path.includes(`/${g.slug}/`));
+const historyLink =
+  historyGeo && historyGeo.slug !== "yokohama"
+    ? `/population-history/${historyGeo.slug}/`
+    : "/population-history/";
+const showHistory =
+  path === "/" ||
+  /^\/(wards|population-movement|age-structure)(\/|$)/.test(path);
+const displayTitle = hold ? "この説明は確認中です" : title;
+const displayDescription = hold
+  ? "根拠を再確認しています。訂正と確認状況をご覧ください。"
+  : description;
+const reportVersion = `${Astro.props.dataVersion ?? `人口データ SHA-256:${populationVersion}; データ公開版:${releaseId}`}`;
 ---
 
 <!doctype html>
@@ -44,15 +68,18 @@ const path = Astro.url.pathname;
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-    <title>{title} | Open Yokohama</title><meta
+    <title>{displayTitle} | Open Yokohama</title><meta
       name="description"
-      content={description}
+      content={displayDescription}
     />
     <meta name="theme-color" content={themeColors[themeConfig.defaultTheme]} />
-    <meta property="og:title" content={`${title} | Open Yokohama`} /><meta
-      property="og:description"
-      content={description}
-    /><meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content={`${displayTitle} | Open Yokohama`}
+    /><meta property="og:description" content={displayDescription} /><meta
+      property="og:type"
+      content="website"
+    />
     <link
       rel="icon"
       href={`/favicon-${themeConfig.defaultTheme}.svg`}
@@ -105,7 +132,35 @@ const path = Astro.url.pathname;
         >
       </div>
     </header>
-    <main id="main"><slot /></main>
+    <main id="main">
+      {
+        showHistory && !hold && (
+          <aside class="container history-link">
+            <>
+              <a href={historyLink}>人口と暮らしを、約30年の変化で見る →</a>
+              <p>
+                人口・世帯は1995年以降、世代・出生・死亡・移動は2000年以降を読み合わせる。
+              </p>
+            </>
+          </aside>
+        )
+      }
+      {
+        hold ? (
+          <article class="container narrow section prose">
+            <>
+              <h1>この説明は確認中です</h1>
+              <p>{hold.reason}</p>
+              <p>
+                <a href={`/corrections/#${hold.id}`}>確認状況を見る</a>
+              </p>
+            </>
+          </article>
+        ) : (
+          <slot />
+        )
+      }
+    </main>
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
@@ -116,13 +171,42 @@ const path = Astro.url.pathname;
             />横浜市の公式サイトではありません。</small
           >
         </div><div>
-          <a href="/about/">このサイトについて</a><a href="/sources/"
-            >データの見方・更新状況</a
-          ><a href="/about/#corrections">誤りを知らせる</a><a
-            href="/developers/">開発者向け・MCP</a
+          <a href="/datasets/">データ一覧・長期系列</a><a href="/about/"
+            >このサイトについて</a
+          ><a href="/sources/">データの見方・更新状況</a><a
+            data-report-link
+            href={reportUrl(path, reportVersion)}>このページの誤りを知らせる</a
+          ><a href="/corrections/">訂正と確認状況</a><a href="/developers/"
+            >開発者向け・MCP</a
           ><a href="https://github.com/toyofukux/open-yokohama">GitHub ↗</a>
         </div>
       </div>
     </footer>
-  </body>
+    <script>
+      document.addEventListener("click", (event) => {
+        const link = (event.target as Element).closest<HTMLAnchorElement>(
+          "a[data-report-link]",
+        );
+        if (!link) return;
+        const url = new URL(link.href);
+        url.searchParams.set("page", location.pathname + location.search);
+        link.href = url.href;
+      });
+    </script></body
+  >
 </html>
+
+<style>
+  .history-link {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid currentColor;
+  }
+  .history-link p {
+    margin: 0.25rem 0 0;
+  }
+  .history-link a {
+    font-weight: 700;
+  }
+</style>

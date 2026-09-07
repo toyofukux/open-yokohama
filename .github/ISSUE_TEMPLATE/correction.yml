@@ -1,5 +1,5 @@
 name: 数字・説明の訂正
-description: 原典と照合できる形で誤りをお知らせください。
+description: 気になる点をお知らせください。出典は分かる範囲で構いません。
 title: '[訂正] '
 labels: []
 body:
@@ -10,6 +10,10 @@ body:
     validations:
       required: true
   - type: textarea
+    id: context
+    attributes:
+      label: 対象箇所・表示していた版
+  - type: textarea
     id: problem
     attributes:
       label: 該当箇所と誤りの内容
@@ -19,6 +23,6 @@ body:
   - type: textarea
     id: evidence
     attributes:
-      label: 正しい情報の出典・該当箇所
+      label: 出典や補足（任意）
     validations:
-      required: true
+      required: false

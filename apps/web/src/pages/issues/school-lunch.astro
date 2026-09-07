@@ -14,7 +14,11 @@ const sources = evidence.sources.filter((source) =>
 );
 ---
 
-<Layout title={schoolLunch.title} description={schoolLunch.summary}>
+<Layout
+  title={schoolLunch.title}
+  description={schoolLunch.summary}
+  dataVersion={`記事 SHA-256:${evidence.manuscript.sha256}`}
+>
   <article
     class="policy-article container"
     data-content-version={evidence.manuscript.sha256}

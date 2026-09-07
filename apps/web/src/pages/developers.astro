@@ -5,18 +5,25 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="開発者向け・MCP"
   ><article class="container narrow section prose">
     <h1 class="page-title">データを、別の道具からも。</h1><p>
-      Webと同じ公開データを、JSON・CSV・MCPから利用できます。出典と時点を保ったまま、調査や可視化に使ってください。
+      Webと同じ公開データを、JSON・CSVから利用できます。出典と時点を保ったまま、調査や可視化に使ってください。
+    </p><h2>横浜市DWH</h2><p>
+      <a href="/datasets/">長期系列を含むデータ一覧</a
+      >と、各記事の入力値・計算をJSONで利用できます。過去の保存版も参照できます。
     </p><h2>ダウンロード</h2><ul>
       <li><a href="/data/population.json">出典・観測値付きJSON</a></li><li>
         <a href="/data/population.csv">分析用CSV</a>
       </li><li><a href="/sources/">原本スナップショットと指標定義</a></li>
-    </ul><h2>MCP</h2><p>
-      公開データ専用の読み取りサーバーです。接続先と稼働状態は<a
+      <li>
+        <a href="/data/dynamics.json">人口増減内訳の出典・定義付きJSON</a>
+      </li><li><a href="/data/dynamics.csv">人口増減内訳のCSV</a></li>
+      <li><a href="/data/ages.json">年齢構成の出典付きJSON</a></li><li>
+        <a href="/data/ages.csv">年齢構成のCSV</a>
+      </li>
+    </ul><h2>MCP（公開停止中）</h2><p>
+      現在、MCPの外部提供は停止しています。データは上記のJSON・CSVから利用できます。内部利用はローカル接続・読み取り専用・回数と出力量の制限付きです。クラウドの鍵があっても外部公開は再開しません。ローカル利用については<a
         href="https://github.com/toyofukux/open-yokohama/blob/main/docs/runbooks/mcp.md"
         >MCP利用手順</a
-      >に記載しています。
-    </p><p>
-      人口・世帯等の時系列、区比較、出典を型付きツールで取得します。AIモデルの利用料は利用者側のサービスに従います。このサーバー自体はLLMを実行しません。
+      >を参照してください。
     </p><h2>データの解釈</h2><p>
       推計人口と住民基本台帳の人数は異なります。出典・定義・地域・時点が同じかを確認してください。回答で使用した値には、元の出典URLと行・列を付けてください。
     </p>

@@ -1,11 +1,14 @@
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
 import { datasetSchema, type Snapshot, validateDataset } from '../packages/core/schema.ts';
 import { decodeCsv, parsePopulation } from '../packages/ingestion/population.ts';
 
 const page =
   'https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/opendata/suikei01.html';
 const target = 'data/published/population.json';
+const candidate = 'data/candidates/population.json';
+await mkdir('data/candidates', { recursive: true });
+await rm(candidate, { force: true });
 const hash = (bytes: Uint8Array) => createHash('sha256').update(bytes).digest('hex');
 async function fetchBounded(url: string, maxBytes: number) {
   const parsed = new URL(url);
@@ -136,8 +139,8 @@ try {
   if (previous && JSON.stringify(previous.snapshots) === JSON.stringify(snapshots)) {
     console.log(JSON.stringify({ ...report, status: 'unchanged' }));
   } else {
-    await writeFile(`${target}.tmp`, `${JSON.stringify(data)}\n`);
-    await rename(`${target}.tmp`, target);
+    await writeFile(`${candidate}.tmp`, `${JSON.stringify(data)}\n`);
+    await rename(`${candidate}.tmp`, candidate);
     console.log(JSON.stringify(report));
   }
 } catch (error) {

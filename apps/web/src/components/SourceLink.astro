@@ -1,0 +1,15 @@
+---
+interface Props {
+  href: string;
+}
+const { href } = Astro.props;
+---
+
+<a
+  class="cite source-icon"
+  href={href}
+  aria-label="横浜市の掲載ページを開く"
+  title="横浜市の掲載ページを開く"
+  target="_blank"
+  rel="noopener noreferrer"><span aria-hidden="true"></span></a
+>

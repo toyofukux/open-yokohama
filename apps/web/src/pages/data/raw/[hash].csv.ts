@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
-import { data } from "../../../data";
+import { currentCatalog } from "../../../../../../packages/warehouse/current";
 export function getStaticPaths() {
-  return data.snapshots.map((s) => ({
+  return currentCatalog.sources.map((s) => ({
     params: { hash: s.id },
     props: { path: s.path },
   }));

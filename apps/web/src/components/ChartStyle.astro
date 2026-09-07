@@ -1,0 +1,135 @@
+<style is:global>
+  .data-chart {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 1px solid currentColor;
+    border-radius: 0.6rem;
+    background: #fff;
+    color: #172b3a;
+  }
+  .data-chart figcaption {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .data-chart .note {
+    color: #374b58;
+    background: transparent;
+  }
+  .data-chart .bar-row {
+    display: grid;
+    grid-template-columns: 5em minmax(0, 1fr) 5.5em;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0.7rem 0;
+    font-size: 0.9rem;
+  }
+  .data-chart .bar-row strong {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+  .data-chart .bar-track {
+    width: 100%;
+    position: relative;
+    height: 1.3rem;
+    background: #eef2f5;
+  }
+  .data-chart .bar-fill {
+    position: absolute;
+    height: 100%;
+    background: #12678b;
+  }
+  .data-chart .bar-zero {
+    position: absolute;
+    height: 1.8rem;
+    top: -0.25rem;
+    border-left: 2px solid #172b3a;
+    z-index: 1;
+  }
+  .data-chart .bar-axis {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5.45rem;
+    font-size: 0.8rem;
+  }
+  .data-chart .chart-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem 1rem;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
+  .data-chart .chart-legend > span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .data-chart .chart-legend i {
+    width: 0.8rem;
+    height: 0.8rem;
+    display: inline-block;
+  }
+  .data-chart .stack-row {
+    display: grid;
+    grid-template-columns: 5em minmax(0, 1fr);
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0.7rem 0;
+    font-size: 0.9rem;
+  }
+  .data-chart .stack-track {
+    display: flex;
+    height: 1.8rem;
+  }
+  .data-chart .stack-track span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .data-chart .stack-axis {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5rem;
+    font-size: 0.8rem;
+  }
+  .data-chart .chart-scroll {
+    overflow-x: auto;
+  }
+  .data-chart .line-chart {
+    display: block;
+    width: 100%;
+    min-width: 520px;
+  }
+  .data-chart .line-chart text {
+    fill: #172b3a;
+    font-size: 13px;
+  }
+  .data-chart .chart-grid {
+    stroke: #d1dbe0;
+  }
+  .data-chart .chart-baseline {
+    stroke: #172b3a;
+  }
+  .data-chart .chart-insights {
+    padding: 1rem;
+    margin-block: 1rem;
+    background: #eef5f8;
+    border-left: 4px solid #12678b;
+  }
+  .data-chart .chart-insights h3 {
+    margin: 0 0 0.7rem;
+    color: #172b3a;
+    font-size: 1.05rem;
+  }
+  .data-chart .chart-insights p {
+    color: #172b3a;
+    margin: 0.7rem 0 0;
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+</style>

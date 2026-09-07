@@ -1,0 +1,133 @@
+---
+import Layout from "../layouts/Layout.astro";
+import LongTermChart from "./LongTermChart.astro";
+import { articlePacket } from "../../../../packages/warehouse/current";
+import { geographies } from "../../../../packages/core/schema";
+interface Props {
+  slug: string;
+}
+const { slug } = Astro.props;
+const packet = articlePacket(`population-history/${slug}`);
+const { article, releaseId, sources } = packet;
+const city = slug === "yokohama";
+---
+
+<Layout
+  title={article.title}
+  description="人口、世帯、世代、出生・死亡・移動を長い時間で読み合わせる。横浜市の原典と同じ値から考える。"
+  dataVersion={`DWH:${releaseId}; 記事:${article.version}`}
+>
+  <article class="container narrow section prose">
+    <p class="eyebrow">横浜を、長い時間で見る</p><h1 class="page-title">
+      {article.title}
+    </h1>
+    <p>
+      一年の変化だけでは、まちの課題は見えにくい。人口と世帯は1995年以降、世代構成と増減の内訳は2000年以降を読み合わせます。数字が示す変化と、追加の資料が必要な問いを分けて考えます。
+    </p>
+    <nav aria-label="地域の記事">
+      <a href="/population-history/">横浜市</a>{
+        geographies
+          .filter((g) => g.slug !== "yokohama")
+          .map((g) => (
+            <a
+              aria-current={g.slug === slug ? "page" : undefined}
+              href={`/population-history/${g.slug}/`}
+            >
+              {g.name}
+            </a>
+          ))
+      }
+    </nav>
+    <nav aria-label="記事の目次">
+      {article.sections.map((s) => <a href={`#${s.id}`}>{s.title}</a>)}
+    </nav>
+    {
+      article.sections.map((s) => (
+        <section id={s.id}>
+          <h2>{s.title}</h2>
+          {s.paragraphs.map((p) => (
+            <p>{p}</p>
+          ))}
+          <ul class="cautions">
+            {s.cautions.map((p) => (
+              <li>{p}</li>
+            ))}
+          </ul>
+          {s.charts.map((chart, i) => (
+            <LongTermChart chart={chart} id={`${s.id}-${i}`} />
+          ))}
+          {s.questions.length > 0 && (
+            <aside>
+              <h3>次に確かめたいこと</h3>
+              {s.questions.map((p) => (
+                <p>{p}</p>
+              ))}
+            </aside>
+          )}
+        </section>
+      ))
+    }
+    <section>
+      <h2>出典とこの記事の数値</h2><p>
+        人口の原典は横浜市統計書第2章です。本文の数値・表・グラフは同じ保存版から算出しています。増減理由や施策の効果を検証した記事ではありません。
+      </p><ul>
+        {
+          sources.map((s) => (
+            <li>
+              <a href={s.sourcePage}>{s.title}（横浜市の掲載ページ）</a> ·{" "}
+              <a href={s.url}>原典CSV</a>
+            </li>
+          ))
+        }
+      </ul>
+      <details>
+        <summary>参照版と確認方法</summary><p>{article.method}</p><p
+          class="version"
+        >
+          データ版：{releaseId}<br />記事版：{article.version}
+        </p><p>
+          <a href={`/data/warehouse/articles/${slug}.json`}
+            >この記事の入力値・原典の行・計算をJSONで取得</a
+          >
+        </p><p>
+          <a href={`/data/warehouse/releases/${releaseId}/manifest.json`}
+            >このデータ版の保存記録</a
+          > · <a href="/datasets/">データ一覧と注意点</a>
+        </p>
+      </details>
+    </section>
+    <p>
+      <a href={city ? "/population-movement/" : `/population-movement/${slug}/`}
+        >出生・死亡・移動の詳細を見る</a
+      > · <a href="/age-structure/">年齢構成を比較する</a>
+    </p>
+  </article></Layout
+>
+<style>
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+  }
+  section {
+    scroll-margin-top: 2rem;
+    margin-top: 3rem;
+  }
+  .cautions {
+    font-size: 0.9rem;
+  }
+  aside {
+    border-left: 3px solid currentColor;
+    padding: 0.25rem 1rem;
+    margin: 1.5rem 0;
+  }
+  aside h3 {
+    font-size: 1rem;
+  }
+  .version {
+    overflow-wrap: anywhere;
+    font-size: 0.8rem;
+  }
+</style>

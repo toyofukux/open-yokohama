@@ -12,7 +12,11 @@ interface Props {
 const { title, summary, category, headings, version, sources } = Astro.props;
 ---
 
-<Layout title={title} description={summary}>
+<Layout
+  title={title}
+  description={summary}
+  dataVersion={`記事 SHA-256:${version}`}
+>
   <article class="policy-article container" data-content-version={version}>
     <header class="policy-header" id="article-top">
       <p class="breadcrumb">

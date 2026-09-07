@@ -1,0 +1,8 @@
+{
+  "packages/factcheck/schema.ts": "6345b21298390ee399ddfbfdc6b92222e3e4f006398840ff5a9080bf8b53e047",
+  "packages/factcheck/engine.ts": "302168226cfbf7b676a76c96a5b85bd11c968f2c11e30d6af35c8c60483fe31c",
+  "scripts/factcheck-provider.ts": "615f2c44f2e1e89c8281c600f1fc6ddf81978b15434b2ab205c6159e76b3b616",
+  "scripts/factcheck-source.ts": "740fb260b8ecca73bb8eba855e5b4af25f160dc5308da44953a735aac660f711",
+  "scripts/factcheck.ts": "be66cc60edcfe51f4411cadbc9365be67f09b85989e0666b836f1630a0e2ef65",
+  "packages/ingestion/population.ts": "52a4acef7acfb4e378ed3ab74bcd2a74b97eb32fc67784dd3271fc8be164d7ef"
+}

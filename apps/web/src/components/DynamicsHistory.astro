@@ -1,0 +1,96 @@
+---
+import { lines } from "../chart-html";
+import ChartStyle from "./ChartStyle.astro";
+import { dynamics, dynamicsMetrics, dynamicsPage } from "../dynamics-data";
+import { number } from "../data";
+import SourceLink from "./SourceLink.astro";
+interface Props {
+  geography: string;
+  frequency: "year" | "month";
+}
+const { geography, frequency } = Astro.props;
+const observations = dynamics.observations.filter(
+  (o) => o.geography === geography && o.frequency === frequency,
+);
+const periods = [...new Set(observations.map((o) => o.period))]
+  .sort()
+  .reverse();
+const columns = [
+  "total_change",
+  "natural_change",
+  "social_change",
+  "births",
+  "deaths",
+  "external_in",
+  "external_out",
+  "internal_in",
+  "internal_out",
+  "other_change",
+] as const;
+const get = (period: string, metric: string) =>
+  observations.find((o) => o.period === period && o.metric === metric)!.value;
+---
+
+<ChartStyle />
+<div
+  set:html={lines(
+    [...periods].reverse(),
+    columns.slice(0, 3).map((id) => ({
+      name: dynamicsMetrics.find((m) => m.id === id)!.name,
+      values: [...periods].reverse().map((p) => get(p, id)),
+    })),
+    frequency === "year"
+      ? "人口増減・自然増減・社会増減の年別推移"
+      : "人口増減・自然増減・社会増減の月別推移",
+    "人",
+  )}
+/>
+<details class="numeric-supplement">
+  <summary>年・月別の数値と出典を表で確認する</summary>
+  <div
+    class="table-wrap"
+    tabindex="0"
+    role="region"
+    aria-label={frequency === "year"
+      ? "年別の人口増減内訳。横にスクロールできます"
+      : "月別の人口増減内訳。横にスクロールできます"}
+  >
+    <table>
+      <caption
+        >{
+          frequency === "year" ? "暦年（1月〜12月）" : "暦月"
+        }の届出による内訳（人）。横浜市統計書 第2章 表8 <SourceLink
+          href={dynamicsPage}
+        /></caption
+      >
+      <thead
+        ><tr
+          ><th scope="col">期間</th>{
+            columns.map((id) => (
+              <th scope="col" class="numeric">
+                {dynamicsMetrics.find((m) => m.id === id)!.name}
+              </th>
+            ))
+          }</tr
+        ></thead
+      >
+      <tbody
+        >{
+          periods.map((period) => (
+            <tr>
+              <>
+                <th scope="row">
+                  {period}
+                  {frequency === "year" ? "年" : ""}
+                </th>
+                {columns.map((id) => (
+                  <td class="numeric">{number(get(period, id))}</td>
+                ))}
+              </>
+            </tr>
+          ))
+        }</tbody
+      >
+    </table>
+  </div>
+</details>

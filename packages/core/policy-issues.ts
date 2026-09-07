@@ -1,3 +1,4 @@
+import { heldPage, records } from './corrections';
 /** Editorial pages have no population metric; keep them out of statistical routes. */
 export const schoolLunch = {
   slug: 'school-lunch',
@@ -60,4 +61,12 @@ export const mayoralIssues = [
     url: '/issues/school-shelters/',
   },
 ];
-export const policyIssues = [schoolLunch, ...mayoralIssues];
+export const allPolicyIssues = [schoolLunch, ...mayoralIssues];
+for (const record of records) {
+  if (
+    !allPolicyIssues.some((issue) => issue.url === record.page) &&
+    !['/issues/population/', '/issues/households/', '/issues/density/'].includes(record.page)
+  )
+    throw new Error('Correction targets an unknown article');
+}
+export const policyIssues = allPolicyIssues.filter((issue) => !heldPage(issue.url));

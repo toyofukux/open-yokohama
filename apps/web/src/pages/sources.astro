@@ -19,6 +19,16 @@ const snapshots = data.snapshots.toReversed();
         data.generatedAt.slice(0, 10)
       }。数値は機械照合済みで、人間による全件確認は未実施です。
     </div>
+    <h2>人口増減の内訳</h2><p>
+      別系列として、市と18区の年別内訳、市全体の月別内訳を収録しています。<a
+        href="/population-movement/#sources">収録期間・定義・原典</a
+      >を確認できます。
+    </p>
+    <h2>年齢構成</h2><p>
+      各年1月1日の推計人口を3区分に集計し、年齢不詳を別掲します。<a
+        href="/age-structure/">収録期間・定義・原典</a
+      >を確認できます。
+    </p>
     <h2>更新と訂正について</h2><p>
       原典の取得に失敗した場合、掲載中のデータを保持します。新しい統計の取り込みは検査を通して反映します。過去の値の訂正は確認が終わるまで公開を止めます。
     </p><p>
@@ -64,8 +74,6 @@ const snapshots = data.snapshots.toReversed();
                 提供：横浜市 ／ ライセンス：CC BY 4.0
                 <br />
                 取得：{s.retrievedAt.slice(0, 10)} ／ 公表日：不明
-                <br />
-                出典行はヘッダーを1行目として数えます。
               </p>
               <div class="pill-list">
                 <>

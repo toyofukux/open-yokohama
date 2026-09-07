@@ -1,0 +1,15 @@
+[
+  {
+    "id": "f02e089584f83c98f2063fd26a3c4bbbc767beacbcb59fd11eeb76d04105f47b",
+    "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.files/t020500.csv",
+    "title": "年齢（各歳）、行政区、男女別人口",
+    "sourcePage": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.html",
+    "retrievedAt": "2026-09-06T01:57:29.583Z",
+    "publishedAt": null,
+    "sha256": "f02e089584f83c98f2063fd26a3c4bbbc767beacbcb59fd11eeb76d04105f47b",
+    "path": "data/raw/f02e089584f83c98f2063fd26a3c4bbbc767beacbcb59fd11eeb76d04105f47b.csv",
+    "license": "CC-BY-4.0",
+    "publisher": "横浜市",
+    "parserVersion": "ages-csv-v1"
+  }
+]

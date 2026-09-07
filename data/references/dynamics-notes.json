@@ -1,0 +1,9 @@
+{
+  "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.files/t020800.xlsx",
+  "sourcePage": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.html",
+  "path": "data/raw/8a64357959f899bbf7612feefe99619ffafd80a7ebaaebbaacdb122cfc2d6fdb.xlsx",
+  "sha256": "8a64357959f899bbf7612feefe99619ffafd80a7ebaaebbaacdb122cfc2d6fdb",
+  "retrievedAt": "2026-09-06T01:51:21.873765Z",
+  "license": "CC-BY-4.0",
+  "purpose": "CSVに含まれない表8の定義・訂正注記の参照原本"
+}

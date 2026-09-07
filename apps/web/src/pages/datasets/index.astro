@@ -1,0 +1,63 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import {
+  currentCatalog as catalog,
+  releaseId,
+} from "../../../../../packages/warehouse/current";
+const names: Record<string, string> = {
+  population: "従来の月次人口・世帯",
+  dynamics: "出生・死亡・転入・転出など",
+  ages: "年齢3区分と年齢不詳",
+  historical: "人口・世帯の長期推移",
+  "city-series": "市全体の年次・月次",
+  "ward-monthly": "市・18区の月次",
+};
+---
+
+<Layout title="横浜市データ一覧"
+  ><article class="container narrow section prose">
+    <h1 class="page-title">同じ根拠から、調べる・書く。</h1><p>
+      数値には地域・時点・定義・原典・保存版が付きます。記事を作るときは、期間と集計方法を揃えて参照してください。
+    </p><p>
+      <a href="/population-history/">長期の人口・暮らしの記事へ</a> · <a
+        href="/data/warehouse/catalog.json">データ一覧JSON</a
+      >
+    </p>
+    {
+      catalog.datasets.map((d) => (
+        <section>
+          <>
+            <h2>{names[d.id]}</h2>
+            <p>
+              {d.from}〜{d.to} · {d.count.toLocaleString("ja-JP")}値
+            </p>
+            <p>
+              {catalog.definitions.find((m) => m.dataset === d.id)?.periodBasis}
+            </p>
+            <a href={`/data/warehouse/${d.id}.json`}>
+              参照ID・出典付きデータJSON
+            </a>
+          </>
+        </section>
+      ))
+    }
+    <h2>原典同士に違いがある値</h2><p>
+      2015年8・9月の市域面積は、統計書の表2が435.23 km²、表3月次が435.21
+      km²です。両方を系列別に保持し、どちらが正しいかは未確定です。人口・世帯の記事計算には使いません。
+    </p>
+    <h2>記事で使うとき</h2><p>
+      人口・世帯は1995年以降の10月1日、年齢は2000年以降の1月1日、動態は暦年を基本にします。1920年以降の市人口は市域拡張を含む歴史的な参考系列です。2025年10月以降の月次は国勢調査速報値による暫定値で、前月差を実際の転出超過とみなしません。
+    </p><p>
+      各記事の「参照版と確認方法」から、使った値と計算を取得できます。保存済みのデータ版は更新後も残します。
+    </p><p class="version">現在のデータ版：{releaseId}</p>
+  </article></Layout
+>
+<style>
+  section {
+    margin: 2rem 0;
+  }
+  .version {
+    overflow-wrap: anywhere;
+    font-size: 0.8rem;
+  }
+</style>

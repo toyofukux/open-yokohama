@@ -1,0 +1,212 @@
+---
+import { createHash } from "node:crypto";
+import raw from "../../../../../data/published/dynamics.json?raw";
+import { bars } from "../../chart-html";
+import { movementStory, ageDataVersion } from "../../region-stories";
+import { storyHtml } from "../../region-story-html";
+import RegionStoryStyle from "../../components/RegionStoryStyle.astro";
+import RegionalQuestions from "../../components/RegionalQuestions.astro";
+import ChartStyle from "../../components/ChartStyle.astro";
+import Layout from "../../layouts/Layout.astro";
+import SourceLink from "../../components/SourceLink.astro";
+import { dynamics, dynamicsMetrics, dynamicsPage } from "../../dynamics-data";
+import { wards, number } from "../../data";
+const annual = dynamics.observations.filter(
+  (o) => o.frequency === "year" && o.geography !== "141003",
+);
+const years = [...new Set(annual.map((o) => o.period))].sort().reverse();
+const year = years[0];
+const stories = Object.fromEntries(
+  years.map((y) => [y, movementStory("141003", +y)]),
+);
+const rows = annual
+  .filter((o) => o.period === year && o.metric === "total_change")
+  .sort((a, b) => b.value - a.value);
+const compact = annual.map((o) => [o.period, o.geography, o.metric, o.value]);
+const version = createHash("sha256").update(raw).digest("hex");
+---
+
+<Layout
+  title="人口増減の内訳を18区で比べる"
+  dataVersion={`人口動態 SHA-256:${version} / 年齢別人口 SHA-256:${ageDataVersion}`}
+>
+  <article class="container section prose">
+    <p class="breadcrumb"><a href="/">ホーム</a> / 人口増減の内訳</p>
+    <h1 class="page-title">出生・死亡・転出入から、人口の動きを見る。</h1>
+    <p class="lede">
+      市と18区の年別内訳は2000〜{
+        year
+      }年を収録しています。年度ではなく、各年1月〜12月の届出による人数です。<SourceLink
+        href={dynamicsPage}
+      />
+    </p>
+    <p>
+      <a class="action" href="/population-movement/yokohama/"
+        >市全体の内訳・月別推移を見る →</a
+      >
+    </p>
+    <h2>横浜全体の流れと、区ごとの差を読む</h2>
+    <div class="controls">
+      <label
+        >比べる指標<select id="movement-metric" disabled
+          >{
+            dynamicsMetrics.map((m) => (
+              <option value={m.id}>{m.name}（人）</option>
+            ))
+          }</select
+        ></label
+      ><label
+        >集計する年<select id="movement-year" disabled
+          >{years.map((y) => <option value={y}>{y}年1月〜12月</option>)}</select
+        ></label
+      >
+    </div>
+    <p id="movement-definition" class="note">{dynamicsMetrics[0].definition}</p>
+    <p id="movement-status" role="status" aria-live="polite">
+      {year}年・人口増減を表示しています。
+    </p>
+    <ChartStyle />
+    <RegionStoryStyle />
+    <div id="movement-story" set:html={storyHtml(stories[year], "movement")} />
+    <p>
+      <a href="/population-movement/yokohama/"
+        >市全体の時系列グラフで、変化の前後を確かめる →</a
+      >
+    </p>
+    <h2>グラフで18区の違いを確かめる</h2>
+    <div
+      id="movement-chart"
+      set:html={bars(
+        rows.map((o) => ({
+          label: wards.find((w) => w.code === o.geography)!.name,
+          value: o.value,
+        })),
+        `${year}年の人口増減（人）`,
+      )}
+    />
+    <details class="numeric-supplement">
+      <summary>18区の数値と出典を表で確認する</summary>
+      <div class="table-wrap">
+        <table>
+          <caption id="movement-caption"
+            >{year}年1月〜12月の人口増減（人）。値の大きい順。</caption
+          ><thead
+            ><tr
+              ><th scope="col">区</th><th
+                scope="col"
+                class="numeric"
+                id="movement-heading">人口増減（人）</th
+              ><th scope="col">根拠</th></tr
+            ></thead
+          ><tbody id="movement-body"
+            >{
+              rows.map((o) => (
+                <tr>
+                  <>
+                    <th scope="row">
+                      <a
+                        href={`/population-movement/${wards.find((w) => w.code === o.geography)!.slug}/`}
+                      >
+                        {wards.find((w) => w.code === o.geography)!.name}
+                      </a>
+                    </th>
+                    <td class="numeric">{number(o.value)}</td>
+                    <td>
+                      <SourceLink href={dynamicsPage} />
+                    </td>
+                  </>
+                </tr>
+              ))
+            }</tbody
+          >
+        </table>
+      </div>
+    </details>
+    <noscript
+      ><p class="note">
+        最新の年の人口増減を表示しています。指標・年の切り替えにはJavaScriptが必要です。各区の年別表とCSVはそのまま利用できます。
+      </p></noscript
+    >
+    <p>
+      人数の大小は、住みやすさや政策の成績を表しません。自然増減は出生−死亡、社会増減は市外・市内の転入−転出＋その他増減です。
+    </p>
+    <RegionalQuestions />
+    <h2 id="definitions">指標の定義と読み方</h2>
+    {
+      dynamicsMetrics.map((m) => (
+        <details>
+          <>
+            <summary>{m.name}（人）</summary>
+            <p>{m.definition}</p>
+          </>
+        </details>
+      ))
+    }
+    <p>
+      人口の残高、期間中の増減、年齢構成は別の情報です。この表だけでは、移動の理由や政策との因果関係は判断できません。
+    </p>
+    <p>
+      原典には、2012〜2014年の国外から転入した外国人の人数を「その他増減」から「市外移動の転入」へ移した訂正注記があります。過去の数字も、今回取得した版で比較します。<a
+        href="https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.files/t020800.xlsx"
+        >表8の注記を確認する（Excel）</a
+      >
+    </p>
+    <h2 id="sources">原典と確認範囲</h2>
+    <p>
+      横浜市統計書 第2章
+      表8「人口動態」の男女計を加工しています。原本との一致、男女計、市区合計、月年合計、内訳の計算を機械照合しています。市民の理解テストや専門家監修の完了を意味しません。
+    </p>
+    {
+      dynamics.snapshots.map((s) => (
+        <section class="box" style="margin-block:1rem">
+          <>
+            <h3>{s.title}</h3>
+            <p>
+              横浜市提供・CC BY 4.0。取得日：{s.retrievedAt.slice(0, 10)}
+              。原本の公表日：不明。
+            </p>
+            <div class="pill-list">
+              <>
+                <a href={s.sourcePage}>横浜市の掲載ページ</a>
+                <a href={s.url}>CSVダウンロード（横浜市）</a>
+                <a href={`/data/raw/${s.id}.csv`} download>
+                  取得時点の原本CSV
+                </a>
+              </>
+            </div>
+            <details>
+              <>
+                <summary>原本の識別情報</summary>
+                <code>{s.id}</code>
+              </>
+            </details>
+          </>
+        </section>
+      ))
+    }
+    <p>
+      数値の出典行・列、取得日、版はJSON/CSVに保持しています。原典自体の誤りを排除する検査ではありません。
+    </p>
+    <div class="pill-list">
+      <a href="/data/dynamics.csv" download>内訳のCSV</a><a
+        href="/data/dynamics.json"
+        download>出典付きJSON</a
+      ><a href="/wards/">人口・世帯の比較へ</a>
+    </div>
+  </article>
+  <script
+    is:inline
+    id="movement-data"
+    type="application/json"
+    set:html={JSON.stringify({
+      compact,
+      stories,
+      wards,
+      metrics: dynamicsMetrics,
+      sourcePage: dynamicsPage,
+    }).replaceAll("<", "\\u003c")}
+  />
+  <script>
+    import "../../scripts/dynamics-comparison";
+  </script>
+</Layout>

@@ -1,0 +1,206 @@
+---
+import { reportUrl } from "../../../../../packages/core/corrections";
+import SourceLink from "../../components/SourceLink.astro";
+import Layout from "../../layouts/Layout.astro";
+import Trend from "../../components/Trend.astro";
+import {
+  allIssues,
+  editorialVerification,
+  issueEvidence,
+  editorialSources,
+} from "../../../../../packages/core/issues";
+import { data, fact, compare, wards, number } from "../../data";
+export function getStaticPaths() {
+  return allIssues.map((issue) => ({
+    params: { slug: issue.slug },
+    props: { issue },
+  }));
+}
+const { issue } = Astro.props;
+const city = fact(data, "141003", issue.metric);
+const ranked = compare(data, issue.metric, city.observation.period);
+const checkedClaims = issueEvidence(issue.slug).filter(
+  (c) => c.kind !== "non_assertion",
+);
+---
+
+<Layout title={issue.title}
+  ><article class="container narrow section prose">
+    <p class="breadcrumb">
+      <a href="/">ホーム</a> / <a href="/issues/">暮らしの問い</a> / {
+        issue.category
+      }
+    </p><p class="eyebrow">{issue.category}</p><h1 class="page-title">
+      {issue.title}
+    </h1><p class="lede">{issue.summary}</p><p class="small muted">
+      統計の時点：{city.observation.period}
+    </p>
+    <div class="reading-toggle" aria-label="読む詳しさ">
+      <button
+        id="brief"
+        type="button"
+        aria-pressed="true"
+        aria-controls="reading-details">まず要点</button
+      ><button
+        id="full"
+        type="button"
+        aria-pressed="false"
+        aria-controls="reading-details">詳しく読む</button
+      >
+    </div>
+
+    <h2>{issue.question}</h2><ul class="fact-list">
+      <li data-claim-id={city.observation.id}>
+        <span class="fact-type">事実</span>{city.statement}<SourceLink
+          href={city.source.sourcePage}
+        />
+        <a
+          class="small"
+          href={reportUrl(
+            Astro.url.pathname,
+            city.source.sha256,
+            city.observation.id,
+          )}>この数字の誤りを報告</a
+        >
+      </li><li>
+        <span class="fact-type analysis">読み方・限界</span>{issue.limits}
+      </li>
+    </ul>
+    <p class="note"><strong>まだ分からないこと</strong><br />{issue.next}</p><a
+      class="action"
+      href={`/wards/?metric=${issue.metric}`}>自分の区と比べる →</a
+    >
+    <details class="note" data-testid="claim-evidence">
+      <summary>出典・確認状況</summary>
+      <p class="small muted" data-testid="editorial-verification">
+        見出し・要約・問い・限界・未収録事項の出典照合：{
+          editorialVerification.humanReviewed
+            ? "人間による確認"
+            : "AIによる検証・反証確認"
+        }（{
+          new Date(editorialVerification.reviewedAt).toLocaleDateString(
+            "ja-JP",
+            {
+              timeZone: "Asia/Tokyo",
+            },
+          )
+        }）。{
+          !editorialVerification.humanReviewed && "人間による確認は未実施です。"
+        }
+      </p>
+      <p>
+        根拠資料と説明の対応を確認しています。AIの判断に誤りが残る可能性があり、政策効果を保証するものではありません。
+      </p>
+      {
+        checkedClaims.map((c) => (
+          <section id={`claim-${c.id.replaceAll("/", "-")}`}>
+            <>
+              <p>{c.quote}</p>
+              <p class="small">
+                <a
+                  href={reportUrl(
+                    Astro.url.pathname,
+                    editorialVerification.packetHash,
+                    `${c.id}: ${c.quote}`,
+                  )}
+                >
+                  この説明の誤りを報告
+                </a>
+              </p>
+              <ul>
+                {c.verification?.evidence.map((e) => {
+                  const source = editorialSources.find(
+                    (s) => s.id === e.sourceId,
+                  );
+                  return (
+                    <li>
+                      <a href={source?.url}>{source?.title}</a>
+                      <details>
+                        <summary>引用箇所</summary>
+                        <pre style="white-space:pre-wrap;overflow-wrap:anywhere">
+                          {e.quote}
+                        </pre>
+                      </details>
+                    </li>
+                  );
+                })}
+              </ul>
+            </>
+          </section>
+        ))
+      }
+    </details>
+    <div id="reading-details" class="details-content">
+      <h2>横浜市全体の推移</h2><Trend
+        geography="141003"
+        metric={issue.metric}
+      /><h2>18区を同じ時点で比べる</h2><div class="table-wrap">
+        <table>
+          <caption
+            >{city.observation.period}時点・{city.definition.name}（{
+              city.definition.unit
+            }）</caption
+          ><thead
+            ><tr
+              ><th scope="col">区</th><th scope="col" class="numeric"
+                >{city.definition.name}</th
+              ><th scope="col">根拠</th></tr
+            ></thead
+          ><tbody
+            >{
+              ranked.map((o) => {
+                const w = wards.find((w) => w.code === o.geography)!;
+                return (
+                  <tr>
+                    <>
+                      <th scope="row">
+                        <a href={`/wards/${w.slug}/`}>{w.name}</a>
+                      </th>
+                      <td class="numeric">{number(o.value)}</td>
+                      <td>
+                        <SourceLink
+                          href={
+                            data.snapshots.find((s) => s.id === o.sourceId)!
+                              .sourcePage
+                          }
+                        />
+                      </td>
+                    </>
+                  </tr>
+                );
+              })
+            }</tbody
+          >
+        </table>
+      </div><h2>この数字の定義</h2><p>{city.definition.definition}</p><p>
+        資料：横浜市「{city.source.title}」。取得日：{
+          city.source.retrievedAt.slice(0, 10)
+        }。原本の数値・男女計・市と区の合計をプログラムで検査しています。解釈や因果関係の正しさを保証する検査ではありません。
+      </p><h2>政策を考える前に</h2><p>
+        このページは統計の読み方を紹介しています。個別政策の効果・費用・優劣は評価していません。政策を比較するには、対象者、期間、費用、成果の定義をそろえた別の検証が必要です。
+      </p>
+    </div>
+    <h2>根拠を自分で確かめる</h2><p>
+      <a href={`/sources/#s-${city.source.id}`}
+        >原本CSV・取得情報・指標の定義を開く →</a
+      >
+    </p><p class="small">
+      <a href={reportUrl(Astro.url.pathname, editorialVerification.packetHash)}
+        >数字や説明の誤りを知らせる</a
+      >
+    </p>
+  </article><script>
+    const details = document.querySelector<HTMLElement>("#reading-details");
+    const brief = document.querySelector<HTMLButtonElement>("#brief");
+    const full = document.querySelector<HTMLButtonElement>("#full");
+    function setReading(expanded: boolean) {
+      if (!details || !brief || !full) return;
+      details.hidden = !expanded;
+      brief.setAttribute("aria-pressed", String(!expanded));
+      full.setAttribute("aria-pressed", String(expanded));
+    }
+    brief?.addEventListener("click", () => setReading(false));
+    full?.addEventListener("click", () => setReading(true));
+    setReading(false);
+  </script></Layout
+>
