@@ -468,11 +468,11 @@
         "publication": "published"
       },
       "deployment": {
-        "workerVersion": "bb68965f-6a35-4d44-a8eb-afe9edbcad5e",
-        "implementationCommit": "ff30cdc87bbfc10c3ff7b991ffa814589dbc6ed2",
+        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
         "url": "https://open.yokohama/issues/school-lunch/",
-        "verifiedAt": "2026-09-06T18:00:46.769639Z",
-        "productionE2E": "46 passed"
+        "verifiedAt": "2026-09-07T08:14:12.266206Z",
+        "productionE2E": "98 passed"
       },
       "revisionHistory": [
         {
@@ -662,7 +662,16 @@
           "review": "author only; independent review and human validation not performed",
           "checkedAt": "2026-09-07T08:11:11.994638Z"
         }
-      }
+      },
+      "deploymentHistory": [
+        {
+          "workerVersion": "bb68965f-6a35-4d44-a8eb-afe9edbcad5e",
+          "implementationCommit": "ff30cdc87bbfc10c3ff7b991ffa814589dbc6ed2",
+          "url": "https://open.yokohama/issues/school-lunch/",
+          "verifiedAt": "2026-09-06T18:00:46.769639Z",
+          "productionE2E": "46 passed"
+        }
+      ]
     },
     {
       "id": "city-governance",
@@ -862,11 +871,11 @@
         "publication": "published"
       },
       "deployment": {
-        "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
-        "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
         "url": "https://open.yokohama/issues/city-governance/",
-        "verifiedAt": "2026-09-07T01:12:42.617880Z",
-        "productionE2E": "54 passed"
+        "verifiedAt": "2026-09-07T08:14:12.266206Z",
+        "productionE2E": "98 passed"
       },
       "revisionHistory": [
         {
@@ -980,7 +989,16 @@
           "review": "author only; independent review and human validation not performed",
           "checkedAt": "2026-09-07T08:11:11.994638Z"
         }
-      }
+      },
+      "deploymentHistory": [
+        {
+          "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+          "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+          "url": "https://open.yokohama/issues/city-governance/",
+          "verifiedAt": "2026-09-07T01:12:42.617880Z",
+          "productionE2E": "54 passed"
+        }
+      ]
     },
     {
       "id": "city-budget",
@@ -1178,11 +1196,11 @@
         "publication": "published"
       },
       "deployment": {
-        "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
-        "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
         "url": "https://open.yokohama/issues/city-budget/",
-        "verifiedAt": "2026-09-07T01:12:42.617880Z",
-        "productionE2E": "54 passed"
+        "verifiedAt": "2026-09-07T08:14:12.266206Z",
+        "productionE2E": "98 passed"
       },
       "revisionHistory": [
         {
@@ -1295,7 +1313,16 @@
           "review": "author only; independent review and human validation not performed",
           "checkedAt": "2026-09-07T08:11:11.994638Z"
         }
-      }
+      },
+      "deploymentHistory": [
+        {
+          "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+          "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+          "url": "https://open.yokohama/issues/city-budget/",
+          "verifiedAt": "2026-09-07T01:12:42.617880Z",
+          "productionE2E": "54 passed"
+        }
+      ]
     },
     {
       "id": "green-expo",
@@ -1493,11 +1520,11 @@
         "publication": "published"
       },
       "deployment": {
-        "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
-        "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
         "url": "https://open.yokohama/issues/green-expo/",
-        "verifiedAt": "2026-09-07T01:12:42.617880Z",
-        "productionE2E": "54 passed"
+        "verifiedAt": "2026-09-07T08:14:12.266206Z",
+        "productionE2E": "98 passed"
       },
       "revisionHistory": [
         {
@@ -1610,7 +1637,16 @@
           "review": "author only; independent review and human validation not performed",
           "checkedAt": "2026-09-07T08:11:11.994638Z"
         }
-      }
+      },
+      "deploymentHistory": [
+        {
+          "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+          "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+          "url": "https://open.yokohama/issues/green-expo/",
+          "verifiedAt": "2026-09-07T01:12:42.617880Z",
+          "productionE2E": "54 passed"
+        }
+      ]
     },
     {
       "id": "local-mobility",
@@ -1790,11 +1826,11 @@
         "publication": "published"
       },
       "deployment": {
-        "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
-        "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
         "url": "https://open.yokohama/issues/local-mobility/",
-        "verifiedAt": "2026-09-07T01:12:42.617880Z",
-        "productionE2E": "54 passed"
+        "verifiedAt": "2026-09-07T08:14:12.266206Z",
+        "productionE2E": "98 passed"
       },
       "revisionHistory": [
         {
@@ -1898,7 +1934,16 @@
           "review": "author only; independent review and human validation not performed",
           "checkedAt": "2026-09-07T08:11:11.994638Z"
         }
-      }
+      },
+      "deploymentHistory": [
+        {
+          "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+          "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+          "url": "https://open.yokohama/issues/local-mobility/",
+          "verifiedAt": "2026-09-07T01:12:42.617880Z",
+          "productionE2E": "54 passed"
+        }
+      ]
     },
     {
       "id": "childcare-access",
@@ -2099,11 +2144,11 @@
         "publication": "published"
       },
       "deployment": {
-        "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
-        "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
         "url": "https://open.yokohama/issues/childcare-access/",
-        "verifiedAt": "2026-09-07T01:12:42.617880Z",
-        "productionE2E": "54 passed"
+        "verifiedAt": "2026-09-07T08:14:12.266206Z",
+        "productionE2E": "98 passed"
       },
       "visualReview": {
         "reviewer": "Codex author, not independent",
@@ -2221,7 +2266,16 @@
           "review": "author only; independent review and human validation not performed",
           "checkedAt": "2026-09-07T08:11:11.994638Z"
         }
-      }
+      },
+      "deploymentHistory": [
+        {
+          "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+          "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+          "url": "https://open.yokohama/issues/childcare-access/",
+          "verifiedAt": "2026-09-07T01:12:42.617880Z",
+          "productionE2E": "54 passed"
+        }
+      ]
     },
     {
       "id": "school-shelters",
@@ -2399,11 +2453,11 @@
         "publication": "published"
       },
       "deployment": {
-        "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
-        "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
         "url": "https://open.yokohama/issues/school-shelters/",
-        "verifiedAt": "2026-09-07T01:12:42.617880Z",
-        "productionE2E": "54 passed"
+        "verifiedAt": "2026-09-07T08:14:12.266206Z",
+        "productionE2E": "98 passed"
       },
       "revisionHistory": [
         {
@@ -2506,7 +2560,16 @@
           "review": "author only; independent review and human validation not performed",
           "checkedAt": "2026-09-07T08:11:11.994638Z"
         }
-      }
+      },
+      "deploymentHistory": [
+        {
+          "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+          "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+          "url": "https://open.yokohama/issues/school-shelters/",
+          "verifiedAt": "2026-09-07T01:12:42.617880Z",
+          "productionE2E": "54 passed"
+        }
+      ]
     },
     {
       "id": "mayor-2026",
@@ -2618,11 +2681,11 @@
         "publication": "published"
       },
       "deployment": {
-        "workerVersion": "c9c149c7-cbf2-4793-8ad8-41d273c2d55b",
-        "implementationCommit": "b43fcdf512ff181253b4b0a1b276540499372505",
+        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
         "url": "https://open.yokohama/elections/mayor-2026/",
-        "verifiedAt": "2026-09-07T01:46:33.812470Z",
-        "productionE2E": "54 passed"
+        "verifiedAt": "2026-09-07T08:14:12.266206Z",
+        "productionE2E": "98 passed"
       },
       "presentationReview": {
         "reviewedAt": "2026-09-07T01:41:30.795397Z",
@@ -2709,7 +2772,16 @@
           "review": "author only; independent review and human validation not performed",
           "checkedAt": "2026-09-07T08:11:11.994638Z"
         }
-      }
+      },
+      "deploymentHistory": [
+        {
+          "workerVersion": "c9c149c7-cbf2-4793-8ad8-41d273c2d55b",
+          "implementationCommit": "b43fcdf512ff181253b4b0a1b276540499372505",
+          "url": "https://open.yokohama/elections/mayor-2026/",
+          "verifiedAt": "2026-09-07T01:46:33.812470Z",
+          "productionE2E": "54 passed"
+        }
+      ]
     }
   ]
 }

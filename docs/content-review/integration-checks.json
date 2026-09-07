@@ -1,0 +1,77 @@
+{
+  "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+  "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+  "checkedAt": "2026-09-07T08:14:12.266206Z",
+  "unitTests": 74,
+  "localE2E": 98,
+  "productionE2E": 98,
+  "pages": 77,
+  "internalLinks": 2160,
+  "policyArticles": 7,
+  "warehouseArticles": 19,
+  "warehouseObservations": 44638,
+  "warehouseReleaseId": "dc74873667c30a50b9f00b382effc663070b27d941ad3a7a8aec65b3a24f2fc0",
+  "independentIntegrationReview": "not_performed",
+  "humanValidation": "not_performed",
+  "sourceReview": "prior manuscripts preserved byte-for-byte; 23 fixed sources and selected arithmetic rechecked by author",
+  "liveAssets": {
+    "checkedAt": "2026-09-07T08:12:34.574Z",
+    "checks": [
+      {
+        "path": "/release-manifest.json",
+        "status": 200,
+        "sha256": "68dd6df4aaa6cc24e9fb43b707ea7b92cbc6d7f344807211032d739538d6d869"
+      },
+      {
+        "path": "/maps/childcare-2026.svg",
+        "status": 200,
+        "sha256": "51f0d820d688c928c64e3e313894dee68a9a935961fe4a7b314f443ec76e88e5"
+      },
+      {
+        "path": "/maps/childcare-2026.png",
+        "status": 200,
+        "sha256": "a1d146d961ed670b11ba7d2bac48d43a6e9870ed5fdc307b8441632707c08d2f"
+      },
+      {
+        "path": "/maps/childcare-2026.csv",
+        "status": 200,
+        "sha256": "ec210caa161057cdcc7166594983ff11d41bb67b36bdb083f72309dbcc5b1ab8"
+      },
+      {
+        "path": "/data/warehouse/catalog.json",
+        "status": 200,
+        "sha256": "0fe92862733a9f1ccfae7e7a43198bcee4db2ffcde7d750ffba3160c3f94ad4b"
+      },
+      {
+        "path": "MCP/health",
+        "status": 404
+      },
+      {
+        "path": "MCP/mcp",
+        "status": 404
+      }
+    ]
+  },
+  "logs": {
+    "verify": {
+      "sha256": "55eac2cbfaa7112434de9824c5127849eda3487a015e137235aea4acca59229a",
+      "localPath": "artifacts/integration-recovery/verify.log"
+    },
+    "localE2E": {
+      "sha256": "e17efb5ac84dd3329c77d669e828ad9a467927377bbc97d2563cf5419d4e8f6c",
+      "localPath": "artifacts/integration-recovery/localE2E.log"
+    },
+    "productionE2E": {
+      "sha256": "6faf5e0e03e015cef949f367d70a6a340be9dfb2bcce28c0cb2b4566b0a84010",
+      "localPath": "artifacts/integration-recovery/productionE2E.log"
+    },
+    "factcheckGatesWithOriginals": {
+      "sha256": "a1cd4db1ddaeee80d2bc4cbf5d7affefe157809fdeba5897e64bc95b97dd0049",
+      "localPath": "artifacts/integration-recovery/factcheckGatesWithOriginals.log"
+    },
+    "deploy": {
+      "sha256": "1ccdf3ac9456beb42ef77745d2713e2cc98eae9b12c1544d0e9e146d4efb4ffb",
+      "localPath": "artifacts/integration-recovery/deploy.log"
+    }
+  }
+}
