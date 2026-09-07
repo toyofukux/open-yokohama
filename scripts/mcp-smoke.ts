@@ -8,8 +8,32 @@ const client = new Client({ name: 'yokohama-smoke', version: '1.0.0' });
 try {
   await client.connect(new StreamableHTTPClientTransport(url));
   const tools = await client.listTools();
-  assert.equal(tools.tools.length, 5);
+  assert.equal(tools.tools.length, 8);
   assert.ok(tools.tools.every((t) => t.annotations?.readOnlyHint));
+  const warehouse = await client.callTool({
+    name: 'warehouse_query',
+    arguments: {
+      dataset: 'historical',
+      geography: '141003',
+      metric: 'population',
+      from: '1995',
+      to: '2024',
+      limit: 100,
+    },
+  });
+  const values = JSON.parse((warehouse.content as { text: string }[])[0].text);
+  assert.equal(values.observations.length, 30);
+  assert.equal(values.observations[0].value, 3307136);
+  assert.equal(values.observations.at(-1).value, 3771063);
+  const warehouseArticle = await client.callTool({
+    name: 'warehouse_article',
+    arguments: { id: 'population-history/yokohama' },
+  });
+  assert.equal(warehouseArticle.isError, undefined);
+  assert.ok(
+    JSON.parse((warehouseArticle.content as { text: string }[])[0].text).article.calculations
+      .length > 0,
+  );
   const response = await client.callTool({
     name: 'get_metric',
     arguments: { geography: '141097', metric: 'population' },

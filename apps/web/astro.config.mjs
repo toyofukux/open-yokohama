@@ -3,6 +3,8 @@ import { checkRelease } from "../../scripts/factcheck.ts";
 import { ensureEvidenceCache } from "../../scripts/factcheck-cache.ts";
 await ensureEvidenceCache();
 await checkRelease();
+const {check} = await import("../../scripts/warehouse.ts");
+await check();
 // Direct Astro builds must enforce the same numeric gates as the package build command.
 await import('../../scripts/validate.ts');
 await import('../../scripts/validate-dynamics.ts');

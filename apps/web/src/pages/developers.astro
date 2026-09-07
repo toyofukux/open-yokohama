@@ -6,6 +6,9 @@ import Layout from "../layouts/Layout.astro";
   ><article class="container narrow section prose">
     <h1 class="page-title">データを、別の道具からも。</h1><p>
       Webと同じ公開データを、JSON・CSVから利用できます。出典と時点を保ったまま、調査や可視化に使ってください。
+    </p><h2>横浜市DWH</h2><p>
+      <a href="/datasets/">長期系列を含むデータ一覧</a
+      >と、各記事の入力値・計算をJSONで利用できます。過去の保存版も参照できます。
     </p><h2>ダウンロード</h2><ul>
       <li><a href="/data/population.json">出典・観測値付きJSON</a></li><li>
         <a href="/data/population.csv">分析用CSV</a>
@@ -17,7 +20,7 @@ import Layout from "../layouts/Layout.astro";
         <a href="/data/ages.csv">年齢構成のCSV</a>
       </li>
     </ul><h2>MCP（公開停止中）</h2><p>
-      現在、MCPの外部提供は停止しています。データは上記のJSON・CSVから利用できます。ローカル開発については<a
+      現在、MCPの外部提供は停止しています。データは上記のJSON・CSVから利用できます。内部利用はローカル接続・読み取り専用・回数と出力量の制限付きです。クラウドの鍵があっても外部公開は再開しません。ローカル利用については<a
         href="https://github.com/toyofukux/open-yokohama/blob/main/docs/runbooks/mcp.md"
         >MCP利用手順</a
       >を参照してください。

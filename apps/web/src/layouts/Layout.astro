@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { geographies } from "../../../../packages/core/schema";
 import { editorialVerification } from "../../../../packages/core/issues";
 import { createHash } from "node:crypto";
 import populationJson from "../../../../data/published/population.json?raw";
@@ -45,6 +46,14 @@ const {
 } = Astro.props;
 const path = Astro.url.pathname;
 const hold = heldPage(path);
+const historyGeo = geographies.find((g) => path.includes(`/${g.slug}/`));
+const historyLink =
+  historyGeo && historyGeo.slug !== "yokohama"
+    ? `/population-history/${historyGeo.slug}/`
+    : "/population-history/";
+const showHistory =
+  path === "/" ||
+  /^\/(wards|issues|population-movement|age-structure)(\/|$)/.test(path);
 const displayTitle = hold ? "この説明は確認中です" : title;
 const displayDescription = hold
   ? "根拠を再確認しています。訂正と確認状況をご覧ください。"
@@ -125,6 +134,18 @@ const reportVersion = `${Astro.props.dataVersion ?? `人口データ SHA-256:${p
     </header>
     <main id="main">
       {
+        showHistory && !hold && (
+          <aside class="container history-link">
+            <>
+              <a href={historyLink}>人口と暮らしを、約30年の変化で見る →</a>
+              <p>
+                人口・世帯は1995年以降、世代・出生・死亡・移動は2000年以降を読み合わせる。
+              </p>
+            </>
+          </aside>
+        )
+      }
+      {
         hold ? (
           <article class="container narrow section prose">
             <>
@@ -150,10 +171,11 @@ const reportVersion = `${Astro.props.dataVersion ?? `人口データ SHA-256:${p
             />横浜市の公式サイトではありません。</small
           >
         </div><div>
-          <a href="/about/">このサイトについて</a><a href="/sources/"
-            >データの見方・更新状況</a
-          ><a data-report-link href={reportUrl(path, reportVersion)}
-            >このページの誤りを知らせる</a
+          <a href="/datasets/">データ一覧・長期系列</a><a href="/about/"
+            >このサイトについて</a
+          ><a href="/sources/">データの見方・更新状況</a><a
+            data-report-link
+            href={reportUrl(path, reportVersion)}>このページの誤りを知らせる</a
           ><a href="/corrections/">訂正と確認状況</a><a href="/developers/"
             >開発者向け・MCP</a
           ><a href="https://github.com/toyofukux/open-yokohama">GitHub ↗</a>
@@ -173,3 +195,18 @@ const reportVersion = `${Astro.props.dataVersion ?? `人口データ SHA-256:${p
     </script></body
   >
 </html>
+
+<style>
+  .history-link {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid currentColor;
+  }
+  .history-link p {
+    margin: 0.25rem 0 0;
+  }
+  .history-link a {
+    font-weight: 700;
+  }
+</style>

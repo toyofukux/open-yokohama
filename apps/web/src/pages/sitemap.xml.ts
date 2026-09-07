@@ -7,6 +7,11 @@ export function GET({ site }: APIContext) {
     "/issues/",
     "/population-movement/",
     "/age-structure/",
+    "/population-history/",
+    "/datasets/",
+    ...geographies
+      .filter((g) => g.slug !== "yokohama")
+      .map((g) => `/population-history/${g.slug}/`),
     ...geographies.map((g) => `/population-movement/${g.slug}/`),
     "/wards/",
     "/sources/",

@@ -65,3 +65,13 @@ Wranglerのカスタムビルドが `pnpm data:validate && pnpm factcheck:check`
 年齢指標は `age_total`、`age_under15`、`age_15to64`、`age_65plus`、`age_unknown` の5つです。
 `frequency: "month"` は未提供を返します。時点は `YYYY-01-01`、暦年の動態 `YYYY` とは異なります。
 集計の根拠は `rows`（複数行）に保持します。割合の分母の説明も返します。3区分の人数を返すもので、就業者数や政策効果は推定しません。
+
+## 内部利用の制限とDWH（2026-09-07追加）
+
+`pnpm mcp:dev` はローカル用の明示enableを渡し、127.0.0.1だけで受け付けます。毎分60回・同時4件・入力8 KB・出力1 MiB・query最大500値。任意SQL・URL取得・書込み・AI呼出しはありません。
+
+新ツールは `warehouse_catalog`、`warehouse_query`、`warehouse_article`。計8ツールです。`warehouse_query` はdataset/geography/metricとfrom/to、limit/offsetで絞ります。releaseIdを省略すると現在の保存版、異なる版を指定すると未提供です。過去版はCLIまたは静的JSONを使用します。
+
+例: `warehouse_query({"dataset":"historical","geography":"141003","metric":"population","from":"1995","to":"2024"})`。記事は `warehouse_article({"id":"population-history/yokohama"})`。
+
+WebとMCPのビルドは `pnpm dwh:check` で正本・互換出力・記事参照を検査します。[DWH利用手順](../DWH-IMPLEMENTATION.md)も参照してください。クラウドでの公開再開は今回の対象ではありません。

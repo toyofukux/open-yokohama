@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
 import {
   type DynamicsDataset,
   dynamicsKey,
@@ -11,6 +11,9 @@ import { parseDynamics } from '../packages/ingestion/dynamics.ts';
 import { decodeCsv } from '../packages/ingestion/population.ts';
 
 const target = 'data/published/dynamics.json';
+const candidate = 'data/candidates/dynamics.json';
+await mkdir('data/candidates', { recursive: true });
+await rm(candidate, { force: true });
 const hash = (bytes: Uint8Array) => createHash('sha256').update(bytes).digest('hex');
 async function fetchSource(url: string) {
   if (!dynamicsSources.some((s) => new URL(`02.files/${s.file}`, dynamicsPage).href === url))
@@ -130,8 +133,8 @@ try {
     throw new Error('Historical dynamics changed; inspect candidate and report before adoption');
   }
   if (!unchanged) {
-    await writeFile(`${target}.tmp`, `${JSON.stringify(data)}\n`);
-    await rename(`${target}.tmp`, target);
+    await writeFile(`${candidate}.tmp`, `${JSON.stringify(data)}\n`);
+    await rename(`${candidate}.tmp`, candidate);
   }
   console.log(JSON.stringify(report));
 } catch (e) {

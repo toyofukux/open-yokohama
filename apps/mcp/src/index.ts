@@ -25,6 +25,18 @@ import {
 import { compare, fact, series } from '../../../packages/core/query';
 import { type Dataset, geographies, metrics } from '../../../packages/core/schema';
 
+import {
+  articlePacket,
+  articles,
+  currentCatalog,
+  currentFacts,
+  releaseId,
+} from '../../../packages/warehouse/current';
+import { hashSchema, queryFacts, querySchema } from '../../../packages/warehouse/model';
+import { budget, localAccess, maxResponseBytes } from './limits';
+
+const localBudget = budget();
+
 // Immutable public release only; no private storage or credentials are bound to this Worker.
 const data: Dataset = raw as Dataset;
 const dynamics = dynamicsRaw as DynamicsDataset;
@@ -184,9 +196,7 @@ export function createServer() {
       annotations,
     },
     ({ id }) => {
-      const source = [...data.snapshots, ...dynamics.snapshots, ...ages.snapshots].find(
-        (s) => s.id === id,
-      );
+      const source = currentCatalog.sources.find((s) => s.id === id);
       return source ? result(source) : { ...result({ error: 'Source not found' }), isError: true };
     },
   );
@@ -301,57 +311,129 @@ export function createServer() {
       };
     },
   );
+  server.registerTool(
+    'warehouse_catalog',
+    {
+      description:
+        'Dataset definitions, coverage, source versions and known quality issues. Local read-only snapshot.',
+      inputSchema: {},
+      annotations,
+    },
+    () => result({ releaseId, ...currentCatalog }),
+  );
+  server.registerTool(
+    'warehouse_query',
+    {
+      description:
+        'Read at most 500 warehouse values. Specify dataset, geography, metric and period. releaseId must be the current bundled release; historical releases are available through CLI/static archives. No SQL, URLs or writes.',
+      inputSchema: querySchema.extend({ releaseId: hashSchema.optional() }).shape,
+      annotations,
+    },
+    (args) => {
+      const { releaseId: requested, ...query } = args;
+      if (requested && requested !== releaseId)
+        return result({
+          unavailable: true,
+          reason: 'Release not bundled. Use the archived release via CLI.',
+          releaseId: requested,
+        });
+      const rows = queryFacts(currentFacts(), query);
+      return result({
+        releaseId,
+        ...rows,
+        definitions: currentCatalog.definitions.filter((d) =>
+          rows.observations.some((f) => f.definitionVersion === d.version),
+        ),
+        sources: currentCatalog.sources.filter((s) =>
+          rows.observations.some((f) => f.sourceId === s.id),
+        ),
+      });
+    },
+  );
+  server.registerTool(
+    'warehouse_article',
+    {
+      description:
+        'Versioned article with exact input facts and calculations. An article is descriptive; not a causal or policy assessment.',
+      inputSchema: { id: z.enum(articles.map((a) => a.id)), releaseId: hashSchema.optional() },
+      annotations,
+    },
+    ({ id, releaseId: requested }) =>
+      requested && requested !== releaseId
+        ? result({ unavailable: true, reason: 'Release not bundled', releaseId: requested })
+        : result(articlePacket(id)),
+  );
   return server;
 }
+async function handle(request: Request): Promise<Response> {
+  const url = new URL(request.url);
+  if (url.pathname === '/health') return Response.json({ status: 'ok', release: data.generatedAt });
+  if (url.pathname !== '/mcp') return new Response('Not found', { status: 404 });
+  const origin = request.headers.get('Origin');
+  if (origin && origin !== url.origin) return new Response('Forbidden origin', { status: 403 });
+  if (request.method !== 'POST')
+    return new Response('Method not allowed', { status: 405, headers: { Allow: 'POST' } });
+  if (!request.headers.get('Content-Type')?.startsWith('application/json'))
+    return new Response('Expected application/json', { status: 415 });
+  if (!request.body) return new Response('Missing body', { status: 400 });
+  const reader = request.body.getReader();
+  let size = 0;
+  const chunks: Uint8Array[] = [];
+  while (true) {
+    const { value, done } = await reader.read();
+    if (done) break;
+    size += value.byteLength;
+    if (size > 8192) {
+      await reader.cancel();
+      return new Response('Request too large', { status: 413 });
+    }
+    chunks.push(value);
+  }
+  const bytes = new Uint8Array(size);
+  let offset = 0;
+  for (const chunk of chunks) {
+    bytes.set(chunk, offset);
+    offset += chunk.byteLength;
+  }
+  const boundedRequest = new Request(request.url, {
+    method: 'POST',
+    headers: request.headers,
+    body: bytes,
+  });
+  const server = createServer();
+  const transport = new WebStandardStreamableHTTPServerTransport({
+    sessionIdGenerator: undefined,
+    enableJsonResponse: true,
+  });
+  try {
+    await server.connect(transport);
+    return await transport.handleRequest(boundedRequest);
+  } catch {
+    return Response.json({ error: 'MCP request failed' }, { status: 500 });
+  } finally {
+    await server.close();
+  }
+}
 export default {
-  async fetch(request: Request): Promise<Response> {
-    const url = new URL(request.url);
-    if (url.pathname === '/health')
-      return Response.json({ status: 'ok', release: data.generatedAt });
-    if (url.pathname !== '/mcp') return new Response('Not found', { status: 404 });
-    const origin = request.headers.get('Origin');
-    if (origin && origin !== url.origin) return new Response('Forbidden origin', { status: 403 });
-    if (request.method !== 'POST')
-      return new Response('Method not allowed', { status: 405, headers: { Allow: 'POST' } });
-    if (!request.headers.get('Content-Type')?.startsWith('application/json'))
-      return new Response('Expected application/json', { status: 415 });
-    if (!request.body) return new Response('Missing body', { status: 400 });
-    const reader = request.body.getReader();
-    let size = 0;
-    const chunks: Uint8Array[] = [];
-    while (true) {
-      const { value, done } = await reader.read();
-      if (done) break;
-      size += value.byteLength;
-      if (size > 8192) {
-        await reader.cancel();
-        return new Response('Request too large', { status: 413 });
-      }
-      chunks.push(value);
-    }
-    const bytes = new Uint8Array(size);
-    let offset = 0;
-    for (const chunk of chunks) {
-      bytes.set(chunk, offset);
-      offset += chunk.byteLength;
-    }
-    const boundedRequest = new Request(request.url, {
-      method: 'POST',
-      headers: request.headers,
-      body: bytes,
-    });
-    const server = createServer();
-    const transport = new WebStandardStreamableHTTPServerTransport({
-      sessionIdGenerator: undefined,
-      enableJsonResponse: true,
-    });
+  async fetch(request: Request, env: Env & { INTERNAL_MCP_ENABLED?: string }): Promise<Response> {
+    if (!localAccess(request, env.INTERNAL_MCP_ENABLED === 'true'))
+      return new Response('Internal MCP only', { status: 403 });
+    if (!localBudget.enter())
+      return new Response('Local request budget exceeded', {
+        status: 429,
+        headers: { 'Retry-After': '60' },
+      });
     try {
-      await server.connect(transport);
-      return await transport.handleRequest(boundedRequest);
-    } catch {
-      return Response.json({ error: 'MCP request failed' }, { status: 500 });
+      const response = await handle(request);
+      const bytes = await response.arrayBuffer();
+      if (bytes.byteLength > maxResponseBytes)
+        return Response.json(
+          { error: 'Response limit exceeded; narrow the query.' },
+          { status: 413 },
+        );
+      return new Response(bytes, { status: response.status, headers: response.headers });
     } finally {
-      await server.close();
+      localBudget.leave();
     }
   },
-} satisfies ExportedHandler<Env>;
+} satisfies ExportedHandler<Env & { INTERNAL_MCP_ENABLED?: string }>;

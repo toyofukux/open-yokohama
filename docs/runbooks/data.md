@@ -1,3 +1,5 @@
+> 2026-09-07更新：通常の取得処理は公開JSONを上書きせず、`data/candidates/` に候補を置く。4系列の一括検査は `pnpm data:refresh:all`。原典版・基準・差分の確認後に `pnpm dwh:publish` で採用する。従来の公開JSON手動コピーより[DWH運用手順](../DWH-IMPLEMENTATION.md)を優先する。
+
 # データを更新する
 
 ルートで `pnpm data:refresh` を実行してください。

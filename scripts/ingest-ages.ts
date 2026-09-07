@@ -1,10 +1,13 @@
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
 import { type AgesDataset, agesPage, agesUrl, validateAges } from '../packages/core/ages.ts';
 import { parseAges } from '../packages/ingestion/ages.ts';
 import { decodeCsv } from '../packages/ingestion/population.ts';
 
 const target = 'data/published/ages.json';
+const candidate = 'data/candidates/ages.json';
+await mkdir('data/candidates', { recursive: true });
+await rm(candidate, { force: true });
 const hash = (bytes: Uint8Array) => createHash('sha256').update(bytes).digest('hex');
 await mkdir('artifacts', { recursive: true });
 await mkdir('data/raw', { recursive: true });
@@ -105,8 +108,8 @@ try {
     throw new Error('Historical ages changed; review candidate before adoption');
   }
   if (old?.id !== id) {
-    await writeFile(`${target}.tmp`, `${JSON.stringify(data)}\n`);
-    await rename(`${target}.tmp`, target);
+    await writeFile(`${candidate}.tmp`, `${JSON.stringify(data)}\n`);
+    await rename(`${candidate}.tmp`, candidate);
   }
   console.log(JSON.stringify(report));
 } catch (e) {

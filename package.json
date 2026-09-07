@@ -19,7 +19,7 @@
     "format": "biome check --write packages scripts tests apps/mcp/src",
     "preview": "wrangler dev --config wrangler.jsonc --port 8788",
     "deploy": "pnpm build && wrangler deploy --config wrangler.jsonc",
-    "mcp:dev": "wrangler dev --config apps/mcp/wrangler.jsonc --local --ip 127.0.0.1 --port 8789",
+    "mcp:dev": "wrangler dev --config apps/mcp/wrangler.jsonc --local --ip 127.0.0.1 --port 8789 --var INTERNAL_MCP_ENABLED:true",
     "verify": "pnpm lint && pnpm lint:web && pnpm check && pnpm test && pnpm build",
     "test:mcp": "tsx scripts/mcp-smoke.ts",
     "format:web": "prettier --plugin prettier-plugin-astro --write 'apps/web/src/**/*.{astro,css,ts}'",
@@ -34,7 +34,14 @@
     "data:refresh:dynamics": "tsx scripts/ingest-dynamics.ts",
     "test:dynamics-gates": "tsx scripts/dynamics-gate-smoke.ts",
     "data:refresh:ages": "tsx scripts/ingest-ages.ts",
-    "test:ages-gates": "tsx scripts/ages-gate-smoke.ts"
+    "test:ages-gates": "tsx scripts/ages-gate-smoke.ts",
+    "dwh:check": "tsx scripts/warehouse.ts check",
+    "dwh:publish": "tsx scripts/warehouse.ts publish",
+    "dwh:query": "tsx scripts/warehouse.ts query",
+    "dwh:article": "tsx scripts/warehouse.ts article",
+    "dwh:restore": "tsx scripts/warehouse.ts restore",
+    "data:refresh:history": "tsx scripts/ingest-history.ts",
+    "data:refresh:all": "tsx scripts/refresh-all.ts"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",

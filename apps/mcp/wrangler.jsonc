@@ -17,7 +17,7 @@
     "cpu_ms": 10
   },
   "build": {
-    "command": "pnpm data:validate && pnpm factcheck:check",
+    "command": "pnpm data:validate && pnpm factcheck:check && pnpm dwh:check",
     "watch_dir": [
       "../../data/editorial",
       "../../data/published",

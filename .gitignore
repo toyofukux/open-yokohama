@@ -14,3 +14,7 @@ artifacts/
 
 # Official HTML is a local verification cache; do not republish entire pages.
 data/editorial/raw/
+
+# Refresh results are candidates, never the published release.
+data/candidates/
+data/warehouse/publish.lock

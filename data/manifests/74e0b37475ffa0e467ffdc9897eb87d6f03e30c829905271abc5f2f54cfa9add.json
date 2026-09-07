@@ -1,0 +1,44 @@
+[
+  {
+    "id": "752e46c257689568770ded6c65c11be8dc2489c3054d69936ad868cb4ae5c3d1",
+    "sha256": "752e46c257689568770ded6c65c11be8dc2489c3054d69936ad868cb4ae5c3d1",
+    "path": "data/raw/752e46c257689568770ded6c65c11be8dc2489c3054d69936ad868cb4ae5c3d1.csv",
+    "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.files/t020800-month.csv",
+    "sourcePage": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.html",
+    "title": "人口動態・市の月別",
+    "scope": "month",
+    "retrievedAt": "2026-09-07T07:05:29.317Z",
+    "publishedAt": null,
+    "license": "CC-BY-4.0",
+    "publisher": "横浜市",
+    "parserVersion": "dynamics-csv-v1"
+  },
+  {
+    "id": "aa5a6e1f829b2837636256d05302bafc112a206834090d88e28c4299303be52c",
+    "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.files/t020800-year.csv",
+    "title": "人口動態・市の年別",
+    "sourcePage": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.html",
+    "retrievedAt": "2026-09-06T01:41:27.707Z",
+    "publishedAt": null,
+    "sha256": "aa5a6e1f829b2837636256d05302bafc112a206834090d88e28c4299303be52c",
+    "path": "data/raw/aa5a6e1f829b2837636256d05302bafc112a206834090d88e28c4299303be52c.csv",
+    "license": "CC-BY-4.0",
+    "publisher": "横浜市",
+    "parserVersion": "dynamics-csv-v1",
+    "scope": "year"
+  },
+  {
+    "id": "eb9bd51839dd9f170608e3f47a40a4cdd8224e4046922fe6d15faf213a16ed6b",
+    "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.files/t020800-ku.csv",
+    "title": "人口動態・行政区の年別",
+    "sourcePage": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/tokei-chosa/portal/tokeisho/02.html",
+    "retrievedAt": "2026-09-06T01:41:27.753Z",
+    "publishedAt": null,
+    "sha256": "eb9bd51839dd9f170608e3f47a40a4cdd8224e4046922fe6d15faf213a16ed6b",
+    "path": "data/raw/eb9bd51839dd9f170608e3f47a40a4cdd8224e4046922fe6d15faf213a16ed6b.csv",
+    "license": "CC-BY-4.0",
+    "publisher": "横浜市",
+    "parserVersion": "dynamics-csv-v1",
+    "scope": "ku"
+  }
+]

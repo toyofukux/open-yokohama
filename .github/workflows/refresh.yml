@@ -17,17 +17,11 @@ jobs:
           node-version: '24'
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm data:refresh
-      - run: pnpm data:refresh:dynamics
-      - run: pnpm data:refresh:ages
-      - run: pnpm data:validate
-      - run: pnpm factcheck:check
-      - name: Detect pending release
-        run: |
-          if ! git diff --quiet -- data/published/; then
-            echo '::error::New validated data awaits release. Download the candidate artifact and follow docs/runbooks/data.md.'
-            exit 1
-          fi
+      - name: Refresh each family independently (candidate only)
+        run: pnpm data:refresh:all
+      - name: Confirm published release remains valid
+        if: always()
+        run: pnpm dwh:check
       - uses: actions/upload-artifact@v4
         if: always()
         with:
