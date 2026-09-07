@@ -73,5 +73,11 @@
       "sha256": "1ccdf3ac9456beb42ef77745d2713e2cc98eae9b12c1544d0e9e146d4efb4ffb",
       "localPath": "artifacts/integration-recovery/deploy.log"
     }
+  },
+  "ci": {
+    "commit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+    "run": "https://github.com/toyofukux/open-yokohama/actions/runs/34099303830",
+    "conclusion": "success",
+    "scope": "clean checkout build, unit, publication and numeric rejection gates, correction holds, 98 E2E, private MCP dry-run and live local test, production dependency audit"
   }
 }

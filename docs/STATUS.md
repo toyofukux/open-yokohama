@@ -4,7 +4,7 @@
 
 - **公開先：[政策7記事の一覧](https://open.yokohama/issues/)／[保育と18区地図](https://open.yokohama/issues/childcare-access/)／[人口の長期推移](https://open.yokohama/population-history/)**。
 - 実装commit `6c5fcccec33a9165c456aaacc62a484b4a8df2ec` をmainへ統合・GitHub保存済み。Web version `04e55884-3bc0-46d8-8f1e-85b521f35e0d` をmainから公開。本番98 E2E合格、公開地図SVG/PNG/CSV・台帳・release-manifestのバイト一致、MCP `/health`・`/mcp` の404を確認した。記録は `docs/content-review/integration-checks.json`。
-- 復旧前の版は `2241a94e-1987-4758-9cf2-f71b656a37e9` だが、その版には政策7記事がない。安易なロールバック先として扱わず、今回の統合版を維持して修正する。GitHub CIは実装commitの検証を実行中で、この時点では未確定。
+- 復旧前の版は `2241a94e-1987-4758-9cf2-f71b656a37e9` だが、その版には政策7記事がない。安易なロールバック先として扱わず、今回の統合版を維持して修正する。実装commitの[GitHub CI](https://github.com/toyofukux/open-yokohama/actions/runs/34099303830)も合格。新規環境からのビルド、改変拒否、訂正保留、98 E2E、非公開MCPのdry-run・実接続、依存監査を確認した。
 
 - 原因：designが旧統計3記事を撤去して7政策記事を保った版を公開後、bluegillが別の全体ビルドを同じWorkerへ公開し、7記事が404になった。旧3記事の削除そのものが7記事を消したのではない。
 - ユーザーが別セッションの削除完了を通知。bluegill作業領域・ローカルブランチは削除済み、成果commit `373a18f` はoriginに残っていた。design `9dad8b5` と統合し、mainを公開元に一本化する。
