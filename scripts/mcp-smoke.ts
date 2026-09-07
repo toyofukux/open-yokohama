@@ -36,6 +36,17 @@ try {
     arguments: { geography: 'invalid', metric: 'population' },
   });
   assert.equal(invalid.isError, true);
+  const search = await client.callTool({ name: 'search', arguments: { query: '給食' } });
+  const found = JSON.parse((search.content as { text: string }[])[0].text);
+  assert.ok(found.some((entry: { id: string }) => entry.id === 'school-lunch'));
+  for (const query of [
+    '横浜の人口は、どこで変わっている',
+    '人口と世帯数は、同じように動く',
+    '人口の密度は、区によってどう違う',
+  ]) {
+    const retired = await client.callTool({ name: 'search', arguments: { query } });
+    assert.deepEqual(JSON.parse((retired.content as { text: string }[])[0].text), []);
+  }
   const denied = await fetch(url, {
     method: 'POST',
     headers: { Origin: 'https://invalid.example', 'Content-Type': 'application/json' },

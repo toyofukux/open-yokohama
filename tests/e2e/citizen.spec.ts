@@ -19,14 +19,33 @@ test('citizen can find a ward, compare, and open the actual source', async ({ pa
   expect(response.status()).toBe(200);
   expect((await response.body()).byteLength).toBeGreaterThan(500);
 });
-test('reading mode preserves the facts and limitations', async ({ page }) => {
-  await page.goto('/issues/population/');
-  const facts = await page.locator('.fact-list').textContent();
-  await expect(page.locator('#reading-details')).toBeHidden();
-  await page.getByRole('button', { name: '詳しく読む' }).click();
-  await expect(page.locator('#reading-details')).toBeVisible();
-  expect(await page.locator('.fact-list').textContent()).toBe(facts);
-  await expect(page.getByText('まだ分からないこと', { exact: true })).toBeVisible();
+test('retired guides redirect to the matching data without remaining in discovery', async ({
+  page,
+  request,
+}) => {
+  for (const metric of ['population', 'households', 'density']) {
+    for (const suffix of ['/', '']) {
+      const response = await request.get(`/issues/${metric}${suffix}`, { maxRedirects: 0 });
+      expect(response.status()).toBe(301);
+      const location = new URL(response.headers().location, response.url());
+      expect(location.pathname).toBe('/wards/');
+      expect(location.searchParams.get('metric')).toBe(metric);
+    }
+    await page.goto(`/issues/${metric}/`);
+    await expect(page.getByLabel('比べる指標')).toHaveValue(metric);
+    await expect(page.locator('#comparison-body tr')).toHaveCount(18);
+  }
+  for (const route of ['/', '/issues/', '/search/']) {
+    await page.goto(route);
+    await expect(
+      page.locator(
+        'a[href^="/issues/population"], a[href^="/issues/households"], a[href^="/issues/density"]',
+      ),
+    ).toHaveCount(0);
+  }
+  const sitemap = await (await request.get('/sitemap.xml')).text();
+  for (const metric of ['population', 'households', 'density'])
+    expect(sitemap).not.toContain(`/issues/${metric}/`);
 });
 test('local search handles Japanese and zero results without a server request', async ({
   page,
@@ -43,7 +62,7 @@ test('local search handles Japanese and zero results without a server request', 
 test('core pages have no serious accessibility defects or horizontal overflow', async ({
   page,
 }) => {
-  for (const path of ['/', '/wards/', '/issues/population/', '/search/']) {
+  for (const path of ['/', '/wards/', '/issues/', '/search/']) {
     await page.goto(path);
     const results = await new AxeBuilder({ page })
       .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])

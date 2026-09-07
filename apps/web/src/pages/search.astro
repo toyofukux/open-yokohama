@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { wards, metrics } from "../data";
-import { issues } from "../../../../packages/core/issues";
 import { policyIssues } from "../../../../packages/core/policy-issues";
 const entries = [
   ...policyIssues.map((i) => ({
@@ -18,11 +17,6 @@ const entries = [
     title: w.name + "の人口と暮らしのデータ",
     description: "人口・世帯数・人口密度・月次推移・地域比較",
     url: "/wards/" + w.slug + "/",
-  })),
-  ...issues.map((i) => ({
-    title: i.title,
-    description: i.summary + " " + i.category,
-    url: "/issues/" + i.slug + "/",
   })),
   ...metrics.map((m) => ({
     title: m.name + "を18区で比較",

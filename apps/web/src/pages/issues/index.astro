@@ -1,7 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { policyIssues } from "../../../../../packages/core/policy-issues";
-import { issues } from "../../../../../packages/core/issues";
 ---
 
 <Layout title="暮らしの問い"
@@ -31,22 +30,14 @@ import { issues } from "../../../../../packages/core/issues";
         ))
       }
     </div>
-    <h2>まちの変化を、数字から確かめる</h2><div class="cards section">
-      {
-        issues.map((issue) => (
-          <a class="card card-link" href={`/issues/${issue.slug}/`}>
-            <>
-              <span class="tag">{issue.category}</span>
-              <h2 style="font-size:1.25rem;margin-top:20px">{issue.title}</h2>
-              <p>{issue.summary}</p>
-              <span class="card-bottom">
-                公式統計から読む <span aria-hidden="true">→</span>
-              </span>
-            </>
-          </a>
-        ))
-      }
-    </div><div class="note">
+    <div class="note">
+      <strong>政策の判断に必要な数字を確かめる</strong>
+      <p>
+        人口・世帯数・人口密度の推移と地域差は、<a href="/wards/"
+          >18区のデータ比較</a
+        >で調べられます。
+      </p>
+
       政策の選択と、地域の統計をそれぞれの問いから確かめられます。政策間の財源配分の比較は、今後の問いとして調査を進めます。
     </div>
   </div></Layout

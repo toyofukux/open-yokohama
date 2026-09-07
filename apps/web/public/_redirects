@@ -1,0 +1,7 @@
+# Retired statistical guides: underlying data remains available.
+/issues/population/ /wards/?metric=population 301
+/issues/population /wards/?metric=population 301
+/issues/households/ /wards/?metric=households 301
+/issues/households /wards/?metric=households 301
+/issues/density/ /wards/?metric=density 301
+/issues/density /wards/?metric=density 301

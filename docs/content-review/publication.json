@@ -1769,7 +1769,9 @@
         "apps/web/src/pages/sitemap.xml.ts",
         "apps/web/src/pages/index.astro",
         "apps/web/src/components/ElectionCampaign.astro",
-        "packages/core/presentation.ts"
+        "packages/core/presentation.ts",
+        "apps/web/public/_redirects",
+        "apps/web/src/pages/wards/[ward].astro"
       ],
       "sources": [
         {
@@ -1796,7 +1798,7 @@
         }
       ],
       "article": {
-        "contentHash": "f5d0ea6db7b1efeaae5a54b1f9c43f2800fe5497d6deb5ea5faf0327bdf47cee",
+        "contentHash": "55b89c52f8754500f78658eb1e2291d9b0bd53d1f5bb7bfa5f87acf8b262f8ae",
         "claims": [
           {
             "id": "election-date",
@@ -1819,9 +1821,9 @@
         ]
       },
       "review": {
-        "contentHash": "f5d0ea6db7b1efeaae5a54b1f9c43f2800fe5497d6deb5ea5faf0327bdf47cee",
+        "contentHash": "55b89c52f8754500f78658eb1e2291d9b0bd53d1f5bb7bfa5f87acf8b262f8ae",
         "reviewer": "Codex author; self-review documented in mayoral-issues/REVIEW.md; not independent",
-        "reviewedAt": "2026-09-07T01:07:57.301585Z",
+        "reviewedAt": "2026-09-07T01:41:30.795397Z",
         "findings": [
           {
             "claimId": "election-date",
@@ -1844,7 +1846,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "f5d0ea6db7b1efeaae5a54b1f9c43f2800fe5497d6deb5ea5faf0327bdf47cee",
+          "contentHash": "55b89c52f8754500f78658eb1e2291d9b0bd53d1f5bb7bfa5f87acf8b262f8ae",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1855,26 +1857,20 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
+        "currentChangeInstruction": "ユーザー指定の旧人口・世帯・密度3記事を撤去し、サイトの意図に沿って全体の問いと優先順位を再構成する。既存の公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_production",
+        "implementation": "implemented_local",
         "independentReview": "not_performed",
         "userValidation": "not_performed",
         "formatAdoption": "provisional_not_sitewide",
-        "publication": "published"
+        "publication": "update_pending"
       },
-      "deployment": {
-        "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
-        "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
-        "url": "https://open.yokohama/elections/mayor-2026/",
-        "verifiedAt": "2026-09-07T01:12:42.617880Z",
-        "productionE2E": "54 passed"
-      },
+      "deployment": null,
       "presentationReview": {
-        "reviewedAt": "2026-09-07T01:10:21.083028Z",
+        "reviewedAt": "2026-09-07T01:41:30.795397Z",
         "reviewer": "Codex author, not independent",
-        "scope": "Same seven published article titles/links. Campaign outside article feature; E1 election date retained. All-user JST daily rotation, manual controls, no autoplay/profiling. Campaign closes at 2026-10-19 JST; no-JS static date is build-time."
+        "scope": "Remove three statistical guides from home, index, search, sitemap and ward links. Their old URLs redirect to the matching retained metric comparison. Keep the seven policy article titles and text. New lineup is an internal editorial plan, not published unverified content."
       },
       "revisionHistory": [
         {
@@ -1888,6 +1884,18 @@
             "productionE2E": "46 passed"
           },
           "reason": "ward-map-home-update"
+        },
+        {
+          "reason": "retire-statistical-guides",
+          "contentHash": "f5d0ea6db7b1efeaae5a54b1f9c43f2800fe5497d6deb5ea5faf0327bdf47cee",
+          "reviewedAt": "2026-09-07T01:07:57.301585Z",
+          "deployment": {
+            "workerVersion": "cbf8a62b-d44b-4610-bbfc-1fb861ffc545",
+            "implementationCommit": "901e53b1a84dd809ff11e2de3f8cfe8b33cc2ceb",
+            "url": "https://open.yokohama/elections/mayor-2026/",
+            "verifiedAt": "2026-09-07T01:12:42.617880Z",
+            "productionE2E": "54 passed"
+          }
         }
       ]
     }

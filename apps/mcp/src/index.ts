@@ -2,7 +2,7 @@ import { McpServer, ResourceTemplate } from '@modelcontextprotocol/sdk/server/mc
 import { WebStandardStreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js';
 import { z } from 'zod';
 import raw from '../../../data/published/population.json';
-import { issues } from '../../../packages/core/issues';
+import { policyIssues } from '../../../packages/core/policy-issues';
 import { compare, fact, series } from '../../../packages/core/query';
 import { type Dataset, geographies, metrics } from '../../../packages/core/schema';
 
@@ -92,7 +92,11 @@ export function createServer() {
       const entries = [
         ...geographies.map((g) => ({ id: g.code, title: g.name, kind: 'geography' })),
         ...metrics.map((m) => ({ id: m.id, title: `${m.name} ${m.definition}`, kind: 'metric' })),
-        ...issues.map((i) => ({ id: i.slug, title: `${i.title} ${i.summary}`, kind: 'issue' })),
+        ...policyIssues.map((i) => ({
+          id: i.slug,
+          title: `${i.title} ${i.summary}`,
+          kind: 'issue',
+        })),
       ];
       return result(
         entries.filter((e) => terms.every((t) => e.title.toLowerCase().includes(t))).slice(0, 20),
