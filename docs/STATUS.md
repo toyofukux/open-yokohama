@@ -300,3 +300,13 @@ PC/スマホの64 E2E、動態・年齢の原本改ざん拒否検査、訂正�
 既存 `pnpm test:factcheck-gates` のclean checkout復元は **未合格**。横浜市の `population-table` HTMLが、以前の署名版と異なる内容に更新されているため。保存済みの同一hash原本を用いる既存3記事の検証は合格。検査や署名を緩和していない。新規環境・CIでの旧HTMLの恒久的な復元は残課題であり、全CI合格とは扱わない。
 
 本番反映の結果は次の追記に記録する。
+
+### 本番反映とソース保存
+
+- 実装commit: `8b025fc`（`bluegill`、originへpush済み）。mainにはまだ統合していない。
+- Web version: `2241a94e-1987-4758-9cf2-f71b656a37e9`。
+- 公開先: https://open.yokohama/population-history/ と https://open.yokohama/datasets/ 。市と18区の19記事を公開。
+- 公開環境のPC/スマホ64 E2Eが合格。配布manifestと記事objectのSHA-256、44,638値・19記事・同一releaseIdを照合した。
+- Cloudflare管理APIでMCPの `enabled: false`、`previews_enabled: false`。旧 `/health`・`/mcp` は404。MCPの本番デプロイは行っていない。
+- `pnpm audit --prod --audit-level high` は既知の脆弱性なし。GitHubのCIは今回の完了条件の合格記録に含めていない。新規環境の旧HTML復元の制約は上記のとおり。
+- 確認用のローカルMCP・静的プレビューは終了する。内部MCPを使う際は `pnpm mcp:dev` で起動できる。
