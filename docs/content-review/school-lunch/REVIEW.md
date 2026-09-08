@@ -1,6 +1,12 @@
 # 給食費原稿の根拠・確認記録
 
-**現在の採用原稿は [v0.4.1](DRAFT-v0.4.1.md)。** [図・脚注・予算規模を含むブラウザ表示](http://100.100.139.119:4187/review/school-lunch-v0.4.1/)（Tailscale接続が必要）。前の[v0.4](DRAFT-v0.4.md)とv0.3-A/Bはユーザーのレビュー対象版として保持した。v0.4.1は公開準備を完了・利用者検証未実施。採用反映後の原稿は [DRAFT.md](DRAFT.md)、旧初版は [archive/v0.1/DRAFT.md](archive/v0.1/DRAFT.md)。以下の旧判定は経緯として保持する。
+**現在の採用原稿は [v0.4.1](DRAFT-v0.4.1.md)。** [図・脚注・予算規模を含むブラウザ表示](http://100.100.139.119:4187/review/school-lunch-v0.4.1/)（Tailscale接続が必要）。前の[v0.4](DRAFT-v0.4.md)とv0.3-A/Bはユーザーのレビュー対象版として保持した。v0.4.1は本番公開済み・利用者検証未実施。採用反映後の原稿は [DRAFT.md](DRAFT.md)、旧初版は [archive/v0.1/DRAFT.md](archive/v0.1/DRAFT.md)。以下の旧判定は経緯として保持する。
+
+## 2026-09-09：mainから公開・本番検証
+
+実装commit `c425c59b216b5522f27cfae7846a12f89b03e46c`、Web version `2d228feb-c96d-4e06-8b05-31adf0f13f6f`。[本番記事](https://open.yokohama/issues/school-lunch/)で原稿版・原図・脚注・予算を確認しました。mainと本番の100 E2Eがそれぞれ合格し、実装commitのGitHub CIも成功しました。検証の対象と結果は[公開検証記録](publication-checks-v0.4.1.json)です。
+
+evidence.json内のverificationは採用反映時に引き継いだ制作者の検証スナップショットです。現在の実装・公開状態はpublication.jsonとSTATUS、独立確認はimplementation-review-v0.4.1.jsonを正本とします。人間の価値・操作・理解の検証、全文章の独立事実確認、純増費用の確定は残ります。
 
 ## 2026-09-09：v0.4.1の採用反映と公開前検証
 

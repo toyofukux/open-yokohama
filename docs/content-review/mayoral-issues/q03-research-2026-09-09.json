@@ -1,0 +1,50 @@
+{
+  "questionId": "Q03",
+  "status": "source_collection_started_not_a_reviewed_manuscript",
+  "sources": [
+    {
+      "id": "Q03-S1",
+      "title": "市会と市長",
+      "url": "https://www.city.yokohama.lg.jp/shikai/shikumi/shigoto/shikumi12.html",
+      "sha256": "b06f23f8fb0be9dc8620b577190803dcc3c6243a4df2a0647ea411e103923ff4",
+      "bytes": 25568,
+      "localPath": "artifacts/editorial-resume/b06f23f8fb0be9dc8620b577190803dcc3c6243a4df2a0647ea411e103923ff4.html",
+      "retrievedAt": "2026-09-08T16:57:22.781135+00:00",
+      "reviewStatus": "collected_scope_and_effective_date_review_pending"
+    },
+    {
+      "id": "Q03-S2",
+      "title": "教育委員会制度",
+      "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/iinkai/soshiki-info.html",
+      "sha256": "a20e7b03ade91ef9a8c2fed86287c941b68da66164ee85f9e832336114ee206d",
+      "bytes": 44904,
+      "localPath": "artifacts/editorial-resume/a20e7b03ade91ef9a8c2fed86287c941b68da66164ee85f9e832336114ee206d.html",
+      "retrievedAt": "2026-09-08T16:57:22.862733+00:00",
+      "reviewStatus": "collected_scope_and_effective_date_review_pending"
+    },
+    {
+      "id": "Q03-L1",
+      "title": "地方自治法・e-Gov API取得候補",
+      "url": "https://laws.e-gov.go.jp/api/1/lawdata/322AC0000000067",
+      "sha256": "1ffdd9ffdd3dc9a6f20d784a1e970fd133e05c4e26b3cb954a7cd51dd61b8fcc",
+      "bytes": 2630332,
+      "localPath": "artifacts/editorial-resume/1ffdd9ffdd3dc9a6f20d784a1e970fd133e05c4e26b3cb954a7cd51dd61b8fcc.xml",
+      "retrievedAt": "2026-09-08T16:57:24.338076+00:00",
+      "reviewStatus": "collected_scope_and_effective_date_review_pending"
+    }
+  ],
+  "checkedLawArticles": [
+    "96",
+    "112",
+    "149",
+    "211",
+    "222"
+  ],
+  "remaining": [
+    "Confirm effective law revision as of 2026-09-09",
+    "Obtain local education administration law and relevant Yokohama delegation rules",
+    "Confirm national/prefectural/private operator roles using concrete meal and transport policy examples",
+    "Review diagram placement with article context",
+    "Independent review and human validation not performed"
+  ]
+}

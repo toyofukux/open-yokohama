@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-09-08T17:03:41.851161Z",
+  "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+  "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+  "previousWorkerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+  "deploymentSource": "main /Users/macmini/workspace/yokohama-intelligence",
+  "url": "https://open.yokohama/issues/school-lunch/",
+  "manuscriptSha256": "db267182f431dbf96bc48ccde8b85e21d1afdf3370878c96f963f8322593cf05",
+  "localVerification": {
+    "pnpmVerify": "passed",
+    "unitTests": 74,
+    "pages": 77,
+    "internalLinks": 2161,
+    "mainE2E": 100,
+    "tamperGates": "passed",
+    "correctionHold": "passed",
+    "wranglerDryRun": "passed"
+  },
+  "productionE2E": 100,
+  "ci": {
+    "runId": 34254072112,
+    "commit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+    "conclusion": "success",
+    "url": "https://github.com/toyofukux/open-yokohama/actions/runs/34254072112"
+  },
+  "productionAssets": {
+    "checkedAt": "2026-09-08T17:02:30.312587+00:00",
+    "checks": [
+      {
+        "url": "https://open.yokohama/images/school-lunch/jnfs16-figure7-5.png",
+        "sha256": "738970fb37a210c7c126f84d638775f26e2ce5ac13124ff6a0ab0add8b6c3bc4",
+        "localBytesMatch": true
+      },
+      {
+        "url": "https://open.yokohama/release-manifest.json",
+        "sha256": "68dd6df4aaa6cc24e9fb43b707ea7b92cbc6d7f344807211032d739538d6d869",
+        "localBytesMatch": true
+      },
+      {
+        "url": "https://open.yokohama/maps/childcare-2026.svg",
+        "sha256": "51f0d820d688c928c64e3e313894dee68a9a935961fe4a7b314f443ec76e88e5",
+        "localBytesMatch": true
+      },
+      {
+        "url": "https://open.yokohama/maps/childcare-2026.png",
+        "sha256": "a1d146d961ed670b11ba7d2bac48d43a6e9870ed5fdc307b8441632707c08d2f",
+        "localBytesMatch": true
+      },
+      {
+        "url": "https://open.yokohama/maps/childcare-2026.csv",
+        "sha256": "ec210caa161057cdcc7166594983ff11d41bb67b36bdb083f72309dbcc5b1ab8",
+        "localBytesMatch": true
+      },
+      {
+        "url": "https://open.yokohama/issues/school-lunch/",
+        "manuscriptVersionMatches": "db267182f431dbf96bc48ccde8b85e21d1afdf3370878c96f963f8322593cf05"
+      },
+      {
+        "url": "https://open-yokohama-mcp.toyofukux.workers.dev/health",
+        "status": 404
+      },
+      {
+        "url": "https://open-yokohama-mcp.toyofukux.workers.dev/mcp",
+        "status": 404
+      }
+    ],
+    "client": "curl",
+    "initialAttempt": "Python urllib received 403; normal browser E2E and curl used for verification"
+  },
+  "independentReview": "docs/content-review/school-lunch/implementation-review-v0.4.1.json",
+  "humanValidation": "not_performed",
+  "otherMainWork": "README.md and docs/knowledge existing files unchanged byte for byte",
+  "logFiles": {
+    "artifacts/school-lunch-adoption/main-verify.log": "8bf1b9ff0dc8ad78ce6ade0cfc41341cb232a1f2ec35ec9351c25cc101f92f99",
+    "artifacts/school-lunch-adoption/main-e2e.log": "53e41a39b969d894d306138ec9d5ae4d88d1073688c353237a2661467f75b3bf",
+    "artifacts/school-lunch-adoption/production-e2e.log": "a5e250776bc3c699e8b08db0b6fcdba8c78d30cd414397a62ee9735da69f0993",
+    "artifacts/school-lunch-adoption/gates.log": "d1f0ef44dfa322c22b125bb67b37bd55b802824558e050fa0e70449bca498b9e",
+    "artifacts/school-lunch-adoption/corrections.log": "a984252fdba13e414290ec6fc5c88652e1ca8bfa43069143346c9f14a6b350f7",
+    "artifacts/school-lunch-adoption/main-dry-run.log": "eea0710dd6248d975621112a9daad5176bb282e5f87ae1e2b603f64b3417e32f",
+    "artifacts/school-lunch-adoption/deploy.log": "0b4fdcfcd682620c659652ca19b05d6841fef93fc03879f61ea5d6907386c5c5"
+  }
+}

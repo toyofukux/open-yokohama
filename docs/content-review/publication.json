@@ -309,15 +309,15 @@
       },
       "route": "/issues/school-lunch/",
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
-        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
         "url": "https://open.yokohama/issues/school-lunch/",
-        "verifiedAt": "2026-09-07T08:14:12.266206Z",
-        "productionE2E": "98 passed"
+        "verifiedAt": "2026-09-08T17:03:41.851161Z",
+        "productionE2E": "100 passed"
       },
       "revisionHistory": [
         {
@@ -515,6 +515,13 @@
           "url": "https://open.yokohama/issues/school-lunch/",
           "verifiedAt": "2026-09-06T18:00:46.769639Z",
           "productionE2E": "46 passed"
+        },
+        {
+          "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+          "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+          "url": "https://open.yokohama/issues/school-lunch/",
+          "verifiedAt": "2026-09-07T08:14:12.266206Z",
+          "productionE2E": "98 passed"
         }
       ],
       "manuscriptPath": "docs/content-review/school-lunch/DRAFT.md",
@@ -730,15 +737,15 @@
         "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
-        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
         "url": "https://open.yokohama/issues/city-governance/",
-        "verifiedAt": "2026-09-07T08:14:12.266206Z",
-        "productionE2E": "98 passed"
+        "verifiedAt": "2026-09-08T17:03:41.851161Z",
+        "productionE2E": "100 passed"
       },
       "revisionHistory": [
         {
@@ -860,6 +867,13 @@
           "url": "https://open.yokohama/issues/city-governance/",
           "verifiedAt": "2026-09-07T01:12:42.617880Z",
           "productionE2E": "54 passed"
+        },
+        {
+          "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+          "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+          "url": "https://open.yokohama/issues/city-governance/",
+          "verifiedAt": "2026-09-07T08:14:12.266206Z",
+          "productionE2E": "98 passed"
         }
       ],
       "revisionReview": {
@@ -1060,15 +1074,15 @@
         "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
-        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
         "url": "https://open.yokohama/issues/city-budget/",
-        "verifiedAt": "2026-09-07T08:14:12.266206Z",
-        "productionE2E": "98 passed"
+        "verifiedAt": "2026-09-08T17:03:41.851161Z",
+        "productionE2E": "100 passed"
       },
       "revisionHistory": [
         {
@@ -1189,6 +1203,13 @@
           "url": "https://open.yokohama/issues/city-budget/",
           "verifiedAt": "2026-09-07T01:12:42.617880Z",
           "productionE2E": "54 passed"
+        },
+        {
+          "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+          "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+          "url": "https://open.yokohama/issues/city-budget/",
+          "verifiedAt": "2026-09-07T08:14:12.266206Z",
+          "productionE2E": "98 passed"
         }
       ],
       "revisionReview": {
@@ -1389,15 +1410,15 @@
         "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
-        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
         "url": "https://open.yokohama/issues/green-expo/",
-        "verifiedAt": "2026-09-07T08:14:12.266206Z",
-        "productionE2E": "98 passed"
+        "verifiedAt": "2026-09-08T17:03:41.851161Z",
+        "productionE2E": "100 passed"
       },
       "revisionHistory": [
         {
@@ -1518,6 +1539,13 @@
           "url": "https://open.yokohama/issues/green-expo/",
           "verifiedAt": "2026-09-07T01:12:42.617880Z",
           "productionE2E": "54 passed"
+        },
+        {
+          "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+          "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+          "url": "https://open.yokohama/issues/green-expo/",
+          "verifiedAt": "2026-09-07T08:14:12.266206Z",
+          "productionE2E": "98 passed"
         }
       ],
       "revisionReview": {
@@ -1700,15 +1728,15 @@
         "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
-        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
         "url": "https://open.yokohama/issues/local-mobility/",
-        "verifiedAt": "2026-09-07T08:14:12.266206Z",
-        "productionE2E": "98 passed"
+        "verifiedAt": "2026-09-08T17:03:41.851161Z",
+        "productionE2E": "100 passed"
       },
       "revisionHistory": [
         {
@@ -1820,6 +1848,13 @@
           "url": "https://open.yokohama/issues/local-mobility/",
           "verifiedAt": "2026-09-07T01:12:42.617880Z",
           "productionE2E": "54 passed"
+        },
+        {
+          "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+          "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+          "url": "https://open.yokohama/issues/local-mobility/",
+          "verifiedAt": "2026-09-07T08:14:12.266206Z",
+          "productionE2E": "98 passed"
         }
       ],
       "revisionReview": {
@@ -2023,15 +2058,15 @@
         "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
-        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
         "url": "https://open.yokohama/issues/childcare-access/",
-        "verifiedAt": "2026-09-07T08:14:12.266206Z",
-        "productionE2E": "98 passed"
+        "verifiedAt": "2026-09-08T17:03:41.851161Z",
+        "productionE2E": "100 passed"
       },
       "visualReview": {
         "reviewer": "Codex author, not independent",
@@ -2157,6 +2192,13 @@
           "url": "https://open.yokohama/issues/childcare-access/",
           "verifiedAt": "2026-09-07T01:12:42.617880Z",
           "productionE2E": "54 passed"
+        },
+        {
+          "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+          "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+          "url": "https://open.yokohama/issues/childcare-access/",
+          "verifiedAt": "2026-09-07T08:14:12.266206Z",
+          "productionE2E": "98 passed"
         }
       ],
       "revisionReview": {
@@ -2337,15 +2379,15 @@
         "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
-        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
         "url": "https://open.yokohama/issues/school-shelters/",
-        "verifiedAt": "2026-09-07T08:14:12.266206Z",
-        "productionE2E": "98 passed"
+        "verifiedAt": "2026-09-08T17:03:41.851161Z",
+        "productionE2E": "100 passed"
       },
       "revisionHistory": [
         {
@@ -2456,6 +2498,13 @@
           "url": "https://open.yokohama/issues/school-shelters/",
           "verifiedAt": "2026-09-07T01:12:42.617880Z",
           "productionE2E": "54 passed"
+        },
+        {
+          "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+          "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+          "url": "https://open.yokohama/issues/school-shelters/",
+          "verifiedAt": "2026-09-07T08:14:12.266206Z",
+          "productionE2E": "98 passed"
         }
       ],
       "revisionReview": {
@@ -2570,15 +2619,15 @@
         "currentChangeInstruction": "ユーザー指定の旧人口・世帯・密度3記事を撤去し、サイトの意図に沿って全体の問いと優先順位を再構成する。既存の公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
-        "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
         "url": "https://open.yokohama/elections/mayor-2026/",
-        "verifiedAt": "2026-09-07T08:14:12.266206Z",
-        "productionE2E": "98 passed"
+        "verifiedAt": "2026-09-08T17:03:41.851161Z",
+        "productionE2E": "100 passed"
       },
       "presentationReview": {
         "reviewedAt": "2026-09-07T01:41:30.795397Z",
@@ -2673,6 +2722,13 @@
           "url": "https://open.yokohama/elections/mayor-2026/",
           "verifiedAt": "2026-09-07T01:46:33.812470Z",
           "productionE2E": "54 passed"
+        },
+        {
+          "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
+          "implementationCommit": "6c5fcccec33a9165c456aaacc62a484b4a8df2ec",
+          "url": "https://open.yokohama/elections/mayor-2026/",
+          "verifiedAt": "2026-09-07T08:14:12.266206Z",
+          "productionE2E": "98 passed"
         }
       ],
       "revisionReview": {

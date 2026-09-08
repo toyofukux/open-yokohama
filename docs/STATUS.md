@@ -1,12 +1,14 @@
 # 実装・公開状態
 
-## 2026-09-09：引き継ぎから再開・給食v0.4.1の公開準備
+## 2026-09-09：引き継ぎから再開・給食v0.4.1を公開（最新）
 
 - 給食の採用原稿をDRAFT.mdへbyte一致で反映。旧版・根拠・検査・公開契約はarchiveに保存。原図・キャプション・脚注・予算表示を本番ルートへ実装した。
 - 74単体・77ページの全体検証、給食10 E2Eの再検証、改変拒否・訂正保留検査が合格。独立担当の確認範囲とhashは[レビュー記録](content-review/school-lunch/implementation-review-v0.4.1.json)。全文章の独立事実確認・人間の利用者検証は未実施。
 - Q01で他6記事の13原資料を再取得・旧版比較し、検算も再実行した。学校空調の単独事業49.157億円・財源と設置着手123件を追加取得。80校との関係、純増費用、運転維持費は未確定。[構成・画像配置案](content-review/mayoral-issues/REVISION-PLAN.md)と[監査台帳](content-review/mayoral-issues/q01-audit-2026-09-09.json)を保存した。
 - 学校空調の年表・財源内訳図の2か所配置をユーザーに提示中。他記事の本文・画面は未固定。次は配置の返答を反映し学校空調を改稿、Q03の原典・構成を準備する。Q02の2政策の費用比較は未成立。
-- mainへの統合・本番公開は次の作業。mainのREADME.mdとdocs/knowledge/は別作業として保全する。下の「ここから再開」は前セッションの引き継ぎ履歴。
+- [給食v0.4.1](https://open.yokohama/issues/school-lunch/)をmainから公開。実装commit `c425c59b216b5522f27cfae7846a12f89b03e46c`、Web version `2d228feb-c96d-4e06-8b05-31adf0f13f6f`。[CI](https://github.com/toyofukux/open-yokohama/actions/runs/34254072112)成功、main・本番各100 E2E合格。原稿版・原図・18区地図・release-manifestの一致、MCP旧URLの404を確認した。[公開検証記録](content-review/school-lunch/publication-checks-v0.4.1.json)。
+- mainのREADME.mdとdocs/knowledge/は既存2ファイルのbyte一致を確認して保全。designの未追跡docs/design-review/も維持。Tailscaleの既存サーバーは停止せず、本番相当ルートと給食v0.3〜v0.4.1の保存プレビューを復元した。新たな本番公開はmainのみを使う。
+- Q03の市会・教育委員会の説明と地方自治法XMLを取得し、[調査台帳](content-review/mayoral-issues/q03-research-2026-09-09.json)へ保存。施行版の確認・教育行政法・具体例の権限照合、本文制作は残る。下の「ここから再開」は前セッションの引き継ぎ履歴。
 
 ## 2026-09-09：セッション切替の引き継ぎ（ここから再開）
 
