@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "issueId": "school-lunch",
-  "version": "v0.4.1",
-  "status": "adopted_implementation_in_progress",
+  "version": "v0.4",
+  "status": "draft_for_structural_review",
   "createdOn": "2026-09-09",
   "manuscript": {
-    "path": "docs/content-review/school-lunch/DRAFT.md",
-    "sha256": "db267182f431dbf96bc48ccde8b85e21d1afdf3370878c96f963f8322593cf05"
+    "path": "docs/content-review/school-lunch/DRAFT-v0.4.md",
+    "sha256": "af6911a1b101f5ac4aaf720dee695aa983b793dfadc8df89a107aa00fc4983ea"
   },
   "sources": [
     {
@@ -222,14 +222,6 @@
       ],
       "locator": "Scope of incremental cost calculation",
       "scope": "Unresolved incremental cost remains in body."
-    },
-    {
-      "id": "11",
-      "sourceIds": [
-        "P25"
-      ],
-      "locator": "PDF3 subproject1 and planned counts",
-      "scope": "Same accounting scope for total and per-person figure; excludes temporary elementary supply subproject. Staff count retained."
     }
   ],
   "figure": {
@@ -296,18 +288,22 @@
   },
   "verification": {
     "performedBy": "author",
-    "previousVersionPreserved": true,
-    "budgetSourceHashChecked": true,
-    "budgetArithmeticChecked": true,
+    "sourceHashesChecked": 11,
+    "footnoteTargetsChecked": 10,
+    "calculationsChecked": 3,
+    "priorManuscriptsPreserved": 4,
+    "figureVisualInspection": "Original page and crop visually compared",
+    "independentReview": "not_performed",
+    "userResearch": "not_performed",
+    "adoption": "not_decided",
     "browserChecks": {
       "results": [
         {
           "device": "mobile",
-          "captionFont": 13,
           "status": 200,
           "overflow": false,
           "imageLoaded": true,
-          "footnotes": 11,
+          "footnotes": 10,
           "brokenAnchors": [],
           "rawFootnoteSyntax": false,
           "footnoteNavigation": "passed",
@@ -315,41 +311,16 @@
         },
         {
           "device": "desktop",
-          "captionFont": 13,
           "status": 200,
           "overflow": false,
           "imageLoaded": true,
-          "footnotes": 11,
+          "footnotes": 10,
           "brokenAnchors": [],
           "rawFootnoteSyntax": false,
           "footnoteNavigation": "passed",
           "imageFullSize": "passed"
         }
       ]
-    },
-    "visualInspection": "Mobile caption and budget table inspected",
-    "independentReview": "not_performed",
-    "userResearch": "not_performed",
-    "adoption": "user_adopted_v0.4.1_recorded_in_STATUS_2026-09-09",
-    "production": "not_published"
-  },
-  "previousVersion": {
-    "path": "docs/content-review/school-lunch/DRAFT-v0.4.md",
-    "sha256": "af6911a1b101f5ac4aaf720dee695aa983b793dfadc8df89a107aa00fc4983ea"
-  },
-  "budgetScale": {
-    "sourceId": "P25",
-    "locator": "PDF3; subproject1; planning population",
-    "year": 2026,
-    "basis": "initial_budget",
-    "budgetYen": 6065906000,
-    "students": 76000,
-    "staff": 5000,
-    "totalPlannedPeople": 81000,
-    "perPersonYen": "74887.72839506172839506172840",
-    "displayPerPersonManYen": "7.49",
-    "displayBudgetOkuYen": "60.66",
-    "excludedElementaryTemporarySupplyYen": 219818000,
-    "scope": "Food-material procurement budget includes revenue from user fees. Not full meal provision cost, actual individual spending, new beneficiaries or incremental cost of free school meals."
+    }
   }
 }

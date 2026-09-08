@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "issueId": "school-lunch",
   "version": "v0.4.1",
-  "status": "adopted_implementation_in_progress",
+  "status": "draft_for_structural_review",
   "createdOn": "2026-09-09",
   "manuscript": {
-    "path": "docs/content-review/school-lunch/DRAFT.md",
+    "path": "docs/content-review/school-lunch/DRAFT-v0.4.1.md",
     "sha256": "db267182f431dbf96bc48ccde8b85e21d1afdf3370878c96f963f8322593cf05"
   },
   "sources": [
@@ -330,8 +330,7 @@
     "visualInspection": "Mobile caption and budget table inspected",
     "independentReview": "not_performed",
     "userResearch": "not_performed",
-    "adoption": "user_adopted_v0.4.1_recorded_in_STATUS_2026-09-09",
-    "production": "not_published"
+    "adoption": "not_decided"
   },
   "previousVersion": {
     "path": "docs/content-review/school-lunch/DRAFT-v0.4.md",

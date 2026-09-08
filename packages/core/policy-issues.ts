@@ -4,8 +4,9 @@ export const schoolLunch = {
   slug: 'school-lunch',
   url: '/issues/school-lunch/',
   category: '子育て・教育',
-  title: '横浜は、中学校の給食費も無償にすべきか',
-  summary: '家計の負担、いまある援助、支え続ける財源。三つの選択肢から、何を優先するか考える。',
+  title: '横浜は、中学校の給食費も無償化すべきか',
+  summary:
+    '子育て費用をめぐる議論から、給食費の支援対象と国・市の負担、ほかの支援への配分を考える。',
 };
 
 export const mayoralIssues = [

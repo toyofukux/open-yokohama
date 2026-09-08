@@ -1,0 +1,44 @@
+{
+  "recordedAt": "2026-09-08T16:55:20.225925+00:00",
+  "reviewer": "/root/school_lunch_review",
+  "role": "independent Codex reviewer, not implementation author",
+  "result": "no_unresolved_major_or_medium_findings",
+  "contentHash": "81227ac3b5400fd59ae607b696429d493ad82bf09920b7126fc187810815df2f",
+  "reviewedFiles": {
+    "docs/content-review/school-lunch/DRAFT.md": "db267182f431dbf96bc48ccde8b85e21d1afdf3370878c96f963f8322593cf05",
+    "docs/content-review/school-lunch/DRAFT-v0.4.1.md": "db267182f431dbf96bc48ccde8b85e21d1afdf3370878c96f963f8322593cf05",
+    "docs/content-review/school-lunch/evidence.json": "aa55286ccb856ad3bf22f0cada94cdb85ae7e743cc30f1b8b1f00a6c250c85ad",
+    "docs/content-review/school-lunch/check.py": "4df86de7cf697c30cfc544f92e1e7be557d723dbc7951677c71e0e0e6a976bc0",
+    "docs/content-review/school-lunch/checks.json": "2ad032bd559b70cf5991eb6eebaf9f3998099b367013d57eb382dc5f388c79a6",
+    "apps/web/src/pages/issues/school-lunch.astro": "2fa4f524a2efb0b9321e6fbbce48f8edffb06f4977940d9275093d9d8109a549",
+    "scripts/school-lunch-markdown.mjs": "c6a7ddcbe8cc61021704443bc9be0facc765d4bcc6fcebf0f8c4c2db58aa0308",
+    "apps/web/src/styles/policy-article.css": "aee67d2e38252920e3b0beb6b7be57cb0826afe1ebfadedb67611b63665b60bf",
+    "apps/web/astro.config.mjs": "40125c3669fee42295f9ef8bd173262b9dd370ffbd6ad04db9722c9c1d07b13d",
+    "packages/core/policy-issues.ts": "264ed4b594e6891dea0caf2840e514c1e67fc590f93e9f81de17046704f93597",
+    "docs/content-review/publication.json": "cff84f950601540b008e4e598e23604a148b8f600142b6d0f07c6e7acf7b33b8",
+    "tests/e2e/school-lunch.spec.ts": "e9b8a09a5281acc670bbb34be6d9662fbb855a348b13f909388a1fad7c47118c",
+    "docs/content-review/school-lunch/assets/jnfs16-figure7-5.png": "738970fb37a210c7c126f84d638775f26e2ce5ac13124ff6a0ab0add8b6c3bc4",
+    "apps/web/public/images/school-lunch/jnfs16-figure7-5.png": "738970fb37a210c7c126f84d638775f26e2ce5ac13124ff6a0ab0add8b6c3bc4",
+    "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json": "22df2aa95648d47500fa7d2307f5f2a651e6286a53e1a051cf4e655bf705ae78"
+  },
+  "methods": [
+    "Read-only code and manuscript review",
+    "Independently executed school-lunch check.py verify() without writing output",
+    "Independently executed editorial publication contract (8 records)",
+    "Checked selected original PDF pages, HTML, original figure and crop",
+    "Checked archived v0.1 and publication ledger bytes against pre-change HEAD"
+  ],
+  "scope": [
+    "Adopted manuscript equality, 11 source hashes and footnotes, figure provenance",
+    "P25 ingredients budget and students/staff scope; P21 subsidy and funding; P27 interim payments",
+    "P20 original figure legend, restricted population and 854 responses",
+    "Current fees, national eligibility, attributed meeting argument",
+    "Human manuscript adoption distinguished from author verification and implementation review"
+  ],
+  "limits": [
+    "Not an independent fact check of every sentence",
+    "Browser E2E and production checks not independently run",
+    "Not human reader value/usability/comprehension validation"
+  ],
+  "followup": "Updated page review status accurately describes this limited independent review; contract independently rechecked."
+}

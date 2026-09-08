@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "issueId": "school-lunch",
+  "version": "v0.3",
+  "createdOn": "2026-09-08",
+  "status": "two_manuscripts_for_human_review",
+  "variants": [
+    {
+      "id": "A",
+      "path": "docs/content-review/school-lunch/DRAFT-v0.3-A.md",
+      "sha256": "4cccd4943b91e5fd893c3733391172016e21246ee36f1eccd62afaa27b53cc3b",
+      "bodyCharactersApprox": 2008,
+      "sourceIds": [
+        "P09",
+        "P12",
+        "P14",
+        "P17",
+        "P20",
+        "P21",
+        "P24",
+        "P25",
+        "P26",
+        "P27"
+      ],
+      "draftStatus": "written_for_review",
+      "humanEditorialReview": "pending",
+      "userResearch": "not_performed",
+      "adoption": "not_decided"
+    },
+    {
+      "id": "B",
+      "path": "docs/content-review/school-lunch/DRAFT-v0.3-B.md",
+      "sha256": "1f02712cc5fe09cbf7fc0ea10c1f9d2730c376308bc0ff6e23817e68fbe104e2",
+      "bodyCharactersApprox": 1956,
+      "sourceIds": [
+        "P09",
+        "P12",
+        "P14",
+        "P17",
+        "P20",
+        "P21",
+        "P24",
+        "P25",
+        "P26",
+        "P27"
+      ],
+      "draftStatus": "written_for_review",
+      "humanEditorialReview": "pending",
+      "userResearch": "not_performed",
+      "adoption": "not_decided"
+    }
+  ],
+  "evidenceLedger": {
+    "path": "docs/content-review/school-lunch/design-evidence.json",
+    "sha256": "c8764c9343799997883a5972e66c6e2de79e4c118bedc0a7764c12ed3e6dab3c"
+  },
+  "calculations": {
+    "path": "docs/content-review/school-lunch/impact-calculations.json",
+    "sha256": "11c55e263422f004a4c7b54cb9bce794ccad153adf2063b6633db1f17760a365"
+  },
+  "claims": [
+    {
+      "id": "E01",
+      "sourceIds": [
+        "P12"
+      ],
+      "designClaimIds": [
+        "T12"
+      ],
+      "reviewNote": "政府試案の背景と経済的支援の項目。PDF3・7・12を本文再照合。全国実施の決定と区別"
+    },
+    {
+      "id": "E02",
+      "sourceIds": [
+        "P14"
+      ],
+      "designClaimIds": [
+        "T11"
+      ],
+      "reviewNote": "2022年物価対応の調査と、値上がり対応の意味"
+    },
+    {
+      "id": "E03",
+      "sourceIds": [
+        "P12",
+        "P20"
+      ],
+      "designClaimIds": [
+        "T15"
+      ],
+      "reviewNote": "52.6％と限定された母集団。全家庭の困窮率・給食費固有の結果ではない"
+    },
+    {
+      "id": "E04",
+      "sourceIds": [
+        "P09",
+        "P26"
+      ],
+      "designClaimIds": [
+        "T07",
+        "T16"
+      ],
+      "reviewNote": "2026年度の制度対象・所得不問・目的と横浜の現行実施"
+    },
+    {
+      "id": "E05",
+      "sourceIds": [
+        "P26"
+      ],
+      "designClaimIds": [
+        "T16"
+      ],
+      "reviewNote": "市立の学校種別の現行料金"
+    },
+    {
+      "id": "E06",
+      "sourceIds": [
+        "P21",
+        "P26"
+      ],
+      "designClaimIds": [
+        "T16"
+      ],
+      "reviewNote": "110円と国の臨時交付金の利用"
+    },
+    {
+      "id": "E07",
+      "sourceIds": [
+        "P27"
+      ],
+      "designClaimIds": [
+        "T18"
+      ],
+      "reviewNote": "就学援助の認定後の負担と立替の扱い"
+    },
+    {
+      "id": "E08",
+      "sourceIds": [
+        "P25",
+        "P26",
+        "P27"
+      ],
+      "designClaimIds": [
+        "T16",
+        "T18"
+      ],
+      "reviewNote": "C01/H01/H02。170食の条件、援助の増分、非喫食の給付は制度次第"
+    },
+    {
+      "id": "E09",
+      "sourceIds": [
+        "P17"
+      ],
+      "designClaimIds": [
+        "T13"
+      ],
+      "reviewNote": "当時の経済的支援と地域支援の組合せへの問題提起。特定政策の優劣を断定しない"
+    },
+    {
+      "id": "E10",
+      "sourceIds": [
+        "P26",
+        "P27",
+        "P17"
+      ],
+      "designClaimIds": [],
+      "reviewNote": "編集上の選択肢整理。決定済み案や公約一覧と区別し、同じ項目で比較"
+    },
+    {
+      "id": "E11",
+      "sourceIds": [
+        "P25",
+        "P21",
+        "P27"
+      ],
+      "designClaimIds": [
+        "T17"
+      ],
+      "reviewNote": "純増費用と継続財源。未確定を明示し、同額の代替事業を創作しない"
+    },
+    {
+      "id": "supplement",
+      "sourceIds": [
+        "P20",
+        "P24",
+        "P26",
+        "P27"
+      ],
+      "designClaimIds": [
+        "T15",
+        "T18",
+        "T19"
+      ],
+      "reviewNote": "原統計の対象・研究の限界・手続き。両稿同文"
+    }
+  ],
+  "verification": {
+    "performedBy": "author",
+    "sourceHashesChecked": 10,
+    "sourceReferencesMatchLedger": true,
+    "sharedSupplementIdentical": true,
+    "calculationsChecked": 5,
+    "previousManuscriptsPreserved": true,
+    "independentReview": "not_performed",
+    "userResearch": "not_performed",
+    "browser": {
+      "viewports": [
+        390,
+        1280
+      ],
+      "pagesChecked": 4,
+      "horizontalOverflow": false,
+      "unresolvedReferences": false,
+      "navigation": "passed",
+      "visualInspection": "制作者がAのスマホ・BのPCの全文画像を確認",
+      "artifact": "artifacts/school-lunch-design/variant-browser-checks.json"
+    }
+  },
+  "preview": "http://100.100.139.119:4187/review/school-lunch-v0.3/",
+  "comparisonLimit": "順序と説明の単位、表と文章の使い方が異なる編集比較。順序だけの実験ではない。"
+}

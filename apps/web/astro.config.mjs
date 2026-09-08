@@ -16,5 +16,5 @@ export default defineConfig({
   output: "static",
   site: process.env.SITE_URL || "https://open.yokohama",
   trailingSlash: "always",
-  markdown: { processor: unified({ remarkPlugins: [schoolLunchMarkdown, policyTableLabels, policyEvidence], smartypants: false }) },
+  markdown: { processor: unified({ remarkPlugins: [schoolLunchMarkdown, policyTableLabels, policyEvidence], smartypants: false, remarkRehype: { footnoteLabel: "注記の本文", footnoteBackLabel: "本文へ戻る" } }) },
 });

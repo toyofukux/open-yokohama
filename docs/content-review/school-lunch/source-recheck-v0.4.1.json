@@ -1,0 +1,90 @@
+{
+  "checkedAt": "2026-09-08T16:41:53.666431+00:00",
+  "results": [
+    {
+      "id": "P04",
+      "url": "https://www.city.yokohama.lg.jp/city-info/seisaku/torikumi/bunken/yobo/yobo2025.files/yobo0711.pdf",
+      "sha256": "2fc966d970c83debea27438432a7f8ff22b4d436c6e408f3ff60707b12096d63",
+      "matchesSavedVersion": true,
+      "bytes": 5472962
+    },
+    {
+      "id": "P09",
+      "url": "https://www.mof.go.jp/about_mof/act/kokuji_tsuutatsu/tsuutatsu/251219.html",
+      "sha256": "77b66ff667952c024af9b465e02dcfcad0f5a27d596bbac6595152ec5a4f10e8",
+      "matchesSavedVersion": false,
+      "bytes": 39068,
+      "reviewedDifference": "Only the Incapsula script cb parameter changed; the document content is byte-identical after removing that script parameter."
+    },
+    {
+      "id": "P12",
+      "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/81755c56-2756-427b-a0a6-919a8ef07fb5/2eaccd0d/20230402_policies_01.pdf",
+      "sha256": "1e3d75f8f4ceb14a641ea79b073e7a733d780cfb9ffff76483af0a85bf4312db",
+      "matchesSavedVersion": true,
+      "bytes": 268761
+    },
+    {
+      "id": "P14",
+      "url": "https://www.mext.go.jp/b_menu/houdou/mext_01110.html",
+      "sha256": "0528cb84d0c80edbb49cd2110d1e507f736e5add4777a17a238df3763ccb871e",
+      "matchesSavedVersion": true,
+      "bytes": 8931
+    },
+    {
+      "id": "P17",
+      "url": "https://www.cfa.go.jp/councils/kodomo_seisaku_kyouka/Ud2PFWdX",
+      "sha256": "3592f44ca3442237c3a82b67a8f6d02baedb130dbeeb4a9a960c9d549f4dbfc0",
+      "matchesSavedVersion": true,
+      "bytes": 80222
+    },
+    {
+      "id": "P20",
+      "url": "https://www.ipss.go.jp/ps-doukou/j/doukou16/JNFS16gaiyo.pdf",
+      "sha256": "881ae4a052fc9bbb6c29aa197bf43e446c63d9b82b7e28ed14fb24fa755d8731",
+      "matchesSavedVersion": true,
+      "bytes": 5316478
+    },
+    {
+      "id": "P21",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf",
+      "sha256": "9300c910bcca2e6b9dee56a0196eef82a357610d895b71ab498085ca1c6b276a",
+      "matchesSavedVersion": true,
+      "bytes": 7798744
+    },
+    {
+      "id": "P24",
+      "url": "https://www.rieti.go.jp/jp/publications/dp/26j031.pdf",
+      "sha256": "03fee3b784aad767922ee3719470f5f6ef919cc07cdf8d15589e9dd2976b3bb2",
+      "matchesSavedVersion": true,
+      "bytes": 920885
+    },
+    {
+      "id": "P25",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf",
+      "sha256": "e47b8ed376800ba809181c9484dc7e1c25632c7594a7e72d830111b0dfe7ac6f",
+      "matchesSavedVersion": true,
+      "bytes": 200538
+    },
+    {
+      "id": "P26",
+      "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/sesaku/kyusyoku/kyushokuhi.html",
+      "sha256": "dbeed09f01fa5b9196d8d9bbeb29f2dfdbd7e60be731706e3d2b31b1693f8d3d",
+      "matchesSavedVersion": true,
+      "bytes": 53157
+    },
+    {
+      "id": "P27",
+      "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.files/0119_20260403.pdf",
+      "sha256": "36268c3e2266d5b5ec9703e6c41fe33bd4241ea663e19ba4aa5821e60527d66c",
+      "matchesSavedVersion": true,
+      "bytes": 1297735
+    },
+    {
+      "id": "figure-rights",
+      "url": "https://www.ipss.go.jp/site-ad/link/anlink.html",
+      "sha256": "6aca506a7eafdda2a3a33fba33de59f1b6b3792ab6710e15ed3ee840340c06ae",
+      "matchesSavedVersion": true,
+      "bytes": 25024
+    }
+  ]
+}

@@ -5,312 +5,467 @@
       "id": "school-lunch",
       "contentFiles": [
         "docs/content-review/school-lunch/DRAFT.md",
-        "apps/web/src/pages/issues/school-lunch.astro",
-        "docs/content-review/school-lunch/evidence.json",
-        "docs/content-review/school-lunch/check.py",
-        "scripts/school-lunch-markdown.mjs",
-        "scripts/policy-table-labels.mjs",
-        "apps/web/astro.config.mjs",
-        "apps/web/src/styles/policy-article.css",
-        "apps/web/src/styles/global.css",
-        "apps/web/src/layouts/Layout.astro",
-        "packages/core/policy-issues.ts",
-        "docs/content-review/school-lunch/assets/jnfs16-figure7-5.png",
-        "apps/web/public/images/school-lunch/jnfs16-figure7-5.png"
+        "apps/web/src/pages/issues/school-lunch.astro"
       ],
       "sources": [
         {
-          "id": "P04",
-          "title": "横浜市国要望2025秋",
-          "url": "https://www.city.yokohama.lg.jp/city-info/seisaku/torikumi/bunken/yobo/yobo2025.files/yobo0711.pdf",
-          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/seisaku/torikumi/bunken/yobo/yobo2025.files/yobo0711.pdf",
-          "sha256": "2fc966d970c83debea27438432a7f8ff22b4d436c6e408f3ff60707b12096d63",
-          "bytes": 5472962,
-          "localPath": "artifacts/school-lunch-design/2fc966d970c83debea27438432a7f8ff22b4d436c6e408f3ff60707b12096d63.pdf",
-          "retrievedAt": "2026-09-08T07:59:37.026687+00:00",
-          "contentType": "application/pdf"
-        },
-        {
-          "id": "P09",
-          "title": "三省対応方針2025-12-19",
-          "url": "https://www.mof.go.jp/about_mof/act/kokuji_tsuutatsu/tsuutatsu/251219.html",
-          "resolvedUrl": "https://www.mof.go.jp/about_mof/act/kokuji_tsuutatsu/tsuutatsu/251219.html",
-          "sha256": "8af58eda42338c814db2b48f1e58833b223d0e5e413d1ec89d465670425711dd",
-          "bytes": 39069,
-          "localPath": "artifacts/school-lunch-design/8af58eda42338c814db2b48f1e58833b223d0e5e413d1ec89d465670425711dd.html",
-          "retrievedAt": "2026-09-08T08:06:17.748510+00:00",
-          "contentType": "text/html"
-        },
-        {
-          "id": "P12",
-          "title": "こども・子育て政策の強化について（試案）2023-03-31",
-          "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/81755c56-2756-427b-a0a6-919a8ef07fb5/2eaccd0d/20230402_policies_01.pdf",
-          "resolvedUrl": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/81755c56-2756-427b-a0a6-919a8ef07fb5/2eaccd0d/20230402_policies_01.pdf",
-          "sha256": "1e3d75f8f4ceb14a641ea79b073e7a733d780cfb9ffff76483af0a85bf4312db",
-          "bytes": 268761,
-          "localPath": "artifacts/school-lunch-design/1e3d75f8f4ceb14a641ea79b073e7a733d780cfb9ffff76483af0a85bf4312db.pdf",
-          "retrievedAt": "2026-09-08T08:17:39.734327+00:00",
-          "contentType": "application/pdf"
-        },
-        {
-          "id": "P14",
-          "title": "文科省・2022年物価高騰対応の給食費負担軽減調査",
-          "url": "https://www.mext.go.jp/b_menu/houdou/mext_01110.html",
-          "resolvedUrl": "https://www.mext.go.jp/b_menu/houdou/mext_01110.html",
-          "sha256": "0528cb84d0c80edbb49cd2110d1e507f736e5add4777a17a238df3763ccb871e",
-          "bytes": 8931,
-          "localPath": "artifacts/school-lunch-design/0528cb84d0c80edbb49cd2110d1e507f736e5add4777a17a238df3763ccb871e.html",
-          "retrievedAt": "2026-09-08T08:17:39.992002+00:00",
-          "contentType": "text/html"
-        },
-        {
-          "id": "P17",
-          "title": "第3回こども政策強化会議・2023-02-20",
-          "url": "https://www.cfa.go.jp/councils/kodomo_seisaku_kyouka/Ud2PFWdX",
-          "resolvedUrl": "https://www.cfa.go.jp/councils/kodomo_seisaku_kyouka/Ud2PFWdX",
-          "sha256": "3592f44ca3442237c3a82b67a8f6d02baedb130dbeeb4a9a960c9d549f4dbfc0",
-          "bytes": 80222,
-          "localPath": "artifacts/school-lunch-design/3592f44ca3442237c3a82b67a8f6d02baedb130dbeeb4a9a960c9d549f4dbfc0.html",
-          "retrievedAt": "2026-09-08T08:42:41.502876+00:00",
-          "contentType": "text/html; charset=UTF-8"
-        },
-        {
-          "id": "P20",
-          "title": "第16回出生動向基本調査・2022年結果概要",
-          "url": "https://www.ipss.go.jp/ps-doukou/j/doukou16/JNFS16gaiyo.pdf",
-          "resolvedUrl": "https://www.ipss.go.jp/ps-doukou/j/doukou16/JNFS16gaiyo.pdf",
-          "sha256": "881ae4a052fc9bbb6c29aa197bf43e446c63d9b82b7e28ed14fb24fa755d8731",
-          "bytes": 5316478,
-          "localPath": "artifacts/school-lunch-design/881ae4a052fc9bbb6c29aa197bf43e446c63d9b82b7e28ed14fb24fa755d8731.pdf",
-          "retrievedAt": "2026-09-08T08:57:55.646766+00:00",
-          "contentType": "application/pdf"
-        },
-        {
-          "id": "P21",
-          "title": "横浜市教育委員会2026年度予算概要・5月版",
-          "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf",
-          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf",
-          "sha256": "9300c910bcca2e6b9dee56a0196eef82a357610d895b71ab498085ca1c6b276a",
-          "bytes": 7798744,
-          "localPath": "artifacts/school-lunch-design/9300c910bcca2e6b9dee56a0196eef82a357610d895b71ab498085ca1c6b276a.pdf",
-          "retrievedAt": "2026-09-08T08:56:55.085894+00:00",
-          "contentType": "application/pdf"
-        },
-        {
-          "id": "P24",
-          "title": "佐藤・中室2026 RIETI DP26-J-031",
-          "url": "https://www.rieti.go.jp/jp/publications/dp/26j031.pdf",
-          "sha256": "03fee3b784aad767922ee3719470f5f6ef919cc07cdf8d15589e9dd2976b3bb2",
-          "bytes": 920885,
-          "localPath": "artifacts/school-lunch-design/03fee3b784aad767922ee3719470f5f6ef919cc07cdf8d15589e9dd2976b3bb2.pdf",
-          "retrievedAt": "2026-09-08T09:00:14.560743+00:00"
-        },
-        {
-          "id": "P25",
-          "title": "横浜市・令和8年度学校給食物資購入費事業計画書",
-          "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf",
-          "sha256": "e47b8ed376800ba809181c9484dc7e1c25632c7594a7e72d830111b0dfe7ac6f",
-          "bytes": 200538,
-          "localPath": "artifacts/school-lunch-revision/e47b8ed376800ba809181c9484dc7e1c25632c7594a7e72d830111b0dfe7ac6f.pdf",
-          "retrievedAt": "2026-09-08T05:54:06.863561+00:00",
-          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf",
-          "contentType": "application/pdf",
-          "reusedFrom": "evidence-v0.2.json:S4"
-        },
-        {
-          "id": "P26",
+          "id": "S1",
           "title": "横浜市・学校給食費",
           "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/sesaku/kyusyoku/kyushokuhi.html",
-          "sha256": "dbeed09f01fa5b9196d8d9bbeb29f2dfdbd7e60be731706e3d2b31b1693f8d3d",
-          "bytes": 53157,
-          "localPath": "artifacts/school-lunch-revision/dbeed09f01fa5b9196d8d9bbeb29f2dfdbd7e60be731706e3d2b31b1693f8d3d.html",
-          "retrievedAt": "2026-09-08T05:54:06.661067+00:00",
           "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/sesaku/kyusyoku/kyushokuhi.html",
+          "retrievedAt": "2026-09-06T16:41:31.836183Z",
+          "sha256": "defc00a837f4c55b5bf19149f1dd23806f3825f285b810bcfc41d923df305127",
+          "bytes": 53214,
           "contentType": "text/html",
-          "reusedFrom": "evidence-v0.2.json:S1"
+          "localPath": "artifacts/school-lunch-sources/defc00a837f4c55b5bf19149f1dd23806f3825f285b810bcfc41d923df305127.html",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
         },
         {
-          "id": "P27",
+          "id": "S2",
+          "title": "文部科学省・学校給食費の抜本的な負担軽減",
+          "url": "https://www.mext.go.jp/a_menu/sports/syokuiku/kyu-lighten.html",
+          "resolvedUrl": "https://www.mext.go.jp/a_menu/sports/syokuiku/kyu-lighten.html",
+          "retrievedAt": "2026-09-06T16:41:31.789576Z",
+          "sha256": "ce41764223c504fdb8e9494c5c001421c3bbc384f5dc7c6e2f19a37226583bd8",
+          "bytes": 14000,
+          "contentType": "text/html",
+          "localPath": "artifacts/school-lunch-sources/ce41764223c504fdb8e9494c5c001421c3bbc384f5dc7c6e2f19a37226583bd8.html",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "S3",
           "title": "横浜市・令和8年度就学援助のお知らせ",
           "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.files/0119_20260403.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.files/0119_20260403.pdf",
+          "retrievedAt": "2026-09-06T16:41:32.085954Z",
           "sha256": "36268c3e2266d5b5ec9703e6c41fe33bd4241ea663e19ba4aa5821e60527d66c",
           "bytes": 1297735,
-          "localPath": "artifacts/school-lunch-revision/36268c3e2266d5b5ec9703e6c41fe33bd4241ea663e19ba4aa5821e60527d66c.pdf",
-          "retrievedAt": "2026-09-08T05:54:06.887124+00:00",
-          "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.files/0119_20260403.pdf",
           "contentType": "application/pdf",
-          "reusedFrom": "evidence-v0.2.json:S3"
+          "localPath": "artifacts/school-lunch-sources/36268c3e2266d5b5ec9703e6c41fe33bd4241ea663e19ba4aa5821e60527d66c.pdf",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "S4",
+          "title": "横浜市・令和8年度学校給食物資購入費事業計画書",
+          "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf",
+          "retrievedAt": "2026-09-06T16:41:32.061038Z",
+          "sha256": "e47b8ed376800ba809181c9484dc7e1c25632c7594a7e72d830111b0dfe7ac6f",
+          "bytes": 200538,
+          "contentType": "application/pdf",
+          "localPath": "artifacts/school-lunch-sources/e47b8ed376800ba809181c9484dc7e1c25632c7594a7e72d830111b0dfe7ac6f.pdf",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "S5",
+          "title": "横浜市会・2026年6月8日特別委員会資料",
+          "url": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/TokubetuDaiR08.files/T-toku-20260608-ss-2.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/TokubetuDaiR08.files/T-toku-20260608-ss-2.pdf",
+          "retrievedAt": "2026-09-06T16:41:32.083251Z",
+          "sha256": "60d86c0394937321d2a0f8642866f7339b131dc87afe7df6d5c24635deedd329",
+          "bytes": 2302167,
+          "contentType": "application/pdf",
+          "localPath": "artifacts/school-lunch-sources/60d86c0394937321d2a0f8642866f7339b131dc87afe7df6d5c24635deedd329.pdf",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "S6",
+          "title": "横浜市・市民の声38000081",
+          "url": "https://cgi.city.yokohama.lg.jp/shimin/kouchou/search/data/38000081.html",
+          "resolvedUrl": "https://cgi.city.yokohama.lg.jp/shimin/kouchou/search/data/38000081.html",
+          "retrievedAt": "2026-09-06T16:41:31.967847Z",
+          "sha256": "6e53a4dca97807ef73a5f48a4771d0867f6e3ce1c2f9a78d81c1c69440d40654",
+          "bytes": 7966,
+          "contentType": "text/html",
+          "localPath": "artifacts/school-lunch-sources/6e53a4dca97807ef73a5f48a4771d0867f6e3ce1c2f9a78d81c1c69440d40654.html",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "S7",
+          "title": "横浜市会・2026年5月18日教育委員会資料",
+          "url": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/JohninKK-R08.files/J-Ko-20260518-ky-1.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/JohninKK-R08.files/J-Ko-20260518-ky-1.pdf",
+          "retrievedAt": "2026-09-06T16:41:32.530715Z",
+          "sha256": "8d5cc8011356ae63025b89cd9a8a343f1a9efa131a3f881d60cbf2c252360ebe",
+          "bytes": 5663480,
+          "contentType": "application/pdf",
+          "localPath": "artifacts/school-lunch-sources/8d5cc8011356ae63025b89cd9a8a343f1a9efa131a3f881d60cbf2c252360ebe.pdf",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "S8",
+          "title": "横浜市・就学援助制度",
+          "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.html",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.html",
+          "retrievedAt": "2026-09-06T16:41:32.177530Z",
+          "sha256": "95fab353cf4cc51948460924d5e912c64048e506668664e073ea09ec1c0e70f0",
+          "bytes": 49662,
+          "contentType": "text/html",
+          "localPath": "artifacts/school-lunch-sources/95fab353cf4cc51948460924d5e912c64048e506668664e073ea09ec1c0e70f0.html",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "C1",
+          "title": "候補・小児医療費助成",
+          "url": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/kenko-iryo/iryohijosei/shoni/",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/kenko-iryo/iryohijosei/shoni/",
+          "retrievedAt": "2026-09-06T16:41:32.197818Z",
+          "sha256": "cd89015ab75bdd142570597c9de6124c83cff2349402eec7798971207c678fb1",
+          "bytes": 41536,
+          "contentType": "text/html",
+          "localPath": "artifacts/school-lunch-sources/cd89015ab75bdd142570597c9de6124c83cff2349402eec7798971207c678fb1.html",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
+        },
+        {
+          "id": "C2",
+          "title": "候補・地域公共交通計画",
+          "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/toshikotsu/plan/chiki-kotsu-plan.html",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/toshikotsu/plan/chiki-kotsu-plan.html",
+          "retrievedAt": "2026-09-06T16:41:32.195435Z",
+          "sha256": "4b0e1108c69fc88af24f76f017b7ecb79d9c1ff78a67948aa16181caa8f8934e",
+          "bytes": 46522,
+          "contentType": "text/html",
+          "localPath": "artifacts/school-lunch-sources/4b0e1108c69fc88af24f76f017b7ecb79d9c1ff78a67948aa16181caa8f8934e.html",
+          "status": "acquired",
+          "redistribution": "raw kept in ignored artifacts; not approved for publication"
         }
       ],
       "article": {
-        "contentHash": "81227ac3b5400fd59ae607b696429d493ad82bf09920b7126fc187810815df2f",
+        "contentHash": "68797afb80182521cef2aa781b8ab33e6bdec4a16810be9f6f870dfcac3a0011",
         "claims": [
           {
-            "id": "V041-S01",
-            "kind": "analysis",
-            "text": "# 横浜は、中学校の給食費も無償化すべきか\n\n2023年、政府が少子化対策で取り上げたのは、子どもを望む人が費用などの事情で希望をかなえられないという問題だった。出生数の減少が想定より早く進んでいるとの認識のもと、児童手当の拡充などとともに、給食費の無償化に向けた検討を試案に盛り込んだ。[^1]\n\n政府は、本人の希望を支えることに加え、将来の働き手や社会保障を支えることにもつながるとして、子育て政策の強化を掲げた。[^1]\n\n給食費の軽減は、その経済的な支援の一つだ。横浜の中学校まで広げる議論も、どの家庭の負担をどれだけ減らし、その費用を誰が引き受けるかという選択につながる。",
-            "citations": [
-              "P12"
-            ]
-          },
-          {
-            "id": "V041-S02",
-            "kind": "analysis",
-            "text": "## 子育ての費用が、希望する暮らしを制約している\n\n政府の試案が参照した調査では、予定する子ども数が理想より少ない夫婦の52.6％が、子育てや教育にかかる費用を理由に挙げていた。下の図は、その調査資料に掲載されたものだ。[^2]\n\n[![原資料の図表7-5。予定する子ども数が理想を下回る夫婦の回答を調査年別に比較。2021年の黒い棒では子育て・教育費の理由が52.6％。凡例と調査対象の注記を含む。](assets/jnfs16-figure7-5.png)](assets/jnfs16-figure7-5.png)\n\n出典：国立社会保障・人口問題研究所『第16回出生動向基本調査 結果の概要』58ページ、図表7-5。Open Yokohamaが原資料から図表部分を切り出した。[原資料を見る](https://www.ipss.go.jp/ps-doukou/j/doukou16/JNFS16gaiyo.pdf#page=58)\n\n**図の読み方：黒い棒が2021年の回答。** 費用の理由が最も多く、年齢や育児の負担なども挙がっている。対象は予定子ども数が理想を下回る夫婦、複数回答。\n\n\n子育て費用への対応には、給付を増やす方法も、家庭が払う料金を減らす方法もある。給食費の無償化は、このうち毎日の昼食にかかる支払いを減らす手段だ。\n\n一方、子育ての支障には、預け先や相談相手など、お金の給付だけでは直接増やせないものもある。当時の政府試案は、経済的負担とともに、孤立した育児や一時預かりなどの支援の不足も課題に挙げていた。[^1]",
-            "citations": [
-              "P20",
-              "P12"
-            ]
-          },
-          {
-            "id": "V041-S03",
+            "id": "F01",
             "kind": "fact",
-            "text": "## 横浜では、今の支援で何が変わった？\n\n食材の値上がりにも、公費で対応が進められてきた。2022年7月時点の国の調査では、給食費の負担軽減を実施していた自治体は679、実施予定は812で、合わせて回答自治体の83.2％だった。国は物価高対策の交付金を活用できるようにし、取組を後押しした。[^3]\n\n2026年度の横浜市立中学校・義務教育学校後期では、通常の給食1食につき、物価上昇分110円を市が補助し、保護者が330円を払う。就学援助の認定を受けた家庭は、対象期間の最終負担が0円になる。[^4]\n\n小学校段階では、国が所得を問わない支援を始め、横浜市が国の基準額を超える分も補って保護者負担を0円にした。中学校で現在払っている家庭にも、支払いをなくす支援を広げるかが、この記事で考える対象だ。[^5]",
+            "text": "市立小学校段階の保護者負担0円、中学校・義務教育学校後期は通常フルセット330円／食",
             "citations": [
-              "P14",
-              "P21",
-              "P26",
-              "P27",
-              "P09"
+              "S1"
             ]
           },
           {
-            "id": "V041-S04",
-            "kind": "analysis",
-            "text": "## 家庭の支払いを、どこまで公費で引き受ける？\n\n援助を受けず、通常の給食を170食利用する例では、家庭の支払いは **330円×170食＝56,100円**。同じ給食を無償にすれば、この額を家庭が払う必要はなくなる。[^6]\n\nすでに援助で最終負担が0円の家庭では、追加で減る支払いも0円だ。支援を広げたときの変化は、現在の負担によって異なる。\n\nここで分かれるのは、子育て費用の一部を所得にかかわらず公費で引き受ける範囲と、負担の重さなどの条件に応じて支援を厚くする範囲だ。どちらも支出を軽くする方法だが、対象になる家庭と、家庭ごとに増える支援が変わる。\n\n市が使い道を選べる予算では、給食費とほかの子育て支援に、どれだけずつ向けるかも判断になる。2023年の政府の会議では、構成員が給食費などの経済的支援に議論が偏ることを問題にし、地域の支援団体や担い手を支える役割に言及した。子育て支援に携わる奥山千鶴子氏も、自治体の施策を組み合わせて考える必要性を述べている。[^7]\n\n支払いを減らすことと、相談や預け先を増やすこと。それぞれで生活のどこが改善し、どの負担が残るのかを比べると、支援の優先順位が具体的になる。\n\n### 課題から見た対応の比較〈編集部整理〉\n\n| 解きたい課題・判断すること | 対応の分かれ方 | 誰の何が変わり、何が残るか |\n|---|---|---|\n| 家庭の子育て支出を、どこまで軽くするか | 現在の料金・援助を続ける／援助の対象を変える／対象家庭の給食費を一律0円にする | 現行維持では援助対象外の支払いが続く。対象変更では新たに支える範囲を定める。一律0円では現在払う対象家庭へ広く支払減が及ぶ。必要な市の予算は対象・食数・既存援助との調整で変わる |\n| 支出以外の子育ての負担に、どう応えるか | 給食費の軽減に配分する／相談・預かり等に配分する／組み合わせる | 給食費の軽減は対象家庭の支払いを減らす。相談・預かり等は利用できる支援を増やす。それぞれの対象・必要量・費用をそろえて比べる |\n| 支援を継続する費用を、国と市でどう分担するか | 国の支援拡大を求める／市が追加の支援を設ける／両方を進める | 国から受け取る額と、市が別に用意する額が変わる。どの年度から、毎年どの収入で賄うかが実施条件になる |\n\n一つの課題に一つの政策だけが対応するわけではなく、一律軽減と追加援助などを組み合わせることもできる。給食を利用しない子や対象外の学校への対応も、その組合せを考える論点になる。[^8]",
-            "citations": [
-              "P25",
-              "P26",
-              "P24",
-              "P17",
-              "P27"
-            ]
-          },
-          {
-            "id": "V041-S05",
-            "kind": "analysis",
-            "text": "## 家庭の負担を減らす費用を、誰が引き受けるか\n\n国と市の負担の分け方も、実際に議論されてきた。横浜市は2025年11月、自治体の負担が他の子育て支援や教育施策に影響するとして、給食費無償化に必要な費用を全額国費で賄うよう求めた。2026年度の市の給食費補助予算には、国の臨時交付金が使われている。[^9]\n\n家庭の請求がゼロになるとき、その分を支えるのは国や市の予算だ。国の支援がどこまで続くかによって、市が毎年用意する額も変わる。\n\n現在の食材購入予算を、1人当たり・対象人数・全体の規模で見ると次のようになる。保護者から集める給食費も、この購入予算の財源に含まれる。[^11]\n\n### 現在の中学校給食の規模〈2026年度当初計画・食材購入分〉\n\n| 見る単位 | 規模 |\n|---|---|\n| 1人当たりの購入予算 | 年約7.49万円（下の総額÷想定8.1万人） |\n| 対象人数 | 生徒7.6万人＋教職員5千人＝想定8.1万人 |\n| 年間の購入予算 | 約60.66億円 |\n\nこれは給食の食材を購入する予算の規模で、無償化に伴って新たに必要となる予算額とは別だ。家庭の支払減は、先ほどの例では生徒1人・170食で56,100円となり、既存援助の有無でも変わる。\n\n中学校の無償化で市に追加で必要となる額は、今回確認した資料では未確定だ。このため、同じ予算で他の支援をどれだけ増やせるかという金額比較は、まだ残っている。[^10]\n\n給食費を誰まで軽くするか、その費用を国と市でどう分担し、ほかの支援とどう組み合わせるか。家計の支払減と、公共の予算の使い方を合わせて考えることが、この問いの中身になる。\n\n---",
-            "citations": [
-              "P04",
-              "P21",
-              "P26",
-              "P25",
-              "P27"
-            ]
-          },
-          {
-            "id": "V041-S06",
+            "id": "F02",
             "kind": "fact",
-            "text": "## 参考資料・注記\n\n原稿更新：2026年9月9日。現行料金・援助・予算の参照は2026年度の資料。各資料の取得版と確認箇所はレビュー記録に保存している。\n\n[^1]: こども家庭庁『こども・子育て政策の強化について（試案）』2023年3月31日、PDF3・7・12ページ。政府が示した問題認識と検討方針。給食費については実態把握・課題整理の段階。[原資料](https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/81755c56-2756-427b-a0a6-919a8ef07fb5/2eaccd0d/20230402_policies_01.pdf)\n\n[^2]: 国立社会保障・人口問題研究所『第16回出生動向基本調査 結果の概要』図表7-5、58ページ。2021年の回答は、予定子ども数が理想を下回る初婚どうしの夫婦で、妻が50歳未満の854回答。複数回答・無回答除外。全家庭の困窮率や給食費固有の効果を示すものではない。[原資料](https://www.ipss.go.jp/ps-doukou/j/doukou16/JNFS16gaiyo.pdf#page=58)\n\n[^3]: 文部科学省、2022年9月9日公表。基準日7月29日、回答1,793自治体。679＋812＝1,491、1,491÷1,793×100＝83.156…％。実施予定を含む取組状況で、軽減額や効果の実測ではない。国は取組状況の周知と負担軽減の促進を今後の対応として記載。[原資料](https://www.mext.go.jp/b_menu/houdou/mext_01110.html)\n\n[^4]: 横浜市の[現行料金](https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/sesaku/kyusyoku/kyushokuhi.html)、[予算概要PDF21ページ](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf#page=21)、[就学援助案内PDF4ページ](https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.files/0119_20260403.pdf#page=4)。新規申請等では審査中に支払い、認定後に返還。前年末対象者は審査中も支払い不要。0円は対象期間の最終負担を指す。\n\n[^5]: [政府の2025年12月19日方針](https://www.mof.go.jp/about_mof/act/kokuji_tsuutatsu/tsuutatsu/251219.html)と横浜市の現行案内。市の0円の対象は小学校・義務教育学校前期・特別支援学校小学部。特別支援学校の小学部以外の料金は学校へ確認する。\n\n[^6]: 170食は[市の事業計画PDF3ページ](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf#page=3)の見込み日数による例で、各家庭の年間実績ではない。家計への直接の支払減と、出生・生活への効果は別の検証対象。参考研究には[青森県の小学生家庭の分析](https://www.rieti.go.jp/jp/publications/dp/26j031.pdf)があるが、横浜の中学生への効果を確定するものではない。\n\n[^7]: [2023年2月20日、第3回こども政策強化会議](https://www.cfa.go.jp/councils/kodomo_seisaku_kyouka/Ud2PFWdX)、奥山氏への国・地方の役割についての質問と応答。発言者の問題提起であり、特定政策の効果や横浜の予算削減の実績ではない。\n\n[^8]: 表は課題と対応を比較するための編集上の整理。各行は別の判断軸で、市の決定済み計画・候補者の公約の一覧ではない。所得条件、支援対象、給食の利用状況を混同せず、同じ課題への複数の対応を比較する。\n\n[^9]: [横浜市の2025年11月国要望、PDF14ページ](https://www.city.yokohama.lg.jp/city-info/seisaku/torikumi/bunken/yobo/yobo2025.files/yobo0711.pdf#page=14)と2026年度の市の料金・予算説明。市の要望と国の実施決定は別。臨時交付金の活用を、市税のみの支出や将来年度の確定財源として扱わない。\n\n[^10]: 純増費用には保護者の実支払対象食数、既存援助の給食費分、徴収・審査等の費用、代替給付、国・県・市の財源対応が必要。物資購入事業の総額や、全生徒が一律に支払う仮定の総額を代用していない。\n\n[^11]: 横浜市[2026年度事業計画書PDF3ページ](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf#page=3)の「細事業1 中学校給食物資購入事業」は6,065,906千円。想定生徒76,000人・教職員5,000人で除すと1人当たり74,887.728…円。実績の個人別費用ではなく、計画予算を人数で割った値。細事業2の改修中小学校分219,818千円は含めていない。調理・配送等を含む給食提供全体の総費用ではない。生徒7.6万人は提供の想定人数で、無償化によって支払いが新たに減る人数とは異なる。",
+            "text": "中学校の就学援助認定者は給食費支払い不要",
             "citations": [
-              "P12",
-              "P20",
-              "P14",
-              "P21",
-              "P26",
-              "P27",
-              "P09",
-              "P25",
-              "P24",
-              "P17",
-              "P04"
+              "S3"
+            ]
+          },
+          {
+            "id": "F03",
+            "kind": "fact",
+            "text": "国の新制度は公立小学校段階、通常完全給食5,200円／月、11か月。自治体への食材費支援",
+            "citations": [
+              "S2"
+            ]
+          },
+          {
+            "id": "F04",
+            "kind": "fact",
+            "text": "小学校の食材費6,141円／月、国基準5,200円、市補填941円。中学校は市が110円／日を支援",
+            "citations": [
+              "S7"
+            ]
+          },
+          {
+            "id": "F05",
+            "kind": "fact",
+            "text": "市の上乗せ支援に2026年度は国の物価高対策の臨時交付金を活用",
+            "citations": [
+              "S1",
+              "S7"
+            ]
+          },
+          {
+            "id": "F06",
+            "kind": "fact",
+            "text": "初回申請等は審査中支払い後に認定で返金、前年末対象者は結果待ちも支払い不要",
+            "citations": [
+              "S3"
+            ]
+          },
+          {
+            "id": "F07",
+            "kind": "fact",
+            "text": "指定都市の国への提案事項案に中学校を含む制度化と安定財源を記載",
+            "citations": [
+              "S5"
+            ]
+          },
+          {
+            "id": "F08",
+            "kind": "fact",
+            "text": "中学校給食物資購入事業には給食室改修中の小学校への供給分を含む",
+            "citations": [
+              "S4"
+            ]
+          },
+          {
+            "id": "D01",
+            "kind": "fact",
+            "text": "330円×20食＝6,600円",
+            "citations": [
+              "S1"
+            ]
+          },
+          {
+            "id": "I01",
+            "kind": "analysis",
+            "text": "判断の中心を支援対象・負担の重さ・継続財源に置く",
+            "citations": [
+              "S1",
+              "S3",
+              "S7"
+            ]
+          },
+          {
+            "id": "I02",
+            "kind": "analysis",
+            "text": "既存の援助対象者に同額の現金が上乗せされるとは言えない",
+            "citations": [
+              "S1",
+              "S3"
+            ]
+          },
+          {
+            "id": "I03",
+            "kind": "analysis",
+            "text": "市独自支援と市税のみを同一視せず、食材費と総費用を分ける",
+            "citations": [
+              "S1",
+              "S2",
+              "S7"
+            ]
+          },
+          {
+            "id": "I04",
+            "kind": "analysis",
+            "text": "支援対象だけでなく立替・申請も論点。非申請の規模は未確認",
+            "citations": [
+              "S3"
+            ]
+          },
+          {
+            "id": "I05",
+            "kind": "analysis",
+            "text": "現状維持・対象を絞る援助拡充・一律0円の比較",
+            "citations": [
+              "S1",
+              "S3",
+              "S7"
+            ]
+          },
+          {
+            "id": "I06",
+            "kind": "analysis",
+            "text": "国への要請は市の各選択と併用できる。提案と決定を分ける",
+            "citations": [
+              "S5"
+            ]
+          },
+          {
+            "id": "I07",
+            "kind": "analysis",
+            "text": "追加予算は総予算では分からず、既存の家庭負担・公費・事務の変化を確認する",
+            "citations": [
+              "S1",
+              "S3",
+              "S4",
+              "S7"
+            ]
+          },
+          {
+            "id": "I08",
+            "kind": "analysis",
+            "text": "価値によって選択が異なり、対象・開始時期・追加費用・継続財源で説明を評価する",
+            "citations": [
+              "S1",
+              "S3",
+              "S4",
+              "S7"
             ]
           }
         ]
       },
       "review": {
-        "contentHash": "81227ac3b5400fd59ae607b696429d493ad82bf09920b7126fc187810815df2f",
-        "reviewer": "Codex author: v0.4.1 source and implementation verification; not independent or new human review",
-        "reviewedAt": "2026-09-08T16:50:42.377046Z",
+        "contentHash": "68797afb80182521cef2aa781b8ab33e6bdec4a16810be9f6f870dfcac3a0011",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
-            "claimId": "V041-S01",
+            "claimId": "F01",
             "verdict": "supported",
             "citationIds": [
-              "P12"
+              "S1"
             ],
-            "rationale": "P12 PDF3・7・12。政府の認識・政策目的・検討方針として帰属を明記。効果の実測としていない。"
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。2026年度。特別支援学校小学部以外・私立等へ外挿しない"
           },
           {
-            "claimId": "V041-S02",
+            "claimId": "F02",
             "verdict": "supported",
             "citationIds": [
-              "P20",
-              "P12"
+              "S3"
             ],
-            "rationale": "P20 PDF58の図表7-5とP12 PDF7。対象を予定数が理想数を下回る夫婦に限定し、原図の母数・凡例を保全。"
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。制度の説明。受給者数や効果の実測ではない"
           },
           {
-            "claimId": "V041-S03",
+            "claimId": "F03",
             "verdict": "supported",
             "citationIds": [
-              "P14",
-              "P21",
-              "P26",
-              "P27",
-              "P09"
+              "S2"
             ],
-            "rationale": "P14の実施679・予定812・回答1793から83.2％。P21 PDF21、P26料金、P27 PDF4で補助・最終負担・申請中の扱いを照合。P09は小学校段階の方針。"
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。2026年4月開始。他の既存援助制度を否定しない"
           },
           {
-            "claimId": "V041-S04",
+            "claimId": "F04",
             "verdict": "supported",
             "citationIds": [
-              "P25",
-              "P26",
-              "P24",
-              "P17",
-              "P27"
+              "S7"
             ],
-            "rationale": "P25 PDF3の170日を仮定に、P26の330円から56,100円。P17の質疑応答を発言として区別。表は複数の判断軸を示す編集整理で、確定した政策・効果としない。"
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。2026-05-18説明。食材費であり給食事業総費用ではない"
           },
           {
-            "claimId": "V041-S05",
+            "claimId": "F05",
             "verdict": "supported",
             "citationIds": [
-              "P04",
-              "P21",
-              "P26",
-              "P25",
-              "P27"
+              "S1",
+              "S7"
             ],
-            "rationale": "P04 PDF14の要望、P21 PDF21とP26の財源説明。P25 PDF3の細事業1を教職員込み81000人で除して7.49万円・60.66億円。改修中小学校・純増費用・総提供費を区別。"
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。将来の財源を保証しない"
           },
           {
-            "claimId": "V041-S06",
+            "claimId": "F06",
             "verdict": "supported",
             "citationIds": [
-              "P12",
-              "P20",
-              "P14",
-              "P21",
-              "P26",
-              "P27",
-              "P09",
-              "P25",
-              "P24",
-              "P17",
-              "P04"
+              "S3"
             ],
-            "rationale": "脚注11件と全11原資料の対応を再照合。P27の認定前立替、P24の他地域・小学生対象、P25の想定人数・事業範囲を留保として保持。"
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。2026年度。非申請者の規模や動機を推定しない"
+          },
+          {
+            "claimId": "F07",
+            "verdict": "supported",
+            "citationIds": [
+              "S5"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。案。国の決定・要請済み・市の確定公約とはしない"
+          },
+          {
+            "claimId": "F08",
+            "verdict": "supported",
+            "citationIds": [
+              "S4"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。2026年度当初計画。決算額・無償化追加額ではない"
+          },
+          {
+            "claimId": "D01",
+            "verdict": "supported",
+            "citationIds": [
+              "S1"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。20食は編集上の仮定。毎月の請求額・年間負担ではない"
+          },
+          {
+            "claimId": "I01",
+            "verdict": "supported",
+            "citationIds": [
+              "S1",
+              "S3",
+              "S7"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I02",
+            "verdict": "supported",
+            "citationIds": [
+              "S1",
+              "S3"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I03",
+            "verdict": "supported",
+            "citationIds": [
+              "S1",
+              "S2",
+              "S7"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I04",
+            "verdict": "supported",
+            "citationIds": [
+              "S3"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I05",
+            "verdict": "supported",
+            "citationIds": [
+              "S1",
+              "S3",
+              "S7"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I06",
+            "verdict": "supported",
+            "citationIds": [
+              "S5"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I07",
+            "verdict": "supported",
+            "citationIds": [
+              "S1",
+              "S3",
+              "S4",
+              "S7"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
+          },
+          {
+            "claimId": "I08",
+            "verdict": "supported",
+            "citationIds": [
+              "S1",
+              "S3",
+              "S4",
+              "S7"
+            ],
+            "rationale": "制作時の原資料照合と意味の自己点検を記録。比較のための編集上の整理。効果の実測や採用済み政策ではない"
           }
         ],
         "humanApproval": {
-          "approver": "user: adopted exact v0.4.1 manuscript; inherited publication authorization recorded now, implementation not human-reviewed",
-          "contentHash": "81227ac3b5400fd59ae607b696429d493ad82bf09920b7126fc187810815df2f",
-          "approvedAt": "2026-09-08T16:50:42.377046Z"
+          "approver": "user: reviewed first version and explicitly authorized production publication",
+          "contentHash": "68797afb80182521cef2aa781b8ab33e6bdec4a16810be9f6f870dfcac3a0011",
+          "approvedAt": "2026-09-06T17:31:50.018298Z"
         }
       },
       "authorization": {
         "kind": "user_publication_instruction",
         "instruction": "本番に出してよいです。",
-        "scope": "STATUS 2026-09-09に引き継がれた給食v0.4.1の採用と、既存記事の改善・順次公開の継続委任。利用者検証や実装の人間レビューを示さない。",
+        "scope": "ユーザーが確認した給食費ページ初版の本番公開。独立した事実確認の完了を意味しない。",
         "recordedAt": "2026-09-06T17:31:50.018298Z"
       },
       "route": "/issues/school-lunch/",
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
@@ -516,28 +671,7 @@
           "verifiedAt": "2026-09-06T18:00:46.769639Z",
           "productionE2E": "46 passed"
         }
-      ],
-      "manuscriptPath": "docs/content-review/school-lunch/DRAFT.md",
-      "adoption": {
-        "manuscriptSha256": "db267182f431dbf96bc48ccde8b85e21d1afdf3370878c96f963f8322593cf05",
-        "version": "v0.4.1",
-        "basis": "User adopted with OK!!!!!, recorded in docs/STATUS.md 2026-09-09 handoff; current user requested resumption.",
-        "recordedAt": "2026-09-08T16:50:42.377046Z",
-        "userEventDate": "2026-09-09",
-        "exactUserEventTime": "not_recorded",
-        "implementationHumanReview": "not_performed",
-        "humanApprovalTimestampMeaning": "Time this inherited manuscript adoption was recorded against the implementation; not a new user review event."
-      },
-      "revisionReview": {
-        "recordedAt": "2026-09-08T16:50:42.377046Z",
-        "previousContentHash": "68797afb80182521cef2aa781b8ab33e6bdec4a16810be9f6f870dfcac3a0011",
-        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
-        "scope": "Adopted manuscript implementation",
-        "humanReview": "No new human review of implementation",
-        "independentReview": "completed_limited_scope",
-        "independentReviewRecord": "docs/content-review/school-lunch/implementation-review-v0.4.1.json",
-        "independentReviewedContentHash": "81227ac3b5400fd59ae607b696429d493ad82bf09920b7126fc187810815df2f"
-      }
+      ]
     },
     {
       "id": "city-governance",
@@ -580,7 +714,7 @@
         }
       ],
       "article": {
-        "contentHash": "c82d0e042a0325c92263409419e82119ef0399f9627d4f19c9b6c992f25d6b6c",
+        "contentHash": "35c388c9f904b3c481d263248ef5f8f36a4f475ab8cb157bf147dec2b18f1b5c",
         "claims": [
           {
             "id": "city-governance-01",
@@ -647,9 +781,9 @@
         ]
       },
       "review": {
-        "contentHash": "c82d0e042a0325c92263409419e82119ef0399f9627d4f19c9b6c992f25d6b6c",
-        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
-        "reviewedAt": "2026-09-08T16:46:02.385655Z",
+        "contentHash": "35c388c9f904b3c481d263248ef5f8f36a4f475ab8cb157bf147dec2b18f1b5c",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "city-governance-01",
@@ -716,7 +850,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "c82d0e042a0325c92263409419e82119ef0399f9627d4f19c9b6c992f25d6b6c",
+          "contentHash": "35c388c9f904b3c481d263248ef5f8f36a4f475ab8cb157bf147dec2b18f1b5c",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -730,8 +864,11 @@
         "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
@@ -861,15 +998,7 @@
           "verifiedAt": "2026-09-07T01:12:42.617880Z",
           "productionE2E": "54 passed"
         }
-      ],
-      "revisionReview": {
-        "recordedAt": "2026-09-08T16:46:02.385655Z",
-        "previousContentHash": "35c388c9f904b3c481d263248ef5f8f36a4f475ab8cb157bf147dec2b18f1b5c",
-        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
-        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
-        "humanReview": "No new human review of implementation",
-        "independentReview": "not_performed"
-      }
+      ]
     },
     {
       "id": "city-budget",
@@ -912,7 +1041,7 @@
         }
       ],
       "article": {
-        "contentHash": "f24069bb7e9afcf26a8a0a5c43184cc55a85d6d55a2c46525fb7a1aaba45dff4",
+        "contentHash": "3b7605b17b0d875f2e6ff3756781f279cb4737fc2b0ce79ef22526da575db45b",
         "claims": [
           {
             "id": "city-budget-01",
@@ -978,9 +1107,9 @@
         ]
       },
       "review": {
-        "contentHash": "f24069bb7e9afcf26a8a0a5c43184cc55a85d6d55a2c46525fb7a1aaba45dff4",
-        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
-        "reviewedAt": "2026-09-08T16:46:02.385655Z",
+        "contentHash": "3b7605b17b0d875f2e6ff3756781f279cb4737fc2b0ce79ef22526da575db45b",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "city-budget-01",
@@ -1046,7 +1175,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "f24069bb7e9afcf26a8a0a5c43184cc55a85d6d55a2c46525fb7a1aaba45dff4",
+          "contentHash": "3b7605b17b0d875f2e6ff3756781f279cb4737fc2b0ce79ef22526da575db45b",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1060,8 +1189,11 @@
         "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
@@ -1190,15 +1322,7 @@
           "verifiedAt": "2026-09-07T01:12:42.617880Z",
           "productionE2E": "54 passed"
         }
-      ],
-      "revisionReview": {
-        "recordedAt": "2026-09-08T16:46:02.385655Z",
-        "previousContentHash": "3b7605b17b0d875f2e6ff3756781f279cb4737fc2b0ce79ef22526da575db45b",
-        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
-        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
-        "humanReview": "No new human review of implementation",
-        "independentReview": "not_performed"
-      }
+      ]
     },
     {
       "id": "green-expo",
@@ -1241,7 +1365,7 @@
         }
       ],
       "article": {
-        "contentHash": "2eb16c0efd4a8a19ff76b820880b67651254d3a03796db8a492fae44ec362e08",
+        "contentHash": "6d2b1c85176ee07b58ed39bf9adb4d5fa56b3e3c863286c65392ec9df4780744",
         "claims": [
           {
             "id": "green-expo-01",
@@ -1307,9 +1431,9 @@
         ]
       },
       "review": {
-        "contentHash": "2eb16c0efd4a8a19ff76b820880b67651254d3a03796db8a492fae44ec362e08",
-        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
-        "reviewedAt": "2026-09-08T16:46:02.385655Z",
+        "contentHash": "6d2b1c85176ee07b58ed39bf9adb4d5fa56b3e3c863286c65392ec9df4780744",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "green-expo-01",
@@ -1375,7 +1499,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "2eb16c0efd4a8a19ff76b820880b67651254d3a03796db8a492fae44ec362e08",
+          "contentHash": "6d2b1c85176ee07b58ed39bf9adb4d5fa56b3e3c863286c65392ec9df4780744",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1389,8 +1513,11 @@
         "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
@@ -1519,15 +1646,7 @@
           "verifiedAt": "2026-09-07T01:12:42.617880Z",
           "productionE2E": "54 passed"
         }
-      ],
-      "revisionReview": {
-        "recordedAt": "2026-09-08T16:46:02.385655Z",
-        "previousContentHash": "6d2b1c85176ee07b58ed39bf9adb4d5fa56b3e3c863286c65392ec9df4780744",
-        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
-        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
-        "humanReview": "No new human review of implementation",
-        "independentReview": "not_performed"
-      }
+      ]
     },
     {
       "id": "local-mobility",
@@ -1570,7 +1689,7 @@
         }
       ],
       "article": {
-        "contentHash": "846b8393a67066fec153c536550c9150d740c0d2db447849b8565e373aff065a",
+        "contentHash": "14b7a6a01710c68b0ba1dd75fe12187f4f92c896e1adc4cf3616d3d3d482d885",
         "claims": [
           {
             "id": "local-mobility-01",
@@ -1627,9 +1746,9 @@
         ]
       },
       "review": {
-        "contentHash": "846b8393a67066fec153c536550c9150d740c0d2db447849b8565e373aff065a",
-        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
-        "reviewedAt": "2026-09-08T16:46:02.385655Z",
+        "contentHash": "14b7a6a01710c68b0ba1dd75fe12187f4f92c896e1adc4cf3616d3d3d482d885",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "local-mobility-01",
@@ -1686,7 +1805,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "846b8393a67066fec153c536550c9150d740c0d2db447849b8565e373aff065a",
+          "contentHash": "14b7a6a01710c68b0ba1dd75fe12187f4f92c896e1adc4cf3616d3d3d482d885",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1700,8 +1819,11 @@
         "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
@@ -1821,15 +1943,7 @@
           "verifiedAt": "2026-09-07T01:12:42.617880Z",
           "productionE2E": "54 passed"
         }
-      ],
-      "revisionReview": {
-        "recordedAt": "2026-09-08T16:46:02.385655Z",
-        "previousContentHash": "14b7a6a01710c68b0ba1dd75fe12187f4f92c896e1adc4cf3616d3d3d482d885",
-        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
-        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
-        "humanReview": "No new human review of implementation",
-        "independentReview": "not_performed"
-      }
+      ]
     },
     {
       "id": "childcare-access",
@@ -1891,7 +2005,7 @@
         }
       ],
       "article": {
-        "contentHash": "68c9aaa6b151487ea05cea05e6600e61d85f120c27e180a6fa68b212c4b8d205",
+        "contentHash": "ad42d7d92df54285675efb9da5e91faa623b4591e83631a5a17fe485f7e8809c",
         "claims": [
           {
             "id": "childcare-access-01",
@@ -1949,9 +2063,9 @@
         ]
       },
       "review": {
-        "contentHash": "68c9aaa6b151487ea05cea05e6600e61d85f120c27e180a6fa68b212c4b8d205",
-        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
-        "reviewedAt": "2026-09-08T16:46:02.385655Z",
+        "contentHash": "ad42d7d92df54285675efb9da5e91faa623b4591e83631a5a17fe485f7e8809c",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "childcare-access-01",
@@ -2009,7 +2123,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "68c9aaa6b151487ea05cea05e6600e61d85f120c27e180a6fa68b212c4b8d205",
+          "contentHash": "ad42d7d92df54285675efb9da5e91faa623b4591e83631a5a17fe485f7e8809c",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -2023,8 +2137,11 @@
         "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
@@ -2158,15 +2275,7 @@
           "verifiedAt": "2026-09-07T01:12:42.617880Z",
           "productionE2E": "54 passed"
         }
-      ],
-      "revisionReview": {
-        "recordedAt": "2026-09-08T16:46:02.385655Z",
-        "previousContentHash": "ad42d7d92df54285675efb9da5e91faa623b4591e83631a5a17fe485f7e8809c",
-        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
-        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
-        "humanReview": "No new human review of implementation",
-        "independentReview": "not_performed"
-      }
+      ]
     },
     {
       "id": "school-shelters",
@@ -2209,7 +2318,7 @@
         }
       ],
       "article": {
-        "contentHash": "3515576c3f721188dfdb71ae31165c86d96ff6c14d1539bbd844dcaf62a7e541",
+        "contentHash": "8d78ae060c1971a9f550200db8cd270e8fde2fcfb9deb8f5c08e4ee438024390",
         "claims": [
           {
             "id": "school-shelters-01",
@@ -2265,9 +2374,9 @@
         ]
       },
       "review": {
-        "contentHash": "3515576c3f721188dfdb71ae31165c86d96ff6c14d1539bbd844dcaf62a7e541",
-        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
-        "reviewedAt": "2026-09-08T16:46:02.385655Z",
+        "contentHash": "8d78ae060c1971a9f550200db8cd270e8fde2fcfb9deb8f5c08e4ee438024390",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "school-shelters-01",
@@ -2323,7 +2432,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "3515576c3f721188dfdb71ae31165c86d96ff6c14d1539bbd844dcaf62a7e541",
+          "contentHash": "8d78ae060c1971a9f550200db8cd270e8fde2fcfb9deb8f5c08e4ee438024390",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -2337,8 +2446,11 @@
         "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
@@ -2457,15 +2569,7 @@
           "verifiedAt": "2026-09-07T01:12:42.617880Z",
           "productionE2E": "54 passed"
         }
-      ],
-      "revisionReview": {
-        "recordedAt": "2026-09-08T16:46:02.385655Z",
-        "previousContentHash": "8d78ae060c1971a9f550200db8cd270e8fde2fcfb9deb8f5c08e4ee438024390",
-        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
-        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
-        "humanReview": "No new human review of implementation",
-        "independentReview": "not_performed"
-      }
+      ]
     },
     {
       "id": "mayor-2026",
@@ -2508,7 +2612,7 @@
         }
       ],
       "article": {
-        "contentHash": "652c797d92e0080fe17979d69c8d388f6e21dfb231d3287191d28346cdd65f98",
+        "contentHash": "484928830822bea81bd03655dd9ba71b0e5620980b14b876f7b7e5d59b3c64a0",
         "claims": [
           {
             "id": "election-date",
@@ -2531,9 +2635,9 @@
         ]
       },
       "review": {
-        "contentHash": "652c797d92e0080fe17979d69c8d388f6e21dfb231d3287191d28346cdd65f98",
-        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
-        "reviewedAt": "2026-09-08T16:46:02.385655Z",
+        "contentHash": "484928830822bea81bd03655dd9ba71b0e5620980b14b876f7b7e5d59b3c64a0",
+        "reviewer": "Codex author integration review; manuscript byte equality checked against design 9dad8b5; not independent review",
+        "reviewedAt": "2026-09-07T08:03:40.965550Z",
         "findings": [
           {
             "claimId": "election-date",
@@ -2556,7 +2660,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "652c797d92e0080fe17979d69c8d388f6e21dfb231d3287191d28346cdd65f98",
+          "contentHash": "484928830822bea81bd03655dd9ba71b0e5620980b14b876f7b7e5d59b3c64a0",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -2570,8 +2674,11 @@
         "currentChangeInstruction": "ユーザー指定の旧人口・世帯・密度3記事を撤去し、サイトの意図に沿って全体の問いと優先順位を再構成する。既存の公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_verified_local",
-        "publication": "revision_not_published"
+        "implementation": "implemented_production",
+        "independentReview": "not_performed",
+        "userValidation": "not_performed",
+        "formatAdoption": "provisional_not_sitewide",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "04e55884-3bc0-46d8-8f1e-85b521f35e0d",
@@ -2674,15 +2781,7 @@
           "verifiedAt": "2026-09-07T01:46:33.812470Z",
           "productionE2E": "54 passed"
         }
-      ],
-      "revisionReview": {
-        "recordedAt": "2026-09-08T16:46:02.385655Z",
-        "previousContentHash": "484928830822bea81bd03655dd9ba71b0e5620980b14b876f7b7e5d59b3c64a0",
-        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
-        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
-        "humanReview": "No new human review of implementation",
-        "independentReview": "not_performed"
-      }
+      ]
     }
   ]
 }

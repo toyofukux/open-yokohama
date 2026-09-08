@@ -1,0 +1,532 @@
+{
+  "schemaVersion": 1,
+  "issueId": "school-lunch-fee-yokohama",
+  "artifactType": "content_design_evidence",
+  "status": "design_review_pending_not_manuscript",
+  "checkedOn": "2026-09-08",
+  "designPath": "docs/REDESIGN-PLAN.md",
+  "designSection": "6.8",
+  "sources": [
+    {
+      "id": "P01",
+      "title": "こども未来戦略方針2023-06-13",
+      "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/9e8847f4-d283-479c-856f-353660141618/c92a42dc/20231109_councils_shienkin-daijinkonwakai_9e8847f4_03.pdf",
+      "resolvedUrl": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/9e8847f4-d283-479c-856f-353660141618/c92a42dc/20231109_councils_shienkin-daijinkonwakai_9e8847f4_03.pdf",
+      "sha256": "0396ff963595a502f0742f0607f83ae7354c3a72af48020df36657ca07012287",
+      "bytes": 731538,
+      "localPath": "artifacts/school-lunch-design/0396ff963595a502f0742f0607f83ae7354c3a72af48020df36657ca07012287.pdf",
+      "retrievedAt": "2026-09-08T07:59:36.929281+00:00",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "P02",
+      "title": "自民党・三党合意説明2025-02-26",
+      "url": "https://www.jimin.jp/news/information/210041.html",
+      "resolvedUrl": "https://www.jimin.jp/news/information/210041.html",
+      "sha256": "2433cbf010558c26bd53ab9db605a371446d34654989db4e9bc2771f34bde297",
+      "bytes": 60029,
+      "localPath": "artifacts/school-lunch-design/2433cbf010558c26bd53ab9db605a371446d34654989db4e9bc2771f34bde297.html",
+      "retrievedAt": "2026-09-08T07:59:36.825828+00:00",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "P03",
+      "title": "維新・三党合意説明2025-02-25",
+      "url": "https://o-ishin.jp/news/2025/02/25/16655.html",
+      "resolvedUrl": "https://o-ishin.jp/news/2025/02/25/16655.html",
+      "sha256": "52063f2feef9663f76ce302d947f0ffee0574ef384da34c9fdb0cc35592c8409",
+      "bytes": 25087,
+      "localPath": "artifacts/school-lunch-design/52063f2feef9663f76ce302d947f0ffee0574ef384da34c9fdb0cc35592c8409.html",
+      "retrievedAt": "2026-09-08T07:59:36.722454+00:00",
+      "contentType": "text/html"
+    },
+    {
+      "id": "P04",
+      "title": "横浜市国要望2025秋",
+      "url": "https://www.city.yokohama.lg.jp/city-info/seisaku/torikumi/bunken/yobo/yobo2025.files/yobo0711.pdf",
+      "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/seisaku/torikumi/bunken/yobo/yobo2025.files/yobo0711.pdf",
+      "sha256": "2fc966d970c83debea27438432a7f8ff22b4d436c6e408f3ff60707b12096d63",
+      "bytes": 5472962,
+      "localPath": "artifacts/school-lunch-design/2fc966d970c83debea27438432a7f8ff22b4d436c6e408f3ff60707b12096d63.pdf",
+      "retrievedAt": "2026-09-08T07:59:37.026687+00:00",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "P05",
+      "title": "横浜市長選挙公報2025",
+      "url": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/kako_senkyokoho.files/r7shichousenkyokouhou.pdf",
+      "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/kako_senkyokoho.files/r7shichousenkyokouhou.pdf",
+      "sha256": "b671ee94e56c31d0f5c7faab4edd9f1c4093a7fa18a0f950fc09634f00f7e1b0",
+      "bytes": 1726782,
+      "localPath": "artifacts/school-lunch-design/b671ee94e56c31d0f5c7faab4edd9f1c4093a7fa18a0f950fc09634f00f7e1b0.pdf",
+      "retrievedAt": "2026-09-08T07:59:37.126677+00:00",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "P06",
+      "title": "CPI2024年報",
+      "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040263552",
+      "resolvedUrl": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040263552",
+      "sha256": "659d77472f59b4e65384a76026ca5a724d0baf927ef2723491391874db5441a8",
+      "bytes": 678826,
+      "localPath": "artifacts/school-lunch-design/659d77472f59b4e65384a76026ca5a724d0baf927ef2723491391874db5441a8.pdf",
+      "retrievedAt": "2026-09-08T07:59:38.056111+00:00",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "P07",
+      "title": "横浜市長予算会見2026-01-26",
+      "url": "https://www.city.yokohama.lg.jp/mayor/kishakaiken/kaikenyoshi/2025/20260126.html",
+      "resolvedUrl": "https://www.city.yokohama.lg.jp/mayor/kishakaiken/kaikenyoshi/2025/20260126.html",
+      "sha256": "de21a3ff0bcdbae5b3a7bbd5f8d85faafdf75975c5b8c9d496257b810343e314",
+      "bytes": 121648,
+      "localPath": "artifacts/school-lunch-design/de21a3ff0bcdbae5b3a7bbd5f8d85faafdf75975c5b8c9d496257b810343e314.html",
+      "retrievedAt": "2026-09-08T07:59:37.162340+00:00",
+      "contentType": "text/html"
+    },
+    {
+      "id": "P08",
+      "title": "給食法改正案の国会審議情報",
+      "url": "https://www.sangiin.go.jp/japanese/joho1/kousei/gian/218/meisai/m218090216025.htm",
+      "resolvedUrl": "https://www.sangiin.go.jp/japanese/joho1/kousei/gian/218/meisai/m218090216025.htm",
+      "sha256": "bba3dad430c6dcc3456713f35a47f60a4bdf309f39eb008ddc6dd3fdb607f753",
+      "bytes": 13701,
+      "localPath": "artifacts/school-lunch-design/bba3dad430c6dcc3456713f35a47f60a4bdf309f39eb008ddc6dd3fdb607f753.html",
+      "retrievedAt": "2026-09-08T07:59:37.189491+00:00",
+      "contentType": "text/html"
+    },
+    {
+      "id": "P09",
+      "title": "三省対応方針2025-12-19",
+      "url": "https://www.mof.go.jp/about_mof/act/kokuji_tsuutatsu/tsuutatsu/251219.html",
+      "resolvedUrl": "https://www.mof.go.jp/about_mof/act/kokuji_tsuutatsu/tsuutatsu/251219.html",
+      "sha256": "8af58eda42338c814db2b48f1e58833b223d0e5e413d1ec89d465670425711dd",
+      "bytes": 39069,
+      "localPath": "artifacts/school-lunch-design/8af58eda42338c814db2b48f1e58833b223d0e5e413d1ec89d465670425711dd.html",
+      "retrievedAt": "2026-09-08T08:06:17.748510+00:00",
+      "contentType": "text/html"
+    },
+    {
+      "id": "P10",
+      "title": "立憲民主党・三党共同法案提出2024-12-23",
+      "url": "https://cdp-japan.jp/news/20241223_8649",
+      "resolvedUrl": "https://cdp-japan.jp/news/20241223_8649",
+      "sha256": "5b44714b473467867e89668f54f1d94455680209b989acf9aa501fc5c697b647",
+      "bytes": 37992,
+      "localPath": "artifacts/school-lunch-design/5b44714b473467867e89668f54f1d94455680209b989acf9aa501fc5c697b647.html",
+      "retrievedAt": "2026-09-08T08:06:17.842572+00:00",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "P11",
+      "title": "2025-02-25三党合意・文科省参考資料4（抜粋）",
+      "url": "https://www.mext.go.jp/content/20251219-mxt_soseisk01-000046461_08.pdf",
+      "localPath": "artifacts/school-lunch-revision/f141710afbf58d41e753c273f16697b12c3a80b881661c83e8d0d687afdf4315.pdf",
+      "sha256": "f141710afbf58d41e753c273f16697b12c3a80b881661c83e8d0d687afdf4315",
+      "bytes": 294859,
+      "inspection": "全3ページを画像で確認。給食はp1・p3、予算修正・成立はp3。取得日時は既存原資料記録を参照。"
+    },
+    {
+      "id": "P12",
+      "title": "こども・子育て政策の強化について（試案）2023-03-31",
+      "url": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/81755c56-2756-427b-a0a6-919a8ef07fb5/2eaccd0d/20230402_policies_01.pdf",
+      "resolvedUrl": "https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/81755c56-2756-427b-a0a6-919a8ef07fb5/2eaccd0d/20230402_policies_01.pdf",
+      "sha256": "1e3d75f8f4ceb14a641ea79b073e7a733d780cfb9ffff76483af0a85bf4312db",
+      "bytes": 268761,
+      "localPath": "artifacts/school-lunch-design/1e3d75f8f4ceb14a641ea79b073e7a733d780cfb9ffff76483af0a85bf4312db.pdf",
+      "retrievedAt": "2026-09-08T08:17:39.734327+00:00",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "P13",
+      "title": "文部省・学制百年史：学校給食の普及・奨励",
+      "url": "https://www.mext.go.jp/b_menu/hakusho/html/others/detail/1317788.htm",
+      "resolvedUrl": "https://www.mext.go.jp/b_menu/hakusho/html/others/detail/1317788.htm",
+      "sha256": "8d031c33c4e249a00cbbeafedf7840e46df57dd04acaae1566794e9464c657aa",
+      "bytes": 7818,
+      "localPath": "artifacts/school-lunch-design/8d031c33c4e249a00cbbeafedf7840e46df57dd04acaae1566794e9464c657aa.html",
+      "retrievedAt": "2026-09-08T08:17:39.899663+00:00",
+      "contentType": "text/html"
+    },
+    {
+      "id": "P14",
+      "title": "文科省・2022年物価高騰対応の給食費負担軽減調査",
+      "url": "https://www.mext.go.jp/b_menu/houdou/mext_01110.html",
+      "resolvedUrl": "https://www.mext.go.jp/b_menu/houdou/mext_01110.html",
+      "sha256": "0528cb84d0c80edbb49cd2110d1e507f736e5add4777a17a238df3763ccb871e",
+      "bytes": 8931,
+      "localPath": "artifacts/school-lunch-design/0528cb84d0c80edbb49cd2110d1e507f736e5add4777a17a238df3763ccb871e.html",
+      "retrievedAt": "2026-09-08T08:17:39.992002+00:00",
+      "contentType": "text/html"
+    },
+    {
+      "id": "P15",
+      "title": "文科省・給食無償化に関する課題の整理（2024年12月27日）",
+      "url": "https://www.mext.go.jp/content/20241227-mxt_kenshoku-000039428_1.pdf",
+      "sha256": "ce7eea0341eeb46f6cc4a97bc337d7271bd749de52a3de05e8a1101a07a5bb6e",
+      "bytes": 511786,
+      "localPath": "artifacts/school-lunch-revision/ce7eea0341eeb46f6cc4a97bc337d7271bd749de52a3de05e8a1101a07a5bb6e.pdf",
+      "retrievedAt": "2026-09-08T05:54:10.592982+00:00",
+      "resolvedUrl": "https://www.mext.go.jp/content/20241227-mxt_kenshoku-000039428_1.pdf",
+      "contentType": "application/pdf",
+      "reusedFrom": "evidence-v0.2.json:S9"
+    },
+    {
+      "id": "P17",
+      "title": "第3回こども政策強化会議・2023-02-20",
+      "url": "https://www.cfa.go.jp/councils/kodomo_seisaku_kyouka/Ud2PFWdX",
+      "resolvedUrl": "https://www.cfa.go.jp/councils/kodomo_seisaku_kyouka/Ud2PFWdX",
+      "sha256": "3592f44ca3442237c3a82b67a8f6d02baedb130dbeeb4a9a960c9d549f4dbfc0",
+      "bytes": 80222,
+      "localPath": "artifacts/school-lunch-design/3592f44ca3442237c3a82b67a8f6d02baedb130dbeeb4a9a960c9d549f4dbfc0.html",
+      "retrievedAt": "2026-09-08T08:42:41.502876+00:00",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "P19",
+      "title": "第6回こども政策強化会議・2023-03-31",
+      "url": "https://www.cfa.go.jp/councils/kodomo_seisaku_kyouka/6JR1tAoV",
+      "resolvedUrl": "https://www.cfa.go.jp/councils/kodomo_seisaku_kyouka/6JR1tAoV",
+      "sha256": "dc2692d47fac327b7db2d4ff132166bd21d392b31ae950849167a32a26933c13",
+      "bytes": 65390,
+      "localPath": "artifacts/school-lunch-design/dc2692d47fac327b7db2d4ff132166bd21d392b31ae950849167a32a26933c13.html",
+      "retrievedAt": "2026-09-08T08:42:41.501660+00:00",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "P20",
+      "title": "第16回出生動向基本調査・2022年結果概要",
+      "url": "https://www.ipss.go.jp/ps-doukou/j/doukou16/JNFS16gaiyo.pdf",
+      "resolvedUrl": "https://www.ipss.go.jp/ps-doukou/j/doukou16/JNFS16gaiyo.pdf",
+      "sha256": "881ae4a052fc9bbb6c29aa197bf43e446c63d9b82b7e28ed14fb24fa755d8731",
+      "bytes": 5316478,
+      "localPath": "artifacts/school-lunch-design/881ae4a052fc9bbb6c29aa197bf43e446c63d9b82b7e28ed14fb24fa755d8731.pdf",
+      "retrievedAt": "2026-09-08T08:57:55.646766+00:00",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "P21",
+      "title": "横浜市教育委員会2026年度予算概要・5月版",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf",
+      "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf",
+      "sha256": "9300c910bcca2e6b9dee56a0196eef82a357610d895b71ab498085ca1c6b276a",
+      "bytes": 7798744,
+      "localPath": "artifacts/school-lunch-design/9300c910bcca2e6b9dee56a0196eef82a357610d895b71ab498085ca1c6b276a.pdf",
+      "retrievedAt": "2026-09-08T08:56:55.085894+00:00",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "P23",
+      "title": "横浜市2026年度就学奨励費事業計画",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0214_20260126.pdf",
+      "sha256": "be6adef950569ef4fb7e66e79d4d91cb9c8c2d55da2ee3e58775d806d9fc45ac",
+      "bytes": 917530,
+      "localPath": "artifacts/school-lunch-design/be6adef950569ef4fb7e66e79d4d91cb9c8c2d55da2ee3e58775d806d9fc45ac.pdf",
+      "retrievedAt": "2026-09-08T08:58:12.566181+00:00",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "P24",
+      "title": "佐藤・中室2026 RIETI DP26-J-031",
+      "url": "https://www.rieti.go.jp/jp/publications/dp/26j031.pdf",
+      "sha256": "03fee3b784aad767922ee3719470f5f6ef919cc07cdf8d15589e9dd2976b3bb2",
+      "bytes": 920885,
+      "localPath": "artifacts/school-lunch-design/03fee3b784aad767922ee3719470f5f6ef919cc07cdf8d15589e9dd2976b3bb2.pdf",
+      "retrievedAt": "2026-09-08T09:00:14.560743+00:00"
+    },
+    {
+      "id": "P25",
+      "title": "横浜市・令和8年度学校給食物資購入費事業計画書",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf",
+      "sha256": "e47b8ed376800ba809181c9484dc7e1c25632c7594a7e72d830111b0dfe7ac6f",
+      "bytes": 200538,
+      "localPath": "artifacts/school-lunch-revision/e47b8ed376800ba809181c9484dc7e1c25632c7594a7e72d830111b0dfe7ac6f.pdf",
+      "retrievedAt": "2026-09-08T05:54:06.863561+00:00",
+      "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf",
+      "contentType": "application/pdf",
+      "reusedFrom": "evidence-v0.2.json:S4"
+    },
+    {
+      "id": "P26",
+      "title": "横浜市・学校給食費",
+      "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/sesaku/kyusyoku/kyushokuhi.html",
+      "sha256": "dbeed09f01fa5b9196d8d9bbeb29f2dfdbd7e60be731706e3d2b31b1693f8d3d",
+      "bytes": 53157,
+      "localPath": "artifacts/school-lunch-revision/dbeed09f01fa5b9196d8d9bbeb29f2dfdbd7e60be731706e3d2b31b1693f8d3d.html",
+      "retrievedAt": "2026-09-08T05:54:06.661067+00:00",
+      "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/sesaku/kyusyoku/kyushokuhi.html",
+      "contentType": "text/html",
+      "reusedFrom": "evidence-v0.2.json:S1"
+    },
+    {
+      "id": "P27",
+      "title": "横浜市・令和8年度就学援助のお知らせ",
+      "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.files/0119_20260403.pdf",
+      "sha256": "36268c3e2266d5b5ec9703e6c41fe33bd4241ea663e19ba4aa5821e60527d66c",
+      "bytes": 1297735,
+      "localPath": "artifacts/school-lunch-revision/36268c3e2266d5b5ec9703e6c41fe33bd4241ea663e19ba4aa5821e60527d66c.pdf",
+      "retrievedAt": "2026-09-08T05:54:06.887124+00:00",
+      "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.files/0119_20260403.pdf",
+      "contentType": "application/pdf",
+      "reusedFrom": "evidence-v0.2.json:S3"
+    }
+  ],
+  "claims": [
+    {
+      "id": "T01",
+      "sourceIds": [
+        "P01"
+      ],
+      "locator": "PDF9・冊子7頁",
+      "statement": "2023年6月13日閣議決定が給食費無償化に向けた調査・検討を記載",
+      "kind": "政策方針",
+      "limits": "実施開始の決定でも発案の起源の特定でもない"
+    },
+    {
+      "id": "T02",
+      "sourceIds": [
+        "P06"
+      ],
+      "locator": "PDF29・表5-3、横浜市/食料",
+      "statement": "2024年横浜市食料CPI前年比4.6％上昇",
+      "kind": "統計",
+      "limits": "価格指数。個々の家庭の支出変化、2023年政策の原因ではない"
+    },
+    {
+      "id": "T03",
+      "sourceIds": [
+        "P08",
+        "P10"
+      ],
+      "locator": "議案提出年月日／政党記事2024-12-23",
+      "statement": "立憲・維新・国民民主の共同提出と立憲が説明した目的",
+      "kind": "提出・当事者の説明",
+      "limits": "成立・実施・効果を意味しない"
+    },
+    {
+      "id": "T04",
+      "sourceIds": [
+        "P11",
+        "P02",
+        "P03"
+      ],
+      "locator": "P11 PDF1のI②、PDF3のV",
+      "statement": "小学校2026年度、続く中学校拡大と、2025年度予算等の修正・年度内早期成立が同じ三党合意にある",
+      "kind": "公表された政治的合意",
+      "limits": "有権者の投票動機、給食費が唯一の交渉条件だったことは未確認"
+    },
+    {
+      "id": "T05",
+      "sourceIds": [
+        "P05"
+      ],
+      "locator": "全2頁・各候補者欄を画像で確認",
+      "statement": "全員給食・給食費無償化・調理方式が別の訴えとして記載される",
+      "kind": "選挙公報",
+      "limits": "全公約の網羅でも、個人の投票理由の証明でもない"
+    },
+    {
+      "id": "T06",
+      "sourceIds": [
+        "P04"
+      ],
+      "locator": "PDF14・冊子11頁、項目6",
+      "statement": "2025年11月、市が全額国費を要望し国費半額の仮定なら市費最大約60億円と試算",
+      "kind": "当時の条件付き試算",
+      "limits": "中学校のみの追加費用、2026年の確定市費、実際の削減額ではない"
+    },
+    {
+      "id": "T07",
+      "sourceIds": [
+        "P09"
+      ],
+      "locator": "第2節の趣旨・対象・基準額・実施方法",
+      "statement": "2025年12月19日方針は子育て支援として公立小学校段階・所得不問・基準月5200円、学校給食法改正によらない予算補助",
+      "kind": "制度設計方針",
+      "limits": "単独では予算議決・実施の証拠にならず、全国一律完全無料でもない"
+    },
+    {
+      "id": "T08",
+      "sourceIds": [
+        "P07"
+      ],
+      "locator": "商品券配布・給食費軽減・商品券補助を選んだ理由への応答",
+      "statement": "市長が交付金の推奨メニュー、生活者支援、公平性、迅速性、事務コスト等を説明",
+      "kind": "当事者が公表した選定理由",
+      "limits": "三施策についての説明。効果評価や給食だけの政治判断の全体を示さない"
+    },
+    {
+      "id": "T09",
+      "sourceIds": [
+        "P13"
+      ],
+      "locator": "学校給食の普及・奨励、第4段落（ところが、二十六年…）",
+      "statement": "学制百年史は援助打切り・補助縮小に伴う負担増と給食中止を、法制化の気運が高まる経緯として説明する",
+      "kind": "後年の公式史による経緯の説明",
+      "limits": "当時の法案審議は未照合。現代の無償化議論の唯一の発端ではない"
+    },
+    {
+      "id": "T10",
+      "sourceIds": [
+        "P15"
+      ],
+      "locator": "PDF4・冊子3頁、1970年2月28日答申の再録",
+      "statement": "審議会答申は従来の費用分担を支持しつつ、児童手当等の社会政策に関連した公費負担の議論は検討範囲外とした",
+      "kind": "同時代の答申の後年再録",
+      "limits": "答申の再録を確認。当時の議事録と原本の照合は未実施。今日の費用分担の妥当性を自動的に支持する根拠としない"
+    },
+    {
+      "id": "T11",
+      "sourceIds": [
+        "P14"
+      ],
+      "locator": "2022年9月9日公表、冒頭と基準日",
+      "statement": "物価高騰対応交付金等による給食費の保護者負担軽減について、2022年7月29日時点の取組・予定を調査",
+      "kind": "当時の行政調査",
+      "limits": "値上げ抑制と従来支払額の無償化は異なる。少子化対策への位置付けとの因果接続は未確認"
+    },
+    {
+      "id": "T12",
+      "sourceIds": [
+        "P12"
+      ],
+      "locator": "PDF3・7・12頁、はじめに・経済的負担・経済的支援の項目",
+      "statement": "2023年3月31日試案は少子化と子育て費用を課題に挙げ、給食費無償化へ向け実態把握と課題整理を記載。冒頭で関係府省会議と当事者ヒアリング等の経緯を説明",
+      "kind": "当時の政府試案",
+      "limits": "全国実施の決定ではなく、給食費支援の効果の証明でもない。関連会議で給食費が取り上げられた経緯は次の調査対象"
+    },
+    {
+      "id": "T13",
+      "sourceIds": [
+        "P17"
+      ],
+      "locator": "議事要旨（3）質疑応答・意見交換：構成員から奥山氏への国・地方のあり方の質問と応答",
+      "statement": "2023年2月20日の会議では、給食費等の経済的支援に加え地域の支援団体・担い手への支援が論点となり、奥山氏は自治体の無償化施策を含む支援全体を組み合わせて考える必要性を述べた",
+      "kind": "当時の会議での当事者の主張",
+      "limits": "発言者の主張であり政策効果の証明ではない。横浜の実際の予算削減や、試案へ給食費が採用された唯一の原因を示さない"
+    },
+    {
+      "id": "T14",
+      "sourceIds": [
+        "P19"
+      ],
+      "locator": "議事要旨（2）意見交換：学校給食無償化に向けた課題の整理への構成員の発言",
+      "statement": "2023年3月31日、試案に給食無償化が含まれた段階で、未実施自治体の存在と対象・財源の整理が課題に挙げられた",
+      "kind": "当時の会議での課題の提示",
+      "limits": "公表要旨の発言者は構成員表記。氏名を推測しない。実施の決定や当初の提案者特定には使わない"
+    },
+    {
+      "id": "T15",
+      "sourceIds": [
+        "P12",
+        "P20"
+      ],
+      "locator": "P20 PDF58–59、図表II-5-4と注記。P12 PDF7",
+      "statement": "2023年試案が引用する52.6％は、2021年に予定子ども数が理想を下回る初婚どうしの夫婦（妻50歳未満）のうち、子育て・教育費を理由に選んだ割合。回答854、複数回答、無回答除外。",
+      "kind": "当時の統計と政策資料の参照関係",
+      "limits": "全家庭の困窮割合ではなく、給食費だけへの回答でもない。出生への給食無償化の因果効果は示さない。"
+    },
+    {
+      "id": "T16",
+      "sourceIds": [
+        "P21",
+        "P25",
+        "P26"
+      ],
+      "locator": "P25 PDF3・事業概要1と財源内訳、P21 PDF21・冊子19、P26給食費(2)",
+      "statement": "現行中学校フルセット330円/食と物価対応110円/食。事業計画は生徒76000人・教職員5000人、年間170日を想定。予算概要の例示は188回。",
+      "kind": "制度の料金・別々の予算説明上の前提",
+      "limits": "人数・食数は実績ではない。170日と188回を混ぜない。110円の市上乗せは国の臨時交付金活用。"
+    },
+    {
+      "id": "T17",
+      "sourceIds": [
+        "P25",
+        "P23"
+      ],
+      "locator": "P25 PDF3・細事業2行と財源内訳、P23 PDF27–28の就学奨励費",
+      "statement": "物資購入事業は中学校分と改修中小学校への供給分を含む。就学援助事業計画と併せても、中学校の支払対象食数・給食費援助分を今回の照合箇所から分離できず、無償化の純増費用を確定できない。",
+      "kind": "会計範囲の確認・調査結果",
+      "limits": "公開資料が存在しないとは断定しない。その他収入の総額や就学援助総額を保護者負担・控除額に置換しない。"
+    },
+    {
+      "id": "T18",
+      "sourceIds": [
+        "P27"
+      ],
+      "locator": "PDF4・8-1/8-2",
+      "statement": "中学校の就学援助認定者は給食費支払い不要。新規申請等は審査中の支払いと認定後返還があり、前年末対象者とは扱いが異なる。",
+      "kind": "現行制度",
+      "limits": "支援の到達率、非申請者の人数、認定後の最終負担と一時的な立替を混同しない。"
+    },
+    {
+      "id": "T19",
+      "sourceIds": [
+        "P24"
+      ],
+      "locator": "PDF8・15・18–21・23、特にPDF19表7-2",
+      "statement": "青森県の2018・2023年の反復横断調査を使う研究が、小学生家庭の給食費無償化と親の心理的負担の変化を推定。表7-2の観測数1687、DID係数−0.86、Wild Cluster Bootstrap p=0.06。",
+      "kind": "研究による効果推定・Discussion Paper",
+      "limits": "前期間の傾向を直接検証できず、推定法による不確実性もある。横浜市の中学生への効果や出生数の増加を確定しない。心理的負担だけの費用対効果から政策全体の順位を付けない。"
+    }
+  ],
+  "verification": {
+    "performedBy": "author",
+    "method": "一次資料の本文照合。P01/P04/P05/P06/P11の該当PDFページを画像で確認。取得原本のSHA-256を保存。 追加P20 PDF58–59、P21 PDF21、P25 PDF3、P24 PDF19を画像と本文で照合。P23は就学奨励費の該当2ページを本文照合。P26/P27は同日取得済み原本を再利用。",
+    "independentReview": "not_performed",
+    "userResearch": "not_performed",
+    "adoption": "not_decided",
+    "researchScopeNote": "第2・3・5・6回の議事要旨ページを取得し局所照合。採用した主張は第3・6回の該当発言。全6回と配付資料の網羅レビューは未実施。 2023年試案の52.6％を2022年公表の原調査へ遡及。効果研究は国内1論文の関係節を照合した範囲で、体系的レビューや推定の再実行ではない。"
+  },
+  "openQuestions": [
+    "自治体の先行施策が掲げた問題と近年の国の議論との接続。唯一の発端は未特定で、本文成立のために網羅調査を必須とはしない",
+    "中学生の支払対象食数、既存給食費援助の控除、事務費・代替給付・継続財源を含む純増費用",
+    "横浜の所得層別の実負担・可処分所得比と生活への効果。条件付き算術例と実測を分ける",
+    "同一予算・使途制約で比べる他政策の費用と成果。実際の予算削減との因果は未確認",
+    "公開前の全ての採用主張について料金・予算・決定状況を再照合する",
+    "一般読者の需要、理解、操作、文量の検証と独立レビュー、構成採用"
+  ],
+  "editorialDirection": {
+    "date": "2026-09-08",
+    "basis": "ユーザー：Aが最も近い。論点の発端・当時の背景から現在の議論を説明。Bはインパクト・優先度・トレードオフ。Cは重要度が低く、政局の詳細は踏み込まなくてよい。",
+    "workingApproach": "Aを論点の背景から現在の選択へ修正し、Bの定量比較を組み込む",
+    "deprioritized": [
+      "Cの公約実現評価",
+      "得票への因果効果",
+      "実現・未実現を左右する政局の詳細"
+    ],
+    "notYetCompleted": [
+      "文章の人間レビューと修正",
+      "独立した事実確認",
+      "操作を含む最小試作と利用者検証",
+      "採用版の本番反映"
+    ]
+  },
+  "readerDesign": {
+    "section": "docs/REDESIGN-PLAN.md §6.9",
+    "status": "manuscript_variants_for_human_review",
+    "needHypothesis": "政策が何を改善するための話で、自分や地域に何が変わり、何を比較すれば考えを持てるかを知りたい",
+    "evidenceOfNeed": "ユーザーの原稿・構成への直接の指摘。一般読者の需要・適切な文量は未検証",
+    "readingOrder": [
+      "短い入口",
+      "厚い背景説明",
+      "現在地の整理",
+      "影響の具体化",
+      "厚い選択肢の説明と比較",
+      "短い着地"
+    ],
+    "provisionalCharacterBudget": {
+      "body": "約1300〜1900字",
+      "includingTableAndFigureDescriptions": "約1500〜2300字",
+      "validation": "未較正。必須説明を削る上限や全記事の共通規格ではない"
+    },
+    "authoring": "v0.3-A/Bの全文を作成。事実と試算条件を共通にし、経緯を続けて読む案と疑問ごとの案を比較。",
+    "humanValidation": "未実施",
+    "humanValidationPlan": "REVIEW.md#人間による初期検証の実行手順",
+    "manuscriptVariants": [
+      "DRAFT-v0.3-A.md",
+      "DRAFT-v0.3-B.md"
+    ]
+  },
+  "calculationArtifact": "impact-calculations.json"
+}

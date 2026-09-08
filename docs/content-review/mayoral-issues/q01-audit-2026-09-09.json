@@ -1,0 +1,217 @@
+{
+  "checkedAt": "2026-09-08T16:48:37.010173+00:00",
+  "results": [
+    {
+      "id": "E1",
+      "url": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018_shicho.html",
+      "sha256": "733ff64951c5fbc2e1e72910e289c8da332f8e6908315837ba521feb7315b092",
+      "matchesSavedVersion": false,
+      "bytes": 54956,
+      "articleComparison": "same_article_text"
+    },
+    {
+      "id": "E2",
+      "url": "https://www.city.yokohama.lg.jp/city-info/senkyo/data/mayor/20261018kohosya_koho.html",
+      "sha256": "c60b56eb3825beded082783a84a62d5945cbcbe8b4d0b8cacf6f3ef1c74e94a1",
+      "matchesSavedVersion": false,
+      "bytes": 42664,
+      "articleComparison": "same_article_text"
+    },
+    {
+      "id": "G1",
+      "url": "https://www.city.yokohama.lg.jp/mayor/kishakaiken/kaikenyoshi/2026/20260828.html",
+      "sha256": "819990645e80352d22172582b1bc713ee273177420e76b646bb27ab35ecb1a58",
+      "matchesSavedVersion": false,
+      "bytes": 102850,
+      "articleComparison": "article_text_differs",
+      "speechBodyUnchanged": false,
+      "reviewedChanges": "Meeting speech: three instances of 刺さなかった corrected to 指さなかった; page layout and updated date also changed. Existing manuscript cited resignation statement unaffected."
+    },
+    {
+      "id": "G2",
+      "url": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/r8/JohninSGS-R08.files/J-So-202608013-gi-2.pdf",
+      "sha256": "eb4115ceabf5009c69d2b643b639060209f6d9184367689098ebd71cd64bd4d4",
+      "matchesSavedVersion": true,
+      "bytes": 1030303,
+      "articleComparison": "same_bytes"
+    },
+    {
+      "id": "F1",
+      "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/onestopzaisei.html",
+      "sha256": "d2074004c5d95131ba77fe834e3f080d95d77eed89f7bd6ca16e31db7642d4cc",
+      "matchesSavedVersion": false,
+      "bytes": 76047,
+      "articleComparison": "same_article_text"
+    },
+    {
+      "id": "F2",
+      "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
+      "sha256": "1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449",
+      "matchesSavedVersion": true,
+      "bytes": 1809035,
+      "articleComparison": "same_bytes"
+    },
+    {
+      "id": "X1",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho222.pdf",
+      "sha256": "952e01df81f9a81e5a27f3f086a9a3d50d3bf30c38555094ababccb7ccc090d6",
+      "matchesSavedVersion": true,
+      "bytes": 168946,
+      "articleComparison": "same_bytes"
+    },
+    {
+      "id": "M1",
+      "url": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/keirou.html",
+      "sha256": "a5bec1e11647c0ae0b383a2ff39a192fb38000a0190c02ffebc732b057b3fcd7",
+      "matchesSavedVersion": false,
+      "bytes": 85446,
+      "articleComparison": "same_article_text"
+    },
+    {
+      "id": "M2",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/chiikikokyo/huyasu/odekake/aratanaseido.html",
+      "sha256": "d54f7a34ddd69eedc86992fd2fcd96a20a6240161d84ed31214fcf08335e57b3",
+      "matchesSavedVersion": false,
+      "bytes": 46298,
+      "articleComparison": "same_article_text"
+    },
+    {
+      "id": "N1",
+      "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf",
+      "sha256": "9596a87c57264c10dd98e443d98dd502f3c85767a37202238e7a5022de247d1a",
+      "matchesSavedVersion": true,
+      "bytes": 479433,
+      "articleComparison": "same_bytes"
+    },
+    {
+      "id": "N2",
+      "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.html",
+      "sha256": "7c7ffbaf3a6893cca4990a3a9c88cfac51b443717941577ba79c1e5f1ad9d900",
+      "matchesSavedVersion": false,
+      "bytes": 44278,
+      "articleComparison": "same_article_text"
+    },
+    {
+      "id": "N3",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf",
+      "sha256": "9a6bf6742ac41ff9d03a2cffd93ba675850af174d632ca3b71384272d890c97c",
+      "matchesSavedVersion": true,
+      "bytes": 2290608,
+      "articleComparison": "same_bytes"
+    },
+    {
+      "id": "D1",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf",
+      "sha256": "9300c910bcca2e6b9dee56a0196eef82a357610d895b71ab498085ca1c6b276a",
+      "matchesSavedVersion": true,
+      "bytes": 7798744,
+      "articleComparison": "same_bytes"
+    }
+  ],
+  "scope": "13 existing primary sources refetched and compared; no exhaustive search of newly published decisions or all supplementary budgets",
+  "sourceInventory": "docs/content-review/mayoral-issues/sources.json",
+  "originalVerification": {
+    "checkedAt": "2026-09-08T16:53:33.661536Z",
+    "sourceSnapshots": 13,
+    "manuscripts": [
+      {
+        "path": "docs/content-review/mayoral-issues/childcare-access.md",
+        "sha256": "9f5f2002b5a6356ca85247bbc33e47d9290bb0ad207febb754e02051f89fb1e8",
+        "sections": 6,
+        "citations": 4
+      },
+      {
+        "path": "docs/content-review/mayoral-issues/city-budget.md",
+        "sha256": "e93fa553e51725032f2f103fd63cb4207927547fd13db80b48c66df8a9eeb2ff",
+        "sections": 7,
+        "citations": 3
+      },
+      {
+        "path": "docs/content-review/mayoral-issues/city-governance.md",
+        "sha256": "a0d6cb3fd5a240de9175b3f0d8d24239e8b31ad0374f5a97a13337b6489d0df7",
+        "sections": 7,
+        "citations": 3
+      },
+      {
+        "path": "docs/content-review/mayoral-issues/green-expo.md",
+        "sha256": "e6030a62eb7d612e2323f91fba3d0f8e5a7c935bb23e08af0058d1001fbbd85f",
+        "sections": 7,
+        "citations": 2
+      },
+      {
+        "path": "docs/content-review/mayoral-issues/local-mobility.md",
+        "sha256": "221e5641e3c0ef1b7504c7505b78d63d620550a660517f59105a45ffb55bb2cc",
+        "sections": 6,
+        "citations": 4
+      },
+      {
+        "path": "docs/content-review/mayoral-issues/school-shelters.md",
+        "sha256": "f4d23b745478ce460ea8dd3a6554c7eaadfe0d6b14343922760ff1bc6ab73868",
+        "sections": 6,
+        "citations": 3
+      }
+    ],
+    "calculations": {
+      "childcareHeld": 2532,
+      "childcareExcludingExtension": 1256,
+      "childcareAgeOneTwoPercent": 71.97452229299363,
+      "expoTotalThousands": 8697215,
+      "expoGeneralThousands": 3808896,
+      "expoOtherThousands": 4888319,
+      "heatThousands": 6492724
+    },
+    "sourceDiscrepancy": "D1 PDF52 body: 123 construction schools; embedded table: 80 schools (47%). Relationship unconfirmed; article explicitly preserves the discrepancy.",
+    "humanValidation": "not performed",
+    "independentReview": "not performed"
+  },
+  "newSources": [
+    {
+      "id": "D2",
+      "title": "体育館空調設備設置事業・令和7年度12月補正",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r7jigyoukeikaku.files/0206_20251125.pdf",
+      "sha256": "3c4d5d7ef7e826f45c30d6f72bedc08a34c8f83b3f37db77d7f2b92a3f0e0691",
+      "bytes": 163898,
+      "localPath": "artifacts/editorial-resume/3c4d5d7ef7e826f45c30d6f72bedc08a34c8f83b3f37db77d7f2b92a3f0e0691.pdf",
+      "textPath": "artifacts/editorial-resume/3c4d5d7ef7e826f45c30d6f72bedc08a34c8f83b3f37db77d7f2b92a3f0e0691.txt",
+      "retrievedAt": "2026-09-08T16:49:17.094961+00:00"
+    },
+    {
+      "id": "D3",
+      "title": "令和8年度事業計画書・教育施設課",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0240_20260209.pdf",
+      "sha256": "54eaeae5f0c4e574a12c5650fb6c99cec9669f9eedbb94c8f9a87ac3fdb0c969",
+      "bytes": 528788,
+      "localPath": "artifacts/editorial-resume/54eaeae5f0c4e574a12c5650fb6c99cec9669f9eedbb94c8f9a87ac3fdb0c969.pdf",
+      "textPath": "artifacts/editorial-resume/54eaeae5f0c4e574a12c5650fb6c99cec9669f9eedbb94c8f9a87ac3fdb0c969.txt",
+      "retrievedAt": "2026-09-08T16:49:17.259944+00:00"
+    },
+    {
+      "id": "D4",
+      "title": "令和7年度12月補正・議案概要",
+      "url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2025/1127r74teiippangian.files/0004_20251125.pdf",
+      "sha256": "0d646c2f89bd86740430c039344e54a467bcdb605ad6489dfd18f2a13057fce5",
+      "bytes": 978371,
+      "localPath": "artifacts/editorial-resume/0d646c2f89bd86740430c039344e54a467bcdb605ad6489dfd18f2a13057fce5.pdf",
+      "textPath": "artifacts/editorial-resume/0d646c2f89bd86740430c039344e54a467bcdb605ad6489dfd18f2a13057fce5.txt",
+      "retrievedAt": "2026-09-08T16:49:17.405230+00:00"
+    }
+  ],
+  "schoolGymBudget": {
+    "sourceId": "D3",
+    "pdfPage": 22,
+    "year": 2026,
+    "basis": "initial_budget",
+    "unit": "thousand_yen",
+    "total": 4915700,
+    "national": 2127000,
+    "municipalBonds": 2774000,
+    "generalRevenue": 14700,
+    "notIncrementalAccelerationCost": true,
+    "recurringOperationCost": "not_confirmed",
+    "repaymentCost": "not_calculated",
+    "plannedInstallationStarts": 123,
+    "relationToOverview80Schools": "unconfirmed"
+  },
+  "comparabilityQ02": "not_established_for_two_policies",
+  "manuscriptsRewritten": []
+}

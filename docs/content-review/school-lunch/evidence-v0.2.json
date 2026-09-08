@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "issueId": "school-lunch-fee-yokohama",
+  "version": "0.2",
+  "status": "rejected_pending_content_redesign",
+  "createdAt": "2026-09-08T06:00:14.441541+00:00",
+  "manuscript": {
+    "path": "docs/content-review/school-lunch/DRAFT-v0.2.md",
+    "sha256": "654cb7438ba697aa0f4972db9e32eb35351d2a7211cdeda0b7baa01db097219f"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "横浜市・学校給食費",
+      "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/sesaku/kyusyoku/kyushokuhi.html",
+      "sha256": "dbeed09f01fa5b9196d8d9bbeb29f2dfdbd7e60be731706e3d2b31b1693f8d3d",
+      "bytes": 53157,
+      "localPath": "artifacts/school-lunch-revision/dbeed09f01fa5b9196d8d9bbeb29f2dfdbd7e60be731706e3d2b31b1693f8d3d.html",
+      "retrievedAt": "2026-09-08T05:54:06.661067+00:00",
+      "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/sesaku/kyusyoku/kyushokuhi.html",
+      "contentType": "text/html"
+    },
+    {
+      "id": "S2",
+      "title": "文部科学省・学校給食費の抜本的な負担軽減",
+      "url": "https://www.mext.go.jp/a_menu/sports/syokuiku/kyu-lighten.html",
+      "sha256": "ce41764223c504fdb8e9494c5c001421c3bbc384f5dc7c6e2f19a37226583bd8",
+      "bytes": 14000,
+      "localPath": "artifacts/school-lunch-revision/ce41764223c504fdb8e9494c5c001421c3bbc384f5dc7c6e2f19a37226583bd8.html",
+      "retrievedAt": "2026-09-08T05:54:06.618495+00:00",
+      "resolvedUrl": "https://www.mext.go.jp/a_menu/sports/syokuiku/kyu-lighten.html",
+      "contentType": "text/html"
+    },
+    {
+      "id": "S3",
+      "title": "横浜市・令和8年度就学援助のお知らせ",
+      "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.files/0119_20260403.pdf",
+      "sha256": "36268c3e2266d5b5ec9703e6c41fe33bd4241ea663e19ba4aa5821e60527d66c",
+      "bytes": 1297735,
+      "localPath": "artifacts/school-lunch-revision/36268c3e2266d5b5ec9703e6c41fe33bd4241ea663e19ba4aa5821e60527d66c.pdf",
+      "retrievedAt": "2026-09-08T05:54:06.887124+00:00",
+      "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.files/0119_20260403.pdf",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "S4",
+      "title": "横浜市・令和8年度学校給食物資購入費事業計画書",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf",
+      "sha256": "e47b8ed376800ba809181c9484dc7e1c25632c7594a7e72d830111b0dfe7ac6f",
+      "bytes": 200538,
+      "localPath": "artifacts/school-lunch-revision/e47b8ed376800ba809181c9484dc7e1c25632c7594a7e72d830111b0dfe7ac6f.pdf",
+      "retrievedAt": "2026-09-08T05:54:06.863561+00:00",
+      "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0232_20260126.pdf",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "S8",
+      "title": "横浜市・就学援助制度",
+      "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.html",
+      "sha256": "37d8ac626232210b05f37ec7cfd567ac08b6508b16b7077dae5960f9bdb38420",
+      "bytes": 49605,
+      "localPath": "artifacts/school-lunch-revision/37d8ac626232210b05f37ec7cfd567ac08b6508b16b7077dae5960f9bdb38420.html",
+      "retrievedAt": "2026-09-08T05:54:06.767879+00:00",
+      "resolvedUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/soudan/shugakuenjo/shugakuenjo.html",
+      "contentType": "text/html"
+    },
+    {
+      "id": "S9",
+      "title": "文科省・給食無償化に関する課題の整理（2024年12月27日）",
+      "url": "https://www.mext.go.jp/content/20241227-mxt_kenshoku-000039428_1.pdf",
+      "sha256": "ce7eea0341eeb46f6cc4a97bc337d7271bd749de52a3de05e8a1101a07a5bb6e",
+      "bytes": 511786,
+      "localPath": "artifacts/school-lunch-revision/ce7eea0341eeb46f6cc4a97bc337d7271bd749de52a3de05e8a1101a07a5bb6e.pdf",
+      "retrievedAt": "2026-09-08T05:54:10.592982+00:00",
+      "resolvedUrl": "https://www.mext.go.jp/content/20241227-mxt_kenshoku-000039428_1.pdf",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "S10",
+      "title": "三省・三党合意に基づく対応（2025年12月19日）",
+      "url": "https://www.mext.go.jp/content/20251224-mxt_soseisk01-000046460_1.pdf",
+      "sha256": "c36f05ce5b4435bc2ced50f06af0fcc8c6a73e706922a93cb4dadac57e6714af",
+      "bytes": 827265,
+      "localPath": "artifacts/school-lunch-revision/c36f05ce5b4435bc2ced50f06af0fcc8c6a73e706922a93cb4dadac57e6714af.pdf",
+      "retrievedAt": "2026-09-08T05:54:10.407084+00:00",
+      "resolvedUrl": "https://www.mext.go.jp/content/20251224-mxt_soseisk01-000046460_1.pdf",
+      "contentType": "application/pdf"
+    },
+    {
+      "id": "S11",
+      "title": "文部科学大臣記者会見（2026年7月21日）",
+      "url": "https://www.mext.go.jp/b_menu/daijin/detail/mext_00714.html",
+      "sha256": "dcae14e81ab0ce45f9916ee3d640f320ea7c6e8d0a880153c2dd29f0fc876b5b",
+      "bytes": 15077,
+      "localPath": "artifacts/school-lunch-revision/dcae14e81ab0ce45f9916ee3d640f320ea7c6e8d0a880153c2dd29f0fc876b5b.html",
+      "retrievedAt": "2026-09-08T05:54:06.954949+00:00",
+      "resolvedUrl": "https://www.mext.go.jp/b_menu/daijin/detail/mext_00714.html",
+      "contentType": "text/html"
+    }
+  ],
+  "claims": [
+    {
+      "id": "R01",
+      "type": "fact",
+      "claim": "横浜市立中学校の就学援助認定者は給食費支払い不要",
+      "evidence": [
+        {
+          "sourceId": "S3",
+          "locator": "PDF4ページ8-2"
+        }
+      ],
+      "limits": "制度の対象認定と困窮世帯全体を同一視しない",
+      "review": "author_self_check"
+    },
+    {
+      "id": "R02",
+      "type": "fact_and_editorial",
+      "claim": "国の小学校段階支援は子育て支援が目的。困難への援助と広い公的分担を分ける",
+      "evidence": [
+        {
+          "sourceId": "S2",
+          "locator": "どんな取組・いつから"
+        },
+        {
+          "sourceId": "S10",
+          "locator": "PDF3ページ趣旨・対象"
+        }
+      ],
+      "limits": "目的の違いは確認できる。二つの問いへの分解は編集上の整理であり全論点の網羅ではない",
+      "review": "author_self_check"
+    },
+    {
+      "id": "R03",
+      "type": "historical_document",
+      "claim": "給食費用の分担と1970年答申の理由",
+      "evidence": [
+        {
+          "sourceId": "S9",
+          "locator": "PDF4ページ経費負担・昭和45年答申"
+        }
+      ],
+      "limits": "歴史的な公的整理。現在も唯一妥当な分担とする規範判断ではない",
+      "review": "author_self_check"
+    },
+    {
+      "id": "R04",
+      "type": "fact",
+      "claim": "中学校通常フルセット330円、物価高補助、援助認定者は支払い不要",
+      "evidence": [
+        {
+          "sourceId": "S1",
+          "locator": "1.(2)"
+        },
+        {
+          "sourceId": "S3",
+          "locator": "PDF4ページ8-2"
+        }
+      ],
+      "limits": "私立・特別支援学校中学部を同一料金としない",
+      "review": "author_self_check"
+    },
+    {
+      "id": "R05",
+      "type": "conditional_calculation",
+      "claim": "330円×仮定の20食＝6600円。既存の支払い不要者には同額の追加現金ではない",
+      "evidence": [
+        {
+          "sourceId": "S1",
+          "locator": "1.(2)"
+        },
+        {
+          "sourceId": "S3",
+          "locator": "PDF4ページ8-2"
+        }
+      ],
+      "limits": "20食は編集上の例。月平均・年額・追加予算ではない",
+      "review": "author_self_check"
+    },
+    {
+      "id": "R06",
+      "type": "fact_and_hypothesis",
+      "claim": "援助の対象条件、申請と審査中の扱い、未確認の到達実態",
+      "evidence": [
+        {
+          "sourceId": "S3",
+          "locator": "PDF1・2ページ条件、4ページ8-1・8-2"
+        }
+      ],
+      "limits": "非申請者や立替困難の人数・原因は未確認。発生率を推測しない",
+      "review": "author_self_check"
+    },
+    {
+      "id": "R07",
+      "type": "document_and_editorial",
+      "claim": "2026年度は所得を問わない子育て支援。目的ごとに公平さと評価を分ける",
+      "evidence": [
+        {
+          "sourceId": "S10",
+          "locator": "PDF3ページ趣旨・対象"
+        }
+      ],
+      "limits": "公的制度の目的と当サイトによる価値軸の整理を区別。政策効果は実証していない",
+      "review": "author_self_check"
+    },
+    {
+      "id": "R08",
+      "type": "fact_and_editorial",
+      "claim": "横浜小学校段階0円、市上乗せと臨時交付金。目的に照らした対象境界の問い",
+      "evidence": [
+        {
+          "sourceId": "S1",
+          "locator": "1.(1)(2)"
+        },
+        {
+          "sourceId": "S2",
+          "locator": "どんな取組"
+        }
+      ],
+      "limits": "料金差を不公平の証拠にしない。すべての小学校や自治体が0円とはしない",
+      "review": "author_self_check"
+    },
+    {
+      "id": "R09",
+      "type": "attributed_statement",
+      "claim": "2026年7月21日大臣会見では実施状況の違い等を整理して中学校支援を検討",
+      "evidence": [
+        {
+          "sourceId": "S11",
+          "locator": "最後の質疑の大臣回答"
+        }
+      ],
+      "limits": "当該発言には開始日・金額確定なし。9月までの全決定を網羅した主張ではない。記者質問を知事会原本の代用にしない",
+      "review": "author_self_check"
+    },
+    {
+      "id": "R10",
+      "type": "editorial_scenarios",
+      "claim": "現行維持・援助変更・一律0円の対象と残る条件の比較",
+      "evidence": [
+        {
+          "sourceId": "S1",
+          "locator": "現行料金"
+        },
+        {
+          "sourceId": "S3",
+          "locator": "現行援助"
+        }
+      ],
+      "limits": "市の決定や候補者公約ではない。併用可能性を残し採用を勧めない",
+      "review": "author_self_check"
+    },
+    {
+      "id": "R11",
+      "type": "editorial_scenarios",
+      "claim": "所得条件以外の対象境界、現金等の別手段、別援助の手続き",
+      "evidence": [
+        {
+          "sourceId": "S3",
+          "locator": "PDF1ページ援助費目と申請"
+        },
+        {
+          "sourceId": "S9",
+          "locator": "PDF5ページ喫食しない人への支援範囲の論点"
+        }
+      ],
+      "limits": "中学校拡張時の検討例。私立等への現行制度を一括で無支援と断定しない",
+      "review": "author_self_check"
+    },
+    {
+      "id": "R12",
+      "type": "fact_and_editorial",
+      "claim": "財源・正味追加費用の区別。当初事業に改修中の小学校向け供給が含まれる",
+      "evidence": [
+        {
+          "sourceId": "S4",
+          "locator": "PDF3ページ細事業欄2"
+        }
+      ],
+      "limits": "当初予算と決算を分ける。事業総額を無償化追加費用にしない",
+      "review": "author_self_check"
+    },
+    {
+      "id": "R13",
+      "type": "uncertainty_and_editorial",
+      "claim": "追加費用未確定、他の支援・開始時期・継続条件との比較",
+      "evidence": [
+        {
+          "sourceId": "S1",
+          "locator": "臨時交付金の利用"
+        },
+        {
+          "sourceId": "S11",
+          "locator": "中学校についての検討"
+        }
+      ],
+      "limits": "実施可能性も特定事業の削減も未確定。仮の比較方法であり金額推計や推奨ではない",
+      "review": "author_self_check"
+    },
+    {
+      "id": "R14",
+      "type": "editorial_synthesis",
+      "claim": "目的・対象・費用継続条件を分け、別の支援にも問う",
+      "evidence": [],
+      "limits": "用語暗記や賛否の一致を読後成果にしない。一般的な読み方だけで具体的説明を置換しない",
+      "review": "author_self_check"
+    }
+  ],
+  "review": {
+    "author": "Codex",
+    "independentFactCheck": "not_performed",
+    "humanComprehensionTest": "not_performed",
+    "adoption": "not_performed",
+    "publication": "not_performed"
+  },
+  "sourceChangeNotes": [
+    "S1・S8は旧版との差が共通ナビゲーションの市長リンク削除のみ。本文変更なし。",
+    "S2・S3・S4は旧版と原本ハッシュ一致。S9・S10・S11は追加原資料。",
+    "S12は画像主体でテキスト抽出が不十分。原稿に使用せず公開根拠から除外。"
+  ],
+  "editorialDisposition": {
+    "date": "2026-09-08",
+    "reviewer": "user",
+    "finding": "援助を既定の基準に置いた反語的な導入。政策の背景・議題化・政治過程・定量的効果の構造設計が不足。文章レビュー可能の自己判定を撤回。",
+    "nextReview": "docs/REDESIGN-PLAN.md §6.8：事実年表・構造・内容設計3案",
+    "manuscriptPreserved": true
+  }
+}

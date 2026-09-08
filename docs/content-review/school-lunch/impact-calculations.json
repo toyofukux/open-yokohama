@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "issueId": "school-lunch",
+  "status": "conditional_design_calculations_not_policy_cost_estimate",
+  "checkedOn": "2026-09-08",
+  "inputs": {
+    "parentFeeYenPerMeal": {
+      "value": 330,
+      "sourceIds": [
+        "P26"
+      ],
+      "locator": "給食費(2)フルセット"
+    },
+    "cityReliefYenPerMeal": {
+      "value": 110,
+      "sourceIds": [
+        "P21"
+      ],
+      "locator": "PDF21・冊子19"
+    },
+    "planningMeals": {
+      "value": 170,
+      "sourceIds": [
+        "P25"
+      ],
+      "locator": "PDF3・事業概要1",
+      "kind": "見込み日数。1日1食の例"
+    },
+    "illustrationMeals": {
+      "value": 188,
+      "sourceIds": [
+        "P21"
+      ],
+      "locator": "PDF21・冊子19",
+      "kind": "予算概要の例示。170日と別前提"
+    },
+    "planningStudents": {
+      "value": 76000,
+      "sourceIds": [
+        "P25"
+      ],
+      "locator": "PDF3・事業概要1",
+      "kind": "計画人数。教職員5000人を除く"
+    }
+  },
+  "calculations": [
+    {
+      "id": "C01",
+      "operation": "multiply",
+      "inputIds": [
+        "parentFeeYenPerMeal",
+        "planningMeals"
+      ],
+      "resultYen": 56100,
+      "meaning": "援助なしで170食全てフルセットを利用する生徒1人の支払額の例",
+      "allowedUse": "170食という条件を金額のそばに併記。年間実績・全世帯平均とは書かない"
+    },
+    {
+      "id": "C02",
+      "operation": "multiply",
+      "inputIds": [
+        "cityReliefYenPerMeal",
+        "planningMeals"
+      ],
+      "resultYen": 18700,
+      "meaning": "同じ170食条件での既存物価対応支援額",
+      "allowedUse": "既存の支援であり無償化に伴う新規支出ではない"
+    },
+    {
+      "id": "C03",
+      "operation": "multiply",
+      "inputIds": [
+        "parentFeeYenPerMeal",
+        "illustrationMeals"
+      ],
+      "resultYen": 62040,
+      "meaning": "別前提188食での保護者支払い例",
+      "allowedUse": "170日を用いた総額へ混ぜない。本文ではC01と二重提示しない"
+    },
+    {
+      "id": "C04",
+      "operation": "multiply",
+      "inputIds": [
+        "cityReliefYenPerMeal",
+        "illustrationMeals"
+      ],
+      "resultYen": 20680,
+      "meaning": "市資料の188回・年20680円の検算",
+      "allowedUse": "出典図の例示を再現する用途"
+    },
+    {
+      "id": "C05",
+      "operation": "multiply",
+      "inputIds": [
+        "planningStudents",
+        "planningMeals",
+        "parentFeeYenPerMeal"
+      ],
+      "resultYen": 4263600000,
+      "meaning": "76000人全員が170食を全額支払うという粗い仮定の総額",
+      "allowedUse": "内部検算のみ。援助等控除前であり純増費用として本文・見出し・同額の代替政策表へ掲載しない"
+    }
+  ],
+  "recipientScenarios": [
+    {
+      "id": "H01",
+      "assumptions": "援助なし、フルセット170食、他条件不変。仮に保護者支払のみゼロへ",
+      "beforeYen": 56100,
+      "afterYen": 0,
+      "directReductionYen": 56100
+    },
+    {
+      "id": "H02",
+      "assumptions": "現行援助で対象期間の最終支払が既にゼロ。同じ対象期間を比較",
+      "beforeYen": 0,
+      "afterYen": 0,
+      "directReductionYen": 0,
+      "limits": "新規申請中の立替解消や申請事務への効果は別に評価"
+    },
+    {
+      "id": "H03",
+      "assumptions": "対象給食を利用しない家庭",
+      "beforeYen": null,
+      "afterYen": null,
+      "directReductionYen": null,
+      "limits": "代替給付の設計なしに同額の現金受益と扱わない"
+    }
+  ],
+  "netAdditionalPublicCost": {
+    "resultYen": null,
+    "status": "not_determined_from_checked_sources",
+    "missingInputs": [
+      "実際の保護者支払対象食数",
+      "既存援助の給食費部分と国・県・市の財源対応",
+      "徴収・審査等の事務費変化",
+      "非喫食者の代替給付の制度設計",
+      "追加・置換される収入と継続年度の財源"
+    ],
+    "rejectedProxies": [
+      "物資購入費総額",
+      "その他収入総額",
+      "全就学援助費総額",
+      "C05の控除前総額"
+    ]
+  },
+  "verification": {
+    "performedBy": "author",
+    "arithmetic": "verified",
+    "sourceInputs": "原本該当箇所照合",
+    "independentReview": "not_performed"
+  },
+  "scope": "所得層別の実態、家計消費・出生数への効果、政策の優劣を推定するものではない"
+}
