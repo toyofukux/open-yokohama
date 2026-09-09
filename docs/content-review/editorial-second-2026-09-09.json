@@ -1,6 +1,6 @@
 {
   "date": "2026-09-09",
-  "state": "implemented; final verification and publication pending",
+  "state": "published_and_verified",
   "articles": [
     "childcare-access",
     "local-mobility"
@@ -60,7 +60,7 @@
   "authorChecks": {
     "sources": "22 saved primary sources and source-derived arithmetic passed",
     "verify": "74 unit tests,78pages,2182internal links passed",
-    "browser": "118 E2E passed; final review-disclosure check pending",
+    "browser": "118 E2E passed; final review-disclosure changes: related36 E2E passed; main118 and production118 passed",
     "visual": "390px figures viewed; map retained",
     "humanValidation": "not performed"
   },
@@ -68,5 +68,182 @@
     "Other3 mayoral articles: fiscal,EXPO,governance",
     "Comparable net incremental/recurring city costs for policy allocation not established",
     "No human understanding validation"
-  ]
+  ],
+  "independentImplementationReview": {
+    "reviewer": "/root/school_lunch_review",
+    "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+    "recordedAt": "2026-09-09T01:34:41.984151+00:00",
+    "result": "No unresolved major or medium findings",
+    "files": [
+      {
+        "path": "apps/web/src/pages/issues/childcare-access.astro",
+        "sha256": "95e7d686b112eb954b2295c87b2ed37a531d7d1cbbdde1a23dbd3d8ac5c5096a"
+      },
+      {
+        "path": "apps/web/src/pages/issues/local-mobility.astro",
+        "sha256": "f2d9ad47ce0f68549cf6ae9a4ef2dee155636dc15bb20ad98bb158ced0d51056"
+      },
+      {
+        "path": "scripts/policy-evidence.mjs",
+        "sha256": "c56df5666ff3d041f8b12acb1070313e05280e0cecd714b3ac786903f19b9464"
+      },
+      {
+        "path": "docs/content-review/mayoral-issues/check.py",
+        "sha256": "f396a88c460ce8953d1db5f2172a7c10c55b54686ca7b59589c48c3b51ab0042"
+      },
+      {
+        "path": "packages/core/policy-issues.ts",
+        "sha256": "d2332683da1b70f851b1d4b2af4b73ed870d48f9fa1fdd7d5ec86c75df1cd460"
+      },
+      {
+        "path": "tests/e2e/editorial-expansion.spec.ts",
+        "sha256": "7d011b3d7213855c073fffd22fb13d7354c2aec3fb36d6eb7aef223ef8f5bb7a"
+      },
+      {
+        "path": "docs/content-review/publication.json",
+        "sha256": "d6c66795d19094d16ba3d861e26716ca641af6b5850deb037acd20dac15a3b97"
+      }
+    ],
+    "independentlyExecuted": [
+      "Publication contract: all nine records",
+      "Figure injection: normal, missing and duplicate marker rejection",
+      "Childcare check.py arithmetic without writing output; footnote label numbers removed before parsing exclusions397+313+53+493",
+      "Existing ward figure and SVG/PNG/CSV bytes preserved",
+      "Generated HTML figure counts, dates, review disclosure, footnote TOC exclusion, source IDs and summaries"
+    ],
+    "notPerformed": [
+      "Independent browser E2E",
+      "production verification by independent reviewer",
+      "full all-entrypoint tamper smoke tests",
+      "human understanding validation"
+    ]
+  },
+  "deployment": {
+    "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+    "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+    "ci": "https://github.com/toyofukux/open-yokohama/actions/runs/34299211315",
+    "ciResult": "success",
+    "mainE2E": "118 passed",
+    "productionE2E": "118 passed",
+    "verifiedAt": "2026-09-09T01:34:41.984151+00:00"
+  },
+  "productionChecks": {
+    "checkedAt": "2026-09-09T01:32:37.677468+00:00",
+    "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+    "pagesAndAssets": [
+      {
+        "route": "/issues/school-lunch/",
+        "localSha256": "ecd95e4f6acf80e67d413b79ee168a38df6b31f586668ad948b0f49f66bccdb6",
+        "productionSha256": "ecd95e4f6acf80e67d413b79ee168a38df6b31f586668ad948b0f49f66bccdb6",
+        "byteIdentical": true,
+        "contentVersion": "db267182f431dbf96bc48ccde8b85e21d1afdf3370878c96f963f8322593cf05"
+      },
+      {
+        "route": "/issues/city-governance/",
+        "localSha256": "4835c94ef0e5af25377b769fb2cb3d4fa210f8fb50d906dde20e586489bfe6f6",
+        "productionSha256": "4835c94ef0e5af25377b769fb2cb3d4fa210f8fb50d906dde20e586489bfe6f6",
+        "byteIdentical": true,
+        "contentVersion": "a0d6cb3fd5a240de9175b3f0d8d24239e8b31ad0374f5a97a13337b6489d0df7"
+      },
+      {
+        "route": "/issues/city-budget/",
+        "localSha256": "20a7eaa12493f0e948833c153d8b5da7ceab12233e73e8a4ed889b407b4ef514",
+        "productionSha256": "20a7eaa12493f0e948833c153d8b5da7ceab12233e73e8a4ed889b407b4ef514",
+        "byteIdentical": true,
+        "contentVersion": "e93fa553e51725032f2f103fd63cb4207927547fd13db80b48c66df8a9eeb2ff"
+      },
+      {
+        "route": "/issues/green-expo/",
+        "localSha256": "2b66e630618a876fd5c9dfc36d1fd61b0bb762f0d51e5dcfc185e1253f3366a2",
+        "productionSha256": "2b66e630618a876fd5c9dfc36d1fd61b0bb762f0d51e5dcfc185e1253f3366a2",
+        "byteIdentical": true,
+        "contentVersion": "e6030a62eb7d612e2323f91fba3d0f8e5a7c935bb23e08af0058d1001fbbd85f"
+      },
+      {
+        "route": "/issues/local-mobility/",
+        "localSha256": "67bc60407c6b4614b20df70e0c6271ed6f3467a2af45384137c4ed20a039935b",
+        "productionSha256": "67bc60407c6b4614b20df70e0c6271ed6f3467a2af45384137c4ed20a039935b",
+        "byteIdentical": true,
+        "contentVersion": "2acfed322a29613f929443154217f186c87ef47dc184c500873f122e3fe1f09f"
+      },
+      {
+        "route": "/issues/childcare-access/",
+        "localSha256": "c421791dedb0508323f859880000c78a4601b3b02de25e588471565ae398f54d",
+        "productionSha256": "c421791dedb0508323f859880000c78a4601b3b02de25e588471565ae398f54d",
+        "byteIdentical": true,
+        "contentVersion": "be7a252ccbc2be0fd9ef1be0a78c1cfda894adbb584a59d6833d34f0868bc207"
+      },
+      {
+        "route": "/issues/school-shelters/",
+        "localSha256": "799bb4802e2a679341d66ad384d7aca4adf2946f3d56311079396fa0efbd243b",
+        "productionSha256": "799bb4802e2a679341d66ad384d7aca4adf2946f3d56311079396fa0efbd243b",
+        "byteIdentical": true,
+        "contentVersion": "ad83aa92164efc6389899d0ff51e5bcf505d9cb9f979d289d509f06dfaf839f5"
+      },
+      {
+        "route": "/elections/mayor-2026/",
+        "localSha256": "b8ee2a7e73982f699e080d2b20ab054d25eab5b7e7d4e4fcd9d56bae8efe658d",
+        "productionSha256": "b8ee2a7e73982f699e080d2b20ab054d25eab5b7e7d4e4fcd9d56bae8efe658d",
+        "byteIdentical": true,
+        "contentVersion": null
+      },
+      {
+        "route": "/issues/mayor-powers/",
+        "localSha256": "1bcc88f5329fa12b246364c48177182e3b6a3b3251fd9ec8e7b3b8764882c073",
+        "productionSha256": "1bcc88f5329fa12b246364c48177182e3b6a3b3251fd9ec8e7b3b8764882c073",
+        "byteIdentical": true,
+        "contentVersion": "bb2399bad42af466a75952938daf46e93f02f3a8a68844d0198e52fb1001067e"
+      },
+      {
+        "route": "/maps/childcare-2026.svg",
+        "localSha256": "51f0d820d688c928c64e3e313894dee68a9a935961fe4a7b314f443ec76e88e5",
+        "productionSha256": "51f0d820d688c928c64e3e313894dee68a9a935961fe4a7b314f443ec76e88e5",
+        "byteIdentical": true,
+        "contentVersion": null
+      },
+      {
+        "route": "/maps/childcare-2026.png",
+        "localSha256": "a1d146d961ed670b11ba7d2bac48d43a6e9870ed5fdc307b8441632707c08d2f",
+        "productionSha256": "a1d146d961ed670b11ba7d2bac48d43a6e9870ed5fdc307b8441632707c08d2f",
+        "byteIdentical": true,
+        "contentVersion": null
+      },
+      {
+        "route": "/maps/childcare-2026.csv",
+        "localSha256": "ec210caa161057cdcc7166594983ff11d41bb67b36bdb083f72309dbcc5b1ab8",
+        "productionSha256": "ec210caa161057cdcc7166594983ff11d41bb67b36bdb083f72309dbcc5b1ab8",
+        "byteIdentical": true,
+        "contentVersion": null
+      },
+      {
+        "route": "/release-manifest.json",
+        "localSha256": "ec15928ab81e8b2e6b6a0582880baf1be08c07069beede39d3d64e0d143c1ac9",
+        "productionSha256": "ec15928ab81e8b2e6b6a0582880baf1be08c07069beede39d3d64e0d143c1ac9",
+        "byteIdentical": true,
+        "contentVersion": null
+      },
+      {
+        "route": "/images/school-lunch/jnfs16-figure7-5.png",
+        "localSha256": "738970fb37a210c7c126f84d638775f26e2ce5ac13124ff6a0ab0add8b6c3bc4",
+        "productionSha256": "738970fb37a210c7c126f84d638775f26e2ce5ac13124ff6a0ab0add8b6c3bc4",
+        "byteIdentical": true,
+        "contentVersion": null
+      }
+    ],
+    "mcp": [
+      {
+        "url": "https://open-yokohama-mcp.toyofukux.workers.dev/health",
+        "http": "404"
+      },
+      {
+        "url": "https://open-yokohama-mcp.toyofukux.workers.dev/mcp",
+        "http": "404"
+      }
+    ],
+    "allBytesIdentical": true
+  },
+  "preservedWork": {
+    "docs/knowledge/product-design-retrospective.md": "daa263550e9f1ec9d947f1aa236dfbff56da996ef18ff4d2408592a265d81156",
+    "README.md": "d73ec22a03af638130f9cab2f8ed7bb15abdf39ba03ff8cb5b7983a3b53e1bab"
+  }
 }

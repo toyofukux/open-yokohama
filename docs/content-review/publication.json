@@ -311,15 +311,15 @@
       },
       "route": "/issues/school-lunch/",
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
         "url": "https://open.yokohama/issues/school-lunch/",
-        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-        "productionE2E": "110 passed"
+        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+        "productionE2E": "118 passed"
       },
       "revisionHistory": [
         {
@@ -555,6 +555,13 @@
           "url": "https://open.yokohama/issues/school-lunch/",
           "verifiedAt": "2026-09-08T17:03:41.851161Z",
           "productionE2E": "100 passed"
+        },
+        {
+          "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+          "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+          "url": "https://open.yokohama/issues/school-lunch/",
+          "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+          "productionE2E": "110 passed"
         }
       ],
       "manuscriptPath": "docs/content-review/school-lunch/DRAFT.md",
@@ -571,7 +578,7 @@
       "revisionReview": {
         "scope": "shared files only; manuscript unchanged",
         "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
+        "independentReview": "Shared implementation and unchanged manuscript scope reviewed; no new full content review; see docs/content-review/editorial-second-2026-09-09.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -766,15 +773,15 @@
         "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
         "url": "https://open.yokohama/issues/city-governance/",
-        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-        "productionE2E": "110 passed"
+        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+        "productionE2E": "118 passed"
       },
       "revisionHistory": [
         {
@@ -934,12 +941,19 @@
           "url": "https://open.yokohama/issues/city-governance/",
           "verifiedAt": "2026-09-08T17:03:41.851161Z",
           "productionE2E": "100 passed"
+        },
+        {
+          "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+          "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+          "url": "https://open.yokohama/issues/city-governance/",
+          "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+          "productionE2E": "110 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared files only; manuscript unchanged",
         "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
+        "independentReview": "Shared implementation and unchanged manuscript scope reviewed; no new full content review; see docs/content-review/editorial-second-2026-09-09.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1132,15 +1146,15 @@
         "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
         "url": "https://open.yokohama/issues/city-budget/",
-        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-        "productionE2E": "110 passed"
+        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+        "productionE2E": "118 passed"
       },
       "revisionHistory": [
         {
@@ -1299,12 +1313,19 @@
           "url": "https://open.yokohama/issues/city-budget/",
           "verifiedAt": "2026-09-08T17:03:41.851161Z",
           "productionE2E": "100 passed"
+        },
+        {
+          "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+          "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+          "url": "https://open.yokohama/issues/city-budget/",
+          "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+          "productionE2E": "110 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared files only; manuscript unchanged",
         "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
+        "independentReview": "Shared implementation and unchanged manuscript scope reviewed; no new full content review; see docs/content-review/editorial-second-2026-09-09.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1497,15 +1518,15 @@
         "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
         "url": "https://open.yokohama/issues/green-expo/",
-        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-        "productionE2E": "110 passed"
+        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+        "productionE2E": "118 passed"
       },
       "revisionHistory": [
         {
@@ -1664,12 +1685,19 @@
           "url": "https://open.yokohama/issues/green-expo/",
           "verifiedAt": "2026-09-08T17:03:41.851161Z",
           "productionE2E": "100 passed"
+        },
+        {
+          "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+          "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+          "url": "https://open.yokohama/issues/green-expo/",
+          "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+          "productionE2E": "110 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared files only; manuscript unchanged",
         "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
+        "independentReview": "Shared implementation and unchanged manuscript scope reviewed; no new full content review; see docs/content-review/editorial-second-2026-09-09.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1879,15 +1907,15 @@
         "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
         "url": "https://open.yokohama/issues/local-mobility/",
-        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-        "productionE2E": "110 passed"
+        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+        "productionE2E": "118 passed"
       },
       "revisionHistory": [
         {
@@ -2037,12 +2065,19 @@
           "url": "https://open.yokohama/issues/local-mobility/",
           "verifiedAt": "2026-09-08T17:03:41.851161Z",
           "productionE2E": "100 passed"
+        },
+        {
+          "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+          "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+          "url": "https://open.yokohama/issues/local-mobility/",
+          "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+          "productionE2E": "110 passed"
         }
       ],
       "revisionReview": {
         "scope": "revised manuscript and figures",
         "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "Passed scoped primary-source/manuscript/figure review; see docs/content-review/editorial-second-2026-09-09.json",
+        "independentReview": "Passed scoped manuscript, primary-source, figure and implementation review; see docs/content-review/editorial-second-2026-09-09.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -2269,15 +2304,15 @@
         "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
         "url": "https://open.yokohama/issues/childcare-access/",
-        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-        "productionE2E": "110 passed"
+        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+        "productionE2E": "118 passed"
       },
       "visualReview": {
         "reviewer": "Codex author, not independent",
@@ -2441,12 +2476,19 @@
           "url": "https://open.yokohama/issues/childcare-access/",
           "verifiedAt": "2026-09-08T17:03:41.851161Z",
           "productionE2E": "100 passed"
+        },
+        {
+          "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+          "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+          "url": "https://open.yokohama/issues/childcare-access/",
+          "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+          "productionE2E": "110 passed"
         }
       ],
       "revisionReview": {
         "scope": "revised manuscript and figures",
         "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "Passed scoped primary-source/manuscript/figure review; see docs/content-review/editorial-second-2026-09-09.json",
+        "independentReview": "Passed scoped manuscript, primary-source, figure and implementation review; see docs/content-review/editorial-second-2026-09-09.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -2689,15 +2731,15 @@
         "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
         "url": "https://open.yokohama/issues/school-shelters/",
-        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-        "productionE2E": "110 passed"
+        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+        "productionE2E": "118 passed"
       },
       "revisionHistory": [
         {
@@ -2846,12 +2888,19 @@
           "url": "https://open.yokohama/issues/school-shelters/",
           "verifiedAt": "2026-09-08T17:03:41.851161Z",
           "productionE2E": "100 passed"
+        },
+        {
+          "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+          "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+          "url": "https://open.yokohama/issues/school-shelters/",
+          "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+          "productionE2E": "110 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared files only; manuscript unchanged",
         "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
+        "independentReview": "Shared implementation and unchanged manuscript scope reviewed; no new full content review; see docs/content-review/editorial-second-2026-09-09.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -2958,15 +3007,15 @@
         "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
         "url": "https://open.yokohama/elections/mayor-2026/",
-        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-        "productionE2E": "110 passed"
+        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+        "productionE2E": "118 passed"
       },
       "presentationReview": {
         "reviewedAt": "2026-09-07T01:41:30.795397Z",
@@ -3099,12 +3148,19 @@
           "url": "https://open.yokohama/elections/mayor-2026/",
           "verifiedAt": "2026-09-08T17:03:41.851161Z",
           "productionE2E": "100 passed"
+        },
+        {
+          "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+          "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+          "url": "https://open.yokohama/elections/mayor-2026/",
+          "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+          "productionE2E": "110 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared files only; manuscript unchanged",
         "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
+        "independentReview": "Shared implementation and unchanged manuscript scope reviewed; no new full content review; see docs/content-review/editorial-second-2026-09-09.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -3451,21 +3507,21 @@
         "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "shared files only; manuscript unchanged",
         "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
+        "independentReview": "Shared implementation and unchanged manuscript scope reviewed; no new full content review; see docs/content-review/editorial-second-2026-09-09.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
-        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
         "url": "https://open.yokohama/issues/mayor-powers/",
-        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-        "productionE2E": "110 passed"
+        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+        "productionE2E": "118 passed"
       },
       "revisionHistory": [
         {
@@ -3479,6 +3535,15 @@
             "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
             "productionE2E": "110 passed"
           }
+        }
+      ],
+      "deploymentHistory": [
+        {
+          "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+          "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+          "url": "https://open.yokohama/issues/mayor-powers/",
+          "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+          "productionE2E": "110 passed"
         }
       ]
     }

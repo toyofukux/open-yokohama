@@ -1,10 +1,12 @@
 # 実装・公開状態
 
-## 2026-09-09：保育・交通を改稿（公開前検証済み）
+## 2026-09-09：保育・交通を改稿（本番確認済み・ここから再開）
 
 - 保育は政策の経緯と現行の人数の区分、地域・年齢の需給をつないだ。人数図を追加し、既存18区地図をbyte維持。交通は社会参加と供給維持の背景、現行のパス条件、運賃・運行支援の組合せを説明する構成へ改稿した。
-- 原資料22件の検算、2稿・2図の独立レビュー、全118 E2Eが合格。確認表示を加えた最終版の関連36 E2Eも合格。人間の理解検証は未実施。[確認記録](content-review/editorial-second-2026-09-09.json)。main公開・本番確認はこの時点では未実施。
+- 原資料22件の検算、2稿・2図と実装の独立レビュー、全118 E2Eが合格。確認表示を加えた最終版の関連36 E2Eも合格。mainから公開し、本番118 E2E、14ページ・資産のbyte一致、旧MCP URLの404を確認。人間の理解検証は未実施。[確認記録](content-review/editorial-second-2026-09-09.json)。
+- 実装commit `73106e4569165f682a7d308dca639afe3c799468`、Web version `95b2783d-d1b4-448a-99be-01b5cf468648`。[CI](https://github.com/toyofukux/open-yokohama/actions/runs/34299211315)成功。[保育](https://open.yokohama/issues/childcare-access/)・[交通](https://open.yokohama/issues/local-mobility/)を公開済み。mainの既存2ファイルのhash一致を確認し、design限定の給食旧版プレビューも復元した。
 - 正本はmayoral-issuesのchildcare-access.md/local-mobility.md。旧稿・公開契約はarchive/2026-09-09-secondへ保存。残る既存改稿は財政・EXPO・市政。Q02の正味追加市費の比較、Q04人口・施設は未完。
+- 次は財政・EXPOの2稿、次いで市政。背景資料2件と調査上の注意を[次稿の調査台帳](content-review/mayoral-issues/third-research-2026-09-09.json)へ保存した。F2の収支不足対策表は「主な項目」で合計372億円となり、400億円の完全な内訳図にはできない。新3稿・図・独立レビューは未実施。公開元は引き続きmainのみ。
 
 ## 2026-09-09：学校空調を改稿し、市長の権限を追加（本番確認済み）
 

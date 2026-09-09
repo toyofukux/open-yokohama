@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-09",
+  "state": "research only; remaining three manuscripts unchanged",
+  "sources": [
+    {
+      "id": "X2",
+      "title": "Former Kamiseya communications facility: return, land-use plan and activation purpose",
+      "url": "https://www.city.yokohama.lg.jp/seya/kurashi/machizukuri_kankyo/machizukuri/hiroba/kamiseya.html",
+      "sha256": "35461f85090a5ab0847c7051a251fe7f71344a238fcd412096b24a4ad5296945",
+      "localPath": "artifacts/editorial-third/35461f85090a5ab0847c7051a251fe7f71344a238fcd412096b24a4ad5296945.html",
+      "retrievedAt": "2026-09-09T01:33:11.115001+00:00",
+      "state": "research_only; not adopted or independently reviewed",
+      "redistribution": "Ignored original snapshot; link to official source in future article"
+    },
+    {
+      "id": "X3",
+      "title": "FY2026 former Kamiseya communications facility park project",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho231.pdf",
+      "sha256": "e5776598636ac6f01b865d4c63dd4e3895f595fa2a76b5765f62e4a4714c7ec7",
+      "localPath": "artifacts/editorial-third/e5776598636ac6f01b865d4c63dd4e3895f595fa2a76b5765f62e4a4714c7ec7.pdf",
+      "retrievedAt": "2026-09-09T01:33:11.115001+00:00",
+      "state": "research_only; not adopted or independently reviewed",
+      "redistribution": "Ignored original snapshot; link to official source in future article"
+    }
+  ],
+  "notes": [
+    "F1 identifies population decrease, ageing and facility renewal as fiscal sustainability pressures; F2 PDF34 identifies staffing and inflation pressures for FY2026.",
+    "F2 PDF34: Amounts are in oku yen (100 million yen). 100 oku yen debt-fund temporary use already assumed before 400 oku yen initial gap. Published main items are +370,+212,+200,+40,+40,-450 oku yen: sum372, not400. The table is labeled main items. Do not invent160 remainder or claim exact400 decomposition. Need original image review before diagram.",
+    "X2: former US facility returned June2015; approximately242ha; March2020 land-use plan; local agricultural and suburban activation purpose. Distinguish entire site from expo venue.",
+    "X1 PDF2: FY2026 venue project total8697215 thousand yen = general3808896 + other4888319. Not all associated projects, not cancellation savings, not recurring city cost.",
+    "X3: park purpose environment/disaster prevention, construction and post-expo schedule; download complete but original image/scope review still needed.",
+    "Next drafting pair: city-budget and green-expo. Afterwards city-governance needs G1/G2 historical scope and findings review. No newly adopted manuscript or implementation for these three.",
+    "Q02 comparable net incremental/recurring city costs and Q04 population/facilities remain incomplete."
+  ]
+}
