@@ -1,0 +1,73 @@
+{
+  "date": "2026-09-09",
+  "scope": "Next two revisions: childcare-access and local-mobility; primary source collection only",
+  "sources": [
+    {
+      "id": "N4",
+      "title": "横浜市の待機児童対策の経緯と今後の課題・調査季報172号（2013年3月）",
+      "url": "https://www.city.yokohama.lg.jp/city-info/seisaku/torikumi/shien/tyousakihou/kihou-archive/172.files/0007_20191119.pdf",
+      "sha256": "8ee9718ffe35b82d27337d1edf98a442434290ed49cf03376907772e8c3db467",
+      "localPath": "artifacts/editorial-next/8ee9718ffe35b82d27337d1edf98a442434290ed49cf03376907772e8c3db467.pdf",
+      "retrievedAt": "2026-09-09T01:08:35.279635+00:00",
+      "status": "collected; manuscript use and independent review pending",
+      "textPath": "artifacts/editorial-next/8ee9718ffe35b82d27337d1edf98a442434290ed49cf03376907772e8c3db467.txt"
+    },
+    {
+      "id": "N5",
+      "title": "2013年5月27日・待機児童対策の状況",
+      "url": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/h25-h26/katsudogaiyo-h25-j-4.files/0175_20180814.pdf",
+      "sha256": "4ee9073edb6b0d9560a71a8f797672f72cce9b8d746812d8c55943d2dd4e00cd",
+      "localPath": "artifacts/editorial-next/4ee9073edb6b0d9560a71a8f797672f72cce9b8d746812d8c55943d2dd4e00cd.pdf",
+      "retrievedAt": "2026-09-09T01:08:35.210310+00:00",
+      "status": "collected; manuscript use and independent review pending",
+      "textPath": "artifacts/editorial-next/4ee9073edb6b0d9560a71a8f797672f72cce9b8d746812d8c55943d2dd4e00cd.txt"
+    },
+    {
+      "id": "M3",
+      "title": "2025年4月地域公共交通計画・第2章 横浜の地域交通を取り巻く状況と課題",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/toshikotsu/plan/chiki-kotsu-plan.files/0027_20250410.pdf",
+      "sha256": "1b96ec69738cb5e95aa017e3aed9fee62cebf3879fc7b521c8e0021c4c8a9a5e",
+      "localPath": "artifacts/editorial-next/1b96ec69738cb5e95aa017e3aed9fee62cebf3879fc7b521c8e0021c4c8a9a5e.pdf",
+      "retrievedAt": "2026-09-09T01:08:35.311046+00:00",
+      "status": "collected; manuscript use and independent review pending",
+      "textPath": "artifacts/editorial-next/1b96ec69738cb5e95aa017e3aed9fee62cebf3879fc7b521c8e0021c4c8a9a5e.txt"
+    },
+    {
+      "id": "M4",
+      "title": "敬老特別乗車証制度のあり方の検討について（2020年2月25日更新）",
+      "url": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/19k-pass-arikata01.html",
+      "sha256": "8edb7b8a1d6e6d1d18e91a084ceb174c6d07ceccbc6f86c956804e23e5ba098a",
+      "localPath": "artifacts/editorial-next/8edb7b8a1d6e6d1d18e91a084ceb174c6d07ceccbc6f86c956804e23e5ba098a.html",
+      "retrievedAt": "2026-09-09T01:08:35.197762+00:00",
+      "status": "collected; manuscript use and independent review pending"
+    }
+  ],
+  "remaining": [
+    "Read historical purpose and original statistics before rewriting",
+    "Keep 2013/2020 policy discussions distinct from current rules and conditions",
+    "Reuse existing ward map where comparable ward data are available",
+    "Do not map citywide totals into wards without data"
+  ],
+  "initialFindings": [
+    {
+      "sourceId": "N5",
+      "location": "PDF1, PDF8",
+      "finding": "2013 April waitlist0 and 2010 waitlist1552 observed. Check definition changes before drawing a consistent series through2026."
+    },
+    {
+      "sourceId": "N4",
+      "location": "PDF2-3",
+      "finding": "2013 municipal article discusses age/area mismatch and household circumstances. Vertical text extraction is interleaved; visual inspection required before quoting."
+    },
+    {
+      "sourceId": "M3",
+      "location": "PDF7, PDF11",
+      "finding": "2025 plan identifies passenger decline, driver shortages, aging and profitability constraints. Not current ward-level coverage or individual-route loss counts."
+    },
+    {
+      "sourceId": "M4",
+      "location": "2019-2020 review context",
+      "finding": "Social participation purpose; increasing beneficiaries, costs and burdens on city/operators. Not FY2026 costs or evidence all proposed revisions were adopted."
+    }
+  ]
+}

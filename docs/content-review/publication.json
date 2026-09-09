@@ -311,15 +311,15 @@
       },
       "route": "/issues/school-lunch/",
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
         "url": "https://open.yokohama/issues/school-lunch/",
-        "verifiedAt": "2026-09-08T17:03:41.851161Z",
-        "productionE2E": "100 passed"
+        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+        "productionE2E": "110 passed"
       },
       "revisionHistory": [
         {
@@ -536,6 +536,13 @@
           "url": "https://open.yokohama/issues/school-lunch/",
           "verifiedAt": "2026-09-07T08:14:12.266206Z",
           "productionE2E": "98 passed"
+        },
+        {
+          "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+          "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+          "url": "https://open.yokohama/issues/school-lunch/",
+          "verifiedAt": "2026-09-08T17:03:41.851161Z",
+          "productionE2E": "100 passed"
         }
       ],
       "manuscriptPath": "docs/content-review/school-lunch/DRAFT.md",
@@ -552,7 +559,7 @@
       "revisionReview": {
         "scope": "shared code only; manuscript unchanged",
         "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -747,15 +754,15 @@
         "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
         "url": "https://open.yokohama/issues/city-governance/",
-        "verifiedAt": "2026-09-08T17:03:41.851161Z",
-        "productionE2E": "100 passed"
+        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+        "productionE2E": "110 passed"
       },
       "revisionHistory": [
         {
@@ -896,12 +903,19 @@
           "url": "https://open.yokohama/issues/city-governance/",
           "verifiedAt": "2026-09-07T08:14:12.266206Z",
           "productionE2E": "98 passed"
+        },
+        {
+          "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+          "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+          "url": "https://open.yokohama/issues/city-governance/",
+          "verifiedAt": "2026-09-08T17:03:41.851161Z",
+          "productionE2E": "100 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared code only; manuscript unchanged",
         "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1094,15 +1108,15 @@
         "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
         "url": "https://open.yokohama/issues/city-budget/",
-        "verifiedAt": "2026-09-08T17:03:41.851161Z",
-        "productionE2E": "100 passed"
+        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+        "productionE2E": "110 passed"
       },
       "revisionHistory": [
         {
@@ -1242,12 +1256,19 @@
           "url": "https://open.yokohama/issues/city-budget/",
           "verifiedAt": "2026-09-07T08:14:12.266206Z",
           "productionE2E": "98 passed"
+        },
+        {
+          "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+          "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+          "url": "https://open.yokohama/issues/city-budget/",
+          "verifiedAt": "2026-09-08T17:03:41.851161Z",
+          "productionE2E": "100 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared code only; manuscript unchanged",
         "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1440,15 +1461,15 @@
         "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
         "url": "https://open.yokohama/issues/green-expo/",
-        "verifiedAt": "2026-09-08T17:03:41.851161Z",
-        "productionE2E": "100 passed"
+        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+        "productionE2E": "110 passed"
       },
       "revisionHistory": [
         {
@@ -1588,12 +1609,19 @@
           "url": "https://open.yokohama/issues/green-expo/",
           "verifiedAt": "2026-09-07T08:14:12.266206Z",
           "productionE2E": "98 passed"
+        },
+        {
+          "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+          "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+          "url": "https://open.yokohama/issues/green-expo/",
+          "verifiedAt": "2026-09-08T17:03:41.851161Z",
+          "productionE2E": "100 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared code only; manuscript unchanged",
         "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1768,15 +1796,15 @@
         "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
         "url": "https://open.yokohama/issues/local-mobility/",
-        "verifiedAt": "2026-09-08T17:03:41.851161Z",
-        "productionE2E": "100 passed"
+        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+        "productionE2E": "110 passed"
       },
       "revisionHistory": [
         {
@@ -1907,12 +1935,19 @@
           "url": "https://open.yokohama/issues/local-mobility/",
           "verifiedAt": "2026-09-07T08:14:12.266206Z",
           "productionE2E": "98 passed"
+        },
+        {
+          "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+          "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+          "url": "https://open.yokohama/issues/local-mobility/",
+          "verifiedAt": "2026-09-08T17:03:41.851161Z",
+          "productionE2E": "100 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared code only; manuscript unchanged",
         "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -2108,15 +2143,15 @@
         "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
         "url": "https://open.yokohama/issues/childcare-access/",
-        "verifiedAt": "2026-09-08T17:03:41.851161Z",
-        "productionE2E": "100 passed"
+        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+        "productionE2E": "110 passed"
       },
       "visualReview": {
         "reviewer": "Codex author, not independent",
@@ -2261,12 +2296,19 @@
           "url": "https://open.yokohama/issues/childcare-access/",
           "verifiedAt": "2026-09-07T08:14:12.266206Z",
           "productionE2E": "98 passed"
+        },
+        {
+          "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+          "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+          "url": "https://open.yokohama/issues/childcare-access/",
+          "verifiedAt": "2026-09-08T17:03:41.851161Z",
+          "productionE2E": "100 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared code only; manuscript unchanged",
         "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -2509,15 +2551,15 @@
         "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
         "url": "https://open.yokohama/issues/school-shelters/",
-        "verifiedAt": "2026-09-08T17:03:41.851161Z",
-        "productionE2E": "100 passed"
+        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+        "productionE2E": "110 passed"
       },
       "revisionHistory": [
         {
@@ -2647,6 +2689,13 @@
           "url": "https://open.yokohama/issues/school-shelters/",
           "verifiedAt": "2026-09-07T08:14:12.266206Z",
           "productionE2E": "98 passed"
+        },
+        {
+          "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+          "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+          "url": "https://open.yokohama/issues/school-shelters/",
+          "verifiedAt": "2026-09-08T17:03:41.851161Z",
+          "productionE2E": "100 passed"
         }
       ],
       "revisionReview": {
@@ -2760,15 +2809,15 @@
         "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-        "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
         "url": "https://open.yokohama/elections/mayor-2026/",
-        "verifiedAt": "2026-09-08T17:03:41.851161Z",
-        "productionE2E": "100 passed"
+        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+        "productionE2E": "110 passed"
       },
       "presentationReview": {
         "reviewedAt": "2026-09-07T01:41:30.795397Z",
@@ -2882,12 +2931,19 @@
           "url": "https://open.yokohama/elections/mayor-2026/",
           "verifiedAt": "2026-09-07T08:14:12.266206Z",
           "productionE2E": "98 passed"
+        },
+        {
+          "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
+          "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
+          "url": "https://open.yokohama/elections/mayor-2026/",
+          "verifiedAt": "2026-09-08T17:03:41.851161Z",
+          "productionE2E": "100 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared code only; manuscript unchanged",
         "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -3234,8 +3290,8 @@
         "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript, sources and explanatory figures",
@@ -3243,6 +3299,13 @@
         "independentReview": "Passed limited manuscript/figure/source review; docs/content-review/editorial-expansion-2026-09-09.json",
         "humanUnderstandingValidation": "not performed",
         "limitations": "Not a complete legal audit or human understanding test. Browser and publication verification are separate."
+      },
+      "deployment": {
+        "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
+        "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
+        "url": "https://open.yokohama/issues/mayor-powers/",
+        "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
+        "productionE2E": "110 passed"
       }
     }
   ]
