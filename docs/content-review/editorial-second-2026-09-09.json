@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-09",
+  "state": "implemented; final verification and publication pending",
+  "articles": [
+    "childcare-access",
+    "local-mobility"
+  ],
+  "independentContentReview": {
+    "reviewer": "/root/school_lunch_review",
+    "recordedAt": "2026-09-09T01:25:58.920444+00:00",
+    "result": "No unresolved major or medium findings",
+    "files": [
+      {
+        "path": "docs/content-review/mayoral-issues/childcare-access.md",
+        "sha256": "be7a252ccbc2be0fd9ef1be0a78c1cfda894adbb584a59d6833d34f0868bc207"
+      },
+      {
+        "path": "docs/content-review/mayoral-issues/local-mobility.md",
+        "sha256": "2acfed322a29613f929443154217f186c87ef47dc184c500873f122e3fe1f09f"
+      },
+      {
+        "path": "docs/content-review/mayoral-issues/sources.json",
+        "sha256": "40fd0d0caf8f8975d506f7f040ff90a8cbaf64fa72ca364d39ff9bd558beb496"
+      },
+      {
+        "path": "data/editorial/figures/childcare-counts.html",
+        "sha256": "39d493297ad12fbf464e08ac5f2f90a2bafe5b5e83425bc9ab805b4cbcad3a00"
+      },
+      {
+        "path": "data/editorial/figures/mobility-support.html",
+        "sha256": "ff4aadbdde60f29e52c99579695e978d5edef96afd7cb60c43e579084a6c828d"
+      },
+      {
+        "path": "data/editorial/figures/second-manifest.json",
+        "sha256": "dde3f12905d7190f9d398580f170b294fd7780419fc24ebd1053db1fb4b71a3b"
+      },
+      {
+        "path": "data/childcare/figure.html",
+        "sha256": "80d920b15e334e9906426cbba3fc8687fd06cb18fdfe1fa57898bba112dc14c9"
+      }
+    ],
+    "scope": [
+      "8 original source hashes; N1 PDF1/2/7; N3 PDF120; N4 PDF1 image and2-3; N5 PDF1/4-5; M1/M2/M4 text; M3 PDF7/11",
+      "Independent calculations: held2532, excluding extension1256, exclusions397+313+53+493, waitlist0; ages72%; wardSeya6.8%,city3.4%",
+      "Historical/current definitions;70+/75+ pass conditions, surrender date/application/3years free, eligible transport and surcharge;7footnotes each",
+      "Existing ward figure byte equality"
+    ],
+    "resolvedMinorFindings": [
+      "Clarified figure caption: waitlist0 does not mean no household needs support"
+    ],
+    "notPerformed": [
+      "source refetch by reviewer",
+      "browser UI",
+      "publication contract",
+      "production",
+      "human understanding validation",
+      "empirical policy effectiveness/net city cost comparison"
+    ]
+  },
+  "authorChecks": {
+    "sources": "22 saved primary sources and source-derived arithmetic passed",
+    "verify": "74 unit tests,78pages,2182internal links passed",
+    "browser": "118 E2E passed; final review-disclosure check pending",
+    "visual": "390px figures viewed; map retained",
+    "humanValidation": "not performed"
+  },
+  "remaining": [
+    "Other3 mayoral articles: fiscal,EXPO,governance",
+    "Comparable net incremental/recurring city costs for policy allocation not established",
+    "No human understanding validation"
+  ]
+}

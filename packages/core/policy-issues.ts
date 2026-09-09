@@ -13,10 +13,10 @@ export const mayoralIssues = [
   {
     title: '待機児童ゼロの横浜で、保育の何を改善するか',
     summary:
-      '公式のゼロと、希望する保育を使えることを分ける。年齢、場所、保育の質から次の支援を考える。',
+      '保育を増やしてきた経緯から、今の年齢・地域の不足へ。18区地図で人数と割合を確かめ、受入枠と担い手への配分を考える。',
     category: '子育て・保育',
     slug: 'childcare-access',
-    sourceIds: ['N1', 'N3'],
+    sourceIds: ['N1', 'N3', 'N4', 'N5'],
     url: '/issues/childcare-access/',
   },
   {
@@ -47,10 +47,11 @@ export const mayoralIssues = [
   },
   {
     title: '移動の支援は、運賃と路線のどちらを厚くするか',
-    summary: '敬老パスを使えることと、乗れる交通が近くにあること。通院や買い物に届く支援を考える。',
+    summary:
+      '社会参加を支える敬老パスと、担い手不足に向き合う地域交通。運賃・乗り場・便のどこで困るかから支援の配分を考える。',
     category: '交通・高齢期の暮らし',
     slug: 'local-mobility',
-    sourceIds: ['M1', 'M2'],
+    sourceIds: ['M1', 'M2', 'M3', 'M4'],
     url: '/issues/local-mobility/',
   },
   {

@@ -1,7 +1,7 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
-for (const slug of ['school-shelters', 'mayor-powers']) {
+for (const slug of ['school-shelters', 'mayor-powers', 'childcare-access', 'local-mobility']) {
   test(`${slug}: figures and footnotes meet accessibility checks in both themes`, async ({
     page,
   }) => {
@@ -55,8 +55,17 @@ for (const slug of ['school-shelters', 'mayor-powers']) {
       await expect(page.locator('#gym-funding')).toContainText('1,470万円（0.3％）');
       await expect(page.locator('#gym-funding')).toContainText('市債は将来返す借入金');
       await expect(page.locator('#gym-timeline')).toContainText('完成・稼働の実績ではない');
-    } else {
+    } else if (slug === 'mayor-powers') {
       await expect(page.locator('#mayor-roles')).toContainText('組織の上下関係を示す図ではない');
+    }
+    if (slug === 'childcare-access') {
+      await expect(page.locator('#childcare-counts')).toContainText('397');
+      await expect(page.locator('#childcare-counts')).toContainText('1,276');
+      await expect(page.locator('[data-childcare-map] svg [data-ward]')).toHaveCount(18);
+    }
+    if (slug === 'local-mobility') {
+      await expect(page.locator('#mobility-support')).toContainText('運賃を支える');
+      await expect(page.locator('#mobility-support')).toContainText('交通の運行を支える');
     }
     await context.close();
   });

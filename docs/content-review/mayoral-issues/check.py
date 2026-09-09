@@ -21,6 +21,8 @@ def yen_from_thousands(value):
 
 def childcare_row(prefix):
  line = next(line for line in texts['N1'].splitlines() if line.strip().startswith(prefix))
+ # Footnote numbers in labels are not table values.
+ line = re.sub(r'\(\*\d+\)', '', line)
  # A row contains R6, R7, R8 and difference, in this order.
  cells = re.findall(r'[▲△]?\d[\d,]*', line)
  return number(cells[2])
@@ -36,6 +38,15 @@ ages = re.search(r'保留児童数\s+167\s*人\s+(\d+)\s*人\s+(\d+)\s*人', tex
 assert ages
 ratio = (number(ages[1]) + number(ages[2])) / remaining * 100
 assert round(ratio) == 72
+second_manifest = json.loads((ROOT / 'data/editorial/figures/second-manifest.json').read_text())
+counts = second_manifest['childcareCounts']
+assert (counts['applicants'], counts['enrolled'], counts['held'], counts['extensionDesired'], counts['excludingExtension']) == (applications, enrolled, held, extension, remaining)
+other_exclusions = [childcare_row(label) for label in ['横浜保育室等入所数 (F)', '育児休業の延長を許容できる方 (G)', '求職活動を休止している方 (H)', '特定保育所等のみの申込者など (I)']]
+assert other_exclusions == counts['otherExclusions']
+assert remaining - sum(other_exclusions) == counts['waitlist'] == 0
+for figure in second_manifest['figures']:
+ assert hashlib.sha256((ROOT / figure['path']).read_bytes()).hexdigest() == figure['sha256']
+
 childcare = (HERE / 'childcare-access.md').read_text()
 for value in [f'{applications:,}', f'{enrolled:,}', f'{held:,}', f'{remaining:,}', f'{extension:,}', '約72％']:
  assert value in childcare

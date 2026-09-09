@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-09-08T23:18:05.302014Z",
-  "sourceSnapshots": 18,
+  "checkedAt": "2026-09-09T01:23:25.497144Z",
+  "sourceSnapshots": 22,
   "manuscripts": [
     {
       "path": "docs/content-review/mayoral-issues/childcare-access.md",
-      "sha256": "9f5f2002b5a6356ca85247bbc33e47d9290bb0ad207febb754e02051f89fb1e8",
-      "sections": 6,
-      "citations": 4
+      "sha256": "be7a252ccbc2be0fd9ef1be0a78c1cfda894adbb584a59d6833d34f0868bc207",
+      "sections": 5,
+      "citations": 7
     },
     {
       "path": "docs/content-review/mayoral-issues/city-budget.md",
@@ -28,9 +28,9 @@
     },
     {
       "path": "docs/content-review/mayoral-issues/local-mobility.md",
-      "sha256": "221e5641e3c0ef1b7504c7505b78d63d620550a660517f59105a45ffb55bb2cc",
-      "sections": 6,
-      "citations": 4
+      "sha256": "2acfed322a29613f929443154217f186c87ef47dc184c500873f122e3fe1f09f",
+      "sections": 5,
+      "citations": 7
     },
     {
       "path": "docs/content-review/mayoral-issues/school-shelters.md",

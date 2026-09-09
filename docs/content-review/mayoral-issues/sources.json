@@ -195,5 +195,49 @@
     "textPath": "artifacts/editorial-batch/e2f4e53ff7d01a66fa7f6c6dbf9178fb10f9727353814ce9b8f6f4aeb32e86b5.txt",
     "textSha256": "5083bec33530d142554a06edd9c91f2c97d526dd85bae3021b044e14d0c3088b",
     "redistribution": "Source snapshots retained in ignored artifacts; original links published. Diagrams are original factual summaries."
+  },
+  {
+    "id": "N4",
+    "title": "横浜市の待機児童対策の経緯と今後の課題・調査季報172号（2013年3月）",
+    "url": "https://www.city.yokohama.lg.jp/city-info/seisaku/torikumi/shien/tyousakihou/kihou-archive/172.files/0007_20191119.pdf",
+    "sha256": "8ee9718ffe35b82d27337d1edf98a442434290ed49cf03376907772e8c3db467",
+    "localPath": "artifacts/editorial-next/8ee9718ffe35b82d27337d1edf98a442434290ed49cf03376907772e8c3db467.pdf",
+    "retrievedAt": "2026-09-09T01:08:35.279635+00:00",
+    "textPath": "artifacts/editorial-next/8ee9718ffe35b82d27337d1edf98a442434290ed49cf03376907772e8c3db467.txt",
+    "textSha256": "91ed59e1c38635bbf95c61284795c6ac8164facb564c0943aee87c00413477c8",
+    "redistribution": "Original sources linked. No original artwork or full-text redistribution."
+  },
+  {
+    "id": "N5",
+    "title": "2013年5月27日・待機児童対策の状況",
+    "url": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/h25-h26/katsudogaiyo-h25-j-4.files/0175_20180814.pdf",
+    "sha256": "4ee9073edb6b0d9560a71a8f797672f72cce9b8d746812d8c55943d2dd4e00cd",
+    "localPath": "artifacts/editorial-next/4ee9073edb6b0d9560a71a8f797672f72cce9b8d746812d8c55943d2dd4e00cd.pdf",
+    "retrievedAt": "2026-09-09T01:08:35.210310+00:00",
+    "textPath": "artifacts/editorial-next/4ee9073edb6b0d9560a71a8f797672f72cce9b8d746812d8c55943d2dd4e00cd.txt",
+    "textSha256": "119cbbc912e43afca9f331f9a443f68697841b2345e4795f59e44e3532f004b7",
+    "redistribution": "Original sources linked. No original artwork or full-text redistribution."
+  },
+  {
+    "id": "M3",
+    "title": "2025年4月地域公共交通計画・第2章 横浜の地域交通を取り巻く状況と課題",
+    "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/toshikotsu/plan/chiki-kotsu-plan.files/0027_20250410.pdf",
+    "sha256": "1b96ec69738cb5e95aa017e3aed9fee62cebf3879fc7b521c8e0021c4c8a9a5e",
+    "localPath": "artifacts/editorial-next/1b96ec69738cb5e95aa017e3aed9fee62cebf3879fc7b521c8e0021c4c8a9a5e.pdf",
+    "retrievedAt": "2026-09-09T01:08:35.311046+00:00",
+    "textPath": "artifacts/editorial-next/1b96ec69738cb5e95aa017e3aed9fee62cebf3879fc7b521c8e0021c4c8a9a5e.txt",
+    "textSha256": "719015a8f5b427410e6dbf69bae3a726354d89407690c6d6e07b29e1cbb0ae84",
+    "redistribution": "Original sources linked. No original artwork or full-text redistribution."
+  },
+  {
+    "id": "M4",
+    "title": "敬老特別乗車証制度のあり方の検討について（2020年2月25日更新）",
+    "url": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/19k-pass-arikata01.html",
+    "sha256": "8edb7b8a1d6e6d1d18e91a084ceb174c6d07ceccbc6f86c956804e23e5ba098a",
+    "localPath": "artifacts/editorial-next/8edb7b8a1d6e6d1d18e91a084ceb174c6d07ceccbc6f86c956804e23e5ba098a.html",
+    "retrievedAt": "2026-09-09T01:08:35.197762+00:00",
+    "textPath": "artifacts/editorial-next/8edb7b8a1d6e6d1d18e91a084ceb174c6d07ceccbc6f86c956804e23e5ba098a.txt",
+    "textSha256": "b17ddfaeee9f53ce03296be86eb3f7b9073301df1637653efa4f63741ca9bc5c",
+    "redistribution": "Original sources linked. No original artwork or full-text redistribution."
   }
 ]

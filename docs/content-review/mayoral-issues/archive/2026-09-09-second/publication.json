@@ -143,7 +143,7 @@
         }
       ],
       "article": {
-        "contentHash": "cc20fe58b8d09fe4506ac5eaa25dcad4d1ed5d95043eb26f63ad2929b4c1f271",
+        "contentHash": "9e508a2348b2e90bb3f0a69756930bda52e309db433fc74369ee4c292ddb33d7",
         "claims": [
           {
             "id": "V041-S01",
@@ -219,9 +219,9 @@
         ]
       },
       "review": {
-        "contentHash": "cc20fe58b8d09fe4506ac5eaa25dcad4d1ed5d95043eb26f63ad2929b4c1f271",
-        "reviewer": "Codex author: shared rendering/catalogue/source-inventory update; manuscript and claims unchanged",
-        "reviewedAt": "2026-09-09T01:24:45.514045Z",
+        "contentHash": "9e508a2348b2e90bb3f0a69756930bda52e309db433fc74369ee4c292ddb33d7",
+        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
+        "reviewedAt": "2026-09-08T23:25:03.788495Z",
         "findings": [
           {
             "claimId": "V041-S01",
@@ -297,7 +297,7 @@
         ],
         "humanApproval": {
           "approver": "user: adopted exact v0.4.1 manuscript; inherited publication authorization recorded now, implementation not human-reviewed",
-          "contentHash": "cc20fe58b8d09fe4506ac5eaa25dcad4d1ed5d95043eb26f63ad2929b4c1f271",
+          "contentHash": "9e508a2348b2e90bb3f0a69756930bda52e309db433fc74369ee4c292ddb33d7",
           "approvedAt": "2026-09-08T16:50:42.377046Z"
         }
       },
@@ -306,13 +306,13 @@
         "instruction": "本番に出してよいです。",
         "scope": "STATUS 2026-09-09に引き継がれた給食v0.4.1の採用と、既存記事の改善・順次公開の継続委任。利用者検証や実装の人間レビューを示さない。",
         "recordedAt": "2026-09-06T17:31:50.018298Z",
-        "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data.",
+        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。",
         "humanContentReview": false
       },
       "route": "/issues/school-lunch/",
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
@@ -506,18 +506,6 @@
             "verifiedAt": "2026-09-08T17:03:41.851161Z",
             "productionE2E": "100 passed"
           }
-        },
-        {
-          "contentHash": "9e508a2348b2e90bb3f0a69756930bda52e309db433fc74369ee4c292ddb33d7",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09-second/publication.json",
-          "reason": "childcare/mobility revision or shared rendering update",
-          "deployment": {
-            "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-            "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
-            "url": "https://open.yokohama/issues/school-lunch/",
-            "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-            "productionE2E": "110 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -569,9 +557,9 @@
         "humanApprovalTimestampMeaning": "Time this inherited manuscript adoption was recorded against the implementation; not a new user review event."
       },
       "revisionReview": {
-        "scope": "shared files only; manuscript unchanged",
-        "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
+        "scope": "shared code only; manuscript unchanged",
+        "recordedAt": "2026-09-08T23:25:03.788495Z",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -616,7 +604,7 @@
         }
       ],
       "article": {
-        "contentHash": "1f0abd0ba00c21b3631bf85765bc4a9f91e900617bf25b80ecc95c084970549b",
+        "contentHash": "0167ce4a2c07328731433e0c52f8e045d63a030cb5a5ba0d50d5444560bf9d93",
         "claims": [
           {
             "id": "city-governance-01",
@@ -683,9 +671,9 @@
         ]
       },
       "review": {
-        "contentHash": "1f0abd0ba00c21b3631bf85765bc4a9f91e900617bf25b80ecc95c084970549b",
-        "reviewer": "Codex author: shared rendering/catalogue/source-inventory update; manuscript and claims unchanged",
-        "reviewedAt": "2026-09-09T01:24:45.514045Z",
+        "contentHash": "0167ce4a2c07328731433e0c52f8e045d63a030cb5a5ba0d50d5444560bf9d93",
+        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
+        "reviewedAt": "2026-09-08T23:25:03.788495Z",
         "findings": [
           {
             "claimId": "city-governance-01",
@@ -752,7 +740,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "1f0abd0ba00c21b3631bf85765bc4a9f91e900617bf25b80ecc95c084970549b",
+          "contentHash": "0167ce4a2c07328731433e0c52f8e045d63a030cb5a5ba0d50d5444560bf9d93",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -763,11 +751,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
+        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
@@ -885,18 +873,6 @@
             "verifiedAt": "2026-09-08T17:03:41.851161Z",
             "productionE2E": "100 passed"
           }
-        },
-        {
-          "contentHash": "0167ce4a2c07328731433e0c52f8e045d63a030cb5a5ba0d50d5444560bf9d93",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09-second/publication.json",
-          "reason": "childcare/mobility revision or shared rendering update",
-          "deployment": {
-            "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-            "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
-            "url": "https://open.yokohama/issues/city-governance/",
-            "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-            "productionE2E": "110 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -937,9 +913,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "shared files only; manuscript unchanged",
-        "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
+        "scope": "shared code only; manuscript unchanged",
+        "recordedAt": "2026-09-08T23:25:03.788495Z",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -984,7 +960,7 @@
         }
       ],
       "article": {
-        "contentHash": "f500b4183efcd1a0bf7a4fa00ec99ee7e7ed8aacd0108101ba49ab724b745b34",
+        "contentHash": "e1188ffe61dc2b8c9894356f480fdd87ec293a27db4a6a3584e151f18bfea83b",
         "claims": [
           {
             "id": "city-budget-01",
@@ -1050,9 +1026,9 @@
         ]
       },
       "review": {
-        "contentHash": "f500b4183efcd1a0bf7a4fa00ec99ee7e7ed8aacd0108101ba49ab724b745b34",
-        "reviewer": "Codex author: shared rendering/catalogue/source-inventory update; manuscript and claims unchanged",
-        "reviewedAt": "2026-09-09T01:24:45.514045Z",
+        "contentHash": "e1188ffe61dc2b8c9894356f480fdd87ec293a27db4a6a3584e151f18bfea83b",
+        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
+        "reviewedAt": "2026-09-08T23:25:03.788495Z",
         "findings": [
           {
             "claimId": "city-budget-01",
@@ -1118,7 +1094,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "f500b4183efcd1a0bf7a4fa00ec99ee7e7ed8aacd0108101ba49ab724b745b34",
+          "contentHash": "e1188ffe61dc2b8c9894356f480fdd87ec293a27db4a6a3584e151f18bfea83b",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1129,11 +1105,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
+        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
@@ -1250,18 +1226,6 @@
             "verifiedAt": "2026-09-08T17:03:41.851161Z",
             "productionE2E": "100 passed"
           }
-        },
-        {
-          "contentHash": "e1188ffe61dc2b8c9894356f480fdd87ec293a27db4a6a3584e151f18bfea83b",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09-second/publication.json",
-          "reason": "childcare/mobility revision or shared rendering update",
-          "deployment": {
-            "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-            "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
-            "url": "https://open.yokohama/issues/city-budget/",
-            "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-            "productionE2E": "110 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -1302,9 +1266,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "shared files only; manuscript unchanged",
-        "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
+        "scope": "shared code only; manuscript unchanged",
+        "recordedAt": "2026-09-08T23:25:03.788495Z",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1349,7 +1313,7 @@
         }
       ],
       "article": {
-        "contentHash": "e0d13963e490117ca747eefd2a7590f0b3647b3d9f3f854ebcc956c4af58b6d4",
+        "contentHash": "8417e0dc2c4b3751548b1f74ce626161864f9ec8b5730eae4c50526b708fc35b",
         "claims": [
           {
             "id": "green-expo-01",
@@ -1415,9 +1379,9 @@
         ]
       },
       "review": {
-        "contentHash": "e0d13963e490117ca747eefd2a7590f0b3647b3d9f3f854ebcc956c4af58b6d4",
-        "reviewer": "Codex author: shared rendering/catalogue/source-inventory update; manuscript and claims unchanged",
-        "reviewedAt": "2026-09-09T01:24:45.514045Z",
+        "contentHash": "8417e0dc2c4b3751548b1f74ce626161864f9ec8b5730eae4c50526b708fc35b",
+        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
+        "reviewedAt": "2026-09-08T23:25:03.788495Z",
         "findings": [
           {
             "claimId": "green-expo-01",
@@ -1483,7 +1447,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "e0d13963e490117ca747eefd2a7590f0b3647b3d9f3f854ebcc956c4af58b6d4",
+          "contentHash": "8417e0dc2c4b3751548b1f74ce626161864f9ec8b5730eae4c50526b708fc35b",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1494,11 +1458,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
+        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
@@ -1615,18 +1579,6 @@
             "verifiedAt": "2026-09-08T17:03:41.851161Z",
             "productionE2E": "100 passed"
           }
-        },
-        {
-          "contentHash": "8417e0dc2c4b3751548b1f74ce626161864f9ec8b5730eae4c50526b708fc35b",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09-second/publication.json",
-          "reason": "childcare/mobility revision or shared rendering update",
-          "deployment": {
-            "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-            "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
-            "url": "https://open.yokohama/issues/green-expo/",
-            "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-            "productionE2E": "110 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -1667,9 +1619,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "shared files only; manuscript unchanged",
-        "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
+        "scope": "shared code only; manuscript unchanged",
+        "recordedAt": "2026-09-08T23:25:03.788495Z",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1687,10 +1639,7 @@
         "scripts/policy-table-labels.mjs",
         "apps/web/astro.config.mjs",
         "docs/content-review/mayoral-issues/sources.json",
-        "scripts/policy-evidence.mjs",
-        "data/editorial/figures/mobility-support.html",
-        "data/editorial/figures/second-manifest.json",
-        "docs/content-review/mayoral-issues/check.py"
+        "scripts/policy-evidence.mjs"
       ],
       "sources": [
         {
@@ -1714,37 +1663,15 @@
           "localPath": "artifacts/mayoral-issues-sources/a0c54245042de4119ed635b83084ee2a1af8adf87ac0029962b43c7b27f64f8f.html",
           "textPath": "artifacts/mayoral-issues-sources/M2.txt",
           "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
-        },
-        {
-          "id": "M3",
-          "title": "2025年4月地域公共交通計画・第2章 横浜の地域交通を取り巻く状況と課題",
-          "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/toshikotsu/plan/chiki-kotsu-plan.files/0027_20250410.pdf",
-          "sha256": "1b96ec69738cb5e95aa017e3aed9fee62cebf3879fc7b521c8e0021c4c8a9a5e",
-          "localPath": "artifacts/editorial-next/1b96ec69738cb5e95aa017e3aed9fee62cebf3879fc7b521c8e0021c4c8a9a5e.pdf",
-          "retrievedAt": "2026-09-09T01:08:35.311046+00:00",
-          "textPath": "artifacts/editorial-next/1b96ec69738cb5e95aa017e3aed9fee62cebf3879fc7b521c8e0021c4c8a9a5e.txt",
-          "textSha256": "719015a8f5b427410e6dbf69bae3a726354d89407690c6d6e07b29e1cbb0ae84",
-          "redistribution": "Original sources linked. No original artwork or full-text redistribution."
-        },
-        {
-          "id": "M4",
-          "title": "敬老特別乗車証制度のあり方の検討について（2020年2月25日更新）",
-          "url": "https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/19k-pass-arikata01.html",
-          "sha256": "8edb7b8a1d6e6d1d18e91a084ceb174c6d07ceccbc6f86c956804e23e5ba098a",
-          "localPath": "artifacts/editorial-next/8edb7b8a1d6e6d1d18e91a084ceb174c6d07ceccbc6f86c956804e23e5ba098a.html",
-          "retrievedAt": "2026-09-09T01:08:35.197762+00:00",
-          "textPath": "artifacts/editorial-next/8edb7b8a1d6e6d1d18e91a084ceb174c6d07ceccbc6f86c956804e23e5ba098a.txt",
-          "textSha256": "b17ddfaeee9f53ce03296be86eb3f7b9073301df1637653efa4f63741ca9bc5c",
-          "redistribution": "Original sources linked. No original artwork or full-text redistribution."
         }
       ],
       "article": {
-        "contentHash": "6505dbe20aa44193d86f3a54bddc79033b06bfa86128d1c4bd7fd4aed2e900eb",
+        "contentHash": "f6d6562648d1ca646541aa0b948ab626392d2ea6d4720c6581ff1bee507426f6",
         "claims": [
           {
             "id": "local-mobility-01",
             "kind": "analysis",
-            "text": "通院や買い物、知人に会うための移動を支えるには、料金の負担と、使える交通の両方に目を向ける必要がある。横浜で考えたいのは、**敬老パスと地域の交通を、誰のどんな困りごとに合わせて組み合わせるか**だ。",
+            "text": "## 安く乗れる支援と、乗れる場所を増やす支援\n\n通院や買い物の移動を支えるには、運賃負担を軽くする方法と、近くに使える交通を増やす方法がある。**パスがあっても目的地へ行けなければ困りごとは残り、路線があっても料金が重ければ利用しにくい。**\n\n横浜で考えたいのは、敬老パスと地域の交通を、限られた財源の中でどう組み合わせるかだ。住む地域、歩ける距離、出かける時間によって、役立つ支援は異なる。",
             "citations": [
               "M1",
               "M2"
@@ -1752,58 +1679,53 @@
           },
           {
             "id": "local-mobility-02",
-            "kind": "analysis",
-            "text": "## 外出を支える制度に、交通を維持する課題が重なった\n\n敬老パスは、高齢者の社会参加を支援するための制度だ。市の案内は、希望する70歳以上の市民に、所得等に応じた負担金で交付すると説明している。交通費を抑えて出かけやすくすることが、この支援の出発点になる。[^pass]\n\n一方、市は2019〜2020年に制度のあり方を検討した際、対象となる高齢者の増加に伴い、事業費と市・交通事業者の負担が増えることを課題に挙げた。支援を誰まで広げるかと、費用をどう分担して続けるかは、当時から議論の対象だった。[^history]\n\nその後の2025年4月の地域公共交通計画は、交通そのものの維持も課題としている。計画は、利用者数がコロナ禍前の水準に戻っていないこと、運転士不足などを背景に、市内でも減便や最終バスの繰上げを実施せざるを得ない状況を説明する。朝夕の通勤・通学に加え、昼間の日常生活の移動をどう確保するかも扱っている。[^supply]\n\nさらに、地域の小さな交通を導入する取組にも、担い手の高齢化や採算確保の難しさがある。市の計画は、導入に至らない例や継続が難しい例が増えているとする。運賃の支援があっても、乗り場や便が暮らしに合わなければ、移動の困りごとは残る。[^community]\n\n<!-- evidence:mobility-support -->",
-            "citations": [
-              "M1",
-              "M2",
-              "M3",
-              "M4"
-            ]
-          },
-          {
-            "id": "local-mobility-03",
-            "kind": "analysis",
-            "text": "## 敬老パスは、誰がどの交通を使えるか\n\n現在の敬老パスは70歳以上の市民が対象で、負担は所得などによって異なる。無料の区分のほか、**年額3,200円から20,500円**までの区分がある。自分の額は、公式の区分と通知で確認できる。[^pass]\n\n対象交通には、市営地下鉄、シーサイドライン、対象のバスなどがある。JR・私鉄・みなとみらい線などは対象外だ。市営バスでも「あかいくつ」は使えず、深夜バスには割増分の支払いが必要になる。使う便と区間を確かめることが大切だ。[^transport]\n\n2025年10月からは、一部地域のおでかけシャトルも、敬老パスの提示で半額程度の運賃で利用できるようになった。また、2025年4月1日以降に75歳以上で運転免許を自主返納し、敬老パスを申請した人へ、3年間無料で交付する取組も始まっている。[^extension]\n\nこうした違いから、「対象年齢を広げる」「負担金を下げる」「使える交通を広げる」は、利益が届く人も必要な費用も異なる変更だ。「充実」という言葉を、どの変更なのかまで具体化して読みたい。",
+            "kind": "proposal",
+            "text": "## 敬老パスは、すべての交通が無料になる制度ではない\n\n市の敬老パスは70歳以上の市民を対象とし、利用者負担は所得などによって異なる。市の案内では、無料となる区分のほか、年額3,200円から20,500円までの区分がある。個人の負担額は公式の区分と通知で確認する必要がある。[敬老パスの案内「対象者」「負担金額」](https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/keirou.html)\n\n対象は市営地下鉄、シーサイドライン、対象のバスなど。JR、私鉄、みなとみらい線などは対象外だ。2025年10月から対象になった一部のおでかけシャトルも、半額程度の運賃を支払う仕組みになっている。[同「ご利用いただける交通機関」](https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/keirou.html)\n\nしたがって「対象年齢を広げる」「負担金を下げる」「利用できる交通を広げる」は、違う変更だ。公約の「充実」がどの変更を指すかを確かめたい。",
             "citations": [
               "M1"
             ]
           },
           {
-            "id": "local-mobility-04",
-            "kind": "analysis",
-            "text": "## 路線が遠い地域では、運行を始めて続ける支援もある\n\n市は2025年度から「みんなのおでかけ交通事業」を始めた。地域への働きかけや意向確認、ルート・運行計画の提案や調整に加え、運行経費や車両導入などの費用の一部を補助する。[^local]\n\n目標は、2025年度からの4年間で、駅やバス停から離れた「公共交通圏域外」を半減することだ。圏域は道路距離や坂の影響を考慮した市の基準であり、どの人も希望する時間に通院できることを直接測る指標ではない。[^local]\n\n自宅から乗り場に着けるか、行きたい場所へ行けるか、帰りの便はあるか。地域の交通を導入しても、運行日や時間、予約方法が合うかを確かめる必要がある。地域全体の計画と、一人ひとりが実際に使える条件をつなぐ作業が残る。",
+            "id": "local-mobility-03",
+            "kind": "proposal",
+            "text": "## 路線が遠い地域への支援も始まっている\n\n市は2025年度から「みんなのおでかけ交通事業」を開始した。市が地域に働きかける意向確認や運行計画の提案、調整支援に加え、運行経費や車両導入などの費用の一部を補助する。[事業の公式案内「概要」](https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/chiikikokyo/huyasu/odekake/aratanaseido.html)\n\n市は駅やバス停から離れた地域を中心に取り組み、2025年度からの4年間で公共交通圏域外の半減を目指すとしている。この圏域は道路距離や坂の影響を考慮した市の基準によるもので、すべての人が通院できることを直接測る指標ではない。[同「運行に向けた取組を行うエリア」](https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/chiikikokyo/huyasu/odekake/aratanaseido.html)\n\n制度ができたことと、自分の地域で希望の時間に乗れることも別だ。実際の経路、運行日、予約方法まで確認して初めて、暮らしへの効果を判断できる。",
             "citations": [
+              "M2"
+            ]
+          },
+          {
+            "id": "local-mobility-04",
+            "kind": "proposal",
+            "text": "## 次の支援をどう組み合わせるか\n\n| 重点 | 届きやすい困りごと | 費用・限界として確かめること |\n| --- | --- | --- |\n| 敬老パスの負担軽減・対象拡大 | すでに対象交通を使えている人の運賃負担 | 利用者負担の減収、利用増に伴う事業者への支払い。交通が遠い地域の問題は別に残る |\n| 不便な地域の運行を増やす | 駅やバス停まで遠く、移動手段が少ない地域 | 車両導入だけでなく毎年の運行費。運転手、運行日、目的地を確保できるか |\n| 支援を必要とする移動に重点を置く | 通院など、外出を諦める影響が大きい移動 | 対象を決める基準、申請・予約の負担。境界にいる人を取り残さないか |\n\nこれは新制度の確定案ではなく、検討の軸だ。第三の方向について、具体的な対象や給付方法、費用は設計していない。",
+            "citations": [
+              "M1",
               "M2"
             ]
           },
           {
             "id": "local-mobility-05",
             "kind": "proposal",
-            "text": "## 同じ移動の困りごとに、どの支援を組み合わせるか\n\n費用を配分するときは、年齢や制度名だけでなく、移動のどこが難しいかから対応を比べたい。以下は検討する方向の整理であり、新制度の確定案や候補者の公約一覧ではない。\n\n| 判断する課題 | 比べる対応 | 利益と負担が変わる人・残る条件 |\n| --- | --- | --- |\n| 交通はあるが、運賃の負担が重い | パスの負担軽減や対象拡大／支援が必要な人・移動への重点化 | 広く対象にする案と、対象を絞る案で支援される人が変わる。市の支出、利用者負担、申請の手間や対象の境界を見る |\n| 乗り場が遠く、交通を使いにくい | 近くまで運行する地域交通を導入する／乗り場までの移動を支える方法を検討する | 駅・バス停から離れた人への対応。道路や車両、担い手、乗換え負担、継続する運行費を確かめる |\n| 路線はあるが、必要な時間に便がない | 既存路線の便・時間を維持する支援／地域の需要に合わせた別の運行方法を組み合わせる | 通勤・通学と昼間の外出で必要な時間が違う。運転士を確保し、帰りの便や予約の使いやすさまで調整する |\n\nたとえば、パスの対象を広げる案は、対象交通を利用できる人の運賃負担に働きかける。近くに乗れる交通がない場合は、運行や乗り場までの移動への対応も要る。一方、地域の便を増やす案でも、利用者が払える運賃と運行を続ける収入の両方を考える必要がある。\n\n利用者が少ない時間帯でも、その便のほかに移動手段がない人がいるかもしれない。採算と利用人数だけで比べる場合と、代替手段の有無も重く見る場合では、維持する便の判断が変わる。交通を担う事業者と、利用する人の双方の条件を確かめたい。",
+            "text": "## 費用は、初期投資と毎年の運行を分けたい\n\n車両を購入できても、翌年の運行費が続くとは限らない。逆に、利用が少ない便でも、その便がなければ通院できない人がいるかもしれない。利用者一人当たりの費用と、代替手段の有無を一緒に見たい。\n\nこの初版では、敬老パスの拡充と地域交通の追加運行を、同じ年度の正味市負担で比較できていない。既存事業の総額を、そのまま新しい支援の追加費用として示すことは避けた。\n\n政策を比べる次の材料は、増やす対象人数や便数、運行時間、利用見込み、運賃収入、市の年間負担だ。低需要の場合も維持するサービス水準を、あらかじめ示す必要がある。",
             "citations": [
               "M1",
-              "M2",
-              "M3"
+              "M2"
             ]
           },
           {
             "id": "local-mobility-06",
-            "kind": "analysis",
-            "text": "## 最初の費用と、毎年続く費用をそろえて比べる\n\n車両を購入する費用と、毎年の人件費・燃料費・保守費は分けて考える。運賃収入や利用者の負担金、国などの補助を含む事業費と、市が追加で負担する額も同じではない。\n\nこの記事では、敬老パスの拡充と地域交通の追加運行を、同じ年度・同じ範囲の正味市負担で比較できていない。比較に必要なのは、増やす対象人数や便数、時間帯、利用見込み、収入と補助、市の年間負担だ。限られた予算や運転士を新たな支援へ配分するときは、既存の便やほかの支援に何が残るかも見る。\n\n「安く乗れるか」と「行って帰れるか」。この両方を、自分の生活圏と異なる地域でも確かめると、支援を厚くする場所が見えやすくなる。今後は地域別の運行・利用実績と、移動を諦める理由を確認して比較を更新する。\n\n[^pass]: [横浜市・敬老パス「敬老パスとは」「対象者」「負担金額」](https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/keirou.html)。社会参加支援の目的、年齢・所得等の条件を確認。個人の負担区分をこの記事で判定していない。\n[^history]: [横浜市・敬老特別乗車証制度のあり方の検討について](https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/19k-pass-arikata01.html)（2020年2月25日更新）。2019年の審議と2020年1月の答申に至る背景。過去の検討内容を、現在の制度変更や2026年度の費用と扱っていない。\n[^supply]: [2025年4月・横浜市地域公共交通計画、第2章本文9ページ（分割PDF7ページ）](https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/toshikotsu/plan/chiki-kotsu-plan.files/0027_20250410.pdf#page=7)。計画策定時の市内交通の課題。現在の全路線の減便数や利用者の個別事情を網羅する調査ではない。\n[^community]: [同・本文13ページ（分割PDF11ページ）](https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/toshikotsu/plan/chiki-kotsu-plan.files/0027_20250410.pdf#page=11)。地域交通の導入・継続上の課題。図の支援対象と組み合わせは、この計画と現行制度を基にした編集上の整理。\n[^transport]: [敬老パス「ご利用いただける交通機関」](https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/keirou.html)。バスには路線・区間等の条件がある。対象外交通の一覧と、個別の利用条件は公式案内を確認。\n[^extension]: [同・2025年10月からの取組と対象交通機関](https://www.city.yokohama.lg.jp/kenko-iryo-fukushi/fukushi-kaigo/koreisha-kaigo/kaigoyobo-kenkoudukuri-ikigai/ikigai-shakaisanka/keirou.html)。一部おでかけシャトルは運賃が必要で、免許返納者の無料交付は年齢・返納日・申請等の条件がある。\n[^local]: [横浜市・みんなのおでかけ交通事業](https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/chiikikokyo/huyasu/odekake/aratanaseido.html)。地域への支援と公共交通圏域外の半減目標を確認。制度の開始を全対象地域での運行開始とは扱わない。",
+            "kind": "proposal",
+            "text": "## 「使える」を、目的地まで確かめる\n\n公約への問いとして、運賃だけでなく、自宅から乗り場までの距離、乗換え、帰りの便、予約のしやすさを提案したい。地図に路線が引かれたことをゴールにしないためだ。\n\n今後、地域別の利用実績や移動を諦めた理由が得られれば、負担軽減と路線改善の優先順位を見直せる。現時点では市民への聞き取りを行っておらず、どちらが最も求められているかは未検証だ。",
             "citations": [
               "M1",
-              "M2",
-              "M3",
-              "M4"
+              "M2"
             ]
           }
         ]
       },
       "review": {
-        "contentHash": "6505dbe20aa44193d86f3a54bddc79033b06bfa86128d1c4bd7fd4aed2e900eb",
-        "reviewer": "Codex author: revised manuscript, figures and primary sources",
-        "reviewedAt": "2026-09-09T01:24:45.514045Z",
+        "contentHash": "f6d6562648d1ca646541aa0b948ab626392d2ea6d4720c6581ff1bee507426f6",
+        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
+        "reviewedAt": "2026-09-08T23:25:03.788495Z",
         "findings": [
           {
             "claimId": "local-mobility-01",
@@ -1812,60 +1734,55 @@
               "M1",
               "M2"
             ],
-            "rationale": "Reader question distinguishes fare burden and usable transport. Author source and interpretation review, not human validation."
+            "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 安く乗れる支援と、乗れる場所を増やす支援"
           },
           {
             "claimId": "local-mobility-02",
             "verdict": "supported",
             "citationIds": [
-              "M1",
-              "M2",
-              "M3",
-              "M4"
+              "M1"
             ],
-            "rationale": "M1 social participation purpose;M4 attributes2019-2020 review to increasing beneficiaries/city and operator costs;M3 PDF7/11 attributed2025 supply and local sustainability issues. Not current all-route counts or proven program impact. Author source and interpretation review, not human validation."
+            "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 敬老パスは、すべての交通が無料になる制度ではない"
           },
           {
             "claimId": "local-mobility-03",
             "verdict": "supported",
             "citationIds": [
-              "M1"
+              "M2"
             ],
-            "rationale": "M1 current conditions:70+,0 and3200-20500 annual charges; supported modes and exclusions, Akai Kutsu excluded and night surcharge; fromOct2025 selected shuttle half-fare;75+ surrender on/afterApr1 2025 plus application gives3years free. Not personal eligibility determination or all transport free. Author source and interpretation review, not human validation."
+            "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 路線が遠い地域への支援も始まっている"
           },
           {
             "claimId": "local-mobility-04",
             "verdict": "supported",
             "citationIds": [
+              "M1",
               "M2"
             ],
-            "rationale": "M2 fiscal2025 start, planning and partial operation/vehicle support; four-year coverage-outside halving goal with road/slope criteria. No all-area operation/individual access inference. Author source and interpretation review, not human validation."
+            "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 次の支援をどう組み合わせるか"
           },
           {
             "claimId": "local-mobility-05",
             "verdict": "supported",
             "citationIds": [
               "M1",
-              "M2",
-              "M3"
+              "M2"
             ],
-            "rationale": "Conditional alternatives for fare, stop access and service times; different beneficiaries, targeting/admin burden, drivers, revenue and return-trip conditions. Not adopted new rules/candidate list/effect ranking. Author source and interpretation review, not human validation."
+            "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 費用は、初期投資と毎年の運行を分けたい"
           },
           {
             "claimId": "local-mobility-06",
             "verdict": "supported",
             "citationIds": [
               "M1",
-              "M2",
-              "M3",
-              "M4"
+              "M2"
             ],
-            "rationale": "Capital and recurring costs, total vs incremental city costs distinguished; same-year net cost comparison remains unavailable. Source notes clarify historical policy context vs current conditions. Author source and interpretation review, not human validation."
+            "rationale": "M1 current burden table and transport eligibility: income groups, exemptions, excluded railways, partial fare for certain shuttles. M2 outline/areas: FY2025 start, partial subsidy, four-year goal, not achieved accessibility. No additional-cost estimate or demand ranking. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 「使える」を、目的地まで確かめる"
           }
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "6505dbe20aa44193d86f3a54bddc79033b06bfa86128d1c4bd7fd4aed2e900eb",
+          "contentHash": "f6d6562648d1ca646541aa0b948ab626392d2ea6d4720c6581ff1bee507426f6",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1876,11 +1793,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
+        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
@@ -1988,18 +1905,6 @@
             "verifiedAt": "2026-09-08T17:03:41.851161Z",
             "productionE2E": "100 passed"
           }
-        },
-        {
-          "contentHash": "f6d6562648d1ca646541aa0b948ab626392d2ea6d4720c6581ff1bee507426f6",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09-second/publication.json",
-          "reason": "childcare/mobility revision or shared rendering update",
-          "deployment": {
-            "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-            "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
-            "url": "https://open.yokohama/issues/local-mobility/",
-            "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-            "productionE2E": "110 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -2040,9 +1945,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "revised manuscript and figures",
-        "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "Passed scoped primary-source/manuscript/figure review; see docs/content-review/editorial-second-2026-09-09.json",
+        "scope": "shared code only; manuscript unchanged",
+        "recordedAt": "2026-09-08T23:25:03.788495Z",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -2079,10 +1984,7 @@
         "apps/web/public/maps/childcare-2026.png",
         "apps/web/public/maps/childcare-2026.svg",
         "apps/web/public/maps/yokohama-wards-base.svg",
-        "data/fonts/manifest.json",
-        "data/editorial/figures/childcare-counts.html",
-        "data/editorial/figures/second-manifest.json",
-        "docs/content-review/mayoral-issues/check.py"
+        "data/fonts/manifest.json"
       ],
       "sources": [
         {
@@ -2106,62 +2008,41 @@
           "localPath": "artifacts/mayoral-issues-sources/9a6bf6742ac41ff9d03a2cffd93ba675850af174d632ca3b71384272d890c97c.pdf",
           "textPath": "artifacts/mayoral-issues-sources/N3.txt",
           "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
-        },
-        {
-          "id": "N4",
-          "title": "横浜市の待機児童対策の経緯と今後の課題・調査季報172号（2013年3月）",
-          "url": "https://www.city.yokohama.lg.jp/city-info/seisaku/torikumi/shien/tyousakihou/kihou-archive/172.files/0007_20191119.pdf",
-          "sha256": "8ee9718ffe35b82d27337d1edf98a442434290ed49cf03376907772e8c3db467",
-          "localPath": "artifacts/editorial-next/8ee9718ffe35b82d27337d1edf98a442434290ed49cf03376907772e8c3db467.pdf",
-          "retrievedAt": "2026-09-09T01:08:35.279635+00:00",
-          "textPath": "artifacts/editorial-next/8ee9718ffe35b82d27337d1edf98a442434290ed49cf03376907772e8c3db467.txt",
-          "textSha256": "91ed59e1c38635bbf95c61284795c6ac8164facb564c0943aee87c00413477c8",
-          "redistribution": "Original sources linked. No original artwork or full-text redistribution."
-        },
-        {
-          "id": "N5",
-          "title": "2013年5月27日・待機児童対策の状況",
-          "url": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/h25-h26/katsudogaiyo-h25-j-4.files/0175_20180814.pdf",
-          "sha256": "4ee9073edb6b0d9560a71a8f797672f72cce9b8d746812d8c55943d2dd4e00cd",
-          "localPath": "artifacts/editorial-next/4ee9073edb6b0d9560a71a8f797672f72cce9b8d746812d8c55943d2dd4e00cd.pdf",
-          "retrievedAt": "2026-09-09T01:08:35.210310+00:00",
-          "textPath": "artifacts/editorial-next/4ee9073edb6b0d9560a71a8f797672f72cce9b8d746812d8c55943d2dd4e00cd.txt",
-          "textSha256": "119cbbc912e43afca9f331f9a443f68697841b2345e4795f59e44e3532f004b7",
-          "redistribution": "Original sources linked. No original artwork or full-text redistribution."
         }
       ],
       "article": {
-        "contentHash": "0df2710fdb1d7a65a81a4dc0cf9cecdc1057b83a031a7327cd0829f9d92d0157",
+        "contentHash": "41c4e99a4e2f282f760b5efdb9772dfa19ef54db5aab0bb6c211f30ed4559f65",
         "claims": [
           {
             "id": "childcare-access-01",
             "kind": "analysis",
-            "text": "必要な時期に、通える場所で、安心して子どもを預けられるか。横浜の待機児童数は2026年4月も0人だが、次の保育政策を考えるには、**どの年齢・地域の受入れと、保育を担う人への支援を厚くするか**まで確かめたい。[^current]",
+            "text": "## 「ゼロ」を出発点に、使える保育を見る\n\n保育の政策を考えるとき、知りたいのは「必要な時期に、通える場所で、安心して預けられるか」だ。市全体の待機児童数だけでは、家族の生活に合う保育が見つかるかまでは分からない。\n\n横浜の次の問いは、**施設をいくつ増やすかに加え、どの年齢・地域の受入れを厚くするか、保育を担う人と質をどう支えるか**になる。",
             "citations": [
-              "N1"
+              "N1",
+              "N3"
             ]
           },
           {
             "id": "childcare-access-02",
-            "kind": "analysis",
-            "text": "## 子どもが減っても、保育への申込みは増えていた\n\n横浜が待機児童対策を進めてきた背景には、子どもの人数と保育の需要が同じようには動かなかったことがある。市の2013年の振り返りでは、2004年から2012年にかけて就学前の子どもが減る一方、保育所への入所申込数は増えていた。保育所を使って働きたい家庭に、受入れの整備が追いつかない時期があった。[^history]\n\n市は認可保育所の新設だけでなく、横浜保育室、家庭的保育、幼稚園の預かり保育などを広げ、家庭に合う保育を紹介する相談員も各区に配置した。2013年5月の市会資料は、2010年4月に1,552人だった待機児童が、2013年4月には0人になったと報告している。[^zero]\n\nただし、この時も希望どおりの保育所に入れていない保留児童は1,746人と説明されていた。「ゼロを達成したか」と「希望する保育につながったか」は、当時から別の問いだった。市の振り返りも、施設の量を増やすことに加え、地域・年齢の需給や家庭の事情を把握する必要性を扱っている。[^zero][^history]\n\nこうした経緯を踏まえると、今の課題は施設の総数だけでは捉えにくい。利用を希望する家庭の年齢・場所・時間に、受入れと人員配置を合わせられるかが問われる。",
+            "kind": "proposal",
+            "text": "## 待機児童0人、保留児童2,532人は両立する\n\n市の2026年5月12日公表資料では、4月1日時点の保育所等利用申請者は73,834人、利用児童は71,302人。その差である保留児童は2,532人、国の定義に基づく待機児童は0人となっている。[利用状況の補足資料・1ページ](https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf#page=1)\n\n| 同じ2026年4月1日時点の区分 | 人数 | 意味 |\n| --- | --- | --- |\n| 保留児童 | 2,532人 | 申請者数から利用児童数を引いた数 |\n| 育児休業の延長希望を除く保留児童 | 1,256人 | 2,532人から、延長を希望する1,276人を除いた数 |\n| 待機児童 | 0人 | 保留児童から、国の定義に従う各区分を除いて数えたもの |\n\n除外区分には、横浜保育室等の利用、育児休業延長の許容、求職活動の休止、特定施設のみの申込みなどがある。**2,532人全員がすぐに入所を必要としているとも、0人だから困っている家庭がないとも言えない。**\n\n73,834−71,302＝2,532、2,532−1,276＝1,256となる。同じ「入れなかった子ども」という言葉でも、どの区分かによって人数が変わる。",
             "citations": [
-              "N4",
-              "N5"
+              "N1"
             ]
           },
           {
             "id": "childcare-access-03",
             "kind": "analysis",
-            "text": "## 2026年の0人と2,532人は、何を数えているか\n\n2026年4月1日の保育所等利用申請者は73,834人、利用児童は71,302人。その差の**保留児童は2,532人**で、国の定義に基づく待機児童は0人となっている。[^current]\n\n<!-- evidence:childcare-counts -->\n\n保留児童には、育児休業の延長を希望する人や、別の保育サービスを使う人なども含まれる。育休延長を希望する1,276人を除くと1,256人になり、そこから国の定義に従う区分を除いて待機児童を数える。\n\n**2,532人全員がすぐに入所を必要としているとも、0人だから困っている家庭がないとも言えない。** どの保育を使えて、何を希望し、何が合わなかったかを確かめる必要がある。\n\n前年からの増減にも集計上の条件がある。2026年は、空きスペースで1・2歳児を単年度で預かる「年度限定保育事業」の利用児童が、制度改正により利用児童数へ算入された。保留児童数の減少を、すべて新しい枠の効果と読むことはできない。[^definition]",
+            "text": "## 年齢と地域によって、空きの意味が違う\n\n同じ資料では、育休延長希望を除く保留児童1,256人のうち、1歳児703人、2歳児201人で、合わせて約72％を占める。市全体に空きがあっても、必要な年齢や通える場所の枠と一致するとは限らない。[補足資料・2ページ](https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf#page=2)\n\n市の2026年度計画も、1・2歳児を中心に既存施設の定員構成の見直しなどで受入枠を確保し、既存資源だけでは足りない地域では整備を進める方針を示す。[保育所等整備事業・PDF120ページ](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf#page=120)\n\n区別には、育児休業の延長希望を含む保留児童2,532人の内訳が公表されている。人数は港北区312人が最多だが、申請者に占める割合は瀬谷区6.8％が最も高く、市全体は3.4％となる。割合の分母は、各区の利用児童数と保留児童数の合計だ。[補足資料・7ページ](https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf#page=7)\n\n<!-- evidence:childcare-wards -->\n\nこの点からは、園を一律に増やすかどうかより、必要な枠をどこに作るかが判断の分かれ目になる。ただし、統計だけで個々の家庭の希望や園の質までは評価できない。",
             "citations": [
-              "N1"
+              "N1",
+              "N3"
             ]
           },
           {
             "id": "childcare-access-04",
-            "kind": "analysis",
-            "text": "## 1・2歳児の不足と、18区の違いを見る\n\n育休延長希望を除く保留児童1,256人のうち、1歳児は703人、2歳児は201人で、合わせて約72％を占める。市全体に空きがあっても、その年齢の子どもが通える場所に空きがあるとは限らない。[^age]\n\n市の2026年度計画は、既存施設の定員構成を見直して1・2歳児の枠を広げることと、既存資源だけでは足りない地域で整備を進めることを併せて掲げている。備品・改修への補助や、重点地域の1歳児枠を増やす際の補助の引上げも、その手段に含まれる。[^response]\n\n地域差を確かめる材料として、育休延長希望を含む保留児童2,532人の区別内訳がある。人数では港北区312人が最多だが、申請者に占める割合は瀬谷区6.8％が最も高く、市全体は3.4％だ。地図は各区の利用児童数と保留児童数を合わせた人数を分母にしている。[^wards]\n\n<!-- evidence:childcare-wards -->\n\nこの地図は、保留児童の人数と割合が異なる地域差を示すことを確かめるためのものだ。区の中の通える範囲、年齢別の不足、園の質や個々の家庭の入園の難しさまでは示さない。自分の生活圏へ絞るには、園別・年齢別の受入れと通園の実態を確かめる必要がある。",
+            "kind": "proposal",
+            "text": "## 限られたお金を、どこに向けるか\n\n| 重点 | 期待する改善 | 費用・弱点として確認すること |\n| --- | --- | --- |\n| 既存施設の年齢別の枠を見直す | 今ある施設を使い、需要の高い年齢の受入れを増やす | 改修・人員配置の費用。他の年齢の受入れを減らす影響も確かめる |\n| 足りない地域に新たな受入先を作る | 通える距離に保育を確保する | 用地・整備・毎年の運営費。完成までの時間と将来の需要を見込む |\n| 人材の確保・定着と相談支援を厚くする | 保育の継続と質、家庭に合う選択を支える | 経常的な人件費や支援費。必要な地域の枠不足をどこまで改善できるか |\n\nこの表は施策の方向を比べたもので、どれか一つの採用を勧めるものではない。地域の状況によって組み合わせが変わる。",
             "citations": [
               "N1",
               "N3"
@@ -2170,56 +2051,53 @@
           {
             "id": "childcare-access-05",
             "kind": "proposal",
-            "text": "## 同じ不足に、どの受入れを増やすか\n\n保育を利用できない理由が同じでなければ、役立つ対応も違う。以下は、現行計画と統計を踏まえ、どこに費用や人を配分するかを比較するための整理だ。どの案の効果が最も高いかを実証した表ではない。\n\n| 判断する課題 | 比べる対応 | 利益と負担が変わる人・残る条件 |\n| --- | --- | --- |\n| 1・2歳児の枠が足りない | 既存施設の定員構成を変える／近隣に新たな受入先を整備する | 対象年齢の家庭に届く。既存施設では改修と人員配置、他年齢の枠への影響を確認。新設では用地・整備費と完成までの期間が必要 |\n| 通える場所に受入先がない | 不足する地域へ整備を集中する／通える既存施設を相談支援で探す | 通園が難しい家庭が対象。紹介で使える枠が見つかる場合と、実際に枠が足りない場合を分ける。別地域の整備を待つ家庭への影響も見る |\n| 枠があっても利用条件が合わない | 開所時間や利用方法を見直す／家庭に合う保育サービスへの案内を厚くする | 働く時間などが合わない家庭への対応。職員の確保、継続費、相談や申請の負担を確かめる |\n\nどの対応にも、子どもを実際に受け入れる保育者が必要になる。施設整備と人材の確保・定着への支援は、同じ枠を使える状態にするために組み合わせて考える課題だ。建物の定員だけ増やしても、人員や運営の条件がそろうとは限らない。\n\n費用も、建物や改修の初期費用と、毎年続く人件費・運営費に分かれる。どの年齢を何時間受け入れるかをそろえ、国等の負担と市の追加負担を分けてから比較したい。この記事では、表の各案を同じ条件の正味市負担で算定できていない。",
+            "text": "## 「一人分の枠」の値段だけでは決められない\n\n保育の枠を増やす費用には、施設の整備だけでなく、職員の配置と継続的な運営が含まれる。年齢や開所時間などの条件が違えば、一人当たりの単純比較は難しい。\n\nこの初版では、三つの方向について同じ条件の正味市負担を算定していない。待機児童が減った割合から、そのまま政策の費用対効果を断定することもできない。\n\n次に必要なのは、地域・年齢別の希望、利用できなかった理由、受入れの見通し、整備と運営それぞれの追加費用だ。年度途中の利用も、4月1日の統計とは別に確かめたい。",
             "citations": [
               "N1",
-              "N3",
-              "N4",
-              "N5"
+              "N3"
             ]
           },
           {
             "id": "childcare-access-06",
             "kind": "analysis",
-            "text": "## 「何人増やすか」を、使える条件まで具体化する\n\n何歳の子どもを、どこで、いつから受け入れられるか。そのための人員と継続費は確保できるか。4月の市全体の数字にこの条件を添えると、待機児童ゼロの先に必要な支援を考えやすくなる。\n\n今後は、保留の理由と通園の実態、年度途中の利用、地域・年齢別の追加費用を確認する。困りごとの中心が枠不足か時間の不一致かによって、配分の判断も変わる。\n\n[^current]: [2026年4月1日現在の利用状況・補足説明資料1ページ](https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf#page=1)。73,834−71,302＝2,532、2,532−1,276＝1,256。図の残る4区分397＋313＋53＋493＝1,256も原表と照合した。\n[^history]: [調査季報172号「横浜市の待機児童対策の経緯と今後の課題」本文11〜13ページ（PDF1〜3ページ）](https://www.city.yokohama.lg.jp/city-info/seisaku/torikumi/shien/tyousakihou/kihou-archive/172.files/0007_20191119.pdf#page=1)（2013年3月）。市の担当者による当時の振り返り。2004〜2012年の就学前児童数と保育所入所申込数、地域・年齢の需給と個別把握の課題を扱う。歴史上の申込みと2026年の利用申請を同一定義の系列として比較していない。\n[^zero]: [2013年5月27日市会資料・1、4〜5ページ](https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/h25-h26/katsudogaiyo-h25-j-4.files/0175_20180814.pdf#page=1)。当時の待機児童1,552→0と保留児童1,746、整備・相談等の取組を確認。減少の全てを特定施策の因果効果とする説明ではない。\n[^definition]: [2026年補足説明資料1ページの注1](https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf#page=1)。年度限定保育事業の算入変更。4月1日時点の集計は、年度途中や未申請家庭を含む困りごとの総数ではない。\n[^age]: [同2ページ・クラス年齢別の状況](https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf#page=2)。（703＋201）÷1,256×100＝約72％。図の18区比較は育休延長希望を含む2,532人で、年齢別分析と母数が異なる。\n[^response]: [2026年度事業計画書・保育所等整備事業、120ページ](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf#page=120)。定員構成の変更、重点地域の補助、既存資源の活用と整備を確認。比較表の案は編集上の整理で、全てが新規に決まった事業ではない。\n[^wards]: [2026年補足説明資料7ページ・区別内訳](https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf#page=7)。割合は保留児童数÷（利用児童数＋保留児童数）。市全体の割合は区別割合の単純平均にしていない。地図の判定基準・原データ・境界の出典は図の下に記載。",
+            "text": "## 公約と実績で、同じ問いを追う\n\n約束の段階では「何人増やすか」に加え、どこで、何歳を、いつから受け入れるかを確認したい。実施後は、数字上の枠だけでなく、職員が確保され、希望する利用につながったかを見る。\n\n保留の理由や通園の実態が分かり、主な問題が枠不足より勤務時間との不一致などにあるなら、開所時間や利用支援へ重点を変える。初版の統計はその答えまで持っていない。",
             "citations": [
               "N1",
-              "N3",
-              "N4",
-              "N5"
+              "N3"
             ]
           }
         ]
       },
       "review": {
-        "contentHash": "0df2710fdb1d7a65a81a4dc0cf9cecdc1057b83a031a7327cd0829f9d92d0157",
-        "reviewer": "Codex author: revised manuscript, figures and primary sources",
-        "reviewedAt": "2026-09-09T01:24:45.514045Z",
+        "contentHash": "41c4e99a4e2f282f760b5efdb9772dfa19ef54db5aab0bb6c211f30ed4559f65",
+        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
+        "reviewedAt": "2026-09-08T23:25:03.788495Z",
         "findings": [
           {
             "claimId": "childcare-access-01",
             "verdict": "supported",
             "citationIds": [
-              "N1"
+              "N1",
+              "N3"
             ],
-            "rationale": "Reader question; current April2026 waitlist0, differentiated age/area needs. Author source and interpretation review, not human validation."
+            "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 「ゼロ」を出発点に、使える保育を見る"
           },
           {
             "claimId": "childcare-access-02",
             "verdict": "supported",
             "citationIds": [
-              "N4",
-              "N5"
+              "N1"
             ],
-            "rationale": "N4 PDF1 visually checked:2004-2012 children declined while applications rose; PDF2-3 regional/age mismatch. N5 PDF1 2010waitlist1552,2013zero and held1746; PDF4-5 facility expansion and concierge support. Attributed historical review; no uniform current-definition series or causal effect claim. Author source and interpretation review, not human validation."
+            "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 待機児童0人、保留児童2,532人は両立する"
           },
           {
             "claimId": "childcare-access-03",
             "verdict": "supported",
             "citationIds": [
-              "N1"
+              "N1",
+              "N3"
             ],
-            "rationale": "N1 PDF1:73834-71302=2532;1276 desire leave extension;remaining1256; exclusions397+313+53+493=1256;waitlist0. Label footnote numbers stripped before arithmetic extraction. FY2026 annual-limited service accounting change preserved; not all held children urgent/no need inferred. Author source and interpretation review, not human validation."
+            "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 年齢と地域によって、空きの意味が違う 2026-09-07 addition: N1 page 7 visually inspected; committed extraction matches fixed PDF; all 18 rows and 12 column totals reconciled. Ward applicants=enrolled+held follows page 1. Kohoku held312/max count, Seya142/2086=6.8073%/max rate, city2532/73834=3.4293%. Map includes leave-extension preference; age analysis excludes it. 0.8/1.2 relative bands are editorial, not official/significance/vacancy/admission probability. No age-by-ward cross-tab inference. Map geometry is MLIT N03 2023 with processing attribution."
           },
           {
             "claimId": "childcare-access-04",
@@ -2228,34 +2106,30 @@
               "N1",
               "N3"
             ],
-            "rationale": "N1 PDF2:703+201 of1256 rounds72%; PDF7 ward map2532 including leave extension has different population; unchanged map math/boundaries/exports. N3 PDF120 current age1-2 capacity reconfiguration, equipment/refit and priority-area subsidy. No ward-level admission/quality causal ranking. Author source and interpretation review, not human validation."
+            "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 限られたお金を、どこに向けるか"
           },
           {
             "claimId": "childcare-access-05",
             "verdict": "supported",
             "citationIds": [
               "N1",
-              "N3",
-              "N4",
-              "N5"
+              "N3"
             ],
-            "rationale": "Conditional alternatives for age capacity, travel range and schedule fit; beneficiaries, staffing, capital and recurring costs explicit. No calculated net city cost comparison or empirical winner. Author source and interpretation review, not human validation."
+            "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 「一人分の枠」の値段だけでは決められない"
           },
           {
             "claimId": "childcare-access-06",
             "verdict": "supported",
             "citationIds": [
               "N1",
-              "N3",
-              "N4",
-              "N5"
+              "N3"
             ],
-            "rationale": "Short synthesis, remaining data, citations. Historical vs current definitions and total vs net city expenditure not conflated. Author source and interpretation review, not human validation."
+            "rationale": "N1 pp1–2 visually checked: application minus enrollment, excluded parental extension, age1+2 ratio; definitions preserved. N3 PDF120: targeted age/area capacity and new provision where existing resources insufficient. No all-held-children urgent demand claim. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 公約と実績で、同じ問いを追う"
           }
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "0df2710fdb1d7a65a81a4dc0cf9cecdc1057b83a031a7327cd0829f9d92d0157",
+          "contentHash": "41c4e99a4e2f282f760b5efdb9772dfa19ef54db5aab0bb6c211f30ed4559f65",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -2266,11 +2140,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
+        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
@@ -2392,18 +2266,6 @@
             "verifiedAt": "2026-09-08T17:03:41.851161Z",
             "productionE2E": "100 passed"
           }
-        },
-        {
-          "contentHash": "41c4e99a4e2f282f760b5efdb9772dfa19ef54db5aab0bb6c211f30ed4559f65",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09-second/publication.json",
-          "reason": "childcare/mobility revision or shared rendering update",
-          "deployment": {
-            "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-            "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
-            "url": "https://open.yokohama/issues/childcare-access/",
-            "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-            "productionE2E": "110 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -2444,9 +2306,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "revised manuscript and figures",
-        "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "Passed scoped primary-source/manuscript/figure review; see docs/content-review/editorial-second-2026-09-09.json",
+        "scope": "shared code only; manuscript unchanged",
+        "recordedAt": "2026-09-08T23:25:03.788495Z",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -2539,7 +2401,7 @@
         }
       ],
       "article": {
-        "contentHash": "cccac1fd5ae8a7793da94d51c17ea7ff6b1cea85f9e9a4e50e5075dec65a00de",
+        "contentHash": "556a0bdd64afca729f6ec4cd396417f4af804eab1ee246ab1526bd9f246454be",
         "claims": [
           {
             "id": "school-shelters-01",
@@ -2606,9 +2468,9 @@
         ]
       },
       "review": {
-        "contentHash": "cccac1fd5ae8a7793da94d51c17ea7ff6b1cea85f9e9a4e50e5075dec65a00de",
-        "reviewer": "Codex author: shared rendering/catalogue/source-inventory update; manuscript and claims unchanged",
-        "reviewedAt": "2026-09-09T01:24:45.514045Z",
+        "contentHash": "556a0bdd64afca729f6ec4cd396417f4af804eab1ee246ab1526bd9f246454be",
+        "reviewer": "Codex author: primary source and manuscript/figure review; independent review recorded separately",
+        "reviewedAt": "2026-09-08T23:25:03.788495Z",
         "findings": [
           {
             "claimId": "school-shelters-01",
@@ -2675,7 +2537,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "cccac1fd5ae8a7793da94d51c17ea7ff6b1cea85f9e9a4e50e5075dec65a00de",
+          "contentHash": "556a0bdd64afca729f6ec4cd396417f4af804eab1ee246ab1526bd9f246454be",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -2686,11 +2548,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
+        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
@@ -2797,18 +2659,6 @@
             "verifiedAt": "2026-09-08T17:03:41.851161Z",
             "productionE2E": "100 passed"
           }
-        },
-        {
-          "contentHash": "556a0bdd64afca729f6ec4cd396417f4af804eab1ee246ab1526bd9f246454be",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09-second/publication.json",
-          "reason": "childcare/mobility revision or shared rendering update",
-          "deployment": {
-            "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-            "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
-            "url": "https://open.yokohama/issues/school-shelters/",
-            "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-            "productionE2E": "110 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -2849,10 +2699,11 @@
         }
       ],
       "revisionReview": {
-        "scope": "shared files only; manuscript unchanged",
-        "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
-        "humanUnderstandingValidation": "not performed"
+        "scope": "manuscript, sources and explanatory figures",
+        "recordedAt": "2026-09-08T23:25:03.788495Z",
+        "independentReview": "Passed limited manuscript/figure/source review; docs/content-review/editorial-expansion-2026-09-09.json",
+        "humanUnderstandingValidation": "not performed",
+        "limitations": "Not a complete legal audit or human understanding test. Browser and publication verification are separate."
       }
     },
     {
@@ -2896,7 +2747,7 @@
         }
       ],
       "article": {
-        "contentHash": "d250a88dc3a01ebe02303de1594cc25f4193688ea82276b0f2bd5b0508aefc0a",
+        "contentHash": "e27c5d403b32e508049050e75c44093e2cd270cdd4177ed388c93f7e29906559",
         "claims": [
           {
             "id": "election-date",
@@ -2919,9 +2770,9 @@
         ]
       },
       "review": {
-        "contentHash": "d250a88dc3a01ebe02303de1594cc25f4193688ea82276b0f2bd5b0508aefc0a",
-        "reviewer": "Codex author: shared rendering/catalogue/source-inventory update; manuscript and claims unchanged",
-        "reviewedAt": "2026-09-09T01:24:45.514045Z",
+        "contentHash": "e27c5d403b32e508049050e75c44093e2cd270cdd4177ed388c93f7e29906559",
+        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
+        "reviewedAt": "2026-09-08T23:25:03.788495Z",
         "findings": [
           {
             "claimId": "election-date",
@@ -2944,7 +2795,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "d250a88dc3a01ebe02303de1594cc25f4193688ea82276b0f2bd5b0508aefc0a",
+          "contentHash": "e27c5d403b32e508049050e75c44093e2cd270cdd4177ed388c93f7e29906559",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -2955,11 +2806,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
+        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
@@ -3050,18 +2901,6 @@
             "verifiedAt": "2026-09-08T17:03:41.851161Z",
             "productionE2E": "100 passed"
           }
-        },
-        {
-          "contentHash": "e27c5d403b32e508049050e75c44093e2cd270cdd4177ed388c93f7e29906559",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09-second/publication.json",
-          "reason": "childcare/mobility revision or shared rendering update",
-          "deployment": {
-            "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-            "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
-            "url": "https://open.yokohama/elections/mayor-2026/",
-            "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-            "productionE2E": "110 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -3102,9 +2941,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "shared files only; manuscript unchanged",
-        "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
+        "scope": "shared code only; manuscript unchanged",
+        "recordedAt": "2026-09-08T23:25:03.788495Z",
+        "independentReview": "Shared implementation reviewed by independent agent; previous manuscript unchanged. See editorial-expansion-2026-09-09.json for exact scope.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -3327,7 +3166,7 @@
         }
       ],
       "article": {
-        "contentHash": "08ae013cbea4cda1242aba97c05e2fba2a613cd2f2d3a0dec36372b5cc6a4ebd",
+        "contentHash": "351af20c3b1132088633de1ffe6f6f10dc28fa67a53c93491d1147df74b83b6b",
         "claims": [
           {
             "id": "mayor-powers-01",
@@ -3381,9 +3220,9 @@
         ]
       },
       "review": {
-        "contentHash": "08ae013cbea4cda1242aba97c05e2fba2a613cd2f2d3a0dec36372b5cc6a4ebd",
-        "reviewer": "Codex author: shared rendering/catalogue/source-inventory update; manuscript and claims unchanged",
-        "reviewedAt": "2026-09-09T01:24:45.514045Z",
+        "contentHash": "351af20c3b1132088633de1ffe6f6f10dc28fa67a53c93491d1147df74b83b6b",
+        "reviewer": "Codex author: primary source and manuscript/figure review; independent review recorded separately",
+        "reviewedAt": "2026-09-08T23:25:03.788495Z",
         "findings": [
           {
             "claimId": "mayor-powers-01",
@@ -3437,7 +3276,7 @@
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "08ae013cbea4cda1242aba97c05e2fba2a613cd2f2d3a0dec36372b5cc6a4ebd",
+          "contentHash": "351af20c3b1132088633de1ffe6f6f10dc28fa67a53c93491d1147df74b83b6b",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -3448,17 +3287,18 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish foundational explanation of mayoral powers alongside existing major policy articles, under continuing delegation.",
         "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "currentChangeInstruction": "Continuing delegated article creation and publication: other articles; reuse ward figure generator for comparable ward data."
+        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
-        "scope": "shared files only; manuscript unchanged",
-        "recordedAt": "2026-09-09T01:24:45.514045Z",
-        "independentReview": "pending separate review for this batch",
-        "humanUnderstandingValidation": "not performed"
+        "scope": "manuscript, sources and explanatory figures",
+        "recordedAt": "2026-09-08T23:25:03.788495Z",
+        "independentReview": "Passed limited manuscript/figure/source review; docs/content-review/editorial-expansion-2026-09-09.json",
+        "humanUnderstandingValidation": "not performed",
+        "limitations": "Not a complete legal audit or human understanding test. Browser and publication verification are separate."
       },
       "deployment": {
         "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
@@ -3466,21 +3306,7 @@
         "url": "https://open.yokohama/issues/mayor-powers/",
         "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
         "productionE2E": "110 passed"
-      },
-      "revisionHistory": [
-        {
-          "contentHash": "351af20c3b1132088633de1ffe6f6f10dc28fa67a53c93491d1147df74b83b6b",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09-second/publication.json",
-          "reason": "childcare/mobility revision or shared rendering update",
-          "deployment": {
-            "workerVersion": "29868ef4-f54f-42a5-b69d-1e1cb72d8c45",
-            "implementationCommit": "b258dbf923af68de38a96d758cfb2c6815f34612",
-            "url": "https://open.yokohama/issues/mayor-powers/",
-            "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
-            "productionE2E": "110 passed"
-          }
-        }
-      ]
+      }
     }
   ]
 }

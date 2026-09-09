@@ -1,0 +1,33 @@
+{
+  "createdAt": "2026-09-09",
+  "creator": "open.yokohama / Codex",
+  "rights": "Original HTML diagrams from cited facts; no copied artwork",
+  "figures": [
+    {
+      "path": "data/editorial/figures/childcare-counts.html",
+      "sha256": "39d493297ad12fbf464e08ac5f2f90a2bafe5b5e83425bc9ab805b4cbcad3a00"
+    },
+    {
+      "path": "data/editorial/figures/mobility-support.html",
+      "sha256": "ff4aadbdde60f29e52c99579695e978d5edef96afd7cb60c43e579084a6c828d"
+    }
+  ],
+  "childcareCounts": {
+    "date": "2026-04-01",
+    "sourceId": "N1",
+    "pdfPage": 1,
+    "applicants": 73834,
+    "enrolled": 71302,
+    "held": 2532,
+    "extensionDesired": 1276,
+    "excludingExtension": 1256,
+    "otherExclusions": [
+      397,
+      313,
+      53,
+      493
+    ],
+    "waitlist": 0
+  },
+  "mobilityScope": "Editorial distinction of fare support and service support; no empirical impact/cost ranking"
+}

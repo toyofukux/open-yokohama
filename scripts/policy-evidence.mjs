@@ -3,10 +3,14 @@ import { readFileSync } from 'node:fs';
 const figures = {
   '/docs/content-review/mayoral-issues/childcare-access.md': {
     'childcare-wards': '../data/childcare/figure.html',
+    'childcare-counts': '../data/editorial/figures/childcare-counts.html',
   },
   '/docs/content-review/mayoral-issues/school-shelters.md': {
     'gym-timeline': '../data/editorial/figures/gym-timeline.html',
     'gym-funding': '../data/editorial/figures/gym-funding.html',
+  },
+  '/docs/content-review/mayoral-issues/local-mobility.md': {
+    'mobility-support': '../data/editorial/figures/mobility-support.html',
   },
   '/docs/content-review/foundations/mayor-powers.md': {
     'mayor-roles': '../data/editorial/figures/mayor-roles.html',

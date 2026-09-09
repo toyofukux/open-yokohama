@@ -27,6 +27,8 @@ const sources = inventory.filter((s) => frontmatter.sourceIds.includes(s.id));
   summary={frontmatter.summary}
   category={frontmatter.category}
   headings={getHeadings()}
+  revisedOn={frontmatter.revisedOn}
+  reviewedIndependently={true}
   version={version}
   sources={sources}><Content /></PolicyArticle
 >
