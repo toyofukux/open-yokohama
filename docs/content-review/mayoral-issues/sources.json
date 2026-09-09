@@ -239,5 +239,27 @@
     "textPath": "artifacts/editorial-next/8edb7b8a1d6e6d1d18e91a084ceb174c6d07ceccbc6f86c956804e23e5ba098a.txt",
     "textSha256": "b17ddfaeee9f53ce03296be86eb3f7b9073301df1637653efa4f63741ca9bc5c",
     "redistribution": "Original sources linked. No original artwork or full-text redistribution."
+  },
+  {
+    "id": "X2",
+    "title": "旧上瀬谷通信施設について",
+    "url": "https://www.city.yokohama.lg.jp/seya/kurashi/machizukuri_kankyo/machizukuri/hiroba/kamiseya.html",
+    "sha256": "35461f85090a5ab0847c7051a251fe7f71344a238fcd412096b24a4ad5296945",
+    "localPath": "artifacts/editorial-third/35461f85090a5ab0847c7051a251fe7f71344a238fcd412096b24a4ad5296945.html",
+    "retrievedAt": "2026-09-09T01:33:11.115001+00:00",
+    "redistribution": "Ignored original snapshot; link to official source in future article",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/seya/kurashi/machizukuri_kankyo/machizukuri/hiroba/kamiseya.html",
+    "textPath": "artifacts/editorial-third/X2.txt"
+  },
+  {
+    "id": "X3",
+    "title": "2026年度・旧上瀬谷通信施設公園整備事業計画書",
+    "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho231.pdf",
+    "sha256": "e5776598636ac6f01b865d4c63dd4e3895f595fa2a76b5765f62e4a4714c7ec7",
+    "localPath": "artifacts/editorial-third/e5776598636ac6f01b865d4c63dd4e3895f595fa2a76b5765f62e4a4714c7ec7.pdf",
+    "retrievedAt": "2026-09-09T01:33:11.115001+00:00",
+    "redistribution": "Ignored original snapshot; link to official source in future article",
+    "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/green/jigyokeikaku/r8jigyokeikaku.files/r8jigyoukeikakusho231.pdf",
+    "textPath": "artifacts/editorial-third/X3.txt"
   }
 ]

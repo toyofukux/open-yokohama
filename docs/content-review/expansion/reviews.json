@@ -1,0 +1,299 @@
+[
+  {
+    "batch": "fiscal-expo",
+    "reviewer": "/root/school_lunch_review",
+    "result": "No unresolved major or medium findings",
+    "files": [
+      {
+        "path": "docs/content-review/mayoral-issues/city-budget.md",
+        "sha256": "72c3fcdcc31933390018cf01f4c8e5cf660c7aa5ad6d2cc1a39a412d7bff90a3"
+      },
+      {
+        "path": "docs/content-review/mayoral-issues/green-expo.md",
+        "sha256": "8c6189f7d918f143812454add751200b0840d124fbe45357ee09ef11522f13aa"
+      },
+      {
+        "path": "docs/content-review/mayoral-issues/sources.json",
+        "sha256": "362f9e982b3639b174f3ec568ec8a9083db835f04307a78cf91ba69157fa3d03"
+      },
+      {
+        "path": "data/editorial/figures/fiscal-funding.html",
+        "sha256": "208f257620486369dcfb29e40efb57dd3ce14af3af2ffe16122edd7d2d71f851"
+      },
+      {
+        "path": "data/editorial/figures/expo-funding.html",
+        "sha256": "bc2614f355ce4ad3d6daa508e428066553445ef44c9c37f89b4456b874692240"
+      },
+      {
+        "path": "data/editorial/figures/third-manifest.json",
+        "sha256": "89a26ad71ac21cc6893013edf106e9fda6c623ca25f7413ab23229829f781f89"
+      }
+    ],
+    "scope": "Saved primary sources F1/F2/X1/X2/X3 and cited passages; arithmetic, percentages, four footnotes each, figure hashes, purposes versus effects, single-year expense versus savings.",
+    "resolved": [
+      "Author miscalculation372 corrected to412; 400 gap is not an exhaustive decomposition.",
+      "Figure CSS names aligned with existing classes."
+    ],
+    "notPerformed": [
+      "refetch by reviewer",
+      "implementation/browser/production",
+      "human understanding validation",
+      "all contracts and net savings"
+    ]
+  },
+  {
+    "batch": "governance-facilities",
+    "reviewer": "/root/school_lunch_review",
+    "result": "No unresolved major or medium findings within scope",
+    "files": [
+      {
+        "path": "docs/content-review/mayoral-issues/city-governance.md",
+        "sha256": "c18faf7c5d479bca39154b83d20416b6052b6b074b0ac4d6c2796131ba169ca0"
+      },
+      {
+        "path": "docs/content-review/expansion/population-facilities.md",
+        "sha256": "4001c0872c3aa638231819deca9e6e58d79887dee03c7e3a9fe66e446ca619bd"
+      },
+      {
+        "path": "data/editorial/figures/governance-process.html",
+        "sha256": "3556eb7b9bdb6d58ab65d27f0051c65d69a202cc800745dae94467a189e08b92"
+      },
+      {
+        "path": "data/editorial/figures/facility-choices.html",
+        "sha256": "a5868027765cc17ce1d2446d9c576e99e93ae31f9969c9aa9ee7c61b7a64206d"
+      }
+    ],
+    "scope": "G1/G2/P1/P2/P3 source hashes; G2 PDF6-10,87-88,98-99 and cover; accusation/finding/non-finding/personal explanation/legal judgment;2017 vs2024 dataset years; P2 actual combination examples.",
+    "resolved": [
+      "Showa40-50 decades correctly converted to1965-1984."
+    ],
+    "notPerformed": [
+      "implementation/browser/production",
+      "human understanding",
+      "all-city data and net costs",
+      "individual eligibility or exhaustive legal compliance"
+    ]
+  },
+  {
+    "batch": "housing-care",
+    "reviewer": "/root/school_lunch_review",
+    "result": "No unresolved major or medium findings within scope",
+    "files": [
+      {
+        "path": "docs/content-review/expansion/housing-access.md",
+        "sha256": "864c5a122feef73cf59c2f9ec0a77afd7b03b92e1e0d2bc3fcc4d12bb3c2fa3e"
+      },
+      {
+        "path": "docs/content-review/expansion/care-in-community.md",
+        "sha256": "00b14c9c0afd79dddcf7268c92e43818d2e3fc31997a283b270cd52987b6c67d"
+      },
+      {
+        "path": "data/editorial/figures/housing-support.html",
+        "sha256": "b5090cc7b601d17b6234a1507be87213fd4cb19cb9e332dcd372f259c279b899"
+      },
+      {
+        "path": "data/editorial/figures/care-support.html",
+        "sha256": "bc6a35f88b310f463b6f0f3880321557282aa3df24887129f0907a9d95c4da69"
+      }
+    ],
+    "scope": "H1/H2/H3/C1/C2/C3 source hashes and cited text; housing eligibility versus owner subsidy and caps; care survey56.8% limited population, staffing, funding, current and next plan.",
+    "resolved": [
+      "Minor housing figure wording clarification proposed; follow-up pending."
+    ],
+    "notPerformed": [
+      "implementation/browser/production",
+      "human understanding",
+      "all-city data and net costs",
+      "individual eligibility or exhaustive legal compliance"
+    ]
+  },
+  {
+    "batch": "disaster-waste-housing-followup",
+    "reviewer": "/root/school_lunch_review",
+    "result": "No unresolved major or medium findings",
+    "scope": "B1/B2/W1/W2/W3 source hashes and cited passages; 2018 infrastructure versus2026 map update; 2023 plastic14man-ton; 2025 collection and18652+32070=50722;2026 blank; resource quantity not carbon reduction. Housing figure wording resolved.",
+    "files": [
+      {
+        "path": "docs/content-review/expansion/disaster-priorities.md",
+        "sha256": "03f24383fc628f63b517482bb9e903da278275acf4f015db6154b16768d4be5f"
+      },
+      {
+        "path": "docs/content-review/expansion/waste-and-carbon.md",
+        "sha256": "0a835c97cf62fc9c5021933129d37e947e64c64ad116006aa088c6b8233cb98a"
+      },
+      {
+        "path": "data/editorial/figures/plastic-process.html",
+        "sha256": "6ba9ef51ebd3dd5fa0cf63f644d340b3f93e3d99ef15bc45a8ac654df9cb7987"
+      },
+      {
+        "path": "data/editorial/figures/housing-support.html",
+        "sha256": "618b6ae2db2c1ebc443bb1e5bb4d904a81f0b8dcdeb4f969f8cd2e1dbca64ef2"
+      }
+    ],
+    "notPerformed": [
+      "implementation/browser/production",
+      "human understanding",
+      "individual safety",
+      "all-city priorities and net costs/carbon"
+    ]
+  },
+  {
+    "batch": "work-public-space",
+    "reviewer": "/root/school_lunch_review",
+    "result": "No unresolved major or medium findings; minor source addition recommended",
+    "scope": "J1/J2/J3/U1/U2/U3 hashes and passages; J3 PDF133 text; historical economic conditions vs current support, loans vs grants, company vs worker outcomes; free park conditions and exclusions vs actual performance.",
+    "files": [
+      {
+        "path": "docs/content-review/expansion/work-and-business.md",
+        "sha256": "6bde8b3fb55d4308a774b6cb9b5a4c394207bdd63123b3ea747140a248231345"
+      },
+      {
+        "path": "docs/content-review/expansion/public-space.md",
+        "sha256": "4ce8ce211ae106f047bbd762e7dbf34ba63d30e11596b6d825e07ff0557dcfdb"
+      }
+    ],
+    "remaining": [
+      "Public green private ownership source to be supplemented with U4."
+    ],
+    "notPerformed": [
+      "implementation/browser/production",
+      "human understanding",
+      "employment effects/individual financing",
+      "all contracts/construction/use"
+    ]
+  },
+  {
+    "batch": "history-public-space",
+    "reviewer": "/root/school_lunch_review",
+    "result": "No unresolved major, medium or minor findings",
+    "scope": "L1/L2/P1 historical stages and six projects, L2 PDF2. U4 ownership source resolves prior minor finding.",
+    "files": [
+      {
+        "path": "docs/content-review/expansion/city-building-history.md",
+        "sha256": "d6649c3d9e501a0b47f3d7515d0b223dbf233ce3b72270a8f9ef39a726b246e9"
+      },
+      {
+        "path": "data/editorial/figures/city-history.html",
+        "sha256": "84f01a8f481d19386f2ffe7139f0406c5b5596f93e5215f4bbb7bc356aea5e4d"
+      },
+      {
+        "path": "docs/content-review/expansion/public-space.md",
+        "sha256": "e0c4cfe6e264f3734799289541083ee6a2811f97331a91edf7562907a40dbad4"
+      }
+    ],
+    "notPerformed": [
+      "implementation/browser/production",
+      "human understanding",
+      "individual eligibility and unpublished details",
+      "causal effects/net policy costs"
+    ]
+  },
+  {
+    "batch": "costs-results-city-comparison",
+    "reviewer": "/root/school_lunch_review",
+    "result": "No unresolved major, medium or minor findings",
+    "scope": "D3 PDF22 F1 F2 PDF34 N1 PDF1-2 W2: sums, annual scope, net costs, goals/results/causality. M1 URL correction verified; K1 M1 M2 comparison reviewed in prior pass.",
+    "files": [
+      {
+        "path": "docs/content-review/expansion/reading-policy-costs.md",
+        "sha256": "c2a0374c28017edfe05a26b8ce2bcb2166366a149890a5c7a57dee42bf8a9d31"
+      },
+      {
+        "path": "docs/content-review/expansion/reading-policy-results.md",
+        "sha256": "b901c928f0e880ad1c74f3544c1f5baed377bcb43803c1466b7b850586d7fea7"
+      },
+      {
+        "path": "docs/content-review/expansion/learning-from-cities.md",
+        "sha256": "444dde7db8ec2b2681cd725108aafd8da17bd69d6f2427373901d03beccb261a"
+      }
+    ],
+    "notPerformed": [
+      "implementation/browser/production",
+      "human understanding",
+      "individual eligibility and unpublished details",
+      "causal effects/net policy costs"
+    ]
+  },
+  {
+    "batch": "priorities-imperfect-choices",
+    "reviewer": "/root/school_lunch_review",
+    "result": "No unresolved major, medium or minor findings",
+    "scope": "N1 D3 M1 M2 Q03-S1: definitions,123 target, fare and supply support, powers; neutral general framework distinct from actual candidate claims.",
+    "files": [
+      {
+        "path": "docs/content-review/expansion/choosing-priorities.md",
+        "sha256": "a918b3482d3a04ebb9f9c22955971d32f8cbacfdbc03956898495e756d997792"
+      },
+      {
+        "path": "docs/content-review/expansion/comparing-imperfect-choices.md",
+        "sha256": "40708ceb51d81549080966c9f934487c7a84e0971c9df72a5e7af832cb9ca9fe"
+      }
+    ],
+    "notPerformed": [
+      "implementation/browser/production",
+      "human understanding",
+      "individual eligibility and unpublished details",
+      "causal effects/net policy costs"
+    ]
+  },
+  {
+    "batch": "voting-follow-through",
+    "reviewer": "/root/school_lunch_review",
+    "result": "No unresolved major, medium or minor findings",
+    "scope": "V1 V2 dates eligibility relocation early-voting general rules vs forthcoming locations; assistance and postal conditions. D1 D3 Q03-S1 plans vs actual school completion. 5 source hashes and weekdays checked.",
+    "files": [
+      {
+        "path": "docs/content-review/expansion/how-to-vote.md",
+        "sha256": "52d7cf116dbf53a81e9fd54f9ac10aacdf27ee8eba186d4bf593cac3b87346e6"
+      },
+      {
+        "path": "docs/content-review/expansion/policy-follow-through.md",
+        "sha256": "9bf54190d5ddf3fa50978dfc90abe7b09d46de2b1d07a8b0d928bae3b34417fc"
+      }
+    ],
+    "notPerformed": [
+      "implementation/browser/production",
+      "human understanding",
+      "individual eligibility and unpublished details",
+      "causal effects/net policy costs"
+    ]
+  },
+  {
+    "batch": "prepared-allocation-candidates",
+    "reviewer": "/root/school_lunch_review",
+    "result": "No manuscript findings; source discrepancy retained as future comparison blocker",
+    "scope": "A1 PDF5/34 A2 PDF1/18 D3 F2 Q03-S1 E2; no invented net cost or candidates. A2 prior-year municipal funding discrepancy: index6403352 vs detail545000+6403352=6948352 thousand yen.",
+    "files": [
+      {
+        "path": "docs/content-review/expansion/prepared/policy-allocation.md",
+        "sha256": "c6aab84f83fb4cd90e092b4aa3928818711847d577fd4bc0182b8ef000971cc7"
+      },
+      {
+        "path": "docs/content-review/expansion/prepared/candidate-promises.md",
+        "sha256": "58eb32926167be592547a8c792be8de61d8cdb39b26bf296d854880716b81d26"
+      }
+    ],
+    "notPerformed": [
+      "implementation exclusion",
+      "human understanding",
+      "matched net additional costs",
+      "candidate-specific comparison"
+    ]
+  },
+  {
+    "batch": "voting-basic-instruction-followup",
+    "reviewer": "/root/school_lunch_review",
+    "result": "No findings",
+    "scope": "Added one candidate name instruction matches V1 official HTML and footnote1.",
+    "files": [
+      {
+        "path": "docs/content-review/expansion/how-to-vote.md",
+        "sha256": "4b2e51b668cbc37137225e69c7eff47ae0249a6e8b3a5aa2a523351f4d461468"
+      }
+    ],
+    "notPerformed": [
+      "human understanding",
+      "individual registration"
+    ]
+  }
+]

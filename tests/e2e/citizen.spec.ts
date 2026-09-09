@@ -46,11 +46,13 @@ test('retired guides redirect to the matching data without remaining in discover
   }
   for (const route of ['/', '/issues/', '/search/']) {
     await page.goto(route);
-    await expect(
-      page.locator(
-        'a[href^="/issues/population"], a[href^="/issues/households"], a[href^="/issues/density"]',
-      ),
-    ).toHaveCount(0);
+    const destinations = await page
+      .locator('a[href]')
+      .evaluateAll((links) =>
+        links.map((link) => new URL((link as HTMLAnchorElement).href).pathname.replace(/\/$/, '')),
+      );
+    for (const metric of ['population', 'households', 'density'])
+      expect(destinations).not.toContain(`/issues/${metric}`);
   }
   const sitemap = await (await request.get('/sitemap.xml')).text();
   for (const metric of ['population', 'households', 'density'])

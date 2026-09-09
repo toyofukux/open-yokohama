@@ -1,7 +1,20 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
-for (const slug of ['school-shelters', 'mayor-powers', 'childcare-access', 'local-mobility']) {
+for (const slug of [
+  'school-shelters',
+  'mayor-powers',
+  'childcare-access',
+  'local-mobility',
+  'city-budget',
+  'green-expo',
+  'city-governance',
+  'population-facilities',
+  'housing-access',
+  'care-in-community',
+  'waste-and-carbon',
+  'city-building-history',
+]) {
   test(`${slug}: figures and footnotes meet accessibility checks in both themes`, async ({
     page,
   }) => {

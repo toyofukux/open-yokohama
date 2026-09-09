@@ -1,0 +1,21 @@
+{
+  "createdAt": "2026-09-09",
+  "creator": "open.yokohama / Codex",
+  "rights": "Original HTML diagrams; cited facts, no reproduced artwork",
+  "figures": [
+    {
+      "path": "data/editorial/figures/fiscal-funding.html",
+      "sha256": "208f257620486369dcfb29e40efb57dd3ce14af3af2ffe16122edd7d2d71f851"
+    },
+    {
+      "path": "data/editorial/figures/expo-funding.html",
+      "sha256": "bc2614f355ce4ad3d6daa508e428066553445ef44c9c37f89b4456b874692240"
+    }
+  ],
+  "expoThousands": {
+    "total": 8697215,
+    "general": 3808896,
+    "other": 4888319
+  },
+  "fiscalScope": "Conceptual sequence, not exhaustive decomposition: 100 oku already assumed; initial gap400; fund200; land40. Listed main items sum412, not400."
+}

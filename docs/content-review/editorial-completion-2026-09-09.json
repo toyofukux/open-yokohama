@@ -1,0 +1,141 @@
+{
+  "task": "Complete planned article set",
+  "date": "2026-09-09",
+  "counts": {
+    "previousPublished": 8,
+    "newPublishable": 15,
+    "revisedExisting": 3,
+    "resultingPublished": 23,
+    "preparedNotPublished": 2
+  },
+  "manuscriptReview": "docs/content-review/expansion/reviews.json",
+  "independentImplementationReview": {
+    "reviewer": "/root/school_lunch_review",
+    "result": "No unresolved major or medium findings",
+    "resolved": [
+      "Updated election hub coverage and independent-review scope",
+      "Pinned extracted-text SHA and re-extracted D3/F2 PDF pages and W2 annual block for calculations"
+    ],
+    "checks": [
+      "24 contracts recomputed;24 tampered hashes rejected",
+      "41 source snapshots/17 manuscripts/8 figures checked without writing output",
+      "8 figure insertions;16 missing/duplicate cases rejected",
+      "15 routes in catalogue/search;2 prepared routes excluded",
+      "7 election cards preserved;77 warehouse/map/raw tracked files byte identical"
+    ],
+    "files": [
+      {
+        "path": "packages/core/policy-issues.ts",
+        "sha256": "7dfd172ab369ac0ea7fa91b2f84b909d4d1053f694e2bfad8b0359bb766379c1"
+      },
+      {
+        "path": "scripts/policy-evidence.mjs",
+        "sha256": "da116d30b575cfba240df8e1c55a7f0d4758b18fd4172e3af23119f871c6178e"
+      },
+      {
+        "path": "docs/content-review/publication.json",
+        "sha256": "f5136da442f186a160df4bcff74405ac44fb35c0617a72bb4864f674cb477514"
+      },
+      {
+        "path": "docs/content-review/expansion/check.py",
+        "sha256": "c484d840b448f62a381205f85c183f4ece81afd566631cbd08e58935fa28295d"
+      },
+      {
+        "path": "docs/content-review/expansion/collect.py",
+        "sha256": "fcdc8a897524489b156a94972e29ad076936a3dc11ea974d7669a577757a8355"
+      },
+      {
+        "path": "docs/content-review/expansion/sources.json",
+        "sha256": "aa0751c2b446e48a86c65f3ee074fd8aced027765f308db74a680e6dfe0596f9"
+      },
+      {
+        "path": "docs/content-review/expansion/reviews.json",
+        "sha256": "e18852840002e0dfcdd6a3f5c4cd3ffae30a2e7cc87e8f8b1adb1dc8f41253e3"
+      },
+      {
+        "path": "data/editorial/figures/expansion-manifest.json",
+        "sha256": "ae8bc947c3ab581ca2743f17fcd10081abf3c1c52330e496abcd9be5f0d4a8a9"
+      },
+      {
+        "path": "data/editorial/figures/third-manifest.json",
+        "sha256": "89a26ad71ac21cc6893013edf106e9fda6c623ca25f7413ab23229829f781f89"
+      },
+      {
+        "path": "apps/web/src/components/PolicyArticle.astro",
+        "sha256": "17a745d9a3c8da77ae0ab51f44fc35a68f80f94c4805abf88a8d9968ad496370"
+      },
+      {
+        "path": "apps/web/src/styles/policy-article.css",
+        "sha256": "d1f03889f9065ddfc853617c1403cb051bc5f1f3e4aacce83299d1c25a146402"
+      },
+      {
+        "path": "apps/web/src/pages/elections/mayor-2026/index.astro",
+        "sha256": "7d1ef9f4da22074e936319a056e263c937c9357cb0571302bf7036df6c1c14e9"
+      },
+      {
+        "path": "tests/e2e/citizen.spec.ts",
+        "sha256": "13be54f06a35d94cfdbf746bf6358b0376fe651bb26a3e10b658adc1095fa895"
+      },
+      {
+        "path": "tests/e2e/editorial-expansion.spec.ts",
+        "sha256": "af06dc5190f40bb9b773604d02d695674e79285be977ec9dfba74a2301ef9147"
+      },
+      {
+        "path": "tests/e2e/mayoral-issues.spec.ts",
+        "sha256": "8346eb38583e695142de03884dcaa418bc38103119f27a2a94b9449f76c43302"
+      },
+      {
+        "path": "docs/content-review/expansion/how-to-vote.md",
+        "sha256": "4b2e51b668cbc37137225e69c7eff47ae0249a6e8b3a5aa2a523351f4d461468"
+      }
+    ],
+    "routeSet": {
+      "paths": [
+        "apps/web/src/pages/issues/care-in-community.astro",
+        "apps/web/src/pages/issues/choosing-priorities.astro",
+        "apps/web/src/pages/issues/city-budget.astro",
+        "apps/web/src/pages/issues/city-building-history.astro",
+        "apps/web/src/pages/issues/city-governance.astro",
+        "apps/web/src/pages/issues/comparing-imperfect-choices.astro",
+        "apps/web/src/pages/issues/disaster-priorities.astro",
+        "apps/web/src/pages/issues/green-expo.astro",
+        "apps/web/src/pages/issues/housing-access.astro",
+        "apps/web/src/pages/issues/how-to-vote.astro",
+        "apps/web/src/pages/issues/learning-from-cities.astro",
+        "apps/web/src/pages/issues/policy-follow-through.astro",
+        "apps/web/src/pages/issues/population-facilities.astro",
+        "apps/web/src/pages/issues/public-space.astro",
+        "apps/web/src/pages/issues/reading-policy-costs.astro",
+        "apps/web/src/pages/issues/reading-policy-results.astro",
+        "apps/web/src/pages/issues/waste-and-carbon.astro",
+        "apps/web/src/pages/issues/work-and-business.astro"
+      ],
+      "sha256": "2b0b74d61f40a555e9122c54f96a43a0761d95c3f2841ddcf7f31571e3127210",
+      "algorithm": "sorted path + NUL + file bytes + NUL"
+    },
+    "notPerformed": [
+      "full browser E2E",
+      "visual browser review",
+      "deployment",
+      "human understanding"
+    ]
+  },
+  "checks": {
+    "primaryExpansion": "41 snapshots;17 manuscripts;8 reviewed figures; passed",
+    "primaryExisting": "24 snapshots;6 manuscripts; passed",
+    "verify": "74 unit tests,93 pages,2525 links; passed",
+    "e2eFirst": "222 passed,2 false-positive retired-route prefix matches failed",
+    "retiredRouteCorrection": "12 citizen tests passed after canonical URL path comparison",
+    "finalPages": "8 election/voting tests passed after last edits",
+    "factcheckGates": "passed",
+    "corrections": "passed",
+    "webDryRun": "passed"
+  },
+  "mainVerification": "not yet run",
+  "production": "not yet published",
+  "humanUnderstanding": "not performed",
+  "remaining": [
+    "Prepared Q02: matched net additional costs and A2 funding-table discrepancy",
+    "Prepared Q19: official candidate details and manifestos forthcoming"
+  ]
+}

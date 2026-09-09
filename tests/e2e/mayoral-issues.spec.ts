@@ -2,7 +2,12 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
-import { foundationIssues, mayoralIssues, schoolLunch } from '../../packages/core/policy-issues';
+import {
+  expansionIssues,
+  foundationIssues,
+  mayoralIssues,
+  schoolLunch,
+} from '../../packages/core/policy-issues';
 
 const compact = (text: string) => text.replace(/\s+/g, '');
 const hub = '/elections/mayor-2026/';
@@ -17,7 +22,7 @@ test('all seven policy questions are reachable through the election hub and sear
   for (const issue of [schoolLunch, ...mayoralIssues]) {
     await expect(page.locator(`.cards a[href="${issue.url}"]`)).toHaveCount(1);
   }
-  for (const issue of [...mayoralIssues, ...foundationIssues]) {
+  for (const issue of [...mayoralIssues, ...foundationIssues, ...expansionIssues]) {
     await page.goto('/search/');
     await page.getByRole('searchbox').fill(issue.title);
     await page.locator(`#search-results a[href="${issue.url}"]`).click();
@@ -25,12 +30,12 @@ test('all seven policy questions are reachable through the election hub and sear
   }
 });
 
-for (const issue of [...mayoralIssues, ...foundationIssues]) {
+for (const issue of [...mayoralIssues, ...foundationIssues, ...expansionIssues]) {
   test(`${issue.slug}: complete manuscript, real table labels and original sources survive rendering`, async ({
     page,
   }) => {
     const manuscript = readFileSync(
-      `docs/content-review/${issue.slug === 'mayor-powers' ? 'foundations' : 'mayoral-issues'}/${issue.slug}.md`,
+      `docs/content-review/${issue.slug === 'mayor-powers' ? 'foundations' : expansionIssues.some((entry) => entry.slug === issue.slug) ? 'expansion' : 'mayoral-issues'}/${issue.slug}.md`,
       'utf8',
     );
     await page.goto(issue.url);
@@ -84,9 +89,12 @@ for (const issue of [...mayoralIssues, ...foundationIssues]) {
   });
 }
 
-test('all new pages remain readable at 320px, 200% text and in both themes', async ({ page }) => {
-  for (const theme of ['yokohama', 'yokohama-night']) {
-    for (const route of [hub, ...mayoralIssues.map((issue) => issue.url)]) {
+for (const route of [
+  hub,
+  ...[...mayoralIssues, ...foundationIssues, ...expansionIssues].map((issue) => issue.url),
+]) {
+  test(`${route}: readable at 320px, 200% text and in both themes`, async ({ page }) => {
+    for (const theme of ['yokohama', 'yokohama-night']) {
       await page.setViewportSize({ width: 320, height: 900 });
       await page.goto(`${route}?theme=${theme}`);
       expect(
@@ -107,8 +115,8 @@ test('all new pages remain readable at 320px, 200% text and in both themes', asy
         ),
       ).toBe(true);
     }
-  }
-});
+  });
+}
 
 test('facts, comparison and source navigation remain usable without JavaScript', async ({
   browser,
@@ -119,7 +127,7 @@ test('facts, comparison and source navigation remain usable without JavaScript',
   });
   const page = await context.newPage();
   const base = test.info().project.use.baseURL || 'http://127.0.0.1:8788';
-  for (const issue of mayoralIssues) {
+  for (const issue of [...mayoralIssues, ...foundationIssues, ...expansionIssues]) {
     await page.goto(`${base}${issue.url}`);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(issue.title);
     await expect(page.locator('.policy-prose > table').first()).toBeVisible();

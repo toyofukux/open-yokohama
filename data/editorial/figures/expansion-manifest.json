@@ -1,0 +1,39 @@
+{
+  "createdAt": "2026-09-09",
+  "creator": "open.yokohama / Codex",
+  "rights": "Original HTML diagrams; official facts paraphrased, no reproduced artwork",
+  "figures": [
+    {
+      "path": "data/editorial/figures/fiscal-funding.html",
+      "sha256": "208f257620486369dcfb29e40efb57dd3ce14af3af2ffe16122edd7d2d71f851"
+    },
+    {
+      "path": "data/editorial/figures/expo-funding.html",
+      "sha256": "bc2614f355ce4ad3d6daa508e428066553445ef44c9c37f89b4456b874692240"
+    },
+    {
+      "path": "data/editorial/figures/governance-process.html",
+      "sha256": "3556eb7b9bdb6d58ab65d27f0051c65d69a202cc800745dae94467a189e08b92"
+    },
+    {
+      "path": "data/editorial/figures/facility-choices.html",
+      "sha256": "a5868027765cc17ce1d2446d9c576e99e93ae31f9969c9aa9ee7c61b7a64206d"
+    },
+    {
+      "path": "data/editorial/figures/housing-support.html",
+      "sha256": "618b6ae2db2c1ebc443bb1e5bb4d904a81f0b8dcdeb4f969f8cd2e1dbca64ef2"
+    },
+    {
+      "path": "data/editorial/figures/care-support.html",
+      "sha256": "bc6a35f88b310f463b6f0f3880321557282aa3df24887129f0907a9d95c4da69"
+    },
+    {
+      "path": "data/editorial/figures/plastic-process.html",
+      "sha256": "6ba9ef51ebd3dd5fa0cf63f644d340b3f93e3d99ef15bc45a8ac654df9cb7987"
+    },
+    {
+      "path": "data/editorial/figures/city-history.html",
+      "sha256": "84f01a8f481d19386f2ffe7139f0406c5b5596f93e5215f4bbb7bc356aea5e4d"
+    }
+  ]
+}

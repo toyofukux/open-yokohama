@@ -1,6 +1,30 @@
 import { readFileSync } from 'node:fs';
 
 const figures = {
+  '/docs/content-review/mayoral-issues/city-governance.md': {
+    'governance-process': '../data/editorial/figures/governance-process.html',
+  },
+  '/docs/content-review/mayoral-issues/city-budget.md': {
+    'fiscal-funding': '../data/editorial/figures/fiscal-funding.html',
+  },
+  '/docs/content-review/mayoral-issues/green-expo.md': {
+    'expo-funding': '../data/editorial/figures/expo-funding.html',
+  },
+  '/docs/content-review/expansion/city-building-history.md': {
+    'city-history': '../data/editorial/figures/city-history.html',
+  },
+  '/docs/content-review/expansion/housing-access.md': {
+    'housing-support': '../data/editorial/figures/housing-support.html',
+  },
+  '/docs/content-review/expansion/waste-and-carbon.md': {
+    'plastic-process': '../data/editorial/figures/plastic-process.html',
+  },
+  '/docs/content-review/expansion/care-in-community.md': {
+    'care-support': '../data/editorial/figures/care-support.html',
+  },
+  '/docs/content-review/expansion/population-facilities.md': {
+    'facility-choices': '../data/editorial/figures/facility-choices.html',
+  },
   '/docs/content-review/mayoral-issues/childcare-access.md': {
     'childcare-wards': '../data/childcare/figure.html',
     'childcare-counts': '../data/editorial/figures/childcare-counts.html',
