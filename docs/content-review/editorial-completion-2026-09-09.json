@@ -131,11 +131,286 @@
     "corrections": "passed",
     "webDryRun": "passed"
   },
-  "mainVerification": "not yet run",
-  "production": "not yet published",
+  "mainVerification": {
+    "verify": "74 unit tests,93 pages,2525 links; passed",
+    "e2e": "224 passed (54.3s)",
+    "contentHashes": "24 match reviewed content",
+    "designPreviewExcluded": true,
+    "existingUserFiles": "2 original hashes preserved"
+  },
+  "production": {
+    "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+    "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+    "verifiedAt": "2026-09-09T04:37:56.275376Z",
+    "e2e": "224 passed",
+    "bytes": {
+      "checkedAt": "2026-09-09T04:36:15.823028+00:00",
+      "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+      "pagesAndAssets": [
+        {
+          "route": "/issues/school-lunch/",
+          "localSha256": "ecd95e4f6acf80e67d413b79ee168a38df6b31f586668ad948b0f49f66bccdb6",
+          "productionSha256": "ecd95e4f6acf80e67d413b79ee168a38df6b31f586668ad948b0f49f66bccdb6",
+          "byteIdentical": true,
+          "contentVersion": "db267182f431dbf96bc48ccde8b85e21d1afdf3370878c96f963f8322593cf05"
+        },
+        {
+          "route": "/issues/city-governance/",
+          "localSha256": "aa71b3f0a52fbc7a8b036dbbad1c22c4f374a30a97aba7350d5fb1fa198609a3",
+          "productionSha256": "aa71b3f0a52fbc7a8b036dbbad1c22c4f374a30a97aba7350d5fb1fa198609a3",
+          "byteIdentical": true,
+          "contentVersion": "c18faf7c5d479bca39154b83d20416b6052b6b074b0ac4d6c2796131ba169ca0"
+        },
+        {
+          "route": "/issues/city-budget/",
+          "localSha256": "12b8c01076cb9f43f01332cabac4a4766df1b63c3228746022ee092f8ca0a08b",
+          "productionSha256": "12b8c01076cb9f43f01332cabac4a4766df1b63c3228746022ee092f8ca0a08b",
+          "byteIdentical": true,
+          "contentVersion": "72c3fcdcc31933390018cf01f4c8e5cf660c7aa5ad6d2cc1a39a412d7bff90a3"
+        },
+        {
+          "route": "/issues/green-expo/",
+          "localSha256": "caa4688aa7bce0ce7d302b32d981058fda83fe7270ffc7befbdd0f87c7552a82",
+          "productionSha256": "caa4688aa7bce0ce7d302b32d981058fda83fe7270ffc7befbdd0f87c7552a82",
+          "byteIdentical": true,
+          "contentVersion": "8c6189f7d918f143812454add751200b0840d124fbe45357ee09ef11522f13aa"
+        },
+        {
+          "route": "/issues/local-mobility/",
+          "localSha256": "67bc60407c6b4614b20df70e0c6271ed6f3467a2af45384137c4ed20a039935b",
+          "productionSha256": "67bc60407c6b4614b20df70e0c6271ed6f3467a2af45384137c4ed20a039935b",
+          "byteIdentical": true,
+          "contentVersion": "2acfed322a29613f929443154217f186c87ef47dc184c500873f122e3fe1f09f"
+        },
+        {
+          "route": "/issues/childcare-access/",
+          "localSha256": "c421791dedb0508323f859880000c78a4601b3b02de25e588471565ae398f54d",
+          "productionSha256": "c421791dedb0508323f859880000c78a4601b3b02de25e588471565ae398f54d",
+          "byteIdentical": true,
+          "contentVersion": "be7a252ccbc2be0fd9ef1be0a78c1cfda894adbb584a59d6833d34f0868bc207"
+        },
+        {
+          "route": "/issues/school-shelters/",
+          "localSha256": "799bb4802e2a679341d66ad384d7aca4adf2946f3d56311079396fa0efbd243b",
+          "productionSha256": "799bb4802e2a679341d66ad384d7aca4adf2946f3d56311079396fa0efbd243b",
+          "byteIdentical": true,
+          "contentVersion": "ad83aa92164efc6389899d0ff51e5bcf505d9cb9f979d289d509f06dfaf839f5"
+        },
+        {
+          "route": "/elections/mayor-2026/",
+          "localSha256": "c1e2c8e3db87a0cdb790d1f5c8ef3beebe8af34a8478051b36a7de5953038abe",
+          "productionSha256": "c1e2c8e3db87a0cdb790d1f5c8ef3beebe8af34a8478051b36a7de5953038abe",
+          "byteIdentical": true,
+          "contentVersion": null
+        },
+        {
+          "route": "/issues/mayor-powers/",
+          "localSha256": "1bcc88f5329fa12b246364c48177182e3b6a3b3251fd9ec8e7b3b8764882c073",
+          "productionSha256": "1bcc88f5329fa12b246364c48177182e3b6a3b3251fd9ec8e7b3b8764882c073",
+          "byteIdentical": true,
+          "contentVersion": "bb2399bad42af466a75952938daf46e93f02f3a8a68844d0198e52fb1001067e"
+        },
+        {
+          "route": "/issues/care-in-community/",
+          "localSha256": "47447f9c88a662703bfc4e753932a69e001925dd7e163f391f614568ef8c26fe",
+          "productionSha256": "47447f9c88a662703bfc4e753932a69e001925dd7e163f391f614568ef8c26fe",
+          "byteIdentical": true,
+          "contentVersion": "00b14c9c0afd79dddcf7268c92e43818d2e3fc31997a283b270cd52987b6c67d"
+        },
+        {
+          "route": "/issues/choosing-priorities/",
+          "localSha256": "05af08b1fc23d869ed2dce5218dbf9686c9ebd0d5bbe46c2e8ca4526f5f955d5",
+          "productionSha256": "05af08b1fc23d869ed2dce5218dbf9686c9ebd0d5bbe46c2e8ca4526f5f955d5",
+          "byteIdentical": true,
+          "contentVersion": "a918b3482d3a04ebb9f9c22955971d32f8cbacfdbc03956898495e756d997792"
+        },
+        {
+          "route": "/issues/city-building-history/",
+          "localSha256": "bfa12f1843c189e2395615eda55abd9759da78f7eb193523128ecd1c610fa02c",
+          "productionSha256": "bfa12f1843c189e2395615eda55abd9759da78f7eb193523128ecd1c610fa02c",
+          "byteIdentical": true,
+          "contentVersion": "d6649c3d9e501a0b47f3d7515d0b223dbf233ce3b72270a8f9ef39a726b246e9"
+        },
+        {
+          "route": "/issues/comparing-imperfect-choices/",
+          "localSha256": "b119eb503798482866e8c1a48acab623f8434acf4dbd42308bd08adb4947dbc9",
+          "productionSha256": "b119eb503798482866e8c1a48acab623f8434acf4dbd42308bd08adb4947dbc9",
+          "byteIdentical": true,
+          "contentVersion": "40708ceb51d81549080966c9f934487c7a84e0971c9df72a5e7af832cb9ca9fe"
+        },
+        {
+          "route": "/issues/disaster-priorities/",
+          "localSha256": "4b65a5c5ab81fab99e8711ff771133dafe282152800588a9836976a8fd9f4ff8",
+          "productionSha256": "4b65a5c5ab81fab99e8711ff771133dafe282152800588a9836976a8fd9f4ff8",
+          "byteIdentical": true,
+          "contentVersion": "03f24383fc628f63b517482bb9e903da278275acf4f015db6154b16768d4be5f"
+        },
+        {
+          "route": "/issues/housing-access/",
+          "localSha256": "297a7e3167e31bb1242a0315066c196380712ee07a19f743e4e8396aa72a6ac8",
+          "productionSha256": "297a7e3167e31bb1242a0315066c196380712ee07a19f743e4e8396aa72a6ac8",
+          "byteIdentical": true,
+          "contentVersion": "864c5a122feef73cf59c2f9ec0a77afd7b03b92e1e0d2bc3fcc4d12bb3c2fa3e"
+        },
+        {
+          "route": "/issues/how-to-vote/",
+          "localSha256": "d2cccd38ad667dd1f9ba9a240718473b702102ee39ea0dd0a7a49ba2b094868f",
+          "productionSha256": "d2cccd38ad667dd1f9ba9a240718473b702102ee39ea0dd0a7a49ba2b094868f",
+          "byteIdentical": true,
+          "contentVersion": "4b2e51b668cbc37137225e69c7eff47ae0249a6e8b3a5aa2a523351f4d461468"
+        },
+        {
+          "route": "/issues/learning-from-cities/",
+          "localSha256": "c2688dc07a3474c856eb30fa62ef5b8a00ce9fc7ee0fe001eaaac07e89c667e3",
+          "productionSha256": "c2688dc07a3474c856eb30fa62ef5b8a00ce9fc7ee0fe001eaaac07e89c667e3",
+          "byteIdentical": true,
+          "contentVersion": "444dde7db8ec2b2681cd725108aafd8da17bd69d6f2427373901d03beccb261a"
+        },
+        {
+          "route": "/issues/policy-follow-through/",
+          "localSha256": "068068ea6edf5d7376ea335641adfe1d4a3c8372fa2b1496aebe0c693d7dcd81",
+          "productionSha256": "068068ea6edf5d7376ea335641adfe1d4a3c8372fa2b1496aebe0c693d7dcd81",
+          "byteIdentical": true,
+          "contentVersion": "9bf54190d5ddf3fa50978dfc90abe7b09d46de2b1d07a8b0d928bae3b34417fc"
+        },
+        {
+          "route": "/issues/population-facilities/",
+          "localSha256": "053d6f21627d28005f1af0ea90cba67e75cad826539fddcea481510457705be5",
+          "productionSha256": "053d6f21627d28005f1af0ea90cba67e75cad826539fddcea481510457705be5",
+          "byteIdentical": true,
+          "contentVersion": "4001c0872c3aa638231819deca9e6e58d79887dee03c7e3a9fe66e446ca619bd"
+        },
+        {
+          "route": "/issues/public-space/",
+          "localSha256": "8f04eeda97b19cab7563cb058395466132c2ed276ca4930c913dfdc1166f95f2",
+          "productionSha256": "8f04eeda97b19cab7563cb058395466132c2ed276ca4930c913dfdc1166f95f2",
+          "byteIdentical": true,
+          "contentVersion": "e0c4cfe6e264f3734799289541083ee6a2811f97331a91edf7562907a40dbad4"
+        },
+        {
+          "route": "/issues/reading-policy-costs/",
+          "localSha256": "238c3db2d580725415d78dbd10a60549c1fd9bad563e2b1b84da798872c7f664",
+          "productionSha256": "238c3db2d580725415d78dbd10a60549c1fd9bad563e2b1b84da798872c7f664",
+          "byteIdentical": true,
+          "contentVersion": "c2a0374c28017edfe05a26b8ce2bcb2166366a149890a5c7a57dee42bf8a9d31"
+        },
+        {
+          "route": "/issues/reading-policy-results/",
+          "localSha256": "2d476dd46f0fd339b3970487db136f1b5f9b2bf7ed8a4f6e52a74ee87e7a0d88",
+          "productionSha256": "2d476dd46f0fd339b3970487db136f1b5f9b2bf7ed8a4f6e52a74ee87e7a0d88",
+          "byteIdentical": true,
+          "contentVersion": "b901c928f0e880ad1c74f3544c1f5baed377bcb43803c1466b7b850586d7fea7"
+        },
+        {
+          "route": "/issues/waste-and-carbon/",
+          "localSha256": "9932415c009859ffe4c16a90924fb16b2bdd752049959228bddbfdcb2847a1d5",
+          "productionSha256": "9932415c009859ffe4c16a90924fb16b2bdd752049959228bddbfdcb2847a1d5",
+          "byteIdentical": true,
+          "contentVersion": "0a835c97cf62fc9c5021933129d37e947e64c64ad116006aa088c6b8233cb98a"
+        },
+        {
+          "route": "/issues/work-and-business/",
+          "localSha256": "1c1e1ecd862dcd33c4bd5dcb676aedb9bc885baef72fc1080582c7457fa454a8",
+          "productionSha256": "1c1e1ecd862dcd33c4bd5dcb676aedb9bc885baef72fc1080582c7457fa454a8",
+          "byteIdentical": true,
+          "contentVersion": "6bde8b3fb55d4308a774b6cb9b5a4c394207bdd63123b3ea747140a248231345"
+        },
+        {
+          "route": "/",
+          "localSha256": "2c151192030785f6cb2b2df0b6f36f15c20e55838a4f8b04daf4099251ec7e2c",
+          "productionSha256": "2c151192030785f6cb2b2df0b6f36f15c20e55838a4f8b04daf4099251ec7e2c",
+          "byteIdentical": true,
+          "contentVersion": null
+        },
+        {
+          "route": "/issues/",
+          "localSha256": "480aae2fa4adc704653b19e88af1a33ff71aaa89092df592e0eee53e0080c36f",
+          "productionSha256": "480aae2fa4adc704653b19e88af1a33ff71aaa89092df592e0eee53e0080c36f",
+          "byteIdentical": true,
+          "contentVersion": null
+        },
+        {
+          "route": "/search/",
+          "localSha256": "d40e69a622a9c4ee02555628a6ab1ae14ce32845d77f4afbc7796e80896b44d9",
+          "productionSha256": "d40e69a622a9c4ee02555628a6ab1ae14ce32845d77f4afbc7796e80896b44d9",
+          "byteIdentical": true,
+          "contentVersion": null
+        },
+        {
+          "route": "/maps/childcare-2026.svg",
+          "localSha256": "51f0d820d688c928c64e3e313894dee68a9a935961fe4a7b314f443ec76e88e5",
+          "productionSha256": "51f0d820d688c928c64e3e313894dee68a9a935961fe4a7b314f443ec76e88e5",
+          "byteIdentical": true,
+          "contentVersion": null
+        },
+        {
+          "route": "/maps/childcare-2026.png",
+          "localSha256": "a1d146d961ed670b11ba7d2bac48d43a6e9870ed5fdc307b8441632707c08d2f",
+          "productionSha256": "a1d146d961ed670b11ba7d2bac48d43a6e9870ed5fdc307b8441632707c08d2f",
+          "byteIdentical": true,
+          "contentVersion": null
+        },
+        {
+          "route": "/maps/childcare-2026.csv",
+          "localSha256": "ec210caa161057cdcc7166594983ff11d41bb67b36bdb083f72309dbcc5b1ab8",
+          "productionSha256": "ec210caa161057cdcc7166594983ff11d41bb67b36bdb083f72309dbcc5b1ab8",
+          "byteIdentical": true,
+          "contentVersion": null
+        },
+        {
+          "route": "/release-manifest.json",
+          "localSha256": "51959292d028ac3d58ed8db62a6964244c63e2f64c8a9f2dc5b1f9472e3721f0",
+          "productionSha256": "51959292d028ac3d58ed8db62a6964244c63e2f64c8a9f2dc5b1f9472e3721f0",
+          "byteIdentical": true,
+          "contentVersion": null
+        },
+        {
+          "route": "/images/school-lunch/jnfs16-figure7-5.png",
+          "localSha256": "738970fb37a210c7c126f84d638775f26e2ce5ac13124ff6a0ab0add8b6c3bc4",
+          "productionSha256": "738970fb37a210c7c126f84d638775f26e2ce5ac13124ff6a0ab0add8b6c3bc4",
+          "byteIdentical": true,
+          "contentVersion": null
+        }
+      ],
+      "preparedExcluded": [
+        {
+          "route": "/issues/policy-allocation/",
+          "http": "404"
+        },
+        {
+          "route": "/issues/candidate-promises/",
+          "http": "404"
+        }
+      ],
+      "mcp": [
+        {
+          "url": "https://open-yokohama-mcp.toyofukux.workers.dev/health",
+          "http": "404"
+        },
+        {
+          "url": "https://open-yokohama-mcp.toyofukux.workers.dev/mcp",
+          "http": "404"
+        }
+      ],
+      "allBytesIdentical": true
+    },
+    "mainUserFiles": "2 original SHA-256 values preserved",
+    "designReviewFiles": "Untracked original directory preserved; archived previews restored only to design dist"
+  },
   "humanUnderstanding": "not performed",
   "remaining": [
     "Prepared Q02: matched net additional costs and A2 funding-table discrepancy",
     "Prepared Q19: official candidate details and manifestos forthcoming"
-  ]
+  ],
+  "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+  "ci": {
+    "url": "https://github.com/toyofukux/open-yokohama/actions/runs/34311226991",
+    "status": "success"
+  },
+  "visualReview": {
+    "reviewer": "Codex author",
+    "scope": "City budget mobile page and complete article catalogue desktop screenshot viewed; automated checks cover all new pages",
+    "humanUnderstanding": "not performed"
+  },
+  "postReviewMetadata": "Deployment states and results are recorded after independent review; source/manuscript/renderer hashes unchanged."
 }

@@ -311,15 +311,15 @@
       },
       "route": "/issues/school-lunch/",
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
-        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
         "url": "https://open.yokohama/issues/school-lunch/",
-        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
-        "productionE2E": "118 passed"
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       },
       "revisionHistory": [
         {
@@ -574,6 +574,13 @@
           "url": "https://open.yokohama/issues/school-lunch/",
           "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
           "productionE2E": "110 passed"
+        },
+        {
+          "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+          "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+          "url": "https://open.yokohama/issues/school-lunch/",
+          "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+          "productionE2E": "118 passed"
         }
       ],
       "manuscriptPath": "docs/content-review/school-lunch/DRAFT.md",
@@ -590,7 +597,7 @@
       "revisionReview": {
         "scope": "shared catalogue/renderer only",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -773,15 +780,15 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
-        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
         "url": "https://open.yokohama/issues/city-governance/",
-        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
-        "productionE2E": "118 passed"
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       },
       "revisionHistory": [
         {
@@ -960,12 +967,19 @@
           "url": "https://open.yokohama/issues/city-governance/",
           "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
           "productionE2E": "110 passed"
+        },
+        {
+          "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+          "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+          "url": "https://open.yokohama/issues/city-governance/",
+          "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+          "productionE2E": "118 passed"
         }
       ],
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1148,15 +1162,15 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
-        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
         "url": "https://open.yokohama/issues/city-budget/",
-        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
-        "productionE2E": "118 passed"
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       },
       "revisionHistory": [
         {
@@ -1334,12 +1348,19 @@
           "url": "https://open.yokohama/issues/city-budget/",
           "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
           "productionE2E": "110 passed"
+        },
+        {
+          "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+          "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+          "url": "https://open.yokohama/issues/city-budget/",
+          "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+          "productionE2E": "118 passed"
         }
       ],
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1568,15 +1589,15 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
-        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
         "url": "https://open.yokohama/issues/green-expo/",
-        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
-        "productionE2E": "118 passed"
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       },
       "revisionHistory": [
         {
@@ -1754,12 +1775,19 @@
           "url": "https://open.yokohama/issues/green-expo/",
           "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
           "productionE2E": "110 passed"
+        },
+        {
+          "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+          "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+          "url": "https://open.yokohama/issues/green-expo/",
+          "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+          "productionE2E": "118 passed"
         }
       ],
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1969,15 +1997,15 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
-        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
         "url": "https://open.yokohama/issues/local-mobility/",
-        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
-        "productionE2E": "118 passed"
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       },
       "revisionHistory": [
         {
@@ -2146,12 +2174,19 @@
           "url": "https://open.yokohama/issues/local-mobility/",
           "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
           "productionE2E": "110 passed"
+        },
+        {
+          "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+          "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+          "url": "https://open.yokohama/issues/local-mobility/",
+          "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+          "productionE2E": "118 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared catalogue/renderer only",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -2378,15 +2413,15 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
-        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
         "url": "https://open.yokohama/issues/childcare-access/",
-        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
-        "productionE2E": "118 passed"
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       },
       "visualReview": {
         "reviewer": "Codex author, not independent",
@@ -2569,12 +2604,19 @@
           "url": "https://open.yokohama/issues/childcare-access/",
           "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
           "productionE2E": "110 passed"
+        },
+        {
+          "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+          "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+          "url": "https://open.yokohama/issues/childcare-access/",
+          "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+          "productionE2E": "118 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared catalogue/renderer only",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -2817,15 +2859,15 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
-        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
         "url": "https://open.yokohama/issues/school-shelters/",
-        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
-        "productionE2E": "118 passed"
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       },
       "revisionHistory": [
         {
@@ -2993,12 +3035,19 @@
           "url": "https://open.yokohama/issues/school-shelters/",
           "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
           "productionE2E": "110 passed"
+        },
+        {
+          "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+          "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+          "url": "https://open.yokohama/issues/school-shelters/",
+          "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+          "productionE2E": "118 passed"
         }
       ],
       "revisionReview": {
         "scope": "shared catalogue/renderer only",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -3069,7 +3118,7 @@
       },
       "review": {
         "contentHash": "2aa61f0799c00f001e05093fbe3d93e888f803232a03d4fb848787802c800f38",
-        "reviewer": "Codex author: shared catalogue/renderer; existing manuscript and claims unchanged",
+        "reviewer": "Codex author: Sept9 election source refresh, article coverage and independent review disclosure",
         "reviewedAt": "2026-09-09T04:27:11.841044Z",
         "findings": [
           {
@@ -3107,15 +3156,15 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
-        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
-        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
         "url": "https://open.yokohama/elections/mayor-2026/",
-        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
-        "productionE2E": "118 passed"
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       },
       "presentationReview": {
         "reviewedAt": "2026-09-07T01:41:30.795397Z",
@@ -3267,12 +3316,19 @@
           "url": "https://open.yokohama/elections/mayor-2026/",
           "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
           "productionE2E": "110 passed"
+        },
+        {
+          "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+          "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+          "url": "https://open.yokohama/elections/mayor-2026/",
+          "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+          "productionE2E": "118 passed"
         }
       ],
       "revisionReview": {
-        "scope": "shared catalogue/renderer only",
+        "scope": "election dates and coverage/review notes plus shared catalogue",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -3619,21 +3675,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "shared catalogue/renderer only",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
-        "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
-        "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
         "url": "https://open.yokohama/issues/mayor-powers/",
-        "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
-        "productionE2E": "118 passed"
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       },
       "revisionHistory": [
         {
@@ -3668,6 +3724,13 @@
           "url": "https://open.yokohama/issues/mayor-powers/",
           "verifiedAt": "2026-09-09T01:13:42.004598+00:00",
           "productionE2E": "110 passed"
+        },
+        {
+          "workerVersion": "95b2783d-d1b4-448a-99be-01b5cf468648",
+          "implementationCommit": "73106e4569165f682a7d308dca639afe3c799468",
+          "url": "https://open.yokohama/issues/mayor-powers/",
+          "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
+          "productionE2E": "118 passed"
         }
       ]
     },
@@ -3856,14 +3919,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/care-in-community/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -4071,14 +4141,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/choosing-priorities/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -4266,14 +4343,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/city-building-history/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -4460,14 +4544,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/comparing-imperfect-choices/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -4632,14 +4723,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/disaster-priorities/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -4827,14 +4925,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/housing-access/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -4999,14 +5104,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/how-to-vote/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -5193,14 +5305,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/learning-from-cities/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -5386,14 +5505,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/policy-follow-through/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -5601,14 +5727,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/population-facilities/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -5817,14 +5950,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/public-space/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -6010,14 +6150,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/reading-policy-costs/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -6203,14 +6350,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/reading-policy-results/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -6398,14 +6552,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/waste-and-carbon/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     },
     {
@@ -6592,14 +6753,21 @@
         "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "manuscript and figures",
         "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Content and figure versions in docs/content-review/expansion/reviews.json; implementation review pending",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
+      },
+      "deployment": {
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "url": "https://open.yokohama/issues/work-and-business/",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
+        "productionE2E": "224 passed"
       }
     }
   ]
