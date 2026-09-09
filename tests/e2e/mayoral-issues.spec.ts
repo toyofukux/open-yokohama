@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
-import { mayoralIssues, policyIssues } from '../../packages/core/policy-issues';
+import { foundationIssues, mayoralIssues, schoolLunch } from '../../packages/core/policy-issues';
 
 const compact = (text: string) => text.replace(/\s+/g, '');
 const hub = '/elections/mayor-2026/';
@@ -14,10 +14,10 @@ test('all seven policy questions are reachable through the election hub and sear
   await page.locator(`a[href="${hub}"]`).click();
   await expect(page.getByRole('heading', { level: 1 })).toContainText('7つの問い');
   await expect(page.locator('.election-context')).toContainText('候補者の公約比較');
-  for (const issue of policyIssues) {
+  for (const issue of [schoolLunch, ...mayoralIssues]) {
     await expect(page.locator(`.cards a[href="${issue.url}"]`)).toHaveCount(1);
   }
-  for (const issue of mayoralIssues) {
+  for (const issue of [...mayoralIssues, ...foundationIssues]) {
     await page.goto('/search/');
     await page.getByRole('searchbox').fill(issue.title);
     await page.locator(`#search-results a[href="${issue.url}"]`).click();
@@ -25,11 +25,14 @@ test('all seven policy questions are reachable through the election hub and sear
   }
 });
 
-for (const issue of mayoralIssues) {
+for (const issue of [...mayoralIssues, ...foundationIssues]) {
   test(`${issue.slug}: complete manuscript, real table labels and original sources survive rendering`, async ({
     page,
   }) => {
-    const manuscript = readFileSync(`docs/content-review/mayoral-issues/${issue.slug}.md`, 'utf8');
+    const manuscript = readFileSync(
+      `docs/content-review/${issue.slug === 'mayor-powers' ? 'foundations' : 'mayoral-issues'}/${issue.slug}.md`,
+      'utf8',
+    );
     await page.goto(issue.url);
     await expect(page.locator('article')).toHaveAttribute(
       'data-content-version',
@@ -43,6 +46,8 @@ for (const issue of mayoralIssues) {
       const passages = line.startsWith('|') ? line.split('|').slice(1, -1) : [line];
       for (const passage of passages) {
         const plain = passage
+          .replace(/^\[\^[^\]]+\]:\s*/, '')
+          .replace(/\[\^[^\]]+\]/g, '')
           .replace(/^#+\s*/, '')
           .replace(/^- /, '')
           .replace(/\*\*/g, '')

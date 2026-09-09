@@ -7,9 +7,20 @@ interface Props {
   category: string;
   headings: { depth: number; slug: string; text: string }[];
   version: string;
+  revisedOn?: string;
+  reviewedIndependently?: boolean;
   sources: { id: string; title: string; url: string; retrievedAt: string }[];
 }
-const { title, summary, category, headings, version, sources } = Astro.props;
+const {
+  title,
+  summary,
+  category,
+  headings,
+  version,
+  sources,
+  revisedOn,
+  reviewedIndependently = false,
+} = Astro.props;
 ---
 
 <Layout
@@ -28,9 +39,9 @@ const { title, summary, category, headings, version, sources } = Astro.props;
         <span>政策を考える</span><span>{category}</span>
       </div>
       <h1>{title}</h1>
-      <p class="policy-deck">{summary}</p>
+      {!revisedOn && <p class="policy-deck">{summary}</p>}
       <div class="policy-meta">
-        <span>資料確認：2026年9月7日</span><span
+        <span>資料確認：{revisedOn ?? "2026年9月7日"}</span><span
           >制度・予算の時点は本文に記載</span
         ><a href="#review-status">確認の範囲</a>
       </div>
@@ -43,7 +54,7 @@ const { title, summary, category, headings, version, sources } = Astro.props;
             <ol>
               {
                 headings
-                  .filter((h) => h.depth === 2)
+                  .filter((h) => h.depth === 2 && h.slug !== "footnote-label")
                   .map((h, i) => (
                     <li>
                       <a href={`#${h.slug}`}>
@@ -62,16 +73,24 @@ const { title, summary, category, headings, version, sources } = Astro.props;
         </details>
       </aside>
       <div class="policy-body">
-        <div class="policy-answer-label">いま分かることから、選択肢へ</div>
+        {
+          !revisedOn && (
+            <div class="policy-answer-label">いま分かることから、選択肢へ</div>
+          )
+        }
         <div class="policy-prose"><slot /></div>
-        <section class="policy-next" aria-labelledby="next-question">
-          <p class="eyebrow">まち全体の選択へ</p>
-          <h2 id="next-question">ほかの論点と、つなげて考える。</h2>
-          <p>
-            支援を受ける人、毎年続く費用、何を後回しにするか。別の政策も同じ条件で確かめたい。
-          </p>
-          <a href="/elections/mayor-2026/">市長選を考える7つの問いへ →</a>
-        </section>
+        {
+          !revisedOn && (
+            <section class="policy-next" aria-labelledby="next-question">
+              <p class="eyebrow">まち全体の選択へ</p>
+              <h2 id="next-question">ほかの論点と、つなげて考える。</h2>
+              <p>
+                支援を受ける人、毎年続く費用、何を後回しにするか。別の政策も同じ条件で確かめたい。
+              </p>
+              <a href="/elections/mayor-2026/">市長選を考える7つの問いへ →</a>
+            </section>
+          )
+        }
         <section class="policy-sources" aria-labelledby="article-sources">
           <h2 id="article-sources">原資料を確かめる</h2>
           <p class="small muted">
@@ -98,8 +117,12 @@ const { title, summary, category, headings, version, sources } = Astro.props;
             }
           </ol>
           <details id="review-status">
-            <summary>この初版の確認範囲と、残っていること</summary><p>
-              公式資料との照合と数値の検算は制作側が実施した。独立した事実確認と利用者による理解の検証は未実施。政策の比較表は判断材料の整理で、効果の実証や候補者の公約一覧ではない。
+            <summary>この記事の確認範囲と、残っていること</summary><p>
+              {
+                reviewedIndependently
+                  ? "主要な数値と制度説明は、制作側の照合に加え、独立担当が原資料の該当箇所を確認した。全資料の網羅確認と利用者による理解の検証は未実施。"
+                  : "公式資料との照合と数値の検算は制作側が実施した。独立した事実確認と利用者による理解の検証は未実施。"
+              }政策の比較表は判断材料の整理で、効果の実証や候補者の公約一覧ではない。
             </p><p>
               全補正予算・議事録・契約を網羅した確認ではない。未確定の費用と、見方を更新する条件は本文末尾に記載している。
             </p>

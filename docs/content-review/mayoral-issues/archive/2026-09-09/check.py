@@ -60,23 +60,6 @@ shelters = (HERE / 'school-shelters.md').read_text()
 assert yen_from_thousands(number(heat[1])) in shelters
 assert '219校' in texts['D1'] and '123校' in texts['D1']
 assert '123校と80校の関係は、この資料だけでは確認できていない' in shelters
-# New gym-only funding is read from its own source, not the broader heat budget.
-gym_page = texts['D3'].split('\f')[21]
-gym_row = re.search(r'令和8年度\s+([\d,]+)\s+([\d,]+)\s+0\s+0\s+([\d,]+)\s+([\d,]+)', gym_page)
-assert gym_row
-budget, national, bonds, general_gym = map(number, gym_row.groups())
-assert national + bonds + general_gym == budget == 4915700
-assert (national, bonds, general_gym) == (2127000, 2774000, 14700)
-for value in ['49億1,570万円', '21億2,700万円', '27億7,400万円', '1,470万円', '設置着手数の目標は123件', '2034年度から2029年度']:
- assert value in shelters
-assert '設置着手数' in gym_page and re.search(r'目標\s+24\s+20\s+22\s+123', gym_page)
-figures = ROOT / 'data/editorial/figures'
-manifest = json.loads((figures / 'manifest.json').read_text())
-assert manifest['gymFunding']['total'] == budget
-assert [part['amount'] for part in manifest['gymFunding']['parts']] == [national, bonds, general_gym]
-for figure in manifest['figures']:
- assert hashlib.sha256((ROOT / figure['path']).read_bytes()).hexdigest() == figure['sha256']
-
 
 normalized = unicodedata.normalize('NFKC', texts['F1'])
 assert '2兆933億円' in normalized and '4兆700億円' in normalized
@@ -95,7 +78,7 @@ for manuscript in sorted(HERE.glob('*.md')):
 assert len(manuscripts) == 6
 report = dict(checkedAt=datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
  sourceSnapshots=len(sources), manuscripts=manuscripts,
- calculations=dict(childcareHeld=held, childcareExcludingExtension=remaining, childcareAgeOneTwoPercent=ratio, expoTotalThousands=total, expoGeneralThousands=general, expoOtherThousands=other, heatThousands=number(heat[1]), gymThousands=budget, gymNationalThousands=national, gymBondsThousands=bonds, gymGeneralThousands=general_gym),
+ calculations=dict(childcareHeld=held, childcareExcludingExtension=remaining, childcareAgeOneTwoPercent=ratio, expoTotalThousands=total, expoGeneralThousands=general, expoOtherThousands=other, heatThousands=number(heat[1])),
  sourceDiscrepancy='D1 PDF52 body: 123 construction schools; embedded table: 80 schools (47%). Relationship unconfirmed; article explicitly preserves the discrepancy.',
  humanValidation='not performed', independentReview='not performed')
 (HERE / 'checks.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')

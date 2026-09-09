@@ -43,6 +43,19 @@ const selected = order
         >は掲載予定となっている。この特集は、政策を考えるために制作側が選んだ論点。候補者の公約比較や、有権者の関心の順位ではない。
       </p>
     </div>
+    {
+      policyIssues.some((issue) => issue.slug === "mayor-powers") && (
+        <p class="note">
+          <>
+            <a href="/issues/mayor-powers/">
+              市長に何を求められ、市長だけでは何を決められないか →
+            </a>
+            <br />
+          </>
+          市長・市会・教育委員会・事業者の役割を知る。
+        </p>
+      )
+    }
     <section aria-labelledby="reading-start" class="reading-start">
       <h2 id="reading-start">全部を読まなくても、気になる一問から。</h2>
       <p>

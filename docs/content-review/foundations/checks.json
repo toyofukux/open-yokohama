@@ -1,0 +1,53 @@
+{
+  "checkedAt": "2026-09-08T23:18:24.582152+00:00",
+  "sourceSnapshots": 6,
+  "manuscriptSha256": "bb2399bad42af466a75952938daf46e93f02f3a8a68844d0198e52fb1001067e",
+  "checkedLawArticles": {
+    "Q03-L2": {
+      "96": [
+        "予算を定めること"
+      ],
+      "112": [
+        "但し、予算については、この限りでない"
+      ],
+      "149": [
+        "予算を調製し、及びこれを執行すること"
+      ],
+      "211": [
+        "議会の議決を経なければならない"
+      ],
+      "218": [
+        "補正予算"
+      ]
+    },
+    "Q03-L3": {
+      "4": [
+        "議会の同意を得て"
+      ],
+      "21": [
+        "学校給食に関すること"
+      ],
+      "22": [
+        "予算を執行すること"
+      ],
+      "29": [
+        "教育委員会の意見をきかなければならない"
+      ]
+    },
+    "Q03-L4": {
+      "4": [
+        "国土交通大臣の許可"
+      ],
+      "15": [
+        "認可",
+        "届け出"
+      ],
+      "15_3": [
+        "運行計画",
+        "届け出"
+      ]
+    }
+  },
+  "scope": "Fixed source bytes, effective revision metadata, cited main-provision passages and footnote links. Author check; not a complete legal audit.",
+  "humanValidation": "not performed"
+}

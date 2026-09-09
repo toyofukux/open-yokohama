@@ -55,14 +55,25 @@ export const mayoralIssues = [
   },
   {
     title: '学校体育館の空調を、いつ、どこまで整えるか',
-    summary: '子どもの暑さ対策と避難所の環境。設置の速さ、費用、災害時に使える備えを一緒に考える。',
+    summary:
+      '猛暑を受けて進む体育館空調の前倒し。設置まで待つ学校、49.157億円の財源、避難時の使い方を考える。',
     category: '防災・学校施設',
     slug: 'school-shelters',
-    sourceIds: ['D1', 'F2'],
+    sourceIds: ['D1', 'D3', 'D4', 'D5', 'D6', 'F2'],
     url: '/issues/school-shelters/',
   },
 ];
-export const allPolicyIssues = [schoolLunch, ...mayoralIssues];
+export const foundationIssues = [
+  {
+    title: '市長に何を求められ、市長だけでは何を決められないか',
+    summary:
+      '給食費、学校、バスを例に、市長・市会・教育委員会・国・事業者の役割と、実施までの条件をたどる。',
+    category: '市政の仕組み',
+    slug: 'mayor-powers',
+    url: '/issues/mayor-powers/',
+  },
+];
+export const allPolicyIssues = [schoolLunch, ...mayoralIssues, ...foundationIssues];
 for (const record of records) {
   if (
     !allPolicyIssues.some((issue) => issue.url === record.page) &&

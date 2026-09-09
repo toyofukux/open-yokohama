@@ -141,5 +141,59 @@
     "localPath": "artifacts/mayoral-issues-sources/9300c910bcca2e6b9dee56a0196eef82a357610d895b71ab498085ca1c6b276a.pdf",
     "textPath": "artifacts/mayoral-issues-sources/D1.txt",
     "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
+  },
+  {
+    "id": "D2",
+    "title": "体育館空調設備設置事業・令和7年度12月補正",
+    "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r7jigyoukeikaku.files/0206_20251125.pdf",
+    "sha256": "3c4d5d7ef7e826f45c30d6f72bedc08a34c8f83b3f37db77d7f2b92a3f0e0691",
+    "bytes": 163898,
+    "localPath": "artifacts/editorial-resume/3c4d5d7ef7e826f45c30d6f72bedc08a34c8f83b3f37db77d7f2b92a3f0e0691.pdf",
+    "textPath": "artifacts/editorial-resume/3c4d5d7ef7e826f45c30d6f72bedc08a34c8f83b3f37db77d7f2b92a3f0e0691.txt",
+    "retrievedAt": "2026-09-08T16:49:17.094961+00:00"
+  },
+  {
+    "id": "D3",
+    "title": "令和8年度事業計画書・教育施設課",
+    "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0240_20260209.pdf",
+    "sha256": "54eaeae5f0c4e574a12c5650fb6c99cec9669f9eedbb94c8f9a87ac3fdb0c969",
+    "bytes": 528788,
+    "localPath": "artifacts/editorial-resume/54eaeae5f0c4e574a12c5650fb6c99cec9669f9eedbb94c8f9a87ac3fdb0c969.pdf",
+    "textPath": "artifacts/editorial-resume/54eaeae5f0c4e574a12c5650fb6c99cec9669f9eedbb94c8f9a87ac3fdb0c969.txt",
+    "retrievedAt": "2026-09-08T16:49:17.259944+00:00"
+  },
+  {
+    "id": "D4",
+    "title": "令和7年度12月補正・議案概要",
+    "url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2025/1127r74teiippangian.files/0004_20251125.pdf",
+    "sha256": "0d646c2f89bd86740430c039344e54a467bcdb605ad6489dfd18f2a13057fce5",
+    "bytes": 978371,
+    "localPath": "artifacts/editorial-resume/0d646c2f89bd86740430c039344e54a467bcdb605ad6489dfd18f2a13057fce5.pdf",
+    "textPath": "artifacts/editorial-resume/0d646c2f89bd86740430c039344e54a467bcdb605ad6489dfd18f2a13057fce5.txt",
+    "retrievedAt": "2026-09-08T16:49:17.405230+00:00"
+  },
+  {
+    "id": "D5",
+    "title": "横浜市・市民の声「体育館の空調設備設置の実施を前倒ししてください」",
+    "url": "https://cgi.city.yokohama.lg.jp/shimin/kouchou/search/data/37002833.html",
+    "localPath": "artifacts/editorial-batch/429c9f915ea5f5c5c08f2e9f8a7f8d29efa59b09c0bc8d36b1951df478b4bc54.html",
+    "sha256": "429c9f915ea5f5c5c08f2e9f8a7f8d29efa59b09c0bc8d36b1951df478b4bc54",
+    "bytes": 8207,
+    "retrievedAt": "2026-09-08T22:55:25.627329+00:00",
+    "textPath": "artifacts/editorial-batch/429c9f915ea5f5c5c08f2e9f8a7f8d29efa59b09c0bc8d36b1951df478b4bc54.txt",
+    "textSha256": "d4a121e8ab0c0289492822fadd0ab3a822a41452b5033923eaab4e6f8bbb58e9",
+    "redistribution": "Source snapshots retained in ignored artifacts; original links published. Diagrams are original factual summaries."
+  },
+  {
+    "id": "D6",
+    "title": "横浜市立学校熱中症対策ガイドライン・令和8年4月改訂",
+    "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/sesaku/hoken/default201905231120.files/0008_20260424.pdf",
+    "localPath": "artifacts/editorial-batch/e2f4e53ff7d01a66fa7f6c6dbf9178fb10f9727353814ce9b8f6f4aeb32e86b5.pdf",
+    "sha256": "e2f4e53ff7d01a66fa7f6c6dbf9178fb10f9727353814ce9b8f6f4aeb32e86b5",
+    "bytes": 2686091,
+    "retrievedAt": "2026-09-08T22:55:25.745435+00:00",
+    "textPath": "artifacts/editorial-batch/e2f4e53ff7d01a66fa7f6c6dbf9178fb10f9727353814ce9b8f6f4aeb32e86b5.txt",
+    "textSha256": "5083bec33530d142554a06edd9c91f2c97d526dd85bae3021b044e14d0c3088b",
+    "redistribution": "Source snapshots retained in ignored artifacts; original links published. Diagrams are original factual summaries."
   }
 ]

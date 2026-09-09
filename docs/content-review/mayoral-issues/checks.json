@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-09-07T08:04:40.938258Z",
-  "sourceSnapshots": 13,
+  "checkedAt": "2026-09-08T23:18:05.302014Z",
+  "sourceSnapshots": 18,
   "manuscripts": [
     {
       "path": "docs/content-review/mayoral-issues/childcare-access.md",
@@ -34,9 +34,9 @@
     },
     {
       "path": "docs/content-review/mayoral-issues/school-shelters.md",
-      "sha256": "f4d23b745478ce460ea8dd3a6554c7eaadfe0d6b14343922760ff1bc6ab73868",
-      "sections": 6,
-      "citations": 3
+      "sha256": "ad83aa92164efc6389899d0ff51e5bcf505d9cb9f979d289d509f06dfaf839f5",
+      "sections": 5,
+      "citations": 7
     }
   ],
   "calculations": {
@@ -46,7 +46,11 @@
     "expoTotalThousands": 8697215,
     "expoGeneralThousands": 3808896,
     "expoOtherThousands": 4888319,
-    "heatThousands": 6492724
+    "heatThousands": 6492724,
+    "gymThousands": 4915700,
+    "gymNationalThousands": 2127000,
+    "gymBondsThousands": 2774000,
+    "gymGeneralThousands": 14700
   },
   "sourceDiscrepancy": "D1 PDF52 body: 123 construction schools; embedded table: 80 schools (47%). Relationship unconfirmed; article explicitly preserves the discrepancy.",
   "humanValidation": "not performed",

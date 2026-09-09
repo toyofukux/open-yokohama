@@ -1,0 +1,74 @@
+{
+  "createdAt": "2026-09-09",
+  "creator": "open.yokohama editorial team (Codex)",
+  "rights": "Original text/HTML diagrams from cited facts; no copied artwork or photography.",
+  "figures": [
+    {
+      "path": "data/editorial/figures/gym-funding.html",
+      "sha256": "9941bed033724253f12632f5cb1e45d647583794b062cfb03a8d5305f781a4ce"
+    },
+    {
+      "path": "data/editorial/figures/gym-timeline.html",
+      "sha256": "f7142de436b6511b4f76670aef057167cfce919f062e4bfc3641d630e9721a81"
+    },
+    {
+      "path": "data/editorial/figures/mayor-roles.html",
+      "sha256": "0e6ed8be4f10a462f48c7d7762233c560ccd7009ca4f9465027d4971123325f7"
+    }
+  ],
+  "gymFunding": {
+    "sourceId": "D3",
+    "pdfPage": 22,
+    "unit": "thousand JPY",
+    "fiscalYear": 2026,
+    "total": 4915700,
+    "parts": [
+      {
+        "label": "国費",
+        "amount": 2127000
+      },
+      {
+        "label": "市債",
+        "amount": 2774000
+      },
+      {
+        "label": "一般財源",
+        "amount": 14700
+      }
+    ]
+  },
+  "timeline": [
+    [
+      "2019年度",
+      "調査・モデル設置",
+      "設置方法を調べ、モデル設置を開始。"
+    ],
+    [
+      "2021年度",
+      "整備を本格化",
+      "年間20校の整備を進める。"
+    ],
+    [
+      "2025年度",
+      "完了目標を5年前倒し",
+      "2034年度から2029年度へ。建替え校等を除く。"
+    ],
+    [
+      "2025年度12月補正",
+      "設計を追加",
+      "既実施80校＋追加68校＝設計148校。"
+    ],
+    [
+      "2026年度",
+      "設置着手の目標123件",
+      "完成・稼働の実績ではない。"
+    ]
+  ],
+  "roles": {
+    "sources": [
+      "Q03-L2",
+      "Q03-L3"
+    ],
+    "scope": "General sequence for a new school measure requiring budget approval; not organization hierarchy or all procedures."
+  }
+}

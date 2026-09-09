@@ -371,3 +371,77 @@
   outline-offset: 4px;
   scroll-margin-top: 28px;
 }
+
+.policy-prose .editorial-figure {
+  padding: clamp(16px, 3vw, 28px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.editorial-figure h3 {
+  margin-top: 0;
+}
+.policy-prose .policy-timeline,
+.policy-prose .role-flow,
+.policy-prose .funding-legend {
+  list-style: none;
+  padding: 0;
+}
+.policy-timeline li {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr) minmax(0, 3fr);
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+}
+.policy-timeline li > span,
+.role-flow li > span {
+  color: var(--muted);
+  font-size: 0.85em;
+}
+.policy-prose .policy-timeline p,
+.policy-prose .role-flow p {
+  margin: 4px 0 0;
+}
+.funding-bar {
+  display: flex;
+  height: 40px;
+  margin: 24px 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.funding-grant {
+  background: #397faa;
+}
+.funding-bond {
+  background: #dc9251;
+}
+.funding-general {
+  background: #818e98;
+}
+.funding-legend li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+}
+.funding-swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+.role-flow li {
+  border-left: 3px solid var(--accent);
+  padding: 12px 20px;
+  margin: 16px 0;
+}
+.role-flow strong,
+.role-flow li > span {
+  display: block;
+}
+@media (max-width: 600px) {
+  .policy-timeline li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+}

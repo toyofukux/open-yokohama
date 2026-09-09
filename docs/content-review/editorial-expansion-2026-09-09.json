@@ -1,0 +1,80 @@
+{
+  "date": "2026-09-09",
+  "questionIds": [
+    "Q01 school-shelters revision",
+    "Q03 mayor-powers foundation"
+  ],
+  "state": "implemented; production verification pending",
+  "independentReview": {
+    "reviewer": "/root/school_lunch_review",
+    "recordedAt": "2026-09-08T23:25:51.455225+00:00",
+    "files": [
+      {
+        "path": "docs/content-review/mayoral-issues/school-shelters.md",
+        "sha256": "ad83aa92164efc6389899d0ff51e5bcf505d9cb9f979d289d509f06dfaf839f5"
+      },
+      {
+        "path": "docs/content-review/foundations/mayor-powers.md",
+        "sha256": "bb2399bad42af466a75952938daf46e93f02f3a8a68844d0198e52fb1001067e"
+      },
+      {
+        "path": "docs/content-review/mayoral-issues/sources.json",
+        "sha256": "71906d24b1223518a204a1afdabe8aeb2baa7bcbdc3d0eb852514d71fa69582f"
+      },
+      {
+        "path": "docs/content-review/foundations/sources.json",
+        "sha256": "63a1ea7b19eb715b501519e6b2be4a67a31729d07687e7782740f3f0fcb5be13"
+      },
+      {
+        "path": "data/editorial/figures/gym-timeline.html",
+        "sha256": "f7142de436b6511b4f76670aef057167cfce919f062e4bfc3641d630e9721a81"
+      },
+      {
+        "path": "data/editorial/figures/gym-funding.html",
+        "sha256": "9941bed033724253f12632f5cb1e45d647583794b062cfb03a8d5305f781a4ce"
+      },
+      {
+        "path": "data/editorial/figures/mayor-roles.html",
+        "sha256": "0e6ed8be4f10a462f48c7d7762233c560ccd7009ca4f9465027d4971123325f7"
+      },
+      {
+        "path": "data/editorial/figures/manifest.json",
+        "sha256": "6a7b7df5fe9819368eab8f52d19dd7dfe7a49918203fe61925e75689a974c21d"
+      }
+    ],
+    "result": "No unresolved major or medium findings within scope",
+    "scope": [
+      "D1/D3/D4/D5/D6/F2 cited passages, D1/D3 page images",
+      "gym funding totals and percentages; design148 vs starts123; unresolved D1 80 relationship",
+      "Local Autonomy Act96/112/149/180/211/218; Education Administration Act4/21/22/29; Road Transport Act4/15/15_3, saved as-of revisions",
+      "City institution descriptions, 7 footnotes each manuscript, three figures"
+    ],
+    "resolvedMinorFindings": [
+      "D5 original title and public-content baseline date label corrected",
+      "Road Transport Act15_3 transport-plan notification added to source extract/check and footnote"
+    ],
+    "notPerformed": [
+      "browser UI",
+      "publication contract",
+      "production",
+      "source refetch by independent reviewer",
+      "human understanding validation",
+      "exhaustive law / individual operation legal compliance audit"
+    ]
+  },
+  "authorChecks": {
+    "sources": "18 school/mayoral snapshots and 6 foundation snapshots; arithmetic, effective revision and footnotes checked with local scripts",
+    "verification": "pnpm verify: 74 unit tests, 78 pages, 2184 internal links; final build contract passed",
+    "humanValidation": "not performed",
+    "browser": "110 E2E passed with 2 workers; includes both themes, no-JS footnotes, narrow/200% text, eight discoverable articles and existing map exports",
+    "gates": "Unreviewed content and numeric tampering refused; correction hold and unknown-target checks passed; Web deployment dry-run passed",
+    "visual": "Author inspected 390px timeline/funding/role figures and desktop article. Human understanding validation not performed.",
+    "testCorrections": "Replaced fixed seven-article rotation test count with catalogue length; axe scan moved to JS-enabled audit while retaining no-JS operation/overflow tests. Earlier interrupted browser run was not accepted as passing."
+  },
+  "remainingEditorialWork": [
+    "Other five existing articles need background/structure revisions",
+    "Q02 requires comparable net incremental city/recurring/restricted costs for two policies",
+    "Q04 population/facilities research next",
+    "school-by-school schedule, 123 vs80, outage capacity, maintenance costs not established"
+  ]
+}

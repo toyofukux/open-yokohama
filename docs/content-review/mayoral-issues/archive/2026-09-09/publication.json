@@ -143,7 +143,7 @@
         }
       ],
       "article": {
-        "contentHash": "9e508a2348b2e90bb3f0a69756930bda52e309db433fc74369ee4c292ddb33d7",
+        "contentHash": "81227ac3b5400fd59ae607b696429d493ad82bf09920b7126fc187810815df2f",
         "claims": [
           {
             "id": "V041-S01",
@@ -219,9 +219,9 @@
         ]
       },
       "review": {
-        "contentHash": "9e508a2348b2e90bb3f0a69756930bda52e309db433fc74369ee4c292ddb33d7",
-        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
-        "reviewedAt": "2026-09-08T23:25:03.788495Z",
+        "contentHash": "81227ac3b5400fd59ae607b696429d493ad82bf09920b7126fc187810815df2f",
+        "reviewer": "Codex author: v0.4.1 source and implementation verification; not independent or new human review",
+        "reviewedAt": "2026-09-08T16:50:42.377046Z",
         "findings": [
           {
             "claimId": "V041-S01",
@@ -297,7 +297,7 @@
         ],
         "humanApproval": {
           "approver": "user: adopted exact v0.4.1 manuscript; inherited publication authorization recorded now, implementation not human-reviewed",
-          "contentHash": "9e508a2348b2e90bb3f0a69756930bda52e309db433fc74369ee4c292ddb33d7",
+          "contentHash": "81227ac3b5400fd59ae607b696429d493ad82bf09920b7126fc187810815df2f",
           "approvedAt": "2026-09-08T16:50:42.377046Z"
         }
       },
@@ -305,14 +305,12 @@
         "kind": "user_publication_instruction",
         "instruction": "本番に出してよいです。",
         "scope": "STATUS 2026-09-09に引き継がれた給食v0.4.1の採用と、既存記事の改善・順次公開の継続委任。利用者検証や実装の人間レビューを示さない。",
-        "recordedAt": "2026-09-06T17:31:50.018298Z",
-        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。",
-        "humanContentReview": false
+        "recordedAt": "2026-09-06T17:31:50.018298Z"
       },
       "route": "/issues/school-lunch/",
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
@@ -494,18 +492,6 @@
             "productionE2E": "46 passed"
           },
           "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
-        },
-        {
-          "contentHash": "81227ac3b5400fd59ae607b696429d493ad82bf09920b7126fc187810815df2f",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09/publication.json",
-          "reason": "2026-09-09 article expansion / shared renderer update",
-          "deployment": {
-            "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-            "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
-            "url": "https://open.yokohama/issues/school-lunch/",
-            "verifiedAt": "2026-09-08T17:03:41.851161Z",
-            "productionE2E": "100 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -550,10 +536,14 @@
         "humanApprovalTimestampMeaning": "Time this inherited manuscript adoption was recorded against the implementation; not a new user review event."
       },
       "revisionReview": {
-        "scope": "shared code only; manuscript unchanged",
-        "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
-        "humanUnderstandingValidation": "not performed"
+        "recordedAt": "2026-09-08T16:50:42.377046Z",
+        "previousContentHash": "68797afb80182521cef2aa781b8ab33e6bdec4a16810be9f6f870dfcac3a0011",
+        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
+        "scope": "Adopted manuscript implementation",
+        "humanReview": "No new human review of implementation",
+        "independentReview": "completed_limited_scope",
+        "independentReviewRecord": "docs/content-review/school-lunch/implementation-review-v0.4.1.json",
+        "independentReviewedContentHash": "81227ac3b5400fd59ae607b696429d493ad82bf09920b7126fc187810815df2f"
       }
     },
     {
@@ -597,7 +587,7 @@
         }
       ],
       "article": {
-        "contentHash": "0167ce4a2c07328731433e0c52f8e045d63a030cb5a5ba0d50d5444560bf9d93",
+        "contentHash": "c82d0e042a0325c92263409419e82119ef0399f9627d4f19c9b6c992f25d6b6c",
         "claims": [
           {
             "id": "city-governance-01",
@@ -664,9 +654,9 @@
         ]
       },
       "review": {
-        "contentHash": "0167ce4a2c07328731433e0c52f8e045d63a030cb5a5ba0d50d5444560bf9d93",
-        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
-        "reviewedAt": "2026-09-08T23:25:03.788495Z",
+        "contentHash": "c82d0e042a0325c92263409419e82119ef0399f9627d4f19c9b6c992f25d6b6c",
+        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
+        "reviewedAt": "2026-09-08T16:46:02.385655Z",
         "findings": [
           {
             "claimId": "city-governance-01",
@@ -733,7 +723,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "0167ce4a2c07328731433e0c52f8e045d63a030cb5a5ba0d50d5444560bf9d93",
+          "contentHash": "c82d0e042a0325c92263409419e82119ef0399f9627d4f19c9b6c992f25d6b6c",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -744,11 +734,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
+        "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
@@ -854,18 +844,6 @@
             "productionE2E": "54 passed"
           },
           "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
-        },
-        {
-          "contentHash": "c82d0e042a0325c92263409419e82119ef0399f9627d4f19c9b6c992f25d6b6c",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09/publication.json",
-          "reason": "2026-09-09 article expansion / shared renderer update",
-          "deployment": {
-            "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-            "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
-            "url": "https://open.yokohama/issues/city-governance/",
-            "verifiedAt": "2026-09-08T17:03:41.851161Z",
-            "productionE2E": "100 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -899,10 +877,12 @@
         }
       ],
       "revisionReview": {
-        "scope": "shared code only; manuscript unchanged",
-        "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
-        "humanUnderstandingValidation": "not performed"
+        "recordedAt": "2026-09-08T16:46:02.385655Z",
+        "previousContentHash": "35c388c9f904b3c481d263248ef5f8f36a4f475ab8cb157bf147dec2b18f1b5c",
+        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
+        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
+        "humanReview": "No new human review of implementation",
+        "independentReview": "not_performed"
       }
     },
     {
@@ -946,7 +926,7 @@
         }
       ],
       "article": {
-        "contentHash": "e1188ffe61dc2b8c9894356f480fdd87ec293a27db4a6a3584e151f18bfea83b",
+        "contentHash": "f24069bb7e9afcf26a8a0a5c43184cc55a85d6d55a2c46525fb7a1aaba45dff4",
         "claims": [
           {
             "id": "city-budget-01",
@@ -1012,9 +992,9 @@
         ]
       },
       "review": {
-        "contentHash": "e1188ffe61dc2b8c9894356f480fdd87ec293a27db4a6a3584e151f18bfea83b",
-        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
-        "reviewedAt": "2026-09-08T23:25:03.788495Z",
+        "contentHash": "f24069bb7e9afcf26a8a0a5c43184cc55a85d6d55a2c46525fb7a1aaba45dff4",
+        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
+        "reviewedAt": "2026-09-08T16:46:02.385655Z",
         "findings": [
           {
             "claimId": "city-budget-01",
@@ -1080,7 +1060,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "e1188ffe61dc2b8c9894356f480fdd87ec293a27db4a6a3584e151f18bfea83b",
+          "contentHash": "f24069bb7e9afcf26a8a0a5c43184cc55a85d6d55a2c46525fb7a1aaba45dff4",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1091,11 +1071,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
+        "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
@@ -1200,18 +1180,6 @@
             "productionE2E": "54 passed"
           },
           "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
-        },
-        {
-          "contentHash": "f24069bb7e9afcf26a8a0a5c43184cc55a85d6d55a2c46525fb7a1aaba45dff4",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09/publication.json",
-          "reason": "2026-09-09 article expansion / shared renderer update",
-          "deployment": {
-            "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-            "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
-            "url": "https://open.yokohama/issues/city-budget/",
-            "verifiedAt": "2026-09-08T17:03:41.851161Z",
-            "productionE2E": "100 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -1245,10 +1213,12 @@
         }
       ],
       "revisionReview": {
-        "scope": "shared code only; manuscript unchanged",
-        "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
-        "humanUnderstandingValidation": "not performed"
+        "recordedAt": "2026-09-08T16:46:02.385655Z",
+        "previousContentHash": "3b7605b17b0d875f2e6ff3756781f279cb4737fc2b0ce79ef22526da575db45b",
+        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
+        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
+        "humanReview": "No new human review of implementation",
+        "independentReview": "not_performed"
       }
     },
     {
@@ -1292,7 +1262,7 @@
         }
       ],
       "article": {
-        "contentHash": "8417e0dc2c4b3751548b1f74ce626161864f9ec8b5730eae4c50526b708fc35b",
+        "contentHash": "2eb16c0efd4a8a19ff76b820880b67651254d3a03796db8a492fae44ec362e08",
         "claims": [
           {
             "id": "green-expo-01",
@@ -1358,9 +1328,9 @@
         ]
       },
       "review": {
-        "contentHash": "8417e0dc2c4b3751548b1f74ce626161864f9ec8b5730eae4c50526b708fc35b",
-        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
-        "reviewedAt": "2026-09-08T23:25:03.788495Z",
+        "contentHash": "2eb16c0efd4a8a19ff76b820880b67651254d3a03796db8a492fae44ec362e08",
+        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
+        "reviewedAt": "2026-09-08T16:46:02.385655Z",
         "findings": [
           {
             "claimId": "green-expo-01",
@@ -1426,7 +1396,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "8417e0dc2c4b3751548b1f74ce626161864f9ec8b5730eae4c50526b708fc35b",
+          "contentHash": "2eb16c0efd4a8a19ff76b820880b67651254d3a03796db8a492fae44ec362e08",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1437,11 +1407,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
+        "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
@@ -1546,18 +1516,6 @@
             "productionE2E": "54 passed"
           },
           "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
-        },
-        {
-          "contentHash": "2eb16c0efd4a8a19ff76b820880b67651254d3a03796db8a492fae44ec362e08",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09/publication.json",
-          "reason": "2026-09-09 article expansion / shared renderer update",
-          "deployment": {
-            "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-            "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
-            "url": "https://open.yokohama/issues/green-expo/",
-            "verifiedAt": "2026-09-08T17:03:41.851161Z",
-            "productionE2E": "100 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -1591,10 +1549,12 @@
         }
       ],
       "revisionReview": {
-        "scope": "shared code only; manuscript unchanged",
-        "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
-        "humanUnderstandingValidation": "not performed"
+        "recordedAt": "2026-09-08T16:46:02.385655Z",
+        "previousContentHash": "6d2b1c85176ee07b58ed39bf9adb4d5fa56b3e3c863286c65392ec9df4780744",
+        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
+        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
+        "humanReview": "No new human review of implementation",
+        "independentReview": "not_performed"
       }
     },
     {
@@ -1638,7 +1598,7 @@
         }
       ],
       "article": {
-        "contentHash": "f6d6562648d1ca646541aa0b948ab626392d2ea6d4720c6581ff1bee507426f6",
+        "contentHash": "846b8393a67066fec153c536550c9150d740c0d2db447849b8565e373aff065a",
         "claims": [
           {
             "id": "local-mobility-01",
@@ -1695,9 +1655,9 @@
         ]
       },
       "review": {
-        "contentHash": "f6d6562648d1ca646541aa0b948ab626392d2ea6d4720c6581ff1bee507426f6",
-        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
-        "reviewedAt": "2026-09-08T23:25:03.788495Z",
+        "contentHash": "846b8393a67066fec153c536550c9150d740c0d2db447849b8565e373aff065a",
+        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
+        "reviewedAt": "2026-09-08T16:46:02.385655Z",
         "findings": [
           {
             "claimId": "local-mobility-01",
@@ -1754,7 +1714,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "f6d6562648d1ca646541aa0b948ab626392d2ea6d4720c6581ff1bee507426f6",
+          "contentHash": "846b8393a67066fec153c536550c9150d740c0d2db447849b8565e373aff065a",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1765,11 +1725,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
+        "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
@@ -1865,18 +1825,6 @@
             "productionE2E": "54 passed"
           },
           "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
-        },
-        {
-          "contentHash": "846b8393a67066fec153c536550c9150d740c0d2db447849b8565e373aff065a",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09/publication.json",
-          "reason": "2026-09-09 article expansion / shared renderer update",
-          "deployment": {
-            "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-            "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
-            "url": "https://open.yokohama/issues/local-mobility/",
-            "verifiedAt": "2026-09-08T17:03:41.851161Z",
-            "productionE2E": "100 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -1910,10 +1858,12 @@
         }
       ],
       "revisionReview": {
-        "scope": "shared code only; manuscript unchanged",
-        "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
-        "humanUnderstandingValidation": "not performed"
+        "recordedAt": "2026-09-08T16:46:02.385655Z",
+        "previousContentHash": "14b7a6a01710c68b0ba1dd75fe12187f4f92c896e1adc4cf3616d3d3d482d885",
+        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
+        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
+        "humanReview": "No new human review of implementation",
+        "independentReview": "not_performed"
       }
     },
     {
@@ -1976,7 +1926,7 @@
         }
       ],
       "article": {
-        "contentHash": "41c4e99a4e2f282f760b5efdb9772dfa19ef54db5aab0bb6c211f30ed4559f65",
+        "contentHash": "68c9aaa6b151487ea05cea05e6600e61d85f120c27e180a6fa68b212c4b8d205",
         "claims": [
           {
             "id": "childcare-access-01",
@@ -2034,9 +1984,9 @@
         ]
       },
       "review": {
-        "contentHash": "41c4e99a4e2f282f760b5efdb9772dfa19ef54db5aab0bb6c211f30ed4559f65",
-        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
-        "reviewedAt": "2026-09-08T23:25:03.788495Z",
+        "contentHash": "68c9aaa6b151487ea05cea05e6600e61d85f120c27e180a6fa68b212c4b8d205",
+        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
+        "reviewedAt": "2026-09-08T16:46:02.385655Z",
         "findings": [
           {
             "claimId": "childcare-access-01",
@@ -2094,7 +2044,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "41c4e99a4e2f282f760b5efdb9772dfa19ef54db5aab0bb6c211f30ed4559f65",
+          "contentHash": "68c9aaa6b151487ea05cea05e6600e61d85f120c27e180a6fa68b212c4b8d205",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -2105,11 +2055,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
+        "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
@@ -2219,18 +2169,6 @@
             "productionE2E": "54 passed"
           },
           "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
-        },
-        {
-          "contentHash": "68c9aaa6b151487ea05cea05e6600e61d85f120c27e180a6fa68b212c4b8d205",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09/publication.json",
-          "reason": "2026-09-09 article expansion / shared renderer update",
-          "deployment": {
-            "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-            "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
-            "url": "https://open.yokohama/issues/childcare-access/",
-            "verifiedAt": "2026-09-08T17:03:41.851161Z",
-            "productionE2E": "100 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -2264,10 +2202,12 @@
         }
       ],
       "revisionReview": {
-        "scope": "shared code only; manuscript unchanged",
-        "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
-        "humanUnderstandingValidation": "not performed"
+        "recordedAt": "2026-09-08T16:46:02.385655Z",
+        "previousContentHash": "ad42d7d92df54285675efb9da5e91faa623b4591e83631a5a17fe485f7e8809c",
+        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
+        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
+        "humanReview": "No new human review of implementation",
+        "independentReview": "not_performed"
       }
     },
     {
@@ -2284,24 +2224,9 @@
         "scripts/policy-table-labels.mjs",
         "apps/web/astro.config.mjs",
         "docs/content-review/mayoral-issues/sources.json",
-        "scripts/policy-evidence.mjs",
-        "data/editorial/figures/manifest.json",
-        "data/editorial/figures/gym-timeline.html",
-        "data/editorial/figures/gym-funding.html",
-        "docs/content-review/mayoral-issues/check.py"
+        "scripts/policy-evidence.mjs"
       ],
       "sources": [
-        {
-          "id": "F2",
-          "title": "令和8年度予算案資料",
-          "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
-          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
-          "sha256": "1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449",
-          "retrievedAt": "2026-09-06T17:38:01.145585Z",
-          "localPath": "artifacts/mayoral-issues-sources/1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449.pdf",
-          "textPath": "artifacts/mayoral-issues-sources/F2.txt",
-          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
-        },
         {
           "id": "D1",
           "title": "令和8年度教育委員会予算概要",
@@ -2314,188 +2239,133 @@
           "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
         },
         {
-          "id": "D3",
-          "title": "令和8年度事業計画書・教育施設課",
-          "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0240_20260209.pdf",
-          "sha256": "54eaeae5f0c4e574a12c5650fb6c99cec9669f9eedbb94c8f9a87ac3fdb0c969",
-          "bytes": 528788,
-          "localPath": "artifacts/editorial-resume/54eaeae5f0c4e574a12c5650fb6c99cec9669f9eedbb94c8f9a87ac3fdb0c969.pdf",
-          "textPath": "artifacts/editorial-resume/54eaeae5f0c4e574a12c5650fb6c99cec9669f9eedbb94c8f9a87ac3fdb0c969.txt",
-          "retrievedAt": "2026-09-08T16:49:17.259944+00:00"
-        },
-        {
-          "id": "D4",
-          "title": "令和7年度12月補正・議案概要",
-          "url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2025/1127r74teiippangian.files/0004_20251125.pdf",
-          "sha256": "0d646c2f89bd86740430c039344e54a467bcdb605ad6489dfd18f2a13057fce5",
-          "bytes": 978371,
-          "localPath": "artifacts/editorial-resume/0d646c2f89bd86740430c039344e54a467bcdb605ad6489dfd18f2a13057fce5.pdf",
-          "textPath": "artifacts/editorial-resume/0d646c2f89bd86740430c039344e54a467bcdb605ad6489dfd18f2a13057fce5.txt",
-          "retrievedAt": "2026-09-08T16:49:17.405230+00:00"
-        },
-        {
-          "id": "D5",
-          "title": "横浜市・市民の声「体育館の空調設備設置の実施を前倒ししてください」",
-          "url": "https://cgi.city.yokohama.lg.jp/shimin/kouchou/search/data/37002833.html",
-          "localPath": "artifacts/editorial-batch/429c9f915ea5f5c5c08f2e9f8a7f8d29efa59b09c0bc8d36b1951df478b4bc54.html",
-          "sha256": "429c9f915ea5f5c5c08f2e9f8a7f8d29efa59b09c0bc8d36b1951df478b4bc54",
-          "bytes": 8207,
-          "retrievedAt": "2026-09-08T22:55:25.627329+00:00",
-          "textPath": "artifacts/editorial-batch/429c9f915ea5f5c5c08f2e9f8a7f8d29efa59b09c0bc8d36b1951df478b4bc54.txt",
-          "textSha256": "d4a121e8ab0c0289492822fadd0ab3a822a41452b5033923eaab4e6f8bbb58e9",
-          "redistribution": "Source snapshots retained in ignored artifacts; original links published. Diagrams are original factual summaries."
-        },
-        {
-          "id": "D6",
-          "title": "横浜市立学校熱中症対策ガイドライン・令和8年4月改訂",
-          "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/sesaku/hoken/default201905231120.files/0008_20260424.pdf",
-          "localPath": "artifacts/editorial-batch/e2f4e53ff7d01a66fa7f6c6dbf9178fb10f9727353814ce9b8f6f4aeb32e86b5.pdf",
-          "sha256": "e2f4e53ff7d01a66fa7f6c6dbf9178fb10f9727353814ce9b8f6f4aeb32e86b5",
-          "bytes": 2686091,
-          "retrievedAt": "2026-09-08T22:55:25.745435+00:00",
-          "textPath": "artifacts/editorial-batch/e2f4e53ff7d01a66fa7f6c6dbf9178fb10f9727353814ce9b8f6f4aeb32e86b5.txt",
-          "textSha256": "5083bec33530d142554a06edd9c91f2c97d526dd85bae3021b044e14d0c3088b",
-          "redistribution": "Source snapshots retained in ignored artifacts; original links published. Diagrams are original factual summaries."
+          "id": "F2",
+          "title": "令和8年度予算案資料",
+          "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
+          "resolvedUrl": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
+          "sha256": "1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449",
+          "retrievedAt": "2026-09-06T17:38:01.145585Z",
+          "localPath": "artifacts/mayoral-issues-sources/1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449.pdf",
+          "textPath": "artifacts/mayoral-issues-sources/F2.txt",
+          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
         }
       ],
       "article": {
-        "contentHash": "556a0bdd64afca729f6ec4cd396417f4af804eab1ee246ab1526bd9f246454be",
+        "contentHash": "3515576c3f721188dfdb71ae31165c86d96ff6c14d1539bbd844dcaf62a7e541",
         "claims": [
           {
             "id": "school-shelters-01",
             "kind": "analysis",
-            "text": "学校の体育館を、暑い日にも使えるようにする。横浜市は整備を前倒しし、建替え校等を除いて2029年度までの空調設置を目指している。残る問いは、**待つ学校をどう支え、災害時まで使える設備をどこまで整えるか**だ。[^goal]",
+            "text": "## 早く整えることと、使い続けられること\n\n学校の暑さ対策は、毎日の学びと、災害時の避難環境の両方に関わる。早く空調を付けてほしいという要望に応えるには、整備費だけでなく、工事の順序や運用する費用も考える必要がある。\n\n判断したいのは、**どの学校から、いつまでに整え、停電などが起きた場合にどう対応するか**だ。設置台数は大切な進捗だが、それだけで避難生活の備えが完成したとは言えない。",
             "citations": [
-              "D5",
-              "D1"
+              "D1",
+              "F2"
             ]
           },
           {
             "id": "school-shelters-02",
             "kind": "analysis",
-            "text": "## 体育館の暑さが、学校全体の課題になった\n\n体育館は体育の授業だけでなく、部活動、式典、キッズクラブ、地域への開放にも使われる。災害時には避難所としての役割もある。市の事業計画は、猛暑が続くなか、代わりの施設がない体育館で児童生徒の熱中症による緊急搬送例が報告されていることを、整備の背景に挙げている。[^background]\n\nこのため、空調を付ける目的には、子どもが日常の活動を続けられる環境と、避難する人の体調に配慮した環境の両方がある。学校ごとの暑さや搬送件数を、この資料から比較することはできないが、利用者が個々に涼しい場所へ移れば済む、という扱いにはしにくい施設だ。\n\n市は2019年度に調査とモデル設置を始め、2021年度から年間20校の整備を本格化した。その後、2025年度からは整備完了の目標を2034年度から2029年度へ、5年早める方針に変えた。市は施工業者の確保や授業への影響を考慮して工程を組むと説明している。[^background][^acceleration]\n\n<!-- evidence:gym-timeline -->\n\n年表で区別したいのは、計画を早めること、設計すること、工事を始めること、実際に使えることだ。2025年度12月補正の説明にある設計148校は、既に進めていた80校に68校を追加する計画であり、完成した体育館の数ではない。[^supplement]",
+            "text": "## 2026年度の資料には、校数の異なる記載がある\n\n市の教育委員会予算概要は、2029年度の体育館空調設置率100％を目標としている。同じページの本文には2026年度の設計219校・設置工事123校とある一方、図表の「R8事業量」には体育館空調80校（47％）と記載されている。図表には建替え校等を除くという条件も付く。[教育委員会予算概要・本文50ページ（PDF52ページ）](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf#page=52)\n\n**123校と80校の関係は、この資料だけでは確認できていない**。工事を実施する年度と利用開始の年度など、集計範囲が異なる可能性はあるが、理由を推測で補わない。どちらも2026年9月時点の完成実績としては扱わない。\n\n自分の学校の状況を知るには、対象校と工事予定、利用開始日を別に確かめる必要がある。初版では学校別の進捗一覧までは取得していない。設計と工事の校数を合算して、使える学校数とすることもできない。",
             "citations": [
-              "D3",
-              "D4",
-              "D5"
+              "D1"
             ]
           },
           {
             "id": "school-shelters-03",
             "kind": "analysis",
-            "text": "## 前倒しは進む。自分の学校で使える日は別に確かめる\n\n2026年度の体育館単独事業では、空調機の**設置着手数の目標は123件**。教育委員会の予算概要にも設計219校・設置工事123校という記載がある。ところが、同じ予算概要の図表には「R8事業量」として80校、設置率47％が載る。[^background][^goal]\n\n**123校と80校の関係は、この資料だけでは確認できていない**。どちらも2026年9月時点で空調が使える学校数とは扱わない。自分の学校の状況を知るには、対象校、工事の予定、利用開始日を確かめる必要がある。\n\n整備を待つ期間にも、活動場所の暑さを測り、活動時間や内容を変える対応は必要になる。市の2026年4月改訂のガイドラインは、活動を行う場所の状況に応じた判断や、必要な場合の中止・延期の検討を求めている。空調工事の進捗と、今夏の活動をどう行うかは、並行して扱う課題だ。[^interim]",
+            "text": "## 64.9億円は、体育館だけの費用ではない\n\n同じ資料の「酷暑対策（断熱・空調）」は、**64億9,272万4千円**。ここには教室の断熱改修や空調設備の整備が含まれ、本文では体育館に加え給食室の空調にも触れている。[同・本文50ページ](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf#page=52)\n\nしたがって、この金額を123校で割って「体育館一校の空調費」とすることはできない。学校ごとの規模や工事内容、設計費がどの年度に計上されるかもそろえる必要がある。\n\nこの初版では体育館空調だけの正味市負担と、整備を前倒しした場合の追加費用を確定していない。予算が載っていることと、政策変更の値段が分かることを分けて読む。",
             "citations": [
-              "D1",
-              "D3",
-              "D6"
+              "D1"
             ]
           },
           {
             "id": "school-shelters-04",
-            "kind": "analysis",
-            "text": "## 49.157億円を、何の財源で整えるか\n\n2026年度の「体育館空調設備設置事業」は、**49億1,570万円**の予算だ。このうち国費は21億2,700万円、市債は27億7,400万円、一般財源は1,470万円となる。[^background]\n\n<!-- evidence:gym-funding -->\n\n市債は、市が借りて将来返すお金だ。当年度の一般財源1,470万円だけを「市の負担」とすると、将来の償還を落としてしまう。一方、国費や借入金を含む総額を、そのまま別の政策へ自由に回せるお金とも扱えない。財源の使途と償還条件を確かめて比べる必要がある。\n\nこの49.157億円は、2026年度の体育館整備事業の規模を示す。前倒しによって追加でいくらかかるか、毎年の運転・保守にいくら必要かは、この額だけでは分からない。設計や工事が年度をまたぐため、123件で割って一校当たりの完成費用にすることもできない。[^budget-scope]",
+            "kind": "proposal",
+            "text": "## 整備の順序は、何を優先して決めるか\n\n| 方針 | 重視すること | 判断に必要な条件 |\n| --- | --- | --- |\n| 現行の工程で着実に進める | 設計・工事の予定を管理し、目標年度までに整える | 工程の遅れと対象外の学校への対応。待つ期間の暑さ対策 |\n| 必要性の高い学校を前倒しする | 暑さや利用状況、避難環境などから順序を見直す | 優先基準、追加費用、施工体制。順番が後になる学校への説明 |\n| 空調と避難環境を一体で整える | 電源、トイレ、備蓄、運営まで含めて使える状態を目指す | 一校当たりの整備範囲と費用。全校への普及速度との両立 |\n\nこれらは比較のための方向であり、新しい工程表ではない。空調を急ぐ案と避難環境の改善は併用できる一方、同じ担当者や工事体制で進められるかも確認したい。",
             "citations": [
               "D1",
-              "D3"
+              "F2"
             ]
           },
           {
             "id": "school-shelters-05",
             "kind": "proposal",
-            "text": "## 待つ期間と、整備する範囲をどう組み合わせるか\n\n暑さへの対応を比べるなら、「早く付けるか」だけでなく、工事を待つ人の環境と、付けた後に使える条件を並べたい。以下は同じ課題への対応を比較するための整理で、候補者の公約や効果を実証した一覧ではない。\n\n| 判断する課題 | 対応の組み合わせ | 利益と負担が変わる人・残る条件 |\n| --- | --- | --- |\n| 整備までの暑い日をどう過ごすか | 現行工程で全校整備を進めながら、待つ学校の活動時間・場所・内容を調整する | 工事前の子どもにも対応できるが、活動の制限や調整は学校・家庭に残る。代替場所の確保と費用を見る |\n| どの学校を先に整えるか | 全体工程を維持する／暑さや利用状況などの基準で順序を見直す | 前倒しする学校と待つ学校の両方に影響する。基準、施工体制、追加費用、授業への影響を示す |\n| 災害時まで使える範囲をどう整えるか | 空調の設置を先行する／必要な電源や操作・保守の体制を合わせて整える | 普段の利用者に加え避難者が対象になる。設備を増やす費用と整備期間、停電時に使える時間を確かめる |\n\nたとえば、避難時に使う電源まで同時に整える案には、後から別工事をする場合との費用・工程の比較が必要だ。空調の設置を先に進める案にも、停電時に何を代わりに用意するかという課題が残る。今回確認した資料では、学校別の停電対応や稼働時間までは確定していない。\n\nまた、運転費や保守費を誰が持つかによって、設置後に必要なときに使えるかが変わる。市の予算編成では施設老朽化や物価高への対応も課題になっており、別の工事やサービスを延期して前倒しするなら、その対象と影響も比較に入る。[^fiscal]",
+            "text": "## 設置率の次は、停電時と実際の運用を見る\n\n災害時の使い方を判断するための問いとして、停電時に稼働できる設備か、燃料や電源をどれだけ確保するか、誰が操作するかを提案する。すべての新設空調が停電時も使えると、この記事では確認していない。\n\n避難する人には、暑さ以外にもトイレ、休める場所、水、情報へのアクセスなどの必要がある。空調の整備だけを、避難所全体の安全性の評価に置き換えないことが大切だ。\n\n普段の学校利用でも、電気代などの運転費や保守の担当を確かめたい。設備の導入で終わらず、必要なときに使える条件まで約束に含める、というのがここでの提案だ。",
             "citations": [
-              "D3",
-              "D5",
-              "D6",
+              "D1",
               "F2"
             ]
           },
           {
             "id": "school-shelters-06",
             "kind": "analysis",
-            "text": "## 「いつ付くか」に、「待つ間」と「使い続ける条件」を添える\n\n学校別の利用開始日、待つ期間の暑さ対策、運転・保守と停電時の条件。この三つがそろうと、整備の速さと暮らしへの効果を結びつけて読める。今後は校別工程と維持費の資料を確認し、未確定の部分を更新する。\n\n[^goal]: [2026年度教育委員会予算概要・本文50ページ（PDF52ページ）](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf#page=52)。2029年度の設置率100％は目標で、建替え校等を除く。本文の設計・設置工事と図表の校数は区別している。\n[^background]: [2026年度事業計画書・体育館空調設備設置事業、本文21ページ（PDF22ページ）](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0240_20260209.pdf#page=22)。事業目的、背景、整備の経緯、設置着手数、当年度財源を確認。緊急搬送例は市の説明であり、校別件数や空調導入による減少効果を示す統計ではない。\n[^acceleration]: [市民の声への市の回答「体育館の空調設備設置の実施を前倒ししてください」](https://cgi.city.yokohama.lg.jp/shimin/kouchou/search/data/37002833.html)（公表内容基準日2025年9月19日）。2034年度から2029年度への前倒しと、業者確保・授業への影響を説明している。これ以上早められないことを独立に検証した資料ではない。\n[^supplement]: [2025年度12月補正・議案概要、本文12ページ（PDF13ページ）](https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2025/1127r74teiippangian.files/0004_20251125.pdf#page=13)。設計68校を追加し計148校とする説明。ここでの既実施80校は設計の文脈で、2026年度予算概要の80校との対応は確認していない。\n[^interim]: [横浜市立学校熱中症対策ガイドライン・2026年4月改訂、本文23ページ（PDF24ページ）](https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/sesaku/hoken/default201905231120.files/0008_20260424.pdf#page=24)。アラートや現場の暑さ指数、児童生徒の状態を踏まえた活動の判断を扱う。この記事は個別の学校の開催可否を判断していない。\n[^budget-scope]: 事業計画の単位は千円で、4,915,700千円を49億1,570万円に換算した。別の[教育委員会予算概要・本文50ページ](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf#page=52)の「酷暑対策（断熱・空調）」64億9,272万4千円には、教室の断熱や給食室空調なども含まれる。体育館単独事業と合算せず、同じ範囲の費用として比較しない。\n[^fiscal]: [2026年度予算案資料・本文32〜33ページ（PDF34〜35ページ）](https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf#page=34)。物価高、施設老朽化等への対応を確認。表の対応案は編集上の整理であり、他事業を実際に延期したという認定ではない。",
+            "text": "## 何を見送るかも、工程と一緒に示す\n\n前倒しのために別の工事を延期するなら、その内容と影響も比較対象になる。反対に、予定どおり進める場合は、整備を待つ学校の対策にいくら使うかを確認したい。\n\n市の財政資料では、物価高や施設老朽化への対応なども予算編成上の課題になっている。[2026年度予算案資料・本文32〜33ページ（PDF34〜35ページ）](https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf#page=34)\n\n学校別の費用、進捗、停電時の運用条件がそろえば、前倒しと一体整備の比較を更新できる。現時点で、どの学校を何番目にすべきかまでは判断していない。",
             "citations": [
-              "D1",
-              "D3",
-              "D4",
-              "D5",
-              "D6",
               "F2"
             ]
           }
         ]
       },
       "review": {
-        "contentHash": "556a0bdd64afca729f6ec4cd396417f4af804eab1ee246ab1526bd9f246454be",
-        "reviewer": "Codex author: primary source and manuscript/figure review; independent review recorded separately",
-        "reviewedAt": "2026-09-08T23:25:03.788495Z",
+        "contentHash": "3515576c3f721188dfdb71ae31165c86d96ff6c14d1539bbd844dcaf62a7e541",
+        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
+        "reviewedAt": "2026-09-08T16:46:02.385655Z",
         "findings": [
           {
             "claimId": "school-shelters-01",
             "verdict": "supported",
             "citationIds": [
-              "D5",
-              "D1"
+              "D1",
+              "F2"
             ],
-            "rationale": "D5 explicitly advances 2034 to 2029, excluding rebuilds; D1 goal not observed completion. Author source/interpretation check, not independent review or human validation."
+            "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 早く整えることと、使い続けられること"
           },
           {
             "claimId": "school-shelters-02",
             "verdict": "supported",
             "citationIds": [
-              "D3",
-              "D4",
-              "D5"
+              "D1"
             ],
-            "rationale": "D3 PDF22 purposes, heat concern and 2019/2021 history; D5 Sep19 2025 response advances target, contractor/school-use constraint attributed to city; D4 PDF13 80+68 design=148, not completion. Author source/interpretation check, not independent review or human validation."
+            "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 2026年度の資料には、校数の異なる記載がある"
           },
           {
             "claimId": "school-shelters-03",
             "verdict": "supported",
             "citationIds": [
-              "D1",
-              "D3",
-              "D6"
+              "D1"
             ],
-            "rationale": "D3 PDF22 123 starts target vs D1 PDF52 body123 and diagram80 retained unresolved; D6 PDF24 local conditions, activity adaptation and cancellation/postponement, no personal medical advice. Author source/interpretation check, not independent review or human validation."
+            "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 64.9億円は、体育館だけの費用ではない"
           },
           {
             "claimId": "school-shelters-04",
             "verdict": "supported",
             "citationIds": [
               "D1",
-              "D3"
+              "F2"
             ],
-            "rationale": "D3 PDF22 4915700=2127000+2774000+14700 thousand JPY. Borrowing identified, no operating-cost, unit cost or net increment inference. Separate heat budget6492724 not added. Author recomputation in checks.json. Author source/interpretation check, not independent review or human validation."
+            "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 整備の順序は、何を優先して決めるか"
           },
           {
             "claimId": "school-shelters-05",
             "verdict": "supported",
             "citationIds": [
-              "D3",
-              "D5",
-              "D6",
+              "D1",
               "F2"
             ],
-            "rationale": "Conditional alternatives address waiting, priority and outage operation; beneficiary and resource tradeoffs explicit, no invented implementation or proven impacts. F2 PDF34-35 fiscal pressures. School-specific outage capacity and maintenance remain unconfirmed. Author source/interpretation check, not independent review or human validation."
+            "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 設置率の次は、停電時と実際の運用を見る"
           },
           {
             "claimId": "school-shelters-06",
             "verdict": "supported",
             "citationIds": [
-              "D1",
-              "D3",
-              "D4",
-              "D5",
-              "D6",
               "F2"
             ],
-            "rationale": "Short synthesis and source notes preserve scope, budget units and unresolved school-level evidence. Footnote links checked against inventory. Author source/interpretation check, not independent review or human validation."
+            "rationale": "D1 PDF52 visually checked: 6492724 thousand yen covers insulation and air conditioning beyond gyms. Body123 schools and image80 schools conflict; article explicitly says relationship unconfirmed. R11 goal is not completion. F2 printed pp32–33 cost context. No unit-cost division or operating-school count asserted. This section was author-reviewed. Linked facts are attributed; editorial interpretations/options are conditional and not empirically proven effects. Section: ## 何を見送るかも、工程と一緒に示す"
           }
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "556a0bdd64afca729f6ec4cd396417f4af804eab1ee246ab1526bd9f246454be",
+          "contentHash": "3515576c3f721188dfdb71ae31165c86d96ff6c14d1539bbd844dcaf62a7e541",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -2506,11 +2376,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
+        "currentChangeInstruction": "3色の区別マップ・画像書き出し、TOPのローテーション、市長選の独立した期間限定の見せ方の改善。既存の本番公開委任の範囲で実施。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
@@ -2605,18 +2475,6 @@
             "productionE2E": "54 passed"
           },
           "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
-        },
-        {
-          "contentHash": "3515576c3f721188dfdb71ae31165c86d96ff6c14d1539bbd844dcaf62a7e541",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09/publication.json",
-          "reason": "2026-09-09 article expansion / shared renderer update",
-          "deployment": {
-            "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-            "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
-            "url": "https://open.yokohama/issues/school-shelters/",
-            "verifiedAt": "2026-09-08T17:03:41.851161Z",
-            "productionE2E": "100 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -2650,11 +2508,12 @@
         }
       ],
       "revisionReview": {
-        "scope": "manuscript, sources and explanatory figures",
-        "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "Passed limited manuscript/figure/source review; docs/content-review/editorial-expansion-2026-09-09.json",
-        "humanUnderstandingValidation": "not performed",
-        "limitations": "Not a complete legal audit or human understanding test. Browser and publication verification are separate."
+        "recordedAt": "2026-09-08T16:46:02.385655Z",
+        "previousContentHash": "8d78ae060c1971a9f550200db8cd270e8fde2fcfb9deb8f5c08e4ee438024390",
+        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
+        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
+        "humanReview": "No new human review of implementation",
+        "independentReview": "not_performed"
       }
     },
     {
@@ -2698,7 +2557,7 @@
         }
       ],
       "article": {
-        "contentHash": "e27c5d403b32e508049050e75c44093e2cd270cdd4177ed388c93f7e29906559",
+        "contentHash": "652c797d92e0080fe17979d69c8d388f6e21dfb231d3287191d28346cdd65f98",
         "claims": [
           {
             "id": "election-date",
@@ -2721,9 +2580,9 @@
         ]
       },
       "review": {
-        "contentHash": "e27c5d403b32e508049050e75c44093e2cd270cdd4177ed388c93f7e29906559",
-        "reviewer": "Codex author: shared renderer/catalogue update; previous manuscript and claims unchanged",
-        "reviewedAt": "2026-09-08T23:25:03.788495Z",
+        "contentHash": "652c797d92e0080fe17979d69c8d388f6e21dfb231d3287191d28346cdd65f98",
+        "reviewer": "Codex author: shared rendering configuration and style review; manuscript unchanged; not new human review",
+        "reviewedAt": "2026-09-08T16:46:02.385655Z",
         "findings": [
           {
             "claimId": "election-date",
@@ -2746,7 +2605,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "e27c5d403b32e508049050e75c44093e2cd270cdd4177ed388c93f7e29906559",
+          "contentHash": "652c797d92e0080fe17979d69c8d388f6e21dfb231d3287191d28346cdd65f98",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -2757,11 +2616,11 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
+        "currentChangeInstruction": "ユーザー指定の旧人口・世帯・密度3記事を撤去し、サイトの意図に沿って全体の問いと優先順位を再構成する。既存の公開委任を継続。"
       },
       "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "deployment": {
         "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
@@ -2840,18 +2699,6 @@
             "productionE2E": "54 passed"
           },
           "reason": "2026-09-07: integrate restored policy articles with DWH; manuscript unchanged; correction report uses own article version; archived reviews do not approve current articles."
-        },
-        {
-          "contentHash": "652c797d92e0080fe17979d69c8d388f6e21dfb231d3287191d28346cdd65f98",
-          "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-09/publication.json",
-          "reason": "2026-09-09 article expansion / shared renderer update",
-          "deployment": {
-            "workerVersion": "2d228feb-c96d-4e06-8b05-31adf0f13f6f",
-            "implementationCommit": "c425c59b216b5522f27cfae7846a12f89b03e46c",
-            "url": "https://open.yokohama/elections/mayor-2026/",
-            "verifiedAt": "2026-09-08T17:03:41.851161Z",
-            "productionE2E": "100 passed"
-          }
         }
       ],
       "integrationReview": {
@@ -2885,364 +2732,12 @@
         }
       ],
       "revisionReview": {
-        "scope": "shared code only; manuscript unchanged",
-        "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "pending separate report",
-        "humanUnderstandingValidation": "not performed"
-      }
-    },
-    {
-      "id": "mayor-powers",
-      "route": "/issues/mayor-powers/",
-      "manuscriptPath": "docs/content-review/foundations/mayor-powers.md",
-      "contentFiles": [
-        "docs/content-review/foundations/mayor-powers.md",
-        "apps/web/src/pages/issues/mayor-powers.astro",
-        "apps/web/src/styles/global.css",
-        "apps/web/src/layouts/Layout.astro",
-        "apps/web/src/components/PolicyArticle.astro",
-        "apps/web/src/styles/policy-article.css",
-        "scripts/policy-table-labels.mjs",
-        "apps/web/astro.config.mjs",
-        "docs/content-review/foundations/sources.json",
-        "scripts/policy-evidence.mjs",
-        "data/editorial/figures/manifest.json",
-        "data/editorial/figures/mayor-roles.html",
-        "docs/content-review/foundations/check.py",
-        "packages/core/policy-issues.ts"
-      ],
-      "sources": [
-        {
-          "id": "Q03-S1",
-          "title": "市会と市長",
-          "url": "https://www.city.yokohama.lg.jp/shikai/shikumi/shigoto/shikumi12.html",
-          "sha256": "b06f23f8fb0be9dc8620b577190803dcc3c6243a4df2a0647ea411e103923ff4",
-          "bytes": 25568,
-          "localPath": "artifacts/editorial-resume/b06f23f8fb0be9dc8620b577190803dcc3c6243a4df2a0647ea411e103923ff4.html",
-          "retrievedAt": "2026-09-08T16:57:22.781135+00:00",
-          "textPath": "artifacts/editorial-resume/b06f23f8fb0be9dc8620b577190803dcc3c6243a4df2a0647ea411e103923ff4.txt",
-          "textSha256": "3409f552637e71e778af57d92059b5bbc80e38aec529e9d3884271207fe70585",
-          "redistribution": "Source snapshots retained in ignored artifacts; original links published. Diagrams are original factual summaries."
-        },
-        {
-          "id": "Q03-S2",
-          "title": "教育委員会制度",
-          "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/iinkai/soshiki-info.html",
-          "sha256": "a20e7b03ade91ef9a8c2fed86287c941b68da66164ee85f9e832336114ee206d",
-          "bytes": 44904,
-          "localPath": "artifacts/editorial-resume/a20e7b03ade91ef9a8c2fed86287c941b68da66164ee85f9e832336114ee206d.html",
-          "retrievedAt": "2026-09-08T16:57:22.862733+00:00",
-          "textPath": "artifacts/editorial-resume/a20e7b03ade91ef9a8c2fed86287c941b68da66164ee85f9e832336114ee206d.txt",
-          "textSha256": "dcef9d9548038d15e574570695bc19a4089d651c16c4bf624c6718b7016ca565",
-          "redistribution": "Source snapshots retained in ignored artifacts; original links published. Diagrams are original factual summaries."
-        },
-        {
-          "id": "Q03-L2",
-          "title": "地方自治法・2026-09-09時点取得",
-          "url": "https://laws.e-gov.go.jp/law/322AC0000000067_20260903_508AC0000000027",
-          "localPath": "artifacts/editorial-batch/c8fd3b5ec95954d237220121c50e2d11017af8a4cfae8a21568bf213cfd3d8e4.json",
-          "sha256": "c8fd3b5ec95954d237220121c50e2d11017af8a4cfae8a21568bf213cfd3d8e4",
-          "bytes": 2495060,
-          "retrievedAt": "2026-09-08T22:55:26.424867+00:00",
-          "lawInfo": {
-            "law_type": "Act",
-            "law_id": "322AC0000000067",
-            "law_num": "昭和二十二年法律第六十七号",
-            "law_num_era": "Showa",
-            "law_num_year": 22,
-            "law_num_type": "Act",
-            "law_num_num": "067",
-            "promulgation_date": "1947-04-17"
-          },
-          "revisionInfo": {
-            "law_revision_id": "322AC0000000067_20260903_508AC0000000027",
-            "law_type": "Act",
-            "law_title": "地方自治法",
-            "law_title_kana": "ちほうじちほう",
-            "abbrev": "地自法",
-            "category": "地方自治",
-            "updated": "2026-07-28T10:48:51+09:00",
-            "amendment_promulgate_date": "2026-06-03",
-            "amendment_enforcement_date": "2026-09-03",
-            "amendment_enforcement_comment": null,
-            "amendment_scheduled_enforcement_date": null,
-            "amendment_law_id": "508AC0000000027",
-            "amendment_law_title": "地域の自主性及び自立性を高めるための改革の推進を図るための関係法律の整備に関する法律",
-            "amendment_law_title_kana": null,
-            "amendment_law_num": "令和八年法律第二十七号",
-            "amendment_type": "3",
-            "repeal_status": "None",
-            "repeal_date": null,
-            "remain_in_force": false,
-            "mission": "New",
-            "current_revision_status": "CurrentEnforced"
-          },
-          "textPath": "artifacts/editorial-batch/c8fd3b5ec95954d237220121c50e2d11017af8a4cfae8a21568bf213cfd3d8e4.txt",
-          "textSha256": "1522673fd0fe4fe8d13b4af45f886440213d754d33431885646753fcfa533f7f",
-          "redistribution": "Source snapshots retained in ignored artifacts; original links published. Diagrams are original factual summaries.",
-          "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/322AC0000000067?asof=2026-09-09&law_full_text_format=json",
-          "checkedArticles": [
-            "96",
-            "112",
-            "149",
-            "180",
-            "211",
-            "218"
-          ],
-          "asOf": "2026-09-09"
-        },
-        {
-          "id": "Q03-L3",
-          "title": "地方教育行政の組織及び運営に関する法律・2026-09-09時点取得",
-          "url": "https://laws.e-gov.go.jp/law/331AC0000000162_20260401_507AC0000000068",
-          "localPath": "artifacts/editorial-batch/76df7a57133147eae607793499a0e4b3456ae7518b307d5b403a8a222ca08e22.json",
-          "sha256": "76df7a57133147eae607793499a0e4b3456ae7518b307d5b403a8a222ca08e22",
-          "bytes": 268826,
-          "retrievedAt": "2026-09-08T22:55:25.800326+00:00",
-          "lawInfo": {
-            "law_type": "Act",
-            "law_id": "331AC0000000162",
-            "law_num": "昭和三十一年法律第百六十二号",
-            "law_num_era": "Showa",
-            "law_num_year": 31,
-            "law_num_type": "Act",
-            "law_num_num": "162",
-            "promulgation_date": "1956-06-30"
-          },
-          "revisionInfo": {
-            "law_revision_id": "331AC0000000162_20260401_507AC0000000068",
-            "law_type": "Act",
-            "law_title": "地方教育行政の組織及び運営に関する法律",
-            "law_title_kana": "ちほうきょういくぎょうせいのそしきおよびうんえいにかんするほうりつ",
-            "abbrev": "地方教育行政法,地教行法",
-            "category": "教育",
-            "updated": "2025-06-18T17:26:34+09:00",
-            "amendment_promulgate_date": "2025-06-18",
-            "amendment_enforcement_date": "2026-04-01",
-            "amendment_enforcement_comment": null,
-            "amendment_scheduled_enforcement_date": null,
-            "amendment_law_id": "507AC0000000068",
-            "amendment_law_title": "公立の義務教育諸学校等の教育職員の給与等に関する特別措置法等の一部を改正する法律",
-            "amendment_law_title_kana": null,
-            "amendment_law_num": "令和七年法律第六十八号",
-            "amendment_type": "3",
-            "repeal_status": "None",
-            "repeal_date": null,
-            "remain_in_force": false,
-            "mission": "New",
-            "current_revision_status": "CurrentEnforced"
-          },
-          "textPath": "artifacts/editorial-batch/76df7a57133147eae607793499a0e4b3456ae7518b307d5b403a8a222ca08e22.txt",
-          "textSha256": "6060255ac5c4303c78a56997f6dab76aec07c8ce8b5d28e21150d968898f99c7",
-          "redistribution": "Source snapshots retained in ignored artifacts; original links published. Diagrams are original factual summaries.",
-          "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/331AC0000000162?asof=2026-09-09&law_full_text_format=json",
-          "checkedArticles": [
-            "4",
-            "21",
-            "22",
-            "29"
-          ],
-          "asOf": "2026-09-09"
-        },
-        {
-          "id": "Q03-L4",
-          "title": "道路運送法・2026-09-09時点取得",
-          "url": "https://laws.e-gov.go.jp/law/326AC0000000183_20250601_504AC0000000068",
-          "localPath": "artifacts/editorial-batch/ea099e2ee3ae57bedad11f5349a34eafbd199621b9e38689294813e454694954.json",
-          "sha256": "ea099e2ee3ae57bedad11f5349a34eafbd199621b9e38689294813e454694954",
-          "bytes": 518936,
-          "retrievedAt": "2026-09-08T22:55:26.122068+00:00",
-          "lawInfo": {
-            "law_type": "Act",
-            "law_id": "326AC0000000183",
-            "law_num": "昭和二十六年法律第百八十三号",
-            "law_num_era": "Showa",
-            "law_num_year": 26,
-            "law_num_type": "Act",
-            "law_num_num": "183",
-            "promulgation_date": "1951-06-01"
-          },
-          "revisionInfo": {
-            "law_revision_id": "326AC0000000183_20250601_504AC0000000068",
-            "law_type": "Act",
-            "law_title": "道路運送法",
-            "law_title_kana": "どうろうんそうほう",
-            "abbrev": "",
-            "category": "陸運",
-            "updated": "2024-07-23T15:10:05+09:00",
-            "amendment_promulgate_date": "2022-06-17",
-            "amendment_enforcement_date": "2025-06-01",
-            "amendment_enforcement_comment": null,
-            "amendment_scheduled_enforcement_date": null,
-            "amendment_law_id": "504AC0000000068",
-            "amendment_law_title": "刑法等の一部を改正する法律の施行に伴う関係法律の整理等に関する法律　抄",
-            "amendment_law_title_kana": null,
-            "amendment_law_num": "令和四年法律第六十八号",
-            "amendment_type": "3",
-            "repeal_status": "None",
-            "repeal_date": null,
-            "remain_in_force": false,
-            "mission": "New",
-            "current_revision_status": "CurrentEnforced"
-          },
-          "textPath": "artifacts/editorial-batch/ea099e2ee3ae57bedad11f5349a34eafbd199621b9e38689294813e454694954.txt",
-          "textSha256": "4875913959df687e5486b17be6ed235e44eaaeeb01d966cdb759cfd55ee1e164",
-          "redistribution": "Source snapshots retained in ignored artifacts; original links published. Diagrams are original factual summaries.",
-          "apiUrl": "https://laws.e-gov.go.jp/api/2/law_data/326AC0000000183?asof=2026-09-09&law_full_text_format=json",
-          "checkedArticles": [
-            "4",
-            "9",
-            "15",
-            "15_3"
-          ],
-          "asOf": "2026-09-09"
-        },
-        {
-          "id": "M2",
-          "title": "横浜市みんなのおでかけ交通事業",
-          "url": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/chiikikokyo/huyasu/odekake/aratanaseido.html",
-          "resolvedUrl": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/chiikikokyo/huyasu/odekake/aratanaseido.html",
-          "sha256": "a0c54245042de4119ed635b83084ee2a1af8adf87ac0029962b43c7b27f64f8f",
-          "retrievedAt": "2026-09-06T17:38:01.143527Z",
-          "localPath": "artifacts/mayoral-issues-sources/a0c54245042de4119ed635b83084ee2a1af8adf87ac0029962b43c7b27f64f8f.html",
-          "textPath": "artifacts/mayoral-issues-sources/M2.txt",
-          "redistribution": "Raw snapshots remain in ignored artifacts; public page links to original"
-        }
-      ],
-      "article": {
-        "contentHash": "351af20c3b1132088633de1ffe6f6f10dc28fa67a53c93491d1147df74b83b6b",
-        "claims": [
-          {
-            "id": "mayor-powers-01",
-            "kind": "analysis",
-            "text": "給食費を支援する。学校の暑さ対策を急ぐ。近所のバスを使いやすくする。市長に期待する変化を考えるときは、**市長が動かせることと、ほかの人の判断が必要なこと**を分けると、実現までの道筋が見えやすくなる。",
-            "citations": [
-              "Q03-S1"
-            ]
-          },
-          {
-            "id": "mayor-powers-02",
-            "kind": "analysis",
-            "text": "## 市長と市会を、別々に選ぶ理由\n\n横浜では市長と市会議員を、市民がそれぞれ選挙で選ぶ。市の公式説明はこの仕組みを「二元代表制」と呼び、市会と市長が対等な立場で、互いを抑制しながら市政を運営すると説明している。市長を選ぶ選挙で、市会の構成まで一緒に決まるわけではない。[^representation]\n\n市長は予算案をつくり、成立した予算を執行する。市会は予算や条例を審議し、議決する。市会議員も条例案などを提案できるが、予算案の提出は市長の役割だ。何を優先するかという市長の方針には大きな意味がある一方、その方針を新しい予算や条例にするには、市会での判断が関わる。[^budget]\n\nこれは、日常の市役所の仕事を一件ずつ市会で決めるという意味ではない。既存の法令・条例・予算の範囲で行政が実施できる仕事もある。新たな予算措置が必要なのか、運用の改善で進められるのかによって、手順は変わる。[^execution]",
-            "citations": [
-              "Q03-S1",
-              "Q03-L2"
-            ]
-          },
-          {
-            "id": "mayor-powers-03",
-            "kind": "analysis",
-            "text": "## 給食や学校の約束は、予算と運営をつないで読む\n\nたとえば、市が新しい給食費支援を始める場合を考える。市長側が支援の対象と費用を組み立て、新たな予算が必要なら予算案や補正予算案を市会へ出す。市会は、対象と金額、ほかの支出との配分を審議する。[^budget]\n\n学校給食や学校施設の整備には、教育委員会の権限も関わる。地方教育行政法は、学校の管理、施設・設備の整備、学校給食などを教育委員会の事務とする一方、教育に関する予算の執行や契約は原則として市長の事務としている。市長が教育関係の予算案などを作る際には、教育委員会の意見を聴く手続きもある。[^education]\n\n<!-- evidence:mayor-roles -->\n\n教育委員会は、市長と無関係な組織というわけでもない。教育長と委員は、市長が市会の同意を得て任命する。ただし、この任命権を、学校の運営を市長が何でも直接決められる権限と読むことはできない。[^appointment]\n\n給食なら、誰の負担をどれだけ減らすかという予算の話と、食材の調達や提供体制の話をつなぐ必要がある。体育館空調なら、設置予算が確保できても、工事や学校利用の調整が残る。役割を分けると、市長には方針だけでなく、担当する組織との調整や実施状況の説明も求めやすくなる。",
-            "citations": [
-              "Q03-L2",
-              "Q03-L3",
-              "Q03-S2"
-            ]
-          },
-          {
-            "id": "mayor-powers-04",
-            "kind": "analysis",
-            "text": "## 民間バスの改善は、市の支援と事業者の運行をつなぐ\n\n「バスを増やす」という約束では、対象が市営交通か民間事業者の路線かでも関係者が変わる。民間路線の場合、市の予算を付ける判断と、事業者が運行する判断を同じものにはできない。\n\n一般の路線バスに関わる道路運送法では、事業の経営に国土交通大臣の許可が必要となり、事業計画の変更には認可や届出、運行計画にも届出の手続きがある。市長への要望だけで、民間の路線や便数が決まる仕組みではない。運行内容に応じて事業者と調整し、必要な手続きを確かめることになる。[^transport-law]\n\nそれでも、市が働きかける手段はある。横浜市の「みんなのおでかけ交通事業」は、地域の実情に合った交通の導入に向け、ルートの検討や運行経費・車両購入費等への支援を行う制度だ。市が交通を支えることと、市がすべての路線を直接運行することは分けて考えられる。[^transport-support]\n\nたとえば、利用者の運賃を補助する案は、乗れる便がある人の負担に働きかける。運行を支援する案は、移動手段が不足する地域への対応になり得るが、担い手や車両、継続する費用が必要になる。同じ「移動の支援」でも、誰に何が届くかは異なる。",
-            "citations": [
-              "Q03-L4",
-              "M2"
-            ]
-          },
-          {
-            "id": "mayor-powers-05",
-            "kind": "proposal",
-            "text": "## 約束の中身を、実施に必要な判断まで具体化する\n\n役割の違いを知る目的は、市長の責任を小さく見積もることでも、すべてを市長一人に帰すことでもない。市長に求める成果を、実施できる手順と条件に結びつけることだ。次の表は確認する問いの整理で、特定の候補者の評価ではない。\n\n| 約束の場面 | 市長に確かめたいこと | ほかに確かめる判断・実施条件 |\n| --- | --- | --- |\n| 新しい支援に市費を使う | 対象、開始時期、必要な予算、市会への提案時期 | 市会の議決、継続する財源。国の補助を見込むなら交付条件 |\n| 学校のサービスや施設を変える | 教育委員会との調整、予算・契約面の進め方 | 教育委員会の判断、学校での運営や工事の条件 |\n| 民間路線の移動を改善する | 運賃支援か運行支援か、対象地域と市の負担 | 事業者の運行体制、必要な国の手続き、支援を続ける条件 |\n| 既にある制度を使いやすくする | 現行予算・権限で変えられる範囲と実施時期 | 条例や規則等の変更が必要か、利用者と担当組織への影響 |\n\n議会や事業者との調整が必要でも、提案や協議をいつ始めるか、進捗をどう示すかは約束の一部にできる。反対に、国の制度変更や他者の合意が前提なら、その条件が整わなかった場合の対応も、判断材料になる。\n\n「誰の暮らしを、いつ、どう変えるか」に、「誰の判断が必要で、どう調整するか」を添える。そうすると、実現する意思と実施の条件を、同じ約束の中で確かめられる。\n\n[^representation]: [横浜市会「市会と市長」](https://www.city.yokohama.lg.jp/shikai/shikumi/shigoto/shikumi12.html)。市会と市長の関係、二元代表制、議決機関と執行機関を説明している。\n[^budget]: [地方自治法96・112・149・211・218条](https://laws.e-gov.go.jp/law/322AC0000000067_20260903_508AC0000000027)。議会の議決事項、議員の議案提出、市長の予算調製・執行、予算・補正予算の提出を確認した。法令は2026年9月9日時点を指定して取得し、同年9月3日施行版を参照。\n[^execution]: 同じ[地方自治法149・180条](https://laws.e-gov.go.jp/law/322AC0000000067_20260903_508AC0000000027)。行政の執行に加え、市会が指定した軽易な事項を市長が処理する仕組みもある。本文の役割図は新たな予算措置を伴う学校施策の一般的な整理で、すべての処理や特例を網羅しない。\n[^education]: [地方教育行政の組織及び運営に関する法律21・22・29条](https://laws.e-gov.go.jp/law/331AC0000000162_20260401_507AC0000000068)。教育委員会と長の職務権限、教育委員会の意見聴取を確認。2026年9月9日時点で取得した同年4月1日施行版。個別の給食費支援策について、必要な条例改正や実務の委任範囲まで確定したものではない。\n[^appointment]: 同法4条および[横浜市「教育委員会制度」](https://www.city.yokohama.lg.jp/kosodate-kyoiku/kyoiku/iinkai/soshiki-info.html)。市長による任命と市会の同意、教育委員会の仕組みを確認した。\n[^transport-law]: [道路運送法4・15・15条の3](https://laws.e-gov.go.jp/law/326AC0000000183_20250601_504AC0000000068)。2026年9月9日時点で取得した2025年6月1日施行版。変更内容に応じて認可と届出等の手続きが異なる。すべての増便に新たな事業許可が必要とは説明していない。\n[^transport-support]: [横浜市「みんなのおでかけ交通事業」](https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/kotsu/chiikikokyo/huyasu/odekake/aratanaseido.html)。地域交通の検討・導入・運行への支援。市全域で既に新路線を利用できるという意味ではない。",
-            "citations": [
-              "Q03-S1",
-              "Q03-S2",
-              "Q03-L2",
-              "Q03-L3",
-              "Q03-L4",
-              "M2"
-            ]
-          }
-        ]
-      },
-      "review": {
-        "contentHash": "351af20c3b1132088633de1ffe6f6f10dc28fa67a53c93491d1147df74b83b6b",
-        "reviewer": "Codex author: primary source and manuscript/figure review; independent review recorded separately",
-        "reviewedAt": "2026-09-08T23:25:03.788495Z",
-        "findings": [
-          {
-            "claimId": "mayor-powers-01",
-            "verdict": "supported",
-            "citationIds": [
-              "Q03-S1"
-            ],
-            "rationale": "Reader question introduces institutional roles without asserting universal mayoral powers. Author source/interpretation check, not independent review or human validation."
-          },
-          {
-            "claimId": "mayor-powers-02",
-            "verdict": "supported",
-            "citationIds": [
-              "Q03-S1",
-              "Q03-L2"
-            ],
-            "rationale": "City dual-election explanation; Local Autonomy Act96,112,149,211,218 establish roles, 180 and existing-law/budget execution qualify general diagram. No claim all acts need council votes. Author source/interpretation check, not independent review or human validation."
-          },
-          {
-            "claimId": "mayor-powers-03",
-            "verdict": "supported",
-            "citationIds": [
-              "Q03-L2",
-              "Q03-L3",
-              "Q03-S2"
-            ],
-            "rationale": "Education Act4 mayor appoints with council consent;21 includes school administration/facilities/meals,22 budget execution/contracts,29 board consultation. Hypothetical new support, does not decide exact fee ordinance/delegation. Author source/interpretation check, not independent review or human validation."
-          },
-          {
-            "claimId": "mayor-powers-04",
-            "verdict": "supported",
-            "citationIds": [
-              "Q03-L4",
-              "M2"
-            ],
-            "rationale": "Road Transport Act4 licensing and15 approval/notification for business-plan changes; no assertion every service frequency change needs a fresh license. M2 documents route-planning/operation/vehicle support. Fare vs supply impact stated conditionally. Author source/interpretation check, not independent review or human validation."
-          },
-          {
-            "claimId": "mayor-powers-05",
-            "verdict": "supported",
-            "citationIds": [
-              "Q03-S1",
-              "Q03-S2",
-              "Q03-L2",
-              "Q03-L3",
-              "Q03-L4",
-              "M2"
-            ],
-            "rationale": "Questions about process and outcomes, conditional coordination/funding requirements. Not candidate scoring or universal workflow. Notes include as-of date and exact enforcement versions, hypotheses separate from law. Author source/interpretation check, not independent review or human validation."
-          }
-        ],
-        "humanApproval": {
-          "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "351af20c3b1132088633de1ffe6f6f10dc28fa67a53c93491d1147df74b83b6b",
-          "approvedAt": "2026-09-06T17:57:54.390464Z"
-        }
-      },
-      "authorization": {
-        "kind": "user_publication_instruction",
-        "mode": "delegated_creation_and_publication",
-        "humanContentReview": false,
-        "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
-        "scope": "Create and publish foundational explanation of mayoral powers alongside existing major policy articles, under continuing delegation.",
-        "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "currentChangeInstruction": "他の記事もどんどんよろしく。区ごとの値は既存の図生成機能を活用する。既存の作成・公開委任を継続。"
-      },
-      "states": {
-        "implementation": "implemented_pending_verification",
-        "publication": "not_yet_published_at_current_hash"
-      },
-      "revisionReview": {
-        "scope": "manuscript, sources and explanatory figures",
-        "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "independentReview": "Passed limited manuscript/figure/source review; docs/content-review/editorial-expansion-2026-09-09.json",
-        "humanUnderstandingValidation": "not performed",
-        "limitations": "Not a complete legal audit or human understanding test. Browser and publication verification are separate."
+        "recordedAt": "2026-09-08T16:46:02.385655Z",
+        "previousContentHash": "484928830822bea81bd03655dd9ba71b0e5620980b14b876f7b7e5d59b3c64a0",
+        "previousRecord": "docs/content-review/school-lunch/archive/pre-v0.4.1-publication.json",
+        "scope": "Shared rendering/entry metadata only; existing manuscript and findings preserved",
+        "humanReview": "No new human review of implementation",
+        "independentReview": "not_performed"
       }
     }
   ]

@@ -15,7 +15,7 @@ test('daily questions rotate coherently, manual controls wrap and campaign is in
   await expect(campaign).toBeVisible();
   await expect(feature.locator('[data-election-campaign]')).toHaveCount(0);
   const initial = featuredIndex(date, policyIssues.length);
-  for (let step = 0; step < 8; step++) {
+  for (let step = 0; step < policyIssues.length + 1; step++) {
     const issue = policyIssues[(initial + step) % policyIssues.length];
     const active = feature.locator('[data-feature-item]:visible');
     await expect(active).toHaveCount(1);
@@ -30,7 +30,7 @@ test('daily questions rotate coherently, manual controls wrap and campaign is in
   await page.clock.setFixedTime(new Date('2026-09-08T03:00:00Z'));
   await page.reload();
   await expect(feature.locator('[data-feature-item]:visible h3')).toHaveText(
-    policyIssues[(initial + 1) % 7].title,
+    policyIssues[(initial + 1) % policyIssues.length].title,
   );
   await page.clock.setFixedTime(new Date('2026-10-19T03:00:00Z'));
   await page.reload();
