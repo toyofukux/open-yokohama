@@ -1,6 +1,6 @@
 {
   "subject": "Account-free inquiry form (Worker + D1), footer GitHub icon, ledger schema inquiryId, night-theme form contrast",
-  "target": "Branch feat/inquiry-form: commit 1bce81d (rounds 1-3 target), 881d536 (UI blocking fix), plus this follow-up commit; base origin/main 173e915",
+  "target": "Branch feat/inquiry-form: 1bce81d (Fable rounds 1-3 target), 881d536 (UI blocking fix), 6a3c5f9 (Codex UI round 2 target, NUL escape), plus this record-only commit; base origin/main 173e915",
   "reviewer": "inquiry-review: independent read-only Claude reviewer subagent (not the implementer)",
   "recordedAt": "2026-09-10T14:57:28.007930Z",
   "rounds": [
@@ -108,6 +108,10 @@
         "footer GitHub link spacing differs from .source-icon"
       ]
     },
-    "round2": "pending"
+    "round2": {
+      "target": "6a3c5f9",
+      "verdict": "pass",
+      "note": "overflow resolved (390px width 575px -> 390px); no new overlap or clipping across 3 themes x 4 widths x 6 pages; no missed blocking"
+    }
   }
 }
