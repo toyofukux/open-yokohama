@@ -19,6 +19,7 @@ test('a policy article report carries its context and returns a receipt number',
   await expect(page.getByLabel('対象ページ（任意）')).toHaveValue(allPolicyIssues[0].url);
   await expect(page.locator('#report-version')).toHaveValue(/^記事 SHA-256:[a-f0-9]{64}$/);
   await expect(page.locator('#report-version-note')).toContainText('表示していた版：記事 SHA-256:');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.getByLabel('質問').check();
   await page.getByLabel('内容（必須）').fill('統計の時点を確認したい');
   const response = page.waitForResponse(

@@ -221,7 +221,7 @@
       "review": {
         "contentHash": "d81aeba30561f7f4da179b0294041ee0c0618c6b9aa94548fd60b8fc2b424bda",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared catalogue/renderer; existing manuscript and claims unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "V041-S01",
@@ -298,7 +298,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-08T16:50:42.377046Z): user: adopted exact v0.4.1 manuscript; inherited publication authorization recorded now, implementation not human-reviewed",
           "contentHash": "d81aeba30561f7f4da179b0294041ee0c0618c6b9aa94548fd60b8fc2b424bda",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -601,7 +601,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
@@ -712,7 +712,7 @@
       "review": {
         "contentHash": "101a108e6bd67c5bd558eb13ce5a8bbbf1acb2d5383eb4300d796035886e2ce7",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "city-governance-01",
@@ -772,7 +772,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-06T17:57:54.390464Z): User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
           "contentHash": "101a108e6bd67c5bd558eb13ce5a8bbbf1acb2d5383eb4300d796035886e2ce7",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -998,7 +998,7 @@
       ],
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
@@ -1109,7 +1109,7 @@
       "review": {
         "contentHash": "de8e51ab865e8bbbaf36a70ea6c3c2dd84fd3e2b237c12db726ee44451e27d9c",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "city-budget-01",
@@ -1169,7 +1169,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-06T17:57:54.390464Z): User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
           "contentHash": "de8e51ab865e8bbbaf36a70ea6c3c2dd84fd3e2b237c12db726ee44451e27d9c",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -1394,7 +1394,7 @@
       ],
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
@@ -1539,7 +1539,7 @@
       "review": {
         "contentHash": "cb2bef40cf04858177496e96503fe10ec8f48550175ec39466a6bf587019b3b0",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "green-expo-01",
@@ -1611,7 +1611,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-06T17:57:54.390464Z): User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
           "contentHash": "cb2bef40cf04858177496e96503fe10ec8f48550175ec39466a6bf587019b3b0",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -1836,7 +1836,7 @@
       ],
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
@@ -1971,7 +1971,7 @@
       "review": {
         "contentHash": "9c0997fc139abf48876d4496d5c443169601a2a2a5cd1c84279133a9f0fafdaa",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "local-mobility-01",
@@ -2034,7 +2034,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-06T17:57:54.390464Z): User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
           "contentHash": "9c0997fc139abf48876d4496d5c443169601a2a2a5cd1c84279133a9f0fafdaa",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -2250,7 +2250,7 @@
       ],
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
@@ -2410,7 +2410,7 @@
       "review": {
         "contentHash": "31329541e6051b42ebde715550afaed82e30dcee72a78b4b992f12268a37f169",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "childcare-access-01",
@@ -2472,7 +2472,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-10T12:53:19.011363Z): User: explicitly delegated childcare article revision and publication; not line-by-line review",
           "contentHash": "31329541e6051b42ebde715550afaed82e30dcee72a78b4b992f12268a37f169",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -2702,7 +2702,7 @@
       ],
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
@@ -2865,7 +2865,7 @@
       "review": {
         "contentHash": "be997fee61b86d1a8e10fa98c460110a33ce352aeba44f40daa92c02743b9a3a",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "school-shelters-01",
@@ -2933,7 +2933,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-06T17:57:54.390464Z): User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
           "contentHash": "be997fee61b86d1a8e10fa98c460110a33ce352aeba44f40daa92c02743b9a3a",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -3148,7 +3148,7 @@
       ],
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
@@ -3221,7 +3221,7 @@
       "review": {
         "contentHash": "fd4d9b46a9a42119f8229c1efa04fca9b4ac2b927b9be93cf68e159926f1ce88",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex /root/top_copy_review: independent TOP copy diff review; existing source findings carried forward from archived review",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "election-date",
@@ -3245,7 +3245,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-10T11:09:05.961Z): User approved TOP copy and 試験公開中 in this conversation; prior election editorial delegation retained; no new election manuscript review",
           "contentHash": "fd4d9b46a9a42119f8229c1efa04fca9b4ac2b927b9be93cf68e159926f1ce88",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -3456,7 +3456,7 @@
       ],
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
@@ -3736,7 +3736,7 @@
       "review": {
         "contentHash": "dead8667149ce69e0745f83badf65d4f2e65132a26e41cea44a2be2a32ee5bc1",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "mayor-powers-01",
@@ -3791,7 +3791,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-06T17:57:54.390464Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "dead8667149ce69e0745f83badf65d4f2e65132a26e41cea44a2be2a32ee5bc1",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -3809,7 +3809,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -3994,7 +3994,7 @@
       "review": {
         "contentHash": "eca40c1ffddd6c1c05088592073c9da907f9172f3857ed8e96f2814edea2f001",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "care-in-community-01",
@@ -4050,7 +4050,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "eca40c1ffddd6c1c05088592073c9da907f9172f3857ed8e96f2814edea2f001",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -4068,7 +4068,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -4228,7 +4228,7 @@
       "review": {
         "contentHash": "0441e0fb46ff3ac03dd54a0c23cf72f33aeb5a16ce9246c33ec6fd350115fa45",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "choosing-priorities-01",
@@ -4289,7 +4289,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "0441e0fb46ff3ac03dd54a0c23cf72f33aeb5a16ce9246c33ec6fd350115fa45",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -4307,7 +4307,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -4452,7 +4452,7 @@
       "review": {
         "contentHash": "e31d82089e12127abc166d4cb32e7b9c63d18f868ab27fa622fa4781666903e9",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "city-building-history-01",
@@ -4508,7 +4508,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "e31d82089e12127abc166d4cb32e7b9c63d18f868ab27fa622fa4781666903e9",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -4526,7 +4526,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -4670,7 +4670,7 @@
       "review": {
         "contentHash": "6005d4d66964a397cb8128ffad11f367f9e51c785b700a1509df620239e56ca1",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "comparing-imperfect-choices-01",
@@ -4726,7 +4726,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "6005d4d66964a397cb8128ffad11f367f9e51c785b700a1509df620239e56ca1",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -4744,7 +4744,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -4871,7 +4871,7 @@
       "review": {
         "contentHash": "9e6450f7c243bb54718f8d94ca99b676808867bf2526c7dabb930ec3d0186729",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "disaster-priorities-01",
@@ -4922,7 +4922,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "9e6450f7c243bb54718f8d94ca99b676808867bf2526c7dabb930ec3d0186729",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -4940,7 +4940,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -5085,7 +5085,7 @@
       "review": {
         "contentHash": "96e199d4b820154611e4635c6ec80b860aaf9534cff37cac959982303097c17e",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "housing-access-01",
@@ -5141,7 +5141,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "96e199d4b820154611e4635c6ec80b860aaf9534cff37cac959982303097c17e",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -5159,7 +5159,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -5286,7 +5286,7 @@
       "review": {
         "contentHash": "674fce12099ddb8fa26b983b0402ed3ae5a3c10ded3b04c891db393fad7aa647",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "how-to-vote-01",
@@ -5337,7 +5337,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "674fce12099ddb8fa26b983b0402ed3ae5a3c10ded3b04c891db393fad7aa647",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -5355,7 +5355,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -5499,7 +5499,7 @@
       "review": {
         "contentHash": "6e47fbebc823f318f7decd0527c1c003b67b9ca359bb3adca7a726c067586db2",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "learning-from-cities-01",
@@ -5555,7 +5555,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "6e47fbebc823f318f7decd0527c1c003b67b9ca359bb3adca7a726c067586db2",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -5573,7 +5573,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -5718,7 +5718,7 @@
       "review": {
         "contentHash": "22532ee172d5f456a108421628aea73e282648a3fdb23849d763e481f0a1287b",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: article visualisation revision; independent scope recorded separately",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "policy-follow-through-01",
@@ -5774,7 +5774,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "22532ee172d5f456a108421628aea73e282648a3fdb23849d763e481f0a1287b",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -5792,7 +5792,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -5947,7 +5947,7 @@
       "review": {
         "contentHash": "eb04ddf4f2528f6895269fd6e30613902d965d9d382f20f5dfa032e986390a7b",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "population-facilities-01",
@@ -6013,7 +6013,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "eb04ddf4f2528f6895269fd6e30613902d965d9d382f20f5dfa032e986390a7b",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -6031,7 +6031,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -6192,7 +6192,7 @@
       "review": {
         "contentHash": "541ac8acd48e00183a7cf7e9a8fd6beb827cc19126b42b2c7ab8e5f039458272",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "public-space-01",
@@ -6253,7 +6253,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "541ac8acd48e00183a7cf7e9a8fd6beb827cc19126b42b2c7ab8e5f039458272",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -6271,7 +6271,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -6420,7 +6420,7 @@
       "review": {
         "contentHash": "ba656750e5fa9821a135125e678bb8f8ca192305669894482232f60d573f7a3a",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: article visualisation revision; independent scope recorded separately",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "reading-policy-costs-01",
@@ -6476,7 +6476,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "ba656750e5fa9821a135125e678bb8f8ca192305669894482232f60d573f7a3a",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -6494,7 +6494,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -6639,7 +6639,7 @@
       "review": {
         "contentHash": "34dce6c7386be9af2daeb35cf82fd7f99e216f414c290f9f5f861982da334e8d",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: article visualisation revision; independent scope recorded separately",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "reading-policy-results-01",
@@ -6695,7 +6695,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "34dce6c7386be9af2daeb35cf82fd7f99e216f414c290f9f5f861982da334e8d",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -6713,7 +6713,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -6863,7 +6863,7 @@
       "review": {
         "contentHash": "6d776619ad0f0346b8e16a38496bb15bec8e762815cf9e7a8e93c2c2ea61aefa",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: article visualisation revision; independent scope recorded separately",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "waste-and-carbon-01",
@@ -6919,7 +6919,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "6d776619ad0f0346b8e16a38496bb15bec8e762815cf9e7a8e93c2c2ea61aefa",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -6937,7 +6937,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
@@ -7081,7 +7081,7 @@
       "review": {
         "contentHash": "2ab4b65815959b1adeddab9805bcca05964292ac39d5281f9ee2ecf8aa0c56c1",
         "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T14:57:28.042978Z",
+        "reviewedAt": "2026-09-10T15:06:15.831972Z",
         "findings": [
           {
             "claimId": "work-and-business-01",
@@ -7137,7 +7137,7 @@
         "humanApproval": {
           "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
           "contentHash": "2ab4b65815959b1adeddab9805bcca05964292ac39d5281f9ee2ecf8aa0c56c1",
-          "approvedAt": "2026-09-10T14:57:28.042978Z"
+          "approvedAt": "2026-09-10T15:06:15.831972Z"
         }
       },
       "authorization": {
@@ -7155,7 +7155,7 @@
       },
       "revisionReview": {
         "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T14:57:28.042978Z",
+        "recordedAt": "2026-09-10T15:06:15.831972Z",
         "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
