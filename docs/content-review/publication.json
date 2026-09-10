@@ -3094,7 +3094,7 @@
         }
       ],
       "article": {
-        "contentHash": "2aa61f0799c00f001e05093fbe3d93e888f803232a03d4fb848787802c800f38",
+        "contentHash": "1a6aa2ec09774a304b220f08cdb93b9041193238b2ab3f08a389dd0288ca1d9b",
         "claims": [
           {
             "id": "election-date",
@@ -3117,9 +3117,9 @@
         ]
       },
       "review": {
-        "contentHash": "2aa61f0799c00f001e05093fbe3d93e888f803232a03d4fb848787802c800f38",
-        "reviewer": "Codex author: Sept9 election source refresh, article coverage and independent review disclosure",
-        "reviewedAt": "2026-09-09T04:27:11.841044Z",
+        "contentHash": "1a6aa2ec09774a304b220f08cdb93b9041193238b2ab3f08a389dd0288ca1d9b",
+        "reviewer": "Codex /root/top_copy_review: independent TOP copy diff review; existing source findings carried forward from archived review",
+        "reviewedAt": "2026-09-10T11:11:21.182Z",
         "findings": [
           {
             "claimId": "election-date",
@@ -3141,9 +3141,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "2aa61f0799c00f001e05093fbe3d93e888f803232a03d4fb848787802c800f38",
-          "approvedAt": "2026-09-06T17:57:54.390464Z"
+          "approver": "User approved TOP copy and 試験公開中 in this conversation; prior election editorial delegation retained; no new election manuscript review",
+          "contentHash": "1a6aa2ec09774a304b220f08cdb93b9041193238b2ab3f08a389dd0288ca1d9b",
+          "approvedAt": "2026-09-10T11:09:05.961Z"
         }
       },
       "authorization": {
@@ -3153,18 +3153,12 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
-        "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
+        "currentChangeInstruction": "文言よいと思う！ βも試験公開中がいいのでそれで！",
+        "currentChangeScope": "TOP heading, introduction, title/description and trial-publication label only. Local implementation; this revision has not been deployed."
       },
       "states": {
-        "implementation": "implemented_production",
-        "publication": "published"
-      },
-      "deployment": {
-        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
-        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
-        "url": "https://open.yokohama/elections/mayor-2026/",
-        "verifiedAt": "2026-09-09T04:37:56.275376Z",
-        "productionE2E": "224 passed"
+        "implementation": "implemented_local",
+        "publication": "not_deployed"
       },
       "presentationReview": {
         "reviewedAt": "2026-09-07T01:41:30.795397Z",
@@ -3272,6 +3266,11 @@
             "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
             "productionE2E": "118 passed"
           }
+        },
+        {
+          "contentHash": "2aa61f0799c00f001e05093fbe3d93e888f803232a03d4fb848787802c800f38",
+          "archivePath": "docs/content-review/top-copy-2026-09-10-previous.json",
+          "reason": "User-approved TOP introduction and trial-publication label only; prior source findings retained, not reverified."
         }
       ],
       "integrationReview": {
@@ -3323,12 +3322,23 @@
           "url": "https://open.yokohama/elections/mayor-2026/",
           "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
           "productionE2E": "118 passed"
+        },
+        {
+          "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+          "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+          "url": "https://open.yokohama/elections/mayor-2026/",
+          "verifiedAt": "2026-09-09T04:37:56.275376Z",
+          "productionE2E": "224 passed"
         }
       ],
       "revisionReview": {
-        "scope": "election dates and coverage/review notes plus shared catalogue",
-        "recordedAt": "2026-09-09T04:27:11.841044Z",
-        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
+        "scope": "TOP copy diff only; other 10 contentFiles byte-identical to HEAD. Existing claims and source findings inherited without new source verification.",
+        "recordedAt": "2026-09-10T11:11:21.182Z",
+        "reviewer": "/root/top_copy_review",
+        "baseCommit": "ffd0ba6879f5e60658d03deaaccd1d5ae975ff1d",
+        "file": "apps/web/src/pages/index.astro",
+        "fileSha256": "db897be33b2aa5cc914c1f0894f5b42dc408078e68a5ab1a4e60e111ff8d1545",
+        "result": "No findings: approved copy matches, TOP metadata uses existing Layout props, links and data logic unchanged. Final responsive heading CSS independently reviewed: no findings; visual verification recorded separately.",
         "humanUnderstandingValidation": "not performed"
       }
     },

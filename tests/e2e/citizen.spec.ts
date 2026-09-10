@@ -3,7 +3,9 @@ import { expect, test } from '@playwright/test';
 
 test('citizen can find a ward, compare, and open the actual source', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('heading', { level: 1 })).toContainText('横浜の暮らし');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(
+    '政治やまちのことを、わかりやすく。',
+  );
   await page.getByRole('link', { name: '港北区', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('港北区の、いまを知る。');
   await expect(page.locator('.stats a.source-icon').first()).toHaveAttribute(

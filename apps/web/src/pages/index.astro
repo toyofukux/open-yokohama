@@ -13,15 +13,17 @@ const households = latest(data, "141003", "households");
 const change = latest(data, "141003", "population_change");
 ---
 
-<Layout title="横浜の暮らしを、身近な問いから">
+<Layout
+  title="政治やまちのことを、わかりやすく。"
+  description="政治に詳しくなくても、自分の暮らしに関わることを知り、自分で考えて選べるように。横浜のさまざまな情報を整理し、選択肢や暮らしへの影響を、根拠とともに伝えます。"
+>
   <div class="container">
     <section class="hero">
       <div>
         <p class="eyebrow">
-          OUR CITY, IN CONTEXT <span class="beta">公開β</span>
-        </p><h1>横浜の暮らしを、<br />身近な問いから。</h1><p class="intro">
-          住んでいる区のこと。これからのまちのこと。<br
-          />気になる政策の選択肢と、その根拠を一緒に確かめよう。
+          <span class="beta">試験公開中</span>
+        </p><h1>政治やまちのことを、<br />わかりやすく。</h1><p class="intro">
+          政治に詳しくなくても、自分の暮らしに関わることを知り、自分で考えて選べるように。横浜のさまざまな情報を整理し、選択肢や暮らしへの影響を、根拠とともに伝えます。
         </p><a class="action" href="/issues/"
           >気になる問いを探す <span aria-hidden="true">→</span></a
         >
@@ -126,10 +128,19 @@ const change = latest(data, "141003", "population_change");
 >
 
 <style>
+  .hero h1 {
+    font-size: clamp(1.65rem, 4.2vw, 3rem);
+  }
+  .hero .beta {
+    margin-left: 0;
+  }
   .stat {
     min-width: 0;
   }
   @media (max-width: 700px) {
+    .hero h1 {
+      font-size: clamp(1.65rem, 8vw, 2rem);
+    }
     .stat {
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));
       gap: 8px;
