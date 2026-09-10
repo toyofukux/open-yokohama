@@ -143,7 +143,7 @@
         }
       ],
       "article": {
-        "contentHash": "d81aeba30561f7f4da179b0294041ee0c0618c6b9aa94548fd60b8fc2b424bda",
+        "contentHash": "4d0fc2ba3c5e6d51e2960414dcf992661b94f63fac0bdedf6d708b4a46e419bc",
         "claims": [
           {
             "id": "V041-S01",
@@ -219,9 +219,9 @@
         ]
       },
       "review": {
-        "contentHash": "d81aeba30561f7f4da179b0294041ee0c0618c6b9aa94548fd60b8fc2b424bda",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared catalogue/renderer; existing manuscript and claims unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "4d0fc2ba3c5e6d51e2960414dcf992661b94f63fac0bdedf6d708b4a46e419bc",
+        "reviewer": "Codex author: shared catalogue/renderer; existing manuscript and claims unchanged",
+        "reviewedAt": "2026-09-09T04:27:11.841044Z",
         "findings": [
           {
             "claimId": "V041-S01",
@@ -296,9 +296,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-08T16:50:42.377046Z): user: adopted exact v0.4.1 manuscript; inherited publication authorization recorded now, implementation not human-reviewed",
-          "contentHash": "d81aeba30561f7f4da179b0294041ee0c0618c6b9aa94548fd60b8fc2b424bda",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "user: adopted exact v0.4.1 manuscript; inherited publication authorization recorded now, implementation not human-reviewed",
+          "contentHash": "4d0fc2ba3c5e6d51e2960414dcf992661b94f63fac0bdedf6d708b4a46e419bc",
+          "approvedAt": "2026-09-08T16:50:42.377046Z"
         }
       },
       "authorization": {
@@ -530,11 +530,6 @@
             "verifiedAt": "2026-09-09T01:34:41.984151+00:00",
             "productionE2E": "118 passed"
           }
-        },
-        {
-          "contentHash": "4d0fc2ba3c5e6d51e2960414dcf992661b94f63fac0bdedf6d708b4a46e419bc",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ],
       "integrationReview": {
@@ -600,9 +595,9 @@
         "humanApprovalTimestampMeaning": "Time this inherited manuscript adoption was recorded against the implementation; not a new user review event."
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "shared catalogue/renderer only",
+        "recordedAt": "2026-09-09T04:27:11.841044Z",
+        "independentReview": "Implementation and specified content/figure versions checked; see docs/content-review/editorial-completion-2026-09-09.json and expansion/reviews.json. Full human understanding unperformed.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -651,7 +646,7 @@
         }
       ],
       "article": {
-        "contentHash": "101a108e6bd67c5bd558eb13ce5a8bbbf1acb2d5383eb4300d796035886e2ce7",
+        "contentHash": "b8f13b7aa6eae7cbede116c5b3e0e165d03a27942c1415624b258fdcc6186191",
         "claims": [
           {
             "id": "city-governance-01",
@@ -710,9 +705,9 @@
         ]
       },
       "review": {
-        "contentHash": "101a108e6bd67c5bd558eb13ce5a8bbbf1acb2d5383eb4300d796035886e2ce7",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "b8f13b7aa6eae7cbede116c5b3e0e165d03a27942c1415624b258fdcc6186191",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "city-governance-01",
@@ -770,9 +765,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-06T17:57:54.390464Z): User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "101a108e6bd67c5bd558eb13ce5a8bbbf1acb2d5383eb4300d796035886e2ce7",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+          "contentHash": "b8f13b7aa6eae7cbede116c5b3e0e165d03a27942c1415624b258fdcc6186191",
+          "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
       "authorization": {
@@ -938,11 +933,6 @@
           "contentHash": "10ed6506bb14302e9d3aa5ea532c037a30c0bc1769e4966e8e72208f29762ea2",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "b8f13b7aa6eae7cbede116c5b3e0e165d03a27942c1415624b258fdcc6186191",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ],
       "integrationReview": {
@@ -997,9 +987,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1048,7 +1038,7 @@
         }
       ],
       "article": {
-        "contentHash": "de8e51ab865e8bbbaf36a70ea6c3c2dd84fd3e2b237c12db726ee44451e27d9c",
+        "contentHash": "c7a96cb30fff42d716c682dc8c9fa79d6c5129848b477a8f770a9595b4f37cd0",
         "claims": [
           {
             "id": "city-budget-01",
@@ -1107,9 +1097,9 @@
         ]
       },
       "review": {
-        "contentHash": "de8e51ab865e8bbbaf36a70ea6c3c2dd84fd3e2b237c12db726ee44451e27d9c",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "c7a96cb30fff42d716c682dc8c9fa79d6c5129848b477a8f770a9595b4f37cd0",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "city-budget-01",
@@ -1167,9 +1157,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-06T17:57:54.390464Z): User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "de8e51ab865e8bbbaf36a70ea6c3c2dd84fd3e2b237c12db726ee44451e27d9c",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+          "contentHash": "c7a96cb30fff42d716c682dc8c9fa79d6c5129848b477a8f770a9595b4f37cd0",
+          "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
       "authorization": {
@@ -1334,11 +1324,6 @@
           "contentHash": "4250e93ae3d8399d2f6fff7570dd098594e4d4816932373368416086d5793168",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "c7a96cb30fff42d716c682dc8c9fa79d6c5129848b477a8f770a9595b4f37cd0",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ],
       "integrationReview": {
@@ -1393,9 +1378,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1466,7 +1451,7 @@
         }
       ],
       "article": {
-        "contentHash": "cb2bef40cf04858177496e96503fe10ec8f48550175ec39466a6bf587019b3b0",
+        "contentHash": "f0a939365ee6b320b52d6ac6421a028b5d7ff601483aa24fc06bdc278adcd773",
         "claims": [
           {
             "id": "green-expo-01",
@@ -1537,9 +1522,9 @@
         ]
       },
       "review": {
-        "contentHash": "cb2bef40cf04858177496e96503fe10ec8f48550175ec39466a6bf587019b3b0",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "f0a939365ee6b320b52d6ac6421a028b5d7ff601483aa24fc06bdc278adcd773",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "green-expo-01",
@@ -1609,9 +1594,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-06T17:57:54.390464Z): User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "cb2bef40cf04858177496e96503fe10ec8f48550175ec39466a6bf587019b3b0",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+          "contentHash": "f0a939365ee6b320b52d6ac6421a028b5d7ff601483aa24fc06bdc278adcd773",
+          "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
       "authorization": {
@@ -1776,11 +1761,6 @@
           "contentHash": "fa7072e05ac064a4258c2637b97f05f1f6f30f8492fc1abdf87da3d5ecfc8808",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "f0a939365ee6b320b52d6ac6421a028b5d7ff601483aa24fc06bdc278adcd773",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ],
       "integrationReview": {
@@ -1835,9 +1815,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1907,7 +1887,7 @@
         }
       ],
       "article": {
-        "contentHash": "9c0997fc139abf48876d4496d5c443169601a2a2a5cd1c84279133a9f0fafdaa",
+        "contentHash": "8319d9768bd4c975e2a5df002244a4fd48e0976c3e191595f9d2b23eaaaed2e1",
         "claims": [
           {
             "id": "local-mobility-01",
@@ -1969,9 +1949,9 @@
         ]
       },
       "review": {
-        "contentHash": "9c0997fc139abf48876d4496d5c443169601a2a2a5cd1c84279133a9f0fafdaa",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "8319d9768bd4c975e2a5df002244a4fd48e0976c3e191595f9d2b23eaaaed2e1",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "local-mobility-01",
@@ -2032,9 +2012,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-06T17:57:54.390464Z): User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "9c0997fc139abf48876d4496d5c443169601a2a2a5cd1c84279133a9f0fafdaa",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+          "contentHash": "8319d9768bd4c975e2a5df002244a4fd48e0976c3e191595f9d2b23eaaaed2e1",
+          "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
       "authorization": {
@@ -2190,11 +2170,6 @@
           "contentHash": "048933e25d814e2ee7d9e68952c17bab03a50cbdb592b8ad6017fba278de7e6b",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "8319d9768bd4c975e2a5df002244a4fd48e0976c3e191595f9d2b23eaaaed2e1",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ],
       "integrationReview": {
@@ -2249,9 +2224,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -2347,7 +2322,7 @@
         }
       ],
       "article": {
-        "contentHash": "31329541e6051b42ebde715550afaed82e30dcee72a78b4b992f12268a37f169",
+        "contentHash": "17b0ce350d73216efc0783f9eb2b7681c27052e41c9e2a69c744aae4b53b7b3a",
         "claims": [
           {
             "id": "childcare-access-01",
@@ -2408,9 +2383,9 @@
         ]
       },
       "review": {
-        "contentHash": "31329541e6051b42ebde715550afaed82e30dcee72a78b4b992f12268a37f169",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "17b0ce350d73216efc0783f9eb2b7681c27052e41c9e2a69c744aae4b53b7b3a",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "childcare-access-01",
@@ -2470,9 +2445,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-10T12:53:19.011363Z): User: explicitly delegated childcare article revision and publication; not line-by-line review",
-          "contentHash": "31329541e6051b42ebde715550afaed82e30dcee72a78b4b992f12268a37f169",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User: explicitly delegated childcare article revision and publication; not line-by-line review",
+          "contentHash": "17b0ce350d73216efc0783f9eb2b7681c27052e41c9e2a69c744aae4b53b7b3a",
+          "approvedAt": "2026-09-10T12:53:19.011363Z"
         }
       },
       "authorization": {
@@ -2642,11 +2617,6 @@
           "contentHash": "650d8124a2913a2d363b9c375753a7d9cdf5d0b573676120cfb6af888dd817c0",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "17b0ce350d73216efc0783f9eb2b7681c27052e41c9e2a69c744aae4b53b7b3a",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ],
       "integrationReview": {
@@ -2701,9 +2671,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -2796,7 +2766,7 @@
         }
       ],
       "article": {
-        "contentHash": "be997fee61b86d1a8e10fa98c460110a33ce352aeba44f40daa92c02743b9a3a",
+        "contentHash": "598dc8d231ef48fedc0fdd278d00c4096975a098f56e8f7c57784e9bdb5ec772",
         "claims": [
           {
             "id": "school-shelters-01",
@@ -2863,9 +2833,9 @@
         ]
       },
       "review": {
-        "contentHash": "be997fee61b86d1a8e10fa98c460110a33ce352aeba44f40daa92c02743b9a3a",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "598dc8d231ef48fedc0fdd278d00c4096975a098f56e8f7c57784e9bdb5ec772",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "school-shelters-01",
@@ -2931,9 +2901,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-06T17:57:54.390464Z): User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "be997fee61b86d1a8e10fa98c460110a33ce352aeba44f40daa92c02743b9a3a",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
+          "contentHash": "598dc8d231ef48fedc0fdd278d00c4096975a098f56e8f7c57784e9bdb5ec772",
+          "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
       "authorization": {
@@ -3088,11 +3058,6 @@
           "contentHash": "47e5e44478fb46cd1d1d911425bc92e5e86b59677204cbc39a06597e52ae6315",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "598dc8d231ef48fedc0fdd278d00c4096975a098f56e8f7c57784e9bdb5ec772",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ],
       "integrationReview": {
@@ -3147,9 +3112,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -3196,7 +3161,7 @@
         }
       ],
       "article": {
-        "contentHash": "fd4d9b46a9a42119f8229c1efa04fca9b4ac2b927b9be93cf68e159926f1ce88",
+        "contentHash": "1a6aa2ec09774a304b220f08cdb93b9041193238b2ab3f08a389dd0288ca1d9b",
         "claims": [
           {
             "id": "election-date",
@@ -3219,9 +3184,9 @@
         ]
       },
       "review": {
-        "contentHash": "fd4d9b46a9a42119f8229c1efa04fca9b4ac2b927b9be93cf68e159926f1ce88",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex /root/top_copy_review: independent TOP copy diff review; existing source findings carried forward from archived review",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "1a6aa2ec09774a304b220f08cdb93b9041193238b2ab3f08a389dd0288ca1d9b",
+        "reviewer": "Codex /root/top_copy_review: independent TOP copy diff review; existing source findings carried forward from archived review",
+        "reviewedAt": "2026-09-10T11:11:21.182Z",
         "findings": [
           {
             "claimId": "election-date",
@@ -3243,9 +3208,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-10T11:09:05.961Z): User approved TOP copy and 試験公開中 in this conversation; prior election editorial delegation retained; no new election manuscript review",
-          "contentHash": "fd4d9b46a9a42119f8229c1efa04fca9b4ac2b927b9be93cf68e159926f1ce88",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User approved TOP copy and 試験公開中 in this conversation; prior election editorial delegation retained; no new election manuscript review",
+          "contentHash": "1a6aa2ec09774a304b220f08cdb93b9041193238b2ab3f08a389dd0288ca1d9b",
+          "approvedAt": "2026-09-10T11:09:05.961Z"
         }
       },
       "authorization": {
@@ -3381,11 +3346,6 @@
           "contentHash": "2aa61f0799c00f001e05093fbe3d93e888f803232a03d4fb848787802c800f38",
           "archivePath": "docs/content-review/top-copy-2026-09-10-previous.json",
           "reason": "User-approved TOP introduction and trial-publication label only; prior source findings retained, not reverified."
-        },
-        {
-          "contentHash": "1a6aa2ec09774a304b220f08cdb93b9041193238b2ab3f08a389dd0288ca1d9b",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ],
       "integrationReview": {
@@ -3455,9 +3415,13 @@
         }
       ],
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "TOP copy diff only; other 10 contentFiles byte-identical to HEAD. Existing claims and source findings inherited without new source verification.",
+        "recordedAt": "2026-09-10T11:11:21.182Z",
+        "reviewer": "/root/top_copy_review",
+        "baseCommit": "ffd0ba6879f5e60658d03deaaccd1d5ae975ff1d",
+        "file": "apps/web/src/pages/index.astro",
+        "fileSha256": "db897be33b2aa5cc914c1f0894f5b42dc408078e68a5ab1a4e60e111ff8d1545",
+        "result": "No findings: approved copy matches, TOP metadata uses existing Layout props, links and data logic unchanged. Final responsive heading CSS independently reviewed: no findings; visual verification recorded separately.",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -3680,7 +3644,7 @@
         }
       ],
       "article": {
-        "contentHash": "dead8667149ce69e0745f83badf65d4f2e65132a26e41cea44a2be2a32ee5bc1",
+        "contentHash": "376c1bfd3010cd36f99e3f598160020d0242f27f1ef7357d6efbadca9d52beb9",
         "claims": [
           {
             "id": "mayor-powers-01",
@@ -3734,9 +3698,9 @@
         ]
       },
       "review": {
-        "contentHash": "dead8667149ce69e0745f83badf65d4f2e65132a26e41cea44a2be2a32ee5bc1",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "376c1bfd3010cd36f99e3f598160020d0242f27f1ef7357d6efbadca9d52beb9",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "mayor-powers-01",
@@ -3789,9 +3753,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-06T17:57:54.390464Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "dead8667149ce69e0745f83badf65d4f2e65132a26e41cea44a2be2a32ee5bc1",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "376c1bfd3010cd36f99e3f598160020d0242f27f1ef7357d6efbadca9d52beb9",
+          "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
       "authorization": {
@@ -3808,9 +3772,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -3854,11 +3818,6 @@
           "contentHash": "6303b156e5125b92c2a392a3d3cda259ab82161d4da49a96791a2a872b052a81",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "376c1bfd3010cd36f99e3f598160020d0242f27f1ef7357d6efbadca9d52beb9",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ],
       "deploymentHistory": [
@@ -3937,7 +3896,7 @@
         }
       ],
       "article": {
-        "contentHash": "eca40c1ffddd6c1c05088592073c9da907f9172f3857ed8e96f2814edea2f001",
+        "contentHash": "4d322955c0215dac91df39e431830f89d406f52872d10e5320629c512b6df494",
         "claims": [
           {
             "id": "care-in-community-01",
@@ -3992,9 +3951,9 @@
         ]
       },
       "review": {
-        "contentHash": "eca40c1ffddd6c1c05088592073c9da907f9172f3857ed8e96f2814edea2f001",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "4d322955c0215dac91df39e431830f89d406f52872d10e5320629c512b6df494",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "care-in-community-01",
@@ -4048,9 +4007,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "eca40c1ffddd6c1c05088592073c9da907f9172f3857ed8e96f2814edea2f001",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "4d322955c0215dac91df39e431830f89d406f52872d10e5320629c512b6df494",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -4067,9 +4026,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -4089,11 +4048,6 @@
           "contentHash": "4aa685cf00fde28d78689fb49f868e2d612b63671eb1333cd0911872ffd36747",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "4d322955c0215dac91df39e431830f89d406f52872d10e5320629c512b6df494",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -4166,7 +4120,7 @@
         }
       ],
       "article": {
-        "contentHash": "0441e0fb46ff3ac03dd54a0c23cf72f33aeb5a16ce9246c33ec6fd350115fa45",
+        "contentHash": "8d67ae4f2911cb13623fe2e457b773fa4f7defa64291ff6fe56118c0abfe3cb1",
         "claims": [
           {
             "id": "choosing-priorities-01",
@@ -4226,9 +4180,9 @@
         ]
       },
       "review": {
-        "contentHash": "0441e0fb46ff3ac03dd54a0c23cf72f33aeb5a16ce9246c33ec6fd350115fa45",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "8d67ae4f2911cb13623fe2e457b773fa4f7defa64291ff6fe56118c0abfe3cb1",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "choosing-priorities-01",
@@ -4287,9 +4241,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "0441e0fb46ff3ac03dd54a0c23cf72f33aeb5a16ce9246c33ec6fd350115fa45",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "8d67ae4f2911cb13623fe2e457b773fa4f7defa64291ff6fe56118c0abfe3cb1",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -4306,9 +4260,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -4328,11 +4282,6 @@
           "contentHash": "39b231857873bf49a065c44c3ae810f8c481ad54e96145514a14f20a650f28a3",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "8d67ae4f2911cb13623fe2e457b773fa4f7defa64291ff6fe56118c0abfe3cb1",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -4395,7 +4344,7 @@
         }
       ],
       "article": {
-        "contentHash": "e31d82089e12127abc166d4cb32e7b9c63d18f868ab27fa622fa4781666903e9",
+        "contentHash": "562c4b40b65296cc03922df5103e5ec97f1e252289d178c43dafc2b9c8ad16aa",
         "claims": [
           {
             "id": "city-building-history-01",
@@ -4450,9 +4399,9 @@
         ]
       },
       "review": {
-        "contentHash": "e31d82089e12127abc166d4cb32e7b9c63d18f868ab27fa622fa4781666903e9",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "562c4b40b65296cc03922df5103e5ec97f1e252289d178c43dafc2b9c8ad16aa",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "city-building-history-01",
@@ -4506,9 +4455,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "e31d82089e12127abc166d4cb32e7b9c63d18f868ab27fa622fa4781666903e9",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "562c4b40b65296cc03922df5103e5ec97f1e252289d178c43dafc2b9c8ad16aa",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -4525,9 +4474,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -4547,11 +4496,6 @@
           "contentHash": "3a4bdbaa62db79c8cbc432ad35e90412cb75306bcf1ef7f9db124c7079e868e2",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "562c4b40b65296cc03922df5103e5ec97f1e252289d178c43dafc2b9c8ad16aa",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -4613,7 +4557,7 @@
         }
       ],
       "article": {
-        "contentHash": "6005d4d66964a397cb8128ffad11f367f9e51c785b700a1509df620239e56ca1",
+        "contentHash": "4227fb1ddccba96820dbc63fa6f0065b46ee713893159d9456706e5831f33ce2",
         "claims": [
           {
             "id": "comparing-imperfect-choices-01",
@@ -4668,9 +4612,9 @@
         ]
       },
       "review": {
-        "contentHash": "6005d4d66964a397cb8128ffad11f367f9e51c785b700a1509df620239e56ca1",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "4227fb1ddccba96820dbc63fa6f0065b46ee713893159d9456706e5831f33ce2",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "comparing-imperfect-choices-01",
@@ -4724,9 +4668,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "6005d4d66964a397cb8128ffad11f367f9e51c785b700a1509df620239e56ca1",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "4227fb1ddccba96820dbc63fa6f0065b46ee713893159d9456706e5831f33ce2",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -4743,9 +4687,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -4765,11 +4709,6 @@
           "contentHash": "f760a6d52174d80c25477f73f57ac4389ddbd4c8f233576e38ab27e6ff383b5f",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "4227fb1ddccba96820dbc63fa6f0065b46ee713893159d9456706e5831f33ce2",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -4819,7 +4758,7 @@
         }
       ],
       "article": {
-        "contentHash": "9e6450f7c243bb54718f8d94ca99b676808867bf2526c7dabb930ec3d0186729",
+        "contentHash": "e968c752c7d777f5fd95f637f3f6365f896a246929bba1df70534d343c00767b",
         "claims": [
           {
             "id": "disaster-priorities-01",
@@ -4869,9 +4808,9 @@
         ]
       },
       "review": {
-        "contentHash": "9e6450f7c243bb54718f8d94ca99b676808867bf2526c7dabb930ec3d0186729",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "e968c752c7d777f5fd95f637f3f6365f896a246929bba1df70534d343c00767b",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "disaster-priorities-01",
@@ -4920,9 +4859,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "9e6450f7c243bb54718f8d94ca99b676808867bf2526c7dabb930ec3d0186729",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "e968c752c7d777f5fd95f637f3f6365f896a246929bba1df70534d343c00767b",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -4939,9 +4878,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -4961,11 +4900,6 @@
           "contentHash": "6fa13d7d3643d754e2d387ba32efde083fdd79b99a8c75ad89cd065bdbe496f6",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "e968c752c7d777f5fd95f637f3f6365f896a246929bba1df70534d343c00767b",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -5028,7 +4962,7 @@
         }
       ],
       "article": {
-        "contentHash": "96e199d4b820154611e4635c6ec80b860aaf9534cff37cac959982303097c17e",
+        "contentHash": "f12d2d4f7d89978ac889d6e52b3307fc88cf6a7875741593078d63e22bc1b0e4",
         "claims": [
           {
             "id": "housing-access-01",
@@ -5083,9 +5017,9 @@
         ]
       },
       "review": {
-        "contentHash": "96e199d4b820154611e4635c6ec80b860aaf9534cff37cac959982303097c17e",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "f12d2d4f7d89978ac889d6e52b3307fc88cf6a7875741593078d63e22bc1b0e4",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "housing-access-01",
@@ -5139,9 +5073,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "96e199d4b820154611e4635c6ec80b860aaf9534cff37cac959982303097c17e",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "f12d2d4f7d89978ac889d6e52b3307fc88cf6a7875741593078d63e22bc1b0e4",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -5158,9 +5092,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -5180,11 +5114,6 @@
           "contentHash": "212dbb2824ce23e6713560f3921f90c940a7af89313d75295f6223975423a377",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "f12d2d4f7d89978ac889d6e52b3307fc88cf6a7875741593078d63e22bc1b0e4",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -5234,7 +5163,7 @@
         }
       ],
       "article": {
-        "contentHash": "674fce12099ddb8fa26b983b0402ed3ae5a3c10ded3b04c891db393fad7aa647",
+        "contentHash": "777dcc22e675e2265d54ccaef522395b409cca6c629ae0fa07171a6fdb02955e",
         "claims": [
           {
             "id": "how-to-vote-01",
@@ -5284,9 +5213,9 @@
         ]
       },
       "review": {
-        "contentHash": "674fce12099ddb8fa26b983b0402ed3ae5a3c10ded3b04c891db393fad7aa647",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "777dcc22e675e2265d54ccaef522395b409cca6c629ae0fa07171a6fdb02955e",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "how-to-vote-01",
@@ -5335,9 +5264,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "674fce12099ddb8fa26b983b0402ed3ae5a3c10ded3b04c891db393fad7aa647",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "777dcc22e675e2265d54ccaef522395b409cca6c629ae0fa07171a6fdb02955e",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -5354,9 +5283,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -5376,11 +5305,6 @@
           "contentHash": "d339441cf7a5aefdc2c5a16a4574afc11a99a2aa5dc36a6712cfdc1c7aa7fd72",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "777dcc22e675e2265d54ccaef522395b409cca6c629ae0fa07171a6fdb02955e",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -5442,7 +5366,7 @@
         }
       ],
       "article": {
-        "contentHash": "6e47fbebc823f318f7decd0527c1c003b67b9ca359bb3adca7a726c067586db2",
+        "contentHash": "793a39f909d1dd12ec05b38aef41dc31e00095a4d39ba437e783cb379c49b134",
         "claims": [
           {
             "id": "learning-from-cities-01",
@@ -5497,9 +5421,9 @@
         ]
       },
       "review": {
-        "contentHash": "6e47fbebc823f318f7decd0527c1c003b67b9ca359bb3adca7a726c067586db2",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "793a39f909d1dd12ec05b38aef41dc31e00095a4d39ba437e783cb379c49b134",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "learning-from-cities-01",
@@ -5553,9 +5477,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "6e47fbebc823f318f7decd0527c1c003b67b9ca359bb3adca7a726c067586db2",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "793a39f909d1dd12ec05b38aef41dc31e00095a4d39ba437e783cb379c49b134",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -5572,9 +5496,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -5594,11 +5518,6 @@
           "contentHash": "da90e27663fd817949f0b01f7c2392c981d4be6b316decc2d241b6e91b9817e2",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "793a39f909d1dd12ec05b38aef41dc31e00095a4d39ba437e783cb379c49b134",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -5661,7 +5580,7 @@
         }
       ],
       "article": {
-        "contentHash": "22532ee172d5f456a108421628aea73e282648a3fdb23849d763e481f0a1287b",
+        "contentHash": "e85148573168e3e94ea03431212bdfb99cb47faf3efd4be61183c60dad22e0a6",
         "claims": [
           {
             "id": "policy-follow-through-01",
@@ -5716,9 +5635,9 @@
         ]
       },
       "review": {
-        "contentHash": "22532ee172d5f456a108421628aea73e282648a3fdb23849d763e481f0a1287b",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: article visualisation revision; independent scope recorded separately",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "e85148573168e3e94ea03431212bdfb99cb47faf3efd4be61183c60dad22e0a6",
+        "reviewer": "Codex author: article visualisation revision; independent scope recorded separately",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "policy-follow-through-01",
@@ -5772,9 +5691,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "22532ee172d5f456a108421628aea73e282648a3fdb23849d763e481f0a1287b",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "e85148573168e3e94ea03431212bdfb99cb47faf3efd4be61183c60dad22e0a6",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -5791,9 +5710,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -5813,11 +5732,6 @@
           "contentHash": "a08c06ef3569462c19acb756e3a4146b31f3ae7c2a8ccc3487dc065d31c4459c",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Article visualisation revision"
-        },
-        {
-          "contentHash": "e85148573168e3e94ea03431212bdfb99cb47faf3efd4be61183c60dad22e0a6",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -5880,7 +5794,7 @@
         }
       ],
       "article": {
-        "contentHash": "eb04ddf4f2528f6895269fd6e30613902d965d9d382f20f5dfa032e986390a7b",
+        "contentHash": "c85438bc01a916485c26fc1eec8a4942620f92b615cc44288c8601157606352f",
         "claims": [
           {
             "id": "population-facilities-01",
@@ -5945,9 +5859,9 @@
         ]
       },
       "review": {
-        "contentHash": "eb04ddf4f2528f6895269fd6e30613902d965d9d382f20f5dfa032e986390a7b",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "c85438bc01a916485c26fc1eec8a4942620f92b615cc44288c8601157606352f",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "population-facilities-01",
@@ -6011,9 +5925,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "eb04ddf4f2528f6895269fd6e30613902d965d9d382f20f5dfa032e986390a7b",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "c85438bc01a916485c26fc1eec8a4942620f92b615cc44288c8601157606352f",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -6030,9 +5944,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -6052,11 +5966,6 @@
           "contentHash": "d4c6744fc451a92a2b501d085978d41cc4d3f8d336615ed306e8613e86ba0def",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "c85438bc01a916485c26fc1eec8a4942620f92b615cc44288c8601157606352f",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -6130,7 +6039,7 @@
         }
       ],
       "article": {
-        "contentHash": "541ac8acd48e00183a7cf7e9a8fd6beb827cc19126b42b2c7ab8e5f039458272",
+        "contentHash": "1440256862e9a425b4266b99d8ecd906b5718bb9c9bd4368111dc7da45293f16",
         "claims": [
           {
             "id": "public-space-01",
@@ -6190,9 +6099,9 @@
         ]
       },
       "review": {
-        "contentHash": "541ac8acd48e00183a7cf7e9a8fd6beb827cc19126b42b2c7ab8e5f039458272",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "1440256862e9a425b4266b99d8ecd906b5718bb9c9bd4368111dc7da45293f16",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "public-space-01",
@@ -6251,9 +6160,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "541ac8acd48e00183a7cf7e9a8fd6beb827cc19126b42b2c7ab8e5f039458272",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "1440256862e9a425b4266b99d8ecd906b5718bb9c9bd4368111dc7da45293f16",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -6270,9 +6179,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -6292,11 +6201,6 @@
           "contentHash": "65d5a5c1d42002ac4030c240ee14817fbd12e3b662f3756efeda1ddb0e7a024c",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "1440256862e9a425b4266b99d8ecd906b5718bb9c9bd4368111dc7da45293f16",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -6363,7 +6267,7 @@
         }
       ],
       "article": {
-        "contentHash": "ba656750e5fa9821a135125e678bb8f8ca192305669894482232f60d573f7a3a",
+        "contentHash": "81084f9b1344fbd304d99800f275351494b423e2341164d7d33a91b2e963ba92",
         "claims": [
           {
             "id": "reading-policy-costs-01",
@@ -6418,9 +6322,9 @@
         ]
       },
       "review": {
-        "contentHash": "ba656750e5fa9821a135125e678bb8f8ca192305669894482232f60d573f7a3a",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: article visualisation revision; independent scope recorded separately",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "81084f9b1344fbd304d99800f275351494b423e2341164d7d33a91b2e963ba92",
+        "reviewer": "Codex author: article visualisation revision; independent scope recorded separately",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "reading-policy-costs-01",
@@ -6474,9 +6378,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "ba656750e5fa9821a135125e678bb8f8ca192305669894482232f60d573f7a3a",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "81084f9b1344fbd304d99800f275351494b423e2341164d7d33a91b2e963ba92",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -6493,9 +6397,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -6515,11 +6419,6 @@
           "contentHash": "72f88bb0f9a41747d06fe4b98e5b213ddda8e623e31c0973c51eb3c9098a31e0",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Article visualisation revision"
-        },
-        {
-          "contentHash": "81084f9b1344fbd304d99800f275351494b423e2341164d7d33a91b2e963ba92",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -6582,7 +6481,7 @@
         }
       ],
       "article": {
-        "contentHash": "34dce6c7386be9af2daeb35cf82fd7f99e216f414c290f9f5f861982da334e8d",
+        "contentHash": "88a67649ef254e018a3ed3fca364db1bf97d86e31bacdef0430b6e41f1350c39",
         "claims": [
           {
             "id": "reading-policy-results-01",
@@ -6637,9 +6536,9 @@
         ]
       },
       "review": {
-        "contentHash": "34dce6c7386be9af2daeb35cf82fd7f99e216f414c290f9f5f861982da334e8d",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: article visualisation revision; independent scope recorded separately",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "88a67649ef254e018a3ed3fca364db1bf97d86e31bacdef0430b6e41f1350c39",
+        "reviewer": "Codex author: article visualisation revision; independent scope recorded separately",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "reading-policy-results-01",
@@ -6693,9 +6592,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "34dce6c7386be9af2daeb35cf82fd7f99e216f414c290f9f5f861982da334e8d",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "88a67649ef254e018a3ed3fca364db1bf97d86e31bacdef0430b6e41f1350c39",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -6712,9 +6611,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -6734,11 +6633,6 @@
           "contentHash": "cd1abc37284308b38312bdbdaf09e514fb6b48fbe50ed24a31bffb50ff936ef5",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Article visualisation revision"
-        },
-        {
-          "contentHash": "88a67649ef254e018a3ed3fca364db1bf97d86e31bacdef0430b6e41f1350c39",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -6806,7 +6700,7 @@
         }
       ],
       "article": {
-        "contentHash": "6d776619ad0f0346b8e16a38496bb15bec8e762815cf9e7a8e93c2c2ea61aefa",
+        "contentHash": "74c6a0ae223aa0f22457f4d8eea416fe95a3aa09c8915a521590df9b2248f99d",
         "claims": [
           {
             "id": "waste-and-carbon-01",
@@ -6861,9 +6755,9 @@
         ]
       },
       "review": {
-        "contentHash": "6d776619ad0f0346b8e16a38496bb15bec8e762815cf9e7a8e93c2c2ea61aefa",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: article visualisation revision; independent scope recorded separately",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "74c6a0ae223aa0f22457f4d8eea416fe95a3aa09c8915a521590df9b2248f99d",
+        "reviewer": "Codex author: article visualisation revision; independent scope recorded separately",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "waste-and-carbon-01",
@@ -6917,9 +6811,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "6d776619ad0f0346b8e16a38496bb15bec8e762815cf9e7a8e93c2c2ea61aefa",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "74c6a0ae223aa0f22457f4d8eea416fe95a3aa09c8915a521590df9b2248f99d",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -6936,9 +6830,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -6958,11 +6852,6 @@
           "contentHash": "9bb505274377ebc52ca0fe340a21f38f406f3d3814cadad91d67167eb1ec3f74",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Article visualisation revision"
-        },
-        {
-          "contentHash": "74c6a0ae223aa0f22457f4d8eea416fe95a3aa09c8915a521590df9b2248f99d",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     },
@@ -7024,7 +6913,7 @@
         }
       ],
       "article": {
-        "contentHash": "2ab4b65815959b1adeddab9805bcca05964292ac39d5281f9ee2ecf8aa0c56c1",
+        "contentHash": "44c1e9d7042036294f23c21010232482371d0fc1d86f1b390af34434b2f89938",
         "claims": [
           {
             "id": "work-and-business-01",
@@ -7079,9 +6968,9 @@
         ]
       },
       "review": {
-        "contentHash": "2ab4b65815959b1adeddab9805bcca05964292ac39d5281f9ee2ecf8aa0c56c1",
-        "reviewer": "Claude author 2026-09-10: shared layout/footer/article-bottom link revision for the account-free inquiry form; article output unchanged; carried forward: Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T15:06:15.831972Z",
+        "contentHash": "44c1e9d7042036294f23c21010232482371d0fc1d86f1b390af34434b2f89938",
+        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
+        "reviewedAt": "2026-09-10T13:11:56.543851Z",
         "findings": [
           {
             "claimId": "work-and-business-01",
@@ -7135,9 +7024,9 @@
           }
         ],
         "humanApproval": {
-          "approver": "User approved in this conversation (2026-09-10): account-free inquiry form, no individual replies, footer GitHub icon and article-bottom links; article claims unchanged; deployment not yet instructed; previous approval (2026-09-09T04:27:11.841044Z): User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "2ab4b65815959b1adeddab9805bcca05964292ac39d5281f9ee2ecf8aa0c56c1",
-          "approvedAt": "2026-09-10T15:06:15.831972Z"
+          "approver": "User delegated article creation/publication; not line-by-line content approval",
+          "contentHash": "44c1e9d7042036294f23c21010232482371d0fc1d86f1b390af34434b2f89938",
+          "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
       "authorization": {
@@ -7154,9 +7043,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Footer and article-bottom links only; no manuscript, figure or table changes",
-        "recordedAt": "2026-09-10T15:06:15.831972Z",
-        "independentReview": "Completed by inquiry-review (independent subagent), 2 rounds, round 2 pass; findings, fixes and file hashes: docs/content-review/inquiries/independent-review-2026-09-10.json",
+        "scope": "Four article figures and associated prose; other article outputs unchanged",
+        "recordedAt": "2026-09-10T13:11:56.543851Z",
+        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -7176,11 +7065,6 @@
           "contentHash": "bd55066dc2eb18a858991be2f07ea8b50867970ce0d43eea5ea95e483453c773",
           "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
           "reason": "Shared mapping/manifest/validator; original article output preserved"
-        },
-        {
-          "contentHash": "44c1e9d7042036294f23c21010232482371d0fc1d86f1b390af34434b2f89938",
-          "archivePath": "docs/content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json",
-          "reason": "Shared layout/footer/article-bottom links moved to the site inquiry form; article body unchanged"
         }
       ]
     }

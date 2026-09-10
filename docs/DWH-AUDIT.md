@@ -47,7 +47,7 @@ open.yokohamaの記事は既にこのリポジトリ内の公開データを読�
 | 抽出された主張 | 33件（fact 28、non_assertion 5）。原稿欄と支持・反証の引用文字列に接続 | 記事・レビュー内のIDであり、記事をまたぐ安定したファクト台帳ではない |
 | 記事内の数値 | [記事テンプレート](../apps/web/src/pages/issues/[slug].astro) が `fact()` で公開JSONの最新値を取得 | 文章レビューの版とは別に、ビルドで最新時点が選ばれる。記事ごとの参照データ固定はない |
 | グラフの解説・地域本文 | [chart-insights.ts](../packages/core/chart-insights.ts)、[region-story.ts](../packages/core/region-story.ts) で公開値から計算 | 数式・条件のテストと実装レビューが対象。3記事のAI署名の対象ではない。計算結果の共通ID台帳はない |
-| 訂正 | GitHub Issues受付＋[訂正台帳](../data/corrections/records.json)。現台帳は0件 | `/issues/` の記事単位の保留。観測値・原典から利用記事を逆引きする台帳はない |
+| 訂正 | サイト内フォーム（Worker→D1）受付＋[訂正台帳](../data/corrections/records.json)。現台帳は0件 | `/issues/` の記事単位の保留。観測値・原典から利用記事を逆引きする台帳はない |
 
 HTMLは抽出本文とハッシュをGitに保持し、原本HTMLはGit対象外のローカルキャッシュです。
 このworktreeの調査開始時にはキャッシュがありませんでした。
