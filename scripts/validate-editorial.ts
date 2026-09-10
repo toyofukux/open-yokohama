@@ -1,8 +1,21 @@
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
+import { renderChildcareCharts } from '../packages/core/childcare-charts';
 import { allPolicyIssues } from '../packages/core/policy-issues';
 import { assertPublishable } from '../packages/core/review';
+
+// Direct Astro builds must also reject chart/data drift.
+const childcareCharts = renderChildcareCharts(
+  JSON.parse(readFileSync('data/childcare/charts.json', 'utf8')),
+);
+for (const [id, html] of Object.entries(childcareCharts)) {
+  assert.equal(
+    readFileSync(`data/editorial/figures/${id}.html`, 'utf8'),
+    html,
+    `Stale chart: ${id}`,
+  );
+}
 
 const records = JSON.parse(readFileSync('docs/content-review/publication.json', 'utf8'));
 const expected = new Set([...allPolicyIssues.map((issue) => issue.url), '/elections/mayor-2026/']);

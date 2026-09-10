@@ -40,7 +40,7 @@ for (const slug of [
     for (const theme of ['yokohama', 'yokohama-night']) {
       await page.goto(`${base}/issues/${slug}/?theme=${theme}`);
       await expect(page.locator('.editorial-figure')).toHaveCount(
-        slug === 'school-shelters' ? 2 : 1,
+        slug === 'childcare-access' ? 3 : slug === 'school-shelters' ? 2 : 1,
       );
       await expect(page.locator('.policy-deck')).toHaveCount(0);
       await expect(page.locator('.policy-toc a[href="#footnote-label"]')).toHaveCount(0);
@@ -72,6 +72,11 @@ for (const slug of [
       await expect(page.locator('#mayor-roles')).toContainText('組織の上下関係を示す図ではない');
     }
     if (slug === 'childcare-access') {
+      await expect(page.locator('#childcare-history .childcare-bar')).toHaveCount(4);
+      await expect(page.locator('#childcare-ages .childcare-bar')).toHaveCount(6);
+      await expect(page.locator('#childcare-ages')).toContainText(
+        '育児休業の延長希望を除く1,256人',
+      );
       await expect(page.locator('#childcare-counts')).toContainText('397');
       await expect(page.locator('#childcare-counts')).toContainText('1,276');
       await expect(page.locator('[data-childcare-map] svg [data-ward]')).toHaveCount(18);

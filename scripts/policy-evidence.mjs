@@ -28,6 +28,8 @@ const figures = {
   '/docs/content-review/mayoral-issues/childcare-access.md': {
     'childcare-wards': '../data/childcare/figure.html',
     'childcare-counts': '../data/editorial/figures/childcare-counts.html',
+    'childcare-history': '../data/editorial/figures/childcare-history.html',
+    'childcare-ages': '../data/editorial/figures/childcare-ages.html',
   },
   '/docs/content-review/mayoral-issues/school-shelters.md': {
     'gym-timeline': '../data/editorial/figures/gym-timeline.html',

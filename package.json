@@ -9,7 +9,7 @@
   "packageManager": "pnpm@10.32.1",
   "scripts": {
     "dev": "astro dev --root apps/web --host 127.0.0.1",
-    "build": "pnpm maps:check && tsx scripts/validate-editorial.ts && tsx scripts/validate.ts && tsx scripts/validate-dynamics.ts && tsx scripts/validate-ages.ts && pnpm factcheck:check && astro build --root apps/web && tsx scripts/check-links.ts && tsx scripts/check-release-contract.ts",
+    "build": "pnpm maps:check && pnpm childcare:charts:check && tsx scripts/validate-editorial.ts && tsx scripts/validate.ts && tsx scripts/validate-dynamics.ts && tsx scripts/validate-ages.ts && pnpm factcheck:check && astro build --root apps/web && tsx scripts/check-links.ts && tsx scripts/check-release-contract.ts",
     "check": "astro check --root apps/web && tsc --noEmit",
     "test": "tsx --test tests/*.test.ts",
     "test:e2e": "playwright test",
@@ -45,7 +45,9 @@
     "maps:build": "tsx scripts/build-ward-evidence.ts",
     "maps:check": "tsx scripts/build-ward-evidence.ts --check",
     "factcheck:archive-originals": "tsx scripts/factcheck-archive.ts --originals",
-    "test:factcheck-archive-originals": "tsx scripts/factcheck-gate-smoke.ts --originals"
+    "test:factcheck-archive-originals": "tsx scripts/factcheck-gate-smoke.ts --originals",
+    "childcare:charts:build": "tsx scripts/build-childcare-charts.ts",
+    "childcare:charts:check": "tsx scripts/build-childcare-charts.ts --check"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",

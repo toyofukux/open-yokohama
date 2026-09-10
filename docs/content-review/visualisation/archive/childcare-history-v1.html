@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>子ども数と保育所の申込数｜グラフ表示見本</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #f5f6f7;
+        color: #172f3b;
+        font-family:
+          system-ui,
+          -apple-system,
+          "Hiragino Kaku Gothic ProN",
+          sans-serif;
+        line-height: 1.7;
+      }
+      main {
+        max-width: 760px;
+        margin: 32px auto;
+        padding: 28px;
+        background: #fff;
+        border: 1px solid #d6dce0;
+        border-radius: 12px;
+      }
+      h1 {
+        font-size: clamp(22px, 4vw, 30px);
+        line-height: 1.5;
+        margin: 8px 0;
+      }
+      h1 span {
+        display: inline-block;
+      }
+      h2 {
+        font-size: 20px;
+        margin: 0;
+      }
+      .label {
+        font-size: 13px;
+        color: #435660;
+        margin: 0;
+      }
+      .scope {
+        margin: 8px 0 24px;
+      }
+      .series {
+        margin: 26px 0 36px;
+      }
+      .change {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 3px 0 12px;
+      }
+      .change span {
+        font-size: 18px;
+      }
+      .bar-label {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        gap: 8px;
+      }
+      .observation {
+        margin: 14px 0;
+      }
+      .track {
+        height: 24px;
+        border-left: 1px solid #657580;
+        background: repeating-linear-gradient(
+          to right,
+          transparent 0,
+          transparent calc(20% - 1px),
+          #c5cdd2 calc(20% - 1px),
+          #c5cdd2 20%
+        );
+      }
+      .bar {
+        height: 100%;
+      }
+      .blue {
+        background: #206095;
+      }
+      .orange {
+        background: #a34b00;
+      }
+      .axis {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        height: 25px;
+        font-size: 12px;
+        color: #435660;
+      }
+      .axis span {
+        position: absolute;
+        transform: translateX(-50%);
+      }
+      .axis span:nth-child(1) {
+        left: 0;
+        transform: none;
+      }
+      .axis span:nth-child(2) {
+        left: 20%;
+      }
+      .axis span:nth-child(3) {
+        left: 40%;
+      }
+      .axis span:nth-child(4) {
+        left: 60%;
+      }
+      .axis span:nth-child(5) {
+        left: 80%;
+      }
+      .axis span:nth-child(6) {
+        right: 0;
+        transform: none;
+      }
+      .note {
+        font-size: 14px;
+        margin: 18px 0;
+      }
+      .source {
+        font-size: 13px;
+        color: #435660;
+      }
+      a {
+        color: #174f82;
+        text-underline-offset: 3px;
+      }
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+      }
+      details {
+        border-top: 1px solid #d6dce0;
+        padding-top: 16px;
+        margin-top: 22px;
+      }
+      .table-wrap {
+        overflow-x: auto;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+        margin-top: 12px;
+      }
+      th,
+      td {
+        padding: 8px;
+        border-bottom: 1px solid #d6dce0;
+        text-align: right;
+        white-space: nowrap;
+      }
+      th:first-child {
+        text-align: left;
+      }
+      caption {
+        text-align: left;
+        font-size: 13px;
+      }
+      summary:focus-visible,
+      a:focus-visible {
+        outline: 3px solid #206095;
+        outline-offset: 4px;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+        border: 0;
+      }
+      @media (max-width: 520px) {
+        main {
+          margin: 0;
+          padding: 20px 16px;
+          border: 0;
+          border-radius: 0;
+        }
+        h2 {
+          font-size: 18px;
+        }
+        .series {
+          margin: 24px 0 28px;
+        }
+        .axis {
+          font-size: 11px;
+        }
+        .axis span:nth-child(2),
+        .axis span:nth-child(4),
+        .axis span:nth-child(5) {
+          visibility: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="label">表示見本・公開記事への組込み前</p>
+      <h1>
+        子どもが減っても、<br /><span>保育所への申込みは</span
+        ><span>増えていた</span>
+      </h1>
+      <p class="scope">
+        横浜市・2004年と2012年の比較（各4月1日）<br />棒の目盛りは、どちらも0〜25万人。
+      </p>
+      <section class="series">
+        <h2>就学前児童数</h2>
+        <p class="change">9,856人減<span>（4.9％減）</span></p>
+        <div class="plot" aria-hidden="true">
+          <div class="observation">
+            <div class="bar-label">
+              <span>2004年</span><strong>201,626人</strong>
+            </div>
+            <div class="track">
+              <div class="bar blue" style="width: 80.6504%"></div>
+            </div>
+          </div>
+          <div class="observation">
+            <div class="bar-label">
+              <span>2012年</span><strong>191,770人</strong>
+            </div>
+            <div class="track">
+              <div class="bar blue" style="width: 76.708%"></div>
+            </div>
+          </div>
+          <div class="axis">
+            <span>0</span><span>5万</span><span>10万</span><span>15万</span
+            ><span>20万</span><span>25万人</span>
+          </div>
+        </div>
+        <p class="sr-only">2004年201,626人、2012年191,770人。</p>
+      </section>
+      <section class="series">
+        <h2>保育所入所申込数</h2>
+        <p class="change">17,595人増<span>（62.6％増）</span></p>
+        <div class="plot" aria-hidden="true">
+          <div class="observation">
+            <div class="bar-label">
+              <span>2004年</span><strong>28,112人</strong>
+            </div>
+            <div class="track">
+              <div class="bar orange" style="width: 11.2448%"></div>
+            </div>
+          </div>
+          <div class="observation">
+            <div class="bar-label">
+              <span>2012年</span><strong>45,707人</strong>
+            </div>
+            <div class="track">
+              <div class="bar orange" style="width: 18.2828%"></div>
+            </div>
+          </div>
+          <div class="axis">
+            <span>0</span><span>5万</span><span>10万</span><span>15万</span
+            ><span>20万</span><span>25万人</span>
+          </div>
+        </div>
+        <p class="sr-only">2004年28,112人、2012年45,707人。</p>
+      </section>
+      <p class="note">
+        2時点の比較。途中の毎年の動きや、増減の原因はこの図だけでは分からない。申込数は、保育を必要とする全家庭の数ではない。
+      </p>
+      <p class="source">
+        出典：<a
+          href="https://www.city.yokohama.lg.jp/city-info/seisaku/torikumi/shien/tyousakihou/kihou-archive/172.files/0007_20191119.pdf#page=1"
+          >横浜市『調査季報172号』（2013年3月）11ページ・表1</a
+        >を基にOpen Yokohama作成。増減率は、それぞれの2004年の人数を基準に計算。
+      </p>
+      <details>
+        <summary>図の数値を表で確認する</summary>
+        <div
+          class="table-wrap"
+          tabindex="0"
+          role="region"
+          aria-label="図の数値表。狭い画面では横にスクロールできる"
+        >
+          <table>
+            <caption>
+              人数の単位は人。増減率は2004年比。
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">指標</th>
+                <th scope="col">2004年</th>
+                <th scope="col">2012年</th>
+                <th scope="col">人数差</th>
+                <th scope="col">増減率</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">就学前児童数</th>
+                <td>201,626</td>
+                <td>191,770</td>
+                <td>-9,856</td>
+                <td>-4.9％</td>
+              </tr>
+              <tr>
+                <th scope="row">保育所入所申込数</th>
+                <td>28,112</td>
+                <td>45,707</td>
+                <td>+17,595</td>
+                <td>+62.6％</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </main>
+  </body>
+</html>

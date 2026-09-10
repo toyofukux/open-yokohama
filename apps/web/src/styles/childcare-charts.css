@@ -1,0 +1,205 @@
+.policy-prose .childcare-chart {
+  --chart-blue: #206095;
+  --chart-orange: #a34b00;
+  --chart-neutral: #657580;
+  background: var(--surface);
+  padding: clamp(12px, 2vw, 24px);
+}
+:root[data-theme="yokohama-night"] .childcare-chart {
+  --chart-blue: #78b9e8;
+  --chart-orange: #f0b070;
+  --chart-neutral: #9cabb5;
+}
+.policy-prose .childcare-chart h3 {
+  font-size: 1rem;
+  margin: 0 0 12px;
+}
+.policy-prose .childcare-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 22px;
+  font-size: 0.8rem;
+}
+.policy-prose .childcare-legend li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+  line-height: 1.5;
+}
+.childcare-swatch {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+.childcare-blue {
+  background: var(--chart-blue);
+}
+.childcare-orange {
+  background: var(--chart-orange);
+}
+.childcare-neutral {
+  background: var(--chart-neutral);
+}
+.childcare-chart-area {
+  padding: 0 2px 0 36px;
+}
+.childcare-unit {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+.childcare-plot {
+  height: 240px;
+  position: relative;
+}
+.childcare-tick {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0;
+  border-top: 1px solid var(--line);
+}
+.childcare-tick:first-child {
+  border-color: var(--muted);
+}
+.childcare-tick > span {
+  position: absolute;
+  right: calc(100% + 8px);
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  color: var(--muted);
+}
+.childcare-groups {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  padding: 0 10px;
+}
+.childcare-year-group {
+  height: 100%;
+  min-width: 0;
+  position: relative;
+}
+.childcare-bars {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  max-width: 170px;
+  margin: auto;
+}
+.childcare-column {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  justify-content: center;
+}
+.childcare-bar {
+  width: 100%;
+  max-width: 64px;
+  position: relative;
+}
+.childcare-value {
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  font-weight: 650;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.childcare-bar-label {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+.childcare-year {
+  position: absolute;
+  top: calc(100% + 28px);
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+.childcare-chart-bottom {
+  margin-top: 70px;
+}
+.policy-prose .childcare-takeaway {
+  font-size: 0.9rem;
+  margin: 0 0 12px;
+  line-height: 1.7;
+}
+.childcare-takeaway span {
+  display: inline-block;
+}
+.policy-prose .childcare-chart-note,
+.policy-prose .childcare-chart figcaption,
+.policy-prose .childcare-chart-data {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 12px 0;
+  line-height: 1.8;
+}
+.childcare-chart-data summary {
+  cursor: pointer;
+  color: var(--ink);
+}
+.childcare-age-bars {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0 8px;
+}
+.childcare-age-chart .childcare-plot {
+  height: 180px;
+}
+.childcare-age-chart .childcare-chart-bottom {
+  margin-top: 38px;
+}
+.childcare-age-chart .childcare-chart-area {
+  margin-top: 24px;
+}
+@media (max-width: 520px) {
+  .childcare-groups {
+    gap: 18px;
+    padding: 0 3px;
+  }
+  .childcare-bars {
+    gap: 8px;
+  }
+  .childcare-chart .childcare-value,
+  .childcare-chart .childcare-bar-label {
+    font-size: 11px;
+  }
+  .childcare-plot {
+    height: 210px;
+  }
+  .childcare-chart-area {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+  .childcare-tick > span {
+    font-size: 11px;
+    right: calc(100% + 6px);
+  }
+  .childcare-age-bars {
+    gap: 8px;
+    padding: 0 3px;
+  }
+}

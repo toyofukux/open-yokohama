@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "reviewer": "/root/childcare_review",
+  "role": "Independent Codex sub-agent; did not author manuscript, charts, CSS or implementation",
+  "reviewedAt": "2026-09-10T12:57:50.135Z",
+  "baseCommit": "727dbbeca5cef8e852432932a9483520d4cc44b6",
+  "result": "no_blocking_findings_in_reviewed_scope",
+  "publicationContentHash": "650d8124a2913a2d363b9c375753a7d9cdf5d0b573676120cfb6af888dd817c0",
+  "reviewedFiles": [
+    {
+      "path": "docs/content-review/mayoral-issues/childcare-access.md",
+      "sha256": "3f11e4b84574882a334e20fceccc0373f2d2bff73e17c7c2c2bf82776bfb4e09"
+    },
+    {
+      "path": "data/childcare/charts.json",
+      "sha256": "fbca3b9e4b9ea35e01bb3dfd642b92201b9793872d01911c500f892a0e2f4268"
+    },
+    {
+      "path": "packages/core/childcare-charts.ts",
+      "sha256": "ba7f8b2654f33d5d6c999f330435afaf08cb99830f95468691209df793e852c6"
+    },
+    {
+      "path": "scripts/build-childcare-charts.ts",
+      "sha256": "54058486b70b7b2dc462211038bfda12dc1f9a339fc97605e06f86589060e982"
+    },
+    {
+      "path": "scripts/validate-editorial.ts",
+      "sha256": "937b9ebba94025fc1ded5ec1c4fa07abb1a0b6b392a82e0e72fd7486407f189e"
+    },
+    {
+      "path": "scripts/policy-evidence.mjs",
+      "sha256": "683801ab446a55b0d0a1c273d879767556a19e9e4683dbf831909b75d04e8519"
+    },
+    {
+      "path": "apps/web/src/styles/childcare-charts.css",
+      "sha256": "215f84b4003640a6330b701ca950a52091f31ca72c60f69b04433a6edc845fe6"
+    },
+    {
+      "path": "apps/web/src/pages/issues/childcare-access.astro",
+      "sha256": "9a1333bb10ef3845f48dce2f472bd51f036b3f99161b1720c5b15c73b717c1e0"
+    },
+    {
+      "path": "data/editorial/figures/childcare-history.html",
+      "sha256": "39c9578adfe7ccf5eaddb35b7d7107c920df795ca009d0704d13c0b25756242e"
+    },
+    {
+      "path": "data/editorial/figures/childcare-ages.html",
+      "sha256": "e97b976d5e706a06c1c460f52bc7a07a25ff774f5fde72ea5d4b66bef161b66d"
+    },
+    {
+      "path": "tests/childcare-charts.test.ts",
+      "sha256": "1ed8ce144c58b4372ae57d7cf81d4a8e3665d592d055a541722bcb1f108a1427"
+    },
+    {
+      "path": "tests/e2e/editorial-expansion.spec.ts",
+      "sha256": "af506d43194fda77c4f26f0fa1bd6ce4d575a81735b4913411bee3b20c682899"
+    },
+    {
+      "path": "docs/content-review/visualisation/CHILDCARE-PLAN.md",
+      "sha256": "f74b88695efc539cd69c375d5bf81c8f42e4eb6cc4e92d241950423e8ff7f626"
+    },
+    {
+      "path": "package.json",
+      "sha256": "9ae6780a75577f1536a9f39d734e85b74c4b9b102c20fbd93c11f39c37698aa1"
+    },
+    {
+      "path": "docs/content-review/mayoral-issues/sources.json",
+      "sha256": "362f9e982b3639b174f3ec568ec8a9083db835f04307a78cf91ba69157fa3d03"
+    }
+  ],
+  "sourceReview": [
+    {
+      "id": "N1",
+      "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf",
+      "sha256": "9596a87c57264c10dd98e443d98dd502f3c85767a37202238e7a5022de247d1a",
+      "localBytesMatchInventory": true,
+      "pdfImagesInspected": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "N3",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kodomo/jigyoukeikaku/r8jigyoukeikaku.files/0002_20260126.pdf",
+      "sha256": "9a6bf6742ac41ff9d03a2cffd93ba675850af174d632ca3b71384272d890c97c",
+      "localBytesMatchInventory": true,
+      "pdfImagesInspected": [
+        120
+      ]
+    },
+    {
+      "id": "N4",
+      "url": "https://www.city.yokohama.lg.jp/city-info/seisaku/torikumi/shien/tyousakihou/kihou-archive/172.files/0007_20191119.pdf",
+      "sha256": "8ee9718ffe35b82d27337d1edf98a442434290ed49cf03376907772e8c3db467",
+      "localBytesMatchInventory": true,
+      "pdfImagesInspected": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "N5",
+      "url": "https://www.city.yokohama.lg.jp/shikai/kiroku/katsudo/h25-h26/katsudogaiyo-h25-j-4.files/0175_20180814.pdf",
+      "sha256": "4ee9073edb6b0d9560a71a8f797672f72cce9b8d746812d8c55943d2dd4e00cd",
+      "localBytesMatchInventory": true,
+      "pdfImagesInspected": [
+        1,
+        4,
+        5
+      ]
+    }
+  ],
+  "findings": [],
+  "verified": [
+    {
+      "scope": "History chart data and meaning",
+      "result": "N4 PDF1/table1: 2004/2012 April 1 children 201626/191770 and applications 28112/45707; differences -9856/+17595 and changes -4.9%/+62.6%; two points, no causal or contemporary continuous-series inference."
+    },
+    {
+      "scope": "Age chart data and meaning",
+      "result": "N1 PDF2 class-age counts 167,703,201,125,39,21 total1256; excludes extension-desired group; ages1+2=904,71.9745%; composition within held children, not age-specific admission risk. Population difference from ward map is adjacent."
+    },
+    {
+      "scope": "Manuscript integration",
+      "result": "Historical facts and N3 policy descriptions agree with independently inspected source pages. Quantitative details moved to accessible figures; limits and non-causal qualifications retained."
+    },
+    {
+      "scope": "Shared figure integration",
+      "result": "scripts/policy-evidence.mjs becomes byte-identical to HEAD when the two childcare mapping entries are removed; other route mappings and transform logic unchanged."
+    },
+    {
+      "scope": "Publication contract intent",
+      "result": "Childcare publication contentFiles covers new data, generated figures, renderer, build checker, CSS and validator. Author review is labeled as author work; this independent record covers only stated scope, not human approval."
+    },
+    {
+      "scope": "Focused tests",
+      "commands": [
+        "pnpm exec tsx --test tests/childcare-charts.test.ts",
+        "pnpm childcare:charts:check"
+      ],
+      "result": "2 focused unit tests passed; source-version and generated-output check passed, repeated after final renderer/CSS adjustment."
+    },
+    {
+      "scope": "Independent local browser checks",
+      "url": "http://127.0.0.1:8788/issues/childcare-access/",
+      "result": "320px and 1280px chart screenshots inspected; no clipped value labels. 320px in both themes: chart-scoped axe WCAG2A/AA/2.1AA violations0; both data tables open with Enter; no horizontal page overflow with tables open. JS-disabled page displays all10 bars and native expandable table. Final cosmetic history adjustment independently inspected at320px after rebuild.",
+      "limits": "Both-theme automated accessibility and keyboard checks preceded final spacing-only CSS/inline-span adjustment; final320px screenshot inspected afterward."
+    }
+  ],
+  "legacyByteChecks": [
+    {
+      "path": "data/editorial/figures/childcare-counts.html",
+      "sha256": "39d493297ad12fbf464e08ac5f2f90a2bafe5b5e83425bc9ab805b4cbcad3a00",
+      "sameAsBaseCommit": true
+    },
+    {
+      "path": "data/childcare/figure.html",
+      "sha256": "80d920b15e334e9906426cbba3fc8687fd06cb18fdfe1fa57898bba112dc14c9",
+      "sameAsBaseCommit": true
+    },
+    {
+      "path": "apps/web/public/maps/childcare-2026.csv",
+      "sha256": "ec210caa161057cdcc7166594983ff11d41bb67b36bdb083f72309dbcc5b1ab8",
+      "sameAsBaseCommit": true
+    },
+    {
+      "path": "apps/web/public/maps/childcare-2026.svg",
+      "sha256": "51f0d820d688c928c64e3e313894dee68a9a935961fe4a7b314f443ec76e88e5",
+      "sameAsBaseCommit": true
+    },
+    {
+      "path": "apps/web/public/maps/childcare-2026.png",
+      "sha256": "a1d146d961ed670b11ba7d2bac48d43a6e9870ed5fdc307b8441632707c08d2f",
+      "sameAsBaseCommit": true
+    }
+  ],
+  "notPerformed": [
+    "Production deployment or production verification",
+    "Human reader comprehension/usability study",
+    "Human publication approval or line-by-line editorial approval",
+    "Independent rerun of entire pnpm verify suite",
+    "Fresh factual review of articles other than childcare",
+    "Independent reassessment of unchanged ward-map input extraction beyond byte preservation"
+  ],
+  "authorization": "Review record only. Does not authorize publication, replace user delegation, or claim human understanding validation."
+}

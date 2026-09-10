@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-09-10T12:59:00.347839Z",
+  "scope": "Childcare article charts, prose reduction and map-first editorial rule",
+  "baseCommit": "727dbbeca5cef8e852432932a9483520d4cc44b6",
+  "contentHash": "650d8124a2913a2d363b9c375753a7d9cdf5d0b573676120cfb6af888dd817c0",
+  "independentReview": "childcare-independent-review-2026-09-10.json",
+  "verification": {
+    "verify": "passed; 76 unit tests, 93 pages, 2526 links",
+    "e2e": "224 passed before final spacing edit; related 8 passed after",
+    "display": "320/390/1280px day/night; bar heights/zero baseline; no value label overlap; 200% text horizontal overflow absent; no-JS keyboard tables passed",
+    "dryRun": "passed",
+    "otherBuildOutputs": "All pre-existing outputs except childcare HTML byte-identical; one new CSS asset",
+    "preservedUserWork": "README.md and docs/knowledge hashes unchanged"
+  },
+  "production": "pending",
+  "humanComprehension": "not performed"
+}

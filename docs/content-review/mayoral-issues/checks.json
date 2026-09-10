@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-09-09T04:19:15.494412Z",
+  "checkedAt": "2026-09-10T12:53:18.979982Z",
   "sourceSnapshots": 24,
   "manuscripts": [
     {
       "path": "docs/content-review/mayoral-issues/childcare-access.md",
-      "sha256": "be7a252ccbc2be0fd9ef1be0a78c1cfda894adbb584a59d6833d34f0868bc207",
+      "sha256": "3f11e4b84574882a334e20fceccc0373f2d2bff73e17c7c2c2bf82776bfb4e09",
       "sections": 5,
       "citations": 7
     },

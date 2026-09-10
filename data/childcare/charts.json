@@ -1,0 +1,21 @@
+{
+  "history": {
+    "sourceId": "N4",
+    "sourceSha256": "8ee9718ffe35b82d27337d1edf98a442434290ed49cf03376907772e8c3db467",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/city-info/seisaku/torikumi/shien/tyousakihou/kihou-archive/172.files/0007_20191119.pdf#page=1",
+    "extraction": "PDF1ページ・表1を画像で照合。各年4月1日。就学前児童数、保育所入所申込数の順。",
+    "years": [2004, 2012],
+    "children": [201626, 191770],
+    "applications": [28112, 45707]
+  },
+  "ages": {
+    "sourceId": "N1",
+    "sourceSha256": "9596a87c57264c10dd98e443d98dd502f3c85767a37202238e7a5022de247d1a",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf#page=2",
+    "extraction": "PDF2ページ・イ クラス年齢別の状況。保留児童数（育休希望を除く）。0〜5歳の順。",
+    "observedOn": "2026-04-01",
+    "excludingExtensionDesired": true,
+    "values": [167, 703, 201, 125, 39, 21],
+    "total": 1256
+  }
+}
