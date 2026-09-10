@@ -3154,11 +3154,18 @@
         "scope": "Create and publish first versions of major Yokohama mayoral-election policy issues, under existing evidence and uncertainty requirements.",
         "recordedAt": "2026-09-06T17:57:54.390464Z",
         "currentChangeInstruction": "文言よいと思う！ βも試験公開中がいいのでそれで！",
-        "currentChangeScope": "TOP heading, introduction, title/description and trial-publication label only. Local implementation; this revision has not been deployed."
+        "currentChangeScope": "TOP heading, introduction, title/description and trial-publication label only. Published from main after the approved local implementation."
       },
       "states": {
-        "implementation": "implemented_local",
-        "publication": "not_deployed"
+        "implementation": "implemented_production",
+        "publication": "published"
+      },
+      "deployment": {
+        "workerVersion": "2240e716-b8fb-41a7-a93c-9d5cea71466c",
+        "implementationCommit": "3aec3d7d8ec60508f89349a656e7e31dc09662e2",
+        "url": "https://open.yokohama/",
+        "verifiedAt": "2026-09-10T11:25:49Z",
+        "productionVerification": "TOP heading, trial label, title/description, desktop and 390px rendering checked at the live URL; release manifest reports 23 policy articles, 19 warehouse articles and 44,638 observations; MCP remains non-public (404)."
       },
       "presentationReview": {
         "reviewedAt": "2026-09-07T01:41:30.795397Z",
@@ -3329,6 +3336,13 @@
           "url": "https://open.yokohama/elections/mayor-2026/",
           "verifiedAt": "2026-09-09T04:37:56.275376Z",
           "productionE2E": "224 passed"
+        },
+        {
+          "workerVersion": "2240e716-b8fb-41a7-a93c-9d5cea71466c",
+          "implementationCommit": "3aec3d7d8ec60508f89349a656e7e31dc09662e2",
+          "url": "https://open.yokohama/",
+          "verifiedAt": "2026-09-10T11:25:49Z",
+          "productionVerification": "TOP heading, trial label, title/description, desktop and 390px rendering checked at the live URL; release manifest reports 23 policy articles, 19 warehouse articles and 44,638 observations; MCP remains non-public (404)."
         }
       ],
       "revisionReview": {
