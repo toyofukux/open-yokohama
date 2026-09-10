@@ -7,7 +7,7 @@
 - 最初の開発サーバー確認は公開契約の不一致で起動に失敗し、その際の画面検査を合格扱いにしていません。初回の全E2Eは旧見出しの期待値で2件失敗し、承認済み文言の完全一致へ更新後に全件合格しました。
 - 独立担当 `/root/top_copy_review` が最終差分を確認し、指摘なしでした。基準HEADは `ffd0ba6879f5e60658d03deaaccd1d5ae975ff1d`、TOPのSHA-256は `db897be33b2aa5cc914c1f0894f5b42dc408078e68a5ab1a4e60e111ff8d1545` です。
 - TOPを含む選挙ハブの公開契約だけ更新しました。[旧記録](content-review/top-copy-2026-09-10-previous.json)を保存し、他10対象ファイルのbyte一致を確認しています。一次資料の再検証や全記事の再レビューとして扱っていません。
-- `main` の `3aec3d7d8ec60508f89349a656e7e31dc09662e2` を公開し、Web version `2240e716-b8fb-41a7-a93c-9d5cea71466c` を確認しました。本番URLで見出し・「試験公開中」・title・description、1280pxと390pxの表示を確認しました。release manifestは23政策記事、DWH19記事・44,638値を維持し、旧MCPは404です。
+- `main` の `3aec3d7d8ec60508f89349a656e7e31dc09662e2` を公開し、Web version `2240e716-b8fb-41a7-a93c-9d5cea71466c` を確認しました。本番URLで見出し・「試験公開中」・title・description、1280pxと390pxの表示を確認しました。本番224 E2Eは全件合格（40.6秒、ログは `artifacts/top-copy-2026-09-10/production-e2e-2026-09-10.log`）。release manifestは23政策記事、DWH19記事・44,638値を維持し、旧MCPは404です。
 
 ## 2026-09-09：想定記事を一括制作・23記事を本番公開（最新）
 

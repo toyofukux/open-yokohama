@@ -3165,7 +3165,8 @@
         "implementationCommit": "3aec3d7d8ec60508f89349a656e7e31dc09662e2",
         "url": "https://open.yokohama/",
         "verifiedAt": "2026-09-10T11:25:49Z",
-        "productionVerification": "TOP heading, trial label, title/description, desktop and 390px rendering checked at the live URL; release manifest reports 23 policy articles, 19 warehouse articles and 44,638 observations; MCP remains non-public (404)."
+        "productionVerification": "TOP heading, trial label, title/description, desktop and 390px rendering checked at the live URL; release manifest reports 23 policy articles, 19 warehouse articles and 44,638 observations; MCP remains non-public (404).",
+        "productionE2E": "224 passed (40.6s); log: artifacts/top-copy-2026-09-10/production-e2e-2026-09-10.log"
       },
       "presentationReview": {
         "reviewedAt": "2026-09-07T01:41:30.795397Z",
@@ -3342,7 +3343,8 @@
           "implementationCommit": "3aec3d7d8ec60508f89349a656e7e31dc09662e2",
           "url": "https://open.yokohama/",
           "verifiedAt": "2026-09-10T11:25:49Z",
-          "productionVerification": "TOP heading, trial label, title/description, desktop and 390px rendering checked at the live URL; release manifest reports 23 policy articles, 19 warehouse articles and 44,638 observations; MCP remains non-public (404)."
+          "productionVerification": "TOP heading, trial label, title/description, desktop and 390px rendering checked at the live URL; release manifest reports 23 policy articles, 19 warehouse articles and 44,638 observations; MCP remains non-public (404).",
+          "productionE2E": "224 passed (40.6s); log: artifacts/top-copy-2026-09-10/production-e2e-2026-09-10.log"
         }
       ],
       "revisionReview": {
