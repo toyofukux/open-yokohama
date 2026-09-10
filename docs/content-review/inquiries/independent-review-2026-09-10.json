@@ -1,6 +1,6 @@
 {
   "subject": "Account-free inquiry form (Worker + D1), footer GitHub icon, ledger schema inquiryId, night-theme form contrast",
-  "target": "Uncommitted working tree on main 173e915, final state after round 2 fixes",
+  "target": "Branch feat/inquiry-form: commit 1bce81d (rounds 1-3 target), 881d536 (UI blocking fix), plus this follow-up commit; base origin/main 173e915",
   "reviewer": "inquiry-review: independent read-only Claude reviewer subagent (not the implementer)",
   "recordedAt": "2026-09-10T14:57:28.007930Z",
   "rounds": [
@@ -38,6 +38,20 @@
         "F13 minor: non-numeric Content-Length passed the cap -> 400 when not finite",
         "F14 minor: no production check for the form path -> honeypot curl recorded in deploy runbook"
       ]
+    },
+    {
+      "round": 3,
+      "verdict": "pass",
+      "counts": {
+        "blocking": 0,
+        "major": 0,
+        "minor": 3
+      },
+      "findings": [
+        "F15 minor: raw NUL byte in tests/inquiry.test.ts made git treat it as binary -> replaced with \\u0000 escape",
+        "F16 minor: pre-existing GitHub links on about/developers pages are outside the inquiry flow -> no change, noted for the user",
+        "F17 minor: review record lacked commit shas -> this update"
+      ]
     }
   ],
   "implementerVerification": [
@@ -59,7 +73,7 @@
     "wrangler.jsonc": "e88b74311e3ccbe10ec458894a90f154e175122830e1aa0de88ac6bf5347930b",
     "packages/core/corrections.ts": "e01ab55e85e8f77017ce685544940674a3640fe593a6d70f67298b2f7653bd10",
     "apps/web/src/pages/corrections/index.astro": "75f6f1d2e6ae9107fb070a91f0efa1400c7b48015afae36b9134e2a8b18e41b3",
-    "apps/web/src/pages/corrections/report/index.astro": "ad9b3946b3c7d17757c101be2628c68cda5765a6550765a795b636b2abd525e6",
+    "apps/web/src/pages/corrections/report/index.astro": "ad34fe949c872b5d7062883eba0eb3b73f8b8adbd24a763d670ecba2b1c617e4",
     "apps/web/src/pages/corrections/report/done.astro": "fba7d1c8ed5d91bea1a257354a4794f4bba139f48b8af42b1ce16f259075278a",
     "apps/web/src/layouts/Layout.astro": "2d02a9fdfbc5cee3e790f6c25f79316e0f8c424ff41ba82d059df7e64a9dd04d",
     "apps/web/src/components/PolicyArticle.astro": "3dcf0f8d6a56846770d8be9b1bd6112d96744e4ffbb1cfc8e8eec55b8114c63f",
@@ -67,9 +81,9 @@
     "apps/web/src/pages/elections/mayor-2026/index.astro": "eefcab5dba747056bb21c5bbeac04d81887f67c472d528b5ca4551ef646de985",
     "apps/web/src/pages/about.astro": "88ded19aa0e61eb387d1361fef37d85e73ceffef6a6dea527de7d1604307e22e",
     "apps/web/src/styles/global.css": "94e6af28acbe96265fc9466261e45c18f1a471090802073f833a4af918b61f17",
-    "tests/inquiry.test.ts": "e4909601de4b673aff7a7cc513c34e6e9e2ec44b47709a8c2ab9f595cae0ca02",
+    "tests/inquiry.test.ts": "2ea1c8ffadbd543bd6557d4398a8b538b1749f8d1186f63cabfe2d9f32ff42c7",
     "tests/corrections.test.ts": "4737efb3aa61c6174ae00ef51dd6293bcc8bbbc5f533a0ffbe92202e12390cc4",
-    "tests/e2e/corrections.spec.ts": "6d9016df9b247fa2e67fcc53a6f354acfc6b1fa8bc5b68baf1e69346f5f8d054",
+    "tests/e2e/corrections.spec.ts": "a3deacbb3f444916e88e6623e162056f6a941f22e0c834db79e77472163daf64",
     "tests/e2e/ages.spec.ts": "b259c5347b4e9cfd7136eba6ea42814d2651d7cda12229fdb7f621626c030e0e",
     "tests/e2e/dynamics.spec.ts": "2df9208e17ce04c2fb9e54beda0a8637022f97d8822b0d7538eb75777b866836",
     "scripts/corrections-smoke.ts": "0834d2358289e46e3e616f44381bd71b94c8c79d28f9f395e2c3d10a88ce0a71",
@@ -79,5 +93,21 @@
     ".github/ISSUE_TEMPLATE/correction.yml": "9dc37c605ee01a079e2566f09be981d3f71ce778f69da326c75634e1371bcfc5",
     "package.json": "887453f7b3c623d6e64e7deafea5ee77f9c75a6fe3ad8e1f2518575e4d980753",
     "tsconfig.json": "ad313666a58e5ce0eb0d9a7e7951caafeb7dc758a7a6caf1aeb5259ded9295eb"
+  },
+  "uiReview": {
+    "reviewer": "Codex CLI (codex exec), static visual-grammar review of *.astro/*.css diff",
+    "round1": {
+      "target": "1bce81d",
+      "verdict": "fail",
+      "blocking": [
+        "#report-version-note overflowed at 390px with a 64-character hash -> overflow-wrap: anywhere (commit 881d536) plus an E2E overflow assertion"
+      ],
+      "nonBlocking": [
+        "submit button uses local padding/radius instead of .action",
+        "radio fieldset introduces new spacing values",
+        "footer GitHub link spacing differs from .source-icon"
+      ]
+    },
+    "round2": "pending"
   }
 }
