@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-09-10T13:14:48.827573Z",
+  "baseCommit": "81e99185e97e0a0cab95fe7c237d52c8e41fcffd",
+  "scope": "Audit all 23 policy articles and long-term article template; revise four articles with composition charts and process/assessment diagrams",
+  "articles": [
+    "reading-policy-costs",
+    "waste-and-carbon",
+    "reading-policy-results",
+    "policy-follow-through"
+  ],
+  "verification": {
+    "verify": "78 unit tests, 93 pages, 2526 links passed; final CSS build and final type/lint checks also passed",
+    "e2e": "236 passed after replacing obsolete all-articles-have-table assertion with explicit diagram contents for two changed articles; first run 234 passed and 2 failed",
+    "display": "4 figures x 3 widths x 2 themes; geometric proportions, no label overlap/page overflow, 200% text and no-JS keyboard tables passed",
+    "buildDiff": "Only four intended HTML outputs changed; all other existing outputs identical, none removed",
+    "dryRun": "passed, no bindings",
+    "preservedUserWork": "README.md and both docs/knowledge files byte-identical",
+    "sourceAndReviewCheck": "41 source snapshots, 17 manuscripts, 11 figures checked against separate reviewer hashes"
+  },
+  "independentReview": "other-articles-independent-review-2026-09-10.json",
+  "production": "pending",
+  "humanComprehension": "not performed"
+}

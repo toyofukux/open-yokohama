@@ -29,24 +29,11 @@
     },
     {
       "path": "data/editorial/figures/plastic-process.html",
-      "sha256": "8810c8e38b23e13dc048416ae73b5fe643f00a6a3127e1a8702aadfaeda7fe66"
+      "sha256": "6ba9ef51ebd3dd5fa0cf63f644d340b3f93e3d99ef15bc45a8ac654df9cb7987"
     },
     {
       "path": "data/editorial/figures/city-history.html",
       "sha256": "84f01a8f481d19386f2ffe7139f0406c5b5596f93e5215f4bbb7bc356aea5e4d"
-    },
-    {
-      "path": "data/editorial/figures/cost-funding.html",
-      "sha256": "da441e0c4b8fe87dfde18a89b3584288aa073de6611126d6ff486e509b94503f"
-    },
-    {
-      "path": "data/editorial/figures/policy-progress.html",
-      "sha256": "80aefcb433a3a878123fb4522156dbe14efa384cab036c17e77ccf441af4039b"
-    },
-    {
-      "path": "data/editorial/figures/results-levels.html",
-      "sha256": "d41c7ef976b06ec4e2d3c7700991101aa4743a426fffb1e188e102af5f812b85"
     }
-  ],
-  "updatedAt": "2026-09-10"
+  ]
 }

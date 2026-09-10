@@ -12,6 +12,11 @@
     "otherBuildOutputs": "All pre-existing outputs except childcare HTML byte-identical; one new CSS asset",
     "preservedUserWork": "README.md and docs/knowledge hashes unchanged"
   },
-  "production": "pending",
+  "production": {
+    "implementationCommit": "81e99185e97e0a0cab95fe7c237d52c8e41fcffd",
+    "workerVersion": "3ceb6fbc-7b9a-4c6d-a637-abd5801a1f95",
+    "url": "https://open.yokohama/issues/childcare-access/",
+    "e2e": "224 passed (41.9s)"
+  },
   "humanComprehension": "not performed"
 }

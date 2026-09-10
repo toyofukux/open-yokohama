@@ -1,6 +1,15 @@
 import { readFileSync } from 'node:fs';
 
 const figures = {
+  '/docs/content-review/expansion/policy-follow-through.md': {
+    'policy-progress': '../data/editorial/figures/policy-progress.html',
+  },
+  '/docs/content-review/expansion/reading-policy-results.md': {
+    'results-levels': '../data/editorial/figures/results-levels.html',
+  },
+  '/docs/content-review/expansion/reading-policy-costs.md': {
+    'cost-funding': '../data/editorial/figures/cost-funding.html',
+  },
   '/docs/content-review/mayoral-issues/city-governance.md': {
     'governance-process': '../data/editorial/figures/governance-process.html',
   },

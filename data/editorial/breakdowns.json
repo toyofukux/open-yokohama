@@ -1,0 +1,42 @@
+{
+  "cost-funding": {
+    "sourceId": "D3",
+    "sourceSha256": "54eaeae5f0c4e574a12c5650fb6c99cec9669f9eedbb94c8f9a87ac3fdb0c969",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0240_20260209.pdf#page=22",
+    "title": "体育館空調の2026年度予算",
+    "unit": "千円",
+    "total": 4915700,
+    "parts": [
+      {
+        "label": "国庫支出金",
+        "value": 2127000
+      },
+      {
+        "label": "市債",
+        "value": 2774000
+      },
+      {
+        "label": "一般財源",
+        "value": 14700
+      }
+    ]
+  },
+  "plastic-process": {
+    "sourceId": "W2",
+    "sourceSha256": "027b1e51f0db2961baef89c6d4e3d78d311b87d6518793e08f69d7b06077ea3a",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/bunbetsu/shigenbutsu/pla.html",
+    "title": "2025年度のプラスチック資源化量",
+    "unit": "トン",
+    "total": 50722,
+    "parts": [
+      {
+        "label": "材料リサイクル",
+        "value": 18652
+      },
+      {
+        "label": "ガス化",
+        "value": 32070
+      }
+    ]
+  }
+}

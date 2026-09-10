@@ -2,6 +2,9 @@ import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
 for (const slug of [
+  'reading-policy-costs',
+  'reading-policy-results',
+  'policy-follow-through',
   'school-shelters',
   'mayor-powers',
   'childcare-access',

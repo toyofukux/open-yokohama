@@ -1,0 +1,248 @@
+{
+  "version": 1,
+  "reviewer": "/root/childcare_review",
+  "role": "Independent Codex sub-agent; did not author the reviewed implementation or articles",
+  "reviewedAt": "2026-09-10T13:14:19.958Z",
+  "baseCommit": "81e99185e97e0a0cab95fe7c237d52c8e41fcffd",
+  "result": "no_blocking_findings_in_reviewed_scope",
+  "scope": "Independent source/content/code review of four revised articles and their figures; source D3 PDF22 image, W2 saved/current official table, W3 process and historical amount, existing F1/F2/D1/Q03-S1 cited passages and earlier N1 image review. Quantities/denominators, stages versus causal effects, funding versus lifetime/incremental costs, shared-route isolation, focused tests and local browser checks. No implementation edits.",
+  "reviewedFiles": [
+    {
+      "path": "docs/content-review/expansion/reading-policy-costs.md",
+      "sha256": "f68d2d8307c44837eba48f659057cb09ca032d12578710cf46cdaa7a98268fa6"
+    },
+    {
+      "path": "docs/content-review/expansion/waste-and-carbon.md",
+      "sha256": "74133c6d4472fe80f6c19573cf6b6090508f72939a968ce2e4712c54844a2662"
+    },
+    {
+      "path": "docs/content-review/expansion/reading-policy-results.md",
+      "sha256": "0983c49ce1e717212be7cca98bbd7758023230c755df260c88f6a157f970bf32"
+    },
+    {
+      "path": "docs/content-review/expansion/policy-follow-through.md",
+      "sha256": "c005718e51aaa7067cd7b7d723c8eb0c72fa7477460f5c9224b005e704d6b082"
+    },
+    {
+      "path": "data/editorial/figures/cost-funding.html",
+      "sha256": "da441e0c4b8fe87dfde18a89b3584288aa073de6611126d6ff486e509b94503f"
+    },
+    {
+      "path": "data/editorial/figures/plastic-process.html",
+      "sha256": "8810c8e38b23e13dc048416ae73b5fe643f00a6a3127e1a8702aadfaeda7fe66"
+    },
+    {
+      "path": "data/editorial/figures/results-levels.html",
+      "sha256": "d41c7ef976b06ec4e2d3c7700991101aa4743a426fffb1e188e102af5f812b85"
+    },
+    {
+      "path": "data/editorial/figures/policy-progress.html",
+      "sha256": "80aefcb433a3a878123fb4522156dbe14efa384cab036c17e77ccf441af4039b"
+    },
+    {
+      "path": "data/editorial/breakdowns.json",
+      "sha256": "4e4d50adb75f3524c2398a769319b475ba510de88d1e0a051dc0b574df107ccd"
+    },
+    {
+      "path": "packages/core/policy-breakdowns.ts",
+      "sha256": "ab15c71a86aa0f775b3bfb9180e3f23f0f438854794dc023cdfb2b8b5619c360"
+    },
+    {
+      "path": "scripts/build-policy-breakdowns.ts",
+      "sha256": "15591719e0696a8649dd2cd6c2aa43b454a144dad63bb07c515efac102be86a9"
+    },
+    {
+      "path": "apps/web/src/styles/policy-visuals.css",
+      "sha256": "ac88329f7b2ac9c6cd94774c8a5e7c047d7f68cfe48daa4df08579afafb41820"
+    },
+    {
+      "path": "apps/web/src/pages/issues/reading-policy-costs.astro",
+      "sha256": "f5d96ae80cca934c4535c8144528d30c3d8edc18e8f0aac205c7607cfaccc7c0"
+    },
+    {
+      "path": "apps/web/src/pages/issues/waste-and-carbon.astro",
+      "sha256": "a1c5f7b5a0b306aac2d20c2c7eb8d7ffe9955aa6267ac6b1f4a1ecd61f72931f"
+    },
+    {
+      "path": "apps/web/src/pages/issues/reading-policy-results.astro",
+      "sha256": "781cad41d45075d7e983fec7bfa3f6d5f9b874bb657eab0ebce5be4d712894e4"
+    },
+    {
+      "path": "apps/web/src/pages/issues/policy-follow-through.astro",
+      "sha256": "b26f93b60012ae6a41a42c7d292c826738f7ba647be6463585112b11472dc0af"
+    },
+    {
+      "path": "scripts/policy-evidence.mjs",
+      "sha256": "16cd9e823d7805626510da956fecabcda0195561fa968c0522dae23dbe476018"
+    },
+    {
+      "path": "scripts/validate-editorial.ts",
+      "sha256": "17c309480d719b7cd15239d65452c7e8d038ebdd7b5d89a724975ab676c1d027"
+    },
+    {
+      "path": "tests/policy-breakdowns.test.ts",
+      "sha256": "1684daa5c47c665c7ac6bc969653aa67c72530164e84d2a59e830b93d9294371"
+    },
+    {
+      "path": "tests/e2e/editorial-expansion.spec.ts",
+      "sha256": "fec2a0a7e5deb315e9cc0dcd90c80628d1231d6a1fa18f77514372e43d7905fa"
+    },
+    {
+      "path": "tests/e2e/mayoral-issues.spec.ts",
+      "sha256": "fd1f9ec5783d8ef6aaa089dc017f202f49d7ae8476cca51b39609ff8bb9dffe5"
+    },
+    {
+      "path": "docs/content-review/visualisation/ARTICLE-AUDIT.md",
+      "sha256": "6e8bf6f70672a7f2ac4cda8d9e04a2e671f5e74cd613ca0aac36ab255b86e49f"
+    },
+    {
+      "path": "data/editorial/figures/expansion-manifest.json",
+      "sha256": "9b6568a829cd47aab81c45b1b830d7e5c6eca145d4b9db84a3ce43f03ad85ffa"
+    },
+    {
+      "path": "docs/content-review/expansion/sources.json",
+      "sha256": "aa0751c2b446e48a86c65f3ee074fd8aced027765f308db74a680e6dfe0596f9"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a8a519d83fc40de1965f8fd80150c6bb6516990392bab7aa6c337f735c1f8b74"
+    }
+  ],
+  "publicationContentHashes": [
+    {
+      "id": "policy-follow-through",
+      "contentHash": "e85148573168e3e94ea03431212bdfb99cb47faf3efd4be61183c60dad22e0a6",
+      "recordedHash": "e85148573168e3e94ea03431212bdfb99cb47faf3efd4be61183c60dad22e0a6"
+    },
+    {
+      "id": "reading-policy-costs",
+      "contentHash": "81084f9b1344fbd304d99800f275351494b423e2341164d7d33a91b2e963ba92",
+      "recordedHash": "81084f9b1344fbd304d99800f275351494b423e2341164d7d33a91b2e963ba92"
+    },
+    {
+      "id": "reading-policy-results",
+      "contentHash": "88a67649ef254e018a3ed3fca364db1bf97d86e31bacdef0430b6e41f1350c39",
+      "recordedHash": "88a67649ef254e018a3ed3fca364db1bf97d86e31bacdef0430b6e41f1350c39"
+    },
+    {
+      "id": "waste-and-carbon",
+      "contentHash": "74c6a0ae223aa0f22457f4d8eea416fe95a3aa09c8915a521590df9b2248f99d",
+      "recordedHash": "74c6a0ae223aa0f22457f4d8eea416fe95a3aa09c8915a521590df9b2248f99d"
+    }
+  ],
+  "findings": [],
+  "sourceReview": [
+    {
+      "id": "D3",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0240_20260209.pdf",
+      "sha256": "54eaeae5f0c4e574a12c5650fb6c99cec9669f9eedbb94c8f9a87ac3fdb0c969",
+      "localBytesMatchInventory": true,
+      "scope": "PDF22 image and text: 2026 budget, sources and123 starts target; official PDF reopened"
+    },
+    {
+      "id": "W2",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/bunbetsu/shigenbutsu/pla.html",
+      "sha256": "027b1e51f0db2961baef89c6d4e3d78d311b87d6518793e08f69d7b06077ea3a",
+      "localBytesMatchInventory": true,
+      "scope": "Saved HTML and current official page2026-06-05 update:2025 material18652/gasification32070 tonnes;2026 unfilled"
+    },
+    {
+      "id": "W3",
+      "url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/koho/insatsubutsu/koyoko/shiban/kohoyokohamaplus/2025/202503.html",
+      "sha256": "8a577099d58025dbfe09a07d3de5d07d36a522be00ceb7b1a1d1fb338a1b9481",
+      "localBytesMatchInventory": true,
+      "scope": "Saved text:2023 combustible waste plastics about140000 tonnes; selection/compression/recycling process"
+    },
+    {
+      "id": "W1",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/gomi-recycle/gomi/puragomi-2024.html",
+      "sha256": "cac0f5eeb28d0ed22482f99ebe67459e8287e610d8537cf140d0a5a6d5ff74ba",
+      "localBytesMatchInventory": true,
+      "scope": "Saved official text lines337-341: all18 wards fromApril2025, some wards fromOctober2024; plastic-only product inclusion and stated goal. Item-specific sorting rules not independently re-audited."
+    },
+    {
+      "id": "F1",
+      "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/onestopzaisei.html",
+      "sha256": "ce93dd91ded1bb44ea9e6608cbadbc21088de8411c5004eeccd1c908ab6db874",
+      "localBytesMatchInventory": true,
+      "scope": "Saved text:2026 general budget2兆933億円 and meaning"
+    },
+    {
+      "id": "F2",
+      "url": "https://www.city.yokohama.lg.jp/city-info/zaisei/jokyo/yosan/r8/r8yosan.files/R8yosan-siryou.pdf",
+      "sha256": "1f8e0356067dfb611acad49b8b5202bc1a2435bc0b427dc485e3b3114fe40449",
+      "localBytesMatchInventory": true,
+      "scope": "Saved PDF34 text:fund/year allocation/land sale are main items, not complete decomposition"
+    },
+    {
+      "id": "D1",
+      "url": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf",
+      "sha256": "9300c910bcca2e6b9dee56a0196eef82a357610d895b71ab498085ca1c6b276a",
+      "localBytesMatchInventory": true,
+      "scope": "Saved PDF52 text:design219 and construction123 in stated plan, not completed facilities"
+    },
+    {
+      "id": "Q03-S1",
+      "url": "https://www.city.yokohama.lg.jp/shikai/shikumi/shigoto/shikumi12.html",
+      "sha256": "b06f23f8fb0be9dc8620b577190803dcc3c6243a4df2a0647ea411e103923ff4",
+      "localBytesMatchInventory": true,
+      "scope": "Saved official explanatory text:proposal/deliberation/resolution/execution roles"
+    },
+    {
+      "id": "N1",
+      "url": "https://www.city.yokohama.lg.jp/kosodate-kyoiku/hoiku-yoji/shisetsu/shisetsutaisaku/taiki/taikijidoutaisaku.files/0049_20260512.pdf",
+      "sha256": "9596a87c57264c10dd98e443d98dd502f3c85767a37202238e7a5022de247d1a",
+      "localBytesMatchInventory": true,
+      "scope": "Earlier independent PDF1-2 image review in same session:held2532, extension desired1276, applicants73834 and users71302"
+    }
+  ],
+  "checks": [
+    {
+      "name": "Data and quantities",
+      "result": "D3 total4915700=2127000+2774000+14700 thousand yen;43.3/56.4/0.3%. W2 total50722=18652+32070 tonnes;36.8/63.2%. No comparison with140000tonnes or conversion to GHG savings."
+    },
+    {
+      "name": "Meaning of qualitative figures",
+      "result": "3 descriptive levels keep causal counterfactual comparison separate.5 progress stages distinguish2 checked plan/budget from3 unverified execution/result stages; unknown is not failed.123 is starts target, not completions."
+    },
+    {
+      "name": "Focused commands",
+      "commands": [
+        "pnpm exec tsx --test tests/policy-breakdowns.test.ts",
+        "pnpm exec tsx scripts/build-policy-breakdowns.ts --check"
+      ],
+      "result": "2 focused unit tests pass; generated figures/source-pinned data consistency passes."
+    },
+    {
+      "name": "Local browser",
+      "url": "http://127.0.0.1:8788",
+      "result": "All4 figures visually inspected at320px in both themes; chart-scoped axe WCAG2A/AA/2.1AA violations0; no page horizontal overflow;2 native data tables opened via Enter. All4 figures visible without JS. Final CSS checked:effect panel screenshot inspected; segment widths within0.009px of raw-value proportions and smallest0.734375px segment has no inset separator.",
+      "limits": "Full8-image/axe/keyboard pass preceded final CSS-only small-segment separator and effect-panel spacing adjustment; final affected geometry and effect-panel display checked afterward. One geometry attempt timed out during author rebuild; successful retry after rebuild produced stated measurements."
+    },
+    {
+      "name": "Shared route behavior",
+      "result": "Only3 route mapping entries added; transform logic unchanged. Existing plastic entry reused. Built-output comparison against author-captured before-build manifest independently recalculated; changed existing files are exactly4 affected article HTML files, no removed existing files.",
+      "baseline": "artifacts/article-visuals-2026-09-10/before-build.json",
+      "baselineSha256": "9b4544d5fc2fbccb7d0f5a61d6e07c3e5b9a47fa268e5c54844a0ec04d3b9270",
+      "changed": [
+        "issues/policy-follow-through/index.html",
+        "issues/reading-policy-costs/index.html",
+        "issues/reading-policy-results/index.html",
+        "issues/waste-and-carbon/index.html"
+      ]
+    },
+    {
+      "name": "E2E expectation correction",
+      "result": "Reviewed mayoral-issues noJS change: only2 intentionally replaced tables switch to actual3-level/counterfactual and5-stage/status assertions. Other articles retain table visibility checks; navigation/source checks retained. This is aligned to intended content replacement, not deletion or hiding of behavior checks."
+    }
+  ],
+  "notPerformed": [
+    "Production deployment or production verification",
+    "Human reader comprehension/usability study",
+    "Human publication approval",
+    "Independent execution of full pnpm verify/full E2E suite",
+    "Fresh source revalidation of18 other articles",
+    "District-level classification or map input review"
+  ],
+  "authorization": "Independent review record only; does not replace user publication delegation or claim human comprehension validation."
+}

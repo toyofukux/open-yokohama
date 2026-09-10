@@ -646,7 +646,7 @@
         }
       ],
       "article": {
-        "contentHash": "b8f13b7aa6eae7cbede116c5b3e0e165d03a27942c1415624b258fdcc6186191",
+        "contentHash": "10ed6506bb14302e9d3aa5ea532c037a30c0bc1769e4966e8e72208f29762ea2",
         "claims": [
           {
             "id": "city-governance-01",
@@ -705,9 +705,9 @@
         ]
       },
       "review": {
-        "contentHash": "b8f13b7aa6eae7cbede116c5b3e0e165d03a27942c1415624b258fdcc6186191",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "10ed6506bb14302e9d3aa5ea532c037a30c0bc1769e4966e8e72208f29762ea2",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "city-governance-01",
@@ -766,7 +766,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "b8f13b7aa6eae7cbede116c5b3e0e165d03a27942c1415624b258fdcc6186191",
+          "contentHash": "10ed6506bb14302e9d3aa5ea532c037a30c0bc1769e4966e8e72208f29762ea2",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -928,11 +928,6 @@
           "contentHash": "35126cb01c06fa1334238abf166ff27e85ac9e7238b73fca79a466cb915e254c",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "10ed6506bb14302e9d3aa5ea532c037a30c0bc1769e4966e8e72208f29762ea2",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ],
       "integrationReview": {
@@ -987,9 +982,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1038,7 +1033,7 @@
         }
       ],
       "article": {
-        "contentHash": "c7a96cb30fff42d716c682dc8c9fa79d6c5129848b477a8f770a9595b4f37cd0",
+        "contentHash": "4250e93ae3d8399d2f6fff7570dd098594e4d4816932373368416086d5793168",
         "claims": [
           {
             "id": "city-budget-01",
@@ -1097,9 +1092,9 @@
         ]
       },
       "review": {
-        "contentHash": "c7a96cb30fff42d716c682dc8c9fa79d6c5129848b477a8f770a9595b4f37cd0",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "4250e93ae3d8399d2f6fff7570dd098594e4d4816932373368416086d5793168",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "city-budget-01",
@@ -1158,7 +1153,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "c7a96cb30fff42d716c682dc8c9fa79d6c5129848b477a8f770a9595b4f37cd0",
+          "contentHash": "4250e93ae3d8399d2f6fff7570dd098594e4d4816932373368416086d5793168",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1319,11 +1314,6 @@
           "contentHash": "c90861b8349a5d14dbe1acc17100f00ceb33ce754710b8931937e26ddf4a7fda",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "4250e93ae3d8399d2f6fff7570dd098594e4d4816932373368416086d5793168",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ],
       "integrationReview": {
@@ -1378,9 +1368,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1451,7 +1441,7 @@
         }
       ],
       "article": {
-        "contentHash": "f0a939365ee6b320b52d6ac6421a028b5d7ff601483aa24fc06bdc278adcd773",
+        "contentHash": "fa7072e05ac064a4258c2637b97f05f1f6f30f8492fc1abdf87da3d5ecfc8808",
         "claims": [
           {
             "id": "green-expo-01",
@@ -1522,9 +1512,9 @@
         ]
       },
       "review": {
-        "contentHash": "f0a939365ee6b320b52d6ac6421a028b5d7ff601483aa24fc06bdc278adcd773",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "fa7072e05ac064a4258c2637b97f05f1f6f30f8492fc1abdf87da3d5ecfc8808",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "green-expo-01",
@@ -1595,7 +1585,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "f0a939365ee6b320b52d6ac6421a028b5d7ff601483aa24fc06bdc278adcd773",
+          "contentHash": "fa7072e05ac064a4258c2637b97f05f1f6f30f8492fc1abdf87da3d5ecfc8808",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -1756,11 +1746,6 @@
           "contentHash": "8150667720841efddf7568ce8ea90765306e4f7754080af8a885ed20f0cce069",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "fa7072e05ac064a4258c2637b97f05f1f6f30f8492fc1abdf87da3d5ecfc8808",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ],
       "integrationReview": {
@@ -1815,9 +1800,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -1887,7 +1872,7 @@
         }
       ],
       "article": {
-        "contentHash": "8319d9768bd4c975e2a5df002244a4fd48e0976c3e191595f9d2b23eaaaed2e1",
+        "contentHash": "048933e25d814e2ee7d9e68952c17bab03a50cbdb592b8ad6017fba278de7e6b",
         "claims": [
           {
             "id": "local-mobility-01",
@@ -1949,9 +1934,9 @@
         ]
       },
       "review": {
-        "contentHash": "8319d9768bd4c975e2a5df002244a4fd48e0976c3e191595f9d2b23eaaaed2e1",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "048933e25d814e2ee7d9e68952c17bab03a50cbdb592b8ad6017fba278de7e6b",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "local-mobility-01",
@@ -2013,7 +1998,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "8319d9768bd4c975e2a5df002244a4fd48e0976c3e191595f9d2b23eaaaed2e1",
+          "contentHash": "048933e25d814e2ee7d9e68952c17bab03a50cbdb592b8ad6017fba278de7e6b",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -2165,11 +2150,6 @@
           "contentHash": "dcfcb03213c5d34db4b46a561b425c4082bffe4a9fc92ca006e05ada9d2bd1d1",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "048933e25d814e2ee7d9e68952c17bab03a50cbdb592b8ad6017fba278de7e6b",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ],
       "integrationReview": {
@@ -2224,9 +2204,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -2322,7 +2302,7 @@
         }
       ],
       "article": {
-        "contentHash": "17b0ce350d73216efc0783f9eb2b7681c27052e41c9e2a69c744aae4b53b7b3a",
+        "contentHash": "650d8124a2913a2d363b9c375753a7d9cdf5d0b573676120cfb6af888dd817c0",
         "claims": [
           {
             "id": "childcare-access-01",
@@ -2383,9 +2363,9 @@
         ]
       },
       "review": {
-        "contentHash": "17b0ce350d73216efc0783f9eb2b7681c27052e41c9e2a69c744aae4b53b7b3a",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "650d8124a2913a2d363b9c375753a7d9cdf5d0b573676120cfb6af888dd817c0",
+        "reviewer": "Codex author source/implementation checks; independent /root/childcare_review verification recorded separately",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "childcare-access-01",
@@ -2446,7 +2426,7 @@
         ],
         "humanApproval": {
           "approver": "User: explicitly delegated childcare article revision and publication; not line-by-line review",
-          "contentHash": "17b0ce350d73216efc0783f9eb2b7681c27052e41c9e2a69c744aae4b53b7b3a",
+          "contentHash": "650d8124a2913a2d363b9c375753a7d9cdf5d0b573676120cfb6af888dd817c0",
           "approvedAt": "2026-09-10T12:53:19.011363Z"
         }
       },
@@ -2464,10 +2444,10 @@
         "publication": "published"
       },
       "deployment": {
-        "workerVersion": "3ceb6fbc-7b9a-4c6d-a637-abd5801a1f95",
-        "implementationCommit": "81e9918",
+        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
+        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
         "url": "https://open.yokohama/issues/childcare-access/",
-        "verifiedAt": "2026-09-10T13:11:56.543851Z",
+        "verifiedAt": "2026-09-09T04:37:56.275376Z",
         "productionE2E": "224 passed"
       },
       "visualReview": {
@@ -2612,11 +2592,6 @@
           "contentHash": "0d5985d139c90c2f847520e435ccdc4a4dc82b879a0b0d7b247d586eebc94c16",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Childcare charts and prose update"
-        },
-        {
-          "contentHash": "650d8124a2913a2d363b9c375753a7d9cdf5d0b573676120cfb6af888dd817c0",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ],
       "integrationReview": {
@@ -2671,9 +2646,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Childcare manuscript and two quantitative figures",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -2766,7 +2741,7 @@
         }
       ],
       "article": {
-        "contentHash": "598dc8d231ef48fedc0fdd278d00c4096975a098f56e8f7c57784e9bdb5ec772",
+        "contentHash": "47e5e44478fb46cd1d1d911425bc92e5e86b59677204cbc39a06597e52ae6315",
         "claims": [
           {
             "id": "school-shelters-01",
@@ -2833,9 +2808,9 @@
         ]
       },
       "review": {
-        "contentHash": "598dc8d231ef48fedc0fdd278d00c4096975a098f56e8f7c57784e9bdb5ec772",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "47e5e44478fb46cd1d1d911425bc92e5e86b59677204cbc39a06597e52ae6315",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "school-shelters-01",
@@ -2902,7 +2877,7 @@
         ],
         "humanApproval": {
           "approver": "User: delegated creation and publication of major Yokohama mayoral-election issues; not line-by-line content review",
-          "contentHash": "598dc8d231ef48fedc0fdd278d00c4096975a098f56e8f7c57784e9bdb5ec772",
+          "contentHash": "47e5e44478fb46cd1d1d911425bc92e5e86b59677204cbc39a06597e52ae6315",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -3053,11 +3028,6 @@
           "contentHash": "49f0567b80d1e21b32e85fe4d5c327ae83e0b401bed7441101cbab50fd2de880",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "47e5e44478fb46cd1d1d911425bc92e5e86b59677204cbc39a06597e52ae6315",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ],
       "integrationReview": {
@@ -3112,9 +3082,9 @@
         }
       ],
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       }
     },
@@ -3644,7 +3614,7 @@
         }
       ],
       "article": {
-        "contentHash": "376c1bfd3010cd36f99e3f598160020d0242f27f1ef7357d6efbadca9d52beb9",
+        "contentHash": "6303b156e5125b92c2a392a3d3cda259ab82161d4da49a96791a2a872b052a81",
         "claims": [
           {
             "id": "mayor-powers-01",
@@ -3698,9 +3668,9 @@
         ]
       },
       "review": {
-        "contentHash": "376c1bfd3010cd36f99e3f598160020d0242f27f1ef7357d6efbadca9d52beb9",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "6303b156e5125b92c2a392a3d3cda259ab82161d4da49a96791a2a872b052a81",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "mayor-powers-01",
@@ -3754,7 +3724,7 @@
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "376c1bfd3010cd36f99e3f598160020d0242f27f1ef7357d6efbadca9d52beb9",
+          "contentHash": "6303b156e5125b92c2a392a3d3cda259ab82161d4da49a96791a2a872b052a81",
           "approvedAt": "2026-09-06T17:57:54.390464Z"
         }
       },
@@ -3772,9 +3742,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -3813,11 +3783,6 @@
           "contentHash": "e73c12d4f0a40e5136536d879eca9b6870093ed877234ca5611cb7c9b7ce7e6a",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "6303b156e5125b92c2a392a3d3cda259ab82161d4da49a96791a2a872b052a81",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ],
       "deploymentHistory": [
@@ -3896,7 +3861,7 @@
         }
       ],
       "article": {
-        "contentHash": "4d322955c0215dac91df39e431830f89d406f52872d10e5320629c512b6df494",
+        "contentHash": "4aa685cf00fde28d78689fb49f868e2d612b63671eb1333cd0911872ffd36747",
         "claims": [
           {
             "id": "care-in-community-01",
@@ -3951,9 +3916,9 @@
         ]
       },
       "review": {
-        "contentHash": "4d322955c0215dac91df39e431830f89d406f52872d10e5320629c512b6df494",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "4aa685cf00fde28d78689fb49f868e2d612b63671eb1333cd0911872ffd36747",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "care-in-community-01",
@@ -4008,7 +3973,7 @@
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "4d322955c0215dac91df39e431830f89d406f52872d10e5320629c512b6df494",
+          "contentHash": "4aa685cf00fde28d78689fb49f868e2d612b63671eb1333cd0911872ffd36747",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -4026,9 +3991,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -4043,11 +4008,6 @@
           "contentHash": "dd2c1db51d626419e269a6e091eed5c08d8d41528213e33a857d857c1046b4b0",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "4aa685cf00fde28d78689fb49f868e2d612b63671eb1333cd0911872ffd36747",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ]
     },
@@ -4120,7 +4080,7 @@
         }
       ],
       "article": {
-        "contentHash": "8d67ae4f2911cb13623fe2e457b773fa4f7defa64291ff6fe56118c0abfe3cb1",
+        "contentHash": "39b231857873bf49a065c44c3ae810f8c481ad54e96145514a14f20a650f28a3",
         "claims": [
           {
             "id": "choosing-priorities-01",
@@ -4180,9 +4140,9 @@
         ]
       },
       "review": {
-        "contentHash": "8d67ae4f2911cb13623fe2e457b773fa4f7defa64291ff6fe56118c0abfe3cb1",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "39b231857873bf49a065c44c3ae810f8c481ad54e96145514a14f20a650f28a3",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "choosing-priorities-01",
@@ -4242,7 +4202,7 @@
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "8d67ae4f2911cb13623fe2e457b773fa4f7defa64291ff6fe56118c0abfe3cb1",
+          "contentHash": "39b231857873bf49a065c44c3ae810f8c481ad54e96145514a14f20a650f28a3",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -4260,9 +4220,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -4277,11 +4237,6 @@
           "contentHash": "dd40525b5ae727d0c7797c3aba604b14307b795d8b1cb1978ff8b92161fecc0f",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "39b231857873bf49a065c44c3ae810f8c481ad54e96145514a14f20a650f28a3",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ]
     },
@@ -4344,7 +4299,7 @@
         }
       ],
       "article": {
-        "contentHash": "562c4b40b65296cc03922df5103e5ec97f1e252289d178c43dafc2b9c8ad16aa",
+        "contentHash": "3a4bdbaa62db79c8cbc432ad35e90412cb75306bcf1ef7f9db124c7079e868e2",
         "claims": [
           {
             "id": "city-building-history-01",
@@ -4399,9 +4354,9 @@
         ]
       },
       "review": {
-        "contentHash": "562c4b40b65296cc03922df5103e5ec97f1e252289d178c43dafc2b9c8ad16aa",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "3a4bdbaa62db79c8cbc432ad35e90412cb75306bcf1ef7f9db124c7079e868e2",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "city-building-history-01",
@@ -4456,7 +4411,7 @@
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "562c4b40b65296cc03922df5103e5ec97f1e252289d178c43dafc2b9c8ad16aa",
+          "contentHash": "3a4bdbaa62db79c8cbc432ad35e90412cb75306bcf1ef7f9db124c7079e868e2",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -4474,9 +4429,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -4491,11 +4446,6 @@
           "contentHash": "02fc96110c3275562e0b16f0c215403d3876f918dfe1db9df0f3e943321d80d1",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "3a4bdbaa62db79c8cbc432ad35e90412cb75306bcf1ef7f9db124c7079e868e2",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ]
     },
@@ -4557,7 +4507,7 @@
         }
       ],
       "article": {
-        "contentHash": "4227fb1ddccba96820dbc63fa6f0065b46ee713893159d9456706e5831f33ce2",
+        "contentHash": "f760a6d52174d80c25477f73f57ac4389ddbd4c8f233576e38ab27e6ff383b5f",
         "claims": [
           {
             "id": "comparing-imperfect-choices-01",
@@ -4612,9 +4562,9 @@
         ]
       },
       "review": {
-        "contentHash": "4227fb1ddccba96820dbc63fa6f0065b46ee713893159d9456706e5831f33ce2",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "f760a6d52174d80c25477f73f57ac4389ddbd4c8f233576e38ab27e6ff383b5f",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "comparing-imperfect-choices-01",
@@ -4669,7 +4619,7 @@
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "4227fb1ddccba96820dbc63fa6f0065b46ee713893159d9456706e5831f33ce2",
+          "contentHash": "f760a6d52174d80c25477f73f57ac4389ddbd4c8f233576e38ab27e6ff383b5f",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -4687,9 +4637,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -4704,11 +4654,6 @@
           "contentHash": "c93750fedd83b497672c8c0bea34345caa54368d76f9a319d0068c2ea1e06548",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "f760a6d52174d80c25477f73f57ac4389ddbd4c8f233576e38ab27e6ff383b5f",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ]
     },
@@ -4758,7 +4703,7 @@
         }
       ],
       "article": {
-        "contentHash": "e968c752c7d777f5fd95f637f3f6365f896a246929bba1df70534d343c00767b",
+        "contentHash": "6fa13d7d3643d754e2d387ba32efde083fdd79b99a8c75ad89cd065bdbe496f6",
         "claims": [
           {
             "id": "disaster-priorities-01",
@@ -4808,9 +4753,9 @@
         ]
       },
       "review": {
-        "contentHash": "e968c752c7d777f5fd95f637f3f6365f896a246929bba1df70534d343c00767b",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "6fa13d7d3643d754e2d387ba32efde083fdd79b99a8c75ad89cd065bdbe496f6",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "disaster-priorities-01",
@@ -4860,7 +4805,7 @@
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "e968c752c7d777f5fd95f637f3f6365f896a246929bba1df70534d343c00767b",
+          "contentHash": "6fa13d7d3643d754e2d387ba32efde083fdd79b99a8c75ad89cd065bdbe496f6",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -4878,9 +4823,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -4895,11 +4840,6 @@
           "contentHash": "0d5178c51993e4d679f824af458e93655397f96ac8eeaa92f3b072c3a98792cb",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "6fa13d7d3643d754e2d387ba32efde083fdd79b99a8c75ad89cd065bdbe496f6",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ]
     },
@@ -4962,7 +4902,7 @@
         }
       ],
       "article": {
-        "contentHash": "f12d2d4f7d89978ac889d6e52b3307fc88cf6a7875741593078d63e22bc1b0e4",
+        "contentHash": "212dbb2824ce23e6713560f3921f90c940a7af89313d75295f6223975423a377",
         "claims": [
           {
             "id": "housing-access-01",
@@ -5017,9 +4957,9 @@
         ]
       },
       "review": {
-        "contentHash": "f12d2d4f7d89978ac889d6e52b3307fc88cf6a7875741593078d63e22bc1b0e4",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "212dbb2824ce23e6713560f3921f90c940a7af89313d75295f6223975423a377",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "housing-access-01",
@@ -5074,7 +5014,7 @@
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "f12d2d4f7d89978ac889d6e52b3307fc88cf6a7875741593078d63e22bc1b0e4",
+          "contentHash": "212dbb2824ce23e6713560f3921f90c940a7af89313d75295f6223975423a377",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -5092,9 +5032,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -5109,11 +5049,6 @@
           "contentHash": "18ea0f698256a294abca1714f62713a44511f273cabc27f89fa119637f81e4f5",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "212dbb2824ce23e6713560f3921f90c940a7af89313d75295f6223975423a377",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ]
     },
@@ -5163,7 +5098,7 @@
         }
       ],
       "article": {
-        "contentHash": "777dcc22e675e2265d54ccaef522395b409cca6c629ae0fa07171a6fdb02955e",
+        "contentHash": "d339441cf7a5aefdc2c5a16a4574afc11a99a2aa5dc36a6712cfdc1c7aa7fd72",
         "claims": [
           {
             "id": "how-to-vote-01",
@@ -5213,9 +5148,9 @@
         ]
       },
       "review": {
-        "contentHash": "777dcc22e675e2265d54ccaef522395b409cca6c629ae0fa07171a6fdb02955e",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "d339441cf7a5aefdc2c5a16a4574afc11a99a2aa5dc36a6712cfdc1c7aa7fd72",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "how-to-vote-01",
@@ -5265,7 +5200,7 @@
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "777dcc22e675e2265d54ccaef522395b409cca6c629ae0fa07171a6fdb02955e",
+          "contentHash": "d339441cf7a5aefdc2c5a16a4574afc11a99a2aa5dc36a6712cfdc1c7aa7fd72",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -5283,9 +5218,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -5300,11 +5235,6 @@
           "contentHash": "3ea98906a6ae96b866ca42084be29a62a8432eac01f5d16de24d765b8890b936",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "d339441cf7a5aefdc2c5a16a4574afc11a99a2aa5dc36a6712cfdc1c7aa7fd72",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ]
     },
@@ -5366,7 +5296,7 @@
         }
       ],
       "article": {
-        "contentHash": "793a39f909d1dd12ec05b38aef41dc31e00095a4d39ba437e783cb379c49b134",
+        "contentHash": "da90e27663fd817949f0b01f7c2392c981d4be6b316decc2d241b6e91b9817e2",
         "claims": [
           {
             "id": "learning-from-cities-01",
@@ -5421,9 +5351,9 @@
         ]
       },
       "review": {
-        "contentHash": "793a39f909d1dd12ec05b38aef41dc31e00095a4d39ba437e783cb379c49b134",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "da90e27663fd817949f0b01f7c2392c981d4be6b316decc2d241b6e91b9817e2",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "learning-from-cities-01",
@@ -5478,7 +5408,7 @@
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "793a39f909d1dd12ec05b38aef41dc31e00095a4d39ba437e783cb379c49b134",
+          "contentHash": "da90e27663fd817949f0b01f7c2392c981d4be6b316decc2d241b6e91b9817e2",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -5496,9 +5426,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -5513,11 +5443,6 @@
           "contentHash": "3ab962b3a96cf33344a279fef1488a0f1513ce1a192c749972aa5379de023174",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "da90e27663fd817949f0b01f7c2392c981d4be6b316decc2d241b6e91b9817e2",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ]
     },
@@ -5538,9 +5463,7 @@
         "packages/core/policy-issues.ts",
         "docs/content-review/expansion/sources.json",
         "docs/content-review/expansion/check.py",
-        "data/editorial/figures/expansion-manifest.json",
-        "apps/web/src/styles/policy-visuals.css",
-        "data/editorial/figures/policy-progress.html"
+        "data/editorial/figures/expansion-manifest.json"
       ],
       "sources": [
         {
@@ -5580,7 +5503,7 @@
         }
       ],
       "article": {
-        "contentHash": "e85148573168e3e94ea03431212bdfb99cb47faf3efd4be61183c60dad22e0a6",
+        "contentHash": "a08c06ef3569462c19acb756e3a4146b31f3ae7c2a8ccc3487dc065d31c4459c",
         "claims": [
           {
             "id": "policy-follow-through-01",
@@ -5605,7 +5528,7 @@
           {
             "id": "policy-follow-through-03",
             "kind": "analysis",
-            "text": "## 予算から利用開始まで、別の資料をつなぐ\n\n<!-- evidence:policy-progress -->\n\n市長の提案は、市会の審議・議決などを経て実行に移る。予算に記載がある段階で、その後の契約や運転開始まで済んだとは扱わない。[^3]\n\n逆に、年度途中に完成報告が見つからないだけで、計画が失敗したとも判断できない。何の資料を、どの時点まで確認したかを残す必要がある。",
+            "text": "## 予算から利用開始まで、別の資料をつなぐ\n\n| 段階 | 確認する内容 | 空調整備での例 |\n| --- | --- | --- |\n| 方針・計画 | 対象、期限、目標 | どの施設に、いつまでに設置する計画か |\n| 予算 | 年度、範囲、財源 | 設置費はいくらで、維持費はどこに含むか |\n| 契約・工事 | 対象と工程、変更 | どの学校で契約・着工し、延期や変更があるか |\n| 利用開始 | 実際に使える状態 | 完成後、授業や地域利用で運転できるか |\n| 結果 | 困りごとの改善 | 暑さで使えない時間や利用上の制約がどう変わったか |\n\n市長の提案は、市会の審議・議決などを経て実行に移る。予算に記載がある段階で、その後の契約や運転開始まで済んだとは扱わない。[^3]\n\n逆に、年度途中に完成報告が見つからないだけで、計画が失敗したとも判断できない。何の資料を、どの時点まで確認したかを残す必要がある。",
             "citations": [
               "D1",
               "D3",
@@ -5615,7 +5538,7 @@
           {
             "id": "policy-follow-through-04",
             "kind": "analysis",
-            "text": "## 今の資料から言えること、まだ言えないこと\n\n2026年度の教育予算概要と事業計画書から、整備の計画や予算を確認できる。設置着手123件は年度の目標であり、この記事では学校別の契約・完成・稼働実績までは照合できていない。[^1][^2]\n\n数値の単位が件か校か、設計か工事かも、資料ごとに確かめたい。\n\nまた、使えるようになった場合も、避難所としての停電時運用や維持費は別の確認事項になる。設備の完成だけで、あらゆる条件で使えることを示したとは限らない。",
+            "text": "## 今の資料から言えること、まだ言えないこと\n\n2026年度の教育予算概要と事業計画書から、整備の計画や予算を確認できる。設置着手123件は年度の目標であり、この記事では学校別の契約・完成・稼働実績までは照合できていない。[^1][^2]\n\nしたがって、現時点の記録は「計画・予算を確認。個別工程と結果は未確認」となる。「123件を達成」「未達」といった判定は付けない。数値の単位が件か校か、設計か工事かも、資料ごとに確かめたい。\n\nまた、使えるようになった場合も、避難所としての停電時運用や維持費は別の確認事項になる。設備の完成だけで、あらゆる条件で使えることを示したとは限らない。",
             "citations": [
               "D1",
               "D3",
@@ -5625,7 +5548,7 @@
           {
             "id": "policy-follow-through-05",
             "kind": "analysis",
-            "text": "## 変更の理由と、その後の対応も点検する\n\n計画が変わったときは、当初との違いに加え、理由、影響を受ける人、代替の対応、次の期限を確認する。資材や人員、契約などの条件が変わる場合と、政策の優先順位を変える場合では、問うべき説明が異なる。\n\n自分で追うなら、「約束・確認日・原資料・現在の段階・未確認の項目」を残しておく方法がある。達成か未達かだけを急がず、予算から生活上の結果まで、同じ問いで追える記録にする。\n\n[^1]: [横浜市・令和8年度教育委員会事業計画書](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0240_20260209.pdf)、冊子21ページ（PDF22ページ）。体育館空調49億1,570万円、設置着手123件の目標。完成や稼働の実績ではない。\n[^2]: [横浜市・令和8年度教育予算概要](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf)、学校施設整備の項。設計・工事等の異なる工程の数値を一括して完成校数にしない。全学校の工程・決算・利用効果まで追跡した監査ではない。\n[^3]: [横浜市会・市会と市長](https://www.city.yokohama.lg.jp/shikai/shikumi/shigoto/shikumi12.html)。市長の予算等の提案と、市会の議決の役割。図は資料を読む順序の整理であり、すべての事業に同一の手続きを断定するものではない。",
+            "text": "## 変更の理由と、その後の対応も点検する\n\n計画が変わったときは、当初との違いに加え、理由、影響を受ける人、代替の対応、次の期限を確認する。資材や人員、契約などの条件が変わる場合と、政策の優先順位を変える場合では、問うべき説明が異なる。\n\n自分で追うなら、「約束・確認日・原資料・現在の段階・未確認の項目」を残しておく方法がある。達成か未達かだけを急がず、予算から生活上の結果まで、同じ問いで追える記録にする。\n\n[^1]: [横浜市・令和8年度教育委員会事業計画書](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/jigyoukeikaku/r8jigyoukeikaku.files/0240_20260209.pdf)、冊子21ページ（PDF22ページ）。体育館空調49億1,570万円、設置着手123件の目標。完成や稼働の実績ではない。\n[^2]: [横浜市・令和8年度教育予算概要](https://www.city.yokohama.lg.jp/city-info/yokohamashi/org/kyoiku/yosan/r8yosangaiyou.files/0009_20260507.pdf)、学校施設整備の項。設計・工事等の異なる工程の数値を一括して完成校数にしない。全学校の工程・決算・利用効果まで追跡した監査ではない。\n[^3]: [横浜市会・市会と市長](https://www.city.yokohama.lg.jp/shikai/shikumi/shigoto/shikumi12.html)。市長の予算等の提案と、市会の議決の役割。表は資料を読む順序の整理であり、すべての事業に同一の手続きを断定するものではない。",
             "citations": [
               "D1",
               "D3",
@@ -5635,9 +5558,9 @@
         ]
       },
       "review": {
-        "contentHash": "e85148573168e3e94ea03431212bdfb99cb47faf3efd4be61183c60dad22e0a6",
-        "reviewer": "Codex author: article visualisation revision; independent scope recorded separately",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "a08c06ef3569462c19acb756e3a4146b31f3ae7c2a8ccc3487dc065d31c4459c",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "policy-follow-through-01",
@@ -5647,7 +5570,7 @@
               "D3",
               "Q03-S1"
             ],
-            "rationale": "D3 budget4915700 thousand and123starts annual target; D1 plans not completion. Q03-S1 proposal/approval. Tracking example not candidate fulfillment verdict; school contracts/completion/operation unverified. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "D3 budget4915700 thousand and123starts annual target; D1 plans not completion. Q03-S1 proposal/approval. Tracking example not candidate fulfillment verdict; school contracts/completion/operation unverified. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "policy-follow-through-02",
@@ -5657,7 +5580,7 @@
               "D3",
               "Q03-S1"
             ],
-            "rationale": "D3 budget4915700 thousand and123starts annual target; D1 plans not completion. Q03-S1 proposal/approval. Tracking example not candidate fulfillment verdict; school contracts/completion/operation unverified. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "D3 budget4915700 thousand and123starts annual target; D1 plans not completion. Q03-S1 proposal/approval. Tracking example not candidate fulfillment verdict; school contracts/completion/operation unverified. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "policy-follow-through-03",
@@ -5667,7 +5590,7 @@
               "D3",
               "Q03-S1"
             ],
-            "rationale": "D3 budget4915700 thousand and123starts annual target; D1 plans not completion. Q03-S1 proposal/approval. Tracking example not candidate fulfillment verdict; school contracts/completion/operation unverified. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "D3 budget4915700 thousand and123starts annual target; D1 plans not completion. Q03-S1 proposal/approval. Tracking example not candidate fulfillment verdict; school contracts/completion/operation unverified. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "policy-follow-through-04",
@@ -5677,7 +5600,7 @@
               "D3",
               "Q03-S1"
             ],
-            "rationale": "D3 budget4915700 thousand and123starts annual target; D1 plans not completion. Q03-S1 proposal/approval. Tracking example not candidate fulfillment verdict; school contracts/completion/operation unverified. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "D3 budget4915700 thousand and123starts annual target; D1 plans not completion. Q03-S1 proposal/approval. Tracking example not candidate fulfillment verdict; school contracts/completion/operation unverified. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "policy-follow-through-05",
@@ -5687,12 +5610,12 @@
               "D3",
               "Q03-S1"
             ],
-            "rationale": "D3 budget4915700 thousand and123starts annual target; D1 plans not completion. Q03-S1 proposal/approval. Tracking example not candidate fulfillment verdict; school contracts/completion/operation unverified. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "D3 budget4915700 thousand and123starts annual target; D1 plans not completion. Q03-S1 proposal/approval. Tracking example not candidate fulfillment verdict; school contracts/completion/operation unverified. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           }
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "e85148573168e3e94ea03431212bdfb99cb47faf3efd4be61183c60dad22e0a6",
+          "contentHash": "a08c06ef3569462c19acb756e3a4146b31f3ae7c2a8ccc3487dc065d31c4459c",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -5703,16 +5626,16 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish all planned lifestyle and foundational articles under continuing user delegation. Unsupported candidate/net-cost comparisons remain prepared.",
         "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "currentChangeInstruction": "終わったら他の記事もお願い（保育記事に続き、図表の採否整理・本文修正・反映を委任）"
+        "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_production",
-        "publication": "pending_revision_publication"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -5727,11 +5650,6 @@
           "contentHash": "339e7e6724fb0538feb0915e5dc04f69d6207645ff9acac3652e09acceb4e971",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "a08c06ef3569462c19acb756e3a4146b31f3ae7c2a8ccc3487dc065d31c4459c",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Article visualisation revision"
         }
       ]
     },
@@ -5794,7 +5712,7 @@
         }
       ],
       "article": {
-        "contentHash": "c85438bc01a916485c26fc1eec8a4942620f92b615cc44288c8601157606352f",
+        "contentHash": "d4c6744fc451a92a2b501d085978d41cc4d3f8d336615ed306e8613e86ba0def",
         "claims": [
           {
             "id": "population-facilities-01",
@@ -5859,9 +5777,9 @@
         ]
       },
       "review": {
-        "contentHash": "c85438bc01a916485c26fc1eec8a4942620f92b615cc44288c8601157606352f",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "d4c6744fc451a92a2b501d085978d41cc4d3f8d336615ed306e8613e86ba0def",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "population-facilities-01",
@@ -5926,7 +5844,7 @@
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "c85438bc01a916485c26fc1eec8a4942620f92b615cc44288c8601157606352f",
+          "contentHash": "d4c6744fc451a92a2b501d085978d41cc4d3f8d336615ed306e8613e86ba0def",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -5944,9 +5862,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -5961,11 +5879,6 @@
           "contentHash": "52e55bbe9e71d968b72a1deefa9a570fc3d587e84544d7ac35d15c8512ef9e99",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "d4c6744fc451a92a2b501d085978d41cc4d3f8d336615ed306e8613e86ba0def",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ]
     },
@@ -6039,7 +5952,7 @@
         }
       ],
       "article": {
-        "contentHash": "1440256862e9a425b4266b99d8ecd906b5718bb9c9bd4368111dc7da45293f16",
+        "contentHash": "65d5a5c1d42002ac4030c240ee14817fbd12e3b662f3756efeda1ddb0e7a024c",
         "claims": [
           {
             "id": "public-space-01",
@@ -6099,9 +6012,9 @@
         ]
       },
       "review": {
-        "contentHash": "1440256862e9a425b4266b99d8ecd906b5718bb9c9bd4368111dc7da45293f16",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "65d5a5c1d42002ac4030c240ee14817fbd12e3b662f3756efeda1ddb0e7a024c",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "public-space-01",
@@ -6161,7 +6074,7 @@
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "1440256862e9a425b4266b99d8ecd906b5718bb9c9bd4368111dc7da45293f16",
+          "contentHash": "65d5a5c1d42002ac4030c240ee14817fbd12e3b662f3756efeda1ddb0e7a024c",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -6179,9 +6092,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -6196,11 +6109,6 @@
           "contentHash": "867eed5c0a5f3e766681115e5d6c6b957a28b705fa6ef4c940e05e47d44a19ca",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "65d5a5c1d42002ac4030c240ee14817fbd12e3b662f3756efeda1ddb0e7a024c",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ]
     },
@@ -6221,13 +6129,7 @@
         "packages/core/policy-issues.ts",
         "docs/content-review/expansion/sources.json",
         "docs/content-review/expansion/check.py",
-        "data/editorial/figures/expansion-manifest.json",
-        "apps/web/src/styles/policy-visuals.css",
-        "data/editorial/figures/cost-funding.html",
-        "data/editorial/breakdowns.json",
-        "packages/core/policy-breakdowns.ts",
-        "scripts/build-policy-breakdowns.ts",
-        "scripts/validate-editorial.ts"
+        "data/editorial/figures/expansion-manifest.json"
       ],
       "sources": [
         {
@@ -6267,7 +6169,7 @@
         }
       ],
       "article": {
-        "contentHash": "81084f9b1344fbd304d99800f275351494b423e2341164d7d33a91b2e963ba92",
+        "contentHash": "72f88bb0f9a41747d06fe4b98e5b213ddda8e623e31c0973c51eb3c9098a31e0",
         "claims": [
           {
             "id": "reading-policy-costs-01",
@@ -6292,7 +6194,7 @@
           {
             "id": "reading-policy-costs-03",
             "kind": "analysis",
-            "text": "## 総額と、その年の一般財源は違う\n\nこの事業の財源は、国費・借入金・一般財源の組合せだ。[^1]\n\n<!-- evidence:cost-funding -->\n\n借入金の返済は将来の財政にも関わる。国の補助には対象や条件があるため、総額すべてを、その年度にほかの支援へ自由に回せる市税とも扱えない。\n\n市全体の財政を見るときも同様だ。2026年度の一般会計は2兆933億円だが、既存の行政サービスや義務的な支出などを含む予算である。新しい公約に使える余剰資金の額ではない。[^2]",
+            "text": "## 総額と、その年の一般財源は違う\n\nこの事業計画の財源は、国庫支出金21億2,700万円、市債27億7,400万円、一般財源1,470万円で、合計が49億1,570万円になる。[^1]\n\n一般財源だけを見て「市の負担は1,470万円で済む」と読むことはできない。市債には返済があり、将来の市の財政にも関係する。一方、総額すべてを、その年度に他の支援へ自由に回せる市税とも扱えない。国の補助などには対象や条件がある。\n\n市全体の財政を見るときも同様だ。2026年度の一般会計は2兆933億円だが、既存の行政サービスや義務的な支出などを含む予算である。新しい公約に使える余剰資金の額ではない。[^2]",
             "citations": [
               "D3",
               "F1",
@@ -6322,9 +6224,9 @@
         ]
       },
       "review": {
-        "contentHash": "81084f9b1344fbd304d99800f275351494b423e2341164d7d33a91b2e963ba92",
-        "reviewer": "Codex author: article visualisation revision; independent scope recorded separately",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "72f88bb0f9a41747d06fe4b98e5b213ddda8e623e31c0973c51eb3c9098a31e0",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "reading-policy-costs-01",
@@ -6334,7 +6236,7 @@
               "F1",
               "F2"
             ],
-            "rationale": "D3 PDF22 budget4915700=2127000+2774000+14700 thousand; annual versus lifecycle/net city cost. F1 general20933oku not discretionary. F2 PDF34 nonrecurring funding and nonexhaustive main items. General comparison framework with explicit uncomputed net costs. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "D3 PDF22 budget4915700=2127000+2774000+14700 thousand; annual versus lifecycle/net city cost. F1 general20933oku not discretionary. F2 PDF34 nonrecurring funding and nonexhaustive main items. General comparison framework with explicit uncomputed net costs. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "reading-policy-costs-02",
@@ -6344,7 +6246,7 @@
               "F1",
               "F2"
             ],
-            "rationale": "D3 PDF22 budget4915700=2127000+2774000+14700 thousand; annual versus lifecycle/net city cost. F1 general20933oku not discretionary. F2 PDF34 nonrecurring funding and nonexhaustive main items. General comparison framework with explicit uncomputed net costs. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "D3 PDF22 budget4915700=2127000+2774000+14700 thousand; annual versus lifecycle/net city cost. F1 general20933oku not discretionary. F2 PDF34 nonrecurring funding and nonexhaustive main items. General comparison framework with explicit uncomputed net costs. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "reading-policy-costs-03",
@@ -6354,7 +6256,7 @@
               "F1",
               "F2"
             ],
-            "rationale": "D3 PDF22 budget4915700=2127000+2774000+14700 thousand; annual versus lifecycle/net city cost. F1 general20933oku not discretionary. F2 PDF34 nonrecurring funding and nonexhaustive main items. General comparison framework with explicit uncomputed net costs. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "D3 PDF22 budget4915700=2127000+2774000+14700 thousand; annual versus lifecycle/net city cost. F1 general20933oku not discretionary. F2 PDF34 nonrecurring funding and nonexhaustive main items. General comparison framework with explicit uncomputed net costs. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "reading-policy-costs-04",
@@ -6364,7 +6266,7 @@
               "F1",
               "F2"
             ],
-            "rationale": "D3 PDF22 budget4915700=2127000+2774000+14700 thousand; annual versus lifecycle/net city cost. F1 general20933oku not discretionary. F2 PDF34 nonrecurring funding and nonexhaustive main items. General comparison framework with explicit uncomputed net costs. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "D3 PDF22 budget4915700=2127000+2774000+14700 thousand; annual versus lifecycle/net city cost. F1 general20933oku not discretionary. F2 PDF34 nonrecurring funding and nonexhaustive main items. General comparison framework with explicit uncomputed net costs. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "reading-policy-costs-05",
@@ -6374,12 +6276,12 @@
               "F1",
               "F2"
             ],
-            "rationale": "D3 PDF22 budget4915700=2127000+2774000+14700 thousand; annual versus lifecycle/net city cost. F1 general20933oku not discretionary. F2 PDF34 nonrecurring funding and nonexhaustive main items. General comparison framework with explicit uncomputed net costs. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "D3 PDF22 budget4915700=2127000+2774000+14700 thousand; annual versus lifecycle/net city cost. F1 general20933oku not discretionary. F2 PDF34 nonrecurring funding and nonexhaustive main items. General comparison framework with explicit uncomputed net costs. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           }
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "81084f9b1344fbd304d99800f275351494b423e2341164d7d33a91b2e963ba92",
+          "contentHash": "72f88bb0f9a41747d06fe4b98e5b213ddda8e623e31c0973c51eb3c9098a31e0",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -6390,16 +6292,16 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish all planned lifestyle and foundational articles under continuing user delegation. Unsupported candidate/net-cost comparisons remain prepared.",
         "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "currentChangeInstruction": "終わったら他の記事もお願い（保育記事に続き、図表の採否整理・本文修正・反映を委任）"
+        "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_production",
-        "publication": "pending_revision_publication"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -6414,11 +6316,6 @@
           "contentHash": "78cabe8ad15aa2a0da7c3f3a7c1dfe253e7b6b7e62323373bff1bfd13af0a826",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "72f88bb0f9a41747d06fe4b98e5b213ddda8e623e31c0973c51eb3c9098a31e0",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Article visualisation revision"
         }
       ]
     },
@@ -6439,9 +6336,7 @@
         "packages/core/policy-issues.ts",
         "docs/content-review/expansion/sources.json",
         "docs/content-review/expansion/check.py",
-        "data/editorial/figures/expansion-manifest.json",
-        "apps/web/src/styles/policy-visuals.css",
-        "data/editorial/figures/results-levels.html"
+        "data/editorial/figures/expansion-manifest.json"
       ],
       "sources": [
         {
@@ -6481,7 +6376,7 @@
         }
       ],
       "article": {
-        "contentHash": "88a67649ef254e018a3ed3fca364db1bf97d86e31bacdef0430b6e41f1350c39",
+        "contentHash": "cd1abc37284308b38312bdbdaf09e514fb6b48fbe50ed24a31bffb50ff936ef5",
         "claims": [
           {
             "id": "reading-policy-results-01",
@@ -6506,7 +6401,7 @@
           {
             "id": "reading-policy-results-03",
             "kind": "analysis",
-            "text": "## 目標、着手、利用開始を分ける\n\n体育館の空調について、2026年度の教育委員会事業計画書は「設置着手件数123件」を目標としている。これは123件の設置が完了し、その時点ですべて使えるという実績報告ではない。[^2]\n\n<!-- evidence:results-levels -->\n\n空調なら、工事の進捗に加え、暑い日の活動がどの程度できるようになったかなどを確かめる視点がある。ただし、気温や学校ごとの利用条件も関係するため、導入前後の変化をすべて設備の効果と断定しない。",
+            "text": "## 目標、着手、利用開始を分ける\n\n体育館の空調について、2026年度の教育委員会事業計画書は「設置着手件数123件」を目標としている。これは123件の設置が完了し、その時点ですべて使えるという実績報告ではない。[^2]\n\n| 段階 | 確かめたいこと | その数字だけでは言えないこと |\n| --- | --- | --- |\n| 目標・予算 | 何を、いつまでに、どれだけ行う予定か | 実行されたこと |\n| 実施量 | 工事、支援、利用などがどこまで進んだか | 困りごとが減ったこと |\n| 生活上の結果 | 利用可能な時間や負担、困難がどう変わったか | 変化のすべてが政策によること |\n| 政策の効果 | 政策がなかった場合と比べ、何が変わったか | 他地域・将来にも同じ結果が出ること |\n\n空調なら、工事の進捗に加え、暑い日の活動がどの程度できるようになったかなどを確かめる視点がある。ただし、気温や学校ごとの利用条件も関係するため、導入前後の変化をすべて設備の効果と断定しない。",
             "citations": [
               "N1",
               "D3",
@@ -6536,9 +6431,9 @@
         ]
       },
       "review": {
-        "contentHash": "88a67649ef254e018a3ed3fca364db1bf97d86e31bacdef0430b6e41f1350c39",
-        "reviewer": "Codex author: article visualisation revision; independent scope recorded separately",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "cd1abc37284308b38312bdbdaf09e514fb6b48fbe50ed24a31bffb50ff936ef5",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "reading-policy-results-01",
@@ -6548,7 +6443,7 @@
               "D3",
               "W2"
             ],
-            "rationale": "N1 PDF1-2 waitlist0 vs held2532 including leave extension and FY2026 definition change. D3 123starts target not completed. W2 resource50722t not CO2. Editorial framework separates outputs/outcomes/causal effect. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "N1 PDF1-2 waitlist0 vs held2532 including leave extension and FY2026 definition change. D3 123starts target not completed. W2 resource50722t not CO2. Editorial framework separates outputs/outcomes/causal effect. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "reading-policy-results-02",
@@ -6558,7 +6453,7 @@
               "D3",
               "W2"
             ],
-            "rationale": "N1 PDF1-2 waitlist0 vs held2532 including leave extension and FY2026 definition change. D3 123starts target not completed. W2 resource50722t not CO2. Editorial framework separates outputs/outcomes/causal effect. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "N1 PDF1-2 waitlist0 vs held2532 including leave extension and FY2026 definition change. D3 123starts target not completed. W2 resource50722t not CO2. Editorial framework separates outputs/outcomes/causal effect. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "reading-policy-results-03",
@@ -6568,7 +6463,7 @@
               "D3",
               "W2"
             ],
-            "rationale": "N1 PDF1-2 waitlist0 vs held2532 including leave extension and FY2026 definition change. D3 123starts target not completed. W2 resource50722t not CO2. Editorial framework separates outputs/outcomes/causal effect. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "N1 PDF1-2 waitlist0 vs held2532 including leave extension and FY2026 definition change. D3 123starts target not completed. W2 resource50722t not CO2. Editorial framework separates outputs/outcomes/causal effect. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "reading-policy-results-04",
@@ -6578,7 +6473,7 @@
               "D3",
               "W2"
             ],
-            "rationale": "N1 PDF1-2 waitlist0 vs held2532 including leave extension and FY2026 definition change. D3 123starts target not completed. W2 resource50722t not CO2. Editorial framework separates outputs/outcomes/causal effect. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "N1 PDF1-2 waitlist0 vs held2532 including leave extension and FY2026 definition change. D3 123starts target not completed. W2 resource50722t not CO2. Editorial framework separates outputs/outcomes/causal effect. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "reading-policy-results-05",
@@ -6588,12 +6483,12 @@
               "D3",
               "W2"
             ],
-            "rationale": "N1 PDF1-2 waitlist0 vs held2532 including leave extension and FY2026 definition change. D3 123starts target not completed. W2 resource50722t not CO2. Editorial framework separates outputs/outcomes/causal effect. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "N1 PDF1-2 waitlist0 vs held2532 including leave extension and FY2026 definition change. D3 123starts target not completed. W2 resource50722t not CO2. Editorial framework separates outputs/outcomes/causal effect. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           }
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "88a67649ef254e018a3ed3fca364db1bf97d86e31bacdef0430b6e41f1350c39",
+          "contentHash": "cd1abc37284308b38312bdbdaf09e514fb6b48fbe50ed24a31bffb50ff936ef5",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -6604,16 +6499,16 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish all planned lifestyle and foundational articles under continuing user delegation. Unsupported candidate/net-cost comparisons remain prepared.",
         "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "currentChangeInstruction": "終わったら他の記事もお願い（保育記事に続き、図表の採否整理・本文修正・反映を委任）"
+        "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_production",
-        "publication": "pending_revision_publication"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -6628,11 +6523,6 @@
           "contentHash": "fffea36f1dad355ebf26cefc205559b0815ce9169615fc138833e21a0a7b2fe0",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "cd1abc37284308b38312bdbdaf09e514fb6b48fbe50ed24a31bffb50ff936ef5",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Article visualisation revision"
         }
       ]
     },
@@ -6654,12 +6544,7 @@
         "docs/content-review/expansion/sources.json",
         "docs/content-review/expansion/check.py",
         "data/editorial/figures/expansion-manifest.json",
-        "data/editorial/figures/plastic-process.html",
-        "apps/web/src/styles/policy-visuals.css",
-        "data/editorial/breakdowns.json",
-        "packages/core/policy-breakdowns.ts",
-        "scripts/build-policy-breakdowns.ts",
-        "scripts/validate-editorial.ts"
+        "data/editorial/figures/plastic-process.html"
       ],
       "sources": [
         {
@@ -6700,7 +6585,7 @@
         }
       ],
       "article": {
-        "contentHash": "74c6a0ae223aa0f22457f4d8eea416fe95a3aa09c8915a521590df9b2248f99d",
+        "contentHash": "9bb505274377ebc52ca0fe340a21f38f406f3d3814cadad91d67167eb1ec3f74",
         "claims": [
           {
             "id": "waste-and-carbon-01",
@@ -6725,7 +6610,7 @@
           {
             "id": "waste-and-carbon-03",
             "kind": "analysis",
-            "text": "## 回収した後は、何に使われるのか\n\n回収したプラスチックは、選別などを経て、材料や化学原料等として利用される。図はその工程と、市が公表した2025年度の資源化量を示す。[^1][^3]\n\n<!-- evidence:plastic-process -->\n\n2025年度からは容器包装と製品を混合で回収し、再商品化を一括して委託している。対象の変わった前後の年を比べるときには、資源化量が増えたことだけで、分別変更による追加効果と決めないようにしたい。[^3]",
+            "text": "## 回収した後は、何に使われるのか\n\n市は、回収した資源から異物を取り除き、圧縮・梱包してリサイクル施設へ送る流れを紹介している。プラスチック製品等の材料として利用する方法と、化学原料等へ変える方法がある。[^1]\n\n市の公表する2025年度の資源化量は、材料リサイクルが**18,652トン**、ガス化が**32,070トン**で、合計**50,722トン**となる。これは市の表の2区分を合計した量で、温室効果ガスを同量削減したという意味ではない。[^3]\n\n<!-- evidence:plastic-process -->\n\n2025年度からは容器包装と製品を混合で回収し、再商品化を一括して委託している。対象の変わった前後の年を比べるときには、資源化量が増えたことだけで、分別変更による追加効果と決めないようにしたい。[^3]",
             "citations": [
               "W1",
               "W2",
@@ -6755,9 +6640,9 @@
         ]
       },
       "review": {
-        "contentHash": "74c6a0ae223aa0f22457f4d8eea416fe95a3aa09c8915a521590df9b2248f99d",
-        "reviewer": "Codex author: article visualisation revision; independent scope recorded separately",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "9bb505274377ebc52ca0fe340a21f38f406f3d3814cadad91d67167eb1ec3f74",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "waste-and-carbon-01",
@@ -6767,7 +6652,7 @@
               "W2",
               "W3"
             ],
-            "rationale": "W1/W3 2023 burnable plastic about140000t, Oct2024partial -> Apr2025all18. W2 FY2025 material18652+gasification32070=50722t resource outputs, not carbon savings;2026 quantities unavailable. Alternatives not proven winner. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "W1/W3 2023 burnable plastic about140000t, Oct2024partial -> Apr2025all18. W2 FY2025 material18652+gasification32070=50722t resource outputs, not carbon savings;2026 quantities unavailable. Alternatives not proven winner. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "waste-and-carbon-02",
@@ -6777,7 +6662,7 @@
               "W2",
               "W3"
             ],
-            "rationale": "W1/W3 2023 burnable plastic about140000t, Oct2024partial -> Apr2025all18. W2 FY2025 material18652+gasification32070=50722t resource outputs, not carbon savings;2026 quantities unavailable. Alternatives not proven winner. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "W1/W3 2023 burnable plastic about140000t, Oct2024partial -> Apr2025all18. W2 FY2025 material18652+gasification32070=50722t resource outputs, not carbon savings;2026 quantities unavailable. Alternatives not proven winner. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "waste-and-carbon-03",
@@ -6787,7 +6672,7 @@
               "W2",
               "W3"
             ],
-            "rationale": "W1/W3 2023 burnable plastic about140000t, Oct2024partial -> Apr2025all18. W2 FY2025 material18652+gasification32070=50722t resource outputs, not carbon savings;2026 quantities unavailable. Alternatives not proven winner. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "W1/W3 2023 burnable plastic about140000t, Oct2024partial -> Apr2025all18. W2 FY2025 material18652+gasification32070=50722t resource outputs, not carbon savings;2026 quantities unavailable. Alternatives not proven winner. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "waste-and-carbon-04",
@@ -6797,7 +6682,7 @@
               "W2",
               "W3"
             ],
-            "rationale": "W1/W3 2023 burnable plastic about140000t, Oct2024partial -> Apr2025all18. W2 FY2025 material18652+gasification32070=50722t resource outputs, not carbon savings;2026 quantities unavailable. Alternatives not proven winner. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "W1/W3 2023 burnable plastic about140000t, Oct2024partial -> Apr2025all18. W2 FY2025 material18652+gasification32070=50722t resource outputs, not carbon savings;2026 quantities unavailable. Alternatives not proven winner. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           },
           {
             "claimId": "waste-and-carbon-05",
@@ -6807,12 +6692,12 @@
               "W2",
               "W3"
             ],
-            "rationale": "W1/W3 2023 burnable plastic about140000t, Oct2024partial -> Apr2025all18. W2 FY2025 material18652+gasification32070=50722t resource outputs, not carbon savings;2026 quantities unavailable. Alternatives not proven winner. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately. Revision author check: existing quantities and definitions retained; figure replaces repeated prose/table. D3 original PDF22 and W2 R7 original HTML checked; no additional costs, carbon savings or causal effectiveness inferred."
+            "rationale": "W1/W3 2023 burnable plastic about140000t, Oct2024partial -> Apr2025all18. W2 FY2025 material18652+gasification32070=50722t resource outputs, not carbon savings;2026 quantities unavailable. Alternatives not proven winner. Section reviewed as factual paraphrase and/or explicitly conditional editorial analysis; no causal/personal eligibility claim. Author review; independent manuscript/figure scope recorded separately."
           }
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "74c6a0ae223aa0f22457f4d8eea416fe95a3aa09c8915a521590df9b2248f99d",
+          "contentHash": "9bb505274377ebc52ca0fe340a21f38f406f3d3814cadad91d67167eb1ec3f74",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -6823,16 +6708,16 @@
         "instruction": "本番に出してよいです。これ、明日までに横浜市挑戦の主要論点についても作成して出しておいてほしい。",
         "scope": "Create and publish all planned lifestyle and foundational articles under continuing user delegation. Unsupported candidate/net-cost comparisons remain prepared.",
         "recordedAt": "2026-09-08T23:25:03.788495Z",
-        "currentChangeInstruction": "終わったら他の記事もお願い（保育記事に続き、図表の採否整理・本文修正・反映を委任）"
+        "currentChangeInstruction": "一旦型ができたので、今想定されている記事を作ってしまいたい！ Continuing prior publication delegation; not human line-by-line approval."
       },
       "states": {
-        "implementation": "implemented_pending_production",
-        "publication": "pending_revision_publication"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -6847,11 +6732,6 @@
           "contentHash": "5146c89227077bd3ee5797156c80426e29eba66d1d4447050ca99a88f3a31f64",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "9bb505274377ebc52ca0fe340a21f38f406f3d3814cadad91d67167eb1ec3f74",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Article visualisation revision"
         }
       ]
     },
@@ -6913,7 +6793,7 @@
         }
       ],
       "article": {
-        "contentHash": "44c1e9d7042036294f23c21010232482371d0fc1d86f1b390af34434b2f89938",
+        "contentHash": "bd55066dc2eb18a858991be2f07ea8b50867970ce0d43eea5ea95e483453c773",
         "claims": [
           {
             "id": "work-and-business-01",
@@ -6968,9 +6848,9 @@
         ]
       },
       "review": {
-        "contentHash": "44c1e9d7042036294f23c21010232482371d0fc1d86f1b390af34434b2f89938",
-        "reviewer": "Codex author: shared route mapping/figure manifest/validator revision; article output unchanged",
-        "reviewedAt": "2026-09-10T13:11:56.543851Z",
+        "contentHash": "bd55066dc2eb18a858991be2f07ea8b50867970ce0d43eea5ea95e483453c773",
+        "reviewer": "Codex author: route-local childcare figure additions in shared mapping; existing manuscript/figures unchanged",
+        "reviewedAt": "2026-09-10T12:53:19.011363Z",
         "findings": [
           {
             "claimId": "work-and-business-01",
@@ -7025,7 +6905,7 @@
         ],
         "humanApproval": {
           "approver": "User delegated article creation/publication; not line-by-line content approval",
-          "contentHash": "44c1e9d7042036294f23c21010232482371d0fc1d86f1b390af34434b2f89938",
+          "contentHash": "bd55066dc2eb18a858991be2f07ea8b50867970ce0d43eea5ea95e483453c773",
           "approvedAt": "2026-09-09T04:27:11.841044Z"
         }
       },
@@ -7043,9 +6923,9 @@
         "publication": "published"
       },
       "revisionReview": {
-        "scope": "Four article figures and associated prose; other article outputs unchanged",
-        "recordedAt": "2026-09-10T13:11:56.543851Z",
-        "independentReview": "Completed by /root/childcare_review; exact hashes and scope: docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+        "scope": "Shared figure mapping adds only two childcare insertion keys; existing route content unchanged",
+        "recordedAt": "2026-09-10T12:53:19.011363Z",
+        "independentReview": "Completed by /root/childcare_review; exact file hashes and scope: docs/content-review/visualisation/childcare-independent-review-2026-09-10.json",
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
@@ -7060,11 +6940,6 @@
           "contentHash": "ca098d0921e50abd7d9ad76710d6657759ccf1a30a9c6e3c8da50bcd12312fb3",
           "archivePath": "docs/content-review/mayoral-issues/archive/2026-09-10-charts/publication.json",
           "reason": "Shared policy-evidence route map adds childcare figures; other routes unchanged"
-        },
-        {
-          "contentHash": "bd55066dc2eb18a858991be2f07ea8b50867970ce0d43eea5ea95e483453c773",
-          "archivePath": "docs/content-review/visualisation/archive/2026-09-10-other-articles/publication.json",
-          "reason": "Shared mapping/manifest/validator; original article output preserved"
         }
       ]
     }

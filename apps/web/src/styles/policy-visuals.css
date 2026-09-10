@@ -1,0 +1,123 @@
+.policy-visual {
+  --visual-blue: #206095;
+  --visual-orange: #a34b00;
+  --visual-gray: #657580;
+}
+[data-theme="yokohama-night"] .policy-visual {
+  --visual-blue: #78b9e8;
+  --visual-orange: #f0b070;
+  --visual-gray: #9cabb5;
+}
+.breakdown-color-0 {
+  background: var(--visual-blue);
+}
+.breakdown-color-1 {
+  background: var(--visual-orange);
+}
+.breakdown-color-2 {
+  background: var(--visual-gray);
+}
+.policy-prose .breakdown-total {
+  margin: 20px 0 12px;
+}
+.breakdown-total strong {
+  font-size: 1.25em;
+}
+.breakdown-bar {
+  display: flex;
+  height: 44px;
+  width: 100%;
+}
+.breakdown-segment {
+  display: block;
+  flex-shrink: 0;
+}
+.breakdown-segment:not(:last-child) {
+  box-shadow: inset -1px 0 var(--surface);
+}
+.breakdown-scale {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-size: 0.8em;
+}
+.policy-prose .breakdown-legend,
+.policy-prose .visual-steps {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.policy-prose .breakdown-legend li {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+.breakdown-legend strong,
+.breakdown-legend li div > span {
+  display: block;
+}
+.breakdown-swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+.policy-prose .visual-note {
+  font-size: 0.9em;
+  line-height: 1.7;
+  margin: 16px 0;
+}
+.visual-data summary {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.visual-steps {
+  counter-reset: visual-step;
+}
+.policy-prose .visual-steps li {
+  counter-increment: visual-step;
+  position: relative;
+  padding: 12px 12px 12px 48px;
+  margin: 0 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  line-height: 1.6;
+}
+.visual-steps li::before {
+  content: counter(visual-step);
+  position: absolute;
+  left: 14px;
+  font-weight: 700;
+  color: var(--visual-blue);
+}
+.visual-steps strong,
+.visual-steps li > span {
+  display: block;
+}
+.visual-steps li > span {
+  font-size: 0.9em;
+}
+.visual-status {
+  font-size: 0.8em;
+  font-weight: 400;
+  display: block;
+}
+.visual-separate {
+  border: 2px dashed var(--visual-gray);
+  padding: 16px;
+  font-size: 0.9em;
+  line-height: 1.7;
+}
+.visual-separate strong {
+  display: block;
+  margin-bottom: 6px;
+}
+@media (min-width: 700px) {
+  .visual-steps-compact {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}

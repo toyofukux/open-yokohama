@@ -295,5 +295,141 @@
       "human understanding",
       "individual registration"
     ]
+  },
+  {
+    "batch": "article-visuals-2026-09-10",
+    "reviewer": "/root/childcare_review",
+    "reviewedAt": "2026-09-10T13:14:19.958Z",
+    "result": "No unresolved major or medium findings within independently reviewed scope",
+    "files": [
+      {
+        "path": "docs/content-review/expansion/reading-policy-costs.md",
+        "sha256": "f68d2d8307c44837eba48f659057cb09ca032d12578710cf46cdaa7a98268fa6"
+      },
+      {
+        "path": "docs/content-review/expansion/waste-and-carbon.md",
+        "sha256": "74133c6d4472fe80f6c19573cf6b6090508f72939a968ce2e4712c54844a2662"
+      },
+      {
+        "path": "docs/content-review/expansion/reading-policy-results.md",
+        "sha256": "0983c49ce1e717212be7cca98bbd7758023230c755df260c88f6a157f970bf32"
+      },
+      {
+        "path": "docs/content-review/expansion/policy-follow-through.md",
+        "sha256": "c005718e51aaa7067cd7b7d723c8eb0c72fa7477460f5c9224b005e704d6b082"
+      },
+      {
+        "path": "data/editorial/figures/cost-funding.html",
+        "sha256": "da441e0c4b8fe87dfde18a89b3584288aa073de6611126d6ff486e509b94503f"
+      },
+      {
+        "path": "data/editorial/figures/plastic-process.html",
+        "sha256": "8810c8e38b23e13dc048416ae73b5fe643f00a6a3127e1a8702aadfaeda7fe66"
+      },
+      {
+        "path": "data/editorial/figures/results-levels.html",
+        "sha256": "d41c7ef976b06ec4e2d3c7700991101aa4743a426fffb1e188e102af5f812b85"
+      },
+      {
+        "path": "data/editorial/figures/policy-progress.html",
+        "sha256": "80aefcb433a3a878123fb4522156dbe14efa384cab036c17e77ccf441af4039b"
+      },
+      {
+        "path": "data/editorial/breakdowns.json",
+        "sha256": "4e4d50adb75f3524c2398a769319b475ba510de88d1e0a051dc0b574df107ccd"
+      },
+      {
+        "path": "packages/core/policy-breakdowns.ts",
+        "sha256": "ab15c71a86aa0f775b3bfb9180e3f23f0f438854794dc023cdfb2b8b5619c360"
+      },
+      {
+        "path": "scripts/build-policy-breakdowns.ts",
+        "sha256": "15591719e0696a8649dd2cd6c2aa43b454a144dad63bb07c515efac102be86a9"
+      },
+      {
+        "path": "apps/web/src/styles/policy-visuals.css",
+        "sha256": "ac88329f7b2ac9c6cd94774c8a5e7c047d7f68cfe48daa4df08579afafb41820"
+      },
+      {
+        "path": "apps/web/src/pages/issues/reading-policy-costs.astro",
+        "sha256": "f5d96ae80cca934c4535c8144528d30c3d8edc18e8f0aac205c7607cfaccc7c0"
+      },
+      {
+        "path": "apps/web/src/pages/issues/waste-and-carbon.astro",
+        "sha256": "a1c5f7b5a0b306aac2d20c2c7eb8d7ffe9955aa6267ac6b1f4a1ecd61f72931f"
+      },
+      {
+        "path": "apps/web/src/pages/issues/reading-policy-results.astro",
+        "sha256": "781cad41d45075d7e983fec7bfa3f6d5f9b874bb657eab0ebce5be4d712894e4"
+      },
+      {
+        "path": "apps/web/src/pages/issues/policy-follow-through.astro",
+        "sha256": "b26f93b60012ae6a41a42c7d292c826738f7ba647be6463585112b11472dc0af"
+      },
+      {
+        "path": "scripts/policy-evidence.mjs",
+        "sha256": "16cd9e823d7805626510da956fecabcda0195561fa968c0522dae23dbe476018"
+      },
+      {
+        "path": "scripts/validate-editorial.ts",
+        "sha256": "17c309480d719b7cd15239d65452c7e8d038ebdd7b5d89a724975ab676c1d027"
+      },
+      {
+        "path": "tests/policy-breakdowns.test.ts",
+        "sha256": "1684daa5c47c665c7ac6bc969653aa67c72530164e84d2a59e830b93d9294371"
+      },
+      {
+        "path": "tests/e2e/editorial-expansion.spec.ts",
+        "sha256": "fec2a0a7e5deb315e9cc0dcd90c80628d1231d6a1fa18f77514372e43d7905fa"
+      },
+      {
+        "path": "tests/e2e/mayoral-issues.spec.ts",
+        "sha256": "fd1f9ec5783d8ef6aaa089dc017f202f49d7ae8476cca51b39609ff8bb9dffe5"
+      },
+      {
+        "path": "docs/content-review/visualisation/ARTICLE-AUDIT.md",
+        "sha256": "6e8bf6f70672a7f2ac4cda8d9e04a2e671f5e74cd613ca0aac36ab255b86e49f"
+      },
+      {
+        "path": "data/editorial/figures/expansion-manifest.json",
+        "sha256": "9b6568a829cd47aab81c45b1b830d7e5c6eca145d4b9db84a3ce43f03ad85ffa"
+      },
+      {
+        "path": "docs/content-review/expansion/sources.json",
+        "sha256": "aa0751c2b446e48a86c65f3ee074fd8aced027765f308db74a680e6dfe0596f9"
+      },
+      {
+        "path": "package.json",
+        "sha256": "a8a519d83fc40de1965f8fd80150c6bb6516990392bab7aa6c337f735c1f8b74"
+      }
+    ],
+    "scope": "Independent source/content/code review of four revised articles and their figures; source D3 PDF22 image, W2 saved/current official table, W3 process and historical amount, existing F1/F2/D1/Q03-S1 cited passages and earlier N1 image review. Quantities/denominators, stages versus causal effects, funding versus lifetime/incremental costs, shared-route isolation, focused tests and local browser checks. No implementation edits.",
+    "recordPath": "docs/content-review/visualisation/other-articles-independent-review-2026-09-10.json",
+    "publicationContentHashes": [
+      {
+        "id": "policy-follow-through",
+        "contentHash": "e85148573168e3e94ea03431212bdfb99cb47faf3efd4be61183c60dad22e0a6"
+      },
+      {
+        "id": "reading-policy-costs",
+        "contentHash": "81084f9b1344fbd304d99800f275351494b423e2341164d7d33a91b2e963ba92"
+      },
+      {
+        "id": "reading-policy-results",
+        "contentHash": "88a67649ef254e018a3ed3fca364db1bf97d86e31bacdef0430b6e41f1350c39"
+      },
+      {
+        "id": "waste-and-carbon",
+        "contentHash": "74c6a0ae223aa0f22457f4d8eea416fe95a3aa09c8915a521590df9b2248f99d"
+      }
+    ],
+    "notPerformed": [
+      "Production deployment or production verification",
+      "Human reader comprehension/usability study",
+      "Human publication approval",
+      "Independent execution of full pnpm verify/full E2E suite",
+      "Fresh source revalidation of18 other articles",
+      "District-level classification or map input review"
+    ]
   }
 ]

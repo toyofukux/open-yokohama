@@ -130,7 +130,21 @@ test('facts, comparison and source navigation remain usable without JavaScript',
   for (const issue of [...mayoralIssues, ...foundationIssues, ...expansionIssues]) {
     await page.goto(`${base}${issue.url}`);
     await expect(page.getByRole('heading', { level: 1 })).toHaveText(issue.title);
-    await expect(page.locator('.policy-prose > table').first()).toBeVisible();
+    if (issue.slug === 'reading-policy-results') {
+      const figure = page.locator('#results-levels');
+      await expect(figure).toBeVisible();
+      await expect(figure.locator('ol > li')).toHaveCount(3);
+      await expect(figure.locator('.visual-separate')).toContainText('政策がなかった場合と比べ');
+    } else if (issue.slug === 'policy-follow-through') {
+      const figure = page.locator('#policy-progress');
+      await expect(figure).toBeVisible();
+      await expect(figure.locator('ol > li')).toHaveCount(5);
+      await expect(figure.locator('.visual-status').filter({ hasText: '確認済み' })).toHaveCount(2);
+      await expect(figure.locator('.visual-status').filter({ hasText: '未確認' })).toHaveCount(3);
+      await expect(figure).toContainText('「未確認」は未実施や失敗の判定ではない');
+    } else {
+      await expect(page.locator('.policy-prose > table').first()).toBeVisible();
+    }
     await page.locator('.policy-toc summary').focus();
     await page.keyboard.press('Enter');
     await expect(page.getByRole('navigation', { name: 'この記事の目次' })).toBeVisible();

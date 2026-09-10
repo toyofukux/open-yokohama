@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-09T04:27:11.812131+00:00",
+  "checkedAt": "2026-09-10T13:15:05.231355+00:00",
   "sourceSnapshots": 41,
   "manuscripts": [
     {
@@ -44,7 +44,7 @@
     },
     {
       "path": "docs/content-review/expansion/policy-follow-through.md",
-      "sha256": "9bf54190d5ddf3fa50978dfc90abe7b09d46de2b1d07a8b0d928bae3b34417fc",
+      "sha256": "c005718e51aaa7067cd7b7d723c8eb0c72fa7477460f5c9224b005e704d6b082",
       "publication": "eligible_pending_implementation_checks"
     },
     {
@@ -69,17 +69,17 @@
     },
     {
       "path": "docs/content-review/expansion/reading-policy-costs.md",
-      "sha256": "c2a0374c28017edfe05a26b8ce2bcb2166366a149890a5c7a57dee42bf8a9d31",
+      "sha256": "f68d2d8307c44837eba48f659057cb09ca032d12578710cf46cdaa7a98268fa6",
       "publication": "eligible_pending_implementation_checks"
     },
     {
       "path": "docs/content-review/expansion/reading-policy-results.md",
-      "sha256": "b901c928f0e880ad1c74f3544c1f5baed377bcb43803c1466b7b850586d7fea7",
+      "sha256": "0983c49ce1e717212be7cca98bbd7758023230c755df260c88f6a157f970bf32",
       "publication": "eligible_pending_implementation_checks"
     },
     {
       "path": "docs/content-review/expansion/waste-and-carbon.md",
-      "sha256": "0a835c97cf62fc9c5021933129d37e947e64c64ad116006aa088c6b8233cb98a",
+      "sha256": "74133c6d4472fe80f6c19573cf6b6090508f72939a968ce2e4712c54844a2662",
       "publication": "eligible_pending_implementation_checks"
     },
     {
@@ -88,7 +88,7 @@
       "publication": "eligible_pending_implementation_checks"
     }
   ],
-  "figures": 8,
+  "figures": 11,
   "calculations": {
     "gymThousands": [
       4915700,

@@ -1,4 +1,5 @@
 ---
+import "../../styles/policy-visuals.css";
 import PolicyArticle from "../../components/PolicyArticle.astro";
 import {
   Content,
@@ -27,7 +28,7 @@ const sources = inventory.filter((s) => frontmatter.sourceIds.includes(s.id));
   category={frontmatter.category}
   headings={getHeadings()}
   version={version}
-  revisedOn="2026年9月9日"
+  revisedOn="2026年9月10日"
   reviewedIndependently={true}
   sources={sources}><Content /></PolicyArticle
 >

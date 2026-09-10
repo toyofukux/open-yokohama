@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { renderChildcareCharts } from '../packages/core/childcare-charts';
+import { renderPolicyBreakdowns } from '../packages/core/policy-breakdowns';
 import { allPolicyIssues } from '../packages/core/policy-issues';
 import { assertPublishable } from '../packages/core/review';
 
@@ -10,6 +11,16 @@ const childcareCharts = renderChildcareCharts(
   JSON.parse(readFileSync('data/childcare/charts.json', 'utf8')),
 );
 for (const [id, html] of Object.entries(childcareCharts)) {
+  assert.equal(
+    readFileSync(`data/editorial/figures/${id}.html`, 'utf8'),
+    html,
+    `Stale chart: ${id}`,
+  );
+}
+
+for (const [id, html] of Object.entries(
+  renderPolicyBreakdowns(JSON.parse(readFileSync('data/editorial/breakdowns.json', 'utf8'))),
+)) {
   assert.equal(
     readFileSync(`data/editorial/figures/${id}.html`, 'utf8'),
     html,
