@@ -5706,8 +5706,8 @@
         "currentChangeInstruction": "終わったら他の記事もお願い（保育記事に続き、図表の採否整理・本文修正・反映を委任）"
       },
       "states": {
-        "implementation": "implemented_pending_production",
-        "publication": "pending_revision_publication"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "Four article figures and associated prose; other article outputs unchanged",
@@ -5716,11 +5716,11 @@
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
-        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
-        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "workerVersion": "ba266af8-d338-4414-a78c-abd245607556",
+        "implementationCommit": "55a741ad22b30939419ea93f9298181f0653ffe7",
         "url": "https://open.yokohama/issues/policy-follow-through/",
-        "verifiedAt": "2026-09-09T04:37:56.275376Z",
-        "productionE2E": "224 passed"
+        "verifiedAt": "2026-09-10T13:18:22.259585Z",
+        "productionE2E": "236 passed"
       },
       "revisionHistory": [
         {
@@ -6393,8 +6393,8 @@
         "currentChangeInstruction": "終わったら他の記事もお願い（保育記事に続き、図表の採否整理・本文修正・反映を委任）"
       },
       "states": {
-        "implementation": "implemented_pending_production",
-        "publication": "pending_revision_publication"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "Four article figures and associated prose; other article outputs unchanged",
@@ -6403,11 +6403,11 @@
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
-        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
-        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "workerVersion": "ba266af8-d338-4414-a78c-abd245607556",
+        "implementationCommit": "55a741ad22b30939419ea93f9298181f0653ffe7",
         "url": "https://open.yokohama/issues/reading-policy-costs/",
-        "verifiedAt": "2026-09-09T04:37:56.275376Z",
-        "productionE2E": "224 passed"
+        "verifiedAt": "2026-09-10T13:18:22.259585Z",
+        "productionE2E": "236 passed"
       },
       "revisionHistory": [
         {
@@ -6607,8 +6607,8 @@
         "currentChangeInstruction": "終わったら他の記事もお願い（保育記事に続き、図表の採否整理・本文修正・反映を委任）"
       },
       "states": {
-        "implementation": "implemented_pending_production",
-        "publication": "pending_revision_publication"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "Four article figures and associated prose; other article outputs unchanged",
@@ -6617,11 +6617,11 @@
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
-        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
-        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "workerVersion": "ba266af8-d338-4414-a78c-abd245607556",
+        "implementationCommit": "55a741ad22b30939419ea93f9298181f0653ffe7",
         "url": "https://open.yokohama/issues/reading-policy-results/",
-        "verifiedAt": "2026-09-09T04:37:56.275376Z",
-        "productionE2E": "224 passed"
+        "verifiedAt": "2026-09-10T13:18:22.259585Z",
+        "productionE2E": "236 passed"
       },
       "revisionHistory": [
         {
@@ -6826,8 +6826,8 @@
         "currentChangeInstruction": "終わったら他の記事もお願い（保育記事に続き、図表の採否整理・本文修正・反映を委任）"
       },
       "states": {
-        "implementation": "implemented_pending_production",
-        "publication": "pending_revision_publication"
+        "implementation": "implemented_production",
+        "publication": "published"
       },
       "revisionReview": {
         "scope": "Four article figures and associated prose; other article outputs unchanged",
@@ -6836,11 +6836,11 @@
         "humanUnderstandingValidation": "not performed"
       },
       "deployment": {
-        "workerVersion": "9b46a8f6-df2c-4d0a-b8a7-bcd8a9964b0b",
-        "implementationCommit": "2f3cabc40f75efb18d11b39a1d65d726befdfb53",
+        "workerVersion": "ba266af8-d338-4414-a78c-abd245607556",
+        "implementationCommit": "55a741ad22b30939419ea93f9298181f0653ffe7",
         "url": "https://open.yokohama/issues/waste-and-carbon/",
-        "verifiedAt": "2026-09-09T04:37:56.275376Z",
-        "productionE2E": "224 passed"
+        "verifiedAt": "2026-09-10T13:18:22.259585Z",
+        "productionE2E": "236 passed"
       },
       "revisionHistory": [
         {

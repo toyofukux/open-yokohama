@@ -18,6 +18,19 @@
     "sourceAndReviewCheck": "41 source snapshots, 17 manuscripts, 11 figures checked against separate reviewer hashes"
   },
   "independentReview": "other-articles-independent-review-2026-09-10.json",
-  "production": "pending",
+  "production": {
+    "implementationCommit": "55a741ad22b30939419ea93f9298181f0653ffe7",
+    "workerVersion": "ba266af8-d338-4414-a78c-abd245607556",
+    "verifiedAt": "2026-09-10T13:18:22.259585Z",
+    "e2e": "236 passed (44.1s)",
+    "display": "4 figures x 3 widths x 2 themes; fractions, no overflow, 200% text, no-JS keyboard tables passed",
+    "contentMatch": "Four revised articles, childcare article and release-manifest match local build after removal of the single CDN-injected Cloudflare analytics script from HTML responses",
+    "rawByteComparison": "Not identical for HTML because the CDN injects its analytics script; JSON manifest identical. Initial Python urllib request returned 403; normal browser requests returned 200.",
+    "ci": {
+      "conclusion": "success",
+      "status": "completed",
+      "url": "https://github.com/toyofukux/open-yokohama/actions/runs/34481600066"
+    }
+  },
   "humanComprehension": "not performed"
 }
