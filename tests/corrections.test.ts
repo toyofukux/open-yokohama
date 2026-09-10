@@ -5,7 +5,7 @@ import { correctionSchema, reportUrl } from '../packages/core/corrections.ts';
 const record = {
   id: 'correction-1',
   page: '/issues/population/',
-  issueUrl: 'https://github.com/toyofukux/open-yokohama/issues/1',
+  inquiryId: 1,
   status: 'investigating',
   hold: true,
   reason: '定義を確認中',
@@ -26,7 +26,13 @@ test('resolved corrections require an explanation, release of hold, and fixing c
       revision: 'a'.repeat(40),
     }).success,
   );
-  assert.ok(!correctionSchema.safeParse({ ...record, issueUrl: 'javascript:alert(1)' }).success);
+});
+test('ledger entries carry their inquiry number and never a free-form link', () => {
+  assert.ok(!correctionSchema.safeParse({ ...record, inquiryId: 2 }).success);
+  assert.ok(!correctionSchema.safeParse({ ...record, inquiryId: 0 }).success);
+  assert.ok(
+    !correctionSchema.safeParse({ ...record, issueUrl: 'https://github.com/x/y/issues/1' }).success,
+  );
 });
 test('report links preserve unicode, delimiters and the original version', () => {
   const link = new URL(
@@ -35,4 +41,12 @@ test('report links preserve unicode, delimiters and the original version', () =>
   );
   assert.equal(link.searchParams.get('target'), '人口 & <注記> #1');
   assert.equal(link.searchParams.get('version'), 'abc123');
+  assert.equal(link.searchParams.get('page'), '/issues/population/');
+});
+test('report links omit empty parameters', () => {
+  assert.equal(
+    reportUrl('/elections/mayor-2026/'),
+    '/corrections/report/?page=%2Felections%2Fmayor-2026%2F',
+  );
+  assert.equal(reportUrl(''), '/corrections/report/');
 });

@@ -17,8 +17,8 @@ test('age comparison preserves region labels and unknown-inclusive percentages',
   await expect(page.locator('#age-history tr').first().locator('th')).toHaveText('2025-01-01');
   await page.reload();
   await expect(page.getByLabel('推移を見る地域')).toHaveValue('141097');
-  await page.getByRole('link', { name: 'このページの誤りを知らせる' }).click();
-  await expect(page.locator('#report-context')).toHaveValue(/年齢別人口 SHA-256:[a-f0-9]{64}/);
+  await page.getByRole('link', { name: 'このページについて知らせる' }).click();
+  await expect(page.locator('#report-version')).toHaveValue(/年齢別人口 SHA-256:[a-f0-9]{64}/);
   await expect(page.locator('#report-page')).toHaveValue(/period=2024-01-01&geography=141097/);
 });
 test('static age tables retain headings when JavaScript is disabled', async ({ browser }) => {

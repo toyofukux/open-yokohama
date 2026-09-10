@@ -15,8 +15,8 @@
     "test:e2e": "playwright test",
     "data:refresh": "tsx scripts/ingest.ts",
     "data:validate": "tsx scripts/validate.ts && tsx scripts/validate-dynamics.ts && tsx scripts/validate-ages.ts",
-    "lint": "biome check packages scripts tests apps/mcp/src",
-    "format": "biome check --write packages scripts tests apps/mcp/src",
+    "lint": "biome check packages scripts tests apps/mcp/src apps/inquiries/src",
+    "format": "biome check --write packages scripts tests apps/mcp/src apps/inquiries/src",
     "preview": "wrangler dev --config wrangler.jsonc --port 8788",
     "deploy": "pnpm build && wrangler deploy --config wrangler.jsonc",
     "mcp:dev": "wrangler dev --config apps/mcp/wrangler.jsonc --local --ip 127.0.0.1 --port 8789 --var INTERNAL_MCP_ENABLED:true",
@@ -49,7 +49,9 @@
     "childcare:charts:build": "tsx scripts/build-childcare-charts.ts",
     "childcare:charts:check": "tsx scripts/build-childcare-charts.ts --check",
     "policy:charts:build": "tsx scripts/build-policy-breakdowns.ts",
-    "policy:charts:check": "tsx scripts/build-policy-breakdowns.ts --check"
+    "policy:charts:check": "tsx scripts/build-policy-breakdowns.ts --check",
+    "inquiries:list": "wrangler d1 execute open-yokohama-inquiries --remote --command \"SELECT id, created_at, kind, page, status, substr(body, 1, 120) AS body FROM inquiries ORDER BY id DESC LIMIT 50\"",
+    "inquiries:list:local": "wrangler d1 execute open-yokohama-inquiries --local --command \"SELECT id, created_at, kind, page, status, substr(body, 1, 120) AS body FROM inquiries ORDER BY id DESC LIMIT 50\""
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",

@@ -2,11 +2,30 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "open-yokohama",
   "compatibility_date": "2026-09-05",
+  // Only /api/* invokes the Worker; every other path is served as a static asset without it.
+  "main": "apps/inquiries/src/index.ts",
   "assets": {
     "directory": "./apps/web/dist",
+    "binding": "ASSETS",
     "html_handling": "auto-trailing-slash",
-    "not_found_handling": "404-page"
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
   },
+  "d1_databases": [
+    {
+      "binding": "INQUIRIES",
+      "database_name": "open-yokohama-inquiries",
+      // Placeholder until `wrangler d1 create open-yokohama-inquiries` runs; local dev ignores it.
+      "database_id": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "ratelimits": [
+    {
+      "name": "INQUIRY_RATE",
+      "namespace_id": "1001",
+      "simple": { "limit": 10, "period": 60 }
+    }
+  ],
   "workers_dev": true,
   "routes": [
     {

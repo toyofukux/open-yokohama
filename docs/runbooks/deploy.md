@@ -19,6 +19,16 @@ Node.js 24、pnpm、Cloudflareアカウント。ローカル検証や静的ビ�
 `pnpm exec wrangler login` は各運営者が自分のアカウントで実行してください。
 `wrangler.jsonc` のWorker名を自分のものへ変えれば、独立した複製を公開できます。
 
+## 問い合わせ用のD1（初回のみ）
+
+問い合わせフォームの受信は `apps/inquiries/src/index.ts` のWorkerがD1に保存します。初回だけ次を実行してください。
+
+1. `pnpm exec wrangler d1 create open-yokohama-inquiries`
+2. 出力された `database_id` を `wrangler.jsonc` の `d1_databases[0].database_id` に記入し、commitします。
+3. 表はWorkerが初回保存時に作るため、移行コマンドは不要です。
+
+`database_id` が仮の値のままだと `wrangler deploy` は失敗します。ローカルの `pnpm preview` は仮の値でも動きます。
+
 ## 手順
 
 1. `pnpm install --frozen-lockfile`
@@ -26,10 +36,12 @@ Node.js 24、pnpm、Cloudflareアカウント。ローカル検証や静的ビ�
 3. `pnpm exec playwright install chromium` → `pnpm test:e2e`
 4. `pnpm exec wrangler deploy --dry-run`
 5. `SITE_URL=https://実際の公開ホスト pnpm run deploy`
-6. `TEST_BASE_URL=https://実際の公開ホスト pnpm test:e2e`
-7. commit、Worker version、検証結果を `docs/STATUS.md` に記録します。
+6. `TEST_BASE_URL=https://実際の公開ホスト pnpm test:e2e`。保存を伴う2件は本番URLでは自動でskipします。
+7. 問い合わせ経路の本番確認は、保存されないhoneypot送信で行います。`{"id":null}` が返れば、Origin・Content-Length・解析・検証まで本番Workerを通っています。テスト用の本文を保存させないでください。
+   `curl -sS -H 'Accept: application/json' --data-urlencode 'website=check' --data-urlencode 'body=check' https://実際の公開ホスト/api/inquiries`
+8. commit、Worker version、検証結果を `docs/STATUS.md` に記録します。
 
-WebはStatic Assets専用。常時DB、WorkerでのSSR、R2、LLM、ログインは不要です。
+静的ページはStatic Assetsのまま配信し、Workerは `/api/*` だけで動きます（`run_worker_first`）。閲覧にWorker実行・DB読取は発生しません。問い合わせの保存にD1、送信の抑制にRate Limitingを使います。SSR、R2、LLM、ログインは不要です。
 MCPは別Workerのため動的リクエストの無料枠が別途適用される（アカウント共有枠に注意）。
 MCPを公開しなくてもWebの全機能は動作します。
 Cloudflareアカウント全体で有料プランが既に適用されている場合、動的MCPの利用量は同プランで計上されます。

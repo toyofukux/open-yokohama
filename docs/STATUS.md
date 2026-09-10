@@ -1,5 +1,13 @@
 # 実装・公開状態
 
+## 2026-09-10：アカウント不要の問い合わせフォーム（実装・検証済み、未公開）
+
+- 市民向けの誤り・質問・要望を、GitHubアカウントなしで送れるフォームに作り替えました。送信先は同じWorkerの `/api/inquiries` で、Cloudflare D1 `open-yokohama-inquiries` に保存します。個別の返信はせず、対応した内容だけを `/corrections/`（問い合わせと訂正）の台帳に記録します。開発者向けの導線はフッターのGitHubアイコンだけにし、問い合わせトップからGitHub Issueリンクを外しました。夜テーマでフォームの文字が読めない不具合（未定義の `--bg` 変数）も直しました。
+- 防御はhoneypot、保存直前のレート制限（同一アドレス1分10件）、Origin検査、64KB上限、Content-Length必須です。IPアドレス・連絡先は保存しません。台帳スキーマは `issueUrl` を `inquiryId` に変更し、GitHub Issueテンプレートは開発参加者向けとして残しました。
+- `pnpm verify`（単体84件・94ページ・内部リンク2,543件・公開審査24記事）、ローカル配信の全242 E2E、表示保留の煙テスト、`wrangler deploy --dry-run`（D1・Rate Limit・Assetsの束縛）が合格しました。ローカルD1への保存、JavaScript無効時の303、本番URL指定時の保存テストskip、夜テーマの入力欄の色（#e2edf5／#10283d）を実測しました。画像は `artifacts/inquiry-form-2026-09-10/` です。
+- 独立担当 `inquiry-review` が2周で確認しました。1周目のblocking 2件（本番E2Eが本番D1へテスト行を書く、JS無効経路で日本語1,229字以上を拒否）を含む14件を反映し、2周目はpassでした。[独立記録](content-review/inquiries/independent-review-2026-09-10.json)。共通ファイル（Layout・global.css・PolicyArticle）の変更により24記事の公開審査ハッシュを再記録しました。旧記録は[archive](content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json)にあり、承認欄にはこの会話で承認された範囲と旧承認文を併記しています。記事本文は無変更です。
+- 未実施: D1データベースの作成（`wrangler.jsonc` の `database_id` は仮の値）、本番デプロイ、本番E2E、市民の利用検証。運用は[問い合わせと訂正の運用](runbooks/corrections.md)、公開手順は[Cloudflareへ公開する](runbooks/deploy.md)を参照してください。
+
 ## 2026-09-10：他の記事も図表を点検・4記事を本番公開
 
 - 継続依頼「終わったら他の記事もお願い」を受け、政策23記事を通読し、人口長期19記事の共通構成も確認しました。[記事別の採否](content-review/visualisation/ARTICLE-AUDIT.md)に、図を加える場所と既存図表を維持する理由を記録しました。区別1指標は地図優先の方針です。

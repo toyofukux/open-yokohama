@@ -6,28 +6,36 @@ import {
 } from "../../../../../packages/core/corrections";
 ---
 
-<Layout title="訂正と確認状況">
+<Layout
+  title="問い合わせと訂正"
+  description="誤り・質問・要望の送り方と、対応した内容の記録。"
+>
   <article class="container narrow section prose">
-    <p class="breadcrumb"><a href="/">ホーム</a> / 訂正と確認状況</p>
-    <h1 class="page-title">訂正と確認状況</h1>
-    <p class="lede">間違いに気づいたら、根拠と一緒に知らせてください。</p>
-    <p><a href="/corrections/report/">誤りを報告する →</a></p>
-    <h2>報告から訂正まで</h2>
+    <p class="breadcrumb"><a href="/">ホーム</a> / 問い合わせと訂正</p>
+    <h1 class="page-title">問い合わせと訂正</h1>
+    <p class="lede">
+      数字や説明の誤り、質問、要望を、アカウントなしで送れます。
+    </p>
+    <p><a href="/corrections/report/">誤りや意見を送る →</a></p>
+    <h2>送る前に</h2>
+    <ul>
+      <li>個別の返信はしません。対応した内容はこのページに記録します。</li>
+      <li>
+        送った内容は運営だけが読みます。氏名・連絡先などの個人情報は書かないでください。
+      </li>
+      <li>
+        正しい答えが分からなくても構いません。出典は分かる範囲で結構です。
+      </li>
+    </ul>
+    <h2>送ってから訂正まで</h2>
     <ol>
-      <li>GitHubで報告を送信するとIssue番号が発行されます。</li><li>
-        管理者が原典と照合し、確認状況をIssueへ記録します。
-      </li><li>訂正または対応終了の理由を記録し、サイトの履歴へ反映します。</li>
+      <li>送信すると受付番号が表示されます。</li>
+      <li>運営が原典と照合し、確認状況をこのページに記録します。</li>
+      <li>
+        訂正または対応終了の理由を記録し、サイトの履歴へ反映します。重大な疑義がある説明は、確認中として表示を保留する場合があります。
+      </li>
     </ol>
-    <p>
-      この一覧はサイト更新時の記録です。未反映の報告と最新のやり取りは<a
-        href="https://github.com/toyofukux/open-yokohama/issues?q=is%3Aissue%20%22%5B%E8%A8%82%E6%AD%A3%5D%22"
-        >GitHubの報告一覧</a
-      >で確認できます。Issueが閉じているだけでは、訂正済みを意味しません。
-    </p>
-    <p>
-      重大な疑義がある説明は、確認中として表示を保留する場合があります。AIの検証と人間による確認は区別して表示します。
-    </p>
-    <h2>サイトに反映した記録</h2>
+    <h2>対応した記録</h2>
     {
       records.length === 0 ? (
         <p>
@@ -43,11 +51,13 @@ import {
               </h3>
               <>
                 <p>{record.reason}</p>
-                <p>更新：{record.updatedAt.slice(0, 10)}</p>
+                <p>
+                  受付番号：{record.inquiryId} · 更新：
+                  {record.updatedAt.slice(0, 10)}
+                </p>
               </>
               <p>
-                <a href={record.page}>対象ページ</a> ·{" "}
-                <a href={record.issueUrl}>報告と確認の経過</a>
+                <a href={record.page}>対象ページ</a>
               </p>
               {record.resolution && <p>{record.resolution}</p>}
               {record.status === "corrected" && (
