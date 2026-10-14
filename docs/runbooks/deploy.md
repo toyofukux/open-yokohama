@@ -17,7 +17,17 @@ APIキー・既存認証があってもMCPを再公開せず、ユーザーか�
 
 Node.js 24、pnpm、Cloudflareアカウント。ローカル検証や静的ビルドに外部認証は不要です。
 本番操作（deploy・D1）の認証はdotenvxで管理します。`CLOUDFLARE_ACCOUNT_ID` と `CLOUDFLARE_API_TOKEN` を暗号化した `.env.deploy.production` をコミットし、復号鍵 `.env.keys` は運営者の端末にだけ置きます（コミット禁止）。紛失時は `.env.deploy.production` の `DOTENV_PUBLIC_KEY_DEPLOY_PRODUCTION` 行と暗号化済みの行を削除してから、トークンを作り直し、`dotenvx set` で `CLOUDFLARE_ACCOUNT_ID` と `CLOUDFLARE_API_TOKEN` を入れ直して新しい鍵対を作ります。古い公開鍵の行が残ったまま `dotenvx set` すると、誰も復号できない値になります。
-APIトークンはCloudflareダッシュボードのAPI Tokensで作成します。権限はAccountのWorkers Scripts編集・D1編集・Account Settings読取、Zone（open.yokohama）のWorkers Routes編集を基本とし、不足はwranglerのエラーに従って追加します。値は端末で `read -rs CF_TOKEN` に入力し、`pnpm exec dotenvx set CLOUDFLARE_API_TOKEN "$CF_TOKEN" -f .env.deploy.production && unset CF_TOKEN` で暗号化します。チャット・コマンド履歴・ファイルに平文を残さないでください。
+APIトークンはアカウント所有のトークンを使います。2026-10-15に確認した現行の発行手順は次のとおりです。
+
+1. Cloudflareダッシュボードで `toyofukux` アカウントを選び、**Manage account → Account API tokens → Create Token** を開きます。
+2. 名前を `open-yokohama-deploy` とし、Workers の **Editor** を Workers 製品全体（このアカウント内）に付与します。本番の既存Workerを更新するための権限です。現在の公開設定にはCustom Domainが含まれ、個別WorkerのロールはCustom Domainに未対応のため、製品単位の範囲を使います。
+3. 問い合わせDBの作成・操作用に、このアカウントの **D1 Write** を追加します。
+4. **Zone → Workers Routes → Write** を追加し、対象zoneを `open.yokohama` に限定します。
+5. **Continue to summary → Create Token** で発行します。作成者にはAPI Token Provisioning権限またはSuper Administratorが必要です。
+6. このworktreeの端末で `pnpm exec dotenvx set CLOUDFLARE_API_TOKEN -f .env.deploy.production` を実行します。値を引数に書かず、非表示の入力欄へ貼り付けると暗号化して保存されます。チャットやコマンド履歴に値を残さないでください。
+
+出典：[アカウント所有トークンの発行](https://developers.cloudflare.com/fundamentals/api/get-started/account-owned-tokens/)、[Workersの現行ロールとCustom Domainの制約](https://developers.cloudflare.com/workers/authorization/workers/)、[D1 Writeの権限名](https://developers.cloudflare.com/fundamentals/api/reference/permissions/)。
+
 `pnpm run deploy`・`pnpm cf:d1:create`・`pnpm cf:versions`・`pnpm cf:rollback` は `dotenvx run` 経由で実行され、`.env.keys` の無い端末では失敗します。`CLOUDFLARE_API_TOKEN` を設定する前にこれらを実行しないでください。`pnpm cf` は2変数の存在を確認し、不足時はWranglerを実行せず停止します。dotenvxの `--strict` だけでは未定義変数を拒否できないためです。`wrangler login` のOAuthトークンは使いません（2026-09-10にD1 APIで401になりました）。
 `wrangler.jsonc` のWorker名を自分のものへ変えれば、独立した複製を公開できます。
 

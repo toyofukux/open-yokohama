@@ -1,5 +1,10 @@
 # 実装・公開状態
 
+## 2026-10-15：統合PRの依存更新・発行手順の修正
+
+- [統合PR #3](https://github.com/toyofukux/open-yokohama/pull/3) の初回CIは機能検証・全E2E・ローカルMCP疎通が合格し、依存監査で停止しました。MCP SDKを1.31.0へ更新し、間接依存のproxy-addrも2.0.8に更新。ローカルの `pnpm audit --prod --audit-level high` は合格（moderate 1件は残存）。CIの再確認後にmainへ統合します。
+- 公開手順を現行のアカウント所有APIトークン、Workers Editor・D1 Write・Workers Routes Writeへ修正しました。Custom Domainの個別Worker権限未対応も明記。認証登録と本番公開は引き続き未実施です。
+
 ## 2026-10-14：問い合わせ公開の統合・再検証（認証待ち、未公開）
 
 - `feat/inquiry-form` と `chore/dotenvx-cloudflare` を `release/inquiry-form-20261014` で統合。作業場所は `.worktrees/inquiry-release/`。保育改稿と別案の訂正フォームは含めていません。
