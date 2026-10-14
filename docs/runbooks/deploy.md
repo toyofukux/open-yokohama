@@ -16,8 +16,30 @@ APIキー・既存認証があってもMCPを再公開せず、ユーザーか�
 ## 必要条件
 
 Node.js 24、pnpm、Cloudflareアカウント。ローカル検証や静的ビルドに外部認証は不要です。
-`pnpm exec wrangler login` は各運営者が自分のアカウントで実行してください。
+本番操作（deploy・D1）の認証はdotenvxで管理します。`CLOUDFLARE_ACCOUNT_ID` と `CLOUDFLARE_API_TOKEN` を暗号化した `.env.deploy.production` をコミットし、復号鍵 `.env.keys` は運営者の端末にだけ置きます（コミット禁止）。紛失時は `.env.deploy.production` の `DOTENV_PUBLIC_KEY_DEPLOY_PRODUCTION` 行と暗号化済みの行を削除してから、トークンを作り直し、`dotenvx set` で `CLOUDFLARE_ACCOUNT_ID` と `CLOUDFLARE_API_TOKEN` を入れ直して新しい鍵対を作ります。古い公開鍵の行が残ったまま `dotenvx set` すると、誰も復号できない値になります。
+APIトークンはアカウント所有のトークンを使います。2026-10-15に確認した現行の発行手順は次のとおりです。
+
+1. Cloudflareダッシュボードで `toyofukux` アカウントを選び、**Manage account → Account API tokens → Create Token** を開きます。
+2. 名前を `open-yokohama-deploy` とし、Workers の **Editor** を Workers 製品全体（このアカウント内）に付与します。本番の既存Workerを更新するための権限です。現在の公開設定にはCustom Domainが含まれ、個別WorkerのロールはCustom Domainに未対応のため、製品単位の範囲を使います。
+3. 問い合わせDBの作成・操作用に、このアカウントの **D1 Write** を追加します。
+4. **Zone → Workers Routes → Write** を追加し、対象zoneを `open.yokohama` に限定します。
+5. **Continue to summary → Create Token** で発行します。作成者にはAPI Token Provisioning権限またはSuper Administratorが必要です。
+6. このworktreeの端末で `pnpm exec dotenvx set CLOUDFLARE_API_TOKEN -f .env.deploy.production` を実行します。値を引数に書かず、非表示の入力欄へ貼り付けると暗号化して保存されます。チャットやコマンド履歴に値を残さないでください。
+
+出典：[アカウント所有トークンの発行](https://developers.cloudflare.com/fundamentals/api/get-started/account-owned-tokens/)、[Workersの現行ロールとCustom Domainの制約](https://developers.cloudflare.com/workers/authorization/workers/)、[D1 Writeの権限名](https://developers.cloudflare.com/fundamentals/api/reference/permissions/)。
+
+`pnpm run deploy`・`pnpm cf:d1:create`・`pnpm cf:versions`・`pnpm cf:rollback` は `dotenvx run` 経由で実行され、`.env.keys` の無い端末では失敗します。`CLOUDFLARE_API_TOKEN` を設定する前にこれらを実行しないでください。`pnpm cf` は2変数の存在を確認し、不足時はWranglerを実行せず停止します。dotenvxの `--strict` だけでは未定義変数を拒否できないためです。`wrangler login` のOAuthトークンは使いません（2026-09-10にD1 APIで401になりました）。
 `wrangler.jsonc` のWorker名を自分のものへ変えれば、独立した複製を公開できます。
+
+## 問い合わせ用のD1（初回のみ）
+
+問い合わせフォームの受信は `apps/inquiries/src/index.ts` のWorkerがD1に保存します。初回だけ次を実行してください。
+
+1. `pnpm cf d1 list` で同名DBの有無を確認し、未作成の場合のみ `pnpm cf:d1:create`。
+2. 出力された `database_id` を `wrangler.jsonc` の `d1_databases[0].database_id` に記入し、commitします。
+3. 表はWorkerが初回保存時に作るため、移行コマンドは不要です。
+
+`database_id` が仮の値のままだと `wrangler deploy` は失敗します。ローカルの `pnpm preview` は仮の値でも動きます。
 
 ## 手順
 
@@ -26,16 +48,18 @@ Node.js 24、pnpm、Cloudflareアカウント。ローカル検証や静的ビ�
 3. `pnpm exec playwright install chromium` → `pnpm test:e2e`
 4. `pnpm exec wrangler deploy --dry-run`
 5. `SITE_URL=https://実際の公開ホスト pnpm run deploy`
-6. `TEST_BASE_URL=https://実際の公開ホスト pnpm test:e2e`
-7. commit、Worker version、検証結果を `docs/STATUS.md` に記録します。
+6. `TEST_BASE_URL=https://実際の公開ホスト pnpm test:e2e`。保存を伴う2件は本番URLでは自動でskipします。
+7. 問い合わせ経路の本番確認は、保存されないhoneypot送信で行います。`{"id":null}` が返れば、Origin・Content-Length・解析・検証まで本番Workerを通っています。テスト用の本文を保存させないでください。
+   `curl -sS -H 'Accept: application/json' --data-urlencode 'website=check' --data-urlencode 'body=check' https://実際の公開ホスト/api/inquiries`
+8. commit、Worker version、検証結果を `docs/STATUS.md` に記録します。
 
-WebはStatic Assets専用。常時DB、WorkerでのSSR、R2、LLM、ログインは不要です。
+静的ページはStatic Assetsのまま配信し、Workerは `/api/*` だけで動きます（`run_worker_first`）。閲覧にWorker実行・DB読取は発生しません。問い合わせの保存にD1、送信の抑制にRate Limitingを使います。SSR、R2、LLM、ログインは不要です。
 MCPは別Workerのため動的リクエストの無料枠が別途適用される（アカウント共有枠に注意）。
 MCPを公開しなくてもWebの全機能は動作します。
 Cloudflareアカウント全体で有料プランが既に適用されている場合、動的MCPの利用量は同プランで計上されます。
 
 ## 戻す
 
-`pnpm exec wrangler versions list` で直前の版を確認し、`pnpm exec wrangler rollback <VERSION_ID>`。
+`pnpm cf:versions` で直前の版を確認し、`pnpm cf:rollback <VERSION_ID>`。`--` を挟むと版IDがwranglerに渡らず直前版へ戻るため付けないでください。
 MCPの旧版を復元する場合も公開停止の設定を維持します。コードの復元は公開再開の許可にはなりません。
 データはGitの公開JSON・不変原本・manifestから復元します。過去原本を削除しません。

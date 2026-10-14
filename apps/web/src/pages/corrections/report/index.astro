@@ -1,0 +1,200 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout
+  title="誤りや意見を送る"
+  description="数字や説明の誤り、質問、要望を、アカウントなしで運営に送る。個別の返信はせず、対応した内容を公開の記録に残す。"
+>
+  <article class="container narrow section prose">
+    <p class="breadcrumb">
+      <a href="/corrections/">問い合わせと訂正</a> / 送る
+    </p>
+    <h1 class="page-title">誤りや意見を送る</h1>
+    <p>
+      正しい答えが分からなくても、気になった点をそのまま書いてください。個別の返信はしません。対応した内容は<a
+        href="/corrections/">問い合わせと訂正</a
+      >に記録します。
+    </p>
+    <p class="small">
+      氏名・連絡先などの個人情報は書かないでください。送った内容は運営だけが読み、そのまま公開することはありません。
+    </p>
+    <p id="report-error" class="note" hidden></p>
+    <form id="report-form" action="/api/inquiries" method="post">
+      <fieldset>
+        <legend>種類</legend>
+        <label
+          ><input type="radio" name="kind" value="error" checked />
+          数字や説明の誤り</label
+        >
+        <label><input type="radio" name="kind" value="question" /> 質問</label>
+        <label><input type="radio" name="kind" value="request" /> 要望</label>
+      </fieldset>
+      <p>
+        <label for="report-page">対象ページ（任意）</label><input
+          id="report-page"
+          name="page"
+          type="text"
+          maxlength="500"
+          autocomplete="off"
+        />
+      </p>
+      <p>
+        <label for="report-body">内容（必須）</label><textarea
+          id="report-body"
+          name="body"
+          required
+          rows="6"
+          maxlength="2000"></textarea>
+      </p>
+      <input id="report-version" type="hidden" name="version" />
+      <input id="report-target" type="hidden" name="target" />
+      <p class="hp" aria-hidden="true">
+        <label
+          >Website<input
+            name="website"
+            type="text"
+            tabindex="-1"
+            autocomplete="off"
+          /></label
+        >
+      </p>
+      <p id="report-version-note" class="small" hidden></p>
+      <button type="submit">送信する</button>
+    </form>
+    <p id="report-result" class="note" hidden aria-live="polite"></p>
+  </article>
+</Layout>
+<script>
+  const params = new URLSearchParams(location.search);
+  const form = document.querySelector<HTMLFormElement>("#report-form");
+  const page = document.querySelector<HTMLInputElement>("#report-page");
+  const version = document.querySelector<HTMLInputElement>("#report-version");
+  const target = document.querySelector<HTMLInputElement>("#report-target");
+  const note = document.querySelector<HTMLElement>("#report-version-note");
+  const error = document.querySelector<HTMLElement>("#report-error");
+  const result = document.querySelector<HTMLElement>("#report-result");
+  const messages: Record<string, string> = {
+    body: "内容を入力してください。",
+    page: "対象ページは、このサイトのURLだけ受け付けます。",
+    rate: "短い時間に送信が続いたため受け付けられませんでした。しばらくしてからもう一度お送りください。",
+    size: "内容が長すぎます。2,000文字までにしてください。",
+    network:
+      "送信できませんでした。通信状態を確かめて、もう一度お送りください。",
+  };
+  const path = params.get("page") || "";
+  if (page && path.startsWith("/") && !path.startsWith("//")) {
+    try {
+      const url = new URL(path, "https://open.yokohama");
+      if (url.origin === "https://open.yokohama")
+        page.value = (url.pathname + url.search).slice(0, 500);
+    } catch {
+      /* Leave an invalid page empty. */
+    }
+  }
+  const shownVersion = (params.get("version") || "").slice(0, 400);
+  const shownTarget = (params.get("target") || "").slice(0, 500);
+  if (version) version.value = shownVersion;
+  if (target) target.value = shownTarget;
+  if (note && (shownVersion || shownTarget)) {
+    note.textContent = `対象：${shownTarget || "ページ全体"}／表示していた版：${shownVersion || "未取得"}`;
+    note.hidden = false;
+  }
+  const showError = (code: string) => {
+    if (!error) return;
+    error.textContent =
+      messages[code] || "送信できませんでした。もう一度お送りください。";
+    error.hidden = false;
+  };
+  if (params.get("error")) showError(params.get("error") || "");
+  form?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const button = form.querySelector<HTMLButtonElement>("button[type=submit]");
+    if (button) button.disabled = true;
+    if (error) error.hidden = true;
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+      const data: { id?: number | null; error?: string } = await response
+        .json()
+        .catch(() => ({}));
+      if (!response.ok) {
+        showError(data.error || "");
+        return;
+      }
+      if (result) {
+        result.textContent = data.id
+          ? `送信しました。受付番号は ${data.id} です。対応した内容は「問い合わせと訂正」に記録します。`
+          : "送信しました。";
+        result.hidden = false;
+      }
+      form.hidden = true;
+    } catch {
+      showError("network");
+    } finally {
+      if (button) button.disabled = false;
+    }
+  });
+</script>
+<style>
+  fieldset {
+    border: 1px solid var(--line);
+    border-radius: 0.3rem;
+    padding: 0.6rem 0.9rem;
+    margin: 0 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.2rem;
+  }
+  legend {
+    padding: 0 0.3rem;
+  }
+  fieldset label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin: 0;
+  }
+  input:not([type="hidden"]):not([type="radio"]),
+  textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font: inherit;
+    padding: 0.7rem;
+    border: 1px solid var(--line);
+    border-radius: 0.3rem;
+    background: var(--card);
+    color: var(--ink);
+  }
+  label {
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+  button {
+    padding: 0.8rem 1.4rem;
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid var(--accent);
+    border-radius: 0.3rem;
+    background: var(--accent);
+    color: var(--on-accent);
+  }
+  button:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+  #report-version-note {
+    overflow-wrap: anywhere;
+  }
+  .hp {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+</style>

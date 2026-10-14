@@ -53,6 +53,7 @@ pnpm test:dynamics-gates            # 原本改変・年全体の削除が公開
 
 ```text
 apps/web/         Astro静的サイト（公開済みデータのみ）
+apps/inquiries/   問い合わせ受信Worker。/api/* だけ動き、D1に保存
 apps/mcp/         MCP Streamable HTTP。公開データ読取専用の別Worker
 packages/core/    指標・地理・データ契約・問い合わせ
 packages/factcheck/ 主張・引用・署名・公開条件
@@ -70,7 +71,8 @@ data/published/   検証済み公開データ
 
 [Cloudflare公開手順](docs/runbooks/deploy.md) · [独自ドメイン設定](docs/runbooks/domain.md) · [データ更新](docs/runbooks/data.md) · [MCP](docs/runbooks/mcp.md)
 
-公開WebはCloudflare Static Assetsのみで配信でき、アクセスごとのAI料金は発生しません。
+公開WebはCloudflare Static Assetsで配信し、問い合わせフォームの受信だけWorkerとD1を使います。閲覧ごとのAI料金・DB読取は発生しません。
+誤り・質問・要望は各ページのフッターからアカウントなしで送れます。個別の返信はせず、対応した内容を[問い合わせと訂正](https://open.yokohama/corrections/)に記録します。運用は[問い合わせと訂正の運用](docs/runbooks/corrections.md)を参照してください。
 MCPには動的Workerの料金・制限が別に適用されます。ドメイン・CI・将来のAIバッチ費用も別途必要です。
 料金は[Cloudflare公式](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/)を確認してください。
 

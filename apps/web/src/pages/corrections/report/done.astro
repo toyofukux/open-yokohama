@@ -1,0 +1,25 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="送信しました" description="問い合わせを受け付けた。">
+  <article class="container narrow section prose">
+    <p class="breadcrumb">
+      <a href="/corrections/">問い合わせと訂正</a> / 送信しました
+    </p>
+    <h1 class="page-title">送信しました</h1>
+    <p id="done-receipt">受け付けました。</p>
+    <p>
+      個別の返信はしません。対応した内容は<a href="/corrections/"
+        >問い合わせと訂正</a
+      >に記録します。
+    </p>
+    <p><a href="/">ホームへ戻る</a></p>
+  </article>
+</Layout>
+<script>
+  const id = new URLSearchParams(location.search).get("id") || "";
+  const receipt = document.querySelector<HTMLElement>("#done-receipt");
+  if (receipt && /^[1-9][0-9]{0,11}$/.test(id))
+    receipt.textContent = `受け付けました。受付番号は ${id} です。`;
+</script>

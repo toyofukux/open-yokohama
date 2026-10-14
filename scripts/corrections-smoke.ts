@@ -18,7 +18,7 @@ try {
   const record = {
     id: 'correction-1',
     page: `/issues/${issue.slug}/`,
-    issueUrl: 'https://github.com/toyofukux/open-yokohama/issues/1',
+    inquiryId: 1,
     status: 'investigating',
     hold: true,
     reason: 'TEST ONLY: definition under review',

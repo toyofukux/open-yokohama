@@ -1,6 +1,7 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
 import { policyIssues } from "../../../../../../packages/core/policy-issues";
+import { reportUrl } from "../../../../../../packages/core/corrections";
 const order = [
   "city-governance",
   "school-lunch",
@@ -98,7 +99,9 @@ const selected = order
         公式資料との照合・数値の検算は制作側が実施した。各記事には、独立担当が確認した範囲も記載した。全資料の網羅確認と利用者による理解の検証は未実施。確認できたことと、未確定の費用を分けている。
       </p>
       <p>
-        <a href="/about/#corrections">誤りや、足りない判断材料を知らせる →</a>
+        <a href={reportUrl(Astro.url.pathname)}
+          >誤りや、足りない判断材料を知らせる →</a
+        >
       </p>
     </section>
   </div>

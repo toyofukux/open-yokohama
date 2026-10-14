@@ -1,0 +1,117 @@
+{
+  "subject": "Account-free inquiry form (Worker + D1), footer GitHub icon, ledger schema inquiryId, night-theme form contrast",
+  "target": "Branch feat/inquiry-form: 1bce81d (Fable rounds 1-3 target), 881d536 (UI blocking fix), 6a3c5f9 (Codex UI round 2 target, NUL escape), plus this record-only commit; base origin/main 173e915",
+  "reviewer": "inquiry-review: independent read-only Claude reviewer subagent (not the implementer)",
+  "recordedAt": "2026-09-10T14:57:28.007930Z",
+  "rounds": [
+    {
+      "round": 1,
+      "verdict": "fail",
+      "counts": {
+        "blocking": 2,
+        "major": 2,
+        "minor": 7
+      },
+      "findings": [
+        "F1 blocking: production E2E would store test rows in production D1 -> submission tests now skip for non-local hosts",
+        "F2 blocking: 11,224-byte cap rejected url-encoded Japanese bodies over 1,228 chars -> cap raised to 64KB, truncation in validate()",
+        "F3 major: missing Content-Length bypassed the cap -> 411 before parsing",
+        "F4 major: humanApproval.contentHash rewritten without approval context -> approver now states the scope approved in this conversation and carries the previous approval text and date; final confirmation left to the user",
+        "F5-F6 minor: runbook mismatches (16KB, mayoral page version) -> corrected",
+        "F7 minor: CRLF made maxlength-sized bodies lose trailing chars -> CRLF normalised before truncation, unit test added",
+        "F8 minor: untrimmed echo fields in 303 Location -> trimField",
+        "F9 minor: rate limiter fail-open -> 503 on non-local hosts without the binding",
+        "F10 minor: stale GitHub wording in DWH-AUDIT and IMPLEMENTATION-PROGRESS -> updated",
+        "F11 minor: local E2E may hit the emulated rate limit -> documented; emulation confirmed by probe (429 from the 11th stored row per minute)"
+      ]
+    },
+    {
+      "round": 2,
+      "verdict": "pass",
+      "counts": {
+        "blocking": 0,
+        "major": 1,
+        "minor": 2
+      },
+      "findings": [
+        "F12 major: chunked E2E payload was a valid inquiry -> payload now kind=other so nothing can be stored",
+        "F13 minor: non-numeric Content-Length passed the cap -> 400 when not finite",
+        "F14 minor: no production check for the form path -> honeypot curl recorded in deploy runbook"
+      ]
+    },
+    {
+      "round": 3,
+      "verdict": "pass",
+      "counts": {
+        "blocking": 0,
+        "major": 0,
+        "minor": 3
+      },
+      "findings": [
+        "F15 minor: raw NUL byte in tests/inquiry.test.ts made git treat it as binary -> replaced with \\u0000 escape",
+        "F16 minor: pre-existing GitHub links on about/developers pages are outside the inquiry flow -> no change, noted for the user",
+        "F17 minor: review record lacked commit shas -> this update"
+      ]
+    }
+  ],
+  "implementerVerification": [
+    "pnpm verify: 84 unit tests, 94 pages, 2,543 internal links, editorial contract 24 articles",
+    "pnpm test:e2e (local wrangler dev + local D1): 242 passed",
+    "TEST_BASE_URL=http://0.0.0.0:8788 corrections.spec.ts: 4 skipped (submissions), 8 passed",
+    "pnpm test:corrections (hold smoke): passed",
+    "wrangler deploy --dry-run: bindings INQUIRIES (D1), INQUIRY_RATE (10/60s), ASSETS",
+    "Night theme computed colors: textarea/input #e2edf5 on #10283d (screenshots in artifacts/inquiry-form-2026-09-10/)"
+  ],
+  "notVerified": [
+    "Production deployment and production E2E",
+    "Cloudflare edge handling of chunked requests",
+    "Citizen usability testing"
+  ],
+  "files": {
+    "apps/inquiries/src/index.ts": "47bfdf8bcd6875dee37563ade31e6166159ccb628a109b381101c7c5484fb4e4",
+    "apps/inquiries/src/validate.ts": "d7ec7b44bacf17460c76d8547c5482c2353eaf8ce348992d012988d6157b2673",
+    "wrangler.jsonc": "e88b74311e3ccbe10ec458894a90f154e175122830e1aa0de88ac6bf5347930b",
+    "packages/core/corrections.ts": "e01ab55e85e8f77017ce685544940674a3640fe593a6d70f67298b2f7653bd10",
+    "apps/web/src/pages/corrections/index.astro": "75f6f1d2e6ae9107fb070a91f0efa1400c7b48015afae36b9134e2a8b18e41b3",
+    "apps/web/src/pages/corrections/report/index.astro": "ad34fe949c872b5d7062883eba0eb3b73f8b8adbd24a763d670ecba2b1c617e4",
+    "apps/web/src/pages/corrections/report/done.astro": "fba7d1c8ed5d91bea1a257354a4794f4bba139f48b8af42b1ce16f259075278a",
+    "apps/web/src/layouts/Layout.astro": "2d02a9fdfbc5cee3e790f6c25f79316e0f8c424ff41ba82d059df7e64a9dd04d",
+    "apps/web/src/components/PolicyArticle.astro": "3dcf0f8d6a56846770d8be9b1bd6112d96744e4ffbb1cfc8e8eec55b8114c63f",
+    "apps/web/src/pages/issues/school-lunch.astro": "2acc53b5fa23b524fe1a68102ad97580eb59d24cd11970a518cdc4b1a43bb515",
+    "apps/web/src/pages/elections/mayor-2026/index.astro": "eefcab5dba747056bb21c5bbeac04d81887f67c472d528b5ca4551ef646de985",
+    "apps/web/src/pages/about.astro": "88ded19aa0e61eb387d1361fef37d85e73ceffef6a6dea527de7d1604307e22e",
+    "apps/web/src/styles/global.css": "94e6af28acbe96265fc9466261e45c18f1a471090802073f833a4af918b61f17",
+    "tests/inquiry.test.ts": "2ea1c8ffadbd543bd6557d4398a8b538b1749f8d1186f63cabfe2d9f32ff42c7",
+    "tests/corrections.test.ts": "4737efb3aa61c6174ae00ef51dd6293bcc8bbbc5f533a0ffbe92202e12390cc4",
+    "tests/e2e/corrections.spec.ts": "a3deacbb3f444916e88e6623e162056f6a941f22e0c834db79e77472163daf64",
+    "tests/e2e/ages.spec.ts": "b259c5347b4e9cfd7136eba6ea42814d2651d7cda12229fdb7f621626c030e0e",
+    "tests/e2e/dynamics.spec.ts": "2df9208e17ce04c2fb9e54beda0a8637022f97d8822b0d7538eb75777b866836",
+    "scripts/corrections-smoke.ts": "0834d2358289e46e3e616f44381bd71b94c8c79d28f9f395e2c3d10a88ce0a71",
+    "docs/runbooks/corrections.md": "b10268ac6a55e68f4b8f548fd15096be09bc7424df5035543b3c46fc662dc317",
+    "docs/runbooks/deploy.md": "48a442a34ef0123db01c218cec3cd4238d7ecc6d7fa99bc4e2a5e5b8f36abef3",
+    "docs/content-review/inquiries/rehash.py": "4bb0003d35678febda0e9a6ef9b6f8193a345d8cd98ce4bb26134c1f89f679ea",
+    ".github/ISSUE_TEMPLATE/correction.yml": "9dc37c605ee01a079e2566f09be981d3f71ce778f69da326c75634e1371bcfc5",
+    "package.json": "887453f7b3c623d6e64e7deafea5ee77f9c75a6fe3ad8e1f2518575e4d980753",
+    "tsconfig.json": "ad313666a58e5ce0eb0d9a7e7951caafeb7dc758a7a6caf1aeb5259ded9295eb"
+  },
+  "uiReview": {
+    "reviewer": "Codex CLI (codex exec), static visual-grammar review of *.astro/*.css diff",
+    "round1": {
+      "target": "1bce81d",
+      "verdict": "fail",
+      "blocking": [
+        "#report-version-note overflowed at 390px with a 64-character hash -> overflow-wrap: anywhere (commit 881d536) plus an E2E overflow assertion"
+      ],
+      "nonBlocking": [
+        "submit button uses local padding/radius instead of .action",
+        "radio fieldset introduces new spacing values",
+        "footer GitHub link spacing differs from .source-icon"
+      ]
+    },
+    "round2": {
+      "target": "6a3c5f9",
+      "verdict": "pass",
+      "note": "overflow resolved (390px width 575px -> 390px); no new overlap or clipping across 3 themes x 4 widths x 6 pages; no missed blocking"
+    }
+  }
+}

@@ -1,5 +1,27 @@
 # 実装・公開状態
 
+## 2026-10-15：統合PRの依存更新・発行手順の修正
+
+- [統合PR #3](https://github.com/toyofukux/open-yokohama/pull/3) の初回CIは機能検証・全E2E・ローカルMCP疎通が合格し、依存監査で停止しました。MCP SDKを1.31.0へ更新し、間接依存のproxy-addrも2.0.8に更新。ローカルの `pnpm audit --prod --audit-level high` は合格（moderate 1件は残存）。CIの再確認後にmainへ統合します。
+- 公開手順を現行のアカウント所有APIトークン、Workers Editor・D1 Write・Workers Routes Writeへ修正しました。Custom Domainの個別Worker権限未対応も明記。認証登録と本番公開は引き続き未実施です。
+
+## 2026-10-14：問い合わせ公開の統合・再検証（認証待ち、未公開）
+
+- `feat/inquiry-form` と `chore/dotenvx-cloudflare` を `release/inquiry-form-20261014` で統合。作業場所は `.worktrees/inquiry-release/`。保育改稿と別案の訂正フォームは含めていません。
+- `pnpm verify`（単体84件・94ページ・2,543内部リンク）、全242 E2E、訂正表示保留、Web dry-runが合格。初回E2Eは必要なChromium未導入で失敗し、導入後の再実行で全件合格。ログは `artifacts/inquiry-release-20261014/`。
+- 本番認証はdotenvx経由に統一し、APIトークンまたはアカウントIDが無ければWrangler起動前に停止します。OAuthへの暗黙フォールバックを防止。鍵は既存dotenvx作業ツリーから同一内容を確認して複製し、両方を保全しました（Git対象外）。
+- 対象Cloudflareアカウントは `toyofukux`。暗号化設定にAPIトークンが未登録。接続済みCloudflare APIも対象Workerは `No access to the specified resource`、D1は `10000 Authentication error` のため本番操作不可。D1 IDは仮値のまま。本番DB作成・main統合・デプロイ・本番検証は未実施です。
+- 再開時はこの作業ツリーの `.env.deploy.production` にAPIトークンを暗号化登録し、`pnpm cf versions list` と `pnpm cf d1 list` で対象を再確認。同名DBがなければ作成し、実IDを設定・commit。CI成功後にmainへ統合し、mainから公開して保存を伴わない本番検査を行います。
+- 関連6worktreeは `.worktrees/` へ移動。旧パスに相対互換リンクを残し、HEAD・未commit差分・内容を照合。移動記録は `artifacts/worktree-migration-20261014.json`、保持期限は `.worktrees/compatibility.json`。自動削除はしていません。
+
+## 2026-09-10：アカウント不要の問い合わせフォーム（実装・検証済み、未公開）
+
+- 市民向けの誤り・質問・要望を、GitHubアカウントなしで送れるフォームに作り替えました。送信先は同じWorkerの `/api/inquiries` で、Cloudflare D1 `open-yokohama-inquiries` に保存します。個別の返信はせず、対応した内容だけを `/corrections/`（問い合わせと訂正）の台帳に記録します。開発者向けの導線はフッターのGitHubアイコンだけにし、問い合わせトップからGitHub Issueリンクを外しました。夜テーマでフォームの文字が読めない不具合（未定義の `--bg` 変数）も直しました。
+- 防御はhoneypot、保存直前のレート制限（同一アドレス1分10件）、Origin検査、64KB上限、Content-Length必須です。IPアドレス・連絡先は保存しません。台帳スキーマは `issueUrl` を `inquiryId` に変更し、GitHub Issueテンプレートは開発参加者向けとして残しました。
+- `pnpm verify`（単体84件・94ページ・内部リンク2,543件・公開審査24記事）、ローカル配信の全242 E2E、表示保留の煙テスト、`wrangler deploy --dry-run`（D1・Rate Limit・Assetsの束縛）が合格しました。ローカルD1への保存、JavaScript無効時の303、本番URL指定時の保存テストskip、夜テーマの入力欄の色（#e2edf5／#10283d）を実測しました。画像は `artifacts/inquiry-form-2026-09-10/` です。
+- 独立担当 `inquiry-review` が2周で確認しました。1周目のblocking 2件（本番E2Eが本番D1へテスト行を書く、JS無効経路で日本語1,229字以上を拒否）を含む14件を反映し、2周目はpassでした。[独立記録](content-review/inquiries/independent-review-2026-09-10.json)。共通ファイル（Layout・global.css・PolicyArticle）の変更により24記事の公開審査ハッシュを再記録しました。旧記録は[archive](content-review/inquiries/archive/2026-09-10-inquiry-form/publication.json)にあり、承認欄にはこの会話で承認された範囲と旧承認文を併記しています。記事本文は無変更です。
+- 未実施: D1データベースの作成（`wrangler.jsonc` の `database_id` は仮の値）、本番デプロイ、本番E2E、市民の利用検証。運用は[問い合わせと訂正の運用](runbooks/corrections.md)、公開手順は[Cloudflareへ公開する](runbooks/deploy.md)を参照してください。
+
 ## 2026-09-10：他の記事も図表を点検・4記事を本番公開
 
 - 継続依頼「終わったら他の記事もお願い」を受け、政策23記事を通読し、人口長期19記事の共通構成も確認しました。[記事別の採否](content-review/visualisation/ARTICLE-AUDIT.md)に、図を加える場所と既存図表を維持する理由を記録しました。区別1指標は地図優先の方針です。

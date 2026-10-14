@@ -549,6 +549,14 @@
     align-content: start;
     font-size: 0.8rem;
   }
+  .footer-github {
+    display: flex;
+    width: fit-content;
+    margin-top: 14px;
+    padding: 4px;
+    color: var(--ink);
+    line-height: 0;
+  }
   code {
     overflow-wrap: anywhere;
   }

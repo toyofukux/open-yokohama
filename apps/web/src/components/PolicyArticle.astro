@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { reportUrl } from "../../../../packages/core/corrections";
 import "../styles/policy-article.css";
 interface Props {
   title: string;
@@ -128,9 +129,9 @@ const {
             </p>
           </details>
           <div class="article-bottom">
-            <a href="/about/#corrections">数字や説明の誤りを知らせる</a><a
-              href="#article-top">冒頭に戻る ↑</a
-            >
+            <a href={reportUrl(Astro.url.pathname, `記事 SHA-256:${version}`)}
+              >数字や説明について知らせる</a
+            ><a href="#article-top">冒頭に戻る ↑</a>
           </div>
         </section>
       </div>

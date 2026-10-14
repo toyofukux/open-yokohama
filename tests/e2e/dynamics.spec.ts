@@ -24,11 +24,11 @@ test('citizen reaches annual breakdown and same-period comparison', async ({ pag
 test('movement report retains exact data version, metric and year', async ({ page }) => {
   await page.goto('/population-movement/?metric=other_change&year=2025');
   await expect(page.locator('#movement-heading')).toContainText('その他増減');
-  await page.getByRole('link', { name: 'このページの誤りを知らせる' }).click();
+  await page.getByRole('link', { name: 'このページについて知らせる' }).click();
   await expect(page.locator('#report-page')).toHaveValue(
-    'https://open.yokohama/population-movement/?metric=other_change&year=2025',
+    '/population-movement/?metric=other_change&year=2025',
   );
-  await expect(page.locator('#report-context')).toHaveValue(/人口動態 SHA-256:[a-f0-9]{64}/);
+  await expect(page.locator('#report-version')).toHaveValue(/人口動態 SHA-256:[a-f0-9]{64}/);
 });
 test('movement JSON, CSV and sources share values and version', async ({ request }) => {
   const response = await request.get('/data/dynamics.json');

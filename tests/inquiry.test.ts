@@ -1,0 +1,64 @@
+import assert from 'node:assert/strict';
+import test from 'node:test';
+import { limits, normalizePage, validate } from '../apps/inquiries/src/validate.ts';
+
+const origins = ['http://127.0.0.1:8788', 'https://open.yokohama'];
+
+test('page accepts site paths and site URLs, and rejects other hosts and schemes', () => {
+  assert.equal(
+    normalizePage('/wards/tsuzuki/?metric=households', origins),
+    '/wards/tsuzuki/?metric=households',
+  );
+  assert.equal(
+    normalizePage('https://open.yokohama/issues/school-lunch/', origins),
+    '/issues/school-lunch/',
+  );
+  assert.equal(normalizePage('http://127.0.0.1:8788/about/', origins), '/about/');
+  assert.equal(normalizePage('   ', origins), '');
+  assert.equal(normalizePage('//evil.example/', origins), null);
+  assert.equal(normalizePage('https://evil.example/x', origins), null);
+  assert.equal(normalizePage('javascript:alert(1)', origins), null);
+  assert.equal(normalizePage('https://user:pw@open.yokohama/', origins), null);
+});
+
+test('validation rejects honeypot hits, unknown kinds and empty bodies', () => {
+  assert.deepEqual(validate({ body: 'x', website: 'http://spam.example' }, origins), {
+    ok: false,
+    error: 'honeypot',
+  });
+  assert.deepEqual(validate({ body: 'x', kind: 'other' }, origins), { ok: false, error: 'kind' });
+  assert.deepEqual(validate({ body: '  \n ' }, origins), { ok: false, error: 'body' });
+  assert.deepEqual(validate({ body: 'x', page: 'https://evil.example/' }, origins), {
+    ok: false,
+    error: 'page',
+  });
+});
+
+test('valid inquiries default to an error report, keep newlines, and trim to limits', () => {
+  const checked = validate(
+    {
+      body: ` a\u0000b\nc\t${'d'.repeat(limits.body)}`,
+      version: 'v'.repeat(limits.version + 50),
+      target: '<b>見出し</b>',
+    },
+    origins,
+  );
+  assert.ok(checked.ok);
+  if (!checked.ok) return;
+  assert.equal(checked.inquiry.kind, 'error');
+  assert.equal(checked.inquiry.page, '');
+  assert.ok(checked.inquiry.body.startsWith('ab\nc\td'));
+  assert.equal(checked.inquiry.body.length, limits.body);
+  assert.equal(checked.inquiry.version.length, limits.version);
+  assert.equal(checked.inquiry.target, '<b>見出し</b>');
+});
+
+test('CRLF line breaks count as one character so a maxlength-sized body is never cut', () => {
+  const lines = Array.from({ length: 10 }, () => 'あ'.repeat(199)).join('\r\n');
+  const checked = validate({ body: lines }, origins);
+  assert.ok(checked.ok);
+  if (!checked.ok) return;
+  assert.equal([...checked.inquiry.body].length, 199 * 10 + 9);
+  assert.ok(!checked.inquiry.body.includes('\r'));
+  assert.ok(checked.inquiry.body.endsWith('あ'));
+});
