@@ -1,6 +1,7 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "open-yokohama",
+  "account_id": "a268c8eb8027cd5a20aa355cc8da6552",
   "compatibility_date": "2026-09-05",
   // Only /api/* invokes the Worker; every other path is served as a static asset without it.
   "main": "apps/inquiries/src/index.ts",

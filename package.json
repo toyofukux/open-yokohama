@@ -18,7 +18,7 @@
     "lint": "biome check packages scripts tests apps/mcp/src apps/inquiries/src",
     "format": "biome check --write packages scripts tests apps/mcp/src apps/inquiries/src",
     "preview": "wrangler dev --config wrangler.jsonc --port 8788",
-    "deploy": "pnpm build && wrangler deploy --config wrangler.jsonc",
+    "deploy": "pnpm build && pnpm cf deploy",
     "mcp:dev": "wrangler dev --config apps/mcp/wrangler.jsonc --local --ip 127.0.0.1 --port 8789 --var INTERNAL_MCP_ENABLED:true",
     "verify": "pnpm lint && pnpm lint:web && pnpm check && pnpm test && pnpm build",
     "test:mcp": "tsx scripts/mcp-smoke.ts",
@@ -50,8 +50,12 @@
     "childcare:charts:check": "tsx scripts/build-childcare-charts.ts --check",
     "policy:charts:build": "tsx scripts/build-policy-breakdowns.ts",
     "policy:charts:check": "tsx scripts/build-policy-breakdowns.ts --check",
-    "inquiries:list": "wrangler d1 execute open-yokohama-inquiries --remote --command \"SELECT id, created_at, kind, page, status, substr(body, 1, 120) AS body FROM inquiries ORDER BY id DESC LIMIT 50\"",
-    "inquiries:list:local": "wrangler d1 execute open-yokohama-inquiries --local --command \"SELECT id, created_at, kind, page, status, substr(body, 1, 120) AS body FROM inquiries ORDER BY id DESC LIMIT 50\""
+    "inquiries:list": "pnpm cf d1 execute open-yokohama-inquiries --remote --command \"SELECT id, created_at, kind, page, status, substr(body, 1, 120) AS body FROM inquiries ORDER BY id DESC LIMIT 50\"",
+    "inquiries:list:local": "wrangler d1 execute open-yokohama-inquiries --local --command \"SELECT id, created_at, kind, page, status, substr(body, 1, 120) AS body FROM inquiries ORDER BY id DESC LIMIT 50\"",
+    "cf:d1:create": "pnpm cf d1 create open-yokohama-inquiries",
+    "cf:versions": "pnpm cf versions list",
+    "cf:rollback": "pnpm cf rollback",
+    "cf": "dotenvx run --strict -f .env.deploy.production -- node scripts/cloudflare.mjs"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
@@ -66,7 +70,8 @@
     "typescript": "^6.0.3",
     "wrangler": "4.129.0",
     "@astrojs/markdown-remark": "^7.3.0",
-    "@resvg/resvg-js": "2.6.2"
+    "@resvg/resvg-js": "2.6.2",
+    "@dotenvx/dotenvx": "2.23.0"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.30.0",

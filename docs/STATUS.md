@@ -1,5 +1,14 @@
 # 実装・公開状態
 
+## 2026-10-14：問い合わせ公開の統合・再検証（認証待ち、未公開）
+
+- `feat/inquiry-form` と `chore/dotenvx-cloudflare` を `release/inquiry-form-20261014` で統合。作業場所は `.worktrees/inquiry-release/`。保育改稿と別案の訂正フォームは含めていません。
+- `pnpm verify`（単体84件・94ページ・2,543内部リンク）、全242 E2E、訂正表示保留、Web dry-runが合格。初回E2Eは必要なChromium未導入で失敗し、導入後の再実行で全件合格。ログは `artifacts/inquiry-release-20261014/`。
+- 本番認証はdotenvx経由に統一し、APIトークンまたはアカウントIDが無ければWrangler起動前に停止します。OAuthへの暗黙フォールバックを防止。鍵は既存dotenvx作業ツリーから同一内容を確認して複製し、両方を保全しました（Git対象外）。
+- 対象Cloudflareアカウントは `toyofukux`。暗号化設定にAPIトークンが未登録。接続済みCloudflare APIも対象Workerは `No access to the specified resource`、D1は `10000 Authentication error` のため本番操作不可。D1 IDは仮値のまま。本番DB作成・main統合・デプロイ・本番検証は未実施です。
+- 再開時はこの作業ツリーの `.env.deploy.production` にAPIトークンを暗号化登録し、`pnpm cf versions list` と `pnpm cf d1 list` で対象を再確認。同名DBがなければ作成し、実IDを設定・commit。CI成功後にmainへ統合し、mainから公開して保存を伴わない本番検査を行います。
+- 関連6worktreeは `.worktrees/` へ移動。旧パスに相対互換リンクを残し、HEAD・未commit差分・内容を照合。移動記録は `artifacts/worktree-migration-20261014.json`、保持期限は `.worktrees/compatibility.json`。自動削除はしていません。
+
 ## 2026-09-10：アカウント不要の問い合わせフォーム（実装・検証済み、未公開）
 
 - 市民向けの誤り・質問・要望を、GitHubアカウントなしで送れるフォームに作り替えました。送信先は同じWorkerの `/api/inquiries` で、Cloudflare D1 `open-yokohama-inquiries` に保存します。個別の返信はせず、対応した内容だけを `/corrections/`（問い合わせと訂正）の台帳に記録します。開発者向けの導線はフッターのGitHubアイコンだけにし、問い合わせトップからGitHub Issueリンクを外しました。夜テーマでフォームの文字が読めない不具合（未定義の `--bg` 変数）も直しました。
